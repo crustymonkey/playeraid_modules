@@ -1,0 +1,43 @@
+{
+    "name": "Mission: Red Planet",
+    "description": "<a href=\"https://goo.gl/RB9c8C\">See this on boardgamegeek</a>",
+    "sections": [
+        {
+            "name": "Sequence of Play",
+            "sections": [
+                {
+                    "name": "1. Choose Character",
+                    "text": "<b>Each player simultaneously chooses 1 character card from his hand</b> and places it facedown in front of him."
+                },
+                {
+                    "name": "2. Resolve Effects",
+                    "text": "<p>The first player begins reciting the <b>countdown to blastoff</b>, announcing each character number starting with the number 9.</p>"
+                },
+                {
+                    "name": "3. Land Launched Ships",
+                    "text": "<p><b>Each launched ship lands on Mars, unloading all astronauts aboard that ship in the indicated zone.</b> When an astronaut is placed in a zone with a facedown resource token, the resource token is flipped faceup.</p><p>After landing a ship, place it faceup next to the ship deck in the ship discard pile and return any destination token to the supply.</p>"
+                },
+                {
+                    "name": "4. Draw New Ships",
+                    "text": "For each open dock at the launchpad, the first player draws 1 ship card and places it faceup at an open dock."
+                },
+                {
+                    "name": "5. Assign First Player",
+                    "text": "<b>The player who resolved his character effect last takes the round tracker</b> and is the new first player."
+                },
+                {
+                    "name": "6. Advance Tracker",
+                    "text": "<b>The first player slides the gauge clockwise until the pointer lines up with the next notch.</b>"
+                }
+            ]
+        },
+        {
+            "name": "Production Phase",
+            "text": "<p>During a production phase, each zone with a faceup resource token produces point tokens of its resource type equal to the number of dots shown in the production phase icon.</p><p>Then, players receive point tokens based on majority in each zone. If only one player has the most astronauts in a zone, he receives all the point tokens from that zone. If two or more players tie for the most astronauts in a zone, the tied players evenly distribute the point tokens from that zone</p><p>Any remaining point tokens stay in the zone.  If there are no astronauts in a zone, the point tokens stay in that zone.</p><p>At the end of each production phase, the first player advances the round tracker to the next notch.</p>"
+        },
+        {
+            "name": "Reveal Discovery",
+            "text": "<p>The first player flips all discovery cards in play faceup. Each discovery card effect resolves during the phase indicated:</p><p>At the end of the Reveal Discovery phase, the first player advances the round tracker.</p>"
+        }
+    ]
+}
