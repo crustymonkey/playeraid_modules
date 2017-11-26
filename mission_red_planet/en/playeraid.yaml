@@ -13,6 +13,29 @@ sections:
               <p>The first player begins reciting the <b>countdown to 
               blastoff</b>, announcing each character number starting with 
               the number 9.</p>
+              <p>Each player whose facedown card matches the announced 
+              character number flips it faceup and resolves its effect.</p>
+              <p>After all players who revealed the announced
+              character have resolved its effect, or if no
+              player chose the announced character, the
+              first player continues the countdown by
+              announcing the next character in descending
+              order, and so on until all players have
+              revealed their chosen character cards.</p>
+              <p><b>Character effects must be resolved from top
+              to bottom</b> in the order written on the card.
+              Played character cards remain faceup in front
+              of the owner and visible for all to see.</p>
+              <p>A used character cannot be used again until
+              the player plays the Recruiter card to return
+              all of his played cards to his hand.</p>
+              <p><b>A docked ship is full when the number of
+              astronauts on it is equal to its capacity
+              number.</b> A full ship launches (slide the ship
+              card away from the launchpad).</p>
+              <p>Ships launch only if they become full or due
+              to an effect such as the Secret Agent. Ships
+              that are not full stay docked.</p>
         - name: 3. Land Launched Ships
           text: >
               <p><b>Each launched ship lands on Mars, unloading all astronauts 
