@@ -75,8 +75,8 @@ sections:
           <p>The first player flips all discovery cards in play faceup. 
           Each discovery card effect resolves during the phase 
           indicated:</p>
-          <img src="/static/img/reveal_discovery_phase.png" width="30" height="30" />
-          <img src="/static/img/third_production_phase.png" width="30" height="30" />
+          <img src="/static/img/reveal_discovery_phase.png" width="30" height="30" /><br/>
+          <img src="/static/img/third_production_phase.png" width="30" height="30" /><br/>
           <img src="/static/img/final_scoring_phase.png" width="30" height="30" />
           <p>At the end of the Reveal Discovery phase, the 
           first player advances the round tracker.</p>
@@ -149,6 +149,6 @@ sections:
           changing that ship’s destination again.</p>
     - name: Resources
       text: >
-          <p>Ice: <img src="/static/img/mission_red_planet/ice_resource.png" width="30" height="30" />
-          Sylvanite: <img src="/static/img/mission_red_planet/sylvanite_resource.png" width="30" height="30" />
+          <p>Ice: <img src="/static/img/mission_red_planet/ice_resource.png" width="30" height="30" /><br/>
+          Sylvanite: <img src="/static/img/mission_red_planet/sylvanite_resource.png" width="30" height="30" /><br/>
           Celerium: <img src="/static/img/mission_red_planet/celerium_resource.png" width="30" height="30" />
