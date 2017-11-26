@@ -75,9 +75,9 @@ sections:
           <p>The first player flips all discovery cards in play faceup. 
           Each discovery card effect resolves during the phase 
           indicated:</p>
-          <img src="/static/img/reveal_discovery_phase.png" width="30" height="30" /><br/>
-          <img src="/static/img/third_production_phase.png" width="30" height="30" /><br/>
-          <img src="/static/img/final_scoring_phase.png" width="30" height="30" />
+          Reveal Discovery Phase: <img src="/static/img/mission_red_planet/reveal_discovery_phase.png" width="30" height="30" /><br/>
+          3rd Production Phase: <img src="/static/img/mission_red_planet/third_production_phase.png" width="30" height="30" /><br/>
+          Final Scoring Phase: <img src="/static/img/mission_red_planet/final_scoring_phase.png" width="30" height="30" />
           <p>At the end of the Reveal Discovery phase, the 
           first player advances the round tracker.</p>
     - name: Final Scoring
