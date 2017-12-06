@@ -1,0 +1,9 @@
+name: Ex Libris (Shops and Characters)
+description: A game of fantasy librarians.  <a href="https://goo.gl/AY2jsV">See this on boardgamegeek</a>
+credits: Jay Deiman
+sections:
+    - name: Characters
+      sections:
+          - name: Char 1
+            text: >
+                TODO
