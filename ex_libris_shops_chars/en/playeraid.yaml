@@ -2,8 +2,107 @@ name: Ex Libris (Shops and Characters)
 description: A game of fantasy librarians.  <a href="https://goo.gl/AY2jsV">See this on boardgamegeek</a>
 credits: Jay Deiman
 sections:
-    - name: Characters
+    - name: Library and Special Assistants
       sections:
-          - name: Char 1
+          - name: The Caverns of Comprehension
             text: >
-                TODO
+                <b>The Goblin Sneak:</b> When the Goblin Sneak visits the same
+                location as one or more opponents, <b>prior to activating
+                any effects</b>, you may attempt to pickpocket. Choose an
+                opponent present at the location and name a category.
+                That opponent must give you a card containing a book
+                of that category, if able, or show you a hand containing
+                none. Repeat this process for each opponent present at
+                that location. Any cards acquired this way may be shelved.
+          - name: The Crypt of Accursed Knowledge
+            text: >
+                <p><b>The Mummy:</b>When the Mummy shelves a card, you may
+                entomb the card by placing it either directly on top of,
+                or directly underneath, a previously shelved card in your
+                bookshelf. The bottom card of the stack is flipped face
+                down and its icons no longer count during scoring. You
+                may never have more than one card under each card in
+                your bookshelf. At the end of the game, entombed cards
+                in your bookshelf are worth <b>2 points</b> each. Add the total
+                to your shelf stability bonus.</p>
+                <p><b>Note:</b>If the top card of an entombed stack is discarded for
+                any reason, the card remaining underneath is no longer
+                considered entombed, but stays flipped face down.</p>
+          - name: The Clockwork Atheneum
+            text: >
+                <b>The Automaton:</b> When the Automaton visits a location
+                or your library, <b>prior to activating any effects</b>, you may
+                perform one home action for each of your other assistants
+                already present at the location.
+          - name: The Dungeon of Deep Thought
+            text: >
+                <b>The Gelatinous Cube:</b> If an opposing assitant visits the
+                same location as the Gelatinous Cube, <b>prior to activating
+                any effects or abilities</b>, they must either:
+                <ol><li>Give you a random card from their hand <b>-OR-</b></li>
+                <li>Allow you to perform <b>both</b> home actions</li></ol>
+          - name: The Forest Repository
+            text: >
+                <b>The Sasquatch:</b> The Sasquatch may only visit locations
+                where opposing assistants are not present. If an opposing
+                assistant visits the same location as the Sasquatch, <b>before
+                they activate any effects or abilities</b>, you may choose
+                to retrieve the Sasquatch — it may be placed again on a
+                subsequent turn this round.
+          - name: The Haunted House of Learning
+            text: >
+                <p><b>The Ghost:</b> The Ghost may not visit the <b>Diviner's
+                Hut</b>. (The Diviner has warded her hut from uninvited
+                spirits.)</p>
+                <p>You may place the Ghost on assistant spaces that are
+                occupied by opposing assistants at locations with instant
+                effects; the two assistants share the space. When you do
+                so, <b>prior to activating any effects or abilities</b>, draw
+                one card from the deck. Afterward, activate the location’s
+                effect. You may not use this ability on locations with
+                delayed effects.</p>
+          - name: The Garden of Education
+            text: >
+                <b>The Bookworm:</b> When the Bookworm visits a home action
+                space, you may perform <b>both</b> home actions. Afterward,
+                you may discard a card from your hand or bookshelf to
+                repeat the process once.
+          - name: The Igloo of Information
+            text: >
+                <b>The Snowman:</b> As long as the Snowman is on an
+                assistant space at a location with an instant effect, no
+                more assistants may visit the location.
+          - name: The Junkyard of Enlightenment
+            text: >
+                <b>The Trash Golem:</b> If the Trash Golem is present at a
+                location during step <b>2</b> of the Resolution Phase, you may
+                choose one card that would be discarded from each
+                location as it resolves and either take it or shelve it.
+                Continue this process until the Trash Golem’s location
+                itself is resolved and its token returns to you.
+          - name: The Swamp of Scholarship
+            text: >
+                <b>The Witch:</b> Any time the Witch acquires a card containing
+                at least one Banned Book, reveal the top card of the deck.
+                You may take either the original card or the revealed card,
+                then discard whichever card you did not take.
+          - name: The Literary Laboratory
+            text: >
+                <b>The Wizard:</b> When the Wizard shelves a card, you may
+                shift a group of any number of adjacent cards in your
+                bookshelf one space in any direction to create one or more
+                empty spaces, then shelve the new card in a newly created
+                empty space. Your bookshelf may disconnect temporarily,
+                so long as it follows all shelving rules after the new card
+                is added.
+          - name: The Volcanic Biblioteca
+            text: >
+                <p><b>The Fire Imp:</b> When the Fire Imp visits a location with
+                one or more cards in its card area, <b>prior to activating any
+                effects</b>, you may either:
+                <ol><li>Discard one card from the location's card area to
+                perform one home action <b>-OR-</b></li>
+                <li>Discard ALL cards from the location's card area to
+                perform two home actions</li></ol></p>
+                <p><b>Note:</b> If a location tile has only one card in its card
+                area, you may only choose option <b>A</b> above.</p>
