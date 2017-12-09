@@ -127,21 +127,21 @@ sections:
                 cards in <b>Ye Olde Book Swap's</b> card area.</p>
           - name: Auction House (#3)
             text: >
-                <p>When placing an assistant at the <b>Auction House</b>, choose
+                "<p>When placing an assistant at the <b>Auction House</b>, choose
                 one of the four bid spaces. If an assistant is already
                 present, even if one of your own, you <b>must</b> choose a bid
                 space that is a higher number, if able (a bid of four cannot
                 be outbid). Return the lower-bidding assistant to their
                 player — it may be placed again on a subsequent turn
                 this round.</p>
-                <p><b>🕚 eDlayed Effect</b - Discard a number of cards from
+                <p><b>⏱  Delayed Effect</b - Discard a number of cards from
                 your hand equal to your bid space to take the three cards from
                 the <b>Auction House's</b> card area. You may shelve any/all
                 of them.</p>
                 <p><b>Note:</b> If you are unable to discard the required number
                 of cards, you receive nothing from the <b>Auction House</b>.
                 The <b>Auction House</b> has no effect if there are no cards
-                in the <b>Auction House’s</b> card area.</p>
+                in the <b>Auction House’s</b> card area.</p>"
           - name: Donation Centre (#4)
             text: >
                 <b>⚡ Instant Effect</b> - Discard one or more cards from
@@ -205,16 +205,16 @@ sections:
                 area.</p>
           - name: Garbage Dump (#11)
             text: >
-                <p><b>🕚 Delayed Effect</b> - Name a category, then search the
+                "<p><b>⏱  Delayed Effect</b> - Name a category, then search the
                 discard pile. Take any one card containing a book of the
                 named category. If no cards are present in the discard pile
                 that contain a book of the named category, you receive
                 nothing. If you took a card, you may shelve it.</p>
                 <p><b>Note:</b> Visiting the <b>Garbage Dump</b> has no effect
-                if there are no cards in the discard pile.</p>
+                if there are no cards in the discard pile.</p>"
           - name: Local Drafthouse (#12)
             text: >
-                <p><b>🕚 Delayed Effect</b> - The player whose assistant was
+                "<p><b>⏱  Delayed Effect</b> - The player whose assistant was
                 placed on the first space of the <b>Local Drafthouse</b>
                 reveals two cards from the deck for every assistant present
                 at the <b>Local Drafthouse</b>. The player whose assistant was
@@ -222,7 +222,7 @@ sections:
                 followed by the player whose assistant was placed on the
                 secnd space, and so on, repeating the process until all the
                 revealed cards have been taken. Any/all of the cards taken
-                may be shelved.</p>
+                may be shelved.</p>"
           - name: Mystery Shack (#13)
             text: >
                 <p><b>⚡ Instant Effect</b> - Name a category, then look at all
