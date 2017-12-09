@@ -125,3 +125,180 @@ sections:
                 <p><b>Note:</b> Visiting <b>Ye Olde Book Swap</b> has no
                 effect if you have no cards in your hand, or if there are no
                 cards in <b>Ye Olde Book Swap's</b> card area.</p>
+          - name: Auction House (#3)
+            text: >
+                <p>When placing an assistant at the <b>Auction House</b>, choose
+                one of the four bid spaces. If an assistant is already
+                present, even if one of your own, you <b>must</b> choose a bid
+                space that is a higher number, if able (a bid of four cannot
+                be outbid). Return the lower-bidding assistant to their
+                player — it may be placed again on a subsequent turn
+                this round.</p>
+                <p><b>🕚 eDlayed Effect</b - Discard a number of cards from
+                your hand equal to your bid space to take the three cards from
+                the <b>Auction House's</b> card area. You may shelve any/all
+                of them.</p>
+                <p><b>Note:</b> If you are unable to discard the required number
+                of cards, you receive nothing from the <b>Auction House</b>.
+                The <b>Auction House</b> has no effect if there are no cards
+                in the <b>Auction House’s</b> card area.</p>
+          - name: Donation Centre (#4)
+            text: >
+                <b>⚡ Instant Effect</b> - Discard one or more cards from
+                your hand and/or library, then shelve up to two cards from
+                your hand.
+          - name: Community Centre (#5)
+            text: >
+                <p><b>⚡ Instant Effect</b> - First, take one card form the
+                <b>Community Centre's</b> card area. Next, if any cards remain
+                in the card area, give one to any opponent. Any cards you
+                acquired from the <b>Community Centre</b> may be shelved.</p>
+                <p><b>Note:</b> Visiting the <b>Community Centre</b> has no
+                effect if there are no cards in the <b>Community Centre's</b>
+                card area.</p>
+          - name: Wishing Well (#6)
+            text: >
+                <b>⚡ Instant Effect</b> - Discard any number of cards from your
+                hand (including zero), then draw one more than the number
+                you discarded.  You may shelve one of the cards drawn.
+          - name: Gambling Den (#7)
+            text: >
+                <p><b>⚡ Instant Effect</b> - Starting with the active player and
+                moving clockwise, each player with an assistant at the
+                <b>Gambling Den</b> names a different category. The active
+                player reveals four cards from the deck. The player whose
+                named category has the most matching books amongst
+                the revealed cards wins and takes all the revealed cards
+                with matching books. Discard any remaining revealed
+                cards. The winner may shelve one of the cards they took
+                for every player with an assistant at the <b>Gambling
+                Den</b>.</p>
+                <p><b>Note:</b> In the case of a tie between the active player
+                and any other players, the active player wins. If the active
+                player is not part of the tie, the winner is the player
+                closest to the active player, in counter-clockwise order.</p>
+          - name: Librarians Lodge (#8)
+            text: >
+                <p><b>⚡ Instant Effect</b> - You may perform the following
+                actions once each, in whatever order you choose:
+                <ol><li>Move one of your previously placed assistants from a
+                location’s assistant space to one of your library tile’s
+                home action spaces and take a home action.</li>
+                <li>Swap one card from your bookshelf with any card in
+                your hand <b>-OR-</b> swap one card from your bookshelf with
+                another card from your bookshelf <b>-OR-</b> remove one
+                card from your bookshelf, then shelve it again.</li></ol></p>
+          - name: Book Collector (#9)
+            text: >
+                <p><b>⚡ Instant Effect</b> - Discard any number of cards from
+                your hand and/or bookshelf. Count the number of category
+                icons on the discarded cards that match a category icon
+                on the card in the Book Collector’s card area. Draw cards
+                equal to half that number, rounded down. You may shelve
+                up to two of the cards drawn.</p>
+          - name: Book Seller (#10)
+            text: >
+                <p><b>⚡ Instant Effect</b> - Take one card from the <b>Book
+                Seller's</b> card area. You may shelve it.</p>
+                <p><b>Note:</b> Visiting the <b>Book Seller</b> has no effect
+                if there are no cards in the <b>Book Seller's</b> card
+                area.</p>
+          - name: Garbage Dump (#11)
+            text: >
+                <p><b>🕚 Delayed Effect</b> - Name a category, then search the
+                discard pile. Take any one card containing a book of the
+                named category. If no cards are present in the discard pile
+                that contain a book of the named category, you receive
+                nothing. If you took a card, you may shelve it.</p>
+                <p><b>Note:</b> Visiting the <b>Garbage Dump</b> has no effect
+                if there are no cards in the discard pile.</p>
+          - name: Local Drafthouse (#12)
+            text: >
+                <p><b>🕚 Delayed Effect</b> - The player whose assistant was
+                placed on the first space of the <b>Local Drafthouse</b>
+                reveals two cards from the deck for every assistant present
+                at the <b>Local Drafthouse</b>. The player whose assistant was
+                placed on the first space takes one of the revealed cards,
+                followed by the player whose assistant was placed on the
+                secnd space, and so on, repeating the process until all the
+                revealed cards have been taken. Any/all of the cards taken
+                may be shelved.</p>
+          - name: Mystery Shack (#13)
+            text: >
+                <p><b>⚡ Instant Effect</b> - Name a category, then look at all
+                the face-down cards on the <b>Mystery Shack’s</b> card area,
+                without revealing them to your opponents. Reveal and
+                take any/all cards containing at least one book matching
+                your named category. Return the remaining cards face
+                down. You may shelve one of the cards newly acquired.</p>
+                <p><b>Note:</b> Visiting the <b>Mystery Shack</b> has no
+                effect if there are no cards in the <b>Mystery Shack's</b>
+                card area.</p>
+          - name: Rummage Sale (#14)
+            text: >
+                <p><b>⚡ Instant Effect</b> - Take one of the cards from the
+                <b>Rummage Sale’s</b> card area. Take one additional card if
+                another assistant, including one of your own, is present.
+                All cards taken from the <b>Rummage Sale</b> may be shelved.</p>
+                <p><b>Note:</b> Visiting the <b>Rummage Sale</b> has no effect
+                if there are no cards in the <b>Rummage Sale's</b> card
+                area.</p>
+          - name: Assistants Guild (#15)
+            text: >
+                <p><b>⚡ Instant Effect</b> - Move one of your previously placed
+                assistants from one of your library tile’s home action
+                spaces to a location’s assistant space that is occupied by
+                an opposing assistant. Return the opposing assistant to
+                that opponent — it may be placed again on a subsequent
+                turn this round. If the location’s effect is an <b>⚡
+                Instant Effect</b>, activate it.</p>
+                <p><b>Note:</b> Visiting the <b>Assistants Guild</b> has no
+                effect if you do not have an assistant on one of your library
+                tile’s home action spaces.</p>
+          - name: Tax Collector (#16)
+            text: >
+                <p><b>⚡ Instant Effect</b> - First, in turn order, each opponent
+                must discard one card from their hand or library face up
+                to the <b>Tax Collector’s</b> card area. Next, you may discard
+                any number of cards from your hand or library to take the
+                same number of cards from the <b>Tax Collector’s</b> card
+                area. Lastly, you may shelve any/all of the cards taken from
+                the <b>Tax Collector’s</b> card area.</p>
+          - name: Yard Sale (#17)
+            text: >
+                <p><b>⚡ Instant Effect</b> - Reveal any number of cards from
+                your hand. In turn order, each opponent may take or shelve one
+                of your revealed cards or pass. Repeat the process in the
+                same order until all your revealed cards are gone or all
+                of your opponents have passed. For each of your revealed
+                cards taken or shelved by an opponent, draw two cards
+                from the deck, then shelve any one card from your hand.<p>
+                <p><b>Note:</b> Visiting the <b>Yard Sale</b> has no effect
+                if you have no cards in your hand.</p>
+          - name: Shelfmasons Guild (#18)
+            text: >
+                <b>⚡ Instant Effect</b> - Shift any number of adjacent cards in
+                a single row of your bookshelf any number of spaces in one
+                direction, ensuring that you do not split your bookshelf
+                into two separate groups at any point in the process.
+          - name: ~Timing Conflicts~
+            text: >
+                <p>If a timing conflict arises between the effects of locations
+                and/or the abilities of one or more special assistants, the
+                below order of operations should be followed to determine
+                which takes priority:
+                <ol><li>The Effect of a Location Tile<br/>
+                <b>Example:</b> The effect of the Assistants Guild would allow
+                an assistant to visit an occupied assistant space at the same
+                location as the Snowman, including the Snowman’s space.</li>
+                <li>The Ability of a Previously Placed Special Assistant<br/>
+                <b>Example 1:</b> If the Goblin Sneak visits the same location
+                as the Gelatinous Cube, the Gelatinous Cube’s ability triggers
+                first, then the Goblin Sneak’s.<br/>
+                <b>Example 2:</b> The Ghost cannot visit the same assistant
+                space as the Snowman, because the Snowman’s ability takes
+                precedence.</li></ol></p>
+                <p><b>Note:</b> When a conflict arises between more than two
+                special assistants, the assistant that has been at the
+                location longest takes priority, then second longest, and so
+                on.</p>
