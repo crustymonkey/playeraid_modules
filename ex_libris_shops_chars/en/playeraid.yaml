@@ -106,3 +106,22 @@ sections:
                 perform two home actions</li></ol></p>
                 <p><b>Note:</b> If a location tile has only one card in its card
                 area, you may only choose option <b>A</b> above.</p>
+    - name: Locations
+      sections:
+          - name: Diviner's Hut (#1)
+            text: >
+                <p><b>⚡ Instant Effect</b> - First, draw one card for every
+                assistant you have placed this round, including this one.
+                Next, take the first player token from the player who
+                currently has it.  If you already have the first player token,
+                keep it.</p>
+                <p><b>Note:</b> The Ghost may not visit the <b>Diviner's
+                Hut</b></p>
+          - name: Ye Olde Book Swap (#2)
+            text: >
+                <p><b>⚡ Instant Effect</b> - Trade one card from your hand
+                with one card from <b>Ye Olde Book Swap's</b> card area.
+                You may shelve the newly acquired card.</p>
+                <p><b>Note:</b> Visiting <b>Ye Olde Book Swap</b> has no
+                effect if you have no cards in your hand, or if there are no
+                cards in <b>Ye Olde Book Swap's</b> card area.</p>
