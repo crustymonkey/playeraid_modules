@@ -1,6 +1,7 @@
 name: "Mission: Red Planet (Overall)"
 description: <a href="https://goo.gl/RB9c8C">See this on boardgamegeek</a>
 credits: <a href="https://www.orderofgamers.com/mission-red-planet-v1/">Order of Gamers</a>
+enabled: true
 sections:
     - name: Setup
       text: >

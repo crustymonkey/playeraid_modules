@@ -1,6 +1,7 @@
 {
     "name": "Mission: Red Planet",
     "description": "<a href=\"https://goo.gl/RB9c8C\">See this on boardgamegeek</a>",
+    "enabled": true,
     "sections": [
         {
             "name": "Sequence of Play",

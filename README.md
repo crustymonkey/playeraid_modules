@@ -45,7 +45,7 @@ This will have the following 5 mapping items:
 * **description** (required):  This is a short description of the game.  This could just be a simple link to the BGG page
 * **credits** (optional):  If you are copying this playeraid from an existing aid and wish to credit the original creator, you can specify them here.  You can also add your own name if you put this aid together.
 * **sections** (required): This will map to a list of your sections (more on `sections` below).
-* **enabled** (optional): This is either *true* or *false* for whether it is enabled
+* **enabled** (optional): This is either *true* or *false* for whether it is enabled.  You must set this to *true* to enable your player aid.  The default is *false*
 
 ## Sections
 This is the meat of your player aid.  Each section will have up to 3 items in it, including another `sections` mapping.  This means you can have nested sections within sections.  You can find examples of these on https://playeraid.net.
