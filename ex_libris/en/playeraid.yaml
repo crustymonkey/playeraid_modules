@@ -1,6 +1,7 @@
 name: Ex Libris
 description: A game of fantasy librarians.  <a href="https://goo.gl/AY2jsV">See this on boardgamegeek</a>
 credits: Jay Deiman
+enabled: false
 sections:
     - name: Setup
       text: >

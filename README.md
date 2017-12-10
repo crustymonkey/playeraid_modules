@@ -39,12 +39,13 @@ Your directory should be layed out as follows:
 The layout of your data in your YAML/JSON file is pretty simple.  The allowed key values in the mappings are pretty straightforward here.
 
 ## The Top Level of the Data Structure
-This will have the following 4 mapping items:
+This will have the following 5 mapping items:
 
 * **name** (required): This is the name that will show up on the playeraid.net home page
 * **description** (required):  This is a short description of the game.  This could just be a simple link to the BGG page
 * **credits** (optional):  If you are copying this playeraid from an existing aid and wish to credit the original creator, you can specify them here.  You can also add your own name if you put this aid together.
 * **sections** (required): This will map to a list of your sections (more on `sections` below).
+* **enabled** (optional): This is either *true* or *false* for whether it is enabled
 
 ## Sections
 This is the meat of your player aid.  Each section will have up to 3 items in it, including another `sections` mapping.  This means you can have nested sections within sections.  You can find examples of these on https://playeraid.net.
