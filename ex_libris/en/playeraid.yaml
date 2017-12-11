@@ -1,8 +1,445 @@
 name: Ex Libris
 description: A game of fantasy librarians.  <a href="https://goo.gl/AY2jsV">See this on boardgamegeek</a>
 credits: Jay Deiman
-enabled: false
+enabled: true
 sections:
     - name: Setup
       text: >
-          TODO
+          <p><ol><li>Lay out the <b>Town Board</b> and set the <b>Library
+          Inspection Form</b> nearby</li>
+          <li>Place the <b>Diviner's Hut</b> face up below the <b>Town
+          Board</b>.  Shuffle the other <b>Location Tilse</b> and place
+          them face-down in a stack.</li>
+          <li>Give the 1st player token to the player who most recently
+          acquired a book.</li>
+          <li>Shuffle the <b>Library Tiles</b> and deal 2 to each player. In
+          <u>reverse</u> turn order (last player 1st), each player chooses a
+          library tile.</li>
+          <li>Each player Takes the <b>Special Assistant</b> that matches their
+          libary, as well as 2 standard assistants (gnomes).</li>
+          <li>Shuffle the <b>Category Cards</b> and place one (randomly) 
+          face up on the <i>Prominent Works</i> space and the <i>Banned
+          Books</i> spaces of the town board.</li>
+          <li>Deal one of the remaining <b>Category Cards</b> face down to 
+          each player for their "focus".  This is slid under the right hand
+          side of each players' board.</li>
+          <li>Shuffle the <b>Book Cards</b> and deal 6 to each player. Place
+          the remaining cards in a stack near the board.</li></ol></p>
+    - name: Categories
+      text: >
+          There are 6 categories, listed below.
+          <table>
+          <tr><th>Corrupted Codices: </td><td><img
+          src="/static/img/ex_libris/corr_cod.jpg" width="30"
+          height="30"/></td></tr>
+          <tr><th>Fantastical Fictions: </td><td><img
+          src="/static/img/ex_libris/fant_fict.jpg" width="30"
+          height="30"/></td></tr>
+          <tr><th>Historic Volumes: </td><td><img
+          src="/static/img/ex_libris/hist_vol.jpg" width="30"
+          height="30"/></td></tr>
+          <tr><th>Monster Manuals: </td><td><img
+          src="/static/img/ex_libris/mon_man.jpg" width="30"
+          height="30"/></td></tr>
+          <tr><th>Reference Texts: </td><td><img
+          src="/static/img/ex_libris/ref_texts.jpg" width="30"
+          height="30"/></td></tr>
+          <tr><th>Spells & Potions: </td><td><img
+          src="/static/img/ex_libris/sp_and_pot.jpg" width="30"
+          height="30"/></td></tr>
+          </table>
+    - name: Round Overview
+      sections:
+          - name: 1. Preparation Phase
+            text: >
+                <p>The 1st player reveals 1 location tile per player and
+                places them faceup below the town board. Note that in the
+                1st round, because of the <b>Diviner's Hut</b>, you will deal
+                out 1 less.</p>
+                <p>Deal out cards faceup (unless otherwise noted) to any
+                locations that require cards.  Splay out multiple cards on a
+                location so that you can see the information at the top of
+                all cards.</p>
+          - name: 2. Placement Phase
+            text: >
+                <p>Starting with the 1st player and going clockwise, each
+                player takes a turn placing one assistant (this can be either
+                your special assistant or a standard gnome assistant). 
+                Place 1 of your available assistants on either:</p>
+            sections:
+                - name: On a Location Tile
+                  text: >
+                      <p>This is one of the location tiles on or below the town
+                      board.  If the location has an <b>⚡ Instant Effect</b>,
+                      activate it immediately.  If the location has a
+                      <b>⏱  Delayed Effect</b>, it will be activated during
+                      the Resolution Phase.</p>
+                - name: On Your Library Tile
+                  text: >
+                      <p>Place an assistant on one of the 3 spaces on your
+                      library tile and:
+                      <ol><li>Draw 1 card <b>-OR-</b></li>
+                      <li>Shelve 1 card from your hand</li></ol></p>
+          - name: 3. Resolution Phase
+            text: >
+                <p>Resolve all locations <b>in numerical order</b>, beginning
+                with the <b>Diviner's Hut</b>.  To resolve a location:
+                <ol><li>If the location has a <b>⏱  Delayed Effect</b>,
+                activate it now</li>
+                <li>Discard any remaining cards on the location.</li>
+                <li>Return assistants to the players</li></ol></p>
+          - name: 4. Cleanup Phase
+            text: >
+                <p>Move the <u>lowest numbered</u> location below the town
+                board onto the town board into the Permanent Locations.</p>
+                <p>Place any remaining location tiles (below the board) aside
+                face up in a discard pile.</p>
+                <p>Remove any assistants on their "home" spaces.</p>
+                <p>Check to see if anyone has the required number of
+                <b>cards</b> to trigger the final round according to this:
+                <table>
+                <tr><th>2 Players: </td><td>16 cards</td></tr>
+                <tr><th>3 Players: </td><td>14 cards</td></tr>
+                <tr><th>4 Players: </td><td>12 cards</td></tr>
+                </table></p>
+                <p>If someone has the required number of cards, <b>play 1 more
+                round</b> and then go to scoring.</p>
+    - name: Scoring
+      text: Use the <b>Library Inspection Form</b> for the scoring.
+      sections:
+          - name: Alphabetical Order Check
+            text: >
+                <p>Flip any card face down in each libary that does not
+                follow alphabetical and numeric order from left to right, top
+                to bottom.</p>
+          - name: Categorical Tally
+            text: Record the tally of each category for each player
+          - name: Shelf Stability
+            text: >
+                <p>Each player counts the largest rectangular group of cards
+                that includes cards on their bottom row.  Each card is worth
+                <b>1 point</b>.  A rectangle must be at least 2x2.</p>
+          - name: Prominent Works Awards
+            text: >
+                <p>Players score points for the Prominent Works category based
+                on who has the most books of that category.  If there is a tie,
+                add the award for the tied place to the next lowest space (if
+                any) and divide the total evenly, <u>rounding up</u>.</p>
+          - name: Banned Books Penalties
+            text: >
+                <p>Each player <b>loses 1 point</b> for every banned book
+                in their bookshelf</p>
+          - name: Categorical Variety Bonuses
+            text: >
+                Each player gets <b>3 points</b> per book for the
+                category with the <u>fewest</u> books (ignoring Banned Books).
+          - name: Reveal & Score Focuses
+            text: >
+                Each player recieves <b>2 points</b> for every book matching
+                their library's focus.
+          - name: ~Tiebreakers~
+            text: >
+                <p><ol><li>Most books in their bookshelf</li>
+                <li>Fewest cards in their hand</li>
+                <li>Fewest Banned Books in their library</li>
+                <li>The first player to finish reading a book</li></ol></p>
+    - name: Library and Special Assistants
+      sections:
+          - name: The Caverns of Comprehension
+            text: >
+                <b>The Goblin Sneak:</b> When the Goblin Sneak visits the same
+                location as one or more opponents, <b>prior to activating
+                any effects</b>, you may attempt to pickpocket. Choose an
+                opponent present at the location and name a category.
+                That opponent must give you a card containing a book
+                of that category, if able, or show you a hand containing
+                none. Repeat this process for each opponent present at
+                that location. Any cards acquired this way may be shelved.
+          - name: The Crypt of Accursed Knowledge
+            text: >
+                <p><b>The Mummy:</b>When the Mummy shelves a card, you may
+                entomb the card by placing it either directly on top of,
+                or directly underneath, a previously shelved card in your
+                bookshelf. The bottom card of the stack is flipped face
+                down and its icons no longer count during scoring. You
+                may never have more than one card under each card in
+                your bookshelf. At the end of the game, entombed cards
+                in your bookshelf are worth <b>2 points</b> each. Add the total
+                to your shelf stability bonus.</p>
+                <p><b>Note:</b>If the top card of an entombed stack is discarded for
+                any reason, the card remaining underneath is no longer
+                considered entombed, but stays flipped face down.</p>
+          - name: The Clockwork Atheneum
+            text: >
+                <b>The Automaton:</b> When the Automaton visits a location
+                or your library, <b>prior to activating any effects</b>, you may
+                perform one home action for each of your other assistants
+                already present at the location.
+          - name: The Dungeon of Deep Thought
+            text: >
+                <b>The Gelatinous Cube:</b> If an opposing assitant visits the
+                same location as the Gelatinous Cube, <b>prior to activating
+                any effects or abilities</b>, they must either:
+                <ol><li>Give you a random card from their hand <b>-OR-</b></li>
+                <li>Allow you to perform <b>both</b> home actions</li></ol>
+          - name: The Forest Repository
+            text: >
+                <b>The Sasquatch:</b> The Sasquatch may only visit locations
+                where opposing assistants are not present. If an opposing
+                assistant visits the same location as the Sasquatch, <b>before
+                they activate any effects or abilities</b>, you may choose
+                to retrieve the Sasquatch — it may be placed again on a
+                subsequent turn this round.
+          - name: The Haunted House of Learning
+            text: >
+                <p><b>The Ghost:</b> The Ghost may not visit the <b>Diviner's
+                Hut</b>. (The Diviner has warded her hut from uninvited
+                spirits.)</p>
+                <p>You may place the Ghost on assistant spaces that are
+                occupied by opposing assistants at locations with instant
+                effects; the two assistants share the space. When you do
+                so, <b>prior to activating any effects or abilities</b>, draw
+                one card from the deck. Afterward, activate the location’s
+                effect. You may not use this ability on locations with
+                delayed effects.</p>
+          - name: The Garden of Education
+            text: >
+                <b>The Bookworm:</b> When the Bookworm visits a home action
+                space, you may perform <b>both</b> home actions. Afterward,
+                you may discard a card from your hand or bookshelf to
+                repeat the process once.
+          - name: The Igloo of Information
+            text: >
+                <b>The Snowman:</b> As long as the Snowman is on an
+                assistant space at a location with an instant effect, no
+                more assistants may visit the location.
+          - name: The Junkyard of Enlightenment
+            text: >
+                <b>The Trash Golem:</b> If the Trash Golem is present at a
+                location during step <b>2</b> of the Resolution Phase, you may
+                choose one card that would be discarded from each
+                location as it resolves and either take it or shelve it.
+                Continue this process until the Trash Golem’s location
+                itself is resolved and its token returns to you.
+          - name: The Swamp of Scholarship
+            text: >
+                <b>The Witch:</b> Any time the Witch acquires a card containing
+                at least one Banned Book, reveal the top card of the deck.
+                You may take either the original card or the revealed card,
+                then discard whichever card you did not take.
+          - name: The Literary Laboratory
+            text: >
+                <b>The Wizard:</b> When the Wizard shelves a card, you may
+                shift a group of any number of adjacent cards in your
+                bookshelf one space in any direction to create one or more
+                empty spaces, then shelve the new card in a newly created
+                empty space. Your bookshelf may disconnect temporarily,
+                so long as it follows all shelving rules after the new card
+                is added.
+          - name: The Volcanic Biblioteca
+            text: >
+                <p><b>The Fire Imp:</b> When the Fire Imp visits a location with
+                one or more cards in its card area, <b>prior to activating any
+                effects</b>, you may either:
+                <ol><li>Discard one card from the location's card area to
+                perform one home action <b>-OR-</b></li>
+                <li>Discard ALL cards from the location's card area to
+                perform two home actions</li></ol></p>
+                <p><b>Note:</b> If a location tile has only one card in its card
+                area, you may only choose option <b>A</b> above.</p>
+    - name: Locations
+      sections:
+          - name: Diviner's Hut (#1)
+            text: >
+                <p><b>⚡ Instant Effect</b> - First, draw one card for every
+                assistant you have placed this round, including this one.
+                Next, take the first player token from the player who
+                currently has it.  If you already have the first player token,
+                keep it.</p>
+                <p><b>Note:</b> The Ghost may not visit the <b>Diviner's
+                Hut</b></p>
+          - name: Ye Olde Book Swap (#2)
+            text: >
+                <p><b>⚡ Instant Effect</b> - Trade one card from your hand
+                with one card from <b>Ye Olde Book Swap's</b> card area.
+                You may shelve the newly acquired card.</p>
+                <p><b>Note:</b> Visiting <b>Ye Olde Book Swap</b> has no
+                effect if you have no cards in your hand, or if there are no
+                cards in <b>Ye Olde Book Swap's</b> card area.</p>
+          - name: Auction House (#3)
+            text: >
+                <p>When placing an assistant at the <b>Auction House</b>, choose
+                one of the four bid spaces. If an assistant is already
+                present, even if one of your own, you <b>must</b> choose a bid
+                space that is a higher number, if able (a bid of four cannot
+                be outbid). Return the lower-bidding assistant to their
+                player — it may be placed again on a subsequent turn
+                this round.</p>
+                <p><b>⏱  Delayed Effect</b - Discard a number of cards from
+                your hand equal to your bid space to take the three cards from
+                the <b>Auction House's</b> card area. You may shelve any/all
+                of them.</p>
+                <p><b>Note:</b> If you are unable to discard the required number
+                of cards, you receive nothing from the <b>Auction House</b>.
+                The <b>Auction House</b> has no effect if there are no cards
+                in the <b>Auction House’s</b> card area.</p>
+          - name: Donation Centre (#4)
+            text: >
+                <b>⚡ Instant Effect</b> - Discard one or more cards from
+                your hand and/or library, then shelve up to two cards from
+                your hand.
+          - name: Community Centre (#5)
+            text: >
+                <p><b>⚡ Instant Effect</b> - First, take one card form the
+                <b>Community Centre's</b> card area. Next, if any cards remain
+                in the card area, give one to any opponent. Any cards you
+                acquired from the <b>Community Centre</b> may be shelved.</p>
+                <p><b>Note:</b> Visiting the <b>Community Centre</b> has no
+                effect if there are no cards in the <b>Community Centre's</b>
+                card area.</p>
+          - name: Wishing Well (#6)
+            text: >
+                <b>⚡ Instant Effect</b> - Discard any number of cards from your
+                hand (including zero), then draw one more than the number
+                you discarded.  You may shelve one of the cards drawn.
+          - name: Gambling Den (#7)
+            text: >
+                <p><b>⚡ Instant Effect</b> - Starting with the active player and
+                moving clockwise, each player with an assistant at the
+                <b>Gambling Den</b> names a different category. The active
+                player reveals four cards from the deck. The player whose
+                named category has the most matching books amongst
+                the revealed cards wins and takes all the revealed cards
+                with matching books. Discard any remaining revealed
+                cards. The winner may shelve one of the cards they took
+                for every player with an assistant at the <b>Gambling
+                Den</b>.</p>
+                <p><b>Note:</b> In the case of a tie between the active player
+                and any other players, the active player wins. If the active
+                player is not part of the tie, the winner is the player
+                closest to the active player, in counter-clockwise order.</p>
+          - name: Librarians Lodge (#8)
+            text: >
+                <p><b>⚡ Instant Effect</b> - You may perform the following
+                actions once each, in whatever order you choose:
+                <ol><li>Move one of your previously placed assistants from a
+                location’s assistant space to one of your library tile’s
+                home action spaces and take a home action.</li>
+                <li>Swap one card from your bookshelf with any card in
+                your hand <b>-OR-</b> swap one card from your bookshelf with
+                another card from your bookshelf <b>-OR-</b> remove one
+                card from your bookshelf, then shelve it again.</li></ol></p>
+          - name: Book Collector (#9)
+            text: >
+                <p><b>⚡ Instant Effect</b> - Discard any number of cards from
+                your hand and/or bookshelf. Count the number of category
+                icons on the discarded cards that match a category icon
+                on the card in the Book Collector’s card area. Draw cards
+                equal to half that number, rounded down. You may shelve
+                up to two of the cards drawn.</p>
+          - name: Book Seller (#10)
+            text: >
+                <p><b>⚡ Instant Effect</b> - Take one card from the <b>Book
+                Seller's</b> card area. You may shelve it.</p>
+                <p><b>Note:</b> Visiting the <b>Book Seller</b> has no effect
+                if there are no cards in the <b>Book Seller's</b> card
+                area.</p>
+          - name: Garbage Dump (#11)
+            text: >
+                <p><b>⏱  Delayed Effect</b> - Name a category, then search the
+                discard pile. Take any one card containing a book of the
+                named category. If no cards are present in the discard pile
+                that contain a book of the named category, you receive
+                nothing. If you took a card, you may shelve it.</p>
+                <p><b>Note:</b> Visiting the <b>Garbage Dump</b> has no effect
+                if there are no cards in the discard pile.</p>
+          - name: Local Drafthouse (#12)
+            text: >
+                <p><b>⏱  Delayed Effect</b> - The player whose assistant was
+                placed on the first space of the <b>Local Drafthouse</b>
+                reveals two cards from the deck for every assistant present
+                at the <b>Local Drafthouse</b>. The player whose assistant was
+                placed on the first space takes one of the revealed cards,
+                followed by the player whose assistant was placed on the
+                secnd space, and so on, repeating the process until all the
+                revealed cards have been taken. Any/all of the cards taken
+                may be shelved.</p>
+          - name: Mystery Shack (#13)
+            text: >
+                <p><b>⚡ Instant Effect</b> - Name a category, then look at all
+                the face-down cards on the <b>Mystery Shack’s</b> card area,
+                without revealing them to your opponents. Reveal and
+                take any/all cards containing at least one book matching
+                your named category. Return the remaining cards face
+                down. You may shelve one of the cards newly acquired.</p>
+                <p><b>Note:</b> Visiting the <b>Mystery Shack</b> has no
+                effect if there are no cards in the <b>Mystery Shack's</b>
+                card area.</p>
+          - name: Rummage Sale (#14)
+            text: >
+                <p><b>⚡ Instant Effect</b> - Take one of the cards from the
+                <b>Rummage Sale’s</b> card area. Take one additional card if
+                another assistant, including one of your own, is present.
+                All cards taken from the <b>Rummage Sale</b> may be shelved.</p>
+                <p><b>Note:</b> Visiting the <b>Rummage Sale</b> has no effect
+                if there are no cards in the <b>Rummage Sale's</b> card
+                area.</p>
+          - name: Assistants Guild (#15)
+            text: >
+                <p><b>⚡ Instant Effect</b> - Move one of your previously placed
+                assistants from one of your library tile’s home action
+                spaces to a location’s assistant space that is occupied by
+                an opposing assistant. Return the opposing assistant to
+                that opponent — it may be placed again on a subsequent
+                turn this round. If the location’s effect is an <b>⚡
+                Instant Effect</b>, activate it.</p>
+                <p><b>Note:</b> Visiting the <b>Assistants Guild</b> has no
+                effect if you do not have an assistant on one of your library
+                tile’s home action spaces.</p>
+          - name: Tax Collector (#16)
+            text: >
+                <p><b>⚡ Instant Effect</b> - First, in turn order, each opponent
+                must discard one card from their hand or library face up
+                to the <b>Tax Collector’s</b> card area. Next, you may discard
+                any number of cards from your hand or library to take the
+                same number of cards from the <b>Tax Collector’s</b> card
+                area. Lastly, you may shelve any/all of the cards taken from
+                the <b>Tax Collector’s</b> card area.</p>
+          - name: Yard Sale (#17)
+            text: >
+                <p><b>⚡ Instant Effect</b> - Reveal any number of cards from
+                your hand. In turn order, each opponent may take or shelve one
+                of your revealed cards or pass. Repeat the process in the
+                same order until all your revealed cards are gone or all
+                of your opponents have passed. For each of your revealed
+                cards taken or shelved by an opponent, draw two cards
+                from the deck, then shelve any one card from your hand.<p>
+                <p><b>Note:</b> Visiting the <b>Yard Sale</b> has no effect
+                if you have no cards in your hand.</p>
+          - name: Shelfmasons Guild (#18)
+            text: >
+                <b>⚡ Instant Effect</b> - Shift any number of adjacent cards in
+                a single row of your bookshelf any number of spaces in one
+                direction, ensuring that you do not split your bookshelf
+                into two separate groups at any point in the process.
+          - name: ~Timing Conflicts~
+            text: >
+                <p>If a timing conflict arises between the effects of locations
+                and/or the abilities of one or more special assistants, the
+                below order of operations should be followed to determine
+                which takes priority:
+                <ol><li>The Effect of a Location Tile<br/>
+                <b>Example:</b> The effect of the Assistants Guild would allow
+                an assistant to visit an occupied assistant space at the same
+                location as the Snowman, including the Snowman’s space.</li>
+                <li>The Ability of a Previously Placed Special Assistant<br/>
+                <b>Example 1:</b> If the Goblin Sneak visits the same location
+                as the Gelatinous Cube, the Gelatinous Cube’s ability triggers
+                first, then the Goblin Sneak’s.<br/>
+                <b>Example 2:</b> The Ghost cannot visit the same assistant
+                space as the Snowman, because the Snowman’s ability takes
+                precedence.</li></ol></p>
+                <p><b>Note:</b> When a conflict arises between more than two
+                special assistants, the assistant that has been at the
+                location longest takes priority, then second longest, and so
+                on.</p>
