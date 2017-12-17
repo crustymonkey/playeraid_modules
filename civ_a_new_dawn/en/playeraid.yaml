@@ -1,0 +1,497 @@
+name: "Civilization: A New Dawn"
+description: Streamlined civilization game.  See it on <a href="https://boardgamegeek.com/boardgame/233247/sid-meiers-civilization-new-dawn">BGG</a>.
+credits: Jay Deiman
+enabled: true
+sections:
+    - name: Setup
+      sections:
+          - name: 1. Select Leader and Player Color
+            text: >
+                Each player takes a leader sheet, chooses a color, and takes
+                all of their colored components.  Each player sets their tech
+                dial to zero.
+          - name: 2. Construct Focus Bar
+            text: >
+                Each player places their focus bar and places the five "I"
+                focus cards under the focus bar in the order specified on the
+                bottom of their leader card.  Each player places a caravan
+                on their "Foreign Trade" card.
+          - name: 3. Construct Map
+            text: >
+                <p>After your first game, players will construct their own
+                map.  The players will initially construct the <b>CORE</b>,
+                then they will take turns adding tiles to it.</p>
+                <p><ol><li>Deal 1 random tile that has a capital-city icon
+                (star) to each player.  Return unused capital-city tiles to
+                the box.</li>
+                <li>Take 2 random tiles that have a natural wonder and 2
+                random tiles that have a city-state and shuffle all 4 together.
+                These are your <b>CORE</b> tiles.</li>
+                <li>All <b>CORE</b> tiles will be placed on the same side
+                (either all side A, or all side B).</li>
+                <li>Form the core by drawing and placing the core tiles, 1 at
+                a time into the center of the table.  Place the tiles in the
+                order below.  Place a trade token on each of the <b>CORE</b>
+                tiles to show that they are <b>CORE</b> tiles.<br/>
+                <img src="/static/img/civ_a_new_dawn/core_tiles_a.jpg"/>
+                <img src="/static/img/civ_a_new_dawn/core_tiles_b.jpg"/>
+                </li>
+                <li>Shuffle the remaining unplaced tiles and deal two to each
+                player.  Return any remaining to the game box.</li>
+                <li>Starting with a random player and moving clockwise, each
+                player chooses and places of their 3 tiles.  Each tile can
+                be placed on <b>either of its sides</b>, but the following
+                restrictions must be obeyed:
+                <ul><li>The tile being placed <b>must touch at least 4 spaces on
+                tiles that are already on the table</b>.</li>
+                <li>The tile <b>must touch the core</b>, even if it must be
+                flipped to do so.  If it can't touch the core while satisfying
+                the previous restriction, it must touch a tile that is touching
+                the core.</li>
+                <li>If a player places a capital-city tile, he or she must place
+                his or her capital city on that tile’s capital city icon.</li>
+                <li>If a completely enclosed hole in the map is formed, the
+                players fill the hole with water tokens.</li></ul></li>
+                <li>Repeat step 6 until all tiles have been placed.  Then,
+                remove the trade tokens from the core tiles.</li></ol>
+          - name: 4. Populate Map
+            text: >
+                For each space on the map with an icon, place a matching token
+                on that space.  Make sure the barbarian tokens match the letter
+                on the space.  City-states should have the same icon and black
+                frame.
+          - name: 5. Place City-State Cards
+            text: >
+                For each city-state token placed on the board, place both
+                copies of that city-state's diplomacy card next to the board.
+                Return the rest to the box.
+          - name: 6. Set Direction Token and Event Dial
+            text: >
+                Place the barbarian direction token against any edge of the map
+                in any orientation.  Set the barbarian dial to the "helmet with
+                a star in it" and give this to the first player.
+          - name: 7. Separate Wonder Cards
+            text: Separate the wonder cards by their type (color).
+            sections:
+                - name: 3 Player Game
+                  text: >
+                      Return 1 random ancient era card from each pile to the
+                      game box without revealing it.
+                - name: 2 Player Game
+                  text: >
+                      Return one random ancient era card and one random
+                      medieval era card from each pile to the box without
+                      revealing them.
+          - name: 8. Create Wonder Decks
+            text: >
+                <p>For each pile of wonder cards, do the following:
+                <ol><li>Randomize the modern era of that type and place them
+                facedown</li>
+                <li>Randomize the medieval era cards of that type and place
+                them facedown on top of the modern era cards.</li>
+                <li>Randomize the ancient era cards of that type and place them
+                facedown on the medieval era cards.</li>
+                <li>Flip the top card of the deck faceup and place the deck
+                next to the board</li></ol></p>
+          - name: 9. Organize Wonder Tokens
+            text: >
+                Place the same colored wonder tokens near the corresponding
+                deck.
+          - name: 10. Deal Victory Cards
+            text: >
+                Place 3 random victory cards faceup next to the map.  Return
+                the remaining to the box.
+          - name: 11. Create Supply
+            text: >
+                Place the trade tokens and remaining resource tokens next to
+                the map to form the supply.
+    - name: The Player Turn
+      text: A player's turn consists of 3 steps
+      sections:
+          - name: 1. Choose a card
+            text: >
+                The player chooses one of the 5 cards in their focus row and
+                offsets it to show it was chosen.
+          - name: 2. Resolve the card
+            text: The player resolves the text on the card.
+          - name: 3. Reset the card
+            text: >
+                Pick up the chosen card, then move all cards in lower slots one
+                space to the right.  Then, place the chosen card in the first
+                slot.
+    - name: Spaces and Terrain
+      text: >
+          <p>Each hex on a map tile is a <b>space</b>.  Spaces each have a
+          <b>terrain</b> represented by different art.  There are 5 types of
+          terrain, each of which corresponds to a slot in the focus bar.</p>
+          <p><table><tr><th>Type</th><th>Slot</th></tr>
+          <tr><td>Grassland</td><td>1</td></tr>
+          <tr><td>Hills</td><td>2</td></tr>
+          <tr><td>Forest</td><td>3</td></tr>
+          <tr><td>Desert</td><td>4</td></tr>
+          <tr><td>Mountain</td><td>5</td></tr></table></p>
+          <p>Water has a difficulty of one, but players can't move onto water
+          unless a card specifically allows it</p>
+          <p>If a space appears to have more than 1 terrain, its terrain is the
+          type that covers the most area on the space.</p>
+    - name: Friendly and Rival
+      text: >
+          <p>All of the control tokens and plastic figures of a player's color
+          are <b>friendly</b> to that player.  All of the control tokens and
+          plastic figures of other colors are considered <b>rival</b> to that
+          player.</p>
+          <p>Caravans <b>do not</b> cause a space to be friendly or rival</p>
+    - name: Empty Spaces
+      text: >
+          Spaces are empty if they don't contain any tokens or plastic figures
+          of any kind.
+    - name: Resources and Natural Wonders
+      text: >
+          <p>Resources (marble, mercury, oil, and diamond) can be collected
+          and spent to build world wonders.</p>
+          <p>A natural wonder token can be used <b>once per turn</b> for the
+          resource depicted on the tile.  It is <b>not</b> returned to the
+          supply when used.</p>
+          <p>Spaces with a natural wonder <b>do not have a terrain type</b>.
+          However, <b>all natural wonder spaces have a difficulty of 5</b></p>
+    - name: Mature Cities
+      text: >
+          A city is mature when each space adjacent to it either contains
+          a friendly control token or is a water space.  Cities on the edge of
+          the map are easier to mature as there are less spaces to place
+          control tokens in.
+    - name: Focus Cards
+      text: >
+          <p>There are 5 types of focus cards.  Each is designated by its icon
+          in the upper left corner of the card.</p>
+          <p>Each focus card can be upgraded with more powerful versions.
+          If a focus card is upgraded, you always replace the same type of card
+          in your focus row.  i.e. A level 2, 3, or 4 <i>Science</i> card
+          can replace a lower level <i>Science</i> card in the focus row.</p>
+      sections:
+          - name: Culture
+            text: >
+                <p>These cards allow you to place control tokens on the map. 
+                The focus row slot determines the type of terrain that
+                control tokens can be placed on.</p>
+                <p>Unused control tokens can be placed on spaces <b>adjacent to
+                a friendly city</b>.  If the space contains a resource or
+                natural wonder, the player takes that token.</p>
+                <p>The player must obey these rules:
+                <ul><li>The player can't place the token on a water space or
+                on any space where the terrain corresponds to a higher focus
+                row slot. <b>All natural wonders are treated as a difficulty
+                of 5</b>.</li>
+                <li>The space can't contain a barbarian token.</li>
+                <li>The token must be place on its unreinforced side.</li></ul>
+                </p>
+          - name: Science
+            text: >
+                <p>The science focus card advances your tech dial.  The focus
+                row slot determines how much the dial advances.</p>
+                <p>If you advance to, or pass, a tech level on the dial, the
+                player gains a new focus card of that tech level and replaces
+                an existing focus card <b>of the same type</b> (Science must
+                replace Science, for example).</p>
+          - name: Economy
+            text: >
+                <p>Economy cards allow you to use your caravans and interact
+                with city-states and rival cities. The focus row slot
+                determines the terrain types that the caravan can move
+                onto.</p>
+                <p>A caravan on a player's economy card can only move onto 
+                the map out of a players <b>capital city or a mature city</b>
+                as though it was already in that city's space.</p>
+                <p>The player must obey the following rules:
+                <ul><li>The player cannot place or move a caravan onto water
+                or any space whose terrain corresponds to a higher focus row
+                slot.</li>
+                <li>The space can't contain a barbarian token.</li>
+                <li>The player can't move more than 1 caravan to the same
+                city or city-state during the same turn</li></ul></p>
+                <p>When moving onto a city or city-state, resolve the following
+                in order:
+                <ol><li>The player returns the caravan to their economy
+                card.</li>
+                <li>The player gains 2 trade tokens from the supply.
+                <ol type="a"><li><b>City-State:</b> The trade tokens are placed
+                on the card in their focus row that shares the city-state's
+                type</li>
+                <li><b>Rival City:</b> The trade tokens are placed on focus
+                cards in the player's focus row of their
+                choosing.</li></ol></li>
+                <li>The player may take one diplomacy card.
+                <ol type="a"><li><b>City-State:</b> If a copy of the
+                city-state's diplomacy card is available, the player takes a
+                copy of it.  <b>The player cannot take a second copy of that
+                city-state's diplomacy card!</b></li>
+                <li><b>Rival City:</b> The player chooses one of that rival
+                player's available diplomacy cards.  If the player already
+                has one of that rival player's diplomacy cards, they must
+                return it before taking another card from the
+                player</li></ol></li></ol></p>
+                <p>Other caravan rules:
+                <ul>li>Caravans can move through city-states and rival cities,
+                but they cannot stop and remain in those spaces</li>
+                <li>When a caravan moves to the space of a conquered city-state,
+                it resolves the effect of a rival city</li>
+                <li>After a caravan returns to the economy card, it can't move
+                again on that same turn.</li></ul></p>
+          - name: Industry
+            text: >
+                <p>The industry card allows a player to <b>either</b> build a
+                new city <b>or</b> build a world wonder.  When building a
+                city, the focus row slot determines the types of terrain the
+                player can build on.  If building a wonder, the number of
+                the focus row slot contributes toward the cost of the wonder</p>
+            sections:
+                - name: Building Cities
+                  text: >
+                      <p>Place an unused city on an empty space within the
+                      number of spaces indicated on the focus card, counting
+                      from <b>any friendly space</b>.</p>
+                      <p>The player must obey the following rules:
+                      <ul><li>The player cannot build on a space that contains
+                      any component other than a caravan or a friendly control
+                      token.  If built on a caravan, the components share the
+                      space.  If built on a control token, the token is removed
+                      from the map.</li>
+                      <li>The player can't build adjacent to a city or
+                      city-state</li>
+                      <li>The player cannot build on, or count through, a water
+                      space, or any space whose terrain corresponds to a
+                      higher focus row slot.</li>
+                      <li>The player can't count through a rival space or a
+                      barbarian token</li></ul></p>
+                - name: Build World Wonders
+                  text: >
+                      <p>A world wonder's (production) cost is in the lower
+                      left of the card.  Resources that a player can spend
+                      toward the purchase of the wonder are in the
+                      lower right.</p>
+                      <p>To build a wonder, the player pays the production
+                      cost, which is the sum of:
+                      <ul><li>The number of the industry card's focus row
+                      slot.</li>
+                      <li>2 production for each eligible resource that player
+                      spends.</li>
+                      <li>1 production for each trade token the player spends
+                      from the industry card.</li></ul></p>
+                      <p>If the production cost is met, the player takes the
+                      wonder card and the corresponding wonder tile and places
+                      it under a friendly city <b>that does not already have
+                      a wonder token under it</b>.  Then, reveal the next
+                      wonder card.</p>
+                      <p><b>A player cannot build a wonder if all of their
+                      cities already have a wonder token</b></p>
+          - name: Military
+            text: >
+                <p>Military cards allow a player to <b>either</b> reinforce
+                defenses <b>or</b> perform attacks.  The focus row slot affects
+                how many control tokens can be reinforce, or it affects the
+                strength of each attack.</p>
+            sections:
+                - name: Reinforcing Control Tokens
+                  text: >
+                      <p>Choose a number of control tokens up to the number
+                      of the military card's slot and flip the tokens to
+                      their reinforced side</p>
+                - name: Performing Attacks
+                  text: >
+                      <p>Attacks are used to defeat barbarians, conquer
+                      city-states, and capture rival territory.  To perform
+                      an attack, the player chooses a place to attack
+                      from and a target within the number of spaces
+                      indicated on the military card.</p>
+                      <p>The player must obey the following rules:
+                      <ul><li>The <b>defender</b> must be a barbarian token,
+                      city-state, rival city, or rival control token.</li>
+                      <li>The player can't count through a water space,
+                      a rival space, or a barbarian token.  The player
+                      <b>can</b> count through all other terrain regardless
+                      of the military card's slot.</li>
+                      <li>The player can't attack from a space that he or she
+                      attacked and took control of this turn.</li></ul></p>
+                      <p>Attack order:
+                      <ol><li><b>Choose Target:</b> The attacker chooses a
+                      space to attack from and a target to attack</li>
+                      <li><b>Attacker Rolls:</b> The attacker rolls a die and
+                      adds bonuses from the following sources:
+                      <ul><li>The number of their military focus card's
+                      slot.</li>
+                      <li>Bonuses on their cards and leader
+                      sheet.</li></ul></li>
+                      <li><b>Defender Rolls:</b> The defender rolls a die and
+                      adds the corresponding to the defender's type:
+                      <ul><li><b>City-State:</b> Bonus = 8</li>
+                      <li><b>Barbarian:</b> Bonus = Defending space's terrain
+                      difficulty</li>
+                      <li><b>Rival Space:</b> Bonus = The sum of the following:
+                      <ul><li>Defending space's terrain difficulty (double
+                      this if the defender is a city).</li>
+                      <li>+1 for each adjacent, friendly, reinforced control
+                      token.</li>
+                      <li>+1 if the defender is a reinforced control token.</li>
+                      <li>Card and leader sheet bonuses</li></ul></li></ul></li>
+                      <li><b>Spend Trade Tokens:</b> The attacker, and then
+                      the defender, have one chance to spend trade tokens from
+                      their military focus cards. +1 to combat value for each
+                      trade token spent.</li>
+                      <li><b>Compare Combat Values:</b> Player with the
+                      highest combat value wins (defender wins
+                      ties).</li></ol></p>
+                      <p>Other attacking rules:
+                      <ul><li>If a player unsuccessfully attacks a target, they
+                      cannot attack it again during the same turn</li>
+                      <li>If a player conquers a city or city-state and has
+                      no remaining cities to place, they place a reinforced
+                      control token instead.</li>
+                      <li>If a player must place a control token on a city-state
+                      or wonder token, they have still conquered that city-state
+                      or gained control of the wonder</li></p>
+                - name: Successful Attack Results
+                  sections:
+                      - name: City-State
+                        text: >
+                            <p>The attacker places the city-state token on the
+                            card in their focus row that shares the same type.
+                            Then the attacker places one of their unused cities
+                            on the space that held the city-state token.</p>
+                            <p>City-state tokens can be used as <b>1 trade
+                            token per turn</b> for that focus card <b>without
+                            removing it from their focus card</b></p>
+                            <p>All of the city-states diplomacy cards are
+                            returned to the supply and placed face down.</p>
+                            <p>If the city-state space was previously conquered
+                            by another player, the attacker has a choice.  They
+                            can replace the rival city with one of their own
+                            cities just as if they had conquered the city-state
+                            or they can "liberate" the city-state.  If the
+                            attacker chooses to liberate the city-state,
+                            the player returns the city-state token to the
+                            map, flips that city-state's diplomacy cards
+                            faceup, and takes one.</p>
+                      - name: Barbarian
+                        text: >
+                            The attacker removes the barbarian token from the
+                            map and takes one trade token from the supply and
+                            places it on any card in their focus row.
+                      - name: Control Token
+                        text: >
+                            The attacker replaces the token with 1 of their
+                            unused control tokens on its unreinforced side.
+                            If the token is on a natual wonder space, the
+                            attacker takes the natural wonder token.
+                      - name: Non-Capital City
+                        text: >
+                            <p>The attacker replaces the city with one of their
+                            unused cities.  If the space was a city-state,
+                            the attacker can choose to liberate it.</p>
+                            <p>If there is a wonder token under the defeated
+                            city, The attacker takes the matching wonder card.
+                            If the defending city was a capital city, the
+                            attacker must move the token to one of their
+                            cities.  If all of the attacker's cities currently
+                            have a wonder, the attacker cannot take the card
+                            or token.</p>
+                      - name: Capital City
+                        text: >
+                            The attacker takes up to 2 trade tokens from the
+                            defending player's focus cards and places them
+                            on their own focus cards, whereever they would
+                            like.
+    - name: Winning the Game
+      text: >
+          <p>Each victory card is divided into 2 agendas. The player must
+          complete <b>1</b> of the 2 agendas from <b>each</b> victory card.</p>
+          <p>When a player completes an agenda, they place a control token
+          under the card.  Even if the player later ceases to satisfy the
+          agenda, <b>the token remains and does not need to accomplish an
+          agenda on that card again</b>.</p>
+          <p>At the start of the 1st player's turn, if a player has completed
+          1 agenda on each victory card, that player wins.  If there is a tie,
+          the player with the most wonders wins.  If there is still a tie,
+          the player with the most friendly spaces wins.</p>
+    - name: The Event Dial
+      text: >
+          The event dial is not part of anyone's turn.  It is activated
+          <b>before</b> the 1st player's turn (except the first turn of the
+          game).  When it is the 1st player's turn, the dial is first rotated
+          clockwise 1 space and resolved.
+      sections:
+          - name: Barbarian Movement (helmet with an arrow)
+            text: >
+                <p>Each barbarian on the map moves <b>1</b> space. To
+                determine the direction, the 1st player rolls a die and moves
+                all the barbarians as indicated on the barbarian direction
+                token.</p>
+                <p>If a barbarian moves onto a space with a player component,
+                resolve the following effects:
+                <ul><li><b>Caravan:</b> The component is destroyed and returned
+                to the player's focus card</li>
+                <li><b>Unreinforced Control Token or Non-Capital City:</b>
+                The component is destroyed and returned to the player.</li>
+                <li><b>Reinforced Control Token:</b> The token is flipped to
+                its unreinforced side</li>
+                <li><b>Capital City:</b> The player chooses, then discards, a
+                total of 2 trade tokens from cards in their focus
+                row.</li></ul></p>
+                <p>If a barbarian moves onto water, they continue in the same
+                direction until they reach a non-water space.  If a barbarian
+                would move off the edge of the map, it moves in the opposite
+                direction instead.</p>
+                <p>Other movement rules:
+                <ul><li>If a barbarian reverses direction due to the edge of
+                the map or a reinforced control token and it reverses onto
+                a water space, it continues moving until it reaches a land
+                space</li>
+                <li>While a barbarian is in a city-state's space, caravans
+                cannot move into that space and the city-state <b>cannot be
+                attacked</b>.</li>
+                <li>After barbarians move, if there are multiple barbarians on
+                a space, roll a die and move 1 of the barbarians in the rolled
+                direction</li></ul></p>
+          - name: Barbarian Spawning (helmet with a star)
+            text: >
+                <p>All barbarians that were previously defeated are returned
+                to their corresponding (letters match) spaces on the map.</p>
+                <p>The barbarian <b>will only respawn if the matching space
+                is empty or only occupied by a caravan</b> (the caravan would
+                be destroyed).</p>
+          - name: Trade (trade token)
+            text: >
+                <p>All <b>mature cities</b> produce 1 trade token.  These can
+                be distributed on a player's focus row as they desire</p>
+    - name: Other Rules
+      sections:
+          - name: Control Tokens
+            text: >
+                <p><ul><li>When placing control tokens, they can be split
+                among multiple cities</li>
+                <li>If a player must place a control token, but has no more,
+                they can move a control token from another space on the
+                map.</li>
+                <li>If a control token is removed from a natural wonder,
+                the natural wonder token is placed back on its space on the
+                map.</li></ul></p>
+          - name: Focus Cards, Focus Row, and Tech Dial
+            text: >
+                <p><ul><li>When a player replaces a card in their focus row,
+                all trade tokens on that card are moved onto the 
+                replacement.</li>
+                <li>If a player reaches more than one tech level space on a
+                turn, they gain both spaces effects.</li>
+                <li>If a player's tech dial would go past space 24, the next
+                space is space 15.</li>
+                <li>A player can resolve a focus card for no effect.</li>
+                <li><b>Each focus row card is limited to a max of 3 trade
+                tokens</b>.  City-states do <b>not</b> count against this
+                limit.</li></ul></p>
+          - name: Other
+            text: >
+                <p><ul><li>All components except trade tokens are limited.</li>
+                <li>When a player takes a diplomacy card from another player,
+                its color must match that player's color, and it must currently
+                be in their deck.</li>
+                <li>When a player's component is destroyed, it is returned to
+                that player and can be used again.</li></ul><p>
