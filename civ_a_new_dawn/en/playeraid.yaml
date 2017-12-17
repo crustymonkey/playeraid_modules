@@ -231,7 +231,7 @@ sections:
                 return it before taking another card from the
                 player</li></ol></li></ol></p>
                 <p>Other caravan rules:
-                <ul>li>Caravans can move through city-states and rival cities,
+                <ul><li>Caravans can move through city-states and rival cities,
                 but they cannot stop and remain in those spaces</li>
                 <li>When a caravan moves to the space of a conquered city-state,
                 it resolves the effect of a rival city</li>
