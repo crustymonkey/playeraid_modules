@@ -65,5 +65,14 @@ In the `img` directory, you can add images that are referenced in your playeraid
 
 (Note that you can optionally specify a width and height for the image there)
 
+# Testing Your Module
+You can test your module by entering the text here: https://playeraid.net/test
+
+Note that this is primarily for testing the layout.
+
+## Things To Note About Testing
+* Images will not work.  They will appear broken
+* Your HTML code will **not** be rendered.  This is to prevent exploits on the site.  You'll be able to see what your layout looks like, and it will show you the escaped HTML.  It's pretty easy to test HTML locally using a `file://` url.
+
 # Future Plans
 I plan on adding in some other features to this at some point.  I'm thinking that I may allow an optional css file for more individualized styling.  I'm also open to suggestions if people have ideas for improving this.
