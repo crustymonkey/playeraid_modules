@@ -1,0 +1,96 @@
+name: Kingdomino
+description: Build your kingdom out of domino-like tiles.  <a href="https://boardgamegeek.com/boardgame/204583/kingdomino" target="_blank">See it on Boardgamegeek</a>
+credits: Jay Deiman
+enabled: true
+sections:
+    - name: Setup
+      text: >
+          <p>Give each player a castle, the matching "king" meeple, and a
+          square starting tile.  <b>If you are playing a 2 player game</b>,
+          each player should have 2 "king" meeples.</p>
+          <p>Each player should place their castle on their starting tile.</p>
+          <p>Shuffle the dominoes and place them in the insert so that neither
+          the numbers or the faces of the tiles can be seen. <b>If you are
+          playing a 2 player game</b>, play with 24 (half) randomly selected
+          dominoes.</p>
+    - name: The First Round
+      text: >
+          <p>The first round is slightly different than the remaining
+          rounds.</p>
+          <p>Take 4 dominoes and line them up numerically with the numbers
+          face up.  The lowest number should be at the top.  Then, flip them
+          over.</p>
+          <p>Randomly select a player order to start.  Then, in that order, each
+          player places their king meeple on a domino. <b>If you are playing
+          a 2 player game</b>, each player selects 2 dominoes with their 2 
+          "king" meeples.</p>
+          <p>When all dominoes are claimed, select 4 new dominoes and line them
+          up and order them, number side up, next to the selected dominoes.
+          Then, flip them over.</p>
+    - name: Playing a Round
+      text: >
+          <p>For all following rounds, players take 2 actions on their turn:
+          <ol><li>Add their selected domino to their kingdom.</li>
+          <li>Choose a new domino from the next line.</li></ol></p>
+          <p><b>If you are playing a 3 player game</b>, there will be 1 domino
+          left over after each selection.  This extra domino is discarded.</p>
+          <p>The playing order for a round is the order of the "king" meeples
+          that were placed (top to bottom, or lowest number to highest number).
+          </p>
+      sections:
+          - name: 1. Kingdom Building
+            text: >
+                <p>Dominoes are added to a kingdom using these <b>connection
+                rules</b>:
+                <ul><li>A kingdom may not be more than 5x5 squares</li>
+                <li>When connecting a domino to another domino, at least 2
+                connecting squares must have the same terrain type <b>(1 on
+                each domino)</b></li>
+                <li>All 4 sides of the starting tile are wild.  You can connect
+                any terrain to your starting tile.</li>
+                <li>Once a domino has been placed, it can't be moved.</li>
+                <li>If a player selects a domino that doens't fit (5x5 square
+                or can't match terrain), it is discarded.</li>
+                <li>Dominoes <b>cannot</b> be discarded if they can be legally
+                placed in a kingdom!</li></ol></p>
+          - name: 2. Domino Selection
+            text: >
+                <p>After adding a domino, the player can select any domino in
+                the new line, placing their "king" meeple on it.</p>
+                <p>After all players have placed their domino and selected
+                their next domino, take 4 new dominoes from the box, line them
+                up numerically and flip them.</p>
+    - name: End of Game
+      text: >
+          <p>The game ends when the last dominoes are placed in their
+          kingdoms (all dominoes have been removed from the box)</p>
+          <p>Now, calculate points per the following.  Remember, a territory
+          is a group of matching terrain squares that are <b>orthogonally</b>
+          connected (not diagonally).
+          <ul><li>For every territory, count the number of connecting terrain
+          squares and multiply that by the total number of crowns in that
+          territory.  <b>Territories without crowns do not score</b>.</li>
+          <li>Reminder: It is possible to have multiple territories of the same
+          terrain type, but if they aren't connected, <b>they are scored
+          separately</b></li></ul></p>
+          <p>Tie break: The player with the largest territory (most connecting
+          squares of the same terrain) wins.  If there is still a tie, the
+          players share the victory.</p>
+    - name: Variants
+      sections:
+          - name: The Mighty Duel (2 players)
+            text: >
+                <b>For advanced players!</b>  Do not remove any dominoes.  Use
+                all 48 dominoes so that each player creates a 7x7 grid.
+          - name: Harmony
+            text: >
+                Players get <b>5</b> bonus points if their kingdom forms a
+                complete grid (5x5 or 7x7) and has no gaps.
+          - name: Middle Kingdom
+            text: >
+                Players get <b>10</b> bonus points if their castle is centered
+                in their kingdom.
+          - name: Dynasty
+            text: >
+                Play 3 games in a row.  The player with the highest total number
+                of points wins.
