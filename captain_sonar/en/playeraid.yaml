@@ -1,32 +1,37 @@
 name: Captain Sonar
 description: Build your kingdom out of domino-like tiles.  <a href="https://www.boardgamegeek.com/boardgame/171131/captain-sonar" target="_blank">See it on Boardgamegeek</a>
 credits: Per Glode
-enabled: true
+enabled: false
 sections:
-    - name: Setup
+    - name: Dive
       text: >
-          <p>TBD</p>
-    - name: The First Round
-      text: >
-          <p>TBD</p>
-    - name: Playing a Round
-      text: >
-          <p>TBD</p>
+          <p>At game start and after finished Surfacing.</p>
       sections:
-          - name: 1. Kingdom Building
+          - name: Captain
             text: >
-                <p>TBD</p>
-          - name: 2. Domino Selection
-            text: >
-                <p>TBD</p>
-    - name: End of Game
+                <p>Shout "DIVE!"</p>
+                <p>Mark an X on the map.</p>
+    - name: Move
       text: >
-          <p>TBD</p>
-    - name: Variants
+          <p>Move towards the enemy, or away from the enemy</p>
       sections:
-          - name: Turn-by-Turn mode
+          - name: Captain
             text: >
-                <p>TBD</p>
-          - name: Real-time mode
+                <p>Shout "HEAD NORH/SOUTH/EAST/WEST."</p>
+                <p>Draw the route.</p>
+          - name: First Mate
             text: >
-                <p>TBD</p>
+                <p>Mark a gauge according to Captains NORH/SOUTH/EAST/WEST.</p>
+                <p>If gauge ready, shout "MINE/DRONE/SILENCE/TORPEDO/SONAR/SCENARIO READY".</p>
+                <p>If Engineer shouts DAMAGE mark one (of four) damage as sustained.</p>
+          - name: Engineer
+            text: >
+                <p>Cross out a symbol according to Captains NORH/SOUTH/EAST/WEST.</p>
+                <p>Check for Self-repairing.</p>
+                <p>If damage due to radiation breakdown, shout "DAMAGE!"</p>
+                <p>If damage due to complete area breakdown, shout "DAMAGE!"</p>
+                <p>If damage erase all breakdown symbols.</p>
+          - name: Enemy Radio Operator
+            text: >
+                <p>Plot the alleged NORH/SOUTH/EAST/WEST on the overlay.</p>
+                <p>Use the plot to determine possible enemy location.</p>
