@@ -1,0 +1,32 @@
+name: Captain Sonar
+description: Build your kingdom out of domino-like tiles.  <a href="https://www.boardgamegeek.com/boardgame/171131/captain-sonar" target="_blank">See it on Boardgamegeek</a>
+credits: Per Glode
+enabled: true
+sections:
+    - name: Setup
+      text: >
+          <p>TBD</p>
+    - name: The First Round
+      text: >
+          <p>TBD</p>
+    - name: Playing a Round
+      text: >
+          <p>TBD</p>
+      sections:
+          - name: 1. Kingdom Building
+            text: >
+                <p>TBD</p>
+          - name: 2. Domino Selection
+            text: >
+                <p>TBD</p>
+    - name: End of Game
+      text: >
+          <p>TBD</p>
+    - name: Variants
+      sections:
+          - name: Turn-by-Turn mode
+            text: >
+                <p>TBD</p>
+          - name: Real-time mode
+            text: >
+                <p>TBD</p>
