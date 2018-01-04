@@ -4,116 +4,140 @@ credits: Per Glode
 enabled: false
 sections:
     - name: Dive
-      text: >
+      text:
           <p>At game start and after finished Surfacing.</p>
       sections:
           - name: Captain
-            text: >
+            text:
                 <p>Shout "DIVE!"</p>
                 <p>Mark an X on the map.</p>
     - name: Move
-      text: >
+      text:
           <p>Move towards the enemy, or away from the enemy</p>
       sections:
           - name: Captain
-            text: >
+            text:
                 <p>Shout "HEAD NORTH/SOUTH/EAST/WEST."</p>
                 <p>Draw the route.</p>
           - name: First Mate
-            text: >
+            text:
                 <p>Mark a gauge according to Captains NORTH/SOUTH/EAST/WEST.</p>
                 <p>If gauge ready, shout "MINE/DRONE/SILENCE/TORPEDO/SONAR/SCENARIO READY".</p>
                 <p>If Engineer shouts DAMAGE mark one (of four) damage as sustained.</p>
                 <p>If 4 damage shout "GAME OVER!"</p>
           - name: Engineer
-            text: >
+            text:
                 <p>Cross out a symbol according to Captains NORTH/SOUTH/EAST/WEST.</p>
                 <p>Check for Self-repairing.</p>
                 <p>If damage due to radiation breakdown, shout "DAMAGE!"</p>
                 <p>If damage due to complete area breakdown, shout "DAMAGE!"</p>
                 <p>If damage erase all breakdown symbols.</p>
           - name: Enemy Radio Operator
-            text: >
+            text:
                 <p>Plot the alleged NORTH/SOUTH/EAST/WEST on the overlay.</p>
                 <p>Use the plot to determine possible enemy location.</p>
     - name: Mine dropping
-      text: >
+      text:
           <p>Drop a mine near the current location. The mine may be triggered later when you think the enemy is near.</p>
       sections:
           - name: Captain
-            text: >
+            text:
                 <p>Check the red (mine, torpedo) breakdown status YES/NO with the engineer.</p>
                 <p>If YES, shout "MINE DROPPED!"</p>
                 <p>Mark an M on and adjacent space to mark the mine location.</p>
           - name: First Mate
-            text: >
+            text:
                 <p>If the mine gauge is not fully marked, abort the erroneous mine drop.</p>
                 <p>Erase all marks on the mine gaugue.</p>
           - name: Engineer
-            text: >
+            text:
                 <p>Answer the Captains red (mine, torpedo) breakdown status question "YES/NO".</p>
           - name: Enemy Radio Operator
-            text: >
+            text:
                 <p>Try to mark the suspicious mine location if possible.</p>
     - name: Mine Triggering
-      text: >
+      text:
           <p>An earlier dropped mine marked as M may be triggered to possibly impact the enemy.</p>
       sections:
           - name: Radio Operator
-            text: >
+            text:
                 <p>If the enemy admits to be hit by the impact, make a note.</p>
           - name: Captain
-            text: >
+            text:
                 <p>Check the red (mine, torpedo) breakdown status YES/NO with the engineer.</p>
                 <p>If YES, shout "MINE TRIGGERED, IMPACT IN C6!"</p>
           - name: Engineer
-            text: >
+            text:
                 <p>Answer the Captains red (mine, torpedo) breakdown status question "YES/NO".</p>
           - name: Enemy Radio Operator
-            text: >
+            text:
                 <p>Make a note that the enemy once passed adjacent to the impact space.</p>
           - name: Enemy Captain
-            text: >
+            text:
                 <p>If two or more spaces away from impact, shout "ALL CLEAR!"</p>
                 <p>If one space away from impact, shout "INDIRECT HIT, ONE DAMAGE!"</p>
                 <p>If at the impact, shout "DIRECT HIT, TWO DAMAGE!"</p>
-                <p>If a mine was directly at the impact, it is removed."</p>
+                <p>If a mine was directly at the impact, it is removed.</p>
           - name: Enemy First Mate
-            text: >
+            text:
                 <p>If damage, mark the damage checkbox accordingly.</p>
                 <p>If 4 damage shout "GAME OVER!"</p>
     - name: Torpedo Launch
-      text: >
-          <p>TBD</p>
+      text:
+          <p>Launch a torpedo at the assumed enemy submarine.</p>
       sections:
+          - name: Radio Operator
+            text:
+                <p>If the enemy admits to be hit by the impact, make a note.</p>
           - name: Captain
-            text: >
-                <p>TBD.</p>
+            text:
+                <p>Check the red (mine, torpedo) breakdown status YES/NO with the engineer.</p>
+                <p>If YES, shout "TORPEDO LAUNCHED, IMPACT IN C6!"</p>
+          - name: First Mate
+            text:
+                <p>If the torpedo gauge is not fully marked, abort the erroneous operation.</p>
+                <p>Erase all marks on the torpedo gaugue.</p>
+          - name: Engineer
+            text:
+                <p>Answer the Captains red (mine, torpedo) breakdown status question "YES/NO".</p>
+          - name: Enemy Radio Operator
+            text:
+                <p>Make a note that the firing submarine is within 4 spaces of impact space.</p>
+          - name: Enemy Captain
+            text:
+                <p>If two or more spaces away from impact, shout "ALL CLEAR!"</p>
+                <p>If one space away from impact, shout "INDIRECT HIT, ONE DAMAGE!"</p>
+                <p>If at the impact, shout "DIRECT HIT, TWO DAMAGE!"</p>
+                <p>If a mine was directly at the impact, it is removed.</p>
+          - name: Enemy First Mate
+            text:
+                <p>If damage, mark the damage checkbox accordingly.</p>
+                <p>If 4 damage shout "GAME OVER!"</p>
     - name: Launch a drone
-      text: >
+      text:
           <p>TBD</p>
       sections:
           - name: Captain
-            text: >
+            text:
                 <p>TBD.</p>
     - name: Activating Sonar
-      text: >
+      text:
           <p>TBD</p>
       sections:
           - name: Captain
-            text: >
+            text:
                 <p>TBD.</p>
     - name: Activating silence
-      text: >
+      text:
           <p>TBD</p>
       sections:
           - name: Captain
-            text: >
+            text:
                 <p>TBD.</p>
     - name: Surfacing
-      text: >
+      text:
           <p>TBD</p>
       sections:
           - name: Captain
-            text: >
+            text:
                 <p>TBD.</p>
