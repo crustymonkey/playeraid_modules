@@ -37,11 +37,23 @@ sections:
                 <p>Use the plot to determine possible enemy location.</p>
     - name: Mine dropping
       text: >
-          <p>TBD</p>
+          <p>Drop a mine near the current location. The mine may be triggered later when you think the enemy is near.</p>
       sections:
           - name: Captain
             text: >
-                <p>TBD.</p>
+                <p>Check the red (mines, torpedoes) breakdown status YES/NO with the engineer.</p>
+                <p>If YES, shout "MINE DROPPED!"</p>
+                <p>Mark an M on and adjacent space to mark the mines location.</p>
+          - name: First Mate
+            text: >
+                <p>If the mine gauge is not fully marked, abort the erroneous mine drop.</p>
+                <p>Erase all marks on the mine gaugue.</p>
+          - name: Engineer
+            text: >
+                <p>Answer the Captains red (mines, torpedoes) breakdown status question "YES/NO".</p>
+          - name: Enemy Radio Operator
+            text: >
+                <p>Try to mark the suspicious mine location if possible.</p>
     - name: Torpedo Launch
       text: >
           <p>TBD</p>
