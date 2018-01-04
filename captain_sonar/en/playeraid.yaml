@@ -1,5 +1,5 @@
 name: Captain Sonar
-description: Hunt the enemy submarine.  <a href="https://boardgamegeek.com/boardgame/204583/kingdomino" target="_blank">See it on Boardgamegeek</a>
+description: Hunt the enemy submarine, a two team 4+4 player submarine duel. <a href="https://boardgamegeek.com/boardgame/204583/kingdomino">See it on Boardgamegeek</a>
 credits: Per Glode
 enabled: false
 sections:
@@ -17,21 +17,70 @@ sections:
       sections:
           - name: Captain
             text: >
-                <p>Shout "HEAD NORH/SOUTH/EAST/WEST."</p>
+                <p>Shout "HEAD NORTH/SOUTH/EAST/WEST."</p>
                 <p>Draw the route.</p>
           - name: First Mate
             text: >
-                <p>Mark a gauge according to Captains NORH/SOUTH/EAST/WEST.</p>
+                <p>Mark a gauge according to Captains NORTH/SOUTH/EAST/WEST.</p>
                 <p>If gauge ready, shout "MINE/DRONE/SILENCE/TORPEDO/SONAR/SCENARIO READY".</p>
                 <p>If Engineer shouts DAMAGE mark one (of four) damage as sustained.</p>
           - name: Engineer
             text: >
-                <p>Cross out a symbol according to Captains NORH/SOUTH/EAST/WEST.</p>
+                <p>Cross out a symbol according to Captains NORTH/SOUTH/EAST/WEST.</p>
                 <p>Check for Self-repairing.</p>
                 <p>If damage due to radiation breakdown, shout "DAMAGE!"</p>
                 <p>If damage due to complete area breakdown, shout "DAMAGE!"</p>
                 <p>If damage erase all breakdown symbols.</p>
           - name: Enemy Radio Operator
             text: >
-                <p>Plot the alleged NORH/SOUTH/EAST/WEST on the overlay.</p>
+                <p>Plot the alleged NORTH/SOUTH/EAST/WEST on the overlay.</p>
                 <p>Use the plot to determine possible enemy location.</p>
+    - name: Mine dropping
+      text: >
+          <p>TBD</p>
+      sections:
+          - name: Captain
+            text: >
+                <p>TBD.</p>
+    - name: Torpedo Launch
+      text: >
+          <p>TBD</p>
+      sections:
+          - name: Captain
+            text: >
+                <p>TBD.</p>
+    - name: Mine Triggering
+      text: >
+          <p>TBD</p>
+      sections:
+          - name: Captain
+            text: >
+                <p>TBD.</p>
+    - name: Launch a drone
+      text: >
+          <p>TBD</p>
+      sections:
+          - name: Captain
+            text: >
+                <p>TBD.</p>
+    - name: Activating Sonar
+      text: >
+          <p>TBD</p>
+      sections:
+          - name: Captain
+            text: >
+                <p>TBD.</p>
+    - name: Activating silence
+      text: >
+          <p>TBD</p>
+      sections:
+          - name: Captain
+            text: >
+                <p>TBD.</p>
+    - name: Surfacing
+      text: >
+          <p>TBD</p>
+      sections:
+          - name: Captain
+            text: >
+                <p>TBD.</p>
