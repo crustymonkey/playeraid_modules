@@ -34,18 +34,18 @@ sections:
             - name: First Mate
               text:
                   <p>Mark a gauge according to Captains NORTH/SOUTH/EAST/WEST.</p>
-                  <p>If gauge ready, shout "MINE/DRONE/SILENCE/TORPEDO/SONAR/SCENARIO READY".</p>
-                  <p>If Engineer shouts DAMAGE mark one (of four) damage as sustained.</p>
-                  <p>If 4 damage shout "GAME OVER!"</p>
-                  <p>When ready shout "OK!"</p>
+                  <p>If gauge ready, announce "MINE/DRONE/SILENCE/TORPEDO/SONAR/SCENARIO READY".</p>
+                  <p>If Engineer announce DAMAGE mark one (of four) damage as sustained.</p>
+                  <p>If 4 damage announce "GAME OVER!"</p>
+                  <p>When ready announce "OK!"</p>
             - name: Engineer
               text:
                   <p>Cross out a symbol according to Captains NORTH/SOUTH/EAST/WEST.</p>
                   <p>Check for Self-repairing. Erase breakdown symbols before damage checks.</p>
-                  <p>If damage due to radiation breakdown, shout "DAMAGE!"</p>
-                  <p>If damage due to complete area breakdown, shout "DAMAGE!"</p>
+                  <p>If damage due to radiation breakdown, announce "DAMAGE!"</p>
+                  <p>If damage due to complete area breakdown, announce "DAMAGE!"</p>
                   <p>If damage erase all breakdown symbols.</p>
-                  <p>When ready shout "OK!"</p>
+                  <p>When ready announce "OK!"</p>
             - name: Enemy Radio Operator
               text:
                   <p>Plot the alleged NORTH/SOUTH/EAST/WEST on the overlay.</p>
@@ -67,7 +67,7 @@ sections:
             - name: Captain
               text:
                   <p>Check the red (mine, torpedo) breakdown status YES/NO with the engineer.</p>
-                  <p>If YES, shout "MINE DROPPED!"</p>
+                  <p>If YES, announce "MINE DROPPED!"</p>
                   <p>Mark an M on and adjacent space to mark the mine location.</p>
             - name: First Mate
               text:
@@ -89,7 +89,7 @@ sections:
             - name: Captain
               text:
                   <p>Check the red (mine, torpedo) breakdown status YES/NO with the engineer.</p>
-                  <p>If YES, shout "MINE TRIGGERED, IMPACT IN C6!"</p>
+                  <p>If YES, announce "MINE TRIGGERED, IMPACT IN C6!"</p>
             - name: Engineer
               text:
                   <p>Answer the Captains red (mine, torpedo) breakdown status question "YES/NO".</p>
@@ -98,14 +98,14 @@ sections:
                   <p>Make a note that the enemy once passed adjacent to the impact space.</p>
             - name: Enemy Captain
               text:
-                  <p>If two or more spaces away from impact, shout "ALL CLEAR!"</p>
-                  <p>If one space away from impact, shout "INDIRECT HIT, ONE DAMAGE!"</p>
-                  <p>If at the impact, shout "DIRECT HIT, TWO DAMAGE!"</p>
+                  <p>If two or more spaces away from impact, announce "ALL CLEAR!"</p>
+                  <p>If one space away from impact, announce "INDIRECT HIT, ONE DAMAGE!"</p>
+                  <p>If at the impact, announce "DIRECT HIT, TWO DAMAGE!"</p>
                   <p>If a mine was directly at the impact, it is removed.</p>
             - name: Enemy First Mate
               text:
                   <p>If damage, mark the damage checkbox accordingly.</p>
-                  <p>If 4 damage shout "GAME OVER!"</p>
+                  <p>If 4 damage announce "GAME OVER!"</p>
       - name: Torpedo Launch
         text:
             <p>Launch a torpedo at the assumed enemy submarine.</p>
@@ -116,7 +116,7 @@ sections:
             - name: Captain
               text:
                   <p>Check the red (mine, torpedo) breakdown status YES/NO with the engineer.</p>
-                  <p>If YES, shout "TORPEDO LAUNCHED, IMPACT IN C6!"</p>
+                  <p>If YES, announce "TORPEDO LAUNCHED, IMPACT IN C6!"</p>
             - name: First Mate
               text:
                   <p>If the torpedo gauge is not fully marked, abort the erroneous operation.</p>
@@ -129,14 +129,14 @@ sections:
                   <p>Make a note that the firing submarine is within 4 spaces of impact space.</p>
             - name: Enemy Captain
               text:
-                  <p>If two or more spaces away from impact, shout "ALL CLEAR!"</p>
-                  <p>If one space away from impact, shout "INDIRECT HIT, ONE DAMAGE!"</p>
-                  <p>If at the impact, shout "DIRECT HIT, TWO DAMAGE!"</p>
+                  <p>If two or more spaces away from impact, announce "ALL CLEAR!"</p>
+                  <p>If one space away from impact, announce "INDIRECT HIT, ONE DAMAGE!"</p>
+                  <p>If at the impact, announce "DIRECT HIT, TWO DAMAGE!"</p>
                   <p>If a mine was directly at the impact, it is removed.</p>
             - name: Enemy First Mate
               text:
                   <p>If damage, mark the damage checkbox accordingly.</p>
-                  <p>If 4 damage shout "GAME OVER!"</p>
+                  <p>If 4 damage announce "GAME OVER!"</p>
       - name: Launch a drone
         text:
             <p>TBD</p>
