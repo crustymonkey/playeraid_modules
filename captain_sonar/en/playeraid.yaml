@@ -21,7 +21,7 @@ sections:
         sections:
             - name: Captain
               text:
-                  <p>Shout "DIVE!"</p>
+                  <p>Announce "DIVE!"</p>
                   <p>Mark an X on the map.</p>
       - name: Move
         text:
@@ -29,7 +29,7 @@ sections:
         sections:
             - name: Captain
               text:
-                  <p>Shout "HEAD NORTH/SOUTH/EAST/WEST."</p>
+                  <p>Announce "HEAD NORTH/SOUTH/EAST/WEST."</p>
                   <p>Draw the route.</p>
             - name: First Mate
               text:
