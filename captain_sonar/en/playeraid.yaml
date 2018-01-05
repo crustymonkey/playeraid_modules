@@ -3,6 +3,15 @@ description: Hunt the enemy submarine, a two team 4+4 player submarine duel. <a 
 credits: Per Glode
 enabled: false
 sections:
+  - name: Set up
+    text: <p>TBD.</p>
+    sections:
+        - name: Captain
+          text:
+              <p>Mark an X on the map.</p>
+  - name: Rounds
+    text: <p>TBD.</p>
+    sections:
     - name: Dive
       text:
           <p>At game start and after finished Surfacing.</p>
@@ -13,7 +22,7 @@ sections:
                 <p>Mark an X on the map.</p>
     - name: Move
       text:
-          <p>Move towards the enemy, or away from the enemy</p>
+          <p>Move towards the enemy, or away from the enemy. A move must not cross the previous path, cross land or cross the location of a placed mine.</p>
       sections:
           - name: Captain
             text:
@@ -25,13 +34,15 @@ sections:
                 <p>If gauge ready, shout "MINE/DRONE/SILENCE/TORPEDO/SONAR/SCENARIO READY".</p>
                 <p>If Engineer shouts DAMAGE mark one (of four) damage as sustained.</p>
                 <p>If 4 damage shout "GAME OVER!"</p>
+                <p>When ready shout "OK!"</p>
           - name: Engineer
             text:
                 <p>Cross out a symbol according to Captains NORTH/SOUTH/EAST/WEST.</p>
-                <p>Check for Self-repairing.</p>
+                <p>Check for Self-repairing. Erase breakdown symbols before damage checks.</p>
                 <p>If damage due to radiation breakdown, shout "DAMAGE!"</p>
                 <p>If damage due to complete area breakdown, shout "DAMAGE!"</p>
                 <p>If damage erase all breakdown symbols.</p>
+                <p>When ready shout "OK!"</p>
           - name: Enemy Radio Operator
             text:
                 <p>Plot the alleged NORTH/SOUTH/EAST/WEST on the overlay.</p>
