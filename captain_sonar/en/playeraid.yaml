@@ -8,47 +8,49 @@ sections:
     sections:
         - name: Captain
           text:
-              <p>Mark an X on the map.</p>
+              <p>Mark an X as the current location on the map.</p>
+        - name: All others
+          text:
+              <p>Erase every marker and trail.</p>
   - name: Rounds
-    text: <p>TBD.</p>
+    text: <p>A round consists of a Movement and then an optional activation.</p>
     sections:
     - name: Movement
-      text: <p>TBD.</p>
+      text: <p>The Captain decides where to move.</p>
       sections:
       - name: Dive
         text:
-            <p>At game start and after finished Surfacing.</p>
+            <p>At game start or after a finished Surfacing. Proceed immediately with a Move operation.</p>
         sections:
             - name: Captain
               text:
                   <p>Announce <b>DIVE!</b></p>
-                  <p>Mark an X on the map.</p>
       - name: Move
         text:
             <p>Move towards the enemy, or away from the enemy. A move must not cross the previous path, cross land or cross the location of a placed mine.</p>
         sections:
             - name: Captain
               text:
-                  <p>Announce <b>HEAD NORTH/SOUTH/EAST/WEST.</b></p>
+                  <p>Announce <b>HEAD NORTH / SOUTH / EAST / WEST</b>.</p>
                   <p>Draw the route.</p>
             - name: First Mate
               text:
-                  <p>Mark a gauge according to Captains NORTH/SOUTH/EAST/WEST.</p>
-                  <p>If gauge ready, announce <b>MINE/DRONE/SILENCE/TORPEDO/SONAR/SCENARIO READY</b>.</p>
+                  <p>Mark a gauge according to Captains north / south / east / west announcement.</p>
+                  <p>If gauge ready, announce <b>MINE / DRONE / SILENCE / TORPEDO / SONAR / SCENARIO READY</b>.</p>
                   <p>If Engineer announce DAMAGE mark one (of four) damage as sustained.</p>
                   <p>If 4 damage announce <b>GAME OVER!</b></p>
-                  <p>When ready announce <b>OK!</b></p>
+                  <p>When ready announce <b>OK</b>.</p>
             - name: Engineer
               text:
-                  <p>Cross out a symbol according to Captains NORTH/SOUTH/EAST/WEST.</p>
+                  <p>Cross out a symbol according to the Captains north / south / east / west announcement.</p>
                   <p>Check for Self-repairing. Erase breakdown symbols before damage checks.</p>
                   <p>If damage due to radiation breakdown, announce <b>DAMAGE!</b></p>
                   <p>If damage due to complete area breakdown, announce <b>DAMAGE!</b></p>
                   <p>If damage erase all breakdown symbols.</p>
-                  <p>When ready announce <b>OK!</b></p>
+                  <p>When ready announce <b>OK</b>.</p>
             - name: Enemy Radio Operator
               text:
-                  <p>Plot the alleged NORTH/SOUTH/EAST/WEST on the overlay.</p>
+                  <p>Plot the alleged north / south / east / west on the overlay.</p>
                   <p>Use the plot to determine possible enemy location.</p>
       - name: Surfacing
         text:
@@ -58,7 +60,8 @@ sections:
               text:
                   <p>TBD.</p>
     - name: Activation
-      text: <p>TBD.</p>
+      text: <p>The Captain announce an activation with <b>STOP!</b> and raising his fist.</p>
+            <p>The First Mate can announce an activation of drone or sonar if the Captain has not yet done an activation.</p>
       sections:
       - name: Mine dropping
         text:
@@ -66,16 +69,16 @@ sections:
         sections:
             - name: Captain
               text:
-                  <p>Check the red (mine, torpedo) breakdown status YES/NO with the engineer.</p>
+                  <p>Check the red (mine, torpedo) breakdown status with the engineer.</p>
                   <p>If YES, announce <b>MINE DROPPED!</b></p>
-                  <p>Mark an M on and adjacent space to mark the mine location.</p>
+                  <p>Mark an M on an adjacent space to mark the mine location.</p>
             - name: First Mate
               text:
                   <p>If the mine gauge is not fully marked, abort the erroneous mine drop.</p>
                   <p>Erase all marks on the mine gaugue.</p>
             - name: Engineer
               text:
-                  <p>Answer the Captains red (mine, torpedo) breakdown status question <b>YES/NO</b>.</p>
+                  <p>Answer the Captains red (mine, torpedo) breakdown status question <b>YES / NO</b>.</p>
             - name: Enemy Radio Operator
               text:
                   <p>Try to mark the suspicious mine location if possible.</p>
@@ -88,11 +91,11 @@ sections:
                   <p>If the enemy admits to be hit by the impact, make a note.</p>
             - name: Captain
               text:
-                  <p>Check the red (mine, torpedo) breakdown status YES/NO with the engineer.</p>
+                  <p>Check the red (mine, torpedo) breakdown status with the engineer.</p>
                   <p>If YES, announce <b>MINE TRIGGERED, IMPACT IN C6!</b></p>
             - name: Engineer
               text:
-                  <p>Answer the Captains red (mine, torpedo) breakdown status question <b>YES/NO</b>.</p>
+                  <p>Answer the Captains red (mine, torpedo) breakdown status question <b>YES / NO</b>.</p>
             - name: Enemy Radio Operator
               text:
                   <p>Make a note that the enemy once passed adjacent to the impact space.</p>
@@ -115,15 +118,15 @@ sections:
                   <p>If the enemy admits to be hit by the impact, make a note.</p>
             - name: Captain
               text:
-                  <p>Check the red (mine, torpedo) breakdown status YES/NO with the engineer.</p>
+                  <p>Check the red (mine, torpedo) breakdown status with the engineer.</p>
                   <p>If YES, announce <b>TORPEDO LAUNCHED, IMPACT IN C6!</b></p>
             - name: First Mate
               text:
-                  <p>If the torpedo gauge is not fully marked, abort the erroneous operation.</p>
+                  <p>If the torpedo gauge is not fully marked, abort the erroneous activation.</p>
                   <p>Erase all marks on the torpedo gaugue.</p>
             - name: Engineer
               text:
-                  <p>Answer the Captains red (mine, torpedo) breakdown status question <b>YES/NO</b>.</p>
+                  <p>Answer the Captains red (mine, torpedo) breakdown status question <b>YES / NO</b>.</p>
             - name: Enemy Radio Operator
               text:
                   <p>Make a note that the firing submarine is within 4 spaces of impact space.</p>
@@ -141,9 +144,24 @@ sections:
         text:
             <p>TBD</p>
         sections:
+            - name: Radio Operator
+              text:
+                  <p>Mark the enemy Captains answer on the map.</p>
             - name: Captain
               text:
-                  <p>TBD.</p>
+                  <p>Check the green (drone, sonar) breakdown status with the engineer.</p>
+                  <p>If YES, announce <b>ARE YOU IN SECTOR 3?</b></p>
+            - name: First Mate
+              text:
+                  <p>Can announce an activation of drone if the Captain has not yet done an activation.</p>
+                  <p>If the drone gauge is not fully marked, abort the erroneous activation.</p>
+                  <p>Erase all marks on the drone gaugue.</p>
+            - name: Engineer
+              text:
+                  <p>Answer the Captains green (drone, sonar) breakdown status question <b>YES / NO</b>.</p>
+            - name: Enemy Captain
+              text:
+                  <p>Answer <b>YES / NO</b> to Are you in sector 3?</p>
       - name: Activating Sonar
         text:
             <p>TBD</p>
