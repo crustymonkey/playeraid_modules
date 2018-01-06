@@ -4,16 +4,31 @@ credits: Per Glode
 enabled: false
 sections:
   - name: Set up
-    text: <p>TBD.</p>
+    text: <p>This text only describe the turn-by-turn rules for the first scenario, not the real-time mode.</p>
     sections:
+        - name: Radio Operator
+          text:
+              <p>Take the Radio Operator functions Alpha map sheet with the light turn-by-turn side up, blue for team 1, yellow for team 2.</p>
+              <p>Take a transparent overlay.</p>
+              <p>Erase every marker and trail on both sheets.</p>
         - name: Captain
           text:
-              <p>Mark an X as the current location on the map.</p>
-        - name: All others
-          text:
+              <p>Take the Captain functions Alpha map sheet with the light turn-by-turn side up, blue for team 1, yellow for team 2.</p>
               <p>Erase every marker and trail.</p>
+              <p>Mark an X as the current location on the map visible for your team only.</p>
+        - name: First Mate
+          text:
+              <p>Take the First Mate functions sheet with the light turn-by-turn side up, blue for team 1, yellow for team 2.</p>
+              <p>There may be a printing error, the yellow side may say Radio Operator functions erroneously.</p>
+              <p>Erase every marker.</p>
+        - name: Engineer
+          text:
+              <p>Take the Engineer functions sheet with the light turn-by-turn side up, blue for team 1, yellow for team 2.</p>
+              <p>Beware that there is a design error, the Submarine profile is not used in turn-by-turn mode, and should only be printed on the real-time side.</p>
+              <p>Erase every marker.</p>
   - name: Rounds
-    text: <p>A round consists of a Movement and then an optional activation.</p>
+    text: <p>A round consists of a Movement and then an optional activation while diving, or a passive delay round while surfacing.</p>
+          <p>Alternate taking rounds until a submarine is destroyed.</p>
     sections:
     - name: Movement
       text: <p>The Captain decides where to move.</p>
@@ -39,14 +54,14 @@ sections:
                   <p>If gauge ready, announce <b>MINE / DRONE / SILENCE / TORPEDO / SONAR / SCENARIO READY</b>.</p>
                   <p>If Engineer announce DAMAGE mark one (of four) damage as sustained.</p>
                   <p>If 4 damage announce <b>GAME OVER!</b></p>
-                  <p>When ready announce <b>OK</b>.</p>
+                  <p>When Engineer is ready and you are ready announce <b>OK</b>.</p>
             - name: Engineer
               text:
                   <p>Cross out a symbol according to the Captains north / south / east / west announcement.</p>
-                  <p>Check for Self-repairing. Erase breakdown symbols before damage checks.</p>
+                  <p>Check for Self-repairing. If self-repairing, erase those damages, no breakdown will occur.</p>
                   <p>If damage due to radiation breakdown, announce <b>DAMAGE!</b></p>
                   <p>If damage due to complete area breakdown, announce <b>DAMAGE!</b></p>
-                  <p>If damage erase all breakdown symbols.</p>
+                  <p>If damage, erase all breakdown symbols.</p>
                   <p>When ready announce <b>OK</b>.</p>
             - name: Enemy Radio Operator
               text:
