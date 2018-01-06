@@ -10,11 +10,11 @@ sections:
     sections:
         - name: Radio Operator
           text:
-              <ul><li>Take the Radio Operator functions Alpha map sheet with
+              Take the Radio Operator functions Alpha map sheet with
               the light turn-by-turn side up, blue for team 1, yellow for team
-              2.</li>
+              2.
               <li>Take a transparent overlay.</li>
-              <li>Erase every marker and trail on both sheets.</li></ul>
+              <li>Erase every marker and trail on both sheets.</li>
         - name: Captain
           text:
               <ul><li>Take the Captain functions Alpha map sheet with the light
