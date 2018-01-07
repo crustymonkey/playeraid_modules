@@ -38,8 +38,8 @@ sections:
               real-time side.
               Erase every marker.
   - name: Rounds
-    text: A round consists of a Movement and then an optional activation while
-          diving, or a passive delay round while surfacing.
+    text: A round consists of a Movement and then an optional Activation,
+          or one (out of three) passive delay rounds while surfacing.
           Alternate taking rounds until a submarine is destroyed.
     sections:
     - name: Movement
@@ -92,13 +92,28 @@ sections:
                   Use the plot to determine possible enemy location.
       - name: Surfacing
         text:
-            <p>TBD</p>
+            <p>Instead of moving, the Captain may declare to have 3
+            rounds in surface mode, doing reparations.</p>
         sections:
             - name: Captain
               text:
-                  <p>TBD.</p>
+                  <p>Announce <b>SURFACE IN SECTOR 3!</b></p>
+            - name: Engineer
+              text:
+                  Erase all damage.
+            - name: First Mate
+              text:
+                  All markers remain. No erasure.
+            - name: Radio Operator
+              text:
+                  You may not plot anything while at the surface.
+                  You may listen and plot after Dive.
+            - name: Enemy Radio Operator
+              text:
+                  Use the sector to determine possible enemy location.
     - name: Activation
-      text: The Captain announce an activation with <b>STOP!</b> and raising
+      text: After a Move,
+            the Captain announce an activation with <b>STOP!</b> and raising
             his fist.
             The First Mate can announce an activation of drone or sonar if the
             Captain has not yet done an activation.
@@ -120,7 +135,8 @@ sections:
               text:
                   If the mine gauge is not fully marked, abort the
                   erroneous mine drop.
-                  <li>Erase all marks on the mine gaugue.</li>
+                  <li>If Engineer say yes,
+                  erase all marks on the mine gaugue.</li>
             - name: Captain (2)
               text:
                   If YES, announce <b>MINE DROPPED!</b>
@@ -174,25 +190,28 @@ sections:
             - name: Radio Operator
               text:
                   If the enemy admits to be hit by the impact, make a note.
-            - name: Captain
+            - name: Captain (1)
               text:
                   Check the red (mine, torpedo) breakdown status with
                   the engineer.
-                  <li>If YES, announce
-                  <b>TORPEDO LAUNCHED, IMPACT IN C6!</b></li>
-            - name: First Mate
-              text:
-                  If the torpedo gauge is not fully marked, abort the
-                  erroneous activation.
-                  <li>Erase all marks on the torpedo gaugue.</li>
             - name: Engineer
               text:
                   Answer the Captains red (mine, torpedo) breakdown status
                   question <b>YES / NO</b>.
+            - name: First Mate
+              text:
+                  If the torpedo gauge is not fully marked, abort the
+                  erroneous activation.
+                  <li>If Engineer answer YES,
+                  erase all marks on the torpedo gaugue.</li>
+            - name: Captain (2)
+              text:
+                  If Engineer answer YES,
+                  announce <b>TORPEDO LAUNCHED, IMPACT IN C6!</b>
             - name: Enemy Radio Operator
               text:
-                  Make a note that the firing submarine is within 4 spaces of
-                  impact space.
+                  The firing submarine is within 4 spaces of
+                  the announced impact space.
             - name: Enemy Captain
               text:
                   If two or more spaces away from impact,
@@ -209,7 +228,7 @@ sections:
                   <li>If 4 damage announce <b>DESTROYED!</b></li>
       - name: Launch a drone
         text:
-            <p>TBD</p>
+            A drone will gather information regarding the enemy location.
         sections:
             - name: Captain (1)
               text:
@@ -249,3 +268,23 @@ sections:
             - name: Captain
               text:
                   <p>TBD.</p>
+    - name: Surface round
+      text: 3 rounds duration, or until the enemy also surfaces.
+      sections:
+          - name: Captain
+            text:
+                Keep a count of how many rounds spent surfacing.
+          - name: Engineer
+            text:
+                In last surface round erase all damage.
+          - name: First Mate
+            text:
+                All markers remain. No erasure. No new markers.
+          - name: Radio Operator
+            text:
+                May not plot anything while at the surface.
+                May listen and plot from memory after Dive.
+          - name: Enemy Captain
+            text:
+                If also Surfacing, the game will start as ususal next round,
+                all remaining surface rounds are cancelled.
