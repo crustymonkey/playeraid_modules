@@ -46,6 +46,9 @@ sections:
     text: A round consists of a Movement and then an optional Activation,
           or one (out of three) vulnerable delay rounds while surfacing.
           The teams alternate taking rounds until a submarine is destroyed.
+          The players are allowed to communicate freely, but must follow
+          a few communication rules spelled out in <b>BOLD FACE</b> so that
+          the enemy can listen.
     sections:
     - name: Movement
       text: The Captain decides where to move, or to Surface.
@@ -115,7 +118,7 @@ sections:
                   Use the sector to determine possible enemy location.
     - name: Activation
       text: After a Move,
-            the Captain announce an activation with <b>STOP!</b> and raising
+            the Captain may announce an activation with <b>STOP!</b> and raising
             his fist.
             The First Mate can announce an activation of drone or sonar if the
             Captain has not yet done an activation.
@@ -259,11 +262,37 @@ sections:
                   Mark the enemy Captains answer on the map.
       - name: Activating Sonar
         text:
-            <p>TBD</p>
+            <p>The Sonar will give you information regarding the enemy.</p>
         sections:
-            - name: Captain
+            - name: Captain (1)
               text:
-                  <p>TBD.</p>
+                  Check the green (drone, sonar) breakdown status with
+                  the engineer.
+            - name: Engineer
+              text:
+                  Answer the Captains green (drone, sonar) breakdown status
+                  question <b>YES / NO</b>.
+            - name: First Mate
+              text:
+                  Can announce an activation of Sonar if the Captain
+                  has not yet done an activation.
+                  <li>If the sonar gauge is not fully marked,
+                  abort the erroneous activation.</li>
+                  <li>If YES, erase all marks on the Sonar gaugue.</li>
+            - name: Captain (2)
+              text:
+                  If YES, announce <b>ACTIVATING SONAR!</b>
+            - name: Enemy Captain
+              text:
+                  Answer 2 out of 3 possible facts, 1 truthfully, 1 desceptive.
+                  Do not reveal which one is true.
+                  <li><b>WE ARE IN...</b></li>
+                  <ul><li><b>ROW L</b></li>
+                  <li><b>SECTOR 6</b></li>
+                  <li><b>COLUMN 9</b></li></ul>
+            - name: Radio Operator
+              text:
+                  Mark the enemy Captains answer on the map.
       - name: Activating silence
         text:
             <p>TBD</p>
