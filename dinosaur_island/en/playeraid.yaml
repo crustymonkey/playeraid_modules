@@ -1,0 +1,30 @@
+name: Dinosaur Island
+description: Build your own dinosaur park!  See more about it <a href="https://boardgamegeek.com/boardgame/221194/dinosaur-island" target="_blank">on Boardgamegeek</a>
+credits: Jay Deiman
+enabled: false
+sections:
+    - name: Setup
+      sections:
+          - name: Lay Out Game Pieces
+            text: >
+                Place the <i>marketplace</i>, <i>research center</i>, and
+                <i>track</i> boards within reach of all players.  Pile all
+                the income tokens as the bank.  Place 50 dinosaurs, 29 paddock
+                tiles, and 12 modifier tokens near the boards.  Put all 80
+                visitors in the cloth bag.
+          - name: Establish Dice Pool
+            text: >
+                Draw 2 DNA dice per player, plus 1 more die, to create the
+                <i>dice pool</i>.  Return any remaining dice to the box.
+          - name: Place the Market Stacks
+            text: >
+                <ul><li> Shuffle the specialist cards and place them face down
+                on the marketplace</li>
+                <li>Shuffle the attraction tiles and the lab upgrade tiles and
+                stack them in their slots.  If playing with less than 4
+                players, remove the "3+" or "4+" tiles as necessary.</li>
+                <li>Stack the <b>Dino Research II</b> and <b>DNA
+                Refinement II</b> tiles face-up in their slots.</li></ul>
+          - name: Seed the Market Rows
+            text: >
+                Draw the top 4 attraction tiles
