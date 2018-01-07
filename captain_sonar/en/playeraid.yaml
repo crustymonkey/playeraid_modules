@@ -22,6 +22,10 @@ sections:
               <li>Erase every marker and trail.</li>
               <li>Mark an X as the current location on the map visible for your
               team only.</li>
+              <li>If the team consists of only 3 players,
+              one player is both Captain and First Mate.</li>
+              <li>If the team consists of only 2 players,
+              one player is Captain, First Mate and Engineer.</li>
         - name: First Mate
           text:
               Take the First Mate functions sheet with the light turn-by-turn
@@ -39,11 +43,12 @@ sections:
               Erase every marker.
   - name: Rounds
     text: A round consists of a Movement and then an optional Activation,
-          or one (out of three) passive delay rounds while surfacing.
+          or one (out of three) vulnerable delay rounds while surfacing.
           Alternate taking rounds until a submarine is destroyed.
     sections:
     - name: Movement
       text: The Captain decides where to move, or to Surface.
+            If a move can not be done, the Captain must surface.
       sections:
       - name: Dive
         text:
@@ -93,21 +98,14 @@ sections:
       - name: Surfacing
         text:
             <p>Instead of moving, the Captain may declare to have 3
-            rounds in surface mode, doing reparations.</p>
+            rounds in surface mode, doing reparations.
+            If a move can not be performed, the Captain must surface.</p>
+            <li>Next round see the Surface Round further below.<</li>
         sections:
             - name: Captain
               text:
-                  <p>Announce <b>SURFACE IN SECTOR 3!</b></p>
-            - name: Engineer
-              text:
-                  Erase all damage.
-            - name: First Mate
-              text:
-                  All markers remain. No erasure.
-            - name: Radio Operator
-              text:
-                  You may not plot anything while at the surface.
-                  You may listen and plot after Dive.
+                  Raise the fist and announce <b>SURFACE IN SECTOR 3!</b>
+                  <li>This round is the first of three surface rounds.</li>
             - name: Enemy Radio Operator
               text:
                   Use the sector to determine possible enemy location.
@@ -273,7 +271,8 @@ sections:
       sections:
           - name: Captain
             text:
-                Keep a count of how many rounds spent surfacing.
+                Erase the previous route, it has no effect on further movement.
+                Keep a count of how many rounds are spent surfacing.
           - name: Engineer
             text:
                 In last surface round erase all damage.
@@ -286,5 +285,6 @@ sections:
                 May listen and plot from memory after Dive.
           - name: Enemy Captain
             text:
+                Move three turns in a row, or surface.
                 If also Surfacing, the game will start as ususal next round,
                 all remaining surface rounds are cancelled.
