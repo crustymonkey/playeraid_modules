@@ -11,14 +11,15 @@ sections:
         - name: Radio Operator
           text:
               Take the Radio Operator functions Alpha map sheet with
-              the light turn-by-turn side up, blue for team 1, yellow for team
-              2.
+              the light turn-by-turn side up, blue for one team,
+              yellow for the other team.
               <li>Take a transparent overlay.</li>
               <li>Erase every marker and trail on both sheets.</li>
         - name: Captain
           text:
               Take the Captain functions Alpha map sheet with the light
-              turn-by-turn side up, blue for team 1, yellow for team 2.
+              turn-by-turn side up, blue for one team,
+              yellow for the other team.
               <li>Erase every marker and trail.</li>
               <li>Mark an X as the current location on the map visible for your
               team only.</li>
@@ -44,7 +45,7 @@ sections:
   - name: Rounds
     text: A round consists of a Movement and then an optional Activation,
           or one (out of three) vulnerable delay rounds while surfacing.
-          Alternate taking rounds until a submarine is destroyed.
+          The teams alternate taking rounds until a submarine is destroyed.
     sections:
     - name: Movement
       text: The Captain decides where to move, or to Surface.
@@ -52,17 +53,16 @@ sections:
       sections:
       - name: Dive
         text:
-            At game start or after a finished Surfacing. Proceed immediately
-            with a Move operation.
+            At the game start or after a finished Surface period.
         sections:
             - name: Captain
               text:
                   Announce <b>DIVE!</b>
+                  Proceed immediately with a Move operation.
       - name: Move
         text:
-            A move must not
-            cross the previous path, cross land or cross the location of a
-            placed mine.
+            A move must not cross the previous path, cross the map edge,
+            cross land or cross the location of a placed mine.
         sections:
             - name: Captain
               text:
@@ -72,13 +72,17 @@ sections:
               text:
                   Cross out a symbol according to the Captains north /
                   south / east / west announcement.
-                  <li>Check for Self-repairing. If self-repairing, erase those
-                  damages, no breakdown will occur.</li>
-                  <li>If damage due to radiation breakdown, announce
+                  <li>Check for Self-repairing. A group of four linked symbols
+                  repair themselves if all four are crossed out.
+                  Erase the marks.
+                  If self-repairing, no breakdown will occur.</li>
+                  <li>If all 6 radiation symbols in the reactor are crossed out,
+                  Radiation breakdown occur. Announce <b>DAMAGE!</b></li>
+                  <li>If all 6 symbols within a control panel
+                  (3 in central circuits, 3 in the reactor) are crossed out,
+                  a complete area breakdown occurs, announce
                   <b>DAMAGE!</b></li>
-                  <li>If damage due to complete area breakdown, announce
-                  <b>DAMAGE!</b></li>
-                  <li>If damage, erase all breakdown symbols.</li>
+                  <li>If damage was announced, erase all breakdown symbols.</li>
                   <li>When ready announce <b>OK</b>.</li>
             - name: First Mate
               text:
@@ -185,9 +189,6 @@ sections:
         text:
             Launch a torpedo at the assumed enemy submarine.
         sections:
-            - name: Radio Operator
-              text:
-                  If the enemy admits to be hit by the impact, make a note.
             - name: Captain (1)
               text:
                   Check the red (mine, torpedo) breakdown status with
@@ -206,10 +207,6 @@ sections:
               text:
                   If Engineer answer YES,
                   announce <b>TORPEDO LAUNCHED, IMPACT IN C6!</b>
-            - name: Enemy Radio Operator
-              text:
-                  The firing submarine is within 4 spaces of
-                  the announced impact space.
             - name: Enemy Captain
               text:
                   If two or more spaces away from impact,
@@ -220,6 +217,14 @@ sections:
                   announce <b>DIRECT HIT, TWO DAMAGE!</b></li>
                   <li>If a mine was directly at the impact,
                   it is removed.</li>
+            - name: Radio Operator
+              text:
+                  If the enemy Captain admits to be hit by the impact,
+                  make a note.
+            - name: Enemy Radio Operator
+              text:
+                  The firing submarine is within 4 spaces of
+                  the announced impact space.
             - name: Enemy First Mate
               text:
                   If damage, mark the damage checkbox accordingly.
