@@ -27,4 +27,105 @@ sections:
                 Refinement II</b> tiles face-up in their slots.</li></ul>
           - name: Seed the Market Rows
             text: >
-                Draw the top 4 attraction tiles
+                <ul><li>Draw the top 4 attraction tiles and place 1 in each 
+                of the market rows, arranged by cost (top to bottom).</li>
+                <li>Draw the top 4 lab upgrade tiles and put one in each
+                market row</li>
+                <li>Draw the top 4 specialists and place 1 in each market
+                row</li></ul>
+          - name: Place the Research Stacks
+            text: >
+                Separate the 17 dino recipe tiles into 3 stacks by category,
+                shuffle each stack and each stack in it's slot facedown, and
+                flip the top tile of each stack.
+          - name: Reveal the End-Game Objectives
+            text: >
+                Pick your desired game length (short, medium, or long) and
+                shuffle that subset of the objective cards and reveal
+                a number of objectives <b>equal to the number of players plus
+                1</b>
+          - name: Prepare the Plot Twists
+            text: >
+                Shuffle the plot twists and draw 2 and place them face up.
+                <i>If the 2nd plot twist would contradict the 1st, discard the
+                2nd and draw a new one</i>
+          - name: Distribute the Player Pieces
+            text: >
+                <p>Each player takes:
+                <ul><li>1 lab board</li>
+                <li>1 park board</li>
+                <li>9 workers</li>
+                <li>3 scientists</li>
+                <li>5 corporation tokens</li>
+                <li>10 marker cubes in their color</li>
+                <li>6 limit (black) cubes</li></ul>
+                </p>
+          - name: Choose a 1st Player
+            text: >
+                The player who most recently extracted DNA from a mosquito
+                trapped in amber will be the 1st player.  Otherwise, the player
+                who most recently visited a theme park is 1st.  Give that
+                player the 1st player token and arrange the turn order
+                clockwise from the 1st player.
+          - name: Take Startup Cash
+            text: >
+                Give the 1st player <b>$15</b>.  Each successive player in turn
+                order receives <b>$1 more than the previous</b>.
+          - name: Individual Player Setup
+            sections:
+                - name: Situate Player Boards
+                  text: >
+                      Place your 2 player boards in front of you: your lab
+                      board should be on the left and your park board should
+                      be on the right.  Leave room to the right of your lab
+                      board for specialists.
+                - name: Place Workers and Scientists
+                  text: >
+                      <p><ul><li>Put 4 of your workers near the top of your lab.
+                      Set the other 4 workers aside as they are not available
+                      at the start of the game.</li>
+                      <li>Put the 1 remaining worker ont he turn order
+                      track</li>
+                      <li>Put your 3 scientists just above your
+                      lab.</li></ul></p>
+                - name: Gain Starting DNA
+                  text: >
+                      <p><ul><li>Place a limit cube at 4 on each of the
+                      <i>basic</i> DNA tracks (blue, pink, and purple).</li>
+                      <li>Place a limit cube at 2 on each of the <i>advanced</i>
+                      DNA tracks (green, red, and orange).</li>
+                      <li>Place a marker of your color at 1 on each of the
+                      <i>basic</i> DNA tracks.</li>
+                      <li>Place a marker of your color at 0 on each of the
+                      <i>advanced</i> DNA tracks.</li></ul></p>
+                - name: Adjust the Public Tracks
+                  text: >
+                      <p><ul><li>Place 1 dinosaur in the starting paddock on
+                      your park board</li>
+                      <li>Put 1 of your markers on the public <i>excitement</i>
+                      track.</li>
+                      <li>Place a marker a 10 on the score track</li></ul></p>
+                - name: Set Threat and Security Levels
+                  text: >
+                      <p><ul><li>Put 1 of your markers on the <i>threat
+                      indicator</i> on the right side of your lab board at
+                      1</li>
+                      <li>Put 1 of your markers at 1 on the <i>security
+                      indicator</i></li></ul></p>
+    - name: How To Play
+      text: >
+          Dinosaur Island is played over a number of rounds until the end game
+          is triggered.  Each round has 5 Phases.
+      sections:
+          - name: Research Phase (turn order)
+            text: >
+                <p>The 1st player rolls all the DNA dice and places them along
+                the top of the research center with 1 die per slot.</p>
+                <p>In turn order, each player assigns one of their scientists
+                to one of the action spaces (below) or passes.  Continue until
+                each player has had 3 turns. <b>Note that only 1 scientist can
+                be assigned to each slot!</b></p>
+            sections: 
+                - name: Research DNA
+                  text: >
+
