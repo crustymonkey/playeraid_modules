@@ -117,7 +117,7 @@ sections:
           Dinosaur Island is played over a number of rounds until the end game
           is triggered.  Each round has 5 Phases.
       sections:
-          - name: Research Phase (turn order)
+          - name: 1. Research Phase (turn order)
             text: >
                 <p>The 1st player rolls all the DNA dice and places them along
                 the top of the research center with 1 die per slot.</p>
@@ -125,7 +125,84 @@ sections:
                 to one of the action spaces (below) or passes.  Continue until
                 each player has had 3 turns. <b>Note that only 1 scientist can
                 be assigned to each slot!</b></p>
+                <p>After all players have had 3 turns in this phase, take the
+                die with the most threat pips and move it to the <i>holding
+                area</i> in the top right corner. If no DNA dice were
+                unclaimed, no die is moved.</p>
             sections: 
                 - name: Research DNA
                   text: >
-
+                      <p><ol><li>Assign a scientist to one of the slots in the
+                      research center to claim the corresponding die</li>
+                      <li>Multiply the number of DNA symbols by the scientist's
+                      <i>research level</i> and add that many DNA of that
+                      type to your lab.</li></ol></p>
+                      <p><b>Remember</b>: You cannot exceed the cold storage
+                      limit for that DNA type!</p>
+                      <p>There are 2 special die symbols (below) that you 
+                      <b>must us a #3 scientist to claim</b>. You only get the
+                      benefit <b>once</b> (not multiplied by scientist level).
+                      <ul><li><img src="/static/img/dinosaur_island/dino.png"
+                      width="30" height="30" /> The Dino allows you to upgrade
+                      paddock capacity</li>
+                      <li><img src="/static/img/dinosaur_island/meeple.png"
+                      width="30" height="30" /> The meeple allows you to gain
+                      1 worker from the supply</li></ul></p>
+                - name: Increase Cold Storage
+                  text: >
+                      Assign a scientist here to increase your cold storage
+                      limit(s) on any combination of DNA tracks equal to the
+                      scientist's level.
+                - name: Procure Dino Recipe
+                  text: >
+                      Assign a scientist that is <b>&gt;=</b> the slot's
+                      number.  Immediately place the tile in your park.
+                - name: Pass
+                  text: >
+                      If you pass, place one of your scientists in your worker
+                      pool.  You can use that scientist as a worker during the
+                      Worker Phase.
+          - name: 2. Market Phase (turn order)
+            text: >
+                In turn order, each player can take 1 action (or pass).
+                Continue until each player has had 2 actions.
+            sections:
+                - name: Hire Specialist
+                  text: >
+                      <p>Hire a specialist by paying the cost of the market
+                      row the specialist is in.  Immediately place the card
+                      to the right of your lab board and carry out any
+                      immediate effects.</p>
+                      <p>You can normally have a <b>maximum of 3 hired
+                      specialists</b>. If hiring would put you over this limit,
+                      you must immediately fire a specialist.  You give up any
+                      bonuses they gave you <b>including extra workers</b>.
+                - name: Build Attraction
+                  text: >
+                      Build an attraction by paying the <b>sum</b> of the cost
+                      printed on the attraction tile plus the cost of the
+                      market row.  Immediately place it in an available zone
+                      in your park.
+                - name: Buy Lab Upgrade
+                  text: >
+                      <p>Buy a lab upgrade by paying the cost of the market
+                      row it is in.  Immediately place it in 1 of the 6 spaces
+                      in your lab.  If your lab is full, you can place it on
+                      top of a previous upgrade.</p>
+                      <p>The 2 special lab upgrade tiles, <i>Dino Research
+                      II</i> and <i>DNA Refinement II</i> <b>must</b> be placed
+                      on top of the level 1 versions of these, respectively.
+                      They <b>cannot</b> be placed anywhere else.</p>
+                - name: Purchase DNA
+                  text: >
+                      Pay the amount ($2 - $5) and gain the corresponding DNA.
+                      Then, <b>dicard any 1 item</b> from the market row that
+                      you bought DNA in.  Note, this <b>does not include</b>
+                      special lab upgrade tiles.
+          - name: 3. Worker Phase (simulaneous)
+            text: >
+                <p>All players assign their workers (including any unused
+                scientists) to take lab actions.  Lab actions can be resolved
+                in any order the player wishes.</p>
+                <p><b>Each worker slot can be activated only once per round,
+                unless it is labeled as <i>unlimited</i></b>.</p>
