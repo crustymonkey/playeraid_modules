@@ -76,3 +76,5 @@ Note that this is primarily for testing the layout.
 
 # Future Plans
 I plan on adding in some other features to this at some point.  I'm thinking that I may allow an optional css file for more individualized styling.  I'm also open to suggestions if people have ideas for improving this.
+
+I'm also planning on allowing an option for the use of markdown instead of HTML for the formatting of text.  It is well supported and should be a minimal amount of work to implement.
