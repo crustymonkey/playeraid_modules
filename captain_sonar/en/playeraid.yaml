@@ -94,13 +94,12 @@ sections:
                   SILENCE / TORPEDO / SONAR READY</b>.</li>
                   <li>If Engineer announce DAMAGE, mark one (of four) damage as
                   sustained.</li>
-                  <li>If 4 damage announce <b>DESTROYED!</b></li>
                   <li>When Engineer is ready and you are ready announce
                   <b>OK</b>.</li>
             - name: Enemy Radio Operator
               text:
                   Plot the alleged north / south / east / west on the overlay.
-                  Use the plot to determine possible enemy location.
+                  Use the plot to determine the possible enemy location.
       - name: Surfacing
         text:
             <p>Instead of moving, the Captain may declare to have 3
@@ -296,48 +295,56 @@ sections:
         text:
             <p>TBD</p>
         sections:
-            - name: Captain (1)
-              text:
-                  Check the yellow (silence, scenario) breakdown status with
-                  the engineer.
-            - name: Engineer (1)
-              text:
-                  Answer the Captains yellow (silence, scenario) breakdown
-                  status question <b>YES / NO</b>.
-            - name: First Mate (1)
-              text:
-                  If the silence gauge is not fully marked,
-                  abort the erroneous activation.
-                  <li>If Engineer says YES,
-                  erase all marks on the silence gaugue.</li>
-            - name: Captain (2)
-              text:
-                  If YES, announce <b>ACTIVATING SILENCE!</b>
-                  <li>Plot a new location silently 0..4 steps away in a straight
-                  line, following the movement rules.</li>
-                  <li>Silently show the engineer
-                  which direction to cross out.
-                  <li>If you chose 0 steps, select a direction anyway.</li>
-            - name: Engineer (2)
-              text:
-                  If YES, proceed as a Move operation, with the Captains
-                  silent direction instead of an announced direction.
-                  <ul><li>Cross out</li>
-                  <li>Self-repairing?</li>
-                  <li>Radiation breakdown?</li>
-                  <li>Panel breakdown?</li>
-                  <li>Announce <b>OK</b>.</li></ul>
-            - name: First Mate (2)
-              text:
-                  <p>Mark a gauge as if a Move operation, except for the Silence
-                  gauge:</p>
-                  <ul><li>Gauge ready?</li>
-                  <li>Engineer damage?</li>
-                  <li>Destroyed?</li>
-                  <li>Announce <b>OK</b>.</li></ul>
-            - name: Enemy Radio Operator
-              text:
-                  Mark the possible new location area.
+          - name: Activation checks
+            text:
+                <p>TBD</p>
+            sections:
+                - name: Captain
+                  text:
+                      Check the yellow (silence, scenario) breakdown status with
+                      the engineer.
+                - name: Engineer
+                  text:
+                      Answer the Captains yellow (silence, scenario) breakdown
+                      status question <b>YES / NO</b>.
+                - name: First Mate
+                  text:
+                      If the silence gauge is not fully marked,
+                      abort the erroneous activation.
+                      <li>If Engineer says YES,
+                      erase all marks on the silence gaugue.</li>
+          - name: Silent movement
+            text:
+                <p>If engineer says YES, perform the silent move:</p>
+            sections:
+                - name: Captain
+                  text:
+                      Announce <b>ACTIVATING SILENCE!</b>
+                      <li>Plot a new location silently 0..4 steps away in a straight
+                      line, following the movement rules.</li>
+                      <li>Silently show the engineer
+                      which direction to cross out.
+                      <li>If you chose 0 steps, select a direction anyway.</li>
+                - name: Engineer
+                  text:
+                      Proceed as a Move operation, with the Captains
+                      silent direction instead of an announced direction.
+                      <ul><li>Cross out</li>
+                      <li>Self-repairing?</li>
+                      <li>Radiation breakdown?</li>
+                      <li>Panel breakdown?</li>
+                      <li>Announce <b>OK</b>.</li></ul>
+                - name: First Mate
+                  text:
+                      <p>Mark a gauge as if a Move operation, except for the Silence
+                      gauge:</p>
+                      <ul><li>Gauge ready?</li>
+                      <li>Engineer damage?</li>
+                      <li>Destroyed?</li>
+                      <li>Announce <b>OK</b>.</li></ul>
+                - name: Enemy Radio Operator
+                  text:
+                      Mark the possible new location area.
     - name: Surface round
       text: 3 rounds duration, or until the enemy also surfaces.
       sections:
