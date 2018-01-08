@@ -89,11 +89,10 @@ sections:
                   <li>When ready announce <b>OK</b>.</li>
             - name: First Mate
               text:
-                  Mark a gauge according to Captains north / south /
-                  east / west announcement.
-                  <li>If gauge ready, announce <b>MINE / DRONE / SILENCE /
-                  TORPEDO / SONAR READY</b>.</li>
-                  <li>If Engineer announce DAMAGE mark one (of four) damage as
+                  Mark any one gauge that is not fully marked.
+                  <li>If a gauge becomes ready, announce <b>MINE / DRONE /
+                  SILENCE / TORPEDO / SONAR READY</b>.</li>
+                  <li>If Engineer announce DAMAGE, mark one (of four) damage as
                   sustained.</li>
                   <li>If 4 damage announce <b>DESTROYED!</b></li>
                   <li>When Engineer is ready and you are ready announce
@@ -297,9 +296,48 @@ sections:
         text:
             <p>TBD</p>
         sections:
-            - name: Captain
+            - name: Captain (1)
               text:
-                  <p>TBD.</p>
+                  Check the yellow (silence, scenario) breakdown status with
+                  the engineer.
+            - name: Engineer (1)
+              text:
+                  Answer the Captains yellow (silence, scenario) breakdown
+                  status question <b>YES / NO</b>.
+            - name: First Mate (1)
+              text:
+                  If the silence gauge is not fully marked,
+                  abort the erroneous activation.
+                  <li>If Engineer says YES,
+                  erase all marks on the silence gaugue.</li>
+            - name: Captain (2)
+              text:
+                  If YES, announce <b>ACTIVATING SILENCE!</b>
+                  <li>Plot a new location silently 0..4 steps away in a straight
+                  line, following the movement rules.</li>
+                  <li>Silently show the engineer
+                  which direction to cross out.
+                  <li>If you chose 0 steps, select a direction anyway.</li>
+            - name: Engineer (2)
+              text:
+                  If YES, proceed as a Move operation, with the Captains
+                  silent direction instead of an announced direction.
+                  <ul><li>Cross out</li>
+                  <li>Self-repairing?</li>
+                  <li>Radiation breakdown?</li>
+                  <li>Panel breakdown?</li>
+                  <li>Announce <b>OK</b>.</li></ul>
+            - name: First Mate (2)
+              text:
+                  <p>Mark a gauge as if a Move operation, except for the Silence
+                  gauge:</p>
+                  <ul><li>Gauge ready?</li>
+                  <li>Engineer damage?</li>
+                  <li>Destroyed?</li>
+                  <li>Announce <b>OK</b>.</li></ul>
+            - name: Enemy Radio Operator
+              text:
+                  Mark the possible new location area.
     - name: Surface round
       text: 3 rounds duration, or until the enemy also surfaces.
       sections:
