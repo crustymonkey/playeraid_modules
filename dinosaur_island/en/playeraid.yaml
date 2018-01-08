@@ -199,10 +199,78 @@ sections:
                       Then, <b>dicard any 1 item</b> from the market row that
                       you bought DNA in.  Note, this <b>does not include</b>
                       special lab upgrade tiles.
-          - name: 3. Worker Phase (simulaneous)
+          - name: 3. Worker Phase (simultaneous)
             text: >
                 <p>All players assign their workers (including any unused
                 scientists) to take lab actions.  Lab actions can be resolved
                 in any order the player wishes.</p>
                 <p><b>Each worker slot can be activated only once per round,
                 unless it is labeled as <i>unlimited</i></b>.</p>
+                <p>Note that some lab upgrads (with a green background)
+                are activated once, at purchase time, only.</p>
+            sections:
+                - name: Refining DNA
+                  text: > 
+                      Spend 2 basic DNA to produce 1 advanced DNA.
+                - name: Creating Dinosaurs
+                  text: >
+                      <p>After placing a worker on the Dino Research tile, spend
+                      the required DNA from your lab as required by the
+                      recipe on the dino tile. You <b>must</b> have the capacity
+                      to support another dinosaur of that type.</p>
+                      <p><ul><li>Increase your excitement level by the amount
+                      shown on the dino tile.</li>
+                      <li>Increase the threat level by the number of threat
+                      pips on the dino tile. If your threat level reaches 11,
+                      take a red "+10" modifier token.</li></ul></p>
+                - name: Increasing Security
+                  text: >
+                      <p>Certain lab upgrades will allow you to increase your
+                      security level by <b>1</b>.  Pay the corresponding cost
+                      in the secuirity level section you are <b>moving to</b>.
+                      If your security level reaches 11, take a hexagonal
+                      "+10" modifier token.</p>
+                - name: Upgrading Paddock Capacity
+                  text: >
+                      When upgrading paddock capacity, change the capicity of
+                      one paddock tile to the <b>next level up</b>.  You must
+                      pay the cost, which is the new paddock capacity.
+          - name: 4. Park Phase
+            text: >
+                In this phase, players will earn money and victory points from
+                park visitors.
+            sections:
+                - name: 1. Attract Visitors (turn order)
+                  text: >
+                      <p>In turn order, each player takes a number of visitors
+                      from the bag equal to their excitement level. Place them
+                      all at your park entrance and collect $1 from the bank
+                      per patron. <b>Patrons are gold colored meeples</b>.  Do
+                      <b>not</b> collect money for the hooligans (purple or
+                      yellow depending on game version).</p>
+                - name: 2. Manage Lines (simultaneous)
+                  text: >
+                      <p>Place all visitors at available attractions and
+                      dinosaur exhibits.  <i>Each dino exhibit has space for
+                      visitors equal to the number of dinosaurs in the
+                      exhibit</i>. <b>All hooigans must be placed first!</b>
+                      Any visitors left over are left at the entrance.</p>
+                - name: 3. Dinosaurs on the Loose! (simultaneous)
+                  text: >
+                      <p>Add the number of pips on the DNA die that was set
+                      aside in the holding area earlier (if applicable) to
+                      your current threat level. This is your final threat
+                      level for the round.  Then check your security level,
+                      incorporating any bonuses you may have for that.  Then:
+                      <ul><li><b>security level &gt;= threat level</b>:
+                      Nothing happens</li>
+                      <li><b>security level &lt; threat level</b>:
+                      Dinosaurs eat a number of park visitors equal to the
+                      difference between your security and threat levels.</li>
+                      </ul></p>
+                      <p>If visitors are eaten, you remove to the bag,
+                      <b>starting with patrons</b> (not hooligans) the number
+                      of eaten visitors.  If you run out of visitors in your
+                      park, remove visitors from the entrance.  <b>Subtract
+                      1 VP for each visitor eaten</b>.</p>
+
