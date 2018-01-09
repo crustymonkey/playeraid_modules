@@ -205,8 +205,10 @@ sections:
                   If any one red symbol is currently crossed, answer <b>NO</b>.
             - name: Captain (2)
               text:
-                  If Engineer answer YES,
-                  announce <b>TORPEDO LAUNCHED, IMPACT IN C6!</b>
+                  The torpedo can be launched at a target space 1 to 4 spaces
+                  away, counted up-down or left-right, not diagonally.
+                  <li>If Engineer answer YES,
+                  announce <b>TORPEDO LAUNCHED, IMPACT IN C6!</b></li>
             - name: First Mate
               text:
                   If the torpedo gauge is not fully marked, abort the
