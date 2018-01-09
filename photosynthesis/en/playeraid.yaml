@@ -1,0 +1,11 @@
+name: Photosynthesis
+description: Grow some trees [See it on BGG](https://boardgamegeek.com/boardgame/218603/photosynthesis)
+enabled: true
+text_type: markdown
+credits: Jay Deiman
+sections:
+    - name: Setup
+      text: |
+          1.  Set the main board in the center of the table
+          2.  Give each player 1 player board, 1 light point tracker,
+              6 seeds, and 14 trees: 8 small, 4 medium, and 2 tall
