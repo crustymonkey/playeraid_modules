@@ -207,6 +207,7 @@ sections:
               text:
                   The torpedo can be launched at a target space 1 to 4 spaces
                   away, counted up-down or left-right, not diagonally.
+                  Follow the movement rules, do not cross land.
                   <li>If Engineer answer YES,
                   announce <b>TORPEDO LAUNCHED, IMPACT IN C6!</b></li>
             - name: First Mate
