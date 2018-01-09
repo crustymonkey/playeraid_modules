@@ -135,8 +135,8 @@ sections:
             - name: Engineer
               text:
                   Answer the Captains red (mine, torpedo) breakdown status
-                  question <b>YES / NO</b>.
-                  If any one red symbol is currently crossed, answer <b>NO</b>.
+                  question yes / no.
+                  If any one red symbol is currently crossed, answer no.
             - name: Captain (2)
               text:
                   If YES, announce <b>MINE DROPPED!</b>
@@ -163,8 +163,8 @@ sections:
             - name: Engineer
               text:
                   Answer the Captains red (mine, torpedo) breakdown status
-                  question <b>YES / NO</b>.
-                  If any one red symbol is currently crossed, answer <b>NO</b>.
+                  question yes / no.
+                  If any one red symbol is currently crossed, answer no.
             - name: Captain (2)
               text:
                   If YES, announce
@@ -201,8 +201,8 @@ sections:
             - name: Engineer
               text:
                   Answer the Captains red (mine, torpedo) breakdown status
-                  question <b>YES / NO</b>.
-                  If any one red symbol is currently crossed, answer <b>NO</b>.
+                  question yes / no.
+                  If any one red symbol is currently crossed, answer no.
             - name: Captain (2)
               text:
                   The torpedo can be launched at a target space 1 to 4 spaces
@@ -249,8 +249,8 @@ sections:
             - name: Engineer
               text:
                   Answer the Captains green (drone, sonar) breakdown status
-                  question <b>YES / NO</b>.
-                  If any one green symbol is currently crossed, answer <b>NO</b>.
+                  question yes / no.
+                  If any one green symbol is currently crossed, answer no.
             - name: Captain (2)
               text:
                   If YES, announce <b>DRONE LAUNCHED, ARE YOU IN SECTOR 3?</b>
@@ -278,8 +278,8 @@ sections:
             - name: Engineer
               text:
                   Answer the Captains green (drone, sonar) breakdown status
-                  question <b>YES / NO</b>.
-                  If any one green symbol is currently crossed, answer <b>NO</b>.
+                  question yes / no.
+                  If any one green symbol is currently crossed, answer no.
             - name: Captain (2)
               text:
                   If YES, announce <b>ACTIVATING SONAR!</b>
@@ -319,9 +319,9 @@ sections:
                 - name: Engineer
                   text:
                       Answer the Captains yellow (silence, scenario) breakdown
-                      status question <b>YES / NO</b>.
+                      status question yes / no.
                       If any one yellow symbol is currently crossed,
-                      answer <b>NO</b>.
+                      answer no.
                 - name: First Mate
                   text:
                       If the silence gauge is not fully marked,
