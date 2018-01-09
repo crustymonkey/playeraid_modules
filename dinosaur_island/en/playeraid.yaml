@@ -1,7 +1,7 @@
 name: Dinosaur Island
 description: Build your own dinosaur park!  See more about it <a href="https://boardgamegeek.com/boardgame/221194/dinosaur-island" target="_blank">on Boardgamegeek</a>
 credits: Jay Deiman
-enabled: false
+enabled: true
 sections:
     - name: Setup
       sections:
@@ -84,7 +84,7 @@ sections:
                       <p><ul><li>Put 4 of your workers near the top of your lab.
                       Set the other 4 workers aside as they are not available
                       at the start of the game.</li>
-                      <li>Put the 1 remaining worker ont he turn order
+                      <li>Put the 1 remaining worker on the turn order
                       track</li>
                       <li>Put your 3 scientists just above your
                       lab.</li></ul></p>
