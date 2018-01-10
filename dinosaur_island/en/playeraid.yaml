@@ -199,6 +199,9 @@ sections:
                       Then, <b>dicard any 1 item</b> from the market row that
                       you bought DNA in.  Note, this <b>does not include</b>
                       special lab upgrade tiles.
+                - name: Pass
+                  text: >
+                      If you pass as an action, <b>take $2 from the bank</b>.
           - name: 3. Worker Phase (simultaneous)
             text: >
                 <p>All players assign their workers (including any unused
