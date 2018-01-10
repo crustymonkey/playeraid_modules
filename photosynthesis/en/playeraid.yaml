@@ -1,5 +1,5 @@
 name: Photosynthesis
-description: Grow some trees [See it on BGG](https://boardgamegeek.com/boardgame/218603/photosynthesis)
+description: Grow some trees. [See it on BGG](https://boardgamegeek.com/boardgame/218603/photosynthesis)
 enabled: true
 text_type: markdown
 credits: Jay Deiman
@@ -9,3 +9,139 @@ sections:
           1.  Set the main board in the center of the table
           2.  Give each player 1 player board, 1 light point tracker,
               6 seeds, and 14 trees: 8 small, 4 medium, and 2 tall
+          3.  Separate the scoring tokens by their backs (shade of green and
+              number of of leaves and set them next to the board in stacks
+              ordered by points.  **If you are playing a 2 player game**, do
+              put the 3 darkest (4 leaf) scoring tokens back in the box.  If
+              players score the middle space on the board, they take from the
+              3 leaf stack instead.
+          4.  Place 4 seeds, 4 small trees, 3 medium trees, and 2 large trees
+              on the corresponding spaces on each player board.  Set the light
+              point tracker to 0.
+          5.  Place the remaining 2 seeds, 4 small trees, and 1 medium tree
+              next to the player boards.  These are the players' **available**
+              trees at the beginning of the game.
+          6.  The youngest player takes the First Player Token.
+          7.  In turn order each player places 1 of their **available** small
+              trees on a space of the **external edge** of the main board
+              (the 1 leaf zone).  **Do this twice**.
+          8.  Place the sun segment on the sun symbol printed on the board. 
+              Set the 1st, 2nd, and 3rd revolution counters in a stack 
+              near the edge of the board in numerical order with 3 on the top.
+              *If you are playing the advanced version*, use all 4 counters,
+              with the 4 on the top.
+    - name: Playing a Round
+      text: |
+          Each time the sun is in one position, a round is played.  Each round
+          consists of 2 phases.
+      sections:
+          - name: 1. The Photosynthesis Phase
+            text: |
+                *  The player with the 1st Player Token moves the sun segment
+                   clockwise to the next angle on the board hex (**Note: this
+                   step is skipped in the 1st round**).
+                *  Players collect light points for each tree that is **not
+                   in the shadow of another tree**.
+                    *  A small tree scores 1 point
+                    *  A medium tree scores 2 points
+                    *  A large tree scores 3 points
+                    *  No points are scored for seedlings
+                *  A player **cannot have more than 20 light points!**
+
+                ## Shadow sizes
+                Trees cast shadows in the direction shown on the sun segment.
+                A tree that is **taller** than a shadow-casting tree is **not
+                shadowed** and receives **full** light points.  Trees in the
+                shadow cast their own shadow, and trees still cast shadows on
+                their own variety.  Shadows are cast as follows:
+                
+                *  Small trees cast a 1 space shadow
+                *  Medium trees cast a 2 space shadow
+                *  Large trees cast a 3 space shadow
+          - name: 2. The Life Cycle Phase
+            text: |
+                In turn order, each player can now spend their light points to
+                take any number of actions (below).  Any light points leftover
+                can be saved for the next round.  Each player performs all their
+                actions before the next player takes their turn.  
+            
+                **IMPORTANT**: During their turn, a player can only perform
+                **1 action on the same space on the main board**.  For example,
+                a player cannot grow a tree more than one "step" on a single
+                turn.
+
+                *Note that any seeds/trees that are added/upgraded on the main
+                board must come from the players' **available** pool, **not**
+                from their player board*
+            sections:
+                - name: Buy Action
+                  text: |
+                      Players can purchase seeds or trees from their board
+                      and add them to their available pool.  They **must buy
+                      from the bottom of the board up** (least expensive to
+                      most expensive).
+                - name: Planting a Seed Action
+                  text: |
+                      Players can plant a seed near one or more of their trees,
+                      paying **1 light point per seed**.  Seeds can be
+                      planted in any direction, *including non-linear
+                      directions*, as long as the spaces connect.
+
+                      * 1 space from a small tree
+                      * Up to 2 spaces from a medium tree
+                      * Up to 3 spaces from a large tree
+
+                      **Planting a seed activates both the origin tree's space
+                      and the space the seed was planted on**.  Therefore,
+                      during that turn, no other actions can be taken using
+                      those spaces.
+                - name: Growing a Tree Action
+                  text: |
+                      A seed or tree can be replaced by a tree that is the
+                      next size up.
+
+                      * Seed -> small tree: costs 1 light point
+                      * Small tree -> medium tree: 2 light points
+                      * Medium tree -> large tree: 3 light points
+
+                      *Players can only take trees from their **available**
+                      area to grow seeds/trees, **not** from their player
+                      boards*
+
+                      Trees/seeds that are removed from the main board are put
+                      back on the player board in the topmost available spot.
+                      **If no spots are available on the player board, the
+                      trees/seeds are removed from the game**.
+                - name: Collecting Action
+                  text: |
+                      Players can choose to collect scoring tokens by ending
+                      the life cycle of their **large** trees.  Doing so
+                      **costs 4 light points per large tree**.
+
+                      *  The large tree is removed from the main board and
+                         placed on the player board in the topmost available
+                         spot
+                      *  The player collects the scoring token from the top
+                         of the matching pile of tokens (color/number of
+                         leaves).  If there are no tokens left in that pile,
+                         the player takes the top token of the next lower pile.
+                      *  If a tree is removed, **other** players **can** plant
+                         in that space during that round.
+    - name: Ending a Round
+      text: |
+          After everyone has had a turn, the 1st player token is passed
+          clockwise to the next player.  If the sun has completed one
+          revolution, remove the top token from the sun revolution counter
+          pile and put it in the box.
+    - name: End of the Game
+      text: |
+          The game ends when the sun has completed 3 revolutions (4 in the
+          advanced variant).  The full game is 18 rounds (24 in the advanced
+          variant) with sun ending in the 6th position (the 1 before the sun
+          symbol on the board).
+
+          *  Score scoring tokens
+          *  Score 1 point for every 3 unused light points
+
+          *If there is a tie*, the player with the most seeds and trees on the
+          main board wins.
