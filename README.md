@@ -8,16 +8,18 @@ There are a few things you will need to know to get started.
 
 * The best/easiest/highly recommended way to submit your contributions is through github here.  If you've used it at all, there is workflow of: fork a repository, make edits, submit a pull request.  This is the easiest for me to process/test.  However, if github is a little intimidating, you can just zip up your directory and email a Dropbox (or similar) link to it for me (admin@splitstreams.com) to get it from you.  **Please don't send it as an attachment**
 * You will need to understand the basic concepts of construction of a YAML file, specifically [PyYAML](http://pyyaml.org/wiki/PyYAML).  There are many tutorials on the internet covering YAML, but [this one](https://learn.getgrav.org/advanced/yaml) covers the very basics. It also has some other helpful links at the bottom of the page.  Alternatively, you can use JSON instead of YAML, but it's a little more finicky to use and make valid.
-* You should know some basic html.  Basically, you will want to use `<p>` tags, `<b>` tags, `<i>` tags, and maybe list (`<ol>` and `<ul>`).  You are only using these tags for some basic output formatting.  You don't have to be any kind of html expert here.
+* You will either need to know some basic HTML, or [Markdown](https://daringfireball.net/projects/markdown/syntax).  Markdown is recommended for simplicity.  **An issue with markdown:**  Currently, **images are not supported with markdown**.  This will be added soon.
+    * If you are using HTML, you will want to use basic tags like `<p>` tags, `<b>` tags, `<i>` tags, and maybe list (`<ol>` and `<ul>`).  You are only using these tags for some basic output formatting.  You don't have to be any kind of html expert here.
+    * If you are using Markdown, I would highly recommend using the **Photosynthesis** player aid as an example.  Note the use of `text: |` syntax for the multiline text blocks.  This is important for markdown as the `|` will preserve your whitespace properly.
 
 The best advice here is just to look through some of the existing player aids and you should be able to figure out what you need to do.
 
 # Standards and Rules
 There are some things you will have to adhere to for your submissions to be used.  They are pretty simple rules, and mostly obvious.
 
-* Your YAML/JSON **must be valid**.  There are validators out there that will test these files for validity before submission.  I will test them myself upon submission, but I would ask you make sure they are syntactically valid before submitting.
+* Your YAML/JSON **must be valid**.  There are validators out there that will test these files for validity before submission.  I will test them myself upon submission, but I would ask you make sure they are syntactically valid before submitting.  You can also test them on the playeraid site.  See Testing Your Module below.
 * Your YAML/JSON should be easily human readable.  This means you need to use indentation for sub-sections and things should line up.  If you submit an unindented mess, it will be rejected.
-* Your html snippets must be well formed.  This basically means that you have to close your tags.  So, for example, a `<p>` tag needs to have its closing `</p>` tag.  Your submission will be rejected if it is not well formed.
+* If you choose to use HTML, your html snippets must be well formed.  This basically means that you have to close your tags.  So, for example, a `<p>` tag needs to have its closing `</p>` tag.  Your submission will be rejected if it is not well formed.
 * `<script>` tags are forbidden.  You cannot run any javascript from within your playeraids.  There should never be a case where this is necessary.
 * I use an 80 character line limit for my files, **you do not have to**.  I will not enforce this on anyone else. But, again, it should be properly indented and readable.
 * Your directories/files may only contain the following characters: "a" to "z" and underscore.  Though multiple languages are supported in the data files themselves, the directories and files must follow this rule.
@@ -46,6 +48,7 @@ This will have the following 5 mapping items:
 * **credits** (optional):  If you are copying this playeraid from an existing aid and wish to credit the original creator, you can specify them here.  You can also add your own name if you put this aid together.
 * **sections** (required): This will map to a list of your sections (more on `sections` below).
 * **enabled** (optional): This is either *true* or *false* for whether it is enabled.  You must set this to *true* to enable your player aid.  The default is *false*
+* **text_type** (optional): This is either *html* or *markdown*. If not specified, the default is *html*.
 
 ## Sections
 This is the meat of your player aid.  Each section will have up to 3 items in it, including another `sections` mapping.  This means you can have nested sections within sections.  You can find examples of these on https://playeraid.net.
@@ -72,9 +75,8 @@ Note that this is primarily for testing the layout.
 
 ## Things To Note About Testing
 * Images will not work.  They will appear broken
-* Your HTML code will **not** be rendered.  This is to prevent exploits on the site.  You'll be able to see what your layout looks like, and it will show you the escaped HTML.  It's pretty easy to test HTML locally using a `file://` url.
+* If you are using HTML, your HTML code will **not** be rendered.  This is to prevent exploits on the site.  You'll be able to see what your layout looks like, and it will show you the escaped HTML.  It's pretty easy to test HTML locally using a `file://` url.
+* If you are using Markdown, everything in the aid **will** be rendered.
 
 # Future Plans
 I plan on adding in some other features to this at some point.  I'm thinking that I may allow an optional css file for more individualized styling.  I'm also open to suggestions if people have ideas for improving this.
-
-I'm also planning on allowing an option for the use of markdown instead of HTML for the formatting of text.  It is well supported and should be a minimal amount of work to implement.
