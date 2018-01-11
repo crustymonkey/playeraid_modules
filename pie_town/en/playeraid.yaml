@@ -1,0 +1,40 @@
+name: Pie Town
+description: Make some pies! [See this on BGG](https://boardgamegeek.com/boardgame/233976/pie-town)
+text_type: markdown
+credits: Jay Deiman
+enabled: true
+sections:
+    - name: Setup
+      text: |
+          Give each player:
+
+          *  Store board
+          *  3 upgrade tokens
+          *  Pie Tokens
+          *  Worker dice. Each player starts with 2 dice, one set to "3", one
+             set to "2".  Keep the other 2 dice off the store board.
+          *  Dry erase card
+          *  A score marker
+          *  1 of each **common ingredient** (1 yellow, green, and red apple)
+
+          Each player performs:
+              
+          *  Place an *apple upgrade marker* on "8" in the storage section
+             of the store board
+          *  Place a *chef's hat upgrade marker* on "1" for "VPs Per Pie
+             Baked" in the Kitchen section
+          *  Place the *lock upgrade marker* over the 2nd dashed "Bake" action
+             space
+          
+          *  Assign a start player and give them the start player marker.
+          *  Place the score marker at 0 on the score board
+          *  Set the round marker on the starting round of the round track
+             on the score board
+          *  Each player chooses a Secret Recipe that only they may look at:
+              *  Choose from the ingredient bag **2 common ingredients** and
+                 **1 rare ingredient**
+              *  Without showing the other players, place your *secret recipe*
+                 in your secret recipe box
+          *  Mix the remaining ingredients in the bag and add 2 ingredients
+             to each hex on the orchard
+
