@@ -8,7 +8,7 @@ There are a few things you will need to know to get started.
 
 * The best/easiest/highly recommended way to submit your contributions is through github here.  If you've used it at all, there is workflow of: fork a repository, make edits, submit a pull request.  This is the easiest for me to process/test.  However, if github is a little intimidating, you can just zip up your directory and email a Dropbox (or similar) link to it for me (admin@splitstreams.com) to get it from you.  **Please don't send it as an attachment**
 * You will need to understand the basic concepts of construction of a YAML file, specifically [PyYAML](http://pyyaml.org/wiki/PyYAML).  There are many tutorials on the internet covering YAML, but [this one](https://learn.getgrav.org/advanced/yaml) covers the very basics. It also has some other helpful links at the bottom of the page.  Alternatively, you can use JSON instead of YAML, but it's a little more finicky to use and make valid.
-* You will either need to know some basic HTML, or [Markdown](https://daringfireball.net/projects/markdown/syntax).  Markdown is recommended for simplicity.  **An issue with markdown:**  Currently, **images are not supported with markdown**.  This will be added soon.
+* You will either need to know some basic HTML, or [Markdown](https://daringfireball.net/projects/markdown/syntax).  Markdown is recommended for simplicity.  
     * If you are using HTML, you will want to use basic tags like `<p>` tags, `<b>` tags, `<i>` tags, and maybe list (`<ol>` and `<ul>`).  You are only using these tags for some basic output formatting.  You don't have to be any kind of html expert here.
     * If you are using Markdown, I would highly recommend using the **Photosynthesis** player aid as an example.  Note the use of `text: |` syntax for the multiline text blocks.  This is important for markdown as the `|` will preserve your whitespace properly.
 
@@ -64,9 +64,17 @@ In the `img` directory, you can add images that are referenced in your playeraid
 
 **Example:** If your module is for Amun Re, and your directory is `amun_re`, then you have an image in the `img` directory, and that image is named `image1.jpg`, you would add the following html tag to your playeraid file to show that image:
 
-    <img src="/static/img/amun_re/image1.jpg" width="30" height="30" />
+```
+<img src="/static/img/amun_re/image1.jpg" width="30" height="30" />
+```
 
 (Note that you can optionally specify a width and height for the image there)
+
+**For Markdown**: You can also specify images, using the same path building as above.  The markdown syntax is as follows (using the same path as above):
+
+```
+![alt text](/static/img/amun_re/image1.jpg)
+```
 
 # Testing Your Module
 You can test your module by entering the text here: https://playeraid.net/test
