@@ -1,0 +1,306 @@
+name: Immortals
+description: >
+  In Immortals, each game is just another episode in the eternal cycle of war between the Light Realm and the Dark Realm in the World of Twilight. The armies defeated in one world are resurrected in the other world.
+
+  It is each player's aim to control and make efficient use of the different areas and their resources (inhabitants, gold, energy) in both realms. The player who most successfully implements their ambitions will be the winner of the game.
+credits: Cory Osborn (https://boardgamegeek.com/user/GamePimp)
+enabled: true
+text_type: markdown
+sections:
+  - name: Game Setup
+    text: >
+      Game setup requires the following steps:
+
+        1. Place board, cube tower, gold, energy, buildings, portals, and inhabitant cubes on table.
+        1. Set round-tracker cards on board.  The number of rounds are
+            <table>
+              <thead>
+                <tr><th>Players</th><th>Rounds</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>3</td><td>7</td></tr>
+                <tr><td>4</td><td>6</td></tr>
+                <tr><td>5</td><td>5</td></tr>
+              </tbody>
+            </table>
+        1. Sort Region, Dark Conflict, and Light Conflict cards into 3 separate decks.  Shuffle each conflict card deck.
+            The region deck does not need to be shuffled.
+        1. Randomly assign Light/Dark tribes to each player.
+        1. Give each player their player boards, score tokens, army cubes, 4 magic cards, and 4 blank cards.
+        1. Randomly determine a start player.
+
+  - name: Player Board Setup
+    text: >
+      Each player does the following:
+
+        1. Place player boards on the back side with large character images.
+        1. Take starting gold and energy. (sum of both light and dark realm resources)
+        1. Fill in all army groups with the indicated number of cubes.  There are two army group spaces on the outside of the boards.
+            These are not used in a 5 player game.
+        1. Chooses one army group from their player board to populate their home region in the **light** realm.
+        1. Populate the same region in the **dark** realm with 2 army cubes from their **personal supply**.
+        1. Take the home region's corresponding **region** card
+
+  - name: Card Draft and Army Placement
+    text: >
+      A card draft will take place to determine where armies are placed, as well as their deck for the remainder of the game.
+      Each round of the draft consists of all players simultantenously selecting a card, acting upon it in player order, then
+      passing their hand to the left. On each pass, a new card is drawn from the deck and added to their hand.  This continues
+      until each player has placed all their army groups.
+    sections:
+      - name: Draft Setup
+        text: >
+          Each player receives 5 cards from one of the two conflict decks.  The first player recieves 5 from the dark deck,
+          the second player recieves 5 from the light deck. This continues to alternate until each player has 5 cards.
+      - name: Card Selection
+        text: >
+           Each player selects one card from their hand.
+
+            * If the player still has army groups to be placed, they must select a card representing an empty region as an army placement card.
+            * If that's not possible, or they have no army groups remaining, they may select any card from their hand to place in their deck and keep it secret.
+            * All selected army placement cards are revealed simultaneously.
+      - name: Army Placement
+        text: >
+          In player order, each player acts upon their revealed cards:
+
+            * If the selected region is occupied (due to other cards played this round):
+              * They do not place an army group
+              * They keep the selected **conflict** card
+
+            * If the selected region is empty:
+              * they place one of their army groups into the selected region.
+              * they take one card into their deck
+                * if the **region** card is available, they take that card, and discard the played **conflict** card
+                * otherwise they keep the played **conflict** card
+      - name: Round Cleanup
+        text: >
+          Round cleanup happens as follows:
+
+            * If all army groups for all players have been placed on the board, the card draft phase ends.
+              1. All players discard any cards remaining in their hands.
+              1. All remaining *conflict* cards, both light and dark, and including the discard piles, are then shuffled together to form a single deck.
+
+            * Otherwise, we continue to the next round of drafting:
+              1. Each player passes their remaining cards to the player on their left.
+              1. After receiving their new hand, each player draws a card from the appropriate light or dark deck.
+              1. The start player tokens moves to the left.
+              1. Everyone starts a new *card selection* round.
+
+  - name: Remaining Game Setup
+    text: >
+      Once card draft is completed, the cube tower is seeded, and everyone prepares for the first round of the main game.
+
+        1. All players flips their player board to the front side.
+        1. Each player adds 3 army cubes from their personal supply to each limbo area.
+        1. The cube tower is seeded with:
+          * 7 army cubes from each player
+          * 10 green inhabitant cubes
+        1. Any player cubes that fall into the tray at this time are returned the corresponding player's limbo areas, distributed as they see fit.
+        1. All but 2 green inhabitant cubes are returned to the supply.
+        1. Any player cubes not, on the board, in the tower, or in limbo are returned to the box (there is no more *personal supply*).
+  - name: Game Flow
+    text: >
+      Each round of the game now consists of the following four phases:
+
+        1. Reinforcements
+        2. Action Planning
+        3. Action Performance
+        4. Scoring
+
+      Once all rounds are complete, a winner is declared!
+  - name: Reinforcements Phase
+    text: >
+      Here, two things happen:
+
+        1. Each player *may* draw one conflict card
+        1. Then player order, for each 3 armies in a player's limbo areas, each player may send one into the
+           corresponding realm as a reinforcement to existing armies.  Each limbo area is counted separately.
+
+  - name: Action Planning
+    text: >
+      Each player board has 8 army card spaces and 2 magic card spaces.  During action planning, all players place cards
+      face down on the their player board to represent actions they intend to take. The cards could be blanks, which can
+      be used to bluff people.
+
+  - name: Action Performance
+    text: >
+      In player order, each player may reveal a card or pass.
+
+        * If they reveal a card and take the action by:
+          1. paying any required costs
+          1. perform the action
+          1. if the card used was a **conflict** card, discard the card
+          1. if the card used was a **region** or **magic** card, return it to their hand
+
+        * Reveal the card and forfeit the action by (a blank card is a forfeit)
+          1. gain either 1 gold or 1 energy
+          1. return the card to their deck
+
+        * If the player passes, they
+          1. Pick up any remaing cards on their board, returning them to their deck
+          1. Gain either 1 gold or 1 energy
+
+      This continues until all players have passed.  Note that, once a player passes, they continue to receive resources each time play returns to them.
+
+  - name: Scoring
+    text: >
+      Scores are awarded as follows:
+
+        * 1 VP for each 2 regions occupied
+        * 1 VP for each shrine in occupied regions
+        * 1 VP for each capital in occupied regions
+        * 2 VP for each **area** in which the player occupies 3 or 4 regions
+        * 3 VP for each **area** in which the player occupies 5 regions
+
+  - name: Army Actions
+    text: >
+      Each playerboard has some variability in costs and actions available to them.  Army actions consist of the central 8 spaces on the board.
+    sections:
+      - name: Extract Gold
+        text: >
+          Gain Gold from the supply as shown on the card.
+
+            * The player must occupy the region shown on the card.
+            * A wild card cannot be played.
+
+      - name: Extract Energy
+        text: >
+          Gain Energy from the supply as shown on the card.
+
+            * The player must occupy the region shown on the card
+            * A wild card cannot be played.
+
+      - name: Transition 3 Armies
+        text: >
+          Move 3 armies from limbo to the region played.
+
+            * Cost is 2 engery and 1 gold
+            * The player must occupy the region shown on the card
+            * The armies must come from dark or light limbo that matches the region on the card.
+
+      - name: Construction
+        text: >
+          The player may build one building or portal in the region played.
+
+            * Variable cost
+            * The player must occupy the region shown on the card
+            * **Portals**
+              * Gain 1 VP immediately
+              * Grants 1-way adjancy to the corresponding region in the opposite realm.
+            * **Shrines**
+              * Gain 1 VP immediately
+              * Grants 1 VP during scoring to the occupier
+              * Cannot be built in the same region as a Capital
+            * **Capitals**
+              * Gain 2 VP immediately
+              * Grants 1 VP during scoring to the occupier
+              * Cannot be built in the same region as a Shrine
+              * There can be only 1 Capital per **area**
+
+      - name: Attack
+        text: >
+          The player conducts an attack from a region they occupy, to an adjacent region.
+
+            * The region card played determines the behavior of the inhabitants (green cubes).
+              * **Attacked Region**, inhabitants fight for the attacker
+              * **Attacking Region**, inhabitants are neutral
+              * **Any Other Region**, inhabitants fight for the defender
+            * The attacked region must either be empty, or occupied by an opponent.
+            * The attacker moves armies from the originating region into attacked region to start the attack.
+            * The attacker must leave one or more armies in the region originating the attack.
+            * See detailed attack rules.
+
+      - name: Movement of Armies
+        text: >
+          The player moves any number of armies from the played region into another region they occupy.
+
+            * The player must occupy the region shown on the card
+            * The target region must be either directly adjacent to the originating region, or through a chain
+              of adjacent regions occupied by the player.
+            * The player must leave one or more armies in the originating region.
+
+  - name: Magic Actions
+    text: >
+      Each playerboard has 2 magic spaces and each player has the same 4 magic cards.  The magic spaces do **not**
+      correlate directly to the light and dark realms.  Actions take there can affect either realm.
+    sections:
+      - name: Transition 5 Armies
+        text: >
+          Move 5 armies from one of the dark/light limbos to any occupied region in the same realm.
+
+            * This costs 4 energy and 1 gold.
+
+      - name: Conflict Card or First Player
+        text: >
+          Do one of the following:
+
+            * Draw a conflict card.
+            * Take the First Player marker.  It has no effect until the next round.  The first player marker can move multiple times in a single round.
+
+      - name: Construct Shrine or Region Takeover
+        text: >
+          Do one of the following:
+
+            * Construct a shrine in any region they occupy
+            * Force a region comparison:
+              * Choose a region you occupy, but don't own the **region** card
+              * Compare the number of armies to its twin in the opposite realm.
+              * If the active player has more armies, they receive the **region** card.
+
+      - name: 2 Conflict Card or Transition 2 Armies
+        text: >
+          Do one of the following:
+
+            * Draw 2 conflict cards.
+            * Move 2 armies from one of the dark/light limbos to any occupied region in the same realm.
+
+  - name: Attack Rules
+    text: >
+      All battles are fought in the cube tower.  Once an attack has been initiated the following occurs:
+
+        1. Look at the number of inhabitants (green cubes) in the tower tray.
+          * If more than 3, remove 1 to the supply
+          * If none, add 1 from the supply.
+        1. Take **all** cubes in the tray, plus all armies from the attacked region (attacking and defending cubes), and drop them in the tower.
+
+      The results of the battle depend on the if a region was previously occupied, and for whom the inhabitants fought.
+      The region card played to initiate the attack determines this:
+
+        * If **Attacked Region**, inhabitants fight for the attacker
+        * If **Attacking Region**, inhabitants are neutral
+        * If **Any Other Region**, inhabitants fight for the defender
+
+      In any battle, we compare the number of attackers in the tray vs the number of defenders.
+
+        * Whomever has the most armies in the tray wins.
+        * All losing armies are removed from the tray.
+        * An equal number of winning armies are also removed from the tray.
+        * Inhabitants removed from the try in this manner return to the supply
+        * Player armies (winning or losing) are placed in limbo of the realm opposite the embattled region.
+          For example, if you fight in a dark realm region, the cubes are returned to each player's light limbo.
+        * Any winning armies left in the tray are returned to embattled region.
+        * Armies neutral to this battle remain in the tray.
+
+      If the attacker wins the battle.  They claim the matching region card if they don't already own it.  That region
+      card could be sitting on another player's board waiting to take an action.  It is removed.
+
+
+      If the defender wins the battle. The region card stays with its current owner.
+
+
+      If there is a tie, the region becomes unoccupied.  If the region card belonged to either the attacker or defender, it is placed in the supply.
+
+  - name: Important Concepts
+    text: >
+      A few important concepts:
+
+        * When moving or attacking, you must always leave at least one army behind.
+        * Region cards can change hands quickly, you may lose actions because of it.
+
+
+  - name: More Info
+    text: >
+      Useful Links:
+
+        * [BGG link](https://boardgamegeek.com/boardgame/226562/immortals)
+        * [Full Rules](https://boardgamegeek.com/filepage/148299/immortals)
