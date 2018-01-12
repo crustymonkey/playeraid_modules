@@ -38,3 +38,18 @@ sections:
           *  Mix the remaining ingredients in the bag and add 2 ingredients
              to each hex on the orchard
 
+          *  In a 4 player game, use all the hexes in the orchard
+          *  For a 2 or 3 player game, don't use the hexes marked for higher
+             player counts
+    - name: Gameplay
+      sections:
+          - name: Your Secret Recipe
+            text: |
+                All secret recipes **must** be comprised of 2 common ingredients
+                and 1 rare ingredient.  Do **not** show your secret recipe to
+                other players.
+          - name: Round Structure
+            text: |
+                1.  Beginning 
+
+            
