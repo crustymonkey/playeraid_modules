@@ -116,98 +116,98 @@ sections:
                                ingredients as a secret recipe.
                             *  **If the recipe is incorrect**, discard those
                                ingredients to the bag and **no pie is baked**.
-              - name: Market (Gain X VPs, Draw 2 ingredients)
-                sections:
-                    - name: Sell all of 1 column
-                      text: |
-                          The player sells all the pies in 1 column of their choice.
-                          Players **may not** use this action if they do not sell
-                          pies.
-
-                          VPs are awarded to the **players** with pies in the column
-                          based on the pies sold:
-                          
-
-                          * 3 common: 2 VP/pie
-                          * 2 common, 1 rare: 3 VP/pie
-                          * 1 common, 2 rare: 4 VP/pie
-                          * Secret recipe: 7 VP/pie
-                          
-                          Remove the sold pies from the market.
-
-                          The player who placed the die **receives VPs equal to
-                          the level of the worker**, then they **draw 2
-                          ingredients** from the bag.
-                    - name: Sell bottom row
-                      text: |
-                          Sell all pies in the bottom row of the market.  Players
-                          **may not** use this action if they do not sell pies.
-
-                          VPs are awarded to the **players** with pies in the column
-                          based on the pies sold:
-                          
-
-                          * 3 common: 2 VP/pie
-                          * 2 common, 1 rare: 3 VP/pie
-                          * 1 common, 2 rare: 4 VP/pie
-                          * Secret recipe: 7 VP/pie
-
-                          Any remaining pies in the market "drop down".
-
-                          Remove the sold pies from the market.
-
-                          The player who placed the die **receives VPs equal to
-                          the level of the worker**, then they **draw 2
-                          ingredients** from the bag.
-              - name: Pie Convention
-                sections:
-                    - name: Assign Starting Player for the Next Round (+1 to die)
-                      text: |
-                          When placing here, the player **chooses** who starts the
-                          next round.
-
-                          **If no player places a worker here, the start player
-                          will rotate clockwise at the end of the round**.
-                    - name: Change 1 Ingredient of Secret Recipe (-1 to die)
-                      text: |
-                          Return 1 ingredient of your secret recipe to the bag and
-                          replace it with a new ingredient.
-
-                          Your new secret recipe **must** still be comprised of 2
-                          common ingredients and 1 rare ingredient.
-              - name: Upgrade (-1 to die)
-                text: |
-                    Players may increase one of the following:
-
-                    * Increase max ingredient storage from 8 to 14
-                    * Increase VPs/pie from 1 to 2
-                    * Remove the lock from the second "Bake" action space
-
-                    The upgrade effect is **immediate**.  Players don't have
-                    to wait until next round to use upgrades.
-              - name: Hire (-2 to die)
-                text: |
-                    Players take a die from their supply and place it at level 1
-                    next to the Hire space on their mat.  The new worker die
-                    **cannot be assigned to an action until the next round**.
-
-                    *Note that dice of levels "1" and "2" **cannot** be used to
-                    hire*.
-              - name: Spy
-                text: |
-                    Any worker an opponent places in the orchard or the market
-                    is open to be "spied upon" by placing a higher level worker
-                    **on top** of a worker in the orchard/market.
-
-                    The difference between the 2 workers' levels is the number
-                    of secret recipe ingredients that the Spy may see at random.
-
-                    The player being spied on **may not know which ingredients
-                    were spied on**.
-
-                    Players do **not** have to perform the market/orchard action
-                    if spying.  If the player does not sell pies in the market,
-                    they **do not receive bonus VPs or ingredients**.
+                - name: Market (Gain X VPs, Draw 2 ingredients)
+                  sections:
+                      - name: Sell all of 1 column
+                        text: |
+                            The player sells all the pies in 1 column of their choice.
+                            Players **may not** use this action if they do not sell
+                            pies.
+  
+                            VPs are awarded to the **players** with pies in the column
+                            based on the pies sold:
+                            
+  
+                            * 3 common: 2 VP/pie
+                            * 2 common, 1 rare: 3 VP/pie
+                            * 1 common, 2 rare: 4 VP/pie
+                            * Secret recipe: 7 VP/pie
+                            
+                            Remove the sold pies from the market.
+  
+                            The player who placed the die **receives VPs equal to
+                            the level of the worker**, then they **draw 2
+                            ingredients** from the bag.
+                      - name: Sell bottom row
+                        text: |
+                            Sell all pies in the bottom row of the market.  Players
+                            **may not** use this action if they do not sell pies.
+  
+                            VPs are awarded to the **players** with pies in the column
+                            based on the pies sold:
+                            
+  
+                            * 3 common: 2 VP/pie
+                            * 2 common, 1 rare: 3 VP/pie
+                            * 1 common, 2 rare: 4 VP/pie
+                            * Secret recipe: 7 VP/pie
+  
+                            Any remaining pies in the market "drop down".
+  
+                            Remove the sold pies from the market.
+  
+                            The player who placed the die **receives VPs equal to
+                            the level of the worker**, then they **draw 2
+                            ingredients** from the bag.
+                - name: Pie Convention
+                  sections:
+                      - name: Assign Starting Player for the Next Round (+1 to die)
+                        text: |
+                            When placing here, the player **chooses** who starts the
+                            next round.
+  
+                            **If no player places a worker here, the start player
+                            will rotate clockwise at the end of the round**.
+                      - name: Change 1 Ingredient of Secret Recipe (-1 to die)
+                        text: |
+                            Return 1 ingredient of your secret recipe to the bag and
+                            replace it with a new ingredient.
+  
+                            Your new secret recipe **must** still be comprised of 2
+                            common ingredients and 1 rare ingredient.
+                - name: Upgrade (-1 to die)
+                  text: |
+                      Players may increase one of the following:
+  
+                      * Increase max ingredient storage from 8 to 14
+                      * Increase VPs/pie from 1 to 2
+                      * Remove the lock from the second "Bake" action space
+  
+                      The upgrade effect is **immediate**.  Players don't have
+                      to wait until next round to use upgrades.
+                - name: Hire (-2 to die)
+                  text: |
+                      Players take a die from their supply and place it at level 1
+                      next to the Hire space on their mat.  The new worker die
+                      **cannot be assigned to an action until the next round**.
+  
+                      *Note that dice of levels "1" and "2" **cannot** be used to
+                      hire*.
+                - name: Spy
+                  text: |
+                      Any worker an opponent places in the orchard or the market
+                      is open to be "spied upon" by placing a higher level worker
+                      **on top** of a worker in the orchard/market.
+  
+                      The difference between the 2 workers' levels is the number
+                      of secret recipe ingredients that the Spy may see at random.
+  
+                      The player being spied on **may not know which ingredients
+                      were spied on**.
+  
+                      Players do **not** have to perform the market/orchard action
+                      if spying.  If the player does not sell pies in the market,
+                      they **do not receive bonus VPs or ingredients**.
     - name: Final Bake Off
       text: |
           Players take turns building secret recipes from ingredients in the
