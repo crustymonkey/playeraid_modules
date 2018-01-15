@@ -68,4 +68,43 @@ sections:
                 *  Randomly draw 1 more clan than the number of players.
                 *  Randomly draw 1 more starting tile than the number of
                    players and place 1 next to each clan tile.
-                *  
+                *  Starting with the **last** player and going in reverse
+                   turn order, each player chooses and clan/starting tile
+                   combo.  Players receive both the goods and money shown
+                   on their starting tiles.
+
+          - name: Placing the 1st Workers
+            text: |
+                *  Beginning with the starting player and continuing in
+                   turn order, each player places on worker onto an empty
+                   hex.  **Woodcutters must be placed on a space with a
+                   forest** and **miners must place on a space with a
+                   mountain**.
+                *  In **reverse** turn order, starting with the last player,
+                   each player places 1 more worker.  The 2nd worker does
+                   **not** need to be adjacent to their 1st worker.  **Each
+                   space can only ever have one unit on it at any time**.
+                *  **Each time a worker is placed**, players must pay for
+                   both the land where they placed the worker **and** the
+                   for the worker itself.  Land costs £1 - £6.
+                    * Woodcutter: £6
+                    * Miner: £10
+    - name: Gameplay
+      sections:
+          - name: Preparation
+            text: |
+                *  Flip the previous round's scoring tile face-down.
+                *  Refill any empty slots on the export board with contracts
+                   (according to player count).
+                *  Players retrieve their merchants from the market and place
+                   them **next to** their player boards.
+          - name: Action
+            text: |
+                Each player takes exactly 1 action per turn, in turn order.
+                This continues until all players have passed.  Each action
+                (aside from passing), can be taken multiple times during
+                a round.
+            sections:
+                - name: Trade Action
+                  text: |
+
