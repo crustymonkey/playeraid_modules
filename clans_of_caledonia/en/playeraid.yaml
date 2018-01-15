@@ -1,0 +1,71 @@
+name: Clans of Caledonia
+description: Whiskey! See this on [Boardgamegeek](https://boardgamegeek.com/boardgame/216132/clans-caledonia)
+enabled: true
+credits: Jay Deiman
+text_type: markdown
+sections:
+    - name: Setup
+      sections:
+          - name: Map Modules
+            text: |
+                *  Randomly choose a side (1 or 2) for each map module (A - D).
+                *  Construct the map by making sure the rocks showing the
+                   module letter in each module are in **alphabetical** order
+                   in a **clockwise** direction.
+          - name: Port Bonus Tiles
+            text: |
+                *  Randomly choose 4 port bonus tiles.
+                *  Place 1 tile adjacent to a factory in each corner of the 
+                   map.
+                *  If playing a 1 or 2 player game, follow the arrow with 
+                   the 2 player icon.  Otherwise, follow the unlabeled arrow.
+          - name: Market Board
+            text: |
+                *  Flip the market board to the correct side based on the
+                   number of players.
+                *  Place the price markers on the starting price circles.
+                *  Place the goods tokens and tiles below the market.
+          - name: Export Board
+            text: |
+                *  Flip the export board to the correct side based on the
+                   number of players.
+                *  Shuffle the scoring tiles and choose 5 randomly.  Place
+                   these in a random order in the 5 slots on the edge of
+                   the board.
+                *  Shuffle the export contracts and place them in a face-down
+                   pile next to the board.  Put 1 export contract face-up
+                   in each slot on the board. *In a solo and 3 player game,
+                   one slot is empty*.
+                *  Place the player's glory tokens and import tokens (cotton,
+                   tobacco, and sugar cane) near the "1" next to the board.
+                *  *On the 1 - 2 player side, the dice icons are only for
+                   the solo game*.
+          - name: Player Starting Items
+            text: |
+                Each player takes 1 player board and all tokens of their color.
+                Then each player sets up their player board as follows.
+
+                *  Place all tokens in their corresponding locations on
+                   your player board.
+                *  Place the 8 workers on the 4 forest locations and 4
+                   mountain locations.
+                *  Set 4 port markers next to the board.
+                *  Fill the merchant track with 5 cubes.  The other 2 cubes
+                   are placed below your board.
+                *  Place the shipping token on the 1st location (left) on the
+                   shipping track.
+                *  Place the 2 tech. tiles flipped to the side with the arrow
+                   on the **upper left-hand** side on their locations beneath
+                   the workers.
+                *  Take 1 export box tile and place it next to your board with
+                   the side appropriate for the number of players face-up.
+          - name: Turn Order
+            text: |
+                Determine a start player randomly and place the turn order
+                tokens in clockwise order from the 1st player.
+          - name: Clans
+            text: |
+                *  Randomly draw 1 more clan than the number of players.
+                *  Randomly draw 1 more starting tile than the number of
+                   players and place 1 next to each clan tile.
+                *  
