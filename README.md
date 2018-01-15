@@ -76,6 +76,9 @@ In the `img` directory, you can add images that are referenced in your playeraid
 ![alt text](/static/img/amun_re/image1.jpg)
 ```
 
+**Note that you cannot specify a width and height for images if you are using
+Markdown.  You must size your images using an editor.**
+
 # Testing Your Module
 You can test your module by entering the text here: https://playeraid.net/test
 
