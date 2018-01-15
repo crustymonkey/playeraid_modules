@@ -91,14 +91,14 @@ sections:
                     * Miner: £10
     - name: Gameplay
       sections:
-          - name: Preparation
+          - name: Phase 1: Preparation
             text: |
                 *  Flip the previous round's scoring tile face-down.
                 *  Refill any empty slots on the export board with contracts
                    (according to player count).
                 *  Players retrieve their merchants from the market and place
                    them **next to** their player boards.
-          - name: Action
+          - name: Phase 2: Actions
             text: |
                 Each player takes exactly 1 action per turn, in turn order.
                 This continues until all players have passed.  Each action
@@ -106,5 +106,124 @@ sections:
                 a round.
             sections:
                 - name: Trade Action
+                  text: |
+                      You can send merchants in your stock, **not on your
+                      player board**, to the market to buy or sell goods.
+
+                      1.  Place as many merchants on the buy **or** sell area
+                          of a **single** good.  The number of merchants placed
+                          determines the number of goods to be bought/sold.
+                          * Up arrow: buy
+                          * Down arrow: sell
+                      2.  Pay/receive the good's current price multiplied
+                          by the number of goods bought/sold.
+                      3.  Adjust the good's price in the direction of the
+                          arrow a number of spaces equal to the number of
+                          goods bought/sold.
+                      
+                      **Players may only buy or sell 1 type of good during
+                      a trade action.  To trade multiple types of goods, the
+                      trade action must be taken multiple times**.
+
+                      **You may NOT buy and sell the same good during the same
+                      round!**
+                - name: Obtain an Export Contract
+                  text: |
+                      *  Pay the current round cost (indicated next to the
+                         scoring tiles on the export board) to take 1 export
+                         contract and place it in on your **empty** export box.
+                      *  *Note that players **receive** £5 in the 1st round
+                         instead of paying a cost
+                      
+                      Notes on export contracts:
+                      
+                      *  You can only have 1 unfulfilled export contract
+                         (exception: Clan Buchanan).
+                      *  You must fulfill your export contract **before
+                         obtaining a new one**. You cannot get rid of
+                         unfulfilled export contracts.
+                - name: Expand
+                  text: |
+                      *  Place 1 unit from the **top** of a column on your
+                         player board onto any empty space on the map
+                         **neighboring or within shipping reach of any of
+                         your units**.
+                      *  Pay the cost of the unit (on the player board) **and**
+                         the cost of the space.
+
+                      Expand terms:
+
+                      *  **Neighboring**: adjacent space with no river in
+                         between.
+                      *  **Within Shipping Reach**: a space you can reach with
+                         your shipping level.
+                      *  **Land Restrictions**: You can only place specific
+                         units on certain land types.  Note that some hexes
+                         have multiple land types.
+                          *  **Grasslands**: Sheep, cows, cheese dairies,
+                             bakeries, fields, distilleries
+                          *  **Forests**: Woodcutters
+                          *  **Mountains**: Miners
+                      
+                      If you have placed all your woodcutters, you cannot
+                      expand to an "only forest" tile.  This is the case for
+                      miners and mountains as well.
+                  sections: 
+                      - name: Neighborhood Bonus
+                        text: |
+                            If you expand into a space **neighboring another
+                            player's unit** (adjacent and no river in between): 
+                              
+                            *  You may immediately perform a trade action and
+                               buy the **type of good produced by the
+                               neighboring unit** from the supply.
+                            *  You cannot buy **more than 3 pieces** of
+                               the same type of good (4 in a 2 player game)
+                               per turn.
+                            *  The price of **basic goods** is **reduced by
+                               £2**.
+                            *  The price of **processed goods** is **reduced
+                               by £3**.
+                      - name: Building Bonus
+                        text: |
+                            If you deploy your **4th building of one type
+                            onto the map (cheese dairy, bakery, or distillery)
+                            **and** your export box is empty: 
+
+                            *  You may immediately draw 3 export contracts
+                               from the draw pile
+                            *  Take either 1 or none of the contracts.
+                            *  The unselected contracts are put on the bottom
+                               of the draw pile.  
+                            *  **If you take a contract**, pay the costs as
+                               if performed the *Obtain an Export Contract*
+                               action.
+                - name: Upgrade Shipping
+                  text: |
+                      Pay £4 to move your shipping marker 1 space to the right.
+
+                      Shipping levels:
+
+                      *  **No Shipping**: You cannot expand across any water.
+                      *  **River Crossing**: You can expand directly across a
+                         river to an adjacent space.
+                      *  **X-loch**: In addition to river crossing, you can
+                         expand across the number of lochs show under your
+                         marker (number in the blue hex).
+                - name: Upgrade Technology
+                  text: |
+                      Players can upgrade their equipment (tiles below their
+                      workers on their player board) to increase income
+                      from woodcutters and miners.  To upgrade a tech, pay
+                      £10 and flip over the corresponding tech tile.
+
+                      **If you receive a Bonus Upgrade** from Direct Export
+                      Bonuses and you choose a tech upgrade action, **pay
+                      £5 instead of £10**.
+                - name: Hire a Merchant
+                  text: |
+                      Pay £4 and move a merchant from your player board and add
+                      it to your stock.
+                - name: Fulfill an Export Contract
                   text: |
 
