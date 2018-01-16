@@ -226,4 +226,184 @@ sections:
                       it to your stock.
                 - name: Fulfill an Export Contract
                   text: |
+                      *  Pay the goods listed on the left half of the contract.
+                      *  Receive the benefits shown on the right half of the
+                         tile.
+                      *  When a player fulfills a contract with an import good
+                         (cotton, tobacco, sugar cane), they move the
+                         respective token on the export board track as many
+                         steps as the amount imported.
+                          *  If the token reaches/passes a marked step, the
+                             player gains £1.
+                      *  Place the fulfilled export contract face-up next to
+                         the player's export box.
+                      *  Contracts that require beef or mutton are fulfilled by
+                         slaughtering cows or sheep (respectively).
+                          *  Remove the animal from the map and place it back
+                             on the player's board.
+                          *  Slaughtering can **only be done to fulfill a
+                             contract**.
+                      
+                      There are 3 **Direct Export Bonusus** players can take
+                      to gain an immediate advantage.
 
+                      *  Money: Taken from the supply
+                      *  Free Space: Allows the player to immediately take an
+                         expand action **without paying the land cost of the
+                         space into which they expand**.  The player **must
+                         still pay the unit cost**.
+                      *  Bonus Upgrade Action: If a player obtains multiple
+                         bonus upgrade actions, they can choose the same
+                         or different actions.
+                          *  A tech upgrade action **for the discounted price
+                             of £5**
+                          *  A shipping upgrade action **at no cost**.
+                          *  Hire a merchant from the player board **at no
+                             cost**.  Alternatively, the player may take 1
+                             of their merchants back from the market.
+                - name: Pass
+                  text: |
+                      If you cannot, or do not want to, take any more actions,
+                      you must pass and **stop taking actions for the
+                      remainder of the round**.  After passing, move your
+                      turn order token to the leftmost available position of
+                      the next round and receive the pass bonus money
+                      indicated.
+                - name: ~Free Action: Using a Port Bonus Tile~
+                  text: |
+                      *  If a port bonus tile is neighboring, or within
+                         shipping reach of, any of a player's units, the player
+                         may use the port bonus **in addition** to whatever
+                         action they are performing on their turn (can be used
+                         before or after the main action).  
+                      *  The bonus can be used immediately when they it is
+                         available.  It can also be used on a future turn.
+                      *  When you use the port bonus, place a port bonus marker
+                         in your player color near the board by the port.
+                      *  Each port bonus **can be used once per game**.
+                      *  Multiple port bonuses may be used in the same turn.
+          - name: Phase 3: Production
+            text: |
+                Players collect income and produce goods from their units
+                deployed on the map.  The amount of money and goods is
+                indicated by the empty slots on the player board where units
+                have been removed which show a "plus" icon.
+                
+                *  Each deployed worker earns money (each worker below the 1st
+                   displays the **total** income):
+                    *  Each woodcutter earns £4 (£6 with the tech upgrade)
+                    *  Each miner earns £6 (£8 with the tech upgrade)
+                *  Produce basic goods:
+                    *  Each sheep produces 1 wool
+                    *  Each cow produces 1 milk
+                    *  Each field produces 2 grain
+                *  Produce processed goods (optional):
+                    *  Each cheese dairy may process 1 milk into 1 cheese
+                    *  Each bakery may process 1 grain into 1 bread
+                    *  Each distillery may process 1 grain into 1 whiskey
+                    *  The basic goods spent to produce the processed goods
+                       can come from anywhere, **including received during
+                       the current production phase**.
+          - name: Phase 4: Scoring
+            text: |
+                If they have fulfilled the requirement for the current round
+                scoring marker (top half), players earn the glory bonus
+                indicated on the bottom half of the marker. Glory is tracked
+                on the export board with players' glory markers.
+
+                When scored, flip over or remove the round's scoring marker.
+    - name: Final Scoring
+      text: |
+          Final scoring happens after 5 rounds.  Final scoring is the sum of
+          the following:
+
+          *  **Glory**: 1 VP for each step on the glory track.
+          *  **Basic Goods**: 1 VP for each basic good in your stock.
+          *  **Processed Goods**: 2 VP for each processed good in your stock.
+          *  **Money**: 1 VP for every £10.  **Leftover money breaks ties in
+             the final score**.
+          *  **Hops**: 1 VP for each Hop imported, as listed on your fulfilled
+             export contracts.
+          *  **Cotton, Tobacco, and Sugar Cane**: 3, 4, 5 each according to
+             their rarity.  The rarest imported good is the most valuable.
+              *  The import token that was moved the furthest on the track is
+                 the most common imported good and worth 3 points.  The next
+                 most imported is worth 4 points, and the least imported is
+                 worth 5 points.
+              *  **If there is a tie for imported goods**, cotton is the rarest
+                 followed by tobacco, then sugar cane.
+          *  **Export Scoring**: Each player counts the number of fulfilled
+             export contracts and scores as follows:
+              *  **3/4 players**: 12 VP for the player with the most fulfilled
+                 contracts, 6 VP for the 2nd most.
+              *  **2 players**: 8 VP for the player with the most fulfilled
+                 contracts.
+              *  In case of a tie, evenly divide the VP of the tiers, rounded
+                 down.
+          *  **Settlement Scoring**: Each player counts the **number of their
+             settlements within shipping reach of each other**.
+              *  A settlement is a cluster of neighboring units of 1 color
+                 (adjacent and **no river in between**).
+              *  Single units are also considered settlements.
+              *  If not all your settlements are within shipping reach of each
+                 other, the **biggest** group of settlements counts in this
+                 scoring.
+              *  **3/4 players**: The player with the most **settlements**
+                  gets 18 VP, 2nd most gets 12 VP, 3rd most gets 6 VP.
+              *  **2 players**: The player with the most **settlements** gets
+                  12 VP.
+              *  In case of a tie, evenly divide the VP of the tiers, rounded
+                 down.
+    - name: 2 Player Game
+      text: |
+          The shaded spaces at the edge, also marked by mist, are not part of
+          the active map and so players cannot expand into them. This is
+          relevant for *scoring tile 5 and Clan Fergusson*.  All loch spaces
+          are part of the map.
+    - name: Variants
+      sections:
+          - name: Simplifications
+            text: |
+                The following are good for a 1st game.
+
+                ## Static Import Goods
+                No matter how much cotton, tobacco, or sugar cane was imported,
+                each is worth 4 VP at the end of the game. If you use this,
+                you do not need to track these on the export board.
+
+                ## Without Scoring and/or Port Tiles
+                Players can ignore the scoring tiles and/or the port tiles
+                during setup and play.
+          - name: Tighter Game Map
+            text: |
+                Use the backsides of 4 spare port tiles to cover any 4 land
+                spaces of the **active** map during the setup in a 2/3 player
+                game, preferably 1 tile per map module.  These spaces cannot
+                be expanded into.
+          - name: Without Clans
+            text: |
+                For more symmetric play, ignore the clans during setup and
+                play. **In addition to the goods and money on the starting
+                tile**, players also receive:
+
+                *  2nd player: £2
+                *  3rd player: £4
+                *  4th player: £6
+          - name: Clan Auction (recommended for experienced players)
+            text: |
+                Apply the following auction mechanism to auction clans.
+
+                1.  Randomly draw as many clan tiles as the number of players
+                    and allocate a random starting tile to each clan.
+                2.  Randomly determine a player who bids any number of VP (can
+                    be 0) to be able to choose a clan 1st.
+                3.  The player to their left can bid any higher amount of VP
+                4.  Continue until everyone passes after a bid.  30 VP is the
+                    highest possible bid
+                5.  The player winning the bid writes down their bid as
+                    negative VP on the score sheet and places their token
+                    on the first space of the turn order track and takes
+                    their choice of clan/starting tiles.
+                6.  The player to their left bids for 1 of the remaining clans.
+                7.  Continue until the last player is given the remaining
+                    clan/starting tiles at no cost.
