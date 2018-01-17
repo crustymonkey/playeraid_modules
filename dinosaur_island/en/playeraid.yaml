@@ -1,0 +1,343 @@
+name: Dinosaur Island
+description: Build your own dinosaur park!  See more about it <a href="https://boardgamegeek.com/boardgame/221194/dinosaur-island" target="_blank">on Boardgamegeek</a>
+credits: Jay Deiman
+enabled: true
+sections:
+    - name: Setup
+      sections:
+          - name: Lay Out Game Pieces
+            text: >
+                Place the <i>marketplace</i>, <i>research center</i>, and
+                <i>track</i> boards within reach of all players.  Pile all
+                the income tokens as the bank.  Place 50 dinosaurs, 29 paddock
+                tiles, and 12 modifier tokens near the boards.  Put all 80
+                visitors in the cloth bag.
+          - name: Establish Dice Pool
+            text: >
+                Draw 2 DNA dice per player, plus 1 more die, to create the
+                <i>dice pool</i>.  Return any remaining dice to the box.
+          - name: Place the Market Stacks
+            text: >
+                <ul><li> Shuffle the specialist cards and place them face down
+                on the marketplace</li>
+                <li>Shuffle the attraction tiles and the lab upgrade tiles and
+                stack them in their slots.  If playing with less than 4
+                players, remove the "3+" or "4+" tiles as necessary.</li>
+                <li>Stack the <b>Dino Research II</b> and <b>DNA
+                Refinement II</b> tiles face-up in their slots.</li></ul>
+          - name: Seed the Market Rows
+            text: >
+                <ul><li>Draw the top 4 attraction tiles and place 1 in each 
+                of the market rows, arranged by cost (top to bottom).</li>
+                <li>Draw the top 4 lab upgrade tiles and put one in each
+                market row</li>
+                <li>Draw the top 4 specialists and place 1 in each market
+                row</li></ul>
+          - name: Place the Research Stacks
+            text: >
+                Separate the 17 dino recipe tiles into 3 stacks by category,
+                shuffle each stack and each stack in it's slot facedown, and
+                flip the top tile of each stack.
+          - name: Reveal the End-Game Objectives
+            text: >
+                Pick your desired game length (short, medium, or long) and
+                shuffle that subset of the objective cards and reveal
+                a number of objectives <b>equal to the number of players plus
+                1</b>
+          - name: Prepare the Plot Twists
+            text: >
+                Shuffle the plot twists and draw 2 and place them face up.
+                <i>If the 2nd plot twist would contradict the 1st, discard the
+                2nd and draw a new one</i>
+          - name: Distribute the Player Pieces
+            text: >
+                <p>Each player takes:
+                <ul><li>1 lab board</li>
+                <li>1 park board</li>
+                <li>9 workers</li>
+                <li>3 scientists</li>
+                <li>5 corporation tokens</li>
+                <li>10 marker cubes in their color</li>
+                <li>6 limit (black) cubes</li></ul>
+                </p>
+          - name: Choose a 1st Player
+            text: >
+                The player who most recently extracted DNA from a mosquito
+                trapped in amber will be the 1st player.  Otherwise, the player
+                who most recently visited a theme park is 1st.  Give that
+                player the 1st player token and arrange the turn order
+                clockwise from the 1st player.
+          - name: Take Startup Cash
+            text: >
+                Give the 1st player <b>$15</b>.  Each successive player in turn
+                order receives <b>$1 more than the previous</b>.
+          - name: Individual Player Setup
+            sections:
+                - name: Situate Player Boards
+                  text: >
+                      Place your 2 player boards in front of you: your lab
+                      board should be on the left and your park board should
+                      be on the right.  Leave room to the right of your lab
+                      board for specialists.
+                - name: Place Workers and Scientists
+                  text: >
+                      <p><ul><li>Put 4 of your workers near the top of your lab.
+                      Set the other 4 workers aside as they are not available
+                      at the start of the game.</li>
+                      <li>Put the 1 remaining worker on the turn order
+                      track</li>
+                      <li>Put your 3 scientists just above your
+                      lab.</li></ul></p>
+                - name: Gain Starting DNA
+                  text: >
+                      <p><ul><li>Place a limit cube at 4 on each of the
+                      <i>basic</i> DNA tracks (blue, pink, and purple).</li>
+                      <li>Place a limit cube at 2 on each of the <i>advanced</i>
+                      DNA tracks (green, red, and orange).</li>
+                      <li>Place a marker of your color at 1 on each of the
+                      <i>basic</i> DNA tracks.</li>
+                      <li>Place a marker of your color at 0 on each of the
+                      <i>advanced</i> DNA tracks.</li></ul></p>
+                - name: Adjust the Public Tracks
+                  text: >
+                      <p><ul><li>Place 1 dinosaur in the starting paddock on
+                      your park board</li>
+                      <li>Put 1 of your markers on the public <i>excitement</i>
+                      track.</li>
+                      <li>Place a marker a 10 on the score track</li></ul></p>
+                - name: Set Threat and Security Levels
+                  text: >
+                      <p><ul><li>Put 1 of your markers on the <i>threat
+                      indicator</i> on the right side of your lab board at
+                      1</li>
+                      <li>Put 1 of your markers at 1 on the <i>security
+                      indicator</i></li></ul></p>
+    - name: How To Play
+      text: >
+          Dinosaur Island is played over a number of rounds until the end game
+          is triggered.  Each round has 5 Phases.
+      sections:
+          - name: 1. Research Phase (turn order)
+            text: >
+                <p>The 1st player rolls all the DNA dice and places them along
+                the top of the research center with 1 die per slot.</p>
+                <p>In turn order, each player assigns one of their scientists
+                to one of the action spaces (below) or passes.  Continue until
+                each player has had 3 turns. <b>Note that only 1 scientist can
+                be assigned to each slot!</b></p>
+                <p>After all players have had 3 turns in this phase, take the
+                die with the most threat pips and move it to the <i>holding
+                area</i> in the top right corner. If no DNA dice were
+                unclaimed, no die is moved.</p>
+            sections: 
+                - name: Research DNA
+                  text: >
+                      <p><ol><li>Assign a scientist to one of the slots in the
+                      research center to claim the corresponding die</li>
+                      <li>Multiply the number of DNA symbols by the scientist's
+                      <i>research level</i> and add that many DNA of that
+                      type to your lab.</li></ol></p>
+                      <p><b>Remember</b>: You cannot exceed the cold storage
+                      limit for that DNA type!</p>
+                      <p>There are 2 special die symbols (below) that you 
+                      <b>must us a #3 scientist to claim</b>. You only get the
+                      benefit <b>once</b> (not multiplied by scientist level).
+                      <ul><li><img src="/static/img/dinosaur_island/dino.png"
+                      width="30" height="30" /> The Dino allows you to upgrade
+                      paddock capacity</li>
+                      <li><img src="/static/img/dinosaur_island/meeple.png"
+                      width="30" height="30" /> The meeple allows you to gain
+                      1 worker from the supply</li></ul></p>
+                - name: Increase Cold Storage
+                  text: >
+                      Assign a scientist here to increase your cold storage
+                      limit(s) on any combination of DNA tracks equal to the
+                      scientist's level.
+                - name: Procure Dino Recipe
+                  text: >
+                      Assign a scientist that is <b>&gt;=</b> the slot's
+                      number.  Immediately place the tile in your park.
+                - name: Pass
+                  text: >
+                      If you pass, place one of your scientists in your worker
+                      pool.  You can use that scientist as a worker during the
+                      Worker Phase.
+          - name: 2. Market Phase (turn order)
+            text: >
+                In turn order, each player can take 1 action (or pass).
+                Continue until each player has had 2 actions.
+            sections:
+                - name: Hire Specialist
+                  text: >
+                      <p>Hire a specialist by paying the cost of the market
+                      row the specialist is in.  Immediately place the card
+                      to the right of your lab board and carry out any
+                      immediate effects.</p>
+                      <p>You can normally have a <b>maximum of 3 hired
+                      specialists</b>. If hiring would put you over this limit,
+                      you must immediately fire a specialist.  You give up any
+                      bonuses they gave you <b>including extra workers</b>.
+                - name: Build Attraction
+                  text: >
+                      Build an attraction by paying the <b>sum</b> of the cost
+                      printed on the attraction tile plus the cost of the
+                      market row.  Immediately place it in an available zone
+                      in your park.
+                - name: Buy Lab Upgrade
+                  text: >
+                      <p>Buy a lab upgrade by paying the cost of the market
+                      row it is in.  Immediately place it in 1 of the 6 spaces
+                      in your lab.  If your lab is full, you can place it on
+                      top of a previous upgrade.</p>
+                      <p>The 2 special lab upgrade tiles, <i>Dino Research
+                      II</i> and <i>DNA Refinement II</i> <b>must</b> be placed
+                      on top of the level 1 versions of these, respectively.
+                      They <b>cannot</b> be placed anywhere else.</p>
+                - name: Purchase DNA
+                  text: >
+                      Pay the amount ($2 - $5) and gain the corresponding DNA.
+                      Then, <b>dicard any 1 item</b> from the market row that
+                      you bought DNA in.  Note, this <b>does not include</b>
+                      special lab upgrade tiles.
+                - name: Pass
+                  text: >
+                      If you pass as an action, <b>take $2 from the bank</b>.
+          - name: 3. Worker Phase (simultaneous)
+            text: >
+                <p>All players assign their workers (including any unused
+                scientists) to take lab actions.  Lab actions can be resolved
+                in any order the player wishes.</p>
+                <p><b>Each worker slot can be activated only once per round,
+                unless it is labeled as <i>unlimited</i></b>.</p>
+                <p>Note that some lab upgrads (with a green background)
+                are activated once, at purchase time, only.</p>
+            sections:
+                - name: Refining DNA
+                  text: > 
+                      Spend 2 basic DNA to produce 1 advanced DNA.
+                - name: Creating Dinosaurs
+                  text: >
+                      <p>After placing a worker on the Dino Research tile, spend
+                      the required DNA from your lab as required by the
+                      recipe on the dino tile. You <b>must</b> have the capacity
+                      to support another dinosaur of that type.</p>
+                      <p><ul><li>Increase your excitement level by the amount
+                      shown on the dino tile.</li>
+                      <li>Increase the threat level by the number of threat
+                      pips on the dino tile. If your threat level reaches 11,
+                      take a red "+10" modifier token.</li></ul></p>
+                - name: Increasing Security
+                  text: >
+                      <p>Certain lab upgrades will allow you to increase your
+                      security level by <b>1</b>.  Pay the corresponding cost
+                      in the secuirity level section you are <b>moving to</b>.
+                      If your security level reaches 11, take a hexagonal
+                      "+10" modifier token.</p>
+                - name: Upgrading Paddock Capacity
+                  text: >
+                      When upgrading paddock capacity, change the capicity of
+                      one paddock tile to the <b>next level up</b>.  You must
+                      pay the cost, which is the new paddock capacity.
+          - name: 4. Park Phase
+            text: >
+                In this phase, players will earn money and victory points from
+                park visitors.
+            sections:
+                - name: 1. Attract Visitors (turn order)
+                  text: >
+                      <p>In turn order, each player takes a number of visitors
+                      from the bag equal to their excitement level. Place them
+                      all at your park entrance and collect $1 from the bank
+                      per patron. <b>Patrons are gold colored meeples</b>.  Do
+                      <b>not</b> collect money for the hooligans (purple or
+                      yellow depending on game version).</p>
+                - name: 2. Manage Lines (simultaneous)
+                  text: >
+                      <p>Place all visitors at available attractions and
+                      dinosaur exhibits.  <i>Each dino exhibit has space for
+                      visitors equal to the number of dinosaurs in the
+                      exhibit</i>. <b>All hooigans must be placed first!</b>
+                      Any visitors left over are left at the entrance.</p>
+                - name: 3. Dinosaurs on the Loose! (simultaneous)
+                  text: >
+                      <p>Add the number of pips on the DNA die that was set
+                      aside in the holding area earlier (if applicable) to
+                      your current threat level. This is your final threat
+                      level for the round.  Then check your security level,
+                      incorporating any bonuses you may have for that.  Then:
+                      <ul><li><b>security level &gt;= threat level</b>:
+                      Nothing happens</li>
+                      <li><b>security level &lt; threat level</b>:
+                      Dinosaurs eat a number of park visitors equal to the
+                      difference between your security and threat levels.</li>
+                      </ul></p>
+                      <p>If visitors are eaten, you remove to the bag,
+                      <b>starting with patrons</b> (not hooligans), the number
+                      of eaten visitors.  If you run out of visitors in your
+                      park, remove visitors from the entrance.  <b>Subtract
+                      1 VP for each visitor eaten</b>.</p>
+                - name: Score Victory Points (turn order)
+                  text: >
+                      In turn order, players score 1 VP for each surviving
+                      patron at an attraction or dino exhibit.  <b>Do not
+                      score</b> hooligans or visitors at the entrance.
+                      <b>For each patron at a food attraction</b>, you choose
+                      to either score 1 VP <i>or</i> collect $2.
+          - name: 5. Cleanup Phase
+            sections:
+                - name: 1. Reset Turn Order
+                  text: >
+                      The player with the <b>fewest</b> VPs becomes the new 1st
+                      player.  The player with the next fewest becomes 2nd and
+                      so on.  If players are tied, they keep their relative
+                      positions.
+                - name: 2. Refresh the Market
+                  text: >
+                      Discard any items in the $2 market row.  Slide all the
+                      remaining items in the market upward so the <b>cheapest
+                      slots are filled</b>.  Fill any empty slots in the
+                      market from their stacks.  If a supply stack is empty,
+                      shuffle the corresponding discard pile.  <b>Do not
+                      rearrange the attractions in order of cost</b>.  This
+                      is only done during setup.
+                - name: 3. Reveal New Dino Recipes
+                  text: >
+                      Turn the top tile of each dino stack face up, if the top
+                      tile isn't already face up.
+                - name: 4. Return Workers and Scientists
+                  text: >
+                      Each player takes back all their workers and scientists,
+                      returning them to their starting locations.
+                - name: 5. Remove Visitors
+                  text: >
+                      All visitors are put back in the bag.
+                - name: 6. Resolve Plot Twists
+                  text: >
+                      Check the plot twists for anything that resolves "at the
+                      end of each round" and resolve those now.
+    - name: Completing Objectives
+      text: >
+          <p>If a player fulfills an objective at any time, they claim it by
+          putting one of their corporation tokens on the card.  <b>The
+          objective cannot be claimed by any other player</b>.</p>
+          <p>If multiple players fulfill the objective <b>at the same time</b>,
+          they all claim the card by putting their corporation tokens on it.</p>
+    - name: Game End
+      text: >
+          <p>The end of the game is triggered when <b>there is only 1 objective
+          card left unclaimed</b>.  Finish the current round and perform final
+          scoring.</p>
+    - name: Final Scoring
+      text: >
+          <p>Each player adds the VPs printed on the attractions and dino
+          exhibits in their park.
+          <ul><li><b>For each attraction</b>, score the listed VPs</li>
+          <li><b>For each exhibit</b>, multiply the listed VP value by the
+          number of dinos in the paddock.</li>
+          <li>If there are no dinosaurs in a paddock, <b>lose 10 points</b> for
+          that exhibit.</li>
+          <li>Score completed objectives.</li>
+          <li>For each $5 leftover, score 1 VP</li></ul></p>
+          <p>If there is a tie, the tied player with the most leftover money
+          wins.</p>
+

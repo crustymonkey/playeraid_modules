@@ -1,7 +1,7 @@
 name: Ex Libris (Shops and Characters)
 description: A game of fantasy librarians.  <a href="https://goo.gl/AY2jsV" target="_blank">See this on boardgamegeek</a>
 credits: Jay Deiman
-enabled: true
+enabled: false
 sections:
     - name: Library and Special Assistants
       sections:
@@ -135,7 +135,7 @@ sections:
                 be outbid). Return the lower-bidding assistant to their
                 player — it may be placed again on a subsequent turn
                 this round.</p>
-                <p><b>⏱  Delayed Effect</b - Discard a number of cards from
+                <p><b>⏱  Delayed Effect</b> - Discard a number of cards from
                 your hand equal to your bid space to take the three cards from
                 the <b>Auction House's</b> card area. You may shelve any/all
                 of them.</p>

@@ -1,0 +1,230 @@
+name: Pie Town
+description: Make some pies! [See this on BGG](https://boardgamegeek.com/boardgame/233976/pie-town)
+text_type: markdown
+credits: Jay Deiman
+enabled: true
+sections:
+    - name: Setup
+      text: |
+          Give each player:
+
+          *  Store board
+          *  3 upgrade tokens
+          *  Pie Tokens
+          *  Worker dice. Each player starts with 2 dice, one set to "3", one
+             set to "2".  Keep the other 2 dice off the store board.
+          *  Dry erase card
+          *  A score marker
+          *  1 of each **common ingredient** (1 yellow, green, and red apple)
+
+          Each player performs:
+              
+          *  Place an *apple upgrade marker* on "8" in the storage section
+             of the store board
+          *  Place a *chef's hat upgrade marker* on "1" for "VPs Per Pie
+             Baked" in the Kitchen section
+          *  Place the *lock upgrade marker* over the 2nd dashed "Bake" action
+             space
+          
+          *  Assign a start player and give them the start player marker.
+          *  Place the score marker at 0 on the score board
+          *  Set the round marker on the starting round of the round track
+             on the score board
+          *  Each player chooses a Secret Recipe that only they may look at:
+              *  Choose from the ingredient bag **2 common ingredients** and
+                 **1 rare ingredient**
+              *  Without showing the other players, place your *secret recipe*
+                 in your secret recipe box
+          *  Mix the remaining ingredients in the bag and add 2 ingredients
+             to each hex on the orchard
+
+          *  In a 4 player game, use all the hexes in the orchard
+          *  For a 2 or 3 player game, don't use the hexes marked for higher
+             player counts
+    - name: Gameplay
+      sections:
+          - name: Your Secret Recipe
+            text: |
+                All secret recipes **must** be comprised of 2 common ingredients
+                and 1 rare ingredient.  Do **not** show your secret recipe to
+                other players.
+          - name: Round Structure
+            text: |
+                1.  Beginning with the start player, players place 1 worker
+                    from their break room onto an action space
+                2.  After all workers have been played, workers are returned
+                    to the break room and levels are adjusted.
+                3.  Return the remaining ingredients in the orchard to the bag
+                    and add 2 random ingredients per hex (1 per hex if
+                    short ingredients)
+                4.  Move the round marker up the track
+                5.  **If no one took starting player**, the start player moves
+                    clockwise.
+                6.  After 9 rounds, perform the Final Bake Off.  Unsold pies
+                    are scored and victory points are tallied
+          - name: Actions
+            sections:
+                - name: Orchard (+1 to die)
+                  text: |
+                      When placing a worker die in the orchard, players may
+                      take ingredients from any of the 3 adjacent spaces **equal
+                      to the die level**.
+                      
+                      **Players may only take ingredients they have the capacity
+                      to store**.
+                - name: Bake (+1 to die)
+                  text: |
+                      Players bake pies using the ingredients in storage.  The
+                      **maximum number of pies that can be baked is equal to
+                      the worker die level**.
+                      
+                      Pies of the following types can be baked (in addition
+                      to the secret recipes below)
+
+                      * 3 common
+                      * 2 common, 1 rare
+                      * 1 common, 2 rare
+
+                      To bake **pies**, present all the ingredients to be used
+                      for all the pies.  Do **not** reveal which ingredients
+                      are use for which pies to **conceal your secret recipe**.
+                      
+                      Baked pies are added as pie tokens to the market in
+                      columns.  Place new pies at the top of the column.  You
+                      **cannot** add pies to a column if it would exceed the
+                      max for the player count:
+
+                      * 2 players: 3 pies/column
+                      * 3 players: 4 pies/column
+                      * 4 players: 5 pies/column
+
+                      Each player **earns 1 VP for each pie baked**.  If the
+                      player has upgraded their kitchen, **the receive 2 VPs
+                      for each pie baked**.
+
+                      *To conceal your secret recipe, it is recommended that
+                      you bake **at least 2** pies at a time*.
+                  sections:
+                      - name: Baking Your Opponent's Secret Recipe
+                        text: |
+                            You can *attempt* to bake an opponent's secret
+                            recipe.  To do this, select the 3 ingredients
+                            for an opponent and show them to that player
+                            secretly.
+                            
+                            *  **If correct**, you may use those
+                               ingredients as a secret recipe.
+                            *  **If the recipe is incorrect**, discard those
+                               ingredients to the bag and **no pie is baked**.
+                - name: Market (Gain X VPs, Draw 2 ingredients)
+                  sections:
+                      - name: Sell all of 1 column
+                        text: |
+                            The player sells all the pies in 1 column of their choice.
+                            Players **may not** use this action if they do not sell
+                            pies.
+  
+                            VPs are awarded to the **players** with pies in the column
+                            based on the pies sold:
+                            
+  
+                            * 3 common: 2 VP/pie
+                            * 2 common, 1 rare: 3 VP/pie
+                            * 1 common, 2 rare: 4 VP/pie
+                            * Secret recipe: 7 VP/pie
+                            
+                            Remove the sold pies from the market.
+  
+                            The player who placed the die **receives VPs equal to
+                            the level of the worker**, then they **draw 2
+                            ingredients** from the bag.
+                      - name: Sell bottom row
+                        text: |
+                            Sell all pies in the bottom row of the market.  Players
+                            **may not** use this action if they do not sell pies.
+  
+                            VPs are awarded to the **players** with pies in the column
+                            based on the pies sold:
+                            
+  
+                            * 3 common: 2 VP/pie
+                            * 2 common, 1 rare: 3 VP/pie
+                            * 1 common, 2 rare: 4 VP/pie
+                            * Secret recipe: 7 VP/pie
+  
+                            Any remaining pies in the market "drop down".
+  
+                            Remove the sold pies from the market.
+  
+                            The player who placed the die **receives VPs equal to
+                            the level of the worker**, then they **draw 2
+                            ingredients** from the bag.
+                - name: Pie Convention
+                  sections:
+                      - name: Assign Starting Player for the Next Round (+1 to die)
+                        text: |
+                            When placing here, the player **chooses** who starts the
+                            next round.
+  
+                            **If no player places a worker here, the start player
+                            will rotate clockwise at the end of the round**.
+                      - name: Change 1 Ingredient of Secret Recipe (-1 to die)
+                        text: |
+                            Return 1 ingredient of your secret recipe to the bag and
+                            replace it with a new ingredient.
+  
+                            Your new secret recipe **must** still be comprised of 2
+                            common ingredients and 1 rare ingredient.
+                - name: Upgrade (-1 to die)
+                  text: |
+                      Players may increase one of the following:
+  
+                      * Increase max ingredient storage from 8 to 14
+                      * Increase VPs/pie from 1 to 2
+                      * Remove the lock from the second "Bake" action space
+  
+                      The upgrade effect is **immediate**.  Players don't have
+                      to wait until next round to use upgrades.
+                - name: Hire (-2 to die)
+                  text: |
+                      Players take a die from their supply and place it at level 1
+                      next to the Hire space on their mat.  The new worker die
+                      **cannot be assigned to an action until the next round**.
+  
+                      *Note that dice of levels "1" and "2" **cannot** be used to
+                      hire*.
+                - name: Spy
+                  text: |
+                      Any worker an opponent places in the orchard or the market
+                      is open to be "spied upon" by placing a higher level worker
+                      **on top** of a worker in the orchard/market.
+  
+                      The difference between the 2 workers' levels is the number
+                      of secret recipe ingredients that the Spy may see at random.
+  
+                      The player being spied on **may not know which ingredients
+                      were spied on**.
+  
+                      Players do **not** have to perform the market/orchard action
+                      if spying.  If the player does not sell pies in the market,
+                      they **do not receive bonus VPs or ingredients**.
+    - name: Final Bake Off
+      text: |
+          Players take turns building secret recipes from ingredients in the
+          bag, showing them to the associated player **in secret**.  Players
+          may choose **not to guess** if they do not wish.  They
+          score points based on the number of correct ingredients.
+
+          * 3/3 correct: 4 VP
+          * 2/3 correct: 2 VP
+          * 1/3 correct: 0 VP
+          * 0/3 correct: -2 VP
+          * No guess: 0 VP
+
+          Return any ingredients used to guess back to the bag.
+    - name: End Game Scoring
+      text: |
+          Unsold pies in the market are **1 VP each**.
+
+          The tie breaker is the player with the strongest workforce (sum of
+          their dice).
