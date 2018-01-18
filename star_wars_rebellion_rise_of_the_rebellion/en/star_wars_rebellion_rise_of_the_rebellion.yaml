@@ -1,0 +1,207 @@
+name: Star Wars - Rebellion - Rise of the Rebellion
+description: The epic conflict between the Galactic Empire and the Rebel Alliance. [See it on BGG](https://boardgamegeek.com/boardgame/187645/star-wars-rebellion)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Terminology
+      text: |
+        * Fighters are ships that have a black health value (X-wing, Y-wing, U-wing, TIE fighter, and TIE striker).
+        * Structures are Ion Cannons, Shield Generators, Golan Arms Turrets, and Shield Bunkers.
+        * A Remote System is a system that does not have a place for a loyalty marker.
+        * A Populous System is a system that has a place for a loyalty marker.
+        * A Rebel system is any system that has a Rebel loyalty marker and no subjugation marker.
+        * An Imperial system is any system that has an Imperial loyalty marker or subjugation marker.
+    - name: Setup
+      text: |
+        * Each player chooses a side to play.
+        * Each player takes their 4 starting leaders that do not have a recruit icon and places them in their leader pool.
+        * Place the Rebel marker on space 14 of the time track.
+        * Sort the Objective cards by their number and shuffle each number separately. Create an Objective deck by following these steps:
+            * Shuffle 1 Death Star Plans and 4 random cards from the stage III cards.
+            * Shuffle 1 Death Star Plans and 4 random cards from the stage II cards and place them on top of the stage III cards.
+            * Shuffle 5 random cards from the stage I cards and place them on top of the stage II cards.
+        * The Rebel player draws 1 Objective card.
+        * Each player takes their 4 Starting Mission cards, indicated by a yellow arrow on the bottom, and adds it to their hand.
+        * Shuffle the Imperial Projects deck and place it on the Imperial Projects space.
+        * Each player decides if they will be using the Missions cards from the base game or the expansion.
+            * If using the base game deck, remove all cards that have the Darth Vader icon from your Mission deck.
+            * If using the expansion deck, remove all cards that do not have a leader portrait or the Darth Vader icon from your Mission deck.
+        * Shuffle the Probe Droid deck. Reveal cards from the Probe Droid deck until 3 Rebel and 5 Imperial systems have been revealed.
+            * Place a Rebel loyalty marker in each Rebel system.
+            * Place a subjugation marker in the first 2 Imperial systems and an Imperial loyalty marker in the other 3.
+            * Remove the 5 Imperial cards from the game and put the remaining cards back in the Probe Droid deck.
+        * Imperial player places 1 Death Star on space 3 of their build queue.
+        * Imperial player choose any remote system, places 4 TIE fighters, 1 Stormtrooper, and 1 Death Star Under Construction in that system, and removes that system's card from the Probe Droid deck.
+        * Imperial player places the following units in any systems that have an Imperial loyalty marker, subjugation marker, or Death Star Under Construction (at least 1 ground unit must be placed in each Imperial system).
+            * 8 TIE Fighters
+            * 3 Assault Carriers
+            * 3 Star Destroyers
+            * 2 TIE Strikers
+            * 12 Stormtroopers
+            * 4 AT-STs
+            * 2 Assault Tanks
+            * 1 AT-AT
+        * Rebel player searches the Probe Droid deck and chooses the location for their Rebel Base by placing the card face down in the Rebel Base space. Shuffle the Probe Droid deck.
+        * Rebel player places the following units in the Rebel Base space and/or any one non-Imperial system.
+            * 1 X-wing
+            * 1 Y-wing
+            * 1 U-wing
+            * 1 Rebel Transport
+            * 1 Corellian Corvette
+            * 5 Rebel Troopers
+            * 2 Airspeeders
+            * 1 Rebel Vanguard
+        * Each player draws 2 random starting action cards (those without a recruit icon) to begin the game. Unused starting action cards are returned to the box.
+        * Each player draws 1 mission cards and adds them to their hand.
+        
+    - name: Gameplay
+      text: | 
+        * Each side is limited to 8 leaders in their leader pool unless another rule allows them to have more. If a player ever has more leaders than they are allowed, they must immediately remove 1 of their active leaders from the game.
+        * Action cards can only be played on the leaders shown on the card.
+      sections:
+        - name: Assignment Phase
+          text: |
+            Starting with the Rebels, each player selects their missions and assigns up to 2 leaders per mission. The combined symbols of these leaders must equal or exceed those required by the mission.
+        - name: Command Phase
+          text: |
+            Starting with the Rebel player, players take turns either activate a system or reveal a mission. A player may also choose to pass and stop taking actions this phase. Once both players have passed, any leaders assigned to unrevealed missions are returned to their leader pool and all unrevealed missions return to the owner's hand.
+          sections:
+            - name: Activate System
+              text: |
+                * Choose a leader from your leader pool that has a command value (number in the lower-left or lower-right corner) and place it in any system.
+                * Move any number of units from adjacent systems to the activated system.
+                    * Units cannot be moved out of a system that contains one of your leaders.
+                    * Captured leaders do not prevent Rebel units from leaving their system.
+                    * The Imperial player may move captured leaders like ground units.
+                    * Any unit that cannot travel between systems on its own must be carried by transport units. Each transport may carry a number of units equal to its capacity.
+                    * The Rebel player may activate the Rebel Base space to move units adjacent to the Rebel Base's system to the Rebel Base.
+                * If Imperial ground units moved into a system, the Rebel player must declare whether the Rebel Base is in this system. If so, the base is revealed.
+                * If there are units from both sides in this system and the same theater (space or ground), resolve combat.
+                * If there is at least 1 Imperial ground unit in this system and it does not have Imperial loyalty, place a subjugation marker there.
+            - name: Reveal a Mission
+              text: |
+                * Choose a face down mission card to reveal.
+                * Declare which system the mission will take place in and place any leaders assigned to this mission in the declared system.
+                    * If a mission is attempted in the Rebel Base, place the leader in the Rebel Base space and not its actual system.
+                    * A mission may still be attempted or resolved in a destroyed system.
+                * If the mission says to resolve, the mission automatically success. Apply its effects.
+                * If the mission says to attempt, the other player may oppose it with 1 leader from their leader pool that has a matching icon by placing it in the attempted system.
+                    * All non-captured leaders present in the target system contribute to their side's attempt.
+                    * A captured leader will only oppose a mission that is taken directly against them.
+                    * If no leader is sent to oppose, the mission automatically succeeds.
+                    * If opposed, each player rolls 1 die for each icon on their leaders that match the mission icon.
+                        * For each minor skill (small) icon, roll 1 green die instead.
+                    * Each light saber icon counts as 2 successes.
+                    * If the mission shows a leader's picture, that leader gets 2 automatic successes if they are on this mission.
+                    * Ties go in favor of the side opposing the mission.
+                    * If the mission is successful, carry out its effects.
+        - name: Refresh Phase
+          text: |
+            * Retrieve all non-captured leaders.
+            * Draw missions - each player draws 2 mission cards, then discards down to 10.
+                * Players may not discard their starting mission cards.
+            * Launch Probe Droids - the Imperial player draws 2 Probe Droid cards.
+            * Draw Objective - the Rebel player draws 1 Objective card.
+            * Advance Time Marker - Advance the time marker 1 space, then reruit and/or build units based on the icons in the time marker's space.
+                * If the time marker is on the same space as the Rebel marker, the game immediately ends.
+                * Recruit icon - each player draws 2 cards from their action deck, chooses 1 to keep, and recruits 1 of the leaders from that card.
+                * Build icon - starting with the Rebel player, each player places units on the build queue for each of his loyal and subjugated systems.
+                    * The icons indicate which type of unit will be placed in the build queue; if multiple units match this icon, choose 1.
+                    * The sytems's number indicates which space of the build queue the unit should be placed on.
+                    * If the system is subjugated, the Imperial player only builds the first icon.
+        - name: Deploy Units
+          text: |
+            * Starting with the Rebel player, each player slides units 1 space down their build queue. Any units that slide off the board are immediately deployed in the player's loyal or subjugated systems, Rebel Base, or system with a Shield Bunker up to 2 new units per system.
+            * Any units you cannot or do not want to place remain on space 1 of the build queue.
+            * Units cannot be deployed to systems that contain your opponent's units.
+            * Units cannot be deployed to sabotaged systems.
+            * Units cannot be deployed to the Rebel Base space if it is revealed but may deploy to its system.
+            * The Imperial player may deploy Shield Bunkers to any remote system that contains at least 1 Imperial ground unit and no Rebel units, regardless of loyalty.
+            * The Imperial player may deploy units to any system that contains a Shield Bunker that was not deployed this turn.
+    - name: Combat
+      text: |
+        * If an ability lets you draw a tactic card, choose a tactic card from your discard pile to add back to your deck.
+            * The Shield Generator's ability is resolved immediately before you choose your ground tactic card.
+            * Effects that change the order in which players attack last for the entire combat or until another card changes the order.
+      sections:
+        - name: Add Leader
+          text: |
+            * Starting with the attacker, if a player does not have a leader with a tactics value in this system, they may add 1 from their leader pool.
+        - name: Draw Tactic Cards
+          text: |
+            * Each player must simultaneously chooses 1 tactic card from their deck for the current theater, places it face down, then reveal once both players have chosen.
+            * Starting with the attacker, each player chooses and resolves the top or bottom ability of their tactics card.
+                * If a row has an icon, at least 1 unit matching that type must be taking part in this battle.
+            * If a tactic card destroys a unit, it is immediately removed from the combat and will not roll dice this round but may still be used to match tactic card requirements this round.
+            * If a card say to cancel your opponent's card, they do not get to resolve their tactic card. Defender cancels first if possible.
+            * Discard the chosen card after resolving its effect.
+        - name: Combat Round
+          text: |
+            * Starting with the attacker, each player resolves all attacks with their space units. Units are not removed until both sides have resolved.
+            * If only units with no attack strength are left against units with an attack strength, they are immediately destroyed.
+            * Starting with the attacker, each player resolves all attacks with the ground units. Units are not removed until both sides have resolved.
+            * Starting with the attacker, each player has the option to retreat.
+                * A player cannot retreat if their opponent has no units in this system.
+                * The Rebel player may not retreat if there are 1 or more Interdictors in this system.
+                * The Imperial player may not retreat if this system has a Death Star or Death Star Under Construction in the combat.
+            * Any destroyed units placed on faction sheets are returned to the supply.
+            * If both sides still have units in the same theater, start a new round of combat.
+            * If combat ends, shuffle all tactic cards back into their decks and remove all damage markers from units.
+        - name: Resolving Attacks
+          sections:
+            - name: Roll Dice
+              text: |
+                * Count up the total number of dice each of your units is allowed to roll, up to a maximum of 5 red, 5 black, and 3 green dice.
+                    * If an ability reduces the number of dice allowed, apply this before the limit of 5 dice of each color is applied.
+                    * May rereoll a number of dice of your choice up to your leader's tactics value for the current theater.
+                        * If you have multiple leaders in this system, use the highest tactics value for the current theater.
+            - name: Assign Damage
+              text: |
+                * For each hit icon, apply 1 damage to any unit in the current theater whose health matches the die's color.
+                * For each direct hit icon, apply 1 damage to any unit in the current theater, regardless of the unit's health color.
+                * Units may be assigned more damage than it has health remaining.
+                * All dice must be assigned.
+            - name: Remove Damage
+              text: |
+                * For each light saber symbol rolled, you may remove 1 damage marker from any unit whose health matches the color of the die.
+            - name: Destroy Units
+              text: |
+                * Place 1 damage marker under each unit for each unblocked damage assigned to it.
+                * If a unit has a number of damage markers greater than or equal to its health value, that unit is destroyed and placed on that player's faction sheet as they still attack on their turn this round.
+        - name: Retreat
+          text: |
+            * Take 1 leader from the current system and place it in an adjacent system. This leader does not need to have tactics values.
+                * If possible, you must retreat to a system that contains your units or 1 of your loyalty markers.
+                * If there are no adjacent systems with your units or loyalty markers, you may retreat to an adjacent system that contains no units.
+                * The Rebel player may not retreat to the Rebel Base space.
+                * Cannot retreat to a system that contains your opponent's units.
+            * Must move all of your ships out of the system. You may choose to leave units that require transport behind.
+                * If any units remain in combat, continue resolving combat.
+                * All immobile units must remain in the system.
+        - name: Winning a Battle
+          text: |
+            * If your opponent retreats all of their units in one theater, you have won the battle in that theater.
+            * If both faction's units are destroyed in a battle, that battle has no winner.
+            * You do not win a battle if your opponent did not have any units in that theater at the start of combat.
+            * A player that destroys their opponent's last unit and then retreats has still won the battle.
+    - name: End of the Game
+      text: |
+        * The Rebel player wins if the time marker and Rebel marker are on the same space.
+        * The Imperial player wins if the Rebel Base is destroyed, either by having ground units in the Rebel Base's system with no opposing ground units or by destroying the Rebel Base system.
+    - name: Unit Abilities
+      sections:
+        - name: Shield Generator
+          text: |
+            * At the start of each ground battle step, draw 1 ground tactic card.
+        - name: Ion Cannon
+          text: |
+            * During each space battle step, your opponent rolls 2 fewer red dice.
+        - name: Shield Bunker
+          text: |
+            * Death Stars and Death Stars Under Construction cannot be destroyed, dealt damage, or assigned damage while in the same system as a Shield Bunker. This makes them immune to the Death Star Plans Objective card.
+            * In addition to normal deployment rules, a Shield Bunker may be deployed to any system that contains at least 1 Imperial ground unit and does not contain any Rebel units. This planet's loyalty does not matter.
+            * When a Shield Bunker is in a remote system that does not contain any Rebel units, the Imperial player may deploy units to that system as if it were a loyal system. This cannot be used during the build step in which the Shield Bunker is deployed. Note that deploying a Death Star to this system counts toward the limit of deploying 2 units during the Refresh Phase.
+        - name: Inderdictor
+          text: |
+            * Rebel units cannot retreat from a system that contains an Interdictor. Rebel abilities that provide additional ways to retreat cannot be used in an Interdictor's system. As soon as all Interdictors in their system are destroyed, this ability no longer applies.
