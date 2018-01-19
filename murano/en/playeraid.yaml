@@ -1,0 +1,89 @@
+name: Murano
+description: See to become the most glorious merchant on the islands of Murano. [See it on BGG](https://boardgamegeek.com/boardgame/163413/murano)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+        * Randomly distribute the gondolas to the starting spaces indicated with an anchor.
+        * Each player chooses a color.
+        * Each player places 1 Gondolier on the 5 VP space and 2 Gondoliers in the general supply on the board.
+        * 2P/3P: Remove the following components:
+            * 4 Character cards showing the 4P symbol in the lower left.
+            * 1 Shop of each color. o1 Random Palace.
+            * 3 Special Buildings.
+            * 1 Glass Factory.
+            * 3 Street Tiles with 1 Customer (1 of each color).
+            * 4 Street Tiles with no Customers.
+        * Sort the tiles by their type, shuffle them, and place them face down on their designated spots. Streets form 2 stacks.
+        * Shuffle the Character and Special Building cards. Remove 5 Character cards from the game.
+        * Each player gets 5 Gold.
+        * Choose a starting player. 
+    - name: Gameplay
+      text: |
+        * Only 1 Ship may occupy a space.
+        * Ships may not pass through spaces occupied by other Ships.
+        * Choose 1 Ship and move it to an Action Space to carry out that action.
+        * If desired action is occupied by another Ship, you may first move that Ship to free up the space and chain movements.
+            * First Ship you move is free.
+            * Each additional Ship you move cost you 1 more Gold than the previous one.
+            * Take the action of the last Ship you moved.
+        * May choose to pass and take 1 Gold on your turn instead of taking an action.
+            * Must still move at least 1 Ship as described above.
+    - name: Action Spaces
+      sections:
+        - name: Take 2 Gold
+          text: |
+            * Take 2 Gold. 
+        - name: Buy a Glass Factory
+          text: |
+            * Pay 1 Gold and take the top Glass Factory tile.
+        - name: Buy a Shop
+          text: |
+            * Pay 2 Gold to take the top Shop tile and put it face down in front of you.
+            * OR pay 4 Gold to take any Shop tile from the stack and put it face down in front of you. Shuffle the stack.
+        - name: Buy a Palace
+          text: |
+            * Pay 2 Gold to take the top Palace tile and put it face down in front of you.
+            * OR Pay 4 Gold to take any Palace tile from the stack and put it face down in front of you. Shuffle the stack.
+        - name: Recruit a Character
+          text: |
+            * Cost = number of Character cards you will have in your hand after acquiring this one.
+            * Draw 3 Character cards and choose 1. Return the rest to the bottom of the stack in any order.
+            * If you don’t want any of the cards, return all to the bottom of the stack in any order and do not pay any Gold.
+        - name: Place a Gondolier
+          text: |
+            * Pay 2 Gold and place a Gondolier from your supply on a gondola of your color at any 1 island.
+            * OR pay 5 Gold and place a Gondolier from your supply on a gondola of any color at any 1 island. 
+        - name: Build Tiles
+          text: |
+            * May place up to 3 tiles on unoccupied spaces on the board.
+            * Streets can only be placed on paved spaces. Buildings can only be placed on dirt spaces next to built Streets.
+                * Build a Street: Draw a Street tile from the stack and place it anywhere.
+                * Build a Glass Factory, Shop, Palace, or Special Building: Must be built from your supply. Place a cube of your color on the tile if it has a cube box. Score VP for the building.
+                    * Special Buildings: Draw 3 cards from the Special Building stack, choose 1, and return the rest to the bottom of the deck. Card grants a permanent bonus immediately. 
+        - name: Income
+          text: |
+            * Choose 1 island where you have at least 1 Shop.
+            * Up to 3 of your Shops (1 of each color) sell to all connected Customers of its color, earning 1 Gold per Customer.
+        - name: Production
+          text: |
+            * Choose any number of your Glass Factories from any number of islands.
+            * For each Glass Factory used, lose 2 VP and draw 1 glass bead from the bag.
+                * May not fall below 0 VP; cannot use more Factories if it would cause you to fall below 0 VP.
+            * After production, may sell 1-3 glass beads of a single color, getting Gold based on number sold.
+            * Keep remaining glass beads in front of you.
+        - name: Gondolier
+          text: |
+            * May sell 1 Gondolier from your personal supply to the general supply for 3 Gold.
+            * May purchase 1 of your Gondoliers from the general supply for 3 Gold.
+    - name: Game End
+      text: |
+        * Game end is triggered when 2 different stacks of tiles are emptied (both road stacks count as a single stack).
+        * Each other player after the player who triggered the end gets 1 final turn.
+        * When you buy a Building during your final turn, you may place it and get VP immediately.
+        * Each player reveals and scores their Character cards.
+            * For each Character card revealed, choose an Island with 1 of your unscored Gondoliers and place it on the island to show it has now been scored.
+        * +1 VP for each Gondolier you could not assign to a Character card except those in the general supply.
+        * Break ties with most Gold remaining.
