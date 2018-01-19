@@ -1,0 +1,100 @@
+name: Amerigo
+description: Help Amerigo Vespucci on his journey to discover new land. [See it on BGG](https://boardgamegeek.com/boardgame/137408/amerigo)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+        * Setup the map by randomly arranging tiles in a 3x3 manner (3P: 4x3, 4P: 4x4).
+            * No water zones can be completely surrounded by land.
+            * If land spaces on adjacent tiles connect, they must connect orthogonally, not diagonally.
+            * If the volcano tile is in play, it must be one of the central tiles.
+        * Place the time markers in ascending order on the time marker space on the frame.
+        * If the volcano tile is in play, shuffle the gold tiles and put 1 face down on each space of the volcano.
+        * Islands with more than 20 spaces are big islands. Place a treasure chest on each one.
+        * Place commodity tokens on their printed spaces on each island.
+        * Place all neutral landscape tiles facedown next to the board, along with the planning token.
+        * Place all production buildings and their tokens next to the board.
+        * Each player chooses a color and gets all pieces in that color.
+        * Mix the pirate markers and randomly place 5 face down on the storage board. Reveal 1 at random.
+        * Mix all progress tokens and place a random one face up on each space of the progress area.
+        * Remove any unused production tokens based on player count. Mix them and place face up on the board.
+        * Each player places a disc on the 0 space of the VP track.
+        * Place a disc of each color randomly on the special action track. This determines player order.
+        * First player gets no gold. Each other player gets 1 gold for every player that goes before them.
+        * Drop all cubes into the tower and place any that fall out onto their spaces of the action circuit.
+    - name: Gameplay
+      text: |
+        * Game is played over 5 rounds of 7 phases each. During each phase, each player takes 1 action in player order.
+        * The first player takes all cubes from the current phase’s action circuit space and drops them in the tower.
+        * Place all cubes that fall out on into the middle area of the action circuit.
+            * The color of cubes determine which actions can be taken.
+            * The largest number of cubes of a single color determine how many AP a player gets for any 1 action.
+        * Beginning with the player whose disc is farthest along the special action track (discs on top goes first), each player chooses 1 available action and perform is. Multiple players can select the same action.
+        * Player may instead decide to take gold. Gold = total # of cubes / 3, rounded up. Score 1 VP for each gold in excess of 12.
+        * A player can use fewer AP than allowed.
+        * After everyone has performed an action, move the cubes to their colored spaces and move onto the next phase.
+        * May discard a treasure chest at any time to get 3 gold.
+        * A player may spend any number of gold to increase AP by +1/gold on their turn.
+      sections:
+        - name: Blue Action - Move Ships
+          text: |
+            * First time chosen, place your ships on any spaces on the frames.
+            * Each AP allows each of your ships to move orthogonally to an adjacent water space.
+            * Each water space can only hold a single ship. Ships do not block other ships from passing through a space.
+            * If a ship ends its movement on an anchor space, player can put a trading post on an adjacent trading post space if it is not occupied. First player to establish a trading post on an island gets 3 VP.
+        - name: Black Action - Load Cannons
+          text: |
+            * Move cannon disc up AP number of spaces.
+            * If you have movements that would take you beyond 12, get 2 gold and lose remaining AP.
+        - name: Red Action - Plan
+          text: |
+            * Take neutral, production, or colored landscape tiles and place them next to your board.
+            * Own color costs 1 AP regardless of size.
+            * Neutral tile costs indicated AP. Can only take 1 neutral OR production tile per game phase.
+        - name: Brown Action - Progress
+          text: |
+            * Move progress disc AP number of spaces.</li<>
+            * Each time it reaches or passes a space with VP, take a progress token from the storage board and put it on your own.
+            * If you have movements that would take you beyond the end, get 2 gold and lose remaining AP.
+        - name: Green Action - Build
+          text: |
+            * Place neutral or colored landscape tiles on any number of island that contains at least 1 of your own trading posts.
+            * Own color costs 1 AP regardless of size.
+            * Neutral tile costs indicated AP.
+            * If building a production building, take 1 of remaining special production tiles and place it with your other numbered ones.
+            * Tiles can only be built on land.
+            * Each tile must be placed orthogonally adjacent to either your own trading post, neutral tile, or tile of your color.
+            * If you build over a commodity space, take that commodity token and space it on your sheet, stacking if needed.
+            * If you build over a volcano gold space, reveal the tile and gain that much gold.
+            * Cannot build over trading posts but can build over empty trading post spots.
+            * Score VP for each placed tile. Smaller number for small islands (<= 20 spaces), larger number for big islands (> 20 spaces).
+            * When the last empty space of an island is covered:
+                * Person that finishes it gets 3 VP and treasure chest if available.
+                * All players get VP based on the number of trading posts they have on the island.
+        - name: Yello Action - Buy Production Tokens
+          text: |
+            * Buy production tokens from the storage board by paying indicated AP cost and placing on your sheet.
+        - name: White Action - Special Action
+          text: |
+            * Choose to change player order or take a special action.
+                * Change player order: advance AP number of spaces on the special action track, stacking on top. If you have movements that would take you beyond the end, get 2 gold and lose remaining AP.
+                * Take a special action: Perform the action that your special action disc is on using phase’s AP number.
+    - name: End of a Round and Intermediate Scoring
+      text: |
+        * After ending the phase in which all white cubes a dropped, end the round and do intermediate scoring.
+        * Each player must fire cannons equal to pirate’s strength (sum of all face up pirate tiles) by moving their cannon disc down that many spaces. If a player does not have enough, they drop to 0 and move their VP marker back pirate strength # spaces.
+        * Reveal 1 more pirate marker.
+        * Return all progress tokens from the right half of their area to box. Move all left half markers to the right half. Fill left half.
+        * Return all production tokens to the box then refill spaces.
+        * Remove topmost time marker and return it to the box.
+    - name: End of the Game
+      text: |
+        * Convert any remaining treasure chests and progress tokens that grant gold. Each gold in excess of 12 earns 1 VP.
+        * 1 VP for every 3 gold.
+        * For each good, get VP = number of production tokens x number of commodity tokens. Ignore cost on production tokens.
+        * Evaluate all progress tokens marked with an E.
+        * VP based on progress token: number the disc sits on or the highest number passed.
+        * VP based on the highest number on or passed on the special action track.
+        * Ties broken by which disc is on top of the special action stack.
