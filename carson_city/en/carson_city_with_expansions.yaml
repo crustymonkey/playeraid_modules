@@ -1,0 +1,338 @@
+name: Carson City with Gold & Guns and Horses & Heroes expansions
+description: Compete to become the richest person while building up Carson City, Nevada. [See it on BGG](https://boardgamegeek.com/boardgame/39938/carson-city)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+        * Each player gets all of the components of their color, $15, 1 road, 1 revolver, and 1 horse. Start with 3 cowboys.
+        * Place one Ranch on the $3 and $10 spaces.
+        * Place one Min on the $4 and $20 spaces.
+        * Fill the other remaining building spots with random tiles.
+        * Roll a random location. Place a house there with 4 roads around it as the town center.
+        * Roll 9 more random locations, placing a mountain on each location. (only 6 with the river)
+        * Randomly determine player order by selecting player markers.
+        * Players take 2 property markers. In reverse turn order, players choose one parcel of land (including town center and mountains) and place their property marker on it. In player order, place one more marker.
+        * Choose 7 character cards at random. If one of them is the Paperboy, select an 8th character.
+    - name: Gameplay
+      sections:
+        - name: Outlaws (after first round)
+          text: |
+            * Roll both dice to determine the strength of the outlaws and the number. Existing outlaws stay on the board.
+            * Roll dice to determine where each outlaw appears (reroll if already occupied by an outlaw or adjacent to Prison). If rolled the Prison location, outlaw is immediately defeated and the Prison owner gets VP for defeating them.
+            * Player currently first in turn order decides the order in which to move the outlaws.
+                * Outlaws only consider their space and the 8 spaces around them.
+                * Outlaws do not consider buildings next to Prison or where another outlaw already is.
+                * Move to an adjacent building that has the highest income or stays in place if already there. If there are multiple candidates, determine randomly. oWill not move if they cannot reach any income.
+            * Outlaws are treated as other players for dueling purposes. Player must tie or beat the outlaw strength.
+            * Get VP for defeating the outlaw.
+        - name: Choice of Character
+          text: |
+            * In player order, each player chooses a character and taken their extra tokens if applicable.
+            * Update the turn order so that players go in order of their character number, lowest to highest.
+        - name: Cowboy Placement
+          text: |
+            * In player order, players must place a cowboy to perform an action or pass.
+            * Cowboys of other players do not block actions. Placing on a space with other cowboys will usually result in a duel.
+            * Only a single cowboy of your color on any space (except no duel spaces).
+            * You may place a horse onto an enclosure on your horse board after placing a cowboy.
+            * A cowboy may be placed into an enclosure to double its rodeo value. 
+          sections:
+            - name: Choose an Action
+              text: |
+                * Place a cowboy on one of the action spaces.
+            - name: Choose a Parcel of Land
+              text: |
+                * Place a cowboy onto a parcel of land you want to purchase.
+            - name: Attack or Defend a Building
+              text: |
+                * Place a cowboy onto a rival's building to attack it or on one of your own to defend it.
+            - name: Pass
+              text: |
+                * Move your turn order marker to the first available space on the bottom of the turn order track. Out for the round.
+        - name: Performing Actions and Duels
+          text: |
+            * Actions are carried out in the order shown on the board.
+            * Once an action is complete, any cowboys taking that actions are returned to the general supply.
+            * You may choose not to perform the action, even after winning a duel. The cowboy still goes back to the general supply.
+          sections:
+            - name: General
+              text: |
+                * Roads may be placed at any time during the game.
+                * Roads must always extend previously placed roads.
+                * 2 roads must be placed at the same time (and same space) to cross the river.
+            - name: Duels
+              text: |
+                * Each player involved rolls a die.
+                * Die + cowboys in personal supply + revolvers = total.
+                * Highest total wins and gets to perform the action. Ties go to lowest number on the pass order track.
+                * Losing player(s) return their cowboy to their personal supply.
+            - name: Wages (Multiple Cowboys, No Duels)
+              text: |
+                * Each cowboy here gives you $4 or you may buy a horse for $4. Maximum of 1 horse per round.
+            - name: Purchase a Parcel of Land
+              text: |
+                * Any unowned parcel (including those with buildings or mountains) may be purchased.
+                * $1 for the tile + $1 for each tile around it that has any building or mountain.
+                * If there are several duels for parcels, the first player who passed (among those in duels) determines the order.
+            - name: Purchase a Building
+              text: |
+                * The building must be placed onto a parcel that you own.
+                * The building must be connected to the road system (a road must touch a corner of the tile). Ranches and Mines do not need to be connected by road.
+                * Add a house to the city. This house is free and may be placed on any parcel (owned or not) connected by road. Ranches and Mines do not place a new house.
+                * Instead of placing a house, you may place a townhouse by flipping a house to its other side. To do this, the house must be surrounded on all sides by other buildings, houses, river, or property tiles.
+                * Players may hold onto buildings they do not yet want to place. Can be placed in player order on the deferred building step.
+            - name: Building Income
+              text: |
+                * Parcels owned by other players (such as houses) are not counted towards a building's income.
+                * If a building is attacked, the attacking player gets half of that income rounded down from the owner.
+        - name: Round End
+          text: |
+            * Calculate Rodeo points for each player by counting the number of points from each enclosure (double for cowboys).
+                * Highest scoring player gets a Rodeo token. Tie goes to player lowest in turn order.
+            * Remove all horses from Rodeo boards and return them to person supply.
+            * Move the turn marker one space forward.
+            * Each player gets the depicted number of cowboys from the general supply, adding it to their existing personal supply.
+            * All money owned beyond their character's limit must be spend to buy points. Can spend more if desired.
+            * Return all characters and character tokens to their spaces.
+            * Slide all buildings not bought down, closer to $3 space. Fill in empty spaces with new buildings.
+    - name: End of the Game
+      text: |
+        * Exchange leftover money at 1 VP / $6.
+        * 2 VP / owned parcel with a building, mountain, or house. 3 VP if adjacent to a bridge.
+        * 1 VP / horse
+        * 1 VP / won rodeo tile
+        * 1 extra VP per horse per won rodeo tile
+    - name: Buildings
+      sections:
+        - name: House (x19)
+          text: |
+            **Placement conditions:** The parcel on which the House is built must be connected to the road system.  
+            **Income:** $0  
+            **Special rule:** Houses are never bought. They come into play when other buildings are built.  
+        - name: Townhouse (x19)
+          text: |
+            **Placement conditions:** When you must place a House on the board, you can, instead of placing an additional House, replace an existing House with a Townhouse, flipping the House tile to its Townhouse side. To replace an existing House with a Townhouse, all parcels surrounding the existing House must be occupied by other buildings, Houses, mountains, river or property tiles. This means that a Townhouse can not be placed on the edge of the board.  
+            **Income:** $0  
+            **Special rule:** A Townhouse is considered two Houses for calculating Drugstore, Bank, Saloon, and General Store incomes.  
+        - name: Mine (x6)
+          text: |
+            **Placement conditions:** None  
+            **Income:** $3 per adjacent mountain and $3 if adjacent to the river (regardless of the number of river spaces). Several Mines may benefit from the same mountain. Once you own a mountain, it no longer benefits other players' Mines.  
+            **Special rule:** A Mine adds 1 point to your firepower (you receive an extra revolver token).  
+        - name: Hotel (x6)
+          text: |
+            **Placement conditions:** The parcel on which the Hotel is built must be connected to the road system, and the player must also build a House.  
+            **Income:** $6  
+            **Special rule:** A Hotel is considered two Houses when calculating Drugstore, Bank, Saloon, and General Store incomes.  
+        - name: Church (x2)
+          text: |
+            **Placement conditions:** The parcel on which the Church is built must be connected to the road system, and the player must also build a House.  
+            **Income:** $0  
+            **Special rule:** A Church is considered a House when calculating Drugstore, Bank, Saloon, and General Store incomes. A Church allows the player to prevent other players' attacks. All your buildings directly adjacent to your Church cannot be attacked. If you build a Church near one of your buildings that's being attacked, the attack is canceled. The attacker returns his cowboy to his personal supply. The Church itself can never be attacked.  
+        - name: Ranch (x6)
+          text: |
+            **Placement conditions:** None  
+            **Income:** $1 for every neighboring free parcel, meaning a parcel of land that doesn't contain a House, building or mountain but one that can contain property tiles. Several Ranches may benefit from the same free parcel.  
+            **Special rule:** A Ranch adds 1 point to your firepower (you receive an extra revolver token). A Ranch is considered a House when calculating Drugstore, Bank, Saloon, and General Store incomes.  
+        - name: Drugstore (x4)
+          text: |
+            **Placement conditions:** The parcel on which the Drugstore is built must be connected to the road system, and the player must also build a House.  
+            **Income:** $3 per adjacent House and per Ranch owned by the player. The Ranch does not have to be adjacent to the Drugstore to boost its income. If the Ranch is adjacent to the Drugstore, it counts as both a Ranch and a House as usual. 
+        - name: Bank (x4)
+          text: |
+            **Placement conditions:** The parcel on which the Bank is built must be connected to the road system, and the player must also build a House.  
+            **Income:** $3 per adjacent House and per Mine owned by the player. The Mine does not have to be adjacent to the Bank to boost its income.  
+        - name: Saloon (x3)
+          text: |
+            **Placement conditions:** The parcel on which the Saloon is built must be connected to the road system, and the player must also build a House.  
+            **Income:** $5 per adjacent House.  
+        - name: Blacksmith (x2)
+          text: |
+            **Placement conditions:** The parcel on which the Blacksmith is built must be connected to the road system, and the player must also build a House.  
+            **Income:** The income is $5 on the first round, $10 on the second round, $15 on the third round and $20 on the last round, plus $5 per Ranch owned by the player. The Ranch does not have to be adjacent to the Blacksmith to boost its income.  
+        - name: Prison (x2)
+          text: |
+            **Placement conditions:** The parcel on which the Prison is built must be connected to the road system, and the player must also build a House.  
+            **Income:** $0  
+            **Special rule:** A Prison adds 2 points to your firepower (you receive two extra revolver tokens). A Prison cannot be attacked.  
+        - name: Station (x1)
+          text: |
+            **Placement conditions:** The Station may only be built along a road which crosses the whole map in a straight line.  
+            **Income:** $0  
+            **Special rule:** The Station does not provide income but allows to score victory points at the end of the game according to the development of the city. At the end of the game, the Station gives 1 VP to its owner for every two House symbols in the city, rounded down. The Station is considered two Houses when calculating Drugstore, Bank, Saloon, and General Store incomes. The Station can not be attacked to steal victory points.  
+        - name: School (x2)
+          text: |
+            **Placement conditions:** The parcel on which the School is built must be connected to the road system, and you must build three Houses. If playing with the river side of the board, only one School can be built on each side of the river.  
+            **Income:** $0  
+            **Special rule:** The School doesn't provide any income. A School is considered a House when calculating Drugstore, Bank, Saloon, and General Store incomes.  
+        - name: General Store (x2)
+          text: |
+            **Placement conditions:** The parcel on which the General Store is built must be connected to the road system, and the player must also build a House.  
+            **Income:** $3 per adjacent House and $6 per adjacent House owned by the player himself. The General Store is the only building that receives income from Houses belonging to other players.  
+        - name: City Hall (x1)
+          text: |
+            **Placement conditions:** The parcel on which the City Hall is built must be connected to the road system.  
+            **Income:** $0  
+            **Special rule:** The City Hall doesn't provide any income. A City Hall is considered a House when calculating Drugstore, Bank, Saloon, and General Store incomes.  
+            As soon as the City Hall is drawn from the bag (during setup or the end of round phase), the first player (in turn order) immediately places it in the city on any unowned parcel (without paying). If no parcels are available which are connected to the road system, then the first player places new roads from the general supply (as few as possible) to create a valid parcel. Then continue to place new buildings on the action track as normal.  
+            The City Hall may not be purchased by any player. To receive the benefit from the City Hall, you have to place a cowboy on it during the cowboy placement phase. Only one cowboy may occupy the City Hall. When a City Hall is contested, a duel occurs. This duel is resolved at the beginning of the building income phase.  
+            The player occupying the City Hall increases all of his own building's income. Each building that they own increases its profits by one level, with the exception of Ranches and Mines. If a player loses ownership of the City Hall, his building's profits decrease by one level. In other words, the increase in income by one level is temporary and will end as soon as that player is no longer occupying City Hall. At the end of the round, the cowboy occupying the City Hall stays on the board.
+    - name: Characters
+      sections:
+        - name: Paperboy - 0
+          text: |
+            You must play with 8 character cards in your game instead of 7.
+          sections:
+            - name: Yellow Side
+              text: |
+                Pay $3 and immediately choose another character card from the cards in play, except the Sheriff. You apply the abilities of that character as per usual, including its money limit, but you count the 0 value of this card to determine the turn order. Cash limit: $0.
+            - name: Red Side
+              text: |
+                Immediately choose another character card from the cards in play, except the Sheriff. You apply the abilities of that new character as per usual, but you deduct $5 off of that character's money limit. You count the 0 value of this card to determine turn order. Cash limit: -$5.
+        - name: Sheriff - 1
+          sections:
+            - name: Yellow Side
+              text: |
+                The player helped by the Sheriff gets the special Sheriff cowboy from the general supply (white cowboy). This allows him to select one action without fear of being attacked (no on challenges the Sheriff to a duel). The Sheriff can not be played to attack an opposing building, nor to provoke a duel, so it must be placed on an action space without any other cowboy. Cash limit: $20.
+            - name: Red Side
+              text: |
+                You are not allowed to attack any building or engage in a duel (except to defend yourself). For every lost duel, you receive 3 victory points. Cash limit: $20.
+        - name: Banker - 2
+          sections:
+            - name: Yellow Side
+              text: |
+                When you choose the Banker, you immediately receive $9. The cash limit of this character is particularly high: $120.
+            - name: Red Side
+              text: |
+                Before the end of the round, you may purchase 3, 5, or 7 victory points for $3, $12 or $25, respectively. Cash limit: $60.
+        - name: Grocer - 3
+          sections:
+            - name: Yellow Side
+              text: |
+                The Grocer allows you to:
+                * Either double the income of one particular building type (for example, all your Banks) during the building income phase. If a building with double income is attacked, then you and the attacker receive normal income.
+                * Or receive $8 (immediately or during the building income phase).  
+                Cash limit: $60
+            - name: Red Side
+              text: |
+                You either immediately receive $8 or you receive 1 victory point per House you own at the end of the round (not including Ranches, Hotels, Churches, Schools or Train Station). A Townhouse earns you 1 victory point like a normal House. Cash limit: $60.
+        - name: Chinese Worker - 4
+          sections:
+            - name: Yellow Side
+              text: |
+                When you choose the Chinese Worker, you immediately receive two roads. On top of that, the price of any building you purchase is halved (rounded up). Cash limit: $30.
+            - name: Red Side
+              text: |
+                You pay $5 and take one of the available buildings. You may build it immediately, or keep it to build it later. The remaining buildings are immediately shifted towards lower prices, and a new building is drawn from the bag. Cash limit: $30.
+        - name: Settler - 5
+          sections:
+            - name: Yellow Side
+              text: |
+                The Settler immediately gives you a parcel. It must be an unowned parcel at the moment you take it. Cash limit: $30.
+            - name: Red Side
+              text: |
+                You either receive $8 immediately, or you receive 1 VP per mountain you own at the end of the round. Cash limit: $20.
+        - name: Captain - 6
+          sections:
+            - name: Yellow Side
+              text: |
+                By choosing the captain you can immediately pay $1 and receive a cowboy from the general supply, pay $4 and receive two cowboys from the supply, or pay $9 and receive three cowboys from the general supply. Cash limit: $25.
+            - name: Red Side
+              text: |
+                You immediately pay $3 to receive a revolver token, or $9 to receive two revolver tokens. You keep these revolver tokens until the end of the game. Cash limit: $20.
+        - name: Mercenary - 7
+          sections:
+            - name: Yellow Side
+              text: |
+                The Mercenary gives 3 extra firepower points during this round. Cash limit: $20.
+            - name: Red Side
+              text: |
+                The Mercenary gives you 2 extra firepower points during this round. Cash limit: $30.
+        - name: Indian - 8
+          sections:
+            - name: Yellow Side
+              text: |
+                You immediately receive 2 randomly selected parcels of land. Roll the dice to determine the location, rolling again if that location is not empty. Cash limit: $20.
+            - name: Red Side
+              text: |
+                The maximum price of any parcel of land is $3 regardless of any modifiers in play for that parcel. Cash limit: $30.
+        - name: Prospector - 9
+          sections:
+            - name: Yellow Side
+              text: |
+                When you choose the Prospector, you immediately pay $10. You then select a Mine from the available buildings, or from the bag if none are available on the building purchase spaces. Then choose an unowned parcel that you cover with one of your property tiles and build the Mine on this parcel. If there are no Mines left, flip the Prospector onto the red variant side for the remainder of the game. Cash limit: $20.
+            - name: Red Side
+              text: |
+                The Prospector receives two dynamite tokens (if available). With one dynamite token you can either:
+                * Triple a Mine's income (once per mine per game round). You may spend the dynamite token at any time when performing the estate income action. If a cowboy from another player is present, he gets half this tripled value (rounded down). You may not perform this action in combination with the Grocer character card.
+                * Place the dynamite token with a cowboy during the cowboy placement phase. In the case of a duel, you roll two dice (instead of one die) and add the results of the two dice to your firepower. (Important: with the Might is Right variant, you would also spend two duel tiles). If no duel occurs, the dynamite token is lost. **Important:** If a dynamite token is placed with a cowboy on a player's own Mine, the player gains both benefits of the dynamite (triple income from the Mine PLUS rolling two dice in a duel for that space if one occurs). Cash limit: $20.
+        - name: Gunsmith - 10
+          sections:
+            - name: Yellow Side
+              text: |
+                Immediately gain 2 victory points for each duel you win this round, including those against an Outlaw. Cash limit: $30.
+            - name: Red Side
+              text: |
+                The gunsmith takes pride in his arsenal, and only the best is good enough for him. In all duels, the gunsmith is allowed to roll the die again (once) if desired (again, including those against an Outlaw). In addition, the gunsmith receives one dynamite token (see Prospector's rules). With the Might is Right variant, you select and play your duel tile after you opponents showed theirs. Cash limit: $20.
+        - name: Singer - 11
+          sections:
+            - name: Yellow Side
+              text: |
+                You receive 2 no duel tokens for the current round. You can place these tokens with a cowboy when you choose any one of these actions: get 3 roads, get money (Nevada state Bank) or get victory points (town council of Carson City). A cowboy with a no duel token never takes part in a duel, and the action can be performed regardless of the presence of any other cowboy (even the Sheriff). If only one cowboy from another player is placed on the same space, no duel will occur and both players can do the action. If a duel occurs between two or more other players, the result of the duel doesn't affect the cowboy with the no duel token. Cash limit: $15.
+            - name: Red Side
+              text: |
+                The singer can bring you luck. During the cowboy placement phase, the Singer may place a cowboy from the general reserve with a no duel tile on the gambling income space. During the third phase (perform actions), the player ignores any duels if other cowboys are present in this space and he rolls the dice for payout but multiples the dice together for a payout of $1 to $36. Cash limit: $40.
+        - name: Auctioneer - 12
+          sections:
+            - name: Yellow Side
+              text: |
+                The Auctioneer immediately chooses 2 parcels which belong to no player, and places the auction tokens there to indicate an auction for these two parcels. All players may join the auction (if they have enough money to pay for the bidding). Starting with the Auctioneer and then proceeding clockwise, each player may make a bid which must be higher than the previous bid. Once a player passes, he may not join the bidding again. Once there is only 1 remaining player in the auction, he pays half of his bid (rounded down) to the Central Bank and the other half to the Auctioneer (rounded up) and places two parcel tiles on the auctioned locations. If the Auctioneer wins the auction, he pays half the costs to the Central Bank (rounded down). If no player makes an offer, the lands remain unoccupied. Even if the Auctioneer pays only half the price he offered, he must have the full amount available. Cash Limit: $30.
+            - name: Red Side
+              text: |
+                The Auctioneer immediately takes the 3 revolvers token and proceeds to auction off the ammo. All players can participate in the sale, including the Auctioneer (who can not bid more than the money he has). As before, players can continue to raise their bids during the auction until only one high bidder remains. The winner does not need to place a cowboy on the ammunition action space, but instead pays the winning amount directly to the Auctioneer and takes the 3 revolvers token. If the Auctioneer is the winner, he pays nothing. Cash limit: $30.
+        - name: Governor - 13
+          sections:
+            - name: Yellow Side
+              text: |
+                The Governor immediately receives 1 road. In addition, the Governor receives 1 victory point each time he places a new road in the city, provided that this new road reaches at least one new parcel of land (without a road already). With the CARSON RIVER variant, a player gets two victory points if he builds a bridge (with two roads) provided that this new bridge also reaches at least one new parcel of land. Cash limit: $50.
+            - name: Red Side
+              text: |
+                The player immediately chooses to tax either weapons or money. If he chooses to tax weapons, he gets $1 from the other players for each revolver token they have (only tokens, not revolvers from the mercenary). If he chooses to tax money, he gets $1 from the other players for each $10 they have, rounded up. The players cannot refuse to pay the tax. Cash limit: $50.
+        - name: Doctor / Undertaker - 14
+          sections:
+            - name: Yellow Side
+              text: |
+                When you choose the Doc-tor/Undertaker, you may choose either the yellow (Doctor) or red (Undertaker) side of the tile. The Doctor charges $3 to any player who wishes to reposition a defeated cowboy (outduelled by another player or an outlaw) onto an uncontested and unperformed location/action space, rather than into the players personal supply. If several players may reposition a defeated cowboy, they can consult the doctor (a Doctor's cowboy is always first, then in the order following the pass order track). The Doctor pays nothing for healing his own cowboys. Moreover, the Doctor receives $3 from the central bank for each defeated Outlaw. Cash limit: $60.
+            - name: Red Side
+              text: |
+                For each defeated cowboy, a player must choose either to pay $2 to the Undertaker or to lose 1 Victory point. In addition, the Undertaker immediately gains $2 dollars from the Central Bank for each Outlaw defeated during the current round. The Undertaker does not have to be involved the duel to gain money. The Undertaker pays nothing for his own defeated cowboys. Cash limit: $90.
+        - name: Cowboy - 15
+          sections:
+            - name: Yellow Side
+              text: |
+                Immediately receive a new horse token that you place in your personal supply. Cash limit: $20.
+            - name: Red Side
+              text: |
+                When you choose the Cowboy, you immediately pay $8 and receive one Ranch amongst those available on the building track. Place one of your property markers on any unoccupied parcel of land and place the Ranch you just received on that property marker. The available buildings are all shifted down the line and a new building is taken out of the bag and placed on the $12 spot. If there are no Ranches available, take one out of the bag. If all six Ranches have already been bought, flip the Cowboy card to its yellow side. Cash limit: $20.
+        - name: Heroes - 16
+          sections:
+            - name: Yellow Side
+              text: |
+                During the entire round, all your buildings are protected from enemy attack, whether it’s from other players or the Outlaws. You cannot attack the buildings of other players. When moving the Outlaws, consider the income of all your buildings to be $0. If an outlaw is on one of your buildings during the income step, you still receive your normal income from that building. Cash limit: $240.
+            - name: Red Side
+              text: |
+                Choose one of these three available options:
+                * Receive 3 victory points;
+                * Put 1 of your available cowboys back in the general supply and receive 6 victory points;
+                * Put 2 of your available cowboys back in the general supply and receive 9 victory points.  
+                Cash limit: $40.
+        - name: Teacher - 17
+          sections:
+            - name: Yellow Side
+              text: |
+                When using the Teacher, you must use its yellow side during round 1-3, and the red one during round 4. When playing with the Teacher, you will be the first player to choose a character next turn, no matter when you pass this round. Cash limit: $60.
+            - name: Red Side
+              text: |
+                During the final scoring, you get 2 victory points for each School, Prison, or Church you own, and you also get 2 victory points if you don’t own any Saloon(s). Cash limit: $60.
