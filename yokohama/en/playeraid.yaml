@@ -1,0 +1,116 @@
+name: Yokohama
+description: Merchants compete to gain fame from successful businesses. [See it on BGG](https://boardgamegeek.com/boardgame/196340/yokohama)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+        * Select the appropriate game boards based on the number of players shown on their backs.
+        * Randomly arrange the boards in a triangle shape (2P: 4 on top, 3P: 5 on top, 4P: 6 on top)
+        * Place the score track directly above the play area and the management boards on either side.
+        * Shuffle the building site cards and place 1 face up on each location.
+        * Shuffle the 5-Power tokens and place 1 face up on each location.
+        * Each player takes all of the pieces in their colour.
+        * Each player starts with 2 shops and 8 assistants in hand. All other pieces are in their warehouse.
+        * Each player gets 1 copper, silk, tea, and fish.
+        * Starting player gets 3 Yen, everyone else gets 4 Yen.
+        * Shuffle the order cards and return some to the box (2P: 16, 3P: 5, 4P: 0).
+        * Deal order cards to the open spaces on the Port and Dock management boards.
+        * Deal 2 orders to each player. Each player chooses to keep 1 and return the other to the box.
+        * Shuffle the technology cards. Deal 1 to each open space on the Laboratory and Research Center management boards.
+        * Select a random A, B, and C achievement card.
+        * 2P: Block the indicated spaces on the Church and Customs management boards with a neutral worker.
+    - name: Gameplay
+      text: |
+        * A player can have a maximum of 3 order cards in their hand and cannot discard them. Must be completed.
+        * When a game end condition is met, finish the current round and then play 1 more full round.
+        * Must perform the phases in order. 
+      sections:
+        - name: Phase A - Additional Action Phase (First Half)
+          text: |
+            * May perform any number of these actions any number of times.
+          sections:
+            - name: Use Foreign Agent
+              text: |
+                * May only use 1 foreign agent per turn.
+                * Turn 1 of your agent tiles face down to show it has been used.
+                * Choose an area containing at least 1 of your assistants and not your president.
+                * May choose an area that contains another player’s president. Do not need to pay.
+                * Carry out steps 3-6 in that area like a normal action phase.
+            - name: Fulfill an Achievement
+              text: |
+                * Place an assistant from your hand onto an achievement whose conditions you meet.
+                * If first player to achieve this, score the larger number of points, otherwise score the smaller number.
+                * Do not need to spend the indicated resources.
+                * Each player may only fulfill each achievement once.
+            - name: Fulfill an Order
+              text: |
+                * Place an order card from your hand face up in front of you.
+                * Discard the goods indicated on the order and gain the reward.
+                * Check to see if you’ve matched country icons in order to earn a foreign agent (any 2 orders and/or techs with same flag).
+        - name: Phase B - Main Action Phase
+          sections:
+            - name: Step 1 - Placement Step
+              text: |
+                * Choose 1 of the following:
+                    * Place 1 assistant into each of up to 3 different areas.
+                    * Place 2 assistants into a single area.
+                * Assistants must come from your hand.
+                * Cannot place assistants on the Canal.
+                * Can place assistants where your president is.
+                * For each opposing president in an area, you must pay them 1 yen for each assistant you want to place there. Can’t do this if you can’t pay.
+            - name: Step 2 - Movement Step
+              text: |
+                * Choose 1 of the following:
+                    * Return your president and all of your assistants from any 1 area (not management board) to your hand. Skip 3-6.
+                    * Move your president to another area.
+                * President must move along a path created by your assistants and must end in a space containing your assistants.
+                * Cannot end in a space containing an opposing president.
+                * For each opposing president in an area, you must pay them 1 yen to pass through or end there. Can’t do this if you can’t pay.
+            - name: Step 3 - Area Action Step
+              text: |
+                * Perform the action of the area based on your power there.
+                * Each piece of your color that is on the action gives +1 power to a maximum of 5.
+                * Any opponent with a trading house in that area gets 1 yen from the bank. Never get yen from your own trading houses. 
+            - name: Step 4 - 5-Power Bonus (Optional)
+              text: |
+                * If you performed a 5-Power action, take the 5-Power token from the space if it’s available. 
+                * Immediately gain its bonus then turn the tile face down in front of you.
+            - name: Step 5 - Construction (Optional)
+              text: |
+                * Choose 1 of the following:
+                    * Construct 1 shop.
+                    * Construct 1 trading house.
+                * Each area may only have 1 shop for each player.
+                * Each area may only have 1 trading house.
+                * Shop: Choose any open space, place your shop there, and gain the displayed bonus.
+                * Shops and trading houses must be built from your hand.
+            - name: Step 6 - Recovery Step
+              text: |
+                * Take back all assistants from the area you used.
+        - name: Additional Action Phase (Second Half)
+          text: |
+            * Identical to Additional Action Phase (First Half).
+    - name: End of the Game
+      text: |
+        * Any player has built all 4 of their trading houses.
+        * Any player has built all 8 of their shops.
+        * Not enough cards to refill management board.
+        * Number of assistants placed on the Church management board (2P: 5 including neutral, 3P: 5, 4P: 6).
+        * Number of assistants placed on the Customs House management board (2P: 5 including neutral, 3P: 5, 4P: 6).
+        * Finish the current round, then play 1 more round.
+    - name: Scoring
+      text: |
+        * Player with most assistants on the Church board gets 6 VP. Second gets 3 VP. Break ties with rightmost assistant.
+            * If only 1 player has assistants on this board, they get both first and second place VP.
+        * Player with most assistants on the Customs board gets 8 VP. Second gets 4 VP. Break ties with rightmost assistant.
+            * If only 1 player has assistants on this board, they get both first and second place VP.
+        * Player with highest total value in technology cards gets 10 VP. Second gets 5 VP. Break ties closest to start player.
+            * If only 1 player has technology cards, they get both first and second place VP.
+            * 2P: Dummy player has an ending technology value of 7.5. Each player gets VP based on the number of unique country flags on their order and technology cards. o5 different: 12 VP, 4 different: 8 VP, 3 different: 4 VP, 2 different: 2 VP, 1 different: 0 VP.
+        * +1 VP per unused foreign agent.
+        * +1 VP per import token.
+        * +1 VP per 2 Yen.
+        * +1 VP per 3 trade goods.
+        * Break ties closest to start player.

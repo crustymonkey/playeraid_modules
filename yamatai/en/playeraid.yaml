@@ -1,0 +1,148 @@
+name: Yamatai
+description: For Queen Hamiko's Smile. [See it on BGG](https://boardgamegeek.com/boardgame/213893/yamatai)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+        * Shuffle the Specialist tiles to form a face down deck. Deal out 5 Specialists, 1 to each spot on the board.
+        * Shuffle the Building tiles and place it face down. Reveal 5 and place them next to the board.
+        * Shuffle the Fleet tiles. Reveal 5 and place them on the first 5 spots of the Fleet track at the bottom of the board. Place the reaming 5 tiles face down on the last 5 spots of the track.
+        * Shuffle the Culture tokens and them randomly on the board.
+        * Place a mountain tile under each mountain Culture token (including the blank one).
+        * Remove all blank Culture tokens from the board.
+        * Each player gets 1 meeple of their color, 10 coins, a player mat and a number of Standard Buildings.
+            * 2P: 10 each (do not use gray or purple buildings)
+            * 3P: 8 each (do not use gray buildings)
+            * 4P: 6 each
+        * Shuffle the turn order meeples and place them randomly on the numbered spots above the Fleet track to define turn order.
+            * 2P: Take 1 meeple for each player and randomly place on spots 1 and 2, then repeat for spots 3 and 4.
+        
+    - name: Gameplay
+      text: | 
+        * Performed in turn order as shown on the turn order track.
+        * On their turn, a player performs actions 1 – 5 in order.
+      sections:
+        - name: 1 - Choose a Fleet Tile (Mandatory)
+          text: |
+            * Choose a Fleet tile from the ones visible by placing it and your turn order meeple on your mat.
+            * Take the boats depicted on the Fleet tile from the reserve. If not enough boats are left, take what you can.
+        - name: 2 - Trade (Optional)
+          text: |
+            * May buy or sell 1 boat, paying or receiving the price marked on your player mat.
+            * May only perform a single transaction; either 1 buy or 1 sell.
+            * Gold boats cannot be bought unless a Specialist allows you to ignore this.
+        - name: 3A - Place Boats on the Board (Optional)
+          text: |
+            * Place any number of boats onto the board.
+            * The first boat placed on a turn must be on an empty spot, marked with a special starting symbol on the board or on an empty spot connected to a boat of the same colour.
+            * Additional boats can be placed on any empty spot connected to the previous boat, regardless of color.
+        - name: 3B - Collect Culture Tokens or Build (Mandatory if Possible)
+          text: |
+            * Must perform 1 of the following actions:
+          sections:
+          - name: Collect Culture Tokens
+            text: |
+                * Take 1 Culture token for each boat that you placed on the board.
+                * Each boat allows you to take 1 adjacent Culture token.
+          - name: Build
+            text: |
+                * Choose 1 Building from the face up row.
+                * To place a Building, the boats shown on the tile must be adjacent to the island where you choose to build it and the island must not have a Culture token.
+                * Place the matching Building from you supply on the island; either a standard building or a Torii (gate).
+                * Put the building tile face down in front of you.
+                * Standard Building:
+                    * +1 point for each adjacent Torii or palace.
+                    * +1 point if constructed on a mountain.
+                    * +1 coin for each of your buildings in this contiguous group (min. 2 buildings). Diagonal does not count.
+                * Prestige Building:
+                    * No special bonus.
+                
+        - name: 4 - Place Remaining Boats on Your Mat (Mandatory)
+          text: |
+            * Place all boats you did not use on your player mat.
+            * 1 boat can be kept in your harbor for future turns; the rest must be put aside and can no longer be used.
+        - name: 5 - Recruit a Specialist (Optional)
+          text: |
+            * Recruit a Specialist from the track by paying 2 identical or 3 distinct Culture tokens.
+            * Take the Specialist and any coins that are on their tile.
+            * May only recruit 1 Specialist per turn.
+    - name: End of the Round
+      text: |
+        * Add 2 coins to every face up specialist on the Specialist track.
+        * Fill and empty Specialist spaces. (game ends if it cannot be filled)
+        * Refill Building tiles display back to 5 tiles. (game ends if it cannot be filled)
+        * Each player places their turn order meeple on the numbered spot matching their Fleet tile(s).
+        * Slide hidden Fleet tiles left to fill in spots and reveal them.
+        * Players return current Fleet tiles to the board. Shuffle them and place face down on far end of Fleet track.
+    - name: End of the Game
+      text: |
+        * When a player places their last Standard Building, finish off the current round, then the game ends.
+        * If no boat of any 1 colour remains when setting up a new round, the game immediately ends.
+        * If you cannot refill the Specialist track, the game immediately ends.
+        * If you cannot refill the Building row, the game immediately ends.
+    - name: Scoring
+      text: |
+        * +1 PP for every 5 coins.
+        * +1 PP for each Prestige token.
+        * +X PP for each constructed Building.
+        * +X PP for each Specialist.
+        * -1 PP for each reserved Building that was not built.
+        * -1 PP for every 2 unused boats on your player mat.
+    - name: Specialists
+      sections:
+        - name: Amateratsu
+          text: |
+            Doubles the value of your Prestige Point Tokens.
+        - name: Ananda
+          text: |
+            Receive 2 coins from any opponent that constructs a building next to at least one of your Standard Buildings. An opponent that cannot pay cannot place their building next to yours.
+        - name: Awashima
+          text: |
+            Receive Standard Building Bonuses even for Prestige Buildings.
+        - name: Ebisu
+          text: |
+            Once per turn, when you clear islands to take Culture Tokens, take one extra token from any island of the board.
+        - name: Fu Hsi
+          text: |
+            At game end, score 1 PP for every 3 coins (instead of 5).
+        - name: Hetsuka
+          text: |
+            Once per turn, you may discard one of your Culture Tokens to receive 4 coins.
+        - name: Izanagi
+          text: |
+            You may do one additional transaction per turn (buy or sell).
+        - name: Izanami
+          text: |
+            When an opponent recruits a Specialist, take half of the coins placed on this specialist tile.
+        - name: Kachiko
+          text: |
+            Once per turn, you may spend 2 coins to remove a Sacred Ground token from the board.
+        - name: Kagutsuchi
+          text: |
+            Take 1 extra PP if you place a Standard Building on a region that is not adjacent to your other Standard Buildings.
+        - name: Michimata
+          text: |
+            Once per turn, you may discard a Culture Token to receive a gold boat.
+        - name: Nakatsu
+          text: |
+            Once per turn, you may exchange a gold boat for any two boats (except gold boats).
+        - name: Raijin
+          text: |
+            Once per turn, you may exchange any two boats for a gold boat.
+        - name: Riu
+          text: |
+            Your harbor now has two extra spots in which you can keep boats.
+        - name: Susanoo
+          text: |
+            When you sell boats, you get 6 coins for stone boats and 7 coins for clay boats.
+        - name: Tomoe
+          text: |
+            You may but / sell gold boats for 5 coins. Unless stated otherwise, you are still limited to one transaction per round.
+        - name: Toyo Tama
+          text: |
+            Any empty spot on the border of the board is considered any entry spot for your boats.
+        - name: Yasoma
+          text: |
+            Yasoma is very prestigious. What more do you want?

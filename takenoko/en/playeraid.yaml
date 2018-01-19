@@ -1,0 +1,102 @@
+name: Takenoko
+description: Cultivate land, grow bamboo, and feed a hungry panda! [See it on BGG](https://boardgamegeek.com/boardgame/70919/takenoko)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+        * Place the starting pond tile on the table.
+        * Place the gardener and panda figures on the starting pond.
+        * Shuffle the Land Plot tiles face down to form a stack.
+        * Separate the cards by the type and shuffle each deck.
+        * Each player gets a player board, 2 markers, and 1 card of each type which are kept hidden.
+        * Choose a starting player.
+    - name: Gameplay
+      text: |
+        * Performed in player order until the end of the game.
+        * No bamboo chute may be more than 4 sections tall.
+        * Plots adjacent to the starting pond tile are automatically irrigated.
+        * Items in your reserve can be played at any time during your turn.
+      sections:
+        - name: Determine Weather Conditions
+          text: |
+            * Roll the Weather Die and apply its effects.
+          sections:
+            - name: Sun
+              text: |
+                * Gain 1 additional action for this turn.
+            - name: Rain
+              text: |
+                * Place 1 section of bamboo on an irrigated plot of your choice.
+            - name: Wind
+              text: |
+                * May take the same action twice this turn.
+            - name: Storm
+              text: |
+                * Move the Panda to any plot and eat 1 piece of bamboo from this plot.
+            - name: Clouds
+              text: |
+                * Take an Improvement tile of your choice from the supply. You may immediately place it or add it to your reserve.
+                * If no Improvement tiles are left in the supply, you may choose another die face and apply its result.
+            - name: Question Mark
+              text: |
+                * The player may choose any other die face and apply its result.
+        - name: Perform Actions and Meet Objectives.
+          text: |
+            * You may perform up to 2 actions on your turn.
+            * The actions must be different from each other unless you have rolled Wind.
+          sections:
+            - name: Draw Plots
+              text: |
+                * Draw 3 plot tiles.
+                * Choose 1 of the tiles that you will put into play and return the other 2 to the bottom of the stack in any order.
+                * Put the plot into play. The plot must be adjacent to the special pond tile or adjacent to 2 other plots in play.
+                * If the plot is irrigated, immediately add a section of bamboo to it.
+            - name: Take an Irrigation Channel
+              text: |
+                * Take an irrigation channel from the reserve and either put it into play or add it to your personal supply.
+                * Irrigation channels are placed on the edges between 2 tiles.
+                * The special pond tile cannot have any irrigation channels on its sides.
+                * A plot is irrigated if at least 1 of its edges has an irrigation channel.
+                * A tile that is irrigated for the first time immediately grows 1 piece of bamboo. 
+            - name: Move the Gardener
+              text: |
+                * Move the gardener any number of spaces in a straight line.
+                * Cannot move over empty spaces.
+                * Immediately grow a section of bamboo in the tile he finishes his movement in, plus all adjacent plots of the same colour.
+                    * Plots must be irrigated in order to grow bamboo.
+            - name: Move the Panda
+              text: |
+                * Move the panda any number of spaces in a straight line.
+                * Cannot move over empty spaces.
+                * Eat 1 piece of bamboo from the plot where he finishes his movement and add it to your supply.
+            - name: Draw an Objective
+              text: |
+                * Draw 1 objective card from the deck of your choice.
+                * If the conditions of the drawn plot or gardener objective (not panda) are already met, discard this card and redraw.
+                * You may only hold up to 5 objective cards. You cannot take this action if you are at your maximum.
+            - name: Complete Objectives
+              text: |
+                * Free action that can be performed any number of times during your turn.
+                * Play completed objectives in front of you.
+    - name: Tile Improvements
+      sections:
+        - name: Enclosure
+          text: |
+            * Prevents the panda from eating bamboo in this plot.
+            * Does not prevent the panda from moving through or ending movement on this plot.
+        - name: Fertilizer
+          text: |
+            * Each time bamboo grows on this plot, 2 sections are added instead of 1.
+        - name: Watershed
+          text: |
+            * This improvement immediately irrigates the tile.
+            * Grow a piece of bamboo if this is the first time the tile is irrigated.
+    - name: End of the Game
+      text: |
+        * When a player has 9 objective cards in front of them, the last round is triggered. (3P: 8 cards, 4P: 7 cards).
+        * The player who triggered the end takes the Emperor card and finishes their turn as normal.
+        * Each other player has 1 final turn to complete as many objectives as possible.
+        * Each player totals up the points from their objective and Emperor cards.
+        * Break ties with most points from a Panda objective card. 

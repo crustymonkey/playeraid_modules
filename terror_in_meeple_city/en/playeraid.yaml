@@ -1,0 +1,231 @@
+name: Terror in Meeple City / Rampage
+description: Prove you're the toughest monster in Meeple City by smashing buildings and eating meeples! [See it on BGG](https://boardgamegeek.com/boardgame/97903/terror-Meeple-city)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+        * Build each building by drawing Meeples from the bag, placing them on the outlined areas of each base, then stack a floor on top of them. Repeat this until each building has 3 tiles on it. Place a single Meeple on each roof.
+        * Place the Vehicles in their designated areas.
+        * Each player chooses a color and takes all pieces in their color.
+        * Each player places 4 Teeth in the mouth on their screens.
+        * Each player places their Monster on the starting area closest to them.
+        * Shuffle each type of card.
+        * Deal 2 cards of each type to each player.
+        * Each player choose 1 card of each type and discards the other.
+        * Players reveal their chosen Character and Power cards but keep their Secret Superpower card a secret.
+        * Choose a starting player.
+    - name: Gameplay
+      text: |
+        * Carried out in player order.
+        * If you cannot place your Body back on your Paws (because it’s obstructed), you may move your Paws slightly.
+        * Floor that leave the board are eaten by the Monster that knocked them out.
+        * If a Monster must loose 1 Tooth but has none left to lose, they must choose 2 Meeples from their Stomach and give them to the player that would have earned the Tooth, or discard them if the Tooth would have been returned to the box.
+      sections:
+        - name: Actions
+          text: |
+            * A player gets 2 actions on their turn. They can choose from any of the following for each action.
+          sections:
+            - name: Move
+              text: |
+                * Remove the Body from your Monster so that only the Paws remain.
+                * Flick the Paws disc, then place your Body back on top.
+                * If your Paws leave the board:
+                    * Return 1 Tooth from your Mouth to the box.
+                    * Place your Monster in an empty starting area of your choice.
+                    * Continue your turn normally.
+            - name: Demolish
+              text: |
+                * Can only do this if your Paws are touching the Sidewalk surrounding a Building.
+                * Hold your Monster’s Body over the Building (arm parallel with the table) and drop it on the Building
+            - name: Toss a Vehicle
+              text: |
+                * Place a Vehicle in your Neighborhood on top of your Monster.
+                * Flick the Vehicle. You may hold and angle your Monster Body while doing this.
+                * If the Vehicle leaves the board, return it to its starting location. 
+            - name: Breathe
+              text: |
+                * Rest your chin on your Monster Body.
+                * Inhale, then blow. Must inhale while you are on your Monster Body.
+                * You may hold and angle your Monster Body while doing this.
+        - name: Collaterla Damage
+          sections:
+            - name: Rumble!
+              text: |
+                * If a Monster is ever knocked down, give 1 of the downed Monster’s teeth to the Monster that knocked them down.
+                * A knocked down Monster stays down until their turn comes around.
+            - name: Gobbling Buildings
+              text: |
+                * If a Floor has no elements on it after an action, the player may immediately claim this Floor and place it in their Stomach.
+                * Multiple Floors may be claimed.
+        - name: Runaway Meeples
+          text: |
+            * If a Meeple completely leaves the board during your turn, place them on the Runaway board.
+            * If an effect is triggered, the Monster that caused this Meeple to be placed suffers the effect
+        - name: Chow Down
+          text: |
+            * After taking both actions, eat all Meeples in your Neighborhood that are not supporting any game element by placing them in your Stomach.
+            * If touching multiple Neighborhoods, choose 1 Neighborhood to eat from.
+            * Meeples that are completely on a Sidewalk or Ruin are not part of a Neighborhood and cannot be eaten.
+            * May only eat as many Meeples as you have Teeth. 
+    - name: End of the Game
+      text: |
+        * End is triggered when the last Floor is removed from the board.
+        * Triggering player finishes their turn, then each other player takes 1 more turn.
+        * Game also ends immediately if the last line of side A of the Runaway board is filled. Triggering player automatically loses.
+        * 10 VP for each set of 6 Meeples of different colors in your Stomach.
+        * 1 VP for each Floor in your Stomach.
+        * 2 VP for each Tooth in your Stomach.
+        * VP earned from your Monster’s Character card.
+        * Break ties with most Meeples in Stomach.
+    - name: Characters
+      sections:
+        - name: Anarchist
+          text: |
+            * Score 3 victory points for each set of Soldier and Journalist (green and blue Meeples) that you ate.
+        - name: Brawler
+          text: |
+            * Each Tooth taken from another Monster is worth 4 victory points instead of 2.
+        - name: Destructive
+          text: |
+            * If at the end of the game you have destroyed more Floors than each other Monster, score 10 victory points.
+        - name: Glutton
+          text: |
+            * If at the end of the game you have eaten more Meeples than each other Monster, score 10 victory points.
+        - name: Imitator
+          text: |
+            * At the end of the game, before counting eaten Meeples, choose another Monster's Character card and apply its effects to your Monster.
+        - name: Mean
+          text: |
+            * If at the end of the game you have eaten more Heroes (red Meeples) than each other Monster, score 10 victory points.
+        - name: Pacifist
+          text: |
+            * If at the end of the game you have eaten more Soldiers (green Meeples) than each other Monster, score 10 victory points.
+        - name: Punk
+          text: |
+            * Score 3 victory points for each set of Old Folks and Businessmen (gray and black Meeples) that you ate.
+        - name: Romantic
+          text: |
+            * Score 3 victory points for each set of Hero and Blonde (red and yellow Meeples) that you ate.
+        - name: Seductive
+          text: |
+            * If at the end of the game you have eaten more Blondes (yellow Meeples) than each other Monster, score 10 victory points.
+        - name: Scrap Merchant
+          text: |
+            * Score 5 victory points for each Vehicle on a Ruin at the end of the game.
+        - name: Seer
+          text: |
+            * At the end of the game, before counting eaten Meeples, announce which Monster has eaten the most Meeples (possibly yourself). If you're right (even if that Monster is tied for the most Meeples with another), you score 7 victory points.
+        - name: Shy
+          text: |
+            * If at the end of the game you have eaten more Journalists (blue Meeples) than each other Monster, score 10 victory points.
+        - name: Softie
+          text: |
+            * Score 3 points for each Teeth token you still have in your Mouth at the end of the game. (The Teeth printed on the screen do not count.)
+        - name: Tourist
+          text: |
+            * If at the end of the game you have eaten more Businessmen (black Meeples) than each other Monster, score 10 victory points.
+        - name: Young
+          text: |
+            * If at the end of the game you have eaten more Old Folks (gray Meeples) than each other Monster, score 10 victory points.
+    - name: Powers
+      sections:
+        - name: Boxer
+          text: |
+            * During your Move action, if you knock down a Monster, you break two if ts Teeth instead of one.
+        - name: Climber
+          text: |
+            * Before a Move action, you can place your Monster on a Building in your Neighborhood.
+        - name: Heavyweight
+          text: |
+            * When you use the Demolish action, you can target a Monster in your Neighborhood instead of a Building. You don't need to be on a Sidewalk to use this Power.
+        - name: Hurricane
+          text: |
+            * You can perform a Breath action from any Monster (but you must still follow the rules regarding the Breathe action).
+        - name: Jumper
+          text: |
+            * To move, you can place your Paws token on your Body, then flick it as in the Toss a Vehicle action. Finally, place the Body on the Paws like normal. If your paws leave the board, lose 1 of your Teeth.
+        - name: Kung Fu Master
+          text: |
+            * You can place your Paws token on your Body and send it flying, as in the Toss a Vehicle action. Replace your Paws under your Body after this action. If your paws leave the board, you don't lose any Teeth.
+        - name: Long Tail
+          text: |
+            * You can take a Demolish action on any Building your Neighborhood without needing to be on a Sidewalk adjacent to it.
+        - name: Retainer
+          text: |
+            * When you chow down, treat it as though you always have a minimum of 4 Teeth.
+        - name: Sharp Canines
+          text: |
+            * At the end of your turn, your Monster can eat 2 more Meeples than its number of Teeth.
+        - name: Siren
+          text: |
+            * At the end of your turn, instead of chowing down normally, your Monster can eat a single Meeple from any Neighborhood.
+        - name: Smelly Paws
+          text: |
+            * If at the end of a Move action, your Monster is on a Ruin's Sidewalk, move all the Meeples found in that Ruin to an adjacent Neighborhood.
+        - name: Star Dancer
+          text: |
+            * You can take 2 flicks when performing a Move action.
+        - name: Stretchy Paws
+          text: |
+            * Before a Move action, you can reposition your Paws anywhere in your current Neighborhood.
+        - name: Stretchy Tongue
+          text: |
+            * At the end of your turn, your Monster can eat the Meeples in an adjacent Neighborhood instead of those in your own Neighborhood.
+        - name: Telekinesis
+          text: |
+            * When you take a Toss a Vehicle action, you can use a Vehicle from any Neighborhood.
+        - name: Vacuum
+          text: |
+            * After a Breathe action, place all the Meeples who have just left the City in your Neighborhood rather than on the Runaway board.
+    - name: Secret Superpowers
+      sections:
+        - name: Catcher
+          text: |
+            * Toss a Monster in the same Neighborhood as yours and place it on top of your Monster's Body. Use the opposing Monster as a Vehicle in a Toss a Vehicle action. Breat 1 Tooth from that Monster.
+        - name: Earthquake
+          text: |
+            * Move all the Meeples from each Ruin to an adjacent Neighborhood.
+        - name: Hobo
+          text: |
+            * Randomly draw a total of 3 Meeples from the Stomach of one or more Monsters of your choice.
+        - name: Invisibility
+          text: |
+            * Remove your Body and Paws from the board, then place them in any Neighborhood at the beginning of your next turn.
+        - name: Paralyzing Gaze
+          text: |
+            * Your opponents cannot take any Move actions on their next turn.
+        - name: Passionate Kiss
+          text: |
+            * Select 2 Meeples of your choice int he Stomach of another Monster currently in your Neighborhood and place them in your Stomach.
+        - name: Really Hungry
+          text: |
+            * At the end of your turn, you can eat 2 Meeples per Tooth in your Mouth.
+        - name: Scavenger
+          text: |
+            * Chow down in the Neighborhood of another Monster as though you were there.
+        - name: Small Wings
+          text: |
+            * Move your Monster into the Neighborhood of your choice.
+        - name: Teeth Protector
+          text: |
+            * When an opponent breaks 1 or more of your Teeth (Boxer Power), cancel that loss and break one of their Teeth instead.
+        - name: Terminator
+          text: |
+            * Knock over all the Monsters currently in your Neighborhood and break 1 Tooth from each of them.
+        - name: Too Cute
+          text: |
+            * Cancel one effect from the Runaway board other than the one that ends the game.
+        - name: Ultra-Bright Smile
+          text: |
+            * Instead of eating the Meeples in your Neighborhood, you can eat the Meeples currently on the Runaway board. Then reorganize the Meeples on the Runaway board without triggering any effects.
+        - name: Unleashed!
+          text: |
+            * Play 2 extra ctions on your turn.
+        - name: Unstable Mutation
+          text: |
+            * Draw 3 Power cards and apply their effects this turn. At the end of the turn, discard 3 of your Power cards (not necessarily those which were drawn).
+        - name: Who Cut the Cheese?!
+          text: |
+            * All opponents must place their Monster's Body upside down on their Paws. During their next turn, they must use 1 action to turntheir Bodies rightside up.

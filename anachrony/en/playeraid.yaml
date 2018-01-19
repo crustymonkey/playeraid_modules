@@ -1,0 +1,245 @@
+name: Anachrony with Expansions
+description: Anachrony with Pioneers of New Earth and Guardians of the Council expansions. [See it on BGG](https://boardgamegeek.com/boardgame/185343/anachrony)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+        * Each player chooses a faction and choose which side of their faction board and which of their Leaders to use.
+        * Each player gets their faction’s Path board and chooses a random side and takes their Path’s Exosuit Upgrade board.
+        * Each player gets the starting resources show on the top of their Path board.
+        * Place the Evacuation Action tile on its space on the main board with its intact side up.
+        * Shuffle the Recruit and Mine cards.
+        * Separate the buildings into 4 stacks divided by their type and shuffle each, placing them face up.
+        * Arrange the Timeline tiles in a straight line below the board. Place the Impact tile between tiles 5 and 6.
+        * Place a Superproject face up above the first Timeline tile and 1 face down above each other Timeline tile (not Impact tile).
+        * Separate the Experiment cards by their Level and shuffle each deck.
+        * Shuffle the Adventure cards by the type (5+ Power and 10+ Power) and place them on their spaces on the Adventure board.
+        * Place a Level 1 Experiment card face up below the first Timeline tile and 1 face down below each other Timeline tile.
+        * Place the Trajectory dice and the Save Earth and seal Fate trackers on their assigned spaces on the Doomsday board.
+        * Place 1 Guardian Exosuit on each space of the Guardian board.
+        * Each player places 1 faction marker below the first Timeline tile; this is their Focus marker.
+        * Choose 5 random Endgame Condition cards and place them face up above the board.
+        * Choose a starting player.
+    - name: Gameplay
+      text: | 
+        * A player that gets a third Paradox token is immediately affected by an Anomaly:
+                * Stop rolling for Paradoxes (if any rolls remain).
+                * Return all of your Paradox tokens to the supply.
+                * May choose to retrieve 1 of your Warp tiles from any Timeline tile and return it to your supply.
+                * Take an Anomaly tile and place it on the leftmost free building spot on your Player board.
+                    * May choose which row it goes in if multiple spaces are tied.
+                    * If there are no free building spots, place the tile on top of any of your buildings; it is blocked.
+            * Geniuses may be placed on Action spaces as any type of Worker.
+            * When paying a Worker cost, the Worker can be spent from the Active or Tired columns.
+                * Cannot spend Workers that are busy taking an Action.
+            * Warp tiles on the present Timeline tile cannot be removed through Power Plants and Focus.
+      sections:
+        - name: Preparation Phase
+          text: |
+            * Reveal the first face down Superproject tile and the Level 1 Experiment card below it.
+            * Place the top building of each stack face up next to it, forming 2 stacks.
+            * Remove any remaining items from the Recruit and Mine pools.
+            * Draw the top card from the Recruit deck and place the depicted workers in the Recruit pool.
+            * Draw the top card from the Mine deck and place the depicted resources on the Mine spaces from top to bottom.
+                * After the Impact, ignore the topmost Resource and place a Neutronium (purple) on the topmost spot instead.
+        - name: Paradox Phase
+          text: |
+            * Starting from the left, check each Timeline tile with at least 1 Warp tile on it.
+            * For each tile, players with the most Warp tiles on it must roll the Paradox die once and take the number of Paradox tokens.
+        - name: Power Up Phase
+          text: |
+            * In player order, each player places up to 6 Exosuits/Guardian Exosuits onto their Player board paying any necessary cost.
+            * Receive 1 Water for each empty Hex.
+        - name: Warp Phase
+          text: |
+            * Each player secretly selects 0-2 Warp tiles and reveals them simultaneously.
+            * Place selected Warp tiles on the present Timeline tile.
+            * In player order, each player receives the items shown on their selected Warp tiles.
+                * Each Worker requires you pay 1 Water. Cannot take a Worker if you cannot pay.
+                * Each Exosuit is placed on 1 of the Hex slots, even an Unavailable one.
+        - name: Action Rounds Phase
+          text: |
+            * Performed in player order.
+            * On their turn, a player may perform any number of free actions, then perform a main action.
+            * Each free action may only be performed once per Era. Cover the spot when it’s used with a Path marker.
+                * Cannot take Free Actions if you do not have enough Path markers.
+            * Phase ends once all players have passed.
+          sections:
+            - name: Place 1 Worker
+              text: |
+                * Place 1 Worker on any empty Worker space and take the action.
+            - name: Place 1 Worker with an Exosuit or an Unmanned Guardian Exosuit
+              text: |
+                * Place 1 Worker in a powered up Exosuit and place it on a Hex or Hex pool space and take the action.
+                * Guardian Exosuits do not require a Worker and are always treated as though a Genius was placed with them.
+            - name: Pass
+              text: |
+                * Pass and stop taking actions this turn.
+        - name: Clean Up Phase
+          text: |
+            * Retrieve all Workers, Exosuits, and Guardian Exosuits and return them to their owners.
+                * Workers that took an action that motivates them (matches their icon) are returned to your Active column.
+                * All other workers are returned to your Tired column.
+                * If an Exosuit was returned from a Collapsing Capital tile, flip the tile to its Unavailable side.
+            * Return all Path markers from Free Action spaces and the Adventure board. Markers on the Guardian board stay there.
+            * Roll the Trajectory dice and count the total number of + and – symbols on the dice and on the Doomsday board where the 2 trackers are currently located.
+                * If there are more + than -, move the Impact tile 1 space to the right in the Timeline if possible.
+                * If there are more – than +, move the Impact tile 1 space to the left in the Timeline. Don’t move behind current Era.
+                * If + and – are equal, do not move the Impact tile.
+            * If the current Timeline tile is followed by the Impact tile, the Impact occurs.
+                * Turn the Evacuation tile to its damaged side, revealing the Evacuation Action.
+                * Place the -3 VP tile on the space indicated.
+                * Shuffle the Collapsing Capital tiles by their type and select # of players tiles for each type.
+                * Place the selected tiles on the Capital Actions’ Hexes with the available side face up.
+                * Each player covers 2 of the Exosuit Hex spaces on the top row of their Player boards with Hex Unavailable tiles.
+            * Check for game end and proceed to final scoring if triggered.
+                * All Collapsing Capital Actions are flipped to the Hex Unavailable side.
+                * This is the 7th Era.
+            * Move each player’s Focus marker to the new Era’s Timeline tile. (bring them to the present)
+            * If anyone took the action to become first player, they become the new first player.
+    - name: End of the Game
+      text: |
+        * Players must fulfill all of their remaining Warp tiles left on the Timeline.
+            * Workers must be returned from the Active column.
+            * Exosuits must be returned from a powered up space on their Player board.
+            * Players do not get any VP or advance Time Travel marker for fulfilling these.
+        * -2 VP for each Warp tile left on the Timeline.
+        * Evaluate each Endgame Condition card; 3 VP to the players that satisfied the card the best.
+        * VP from buildings, Anomalies, Super Projects, Morale, and VP tokens.
+        * 1 VP per Breakthrough.
+        * 2 VP per set of 3 differently-shaped Breakthrough tiles.
+        * Break ties with most Water, then total number of Resources.
+    - name: Actions
+      text: |
+        * Geniuses may be used as any type of Worker.
+        * Hex spaces can only be used by a single Exosuit.
+        * Hex pool spaces may be used by any number of Exosuits.
+        * If a space has a Worker restriction, only that type of Worker or a Genius may be placed there.
+        * If the space has a cost (black hole under it), you must be able to pay the cost in order to place on the space.
+        * Lowest spaces on Capital Actions on the main board is only available in a 4-player game.
+      sections:
+        - name: Main Board Actions
+          sections:
+          - name: Construct
+            text: |
+              * Cannot be activated by an Administrator.
+              * If activated by an Engineer, subtract 1 Titanium from your cost.
+              * Must choose 1 of the 2 options:
+            sections:
+              - name: Build a Building
+                text: |
+                  * Select a face up building from the top of any of the stacks.
+                  * Place the building in the leftmost space of the matching row on your Player board.
+                  * Pay the cost shown on the space where the building was built.
+                  * Cannot build the building if there is no room left in its row.
+              - name: Build a Superproject
+                text: |
+                  * Build the Superproject that is in Focus (where your Focus marker is).
+                  * Place the Superproject on the leftmost space on your board. Choose which row if tied.
+                  * Ignore the costs on the spaces where the Superproject is placed.
+                  * Pay the cost shown on the Superorject. If its cost includes a Worker, it may come from the Active or Tired columns.
+          - name: Recruit
+            text: |
+              * May not be activated by a Scientist.
+              * If activated by an Engineer, you may not select a Genius.
+              * Select a Worker from the Recruit pool and place them in the Active column on your Player board.
+              * Receive the bonus shown for the type of Worker you chose (Genius lets you pick any of the 3 bonuses).
+          - name: Research
+            text: |
+              * May only be activated by a Scientist.
+              * Set 1 of the Research dice to any face of your choice (except ?) and roll the other die.
+              * Take 1 Breakthrough tile that matches the symbol and shape of the result. (? result lets you choose)
+              * If the Breakthrough tile is not available, reroll 1 die of your choice.
+          - name: World Council
+            text: |
+              * Must follow all Worker restrictions based on the copied action space.
+              * Pay cost of the space you placed on instead of the space you chose to copy.
+              * Perform any 1 Capital Action that the lines link to.
+              * After the Impact, standard Capital Actions can still be copied by this Action, even if all of their spaces are covered by a Hex Unavailable tile or occupied by an Exosuit.
+              * You may enlist 1 Guardian by paying the cost shown below it, giving up a Worker, and placing a Path marker on the spot.
+          - name: Mine Resource
+            text: |
+              * If activate by an Engineer, they are kept Motivated.
+              * Take the Resource cube to the right of the chosen space plus any 1 Resource from the Resource track on the left.
+          - name: Purify Water
+            text: |
+             * If activate by a Scientist, take 1 extra water.
+             * Take 3 Water.
+          - name: Trade with Nomads
+            text: |
+              * If activated by an Administrator, may perform 1 extra trade.
+              * Make 1 trade by exchanging goods as shown on the Trade Hex pool space.
+          - name: Experiment
+            text: |
+              * Claim an Experiment card that is in Focus by paying its cost and meeting its requirement, placing it next to you.
+              * Fill the empty space in the Timeline with a Level 2 Experiment card.
+              * Receive VP tokens as shown on the card and any additional VPs from position on Doomsday track.
+              * If playing Path of Harmon or Path of Dominance, you may move the Save Earth tracker 1 step up on the Doomsday track.
+              * If playing Path of Salvation or Path of Progress, may move the Seal Fate tracker 1 step down on the Doomsday track.
+              * The Doomsday trackers cannot be moved this way if the Impact has occurred or either is on the final step.
+              * After moving the appropriate tracker, gain VP if the marker matches a VP space on your side of the tracker.
+          - name: Adventure
+            text: |
+              * Determine your Exosuit’s Power by counting values from Exosuit Upgrade board and other sources.
+              * Place 1 Path marker on the topmost free Power slot next to the Adventure space if able.
+                * Add this spot’s Power value to your Power value.
+                * If there are no free slots, subtract 3 from your Power value.
+              * Choose 1 of the Adventure card decks. Pay 1 Water for 5+ or 2 Water for 10+.
+              * Draw the top card of the chosen deck + 1 card per Breakthrough on your Exosuit Upgrade board.
+              * Choose 1 of the drawn cards and return the rest of the bottom of its deck in any order.
+              * Roll the Adventure die and add the rolled value to our Power value.
+              * Compare your final Power value to the Adventure card.
+                * >= Adventure value, resolve the Success part of the Adventure card and place it next to you.
+                * < Adventure value, resolve the Failure part of the adventure card and return it to the bottom of its deck.
+          - name: Guardian Exosuit Location
+            text: |
+              * May place a Guardian Exosuit on any space on the Guardian board that contains your Path marker.
+          - name: Evacuation
+            text: |
+              * Only available after the Impact and only if you meet the condition stated on your Path board.
+              * Each player may only perform this once per game.
+              * Place 1 of your Path markers on the uppermost free space on the Evacuation track.
+              * If you place on the -3 VP space, take the -3 VP marker for end game scoring.
+              * Receive VP based on the assets shown on your Path board. Do not discard these assets.
+        - name: Player Board Actions
+          sections:
+            - name: Supply
+              text: |
+                * If activated by an Administrator, they are kept Motivated.
+                * Spend Water equal to where your Morale marker is.
+                * Move all Workers from the Tired column to the Activated column.
+                * Advance 1 step on the Morale track (or get VP if already at the end).
+            - name: Force Workers
+              text: |
+                * Free Action, place a Path marker here.
+                * Move all Workers from the Tired column to the Activated column.
+                * Fall back 1 step on the Morale track (or lose 1 Worker of your choice if already at the end).
+            - name: Power Plant Buildings / Time Travel
+              text: |
+                * Move your Focus marker to any past Timeline tile no further back than the Power Plant’s range (measured from the present Era’s Timeline tile). May keep it where it is if it’s still in range of the Power Plant’s range.
+                * May select 1 Warp tile on the Timeline tile where your Focus is and send back resources.
+                    * Discard the chosen asset.
+                        * Workers must come from the Active column and must be exact type (cannot substitute with Genius).
+                        * Exosuits must be powered up.
+                    * Remove the chosen Warp tile from the Timeline and return it to your supply.
+                * If you moved your Focus marker and sent back an asset, move your Time Travel marker 1 step to the right.
+            - name: Anomalies
+              text: |
+                * Choose 1 Anomaly tile on your player board.
+                * Discard 1 Worker and the assets shown on the chosen Anomaly.
+                * Discard the Anomaly tile.
+            - name: Superprojects and Other Buildings
+              text: |
+                * May require Workers, be Free Actions, or be passive. See individual Superprojets.
+            - name: Power Upgrade
+              text: |
+                * Path of Dominance: Can only be taken by an Engineer.
+                * Place a Resource on the space depicted to permanently increase Exosuit Power.
+            - name: Sensor Upgrade
+              text: |
+                * Path of Harmony, Dominance, and Progress: Can only be activated by Scientists.
+                * Spend assets shown on the space.
+                * Place 1 of your Breakthrough tokens on the designated space. Only 1 of each shape may be placed here.
+                * Gain 2 VP (Path of Harmony: gain 2 Power).

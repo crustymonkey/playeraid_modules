@@ -1,0 +1,111 @@
+name: Nippon
+description: Develop your Zaibatsu's influence and power to usher in Japan's industrial era. [See it on BGG](https://boardgamegeek.com/boardgame/154809/nippon)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+        * Randomly determine a starting player.
+        * Players get all pieces of their color, 1 Blueprint, and 12,000 Yen. Place 1 black cube on the Coal and Knowledge tracks.
+        * The first player places a scoring marker on 10 VP. Each other player places on 11, 12, and 13 respectively.
+        * Place the white scoring marker on the leftmost side of the scoring track.
+        * Sort the Factory tiles by their type and place them with the Blueprint side facing up.
+        * Remove 2 random Reward tiles (1 for 3P, 0 for 4P). Sort the remaining Reward tiles by their VP and bonus type and place them on the Rewards slots.
+        * Randomly place 1 City tile face up on each City slot of the board.
+        * Remove 2 Workers of each color (1/color for 3P, none for 4P). Place remaining Workers in the bag.
+        * Randomly draw Workers and place 2 on the first 2 Action slots (3 Workers + 3 Rows for 3P, 3 Works + all Rows for 4P).
+    - name: Gameplay
+      text: |
+        * On their turn, the player must do one of the two possible actions: Take a Worker or Consolidate.
+      sections:
+        - name: Take a Worker
+          text: |
+            * Take 1 Worker from an Action slot on the board and place them in your leftmost empty Worker slot on your player board.
+            * Perform 1 of the Actions from the chosen Action slot.
+            * After performing your Action, If the Action slot is now empty:
+                * Take the Workers from the uppermost non-empty Worker row and place them on the now-empty Action slot.
+                * If you cannot take Workers because all Worker rows are empty, perform the following steps:
+                    * Refill all Action slots by drawing Workers from the bag and bringing each slot back up to 3 Workers.
+                    * Refill the Worker rows by randomly drawing from the Worker bag in the same way as the last Setup step.
+                    * Move the Scoring marker 1 step to the right. Perform a Scoring when a marker is passed (or leaves board).
+          sections:
+            - name: Knowledge (Stop 1, Top)
+              text: |
+                * Move your Knowledge marker up 1 to 3 space by paying the appropriate cost in Yen.
+            - name: Produce (Slot 1, Bottom)
+              text: |
+                * Run 1 to 3 Factories by spending an amount of Coal shown on each Factory that will run.
+                * Place 1 + Machine bonus cubes on each Factory that was run. If a Factory has no open slots, it cannot run.
+            - name: Export (Slot 2, Top)
+              text: |
+                * Fulfill 1 to 3 Contracts by discarding the required goods from Factories. The amount of cubes indicates how many different types of goods the player must spend. The number in each cube indicates how many goods of that type must be spent.
+                * A Contract must be fulfilled all at once.
+                * Receive bonus indicated on the bottom left corner of the Contract tile.
+                * Move Money track marker up the indicated number of spaces, if any.
+                * Flip the Contact tile face down.
+            - name: Invest (Slot 2, Bottom)
+              text: |
+                * Build 1 Factory by paying 6,000 Yen.
+                * If your Knowledge does not meet the Factory’s requirement, you must spend Blueprints to make up the difference.
+                * You may only have a single Factory for each type of good.
+            - name: Mines (Slot 3, Top)
+              text: |
+                * Move your Coal marker up 1 to 3 spaces by paying the appropriate cost in Yen.
+            - name: Ships (Slot 3, Bottom)
+              text: |
+                * Build 1 to 3 Ships by paying 5,000 Yen for each. Take the built Ship tiles from your player board from left to right.
+                * Place each Ship tile on an empty Train/Ship slot on the game board. If more than 1 Ship tile is placed with the same Action, they must be placed in different Regions.
+                * If taking the Ship tile completely reveals a Money icon, move up 1 step on the Money track if possible.
+            - name: Machinery (Slot 4, Top)
+              text: |
+                * Perform this action 1 to 3 times by paying 5,000 Yen for each.
+                * For each action, take a +1 Machine tile and place it on a Factory or flip an +1 Machine to a +2 Machine.
+                * If you do not have any Factories that can take new machine or upgrade, you must take +1 Machine tiles to your personal supply. The next time a Factory is built, you must add any available Machine to the Factory and upgrade it if possible. 
+            - name: Trains (Slot 4, Bottom)
+              text: |
+                * Build 1 to 3 Trains by paying 5,000 Yen for each. Take the built Train tiles from your player board from left to right.
+                * Place each Train tile on an empty Train/Ship slot on the game board. If more than 1 Train is placed with the same Action, they must be placed in different Regions.
+                * If taking the Train tile completely reveals a Money icon, move up 1 step on the Money track if possible.
+            - name: Local Market (Slot 5)
+              text: |
+                * Place 1 to 3 Influence tiles in 1 Region of the board.
+                * For each Influence tile:
+                    * Spend 1 to 3 cubes of the good you want to supply, taken from your Factories.
+                    * Place 1 Influence tile of the appropriate value on an available slot next to a City that depicts the good.
+                    * Immediately receive the Region bonus.
+                * If more than 1 Influence tile is placed with the same action, they must be placed in the same Region.
+                * The Influence tile’s value is based on the number of cubes spent; see the Influence chart on the game board.
+                * An Influence slot is available if no Influence tile has been placed there OR an Influence tile of a lower value you are about to place is already on the slot. In this case, the existing tile is returned to its owner.
+                * The number of Influence tiles that can be around a city is equal to the number of players. If placing a tile would take you over this total, the placed tile must be higher than at least of the existing ones. The lowest-valued tile is then returned to its owner. If there are multiple tiles with the same lowest value, you decide which one gets returned.
+        - name: Consolidate
+          sections:
+            - name: Budget (Money and Coal)
+              text: |
+                * Discard all Yen and Coal cubes in your Budget area of your player board.
+                * Take an amount of Yen and Coal equal to your position on the Yen and Coal tracks.
+            - name: Emperor's Reward
+              text: |
+                * If you have at least 3 Workers on your player board, you must take a Reward tile of your choice of the same level or lower as shown on your rightmost occupied Worker slot. If only higher Rewards are available, you get no Reward. If no Rewards are available, take a 2X VP multiplier instead.
+                * Receive the bonus of you chosen Reward tile.
+                * Flip the Reward tile and place it on an unoccupied Achievement space on your player board. Once placed, it cannot move. 
+            - name: Workforce
+              text: |
+                * You must pay 3,000 Yen for each different color of Worker in your workforce.
+                * Lose 2 VP for each color you cannot pay for.
+                * Discard all of your Workers back to the bag.
+                * Refill the Worker rows if needed.
+    - name: Scorings
+      text: |
+        * Each player calculates their Influence in each Region and determine who has the most, 2nd most, and 3rd most:
+            * Value of their Influence tiles in that Region.
+            * +Value of Trains placed in that Region as long as they have at least 1 Influence tile in that Region.
+        * Overseas Companies count their own scores for determine majority. This is the sum of the empty slots in the Region.
+        * Score each Region individually using the scoring table on the board. If there is a tie, sum the values for the tied positions and divide them evenly, rounding down.
+        * Players with the most and second most Influence in a Region also score the VP value of their Ships.
+        * After the 3rd Scoring, the game ends and player calculate their final scores. 
+    - name: Final Scoring
+      text: |
+        * Each player discards all of the Yen then still have.
+        * Receive Yen according to your Money level and pay all the Workers you still have on your board. -2 VP per unpaid color.
+        * Score Achievements. If there is no multiplier tile for the Achievement, score no points for it. 
