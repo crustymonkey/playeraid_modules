@@ -91,14 +91,14 @@ sections:
                     * Miner: £10
     - name: Gameplay
       sections:
-          - name: Phase 1: Preparation
+          - name: "Phase 1: Preparation"
             text: |
                 *  Flip the previous round's scoring tile face-down.
                 *  Refill any empty slots on the export board with contracts
                    (according to player count).
                 *  Players retrieve their merchants from the market and place
                    them **next to** their player boards.
-          - name: Phase 2: Actions
+          - name: "Phase 2: Actions"
             text: |
                 Each player takes exactly 1 action per turn, in turn order.
                 This continues until all players have passed.  Each action
@@ -247,12 +247,15 @@ sections:
                       There are 3 **Direct Export Bonusus** players can take
                       to gain an immediate advantage.
 
-                      *  Money: Taken from the supply
-                      *  Free Space: Allows the player to immediately take an
+                      *  ![money](/static/img/clans_of_caledonia/money.png)
+                         Money: Taken from the supply
+                      *  ![free space](/static/img/clans_of_caledonia/free_space.png) 
+                         Free Space: Allows the player to immediately take an
                          expand action **without paying the land cost of the
                          space into which they expand**.  The player **must
                          still pay the unit cost**.
-                      *  Bonus Upgrade Action: If a player obtains multiple
+                      *  ![bonus upgrade](/static/img/clans_of_caledonia/bonus_upgrade.png)
+                         Bonus Upgrade Action: If a player obtains multiple
                          bonus upgrade actions, they can choose the same
                          or different actions.
                           *  A tech upgrade action **for the discounted price
@@ -269,7 +272,7 @@ sections:
                       turn order token to the leftmost available position of
                       the next round and receive the pass bonus money
                       indicated.
-                - name: ~Free Action: Using a Port Bonus Tile~
+                - name: "~Free Action: Using a Port Bonus Tile~"
                   text: |
                       *  If a port bonus tile is neighboring, or within
                          shipping reach of, any of a player's units, the player
@@ -282,7 +285,7 @@ sections:
                          in your player color near the board by the port.
                       *  Each port bonus **can be used once per game**.
                       *  Multiple port bonuses may be used in the same turn.
-          - name: Phase 3: Production
+          - name: "Phase 3: Production"
             text: |
                 Players collect income and produce goods from their units
                 deployed on the map.  The amount of money and goods is
@@ -304,7 +307,7 @@ sections:
                     *  The basic goods spent to produce the processed goods
                        can come from anywhere, **including received during
                        the current production phase**.
-          - name: Phase 4: Scoring
+          - name: "Phase 4: Scoring"
             text: |
                 If they have fulfilled the requirement for the current round
                 scoring marker (top half), players earn the glory bonus
@@ -317,14 +320,20 @@ sections:
           Final scoring happens after 5 rounds.  Final scoring is the sum of
           the following:
 
-          *  **Glory**: 1 VP for each step on the glory track.
-          *  **Basic Goods**: 1 VP for each basic good in your stock.
-          *  **Processed Goods**: 2 VP for each processed good in your stock.
-          *  **Money**: 1 VP for every £10.  **Leftover money breaks ties in
+          *  ![glory](/static/img/clans_of_caledonia/glory.png) **Glory**: 
+              1 VP for each step on the glory track.
+          *  ![basic goods](/static/img/clans_of_caledonia/basic_goods.png) 
+              **Basic Goods**: 1 VP for each basic good in your stock.
+          *  ![processed goods](/static/img/clans_of_caledonia/proc_goods.png)
+              **Processed Goods**: 2 VP for each processed good in your stock.
+          *  ![money](/static/img/clans_of_caledonia/money.png)
+              **Money**: 1 VP for every £10.  **Leftover money breaks ties in
              the final score**.
-          *  **Hops**: 1 VP for each Hop imported, as listed on your fulfilled
+          *  ![hops](/static/img/clans_of_caledonia/hops.png)
+              **Hops**: 1 VP for each Hop imported, as listed on your fulfilled
              export contracts.
-          *  **Cotton, Tobacco, and Sugar Cane**: 3, 4, 5 each according to
+          *  ![import goods](/static/img/clans_of_caledonia/import_goods.png)
+              **Cotton, Tobacco, and Sugar Cane**: 3, 4, 5 each according to
              their rarity.  The rarest imported good is the most valuable.
               *  The import token that was moved the furthest on the track is
                  the most common imported good and worth 3 points.  The next
@@ -407,3 +416,125 @@ sections:
                 6.  The player to their left bids for 1 of the remaining clans.
                 7.  Continue until the last player is given the remaining
                     clan/starting tiles at no cost.
+    - name: Port Tiles
+      text: |
+          | Tile | Description |
+          | ---- | ----------- |
+          | ![port 1](/static/img/clans_of_caledonia/port_1.png) | Use this when fulfilling a contract needing meat and slaughter 1 less animal |
+          | ![port 2](/static/img/clans_of_caledonia/port_2.png) | Discard 1 and gain any 3 basic goods (including the discarded good) |
+          | ![port 3](/static/img/clans_of_caledonia/port_3.png) | Discard 1 processed good and gain any 2 processed goods (including the discarded good) |
+          | ![port 4](/static/img/clans_of_caledonia/port_4.png) | Receive 1 bonus upgrade + 3 glory |
+          | ![port 5](/static/img/clans_of_caledonia/port_5.png) | Gain £10 |
+          | ![port 6](/static/img/clans_of_caledonia/port_6.png) | Manipulate the price of 1 good by 3 steps on the market before trading that good |
+          | ![port 7](/static/img/clans_of_caledonia/port_7.png) | Take any 2 units from your player board (**other than fields**) and exchange them with any 2 of your units on the map (**not fields**) at no cost.  The 2 new units **must be different from the 2 old units**.  The new units must match the land type on which they are deployed. If you qualify, you can obtain the *building bonus*.  You can obtain any *neighborhood bonus* during this action. |
+          | ![port 8](/static/img/clans_of_caledonia/port_8.png) | Gain £5.  If your export box is empty, you may perform the building bonus (and pay the respective costs if you decide to take an export contract, as normal). |
+    - name: Scoring Tiles
+      text: |
+          | Tile | Description |
+          | ---- | ----------- |
+          | ![scoring 1](/static/img/clans_of_caledonia/scoring_1.png) | Gain 1 glory for each basic good in your stock. |
+          | ![scoring 2](/static/img/clans_of_caledonia/scoring_2.png) | Gain 3 glory for **each 2** processed goods in your stock. |
+          | ![scoring 3](/static/img/clans_of_caledonia/scoring_3.png) | Gain 1 glory for each of your deployed sheep, cows, cheese dairies, bakeries, and distilleries and gain 2 glory for each field. |
+          | ![scoring 4](/static/img/clans_of_caledonia/scoring_4.png) | Gain 2 glory for each of your deployed workers (including fisherman if you are Clan MacDonald) |
+          | ![scoring 5](/static/img/clans_of_caledonia/scoring_5.png) | Gain 3 glory for every 2 units on border spaces of the *active* map.  In a 1-2 player game, the shaded spaces are **not** part of the active map. |
+          | ![scoring 6](/static/img/clans_of_caledonia/scoring_6.png) | Gain 1 glory for each unit of cotton, tobacco, and sugar cane on your fulfilled export contracts. |
+          | ![scoring 7](/static/img/clans_of_caledonia/scoring_7.png) | Gain 2 glory for each unit of meat on your fulfilled export contracts. |
+          | ![scoring 8](/static/img/clans_of_caledonia/scoring_8.png) | Gain 1 glory for each of your upgrades (tech upgrades, shipping upgrades, and hired merchants).  Just count each spot left of your shipping marker, each free merchant spot, and each upgraded (flipped) tech tile.  You also gain glory for upgrades your clan started with. |
+    - name: Clans
+      sections:
+          - name: Clan Buchanan
+            text: |
+                *  You have an additional export box, and can 
+                   **obtain 1 or 2 export contracts in 1 turn**.  If you obtain
+                   2 export contracts in 1 turn, **you pay the cost only once,
+                   instead of twice**.  If you are given the building bonus, you
+                   draw **6 instead of 3 export contracts** and you can select
+                   0-2 contracts (this also applies to port bonus tile 8).
+                *  You can **fulfill up to 2 export contracts per turn**.
+                *  **In the 1st round**: If you obtain 2 export contracts in a
+                   single turn, you receive the +£5 bonus **only once**.
+                   However, during each turn in which you obtain an export
+                   contract, you gain the £5.  So, you can obtain an export
+                   contract in 1 turn and gain £5, then obtain an additional
+                   export contract in another turn and again gain £5, even if
+                   the 1st contract has not been fulfilled.
+          - name: Clan Campbell
+            text: |
+                *  The 1st factory of each type is £3 cheaper, the 2nd and 3rd
+                   factory of each type is £4 cheaper, and the 4th factory of
+                   1 kind is £5 cheaper.
+          - name: Clan Cunningham
+            text: |
+                *  You produce butter out of milk.  At the end of the production
+                   phase, you may discard any number of milk in your stock
+                   (no merchants needed).  For each milk you discard, gain £8.
+                   Do **not** adjust the milk price.
+          - name: Clan Fergusson
+            text: |
+                *  **Placing initial workers**: You start with 3 starting
+                   workers (for which you still must fully pay).  In
+                   addition, you start with 2-loch shipping level for free
+                   in a 3-4 player game (1-loch shipping in a 1-2 player game).
+                *  You place your 3rd worker after all other players have
+                   placed theirs. **You must place all 3 starting workers on
+                   border spaces of the active map.  You must still pay for
+                   all 3 workers and the land costs**.
+          - name: Clan MacDonald
+            text: |
+                *  Your clan tile is put on top of the miner/woodcutter area
+                   of your player board.  Your tech area remains empty
+                   because you cannot perform the tech upgrade action.
+                *  You have 3 abilities:
+                    1. You can use all your workers as either woodcutters,
+                       miners, or **fisherman** (even when placing the
+                       1st workers).  All your workers cost £6 and provide
+                       £4 income.  Fisherman can be placed on, or moved to,
+                       all empty loch spaces and port bonus tiles, even in a
+                       1-2 player game. There are no land costs on loch
+                       placements. 2 fisherman may never be adjacent to each
+                       other.
+                    2. Once per turn, you can move a fisherman to an adjacent
+                       loch space **by rowing**, but only before your main
+                       action.
+                    3. In 1-2 player games, you start with river-crossing
+                       shipping for free.
+                *  You still need the appropriate shipping reach to expand
+                   across loch spaces.  Land spaces adjacent to fisherman
+                   are considered to be neighboring and thus accessible in
+                   the expand action, even without the shipping reach. The
+                   neighborhood bonus can be taken advantage of when
+                   deploying a fisherman as well, but **not** when rowing.
+          - name: Clan MacKenzie
+            text: |
+                *  In the production phase, you gain £3 for each unit of
+                   whisky you produce.  You do **not** have to discard any
+                   whisky to get this money.
+                *  Furthermore, you have a cellar.  At the beginning of each
+                   production phase, whisky barrels already in the cellar
+                   age and are moved one spot to the right. The whisky barrel
+                   starting a production phase in the rightmost space of the
+                   cellar is placed into your stock. You can move any whisky
+                   barrel from the cellar into your stock at any time.  When
+                   you move aged whisky out of the cellar into your stock,
+                   you gain £7 or £15 respectively.
+                *  At the end of each production phase, you may put one
+                   freshly-produced whisky barrel in the cellar on the
+                   left spot so it can age in later production phases.
+                *  For the purposes of scoring tile #2, whisky in the cellar
+                   **does** score.
+          - name: Clan Robertson
+            text: |
+                *  Each time you place a unit in a river delta (a space that
+                   is adjacent to a river flowing into a loch), you pay £3
+                   less (£2 less in 1-2 player games) off the total cost.
+                   This applies ot placing your initial 2 workers as well.
+          - name: Clan Stewart
+            text: |
+                *  You start with 3 additional merchants (5 total) and
+                   river-crossing shipping level for free.  You also gain
+                   £1 each time you trade at the market (in the case of
+                   making a purchase, you receive the money **before**
+                   paying), no matter how many units you trade.  If you
+                   use the neighborhood bonus and trade multiple types of
+                   goods in 1 turn, **you gain £1 for each type of good
+                   traded**.
