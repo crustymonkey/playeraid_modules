@@ -93,3 +93,100 @@ sections:
             * 6 cards: -$42,000.
             * 7 cards: -$56,000.
         * Player with the most money wins.
+    - name: Investors
+      sections:
+          - name: Agile Ana
+            text: |
+                At the end of the round, you receive $1,000 for each unique
+                company you own 1 or more shares in.
+
+                **Note: You must reveal at least one of each of your
+                different stocks to receive this benefit**.
+          - name: Billionaire Bill
+            text: |
+                No abilities.  Begins the game with the most money.
+          - name: Broker Bernie
+            text: |
+                Trading fees are a bonus.  If you pick up a trading fee at the
+                end of the Demand Phase, instead **gain** that amount in
+                currency immediately after paying for the Stockpile.
+
+                **Note: You must have enough money to pay for the Stockpile
+                before gaining any money from your benefit**.
+          - name: Clever Chanda
+            text: |
+                During your turn in the Action Phase, you may choose to discard
+                1 stock that you own in order to move one stock card from
+                your Stock Portfolio to your Split Portfolio.  Alternatively,
+                you may move 1 stock from your Split Portfolio to your
+                regular Stock Portfolio to perform this action
+
+                **Note: You must reveal both stock cards affected by this
+                action**.
+          - name: Crazy Cramer
+            text: |
+                On your turn, during the Action Phase, you may move the value
+                of a singe stock up or down by 1.
+          - name: Cunning Carlos
+            text: |
+                During the Demand Phase, you must be outbid by at least 2
+                spaces on the bidding track.  Place a Blocking Token on the
+                space ahead of you to indicate that it cannot be bid on.
+                Use 2 Blocking Tokens for you bidding meeples in a 2 player
+                game.
+          - name: Daring Dangote
+            text: |
+                At the end of the round, you receive $1,000 per commodity
+                card collected. This includes commodity cards of the same
+                type.
+
+                **Note: This ability does not work for the tax cards
+                collected**.
+          - name: Discount Donald
+            text: |
+                You pay one space value less than your bidding meeple's
+                position on the bidding track for Stockpiles.
+          - name: Dividend Deborah
+            text: |
+                At the end of each round, you may declare additional dividends
+                of $1,000 per share for a company of your choice.  This
+                benefits all players with stock for that company.
+          - name: Lucrative Li
+            text: |
+                At the end of the round, you receive an additional $1,000
+                in interest for every 2 bond cards owned (round up).
+          - name: Maverick Mark
+            text: |
+                **Before** the Demand Phase begins, you may move 1 card to a
+                different Stockpile.
+
+                **Note: This ability may be used to cause a Stockpile to have
+                0 cards**.
+          - name: Golden Graham
+            text: |
+                For each stock that you sell, you gain $1,000 extra.
+
+                **Note: This ability still works at the end of the game.
+                Don't forget to double for split stocks**.
+          - name: Mayknow Martha
+            text: |
+                At any time during the Demand Phase, you may look at another
+                player's Company Card and Forecast Card.  You may do this
+                only once per round.
+
+                **Note: In a game with less than 5 players, you have the
+                option to look at one face-down pair of information instead
+                of another player's cards**.
+          - name: Secretive Stuart
+            text: |
+                During the Supply Phase, you may place both of your cards
+                face-down.
+          - name: Tactical Talal
+            text: |
+                At the end of the Selling Phase, you may sell again.
+
+                **Note: You may sell any stock cards owned with this ability**.
+          - name: Wise Warren
+            text: |
+                Before the Demand Phase, you may look at all face-down cards
+                in a single Stockpile.
