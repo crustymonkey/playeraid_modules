@@ -1,9 +1,21 @@
 name: Continuous Delivery - The Game
-description: Hunt the enemy submarine, a two team 4+4 player submarine duel.
-             <a href="https://boardgamegeek.com/boardgame/171131/captain-sonar">
+description: The Game is a cooperative
+             game for 3-5 players who together
+             will try to transform a software development
+             waterfall way of working into a Continuous
+             Delivery pipeline.
+             Each player represents a department, for
+             instance Development, Test or Operations.
+             Together they can discuss and plan how to
+             improve the software development process.
+             <a href="https://boardgamegeek.com/boardgame/238760/continuous-delivery-game">
              See it on Boardgamegeek</a>
 credits: Per Glode
 enabled: false
 sections:
-  - name: Set up
-    text: This text only describe the turn-by-turn rules for the first scenario, not the real-time mode.
+  - name: Setting up the game
+    text: TBD
+  - name: The round
+    text: TBD
+  - name: The game end
+    text: TBD
