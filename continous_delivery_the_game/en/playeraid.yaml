@@ -47,6 +47,22 @@ sections:
     sections:
       - name: Invest
         text: TBD
+        sections:
+        - name: DEVELOPMENT (Red)
+          text: You are responsible for DEVELOPMENT.
+                <li>You start the game with two red
+                Time Tokens.</li>
+                <li>Every time a DEVELOPMENT
+                Improvement is played, you get an
+                additional red Time Token.</li>
+        - name: TEST (Yellow)
+          text: TBD
+        - name: OPERATIONS (Green)
+          text: TBD
+        - name: CONTINUOUS DELIVERY EXPERT (Blue)
+          text: TBD
+        - name: EXTRA RESOURCE (Blue)
+          text: TBD
       - name: Move
         text: TBD
       - name: Event
@@ -183,15 +199,15 @@ sections:
             text: Place a red Time Token
                   on an Improvement of
                   your choice.
-        - name: General events
-          text: TBD
-          sections:
           - name: Re-organization
             text: You are not allowed
                   to discuss what
                   Improvements to invest
                   in during the next two
                   rounds.
+        - name: General events
+          text: TBD
+          sections:
           - name: Nothing happens
             text: Everything is going
                   according to plan.
