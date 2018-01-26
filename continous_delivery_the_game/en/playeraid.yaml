@@ -1,0 +1,9 @@
+name: Continuous Delivery - The Game
+description: Hunt the enemy submarine, a two team 4+4 player submarine duel.
+             <a href="https://boardgamegeek.com/boardgame/171131/captain-sonar">
+             See it on Boardgamegeek</a>
+credits: Per Glode
+enabled: false
+sections:
+  - name: Set up
+    text: This text only describe the turn-by-turn rules for the first scenario, not the real-time mode.
