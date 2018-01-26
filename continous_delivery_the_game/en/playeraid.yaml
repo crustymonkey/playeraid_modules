@@ -116,11 +116,89 @@ sections:
         - name: Improvement cards
           text: TBD
           sections:
-          - name: Conflict in the test environment
-            text: All Work Items in
-                  TEST are moved to
-                  the square just before
+          - name: IaC
+            text: Protects against
+                  all problems in
+                  OPERATIONS.
+                  Invest&#58; DEVEL+OPER+3
+                  Time Token&#58; OPERATIONS
+          - name: Requirement refinement
+            text: Move all Work Items
+                  from DEVELOPMENT
+                  to Deploy To Test
+                  Environment and re-
+                  shuffle this card.
+                  Invest&#58; 3
+          - name: Container
+            text: Protects against all
+                  problems in TEST.
+                  Invest&#58; OPER+DEVEL+3
+                  Time Token&#58; TEST
+          - name: Pull requests
+            text: Increases probability
+                  for test success by 1.
+                  Invest&#58; DEVEL+2
+          - name: Visualized pipeline
+            text: Look at the top Event
+                  card in the Event deck
+                  and then re-shuffle
+                  this card.
+                  Invest&#58; 2
+          - name: Automatic deploy
+            text: Replace the
+                  Deployment square
+                  in OPERATIONS.
+                  Invest&#58; 2xOPER+2
+                  Time Token&#58; OPERATIONS
+          - name: Automatic regression test
+            text: Replace Regression
+                  Test in TEST.
+                  Invest&#58; 2xTEST+2
+                  Time Token&#58; TEST
+          - name: Microservices
+            text: Protects against
+                  all architectural
+                  problems.
+                  Invest&#58; 5
+          - name: DevOps introduced
+            text: Replace the Toll Gate
+                  between TEST and
+                  OPERATIONS.
+                  Invest&#58; TEST+OPER+3
+                  Time Token&#58; TEST
+          - name: Cross-functional teams
+            text: Replace Deploy To
+                  Test Environment in
                   TEST.
+                  Invest&#58; DEVEL+TEST+2
+          - name: Automatic unit test
+            text: Replace Unit Test in
+                  DEVELOPMENT.
+                  Invest&#58; DEVEL+TEST+1
+                  Time Token&#58; DEVELOPMENT
+          - name: Code review
+            text: Increases probability
+                  for test success by 1.
+                  Invest&#58; DEVEL+2
+                  Time Token&#58; DEVELOPMENT
+          - name: Orchestration
+            text: Replace Configure
+                  Environment.
+                  Invest&#58; DEVEL+OPER+3
+                  Time Token&#58; OPERATIONS
+          - name: Automatic deployment trigger
+            text: Replace the Toll Gate
+                  between OPERATIONS
+                  and IN PRODUCTION.
+                  Invest&#58; TEST+OPER+3
+                  Time Token&#58; OPERATIONS
+          - name: Automatic test trigger
+            text: Replace the Toll
+                  Gate between
+                  DEVELOPMENT and
+                  TEST.
+                  Invest&#58; DEVEL+TEST+3
+                  Time Token&#58; DEVELOPMENT
       - name: Move
         text: TBD
       - name: Event
