@@ -14,8 +14,35 @@ credits: Per Glode
 enabled: false
 sections:
   - name: Setting up the game
-    text: TBD
+    text: <p>Components
+          <li>10 dices</li>
+          <li>5 Role cards</li>
+          <li>1 bag for Work Items</li>
+          <li>28 Event cards</li>
+          <li>30 Work Items in 5 colors (6 of each color)</li>
+          <li>20 Time Tokens in 4 colors (5 of each color)</li>
+          <li>15 Improvement cards</li>
+          <li>Board</li>
+          Start by putting the board on the table so
+          that each player can reach all squares.</p>
+    sections:
+      - name: Select one Role card
+        text: TBD
+      - name: Time Tokens
+        text: TBD
+      - name: Event deck
+        text: TBD
+      - name: Improvement deck and display
+        text: TBD
+      - name: Work Items
+        text: TBD
   - name: The round
-    text: TBD
+    text: The round is divided into six parts
+          <ul>1. Invest</ul>
+          <ul>2. Move</ul>
+          <ul>3. Event</ul>
+          <ul>4. Improve</ul>
+          <ul>5. Income</ul>
+          <ul>6. Deadline</ul>
   - name: The game end
     text: TBD
