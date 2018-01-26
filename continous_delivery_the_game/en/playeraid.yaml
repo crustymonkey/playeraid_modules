@@ -28,6 +28,33 @@ sections:
     sections:
       - name: Select one Role card
         text: TBD
+        sections:
+        - name: DEVELOPMENT (Red)
+          text: You are responsible for DEVELOPMENT.
+                <li>You start the game with two red
+                Time Tokens.</li>
+        - name: TEST (Yellow)
+          text: You are responsible for TEST.
+                <li>You start the game with two yellow
+                Time Tokens.</li>
+        - name: OPERATIONS (Green)
+          text: You are responsible for
+                OPERATIONS and that it works
+                IN PRODUCTION.
+                <li> You start the game with two green
+                Time Tokens.</li>
+        - name: CONTINUOUS DELIVERY EXPERT (Blue)
+          text: You are helping the organization
+                with Continuous Delivery
+                improvements.
+                <li> You start the game with two blue
+                Time Tokens.</li>
+        - name: EXTRA RESOURCE (Blue)
+          text: You are an extra resource who is
+                assigned to help with Continuous
+                Delivery improvements.
+                <li> You start the game with two blue
+                Time Tokens.</li>
       - name: Time Tokens
         text: TBD
       - name: Event deck
@@ -49,13 +76,7 @@ sections:
         text: TBD
         sections:
         - name: DEVELOPMENT (Red)
-          text: You are responsible for DEVELOPMENT.
-                <li>You start the game with two red
-                Time Tokens.</li>
-                <li>Every time a DEVELOPMENT
-                Improvement is played, you get an
-                additional red Time Token.</li>
-                <li>Special power&#58; Once per round,
+          text: <li>Special power&#58; Once per round,
                 instead of investing time in
                 Improvements, you can discard a
                 Time Token to move any one Work
@@ -64,13 +85,7 @@ sections:
                 the same color (you cannot move
                 past Toll Gates).</li>
         - name: TEST (Yellow)
-          text: You are responsible for TEST.
-                <li>You start the game with two yellow
-                Time Tokens.</li>
-                <li>Every time a TEST Improvement is
-                played, you get an additional yellow
-                Time Token.</li>
-                <li>Special power&#58; Once per round,
+          text: <li>Special power&#58; Once per round,
                 instead of investing time in
                 Improvements, you can discard a
                 Time Token to move all Work Items
@@ -78,51 +93,21 @@ sections:
                 forward (without having to roll the
                 dice).</li>
         - name: OPERATIONS (Green)
-          text: You are responsible for
-                OPERATIONS and that it works
-                IN PRODUCTION.
-                <li> You start the game with two green
-                Time Tokens.</li>
-                <li> Every time an OPERATIONS
-                Improvement is played, you get an
-                additional green Time Token.</li>
-                <li> Special power&#58; Once per round,
+          text: <li> Special power&#58; Once per round,
                 instead of investing time in
                 Improvements, you can discard a
                 Time Token to move all Work Items
                 of one color from OPERATIONS to
                 IN PRODUCTION.</li>
         - name: CONTINUOUS DELIVERY EXPERT (Blue)
-          text: You are helping the organization
-                with Continuous Delivery
-                improvements.
-                <li> You start the game with two blue
-                Time Tokens.</li>
-                <li> You do NOT get the invested Time
-                Tokens back when the Improvement
-                is finished.</li>
-                <li> Every time an Improvement is
-                played, you get an additional blue
-                Time Token.</li>
-                <li> Special power&#58; Once per round,
+          text: <li> Special power&#58; Once per round,
                 instead of investing time in
                 Improvements, you can discard a
                 Time Token to move one Work Item
                 five steps (you must still roll for
                 Test and stop at Toll Gates).</li>
         - name: EXTRA RESOURCE (Blue)
-          text: You are an extra resource who is
-                assigned to help with Continuous
-                Delivery improvements.
-                <li> You start the game with two blue
-                Time Tokens.</li>
-                <li> You do NOT get the invested Time
-                Tokens back when the Improvement
-                is finished.</li>
-                <li> Every time an Improvement is
-                played, you get an additional blue
-                Time Token.</li>
-                <li> Special power&#58; Once per round,
+          text: <li> Special power&#58; Once per round,
                 instead of investing time in
                 Improvements, you can discard a
                 Time Token to move one Work Item
@@ -281,6 +266,33 @@ sections:
                   Items of your choice.
       - name: Improve
         text: TBD
+        sections:
+        - name: DEVELOPMENT (Red)
+          text: <li>Every time a DEVELOPMENT
+                Improvement is played, you get an
+                additional red Time Token.</li>
+        - name: TEST (Yellow)
+          text: <li>Every time a TEST Improvement is
+                played, you get an additional yellow
+                Time Token.</li>
+        - name: OPERATIONS (Green)
+          text: <li> Every time an OPERATIONS
+                Improvement is played, you get an
+                additional green Time Token.</li>
+        - name: CONTINUOUS DELIVERY EXPERT (Blue)
+          text: <li> You do NOT get the invested Time
+                Tokens back when the Improvement
+                is finished.</li>
+                <li> Every time an Improvement is
+                played, you get an additional blue
+                Time Token.</li>
+        - name: EXTRA RESOURCE (Blue)
+          text: <li> You do NOT get the invested Time
+                Tokens back when the Improvement
+                is finished.</li>
+                <li> Every time an Improvement is
+                played, you get an additional blue
+                Time Token.</li>
       - name: Income
         text: TBD
       - name: Deadline
