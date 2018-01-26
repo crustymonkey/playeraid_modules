@@ -113,6 +113,14 @@ sections:
                 Time Token to move one Work Item
                 five steps (you must still roll for
                 Test and stop at Toll Gates).</li>
+        - name: Improvement cards
+          text: TBD
+          sections:
+          - name: Conflict in the test environment
+            text: All Work Items in
+                  TEST are moved to
+                  the square just before
+                  TEST.
       - name: Move
         text: TBD
       - name: Event
