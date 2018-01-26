@@ -1,0 +1,105 @@
+name: Trajan
+description: Increase your power and glory across many fronts to try and become the optimus princeps. [See it on BGG](https://boardgamegeek.com/boardgame/102680/trajan)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+        * Each player takes all of the pieces and the mat in their color. They also get 1 Trajan arch and 2 markers of each color.
+        * Sort the extra action and forum tiles by their type. Shuffle each type and put them face down next to the board.
+        * Shuffle the demand tiles face down and remove 3 randomly. The rest are placed in a stack beside the board.
+        * Place a random forum tile in each province on the board and 1 in each forum space based on the number of players.
+        * Place 3 extra action tiles on the yellow spaces of the forum. 
+        * Fill all 20 spaces of the construction district with 1 construction tile each.
+        * Place the time marker on the starting space of that time cycle track used for the number of players.
+        * Each player places their military leader and 1 worker to the military camp and 1 worker in the worker camp.
+        * Each player places their Trajan marker on the 1 space of their player mat and puts 2 colored markers in each tray.
+        * Sort the Trajan tiles by the category into stack. Shuffle each stack and place them on their spots on the board.
+        * Determine a starting player. Players stack their pieces on the senate track staring space and on 0 of the point track in player order with the first player being on top.
+        * Each player draws one random bonus tile and places it in front of themselves yellow side up.
+        * Draw 2 bonus tiles and place them yellow side up on their spots on the senate track.
+        * Shuffle the commodity cards and place the file face down. Reveal the top two cards and put one face up on each side of the deck, creating the discard piles.
+        * In player order, each player draws 3 commodity cards to keep in their hand from either the deck and/or the discard piles. When a discard pile is emptied, replace it with a card from the top of the commodity deck.
+        * In player order, each player takes 3 Trajan tiles. The tiles must be placed on the II, IV, and IV spots of their player mat in order they like. A player may not take more than 1 tile of each category.
+    - name: Gameplay
+      text: |
+        * Each player performs the following 3 steps on their turn.
+      sections:
+        - name: Rearrange Action Markers and Move Time Marker (Mandatory)
+          text: |
+            * The player chooses 1 tray on their mat that contains at least 1 marker and takes all of the action markers from that tray.
+            * Move the time marker forward a number of spaces equal to the number of action markers being moved.
+            * As soon as the time marker arrives at or crosses the start space, the current round ends after the player finishes their turn.
+            * The player places action markers one-by-one in the next trays in a clockwise direction until all markers have been placed.
+            * The tray where the player puts their last marker is the target tray.
+        - name: Accomplish Trajan Tile (If Possible)
+          text: |
+            * If a Trajan tile lies next to the target tray and there are action markers there matching the tile’s colors, the player removes the Trajan tile and carries out its action. The tile is then removed from the game.
+        - name: Perform One Action (Optional)
+          text: |
+            * The player may perform the action associated with the target tray.
+          sections:
+            - name: Seaport Action
+              text: |
+                * The player must choose one of the 4 options:
+                    * Draw 2 commodity cards from the face down pile and add them to their hand. Then the player must discard 1 card from their hand to the one of the face up discard piles.
+                    * Take the top commodity card from one of the two face up discard piles into their hand.
+                    * Play 1 or 2 cards from their hand face up in front of themselves to their personal display. These may be worth points for some bonus tiles. The player then draws a number of cards from the face down draw pile equal to the number of cards they played.
+                    * Ship commodities by playing cards to your personal display. The played cards must match a combination found on one of the ships. Score points equal to those found on the ship. If the ship is colored side up, flip it over to its gray side after scoring. 
+            - name: Forum Action
+              text: |
+                * The player takes one tile of their choice from the forum and puts it in the appropriate space of their mat.
+            - name: Military Action
+              text: |
+                * The player must choose one of the 3 options:
+                    * Move a worker from their personal supply to the military camp.
+                    * Move their leader to an adjacent province and take any tile that is currently there.
+                    * Move one legionnaire from the military camp to the province their leader is in. This spot must not already have a legionnaire. The player gains the province’s points if there are no legionnaires of other players there. If other players’ legionnaires are already there, the number of points is reduced by 3 for each other legionnaire.
+            - name: Trajan Action
+              text: |
+                * The player takes the top tile from one of the 6 Trajan stacks and places it on the space occupied by their Trajan marker.
+                * Move the Trajan marker to the next free slot. If there are no spaces free, the marker is moved to the center of the mat and is placed back on the mat once a spot opens up.
+                * This action cannot be performed if all of the slots are occupied by Trajan tiles.
+            - name: Senate Action
+              text: |
+                * The player advances their senate disc one space and gains the depicted number of victory points.
+                * If another player’s disc is already on this space, the new disc is placed on top to form a stack.
+                * This action cannot be performed if the player’s disc is already on the last space. 
+            - name: Construction Action
+              text: |
+                * The player must choose one of the 2 options:
+                    * Move a worker from their personal supply to the worker camp.
+                    * Move a worker from the worker camp to a construction site.
+                        * If this is the first worker of theirs to be placed, the worker can be placed anywhere.
+                        * Subsequent workers of theirs must be placed orthogonally adjacent to another of their workers.
+                        * If there is a tile on this location, the player takes it and places it on their mat. If this is their first tile of that type, immediately perform the assigned special action.
+                        * Workers may be placed in spaces occupied by another player. 
+    - name: End of a Game Round
+      text: |
+        * Reveal a demand tile and place it next to the board. Instead of revealing a 4th demand, the quarter ends.
+        * The next player in order takes their action as usual. The time marker does not change its location and continues from where it currently sits.
+    - name: End of a Quarter
+      text: |
+        * Each player must meet the people’s demands. Each player must spend a matching forum tile for each demand. The spent tokens are removed from the game.
+        * A player may meet a demand by a Trajan tile showing the matching demand, but each Trajan tile once per quarter. Any tokens used this way are kept.
+        * Players lose points if they cannot meet all of the demands based on the number of unmet demands:
+            * 1: -4 VP, 2: -9 VP, 3: -15 VP.
+        * Each player counts their number of votes in the senate + votes from senate tiles on their mat. Ties are broken by whomever is further up on the senate track. Further ties are broken by which disc is on top.
+        * The player with the most votes chooses one bonus tile and takes it yellow side up.
+        * The player with the second most votes takes the remaining tiles and places it gray side up.
+        * Return all vote discs back to the start space of the senate track with the fewest votes on the bottom and most votes on top.
+        * Remove all senate tiles from the game and all of the tiles currently in the forum.
+        * Draw 2 new bonus tiles and put them in their designated spaces in the senate.
+        * Place a new forum tile in each province that does not contain any figures.
+        * Turn all ship tiles back to their colored side.
+        * Remove the quarter year indicator from the top of the quarter year tiles.
+        * If the last quarter year tile was removed, the game ends. Otherwise, continue with the next player in clockwise order.
+    - name: End of the Game
+      text: |
+       * 1 VP per commodity card in a player’s hand.
+       * 1 VP for each worker in the worker camp.
+       * 1 VP for each worker in the military camp.
+       * 10 VP per set of 3 construction tiles with a matching icon or 20 VP per set of 4 construction tiles with a matching icon.
+       * Points from bonus tiles.
+       * In case of a tie, the player occupying the higher position in the senate wins.

@@ -1,0 +1,83 @@
+name: Airlines Europe
+description: Acquire shares and build up the various arilines in Europe in order to earn the most money. [See it on BGG](https://boardgamegeek.com/boardgame/90419/airlines-europe)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+        * Remove  airlines from the game based on the number of players:
+            * 5P: None
+            * 4P: Air Amigos (yellow)
+            * 3P: Air Amigos (yellow) and Lucky Hans Airways (violet)
+            * 2P: Air Amigos (yellow), Rio Grande Southern Europe (blue), and Lucky Hans Airways (violet)
+        * Place a company marker on the home airport of each company in the game.
+        * Place a company marker on the indicated space of the scoring track for each company in the game.
+        * Place the bonus connection markers on the appropriate spaces on the board.
+        * Choose a starting player.
+        * The starting player gets 1 VP. Each other player gets 1 VP more than the person before them. (VP markers kept face down)
+        * Seed the bank with 30 million Euro for each player.
+        * Each player gets 8 million Euro. (not kept secret)
+        * Set the 3 scoring cards aside.
+        * Shuffle the share cards for each airline in the game (except Air ABACUS) into a deck.
+        * Create a stock market by dealing 5 cards face up to the stock market area.
+        * Deal 8 cards to each player to form their starting hands.
+        * Each player selects 2 share cards from different airlines and places them face down in their play area.
+        * After all players have selected, turn the placed cards face up to start your share portfolio.
+        * Set aside 10 cards from the deck.
+        * Split the deck into 3 equal stack, shuffle a scoring card into each, and stack them to form a new deck.
+        * Place the 10 cards set aside on top of the deck. 
+    - name: Gameplay
+      text: |
+        * Each player takes 1 action on their turn.
+        * A player cannot take an action they cannot fully complete.
+      sections:
+        - name: Buy 1 or 2 Route Licenses and Take a Share Card
+          text: |
+            * Choose an airline and a new route the airline can connect to from either its airport or connected planes.
+            * Pay the cost of the cheapest circle on the route and place a plane of the chosen color on the circle.
+            * Move that airlines share marker ahead a number of spaces equal to the circle’s cost.
+            * Each route may only have a single plane of each color.
+            * May purchase a second route using the same method.
+            * After the purchase phase is finished, take 1 share from the stock market or the top card of the share supply deck.
+                * If a card was taken from the stock market, deal a new card out.
+            * If a an airline connects its airport to its target city, immediately advance that airline a number of spaces equal to the bonus.
+                * This is in addition to any other advancement it received this turn.
+        - name: Play Share Cards from Your Hand and Take Dividends
+          text: |
+            * Play at least 1 card from your hand to your share portfolio by either:
+                * Play any number of cards from a single airline.
+                * Play exactly 1 share from 2 different airlines.
+            * Collect 2 million Euro for each share played. 
+        - name: Acquire Air ABACUS Shares
+          text: |
+            * Either
+                * Discard 1 card from your hand to take 1 Air ABACUS share.
+                * Discard 3 cards from your hand to take 2 Air ABACUS shares.
+        - name: Take Cash
+          text: |
+            * Take 8 million Euro from the bank.
+            * If this causes the bank to go bankrupt:
+                * All player count their cash.
+                * Players with > 8 million Euro must discard down to 8 million Euro, putting the money back in the bank.
+                * Discard all cards from the stock market to a face down discard pile and deal out 5 new cards.
+                * The active player finishes collecting any money they were owed by the bank.
+    - name: Scoring
+      text: |
+        * Occurs immediately any time a scoring card is revealed.
+        * 2P: Third scoring – create a third player portfolio from the following. This player now affects scoring.
+            * All unclaimed Air ABACUS shares.
+            * All face up shares in the stock market.
+            * Remaining shares from the share supply deck.
+            * All shares in the face down discard pile.
+        * Start with the airline further ahead on the track and work back. Evaluate each separately.
+        * Each player says how many shares they have in their portfolio for that airline. (do not count in hand cards)
+        * Numbers under the share marker indicate how points are awarded based on share majority.
+            * Players with no shares in the company get no points.
+            * If players are tied, the VP for those positions are added together and shared (round up).
+            * Shares for Air ABACUS are assessed last.
+        * The player that drew the card resumes their turn.
+    - name: End of the Game
+      text: |
+        * Game ends immediately after third scoring.
+        * Break ties with most Air ABACUS shares.

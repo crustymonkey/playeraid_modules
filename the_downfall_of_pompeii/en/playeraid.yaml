@@ -1,0 +1,87 @@
+name: The Downfall of Pompeii
+description: Vesuvius is erupting, run for your lives! [See it on BGG](https://boardgamegeek.com/boardgame/13004/downfall-pompeii)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+        * Each player chooses a color and gets all pieces of their color (4P: discard 5 pieces).
+        * Shuffle the Pompeii cards and deal out 7 piles of 4 cards each.
+        * Shuffle the remaining Pompeii cards and all 7 Omens together to create stack A.
+        * Draw a pile of 10 cards from stack A (2P/3P: 15 cards) to create stack B. Remainder are stack A.
+        * Shuffle 1 of the AD 79 cards into stack B.
+        * Place stack A on top of stack B.
+        * Place the remaining AD 79 card on top of stack A.
+        * Place 2 of the 7 4-card piles on top of the stack.
+        * Each player takes 1 of the unused 4-card piles. The rest are discarded without looking.
+        * Choose a starting player.
+    - name: Gameplay
+      text: |
+        * Play starts with the starting player and continues clockwise.
+      sections:
+        - name: Phase 1 - New Citizens Move to Pompeii
+          text: |
+            * Each player must take the following 3 actions in their described order.
+            * Play 1 of the cards from your hand. If all spaces within the building are occupied, treat this card as a wild card and place in any building. Playing as a wild card does not trigger the Relatives rule.
+            * Place 1 of your pieces on an open space in a building whose number matches that on the card you played.
+            * Draw a card from the deck.
+          sections:
+            - name: First AD 79 Card - Vesuvius Seethes
+              text: |
+                * Immediately draw another card to replace this one when you draw it.
+                * Relatives rule is now in effect. 
+            - name: Omen Cards
+              text: |
+                * Immediately place this card in the discard pile.
+                * Throw any piece on the board into the volcano.
+                * Draw another card. 
+            - name: Relatives Rule
+              text: |
+                * If you add a piece to a building that already contains 1 or more pieces, regardless of colour, you may choose to put additional pieces (relatives) in different buildings as part of your move.
+                * You get a number of relatives equal to the number of pieces that are in the same part of the building you just placed in, not including the piece you just placed.
+                * Each relative must be placed into either:
+                    * A different building of the same colour.
+                    * Another part of the same building (if it has multiple parts).
+                    * A neutral (beige, non-numbered) building.
+                * You many only put 1 relative into any building (regardless of number of parts) in any given turn.
+                * Placing relatives does not trigger the Relatives rule again.
+                * Cannot place relatives if there are no valid spots.
+            - name: Second AD 79 Card - Vesuvius Erupts!
+              text: |
+                * All players immediately discard all of their cards and return all remaining pieces to the box (not volcano).
+                * Starting with the next player clockwise from the person that triggered the eruption, perform these steps until there are 6 lava tiles on the board:
+                    * Draw a lava tile from the bag and place it onto the board.
+                        * If you drew a dual vent tile (symbol on both sides), choose which symbol to use.
+                        * If this is the first tile for a symbol, place it on the symbol’s starting space.
+                        * Subsequent tiles of a symbol must be placed orthogonally adjacent to another tile with a matching symbol.
+                    * If a tile is placed on a space that contains pieces, the pieces are thrown into the volcano.
+                * After 6 lava tiles are draw, move on to Phase 2.
+        - name: Phase 2 - Run for Your Lives!
+          text: |
+            * Begins with the next player clockwise from the person who placed the sixth lava tile and continues clockwise.
+            * Each player must perform the 2 steps in order. 
+          sections:
+            - name: Draw a Lava Tile
+              text: |
+                * Draw a lava tile from the bag and place it orthogonally adjacent to another tile with the same symbol.
+                    * If this is the first tile of a symbol, place it on the symbol’s starting space.
+                    * If you drew a dual vent tile (symbol on both sides), choose which symbol to use.
+                * If a tile is placed on a space that contains pieces, the pieces are thrown in the volcano.
+                * Throw pieces into the volcano if they are blocked from exiting the city by lava tiles, even if they can still move.
+            - name: Move Your Pieces
+              text: |
+                * Move up to 2 different pieces of your colour.
+                * Total number of pieces in a square determines how many spaces that piece can move.
+                * May move fewer spaces if desired. Pieces may only move orthogonally but cannot move back-and-forth.
+                * No limit to the number of pieces that can be in any square.
+                * Moving through a gate costs 1 point of movement and saves the piece, placing it in front of yourself.
+                * If a player only has 1 piece left in the city, they may use both of their movements to move the same piece twice.
+                * If a piece is alone in its square at the start of your turn, you may move that piece twice instead of moving 2 different pieces. It will move only 1 space on the first turn; second turn is determined by number of pieces in the space it starts the second movement in.
+                * If you have no pieces left in the city, you skip the Move your Pieces step.
+    - name: End of the Game
+      text: |
+        * Game ends when the last lava tile is drawn from the bag or no pieces remain on the board. Finish your turn then end the game.
+        * All pieces remaining on the board are thrown into the volcano.
+        * Winner is the person who saved the most pieces of their colour.
+        * Break ties with fewest pieces in the volcano.

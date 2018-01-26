@@ -1,0 +1,122 @@
+name: Bruxelles 1893
+description: Build buidlings in the Art Nouveau style in the city of Brussels. [See it on BGG](https://boardgamegeek.com/boardgame/144592/bruxelles-1893)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+        * Randomly assemble the action strips and place them next to the board with the bonus card strip beneath them.
+        * Each player takes the pieces in their colour and places the building tiles on their board.
+        * Place 2 assistants on the courthouse.
+        * Place a disc on the scoring track, city hall track, palace track, and on the player board architect level.
+        * Place the turn counter tiles in order with 1893 on top.
+        * Each player gets a Georges Brugmann card. The remaining Georges cards are removed from the game.
+        * Place the cursor tile in the middle of the grid.
+        * Shuffle the public figure cards and place 4 face up on their designated spots.
+        * Shuffle the stock exchange cards to form a deck and place them on their space on the board.
+        * Separate the works of art by the backs (coloured and black). Each player starts with a random coloured work of art.
+        * Randomly place the compass tiles around the compass. Move the hands so that they point at the top two spots.
+        * Shuffle the bonus cards and place one on each space on the bonus strip.
+        * The first player gets the Mannekin Pis marker and 5 francs. The players to his left get 6 BF, 7 BF ... respectively.
+        * In a 2-player game, each player gets a neutral assistant used to block a space.
+    - name: Gameplay
+      sections:
+        - name: Stock Exchange Phase
+          text: |
+            * The first player flips over the top stock exchange card and chooses where to place the frame based on the coordinates for the number of players. The frame must always be angled to use the largest possible area.* In a 2-player game, the first player places their neutral worker on an open space (no building). The second player then does the same. If there are no spaces without buildings, then the assistant is not placed this round.
+        - name: Action Phase
+          sections:
+            - name: The Actions of the Art Nouveau Board
+              text: |
+                * To take an action, place an assistant on an unoccupied actions space along with a bid of at least 1 BF.
+                * Players do not need to take the space’s action. They may simply block the space.
+                * When placing on a space with another player’s building, that player gets a bonus secondary action. No bonus for placing on your own building.
+              sections:
+                - name: Workshop Action
+                  text: |
+                    * Randomly draw a number of colored art tiles equal to 1 + number of posters you have. Keep 1 and return rest to the pile.
+                    * All art tiles are kept face up.
+                - name: Sale Action
+                  text: |
+                    * Move the cursor a number of spaces equal to the number pieces of art in front of you. Orthogonal movements only.
+                    * Cannot sell a work of art that is on display in the shop window.
+                    * Receive VP and BF equal to the values for the chosen color indicated by the cursor.
+                    * Place the art tile in one of the shop window spots.
+                - name: Royal Theater Action
+                  text: |
+                    * Select 1 of the available public figures and pay their cost. Immediately gain their bonus.
+                    * Determine if you want to keep the card or throw it away. If keeping the card, it enters your area tapped.
+                    * Can only possess 1 of each public figure but can still use and discard the same person from the display.
+                    * Slide cards down to fill the gap and add a new card to the display.
+                - name: Materials Action
+                  text: |
+                    * Take any 2 non-noble (non-white) materials.
+                - name: Construction Action
+                  text: |
+                    * Building tiles must come from the lowest possible row and indicate a number of cubes.
+                    * The number of cubes in that row indicates the number of payments that need to be made. The compass needles indicate what units can be used to pay. Each unit the needles point at need to be used at least once in the payment.
+                    * A needle pointing at a blank means that all payments must be made using the other unit.
+                    * One white joker cube can replace any other unit including 3 BF.
+                    * If the player did not use any white joker cubes in the payment, they gain 5 VP.
+                    * Move one needle clockwise. The needles may never point at the same location.
+                    * Place the building tile on any empty action space on the Art Nouveau board; it can be outside of the current play area.
+            - name: The Actions of the Brussels Board
+              text: |
+                * Any player may go to an occupied space (even occupied by their own assistants). The next player to place there must place 1 more assistant than the previous group.
+              sections:
+                - name: Market Action
+                  text: |
+                    * ake 3 white joker cubes.
+                - name: Stock Exchange Action
+                  text: |
+                    * Take a number of BF equal to the coin value indicate on the stock exchange card.
+                - name: Fiftieth Anniversary Park Action
+                  text: |
+                    * Perform any standard action from the Art Nouveau board. No other workers or bid are placed on that board.
+                - name: Grand Plaza Action
+                  text: |
+                    * Activate a number of unused personal public figure cards equal to position on the royal palace track. Tap each used card.
+            - name: Pass
+              text: |
+                * A player may pass at any time if they do not want to take any more actions. The first player to pass in a round takes the top exhibition poster and gets 1 BF + 1 BF per colour of work of art in front of them.
+                * When other players pass, they collect 1 BF per colour of work of art in front of them.
+        - name: Resolution of the Turn Phase
+          text: |
+            * The player who placed the most money in each column gets the bonus card. In case of a tie, all tied players take the bonus action but do not get the card.
+            * Determine new first player by counting the total number of Mannekin Pis statues on received cards and pass marker. If tied, next player in clockwise order becomes first player.
+            * Players who received bonus cards must either take the middle bonus and discard the card of tuck it under their player board for end of game scoring.
+            * For each shield on the Art Nouveau board that is surrounded, the player with the most assistants around it gets bonus VP based on the city hall track. If multiple players are tied, all tied players get their bonus. The neutral assistants count for majority but do not score points.
+            * The player with the most assistants on the Brussels board loses 1 assistant to the courthouse. If tied, all involved lose 1.
+        - name: End of Turn Phase
+          text: |
+            * Each player retrieves their assistants not in the courthouse.
+            * Money on bid spaces goes back to the pool.
+            * Tapped public figure cards become untapped.
+            * Discard the public figure from space 0 on the board. Slide all cards down and put a new card in place.
+            * Discard any bonus cards left on the Art Nouveau board.
+            * Discard the stock exchange card and reveal the next one.
+    - name: End of the Game
+      text: |
+        * Each player must pay for each of their kept public figures. Any they cannot pay for are discarded. Lose 5 VP per discard.
+        * VP for architect level x number of buildings built.
+        * VP for each of the scoring objectives on the side of the player board.
+        * 1 VP per noble (non-white) material.
+        * 5 VP for having Mannekin Pis.
+    - name: Secondary Actions
+      sections:
+        - name: Workshop Action
+          text: |
+            * Take 1 black work of art from the supply and place it in front of you.
+        - name: Sale Action
+          text: |
+            * Earn 1 VP for every work of art you have including black works.
+        - name: Royal Theater Action
+          text: |
+            * May activate an untapped Public Figure card in you area, then tap it.
+        - name: Materials Action
+          text: |
+            * Take 1 noble (non-white) material from the supply.
+        - name: Construction Action
+          text: |
+            * Earn 1 VP per building you already have built on the Art Nouveau board.

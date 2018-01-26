@@ -1,0 +1,56 @@
+name: Lifeboats
+description: Flee the wreckage of the Santa Timea in leaky lifeboats and do anything necessary to ensure your sailors get to dry land. [See it on BGG](https://boardgamegeek.com/boardgame/249/lifeboats)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+        * Each player chooses a color and takes the lifeboat and pawns of their color. (5P/6P: only 4 sailors instead of 5)
+        * Each player gets a deck of cards made up of each color in the game and 3 Captain’s Hats.
+        * Pick a starting player.
+        * In player order, each player places their ship in an empty column.
+        * The starting player places the black boat in an empty column.
+        * In player order, each player places a pawn (officer or sailor) in any empty space. Continue until all pieces placed.
+    - name: Gameplay
+      text: |
+        * Each turn consists of 3 phases.
+        * During voting, a player can play a Captain’s Hat instead of a colored card.
+        * If only 1 player played a Captain’s Hat, they determine the result of the vote.
+        * If multiple Captain’s Hats are played, all played Hats are discarded and vote is determined by cards that remain.
+        * If everyone plays a Captain’s Hat, the start player decides the outcome.
+      sections:
+        - name: Phase 1 - One lifeboat receives a leak
+          text: |
+            * All players select a card from their hand, voting for which color of boat springs a leak.
+            * If tied, the starting player decides which tied boat leaks.
+            * If there is an empty space on the boat, put a leak there.
+            * If there is no empty space on the boat, players must vote for who drowns.
+                * Only the players in that boat may vote.
+                * Sailors get 1 vote; officers get 2.
+                * If there is a tie, starting player decides who drowns amongst the tied players.
+                * If the chosen player has both a sailor and an officer on the ship, sailors must be lost first.
+                * Replace the lost piece with a leak.
+            * If there are more leaks than pawns in any boat at the end of the phase, the boat sinks. Remove the boat and all pieces.
+            * Return cards to hands except Captain’s Hats which are discarded. 
+        - name: Phase 2 - One lifeboat moves
+          text: |
+            * All players select a card from their hand, voting for which color of boat moves.
+            * If tied, the starting player deices which tied boat moves.
+            * Chosen boat moves ahead 1 space.
+            * If the boat reaches an island, all seamen are placed on island and boat is placed on first empty landing stage of the board.
+            * Return cards to hands except Captain’s Hats which are discarded.
+        - name: Phase 3 - The seamen change boats
+          text: |
+            * In player order, each player must remove 1 pawn from any boat and set it behind that boat.
+            * Only 1 pawn may be removed from each boat.
+            * In reverse turn order, each player must put the pawn they removed into a different boat than the one they left.
+                * If there are no seats available in other boats, the pawn is removed from the game.
+            * If there are more leaks than pawns in any boat at the end of the phase, the boat sinks. Remove the boat and all pieces.
+        - name: End of the Round
+          text: |
+            * Next player in clockwise order becomes start player.
+    - name: End of the Game
+      text: |
+        * Each player gets points for their sailors and officers on islands based on their point value.
+        * Break ties by whose lifeboat first arrived on an island.

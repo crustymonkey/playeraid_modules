@@ -1,0 +1,122 @@
+name: Mombasa
+description: Acquire shares and build up the various companies in Mombasa in order to earn the most money. [See it on BGG](https://boardgamegeek.com/boardgame/172386/mombasa)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+        * Randomly place a company track on each side of the board.
+        * Place all trading posts of the matching color on each space for their company.
+        * Sort the action cards by letter and shuffle each stack. Place E on the bottom and A on top.
+        * Deal 12 cards to the card display, going from top to bottom, right to left.
+        * Use the large coins to fill the spaces for rounds 2 through 7 on the round track based on the number of players:
+            * 2P: 6 coins of value 1, placing 1 on each space of the round track.
+            * 3P: 9 coins of value 1, placing 2 onto the even numbered rounds and 1 onto the odd numbered rounds.
+            * 4P: 12 coins of value 1, placing 2 on each space of the round track.
+        * Sort the book tiles by their letter and shuffle them face down.
+        * Place 4 books of each letter onto the book display.
+        * Place the bonus tiles next to the board.
+        * Each player chooses a color and receives 1 pound from the bank.
+        * Each player places a disc on the starting space of each company track.
+        * Each player places their diamond onto the diamond space of their board.
+        * Each player gets 3 bonus markers (3P/4P: 2 bonus markers).
+        * Choose a starting player.
+        * Give each player a basic 1-expansion card whose upper-right number matches their player number.
+        * Shuffle the starting tiles and deal a random one to each player, placing it on their player boards.
+        * Each player places the indicated cards in the depicted slots above their board and places their ink jar on their starting tile.
+        * Each player gets the bonus shown on their starting tile.
+    - name: Bookkeeping Points
+      text: |
+        * May take A, B, and C books by spending their depicted number of bookkeeping points.
+        * Spend 1 bookkeeping point to take 1 pound.
+        * After spending all points, place each book you claimed onto your player board.
+            * Some spaces on your player board only allow certain types of books.
+    - name: Company Tracks
+      text: |
+        * When moving onto past a pound space, take the depicted number of pounds.
+            * All players who reached or pass this space get it again when another player triggers this.
+        * Special action spaces are unlocked when your marker reaches them. Can be used starting on the next round.
+        * May only use 1 of the special bonus spaces of each company each round.
+    - name: Gameplay
+      sections:
+        - name: Phase 1 - Planning Phase
+          text: |
+            * Each player chooses cards from their hand and places them face down below an action slot.
+            * Once all players have picked their cards, turn all cards face up.
+        - name: Phase 2 - General Action Phase
+          text: |
+            * In player order, each player uses cards, places a bonus marker, or passes.
+            * General Action Phase ends once all players have passed.
+          sections:
+            - name: Use Cards
+              sections:
+                - name: Use 1 or more goods cards of 1 type in your action area
+                  text: |
+                    * Choose any number of cards of a single type of good from your played action cards to use and add up their total value.
+                    * May perform both possible actions if desired.
+                    * Flip all used goods cards face down.
+                  sections:
+                    - name: Acquire 1 card from the card display
+                      text: |
+                        * Take 1 card of your choice from the card display by paying the card’s value + the red crate value below it using your value.
+                    - name: Advance on 1 or more company tracks
+                      text: |
+                        * For each point of value you want to spend, advance 1 space forward on any company track.
+                - name: Use all expansion cards in your action area
+                  text: |
+                    * Must use all expansion cards in your action area at once.
+                    * Get a number of expansion points equal to the total value on your expansion cards.
+                    * Must choose a single company to expand.
+                        * Choose a region adjacent to another trading post or the starting region of the chosen company.
+                    * If you cross a single border, spend 1 expansion point.
+                    * If you cross a double border, spend 2 expansion points.
+                    * If a trading post from another company is in the region, spend 1 additional expansion point.
+                    * Place a trading post for the company on its edge into the region.
+                    * New trading posts may come from any column but must always be the topmost of that column.
+                    * Repeat this process until you use all expansion points or decide to finish.
+                    * Collect the reward for each region you have placed trading posts in, putting the trading post on its base. Done in any order.
+                    * Remove all trading posts of competing companies from the regions that you placed in.
+                        * Returned trading posts may be placed in any column but must always be the topmost open spot of that column.
+                    * Flip all expansion cards used face down.
+                - name: Use 1 bookkeeper card in your action area
+                  text: |
+                    * May pay 2 pounds to flip a single book on your track face down.
+                    * Move your ink marker forward as far as you can and want, moving and evaluating book by book.
+                        * May only move to a book if you meet its requirements with your face up action cards.
+                        * If you moved at least 1 book, receive the reward depicted on the book which you stop on (face down = no reward).
+                    * Use the depicted number of bookkeeping points depicted on the chosen bookkeeper card.
+                    * Flip the used card face down. 
+                - name: Use 1 diamond merchant card in your action area
+                  text: |
+                    * Move your diamond marker the depicted number of spaces.
+                    * Flip the used card face down.
+            - name: Place a Bonus Marker
+              text: |
+                * Place a bonus marker onto a circle space on the board or on a company reward space you have unlocked.
+                * The first player cannot take the first player bonus on their first turn of the round.
+                * Company majority bonuses: May only place on these spaces if no player has a higher total unit value of the depicted goods face up in their area (may be tied).
+                    * Get a bonus based on the number of the depicted goods you have showing in front of you.
+                * Placing a bonus marker on a bonus tile space reserves it for the next turn; you do not get it right away.
+            - name: Pass
+              text: |
+                * Pick up 1 of your resting decks and return these cards to your hand.
+                * Move all cards in your action area to the resting area above your board, keeping them in the column they were played in.
+        - name: Phase 3 - Prepare for the Next Round
+          text: |
+            * Move all of the coins from the next round number down to the book track.
+                * If there is only 1 coin, move it to the book space on the first row below the round number.
+                * If there are 2 coins, move 1 to the book space on each row below the round number.
+            * Remove all cards remaining from the rightmost column of the card display.
+            * Slide all cards in the card display as far right as possible.
+            * Deal out cards to the card row to fill all spaces, going from top to bottom, right to left.
+            * Return all bonus markers to their owners. If the marker came from a bonus tile space, they take the matching bonus tile.
+            * Return all unclaimed bonus tiles to the supply.
+    - name: Game End
+      text: |
+        * Game ends after the 7th round.
+        * Each player returns all of the cards in their resting area to their deck.
+        * Each player removes all company share cards from their deck and groups them together.
+        * Pounds: Record the number of pounds each player has.
+        * Companies: For each player, multiply the number of coins showing for the company by the number of shares the player has.
+        * Diamond and Ink well: Record the number that the player’s marker most recently passed.
