@@ -55,6 +55,13 @@ sections:
                 <li>Every time a DEVELOPMENT
                 Improvement is played, you get an
                 additional red Time Token.</li>
+                <li>instead of investing time in
+                Improvements, you can discard a
+                Time Token to move any one Work
+                Item from DEVELOPMENT to any
+                square that holds a Work Item of
+                the same color (you cannot move
+                past Toll Gates).</p></li>
         - name: TEST (Yellow)
           text: TBD
         - name: OPERATIONS (Green)
