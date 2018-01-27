@@ -9,11 +9,13 @@ sections:
           *  Give each player 2 Peasant cards and a player aid.  Place your
              player aid on the table as it also serves as a barn.
           *  Build the Traveler deck based on the player count and game length:
+
           | Players | Short Game | Long Game |
           | ------- | ---------- | --------- |
           | 2 players | remove 35 cards | remove 25 cards |
           | 3 players | remove 28 cards | remove 16 cards |
           | 4 players | remove 22 cards | remove 6 cards |
+
           *  Shuffle the remaining cards and place the cards at the left of
              the board with the living side face-up.
           *  Each player receives 8 key/room service tokens and disc in their
@@ -28,5 +30,144 @@ sections:
           * The greediest player takes the first player card.
     - name: Playing the Game
       text: |
+          The game is divided into 2 seasons.  A season is traversal through
+          the deck.  When the Entrance stack becomes empty for the 1st time,
+          shuffle the Exit stack to form a new Entrance stack. After the 2nd
+          time through the deck, do a normal final round, even if the inn is
+          not full. **Don't play the final round if there are fewer travelers
+          in the inn than the number of players**.
 
+          Each round is divided into 3 phases.
+      sections:
+          - name: "Phase 1: Welcome Travelers (Evening)"
+            text: |
+                The 1st player performs the following steps:
+
+                *  Draw the top card of the Entrance stack
+                *  Place the traveler in an open (has a key token), unoccupied
+                   (has no traveler) room of their choice
+                *  Reiterate this process until there is a traveler in each
+                   open room
+          - name: "Phase 2: Player Actions (Night)"
+            text: |
+                Starting with the 1st player, in clockwise order each player
+                performs an action.  Then go around once more so each player
+                can perform a 2nd action.
+
+                There are 5 different actions you may take on your turn:
+
+                1. Bribe a Guest
+                2. Build an Annex
+                3. Kill a Guest
+                4. Bury a Corpse
+                5. Pass (and Launder Money)
+
+                Actions 1-4 operate on the same principle:
+                
+                *  You choose a Guest card in play (in your hand or in the inn,
+                   as appropriate)
+                *  You must play a number of cards defined by the rank of the
+                   chosen card
+                *  Reclaim any cards you played that have an aptitude for the
+                   chosen action.  The other cards are lost.
+                *  Perform the action
+            sections:
+                - name: 1. Bribe a Guest
+                  text: |
+                      This allows you to take a Guest card from the inn into
+                      your hand.
+
+                      *  Select the traveler you want to bribe from among those
+                         renting rooms at the inn (the room owner does not
+                         matter).
+                      *  Play as many Guest cards from your hand as the rank
+                         of the traveler you chose.
+                      *  From the cards just played, return any cards with the
+                         ![money](/static/img/bloody_inn/money.png) icon to
+                         your hand .  Put the other cards in the exit stack,
+                         **except Peasants, which go in the bistro instead**.
+                      *  Add the bribed guest to your hand
+
+                      It is also possible to **bribe the peasants** in the
+                      bistro.  If you bribe the peasants, take 1 or 2 and them
+                      to your hand.
+                - name: 2. Build an Annex
+                  text: |
+                      This allows you to place one of your Guest cards in
+                      your hand in front of you to use its power.  Annexes
+                      are also needed to bury corpses.
+
+                      *  Choose a traveler **from your hand** that depicts an
+                         annex.
+                      *  Play as many Guest cards from your hand as the rank
+                         of the traveler you chose.
+                      *  From the cards just played, return cards with the
+                         ![trowel](/static/img/bloody_inn/trowel.png)
+                         icon to your hand. Put the other cards in the exit
+                         stack, **except Peasants, which go in the bistro
+                         instead**.
+                      *  Place the traveler card in front of you, Living side
+                         face-up.  This is now an annex.  There is no limit
+                         to the number of annexes you can have.  You can also
+                         have more than 1 copy of the same annex.
+                      
+                      **Note**: Police and Peasant cards **cannot** become
+                      annexes.
+                - name: 3. Kill a Guest
+                  text: |
+                      When you kill a guest, you put them in front of you
+                      Dead-side-up.
+
+                      *  Select the traveler you want to kill **from the inn**.
+                         It's also possible to kill Peasants.
+                      *  Play as many Guest cards from your hand as the rank
+                         of the traveler you chose.
+                      *  From the cards played, return cards with the
+                         ![gun](/static/img/bloody_inn/gun.png) icon to your
+                         hand .  Put the other cards in the exit stack,
+                         **except Peasants, which go in the bistro instead**.
+                      *  Place the Guest card in front of you with the Dead
+                         side face up (this is now a **corpse**).  There is no
+                         limit to the number of corpses you can have in
+                         front of you.
+                - name: 4. Bury a Corpse
+                  text: |
+                      You may bury the **corpse** of a guest you **killed in
+                      a previous action**.
+
+                      *  Select the corpse you want to bury from those in
+                         front of you.
+                      *  Play as many Guest cards from your hand as the rank
+                         of the traveler you chose.
+                      *  From the cards played, return cards with the
+                         ![casket](/static/img/bloody_inn/gun.png) icon to
+                         your hand .  Put the other cards in the exit stack,
+                         **except Peasants, which go in the bistro instead**.
+                      *  Place the corpse card under an annex of your choice,
+                         **regardless of who owns it**, leaving the bottom
+                         of the card (with the money amount) showing.  The
+                         number of bodies you can bury under an annex is
+                         equal to the rank of the annex.  **You and the
+                         owner of the annex** split the money (you get all
+                         of it if buried under your own annex).  Note that
+                         you **can bury a corpse under the "barn"**.
+                      
+                      **Important**: It is **impossible** to have more than
+                      40 francs on the wealth track.  If you would exceed
+                      40, the excess is lost.
+                - name: 5. Pass (and Launder Money)
+                  text: |
+                      You can choose not to do any of the previous actions and
+                      pass instead.  If you do, you *may* "Launder Money".
+                      You can either:
+                      
+                      *  Exchange a portion of your cash for 10F checks.
+                      *  Cash checks in order to increase your cash on the
+                         wealth track.
+          - name: "Phase 3: End of Round (Morning)"
+            text: |
+                The end of the round is divided into 3 steps.
+            sections:
+                - name: 1. Police Investigation
+                  text: |
 
