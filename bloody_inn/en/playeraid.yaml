@@ -1,0 +1,32 @@
+name: The Bloody Inn
+description: Eliminate your guests. [See it on BGG](https://boardgamegeek.com/boardgame/180593/bloody-inn)
+enabled: true
+text_type: markdown
+credits: Jay Deiman
+sections:
+    - name: Setup
+      text: |
+          *  Give each player 2 Peasant cards and a player aid.  Place your
+             player aid on the table as it also serves as a barn.
+          *  Build the Traveler deck based on the player count and game length:
+          | Players | Short Game | Long Game |
+          | ------- | ---------- | --------- |
+          | 2 players | remove 35 cards | remove 25 cards |
+          | 3 players | remove 28 cards | remove 16 cards |
+          | 4 players | remove 22 cards | remove 6 cards |
+          *  Shuffle the remaining cards and place the cards at the left of
+             the board with the living side face-up.
+          *  Each player receives 8 key/room service tokens and disc in their
+             player color.  Place the disc on the 5F space of the wealth track.
+          *  Each player takes 1 10F check.
+          *  Determine which rooms are open:
+              *  Each player places a key token of their color on an unclaimed
+                 room of their choice.
+              *  In a 2 or 3 player game, place a key tokon of the neutral
+                 color on each of 3 doors of the inn.  In a 4 player game,
+                 place 1 on each of the 4.
+          * The greediest player takes the first player card.
+    - name: Playing the Game
+      text: |
+
+
