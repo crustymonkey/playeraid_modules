@@ -140,7 +140,7 @@ sections:
                       *  Play as many Guest cards from your hand as the rank
                          of the traveler you chose.
                       *  From the cards played, return cards with the
-                         ![casket](/static/img/bloody_inn/gun.png) icon to
+                         ![casket](/static/img/bloody_inn/casket.png) icon to
                          your hand .  Put the other cards in the exit stack,
                          **except Peasants, which go in the bistro instead**.
                       *  Place the corpse card under an annex of your choice,
@@ -170,4 +170,116 @@ sections:
             sections:
                 - name: 1. Police Investigation
                   text: |
+                      If there is **at least 1 Police card in an open room**
+                      at the inn, the police investigate.  Each player must
+                      pat 10F per unburied corpse they have, and then
+                      remove all unburied corpses from the game.
+
+                      **Note**: You **can** pay with checks.  If you can't
+                      pay the full amount, pay all the money you have.
+                - name: 2. Travelers Leave
+                  text: |
+                      Each player earns 1F for each room of their color
+                      (each door with a key token of their color) with a
+                      Guest card.
+
+                      Then, empty the inn, placing all travelers on the exit
+                      stack living side up.
+                - name: 3. Pay Wages
+                  text: |
+                      Pay 1F per Guest card in your hand.  You **cannot** pay
+                      them with checks!  If you cannot pay for all the
+                      Guest cards in your hand, you must put unpaid cards on
+                      the exit stack, except for Peasants, which go in the
+                      bistro.
+
+                      Rotate the First Player card to the left and a new
+                      round can begin.
+    - name: End of the Game
+      text: |
+          *  When the Entrance Stack is emptied for the **2nd** time, finish
+             the round and the game ends.
+          *  **Note**: Do **not** play the last round if there are fewer
+             travelers in the inn than there are players.
+          *  Each player with an unburied corpse must pay 10F per unburied
+             corpse, then remove them from the game.
+          *  Evaluate the rank-3 annexes that earn you money.  **Note: You
+             still cannot have more than 40F on the wealth track!**
+          *  Total up each players wealth: wealth track + checks
+          *  The richest player wins
+              *  **In the event of a tie**, the player with the most corpses
+                 under their annexes wins.  If there is still a tie, the
+                 game ends in a tie.
+    - name: Variants
+      sections:
+          - name: Unlimited Wealth
+            text: |
+                You can gain more than 40F.  Whenever you have more than 40F,
+                take 4 checks and start your disc at the beginning of the
+                wealth track.
+          - name: First Come, First Served (for beginners, or a faster game)
+            text: |
+                When welcoming travelers, the 1st player does not decide
+                which room to put each traveler, but instead places them
+                in the order they arrived.
+    - name: Travelers
+      sections:
+          - name: Red Travelers
+            text: |
+                *  **0** Cultivator (Vegetable Garden) - Immediately earn 1F
+                   per red annex you have, including this one.
+                *  **1** Mechanic (Workshop) - From now on, play 1 accomplice
+                   (Guest) fewer to perform the *Build an Annex* action.
+                *  **2** Distiller (Distillery) - At the end of the round,
+                   do not pay the wages for 1 of the accomplices (Guests)
+                   in your hand.
+                *  **3** Gardener (Gardens) - At the end of each round,
+                   earn an additional 2F during the *Travelers Leave* phase.
+                *  **3** Landscaper (Park) - Immediately earn 4F.  At the
+                   end of the game, earn 4F per **red** card in the Exit Stack.
+                *  **3** Butcher (Butcher's Shop) - From now on, you can kill
+                   as many travelers as you want in 1 *Kill a Guest* action.
+          - name: Blue Travelers
+            text: |
+                *  **0** Newsboy (Kiosk) - Immediately earn 1F per blue annex
+                   you have built, including this 1.
+                *  **1** Representative (Parlor) - From now on, play 1
+                   accomplice (Guest) fewer to perform the *Bribe a Guest*
+                   action.
+                *  **2** Concierge (Room Service) - Immediately place a Room
+                   Service token next to a key token.  From now on, when
+                   a Guest rents this room, he immediately pays a sum equal
+                   to his rank.
+                *  **3** Grocer (Grocery) - Immediately earn 4F.  At the end
+                   of the game, earn 4F per blue card in the Exit Stack.
+                *  **3** Shopkeeper (Store) - From now on, you can bribe as
+                   many travelers as you want in 1 *Bribe a Guest* action.
+                *  **3** Brewer (Brewery) - From now on, you can bribe up to
+                   4 Peasants simultaneously in 1 *Bribe a Guest* action.
+          - name: Purple Travelers
+            text: |
+                *  **0** Novice (Altar) - Immediately earn 1F per purple annex
+                   you have built, including this 1.
+                *  **1** Monk (Room) - Immediately replace 1 of the white key
+                   tokens with 1 of your key tokens.
+                *  **2** Abbot (Cellar) - From now on, play 1 accomplice
+                   (Guest) fewer to perform the *Bury a Corpse* action.
+                *  **3** Priest (Chapel) - From now on, you are not required
+                   to discard accomplices (Guests) of the other types when
+                   you use them for a *Bury a Corpse* action.
+                *  **3** Archbishop (Crypt) - From now on, you can bury as
+                   many corpses as you want in 1 *Bury a Corpse* action.
+                *  **3** Bishop (Bishopric) - Immediately earn 4F.  At the
+                   end of the game, earn 4F per purple card in the Exit Stack.
+          - name: Green Travelers
+            text: |
+                *  **0** Baron (Grand Chandelier) - Immediately earn 4F.
+                *  **1** Viscount (King Size Bed) - Immediately earn 6F.
+                *  **2** Count (Dining Room) - Immediately earn 9F.
+                *  **3** Duke (Stables) - Immediately earn 4F.  At the end of
+                   the game, earn 4F per green card in the Exit Stack.
+                *  **3** Prince (Greenhouse) - At the end of the game, earn
+                   3F per check you have.
+                *  **3** Marquis (Pavilion) - Immediately earn 18F.
+
 
