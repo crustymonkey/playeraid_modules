@@ -27,7 +27,17 @@ sections:
           that each player can reach all squares.</p>
     sections:
       - name: Select one Role card
-        text: TBD
+        text: Each player selects one Role card. This can
+              be done randomly or by selecting what you
+              want to play. The roles Development, Test
+              and Operations need always be part of the
+              game, otherwise Improvements cannot be
+              invested in. If playing with four (4) players
+              add either Extra Resource or Continuous
+              Delivery Expert to the game. If playing with
+              five (5) players, add both. It is possible to play
+              with less than three players, in that case give
+              more than one Role card to each player.
         sections:
         - name: DEVELOPMENT (Red)
           text: You are responsible for DEVELOPMENT.
@@ -56,13 +66,36 @@ sections:
                 <li> You start the game with two blue
                 Time Tokens.</li>
       - name: Time Tokens
-        text: TBD
+        text: Put all Time Tokens on the table so that
+              everybody can reach them. Each player
+              takes the amount and color stated on their
+              Role card.
       - name: Event deck
-        text: TBD
+        text: Shuffle the Event deck, count the 14 first cards in it,
+              and place them facedown on the designated space on the board.
+              The other 14 cards are returned to the box forever.
       - name: Improvement deck and display
-        text: TBD
+        text: Shuffle the Improvement deck and place it
+              face down on the designated space on the
+              board. Then draw four (4) Improvement
+              cards from the top of the deck and place
+              them face up for all players to see. The
+              displayed four cards are the ones that the
+              players can invest time in.
       - name: Work Items
-        text: TBD
+        text: Put all Work Items into the bag. Without
+              peeking, draw five (5) Work Items and put
+              them on the BACKLOG square. Then
+              draw another five and put them on the Develop
+              square (the first square on the DEVELOPMENT
+              track).
+              <li>Draw two more Work Items and put one on
+              the first square of the Deadline Tracker
+              and the other beside the Income Tracker.
+              These Work Items do not count as in play
+              and are in effect removed from the game.
+              These Work Items will be used to track the
+              deadline and income respectively.</li>
   - name: The 14 rounds
     text: The round is divided into six parts
           <li>1. Invest</li>
@@ -120,85 +153,85 @@ sections:
             text: Protects against
                   all problems in
                   OPERATIONS.
-                  Invest&#58; DEVEL+OPER+3
-                  Time Token&#58; OPERATIONS
+                  <li>Invest&#58; DEVEL+OPER+3</li>
+                  <li>Time Token&#58; OPERATIONS</li>
           - name: Requirement refinement
             text: Move all Work Items
                   from DEVELOPMENT
                   to Deploy To Test
                   Environment and re-
                   shuffle this card.
-                  Invest&#58; 3
+                  <li>Invest&#58; 3</li>
           - name: Container
             text: Protects against all
                   problems in TEST.
-                  Invest&#58; OPER+DEVEL+3
-                  Time Token&#58; TEST
+                  <li>Invest&#58; OPER+DEVEL+3</li>
+                  <li>Time Token&#58; TEST</li>
           - name: Pull requests
             text: Increases probability
                   for test success by 1.
-                  Invest&#58; DEVEL+2
+                  <li>Invest&#58; DEVEL+2</li>
           - name: Visualized pipeline
             text: Look at the top Event
                   card in the Event deck
                   and then re-shuffle
                   this card.
-                  Invest&#58; 2
+                  <li>Invest&#58; 2</li>
           - name: Automatic deploy
             text: Replace the
                   Deployment square
                   in OPERATIONS.
-                  Invest&#58; 2xOPER+2
-                  Time Token&#58; OPERATIONS
+                  <li>Invest&#58; 2xOPER+2</li>
+                  <li>Time Token&#58; OPERATIONS</li>
           - name: Automatic regression test
             text: Replace Regression
                   Test in TEST.
-                  Invest&#58; 2xTEST+2
-                  Time Token&#58; TEST
+                  <li>Invest&#58; 2xTEST+2</li>
+                  <li>Time Token&#58; TEST</li>
           - name: Microservices
             text: Protects against
                   all architectural
                   problems.
-                  Invest&#58; 5
+                  <li>Invest&#58; 5</li>
           - name: DevOps introduced
             text: Replace the Toll Gate
                   between TEST and
                   OPERATIONS.
-                  Invest&#58; TEST+OPER+3
-                  Time Token&#58; TEST
+                  <li>Invest&#58; TEST+OPER+3</li>
+                  <li>Time Token&#58; TEST</li>
           - name: Cross-functional teams
             text: Replace Deploy To
                   Test Environment in
                   TEST.
-                  Invest&#58; DEVEL+TEST+2
+                  <li>Invest&#58; DEVEL+TEST+2</li>
           - name: Automatic unit test
             text: Replace Unit Test in
                   DEVELOPMENT.
-                  Invest&#58; DEVEL+TEST+1
-                  Time Token&#58; DEVELOPMENT
+                  <li>Invest&#58; DEVEL+TEST+1</li>
+                  <li>Time Token&#58; DEVELOPMENT</li>
           - name: Code review
             text: Increases probability
                   for test success by 1.
-                  Invest&#58; DEVEL+2
-                  Time Token&#58; DEVELOPMENT
+                  <li>Invest&#58; DEVEL+2</li>
+                  <li>Time Token&#58; DEVELOPMENT</li>
           - name: Orchestration
             text: Replace Configure
                   Environment.
-                  Invest&#58; DEVEL+OPER+3
-                  Time Token&#58; OPERATIONS
+                  <li>Invest&#58; DEVEL+OPER+3</li>
+                  <li>Time Token&#58; OPERATIONS</li>
           - name: Automatic deployment trigger
             text: Replace the Toll Gate
                   between OPERATIONS
                   and IN PRODUCTION.
-                  Invest&#58; TEST+OPER+3
-                  Time Token&#58; OPERATIONS
+                  <li>Invest&#58; TEST+OPER+3</li>
+                  <li>Time Token&#58; OPERATIONS</li>
           - name: Automatic test trigger
             text: Replace the Toll
                   Gate between
                   DEVELOPMENT and
                   TEST.
-                  Invest&#58; DEVEL+TEST+3
-                  Time Token&#58; DEVELOPMENT
+                  <li>Invest&#58; DEVEL+TEST+3</li>
+                  <li>Time Token&#58; DEVELOPMENT</li>
       - name: Move
         text: TBD
       - name: Event
