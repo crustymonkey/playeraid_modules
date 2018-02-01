@@ -233,12 +233,37 @@ sections:
                   <li>Invest&#58; DEVEL+TEST+3</li>
                   <li>Time Token&#58; DEVELOPMENT</li>
       - name: Move
-        text: TBD
+        text: Work Items move toward IN PRODUCTION
+              <li>Move Work Items a total of 10 steps,
+              following the rules on the board. You
+              decide together the strategy and
+              which items to move.</li>
+              <li>All special rules are
+              stated on the board and are described in
+              more detail in the Board section.</li>
+              <li>You choose
+              how you divide the moves on the Work Items.
+              For instance; move 10 Work Items 1 step
+              each, 5 Work Items 2 steps each, 1 Work Item
+              10 steps, or a mix of the above. Rolling a dice
+              on a test square counts as one move.</li>
+              <li>If an invested Improvement card states that a square
+              is replaced,
+              all Work Items that are moving to this
+              square should just ignore it and go to the
+              next, non-replaced, square.</li>
       - name: Event
-        text: TBD
+        text: Reality hits you.
+              <li>Draw an Event card and follow the
+              instructions. A good way of doing
+              this is to either take turns to read
+              out the card text, or choose a person
+              not playing to be the reader.</li>
+              <li>The events are sorted into groups below:</li>
         sections:
         - name: Backlog events
-          text: TBD
+          text: These events move work items back to the Backlog,
+                or add new work items to the starting set of 10.
           sections:
           - name: Wrong acceptance tests
             text: Move half of all Work
@@ -271,7 +296,7 @@ sections:
             text: Add four random Work
                   Items to BACKLOG.
         - name: Development events
-          text: TBD
+          text: These events effect the development part of the board.
           sections:
           - name: Unclear requirements
             text: Move everything in
@@ -286,7 +311,7 @@ sections:
                   in DEVELOPMENT to
                   BACKLOG.
         - name: Test events
-          text: TBD
+          text: These events effect the Test part of the board.
           sections:
           - name: No acceptance criteria
             text: Move all Work Items in
@@ -309,31 +334,34 @@ sections:
                   move them to
                   DEVELOPMENT.
         - name: ARCHITECTURAL events
-          text: TBD
+          text: These events are marked as Architectural.
+                There is an improvement that specifically stops these
+                from happening.
           sections:
           - name: Time to build increases
             text: Everything in
                   OPERATIONS moves
                   one step back.
-                  ARCHITECTURAL
+                  <li>ARCHITECTURAL</li>
           - name: API upgrade
             text: Move all Work Items
                   between BACKLOG and
                   IN PRODUCTION back
                   one step.
-                  ARCHITECTURAL
+                  <li>ARCHITECTURAL</li>
           - name: Database update
             text: Add three random
                   Work Items to
                   BACKLOG.
-                  ARCHITECTURAL
+                  <li>ARCHITECTURAL</li>
           - name: The API does not work
             text: Move all Work Items
                   in DEVELOPMENT to
                   BACKLOG.
-                  ARCHITECTURAL
+                  <li>ARCHITECTURAL</li>
         - name: Time Token events
-          text: TBD
+          text: These events effect the time tokens you use for
+                investing time.
           sections:
           - name: Flexible testing
             text: Place a yellow Time
@@ -375,7 +403,6 @@ sections:
                   in during the next two
                   rounds.
         - name: General events
-          text: TBD
           sections:
           - name: Nothing happens
             text: Everything is going
@@ -384,28 +411,54 @@ sections:
             text: Remove two Work
                   Items of your choice.
       - name: Improve
-        text: TBD
+        text: You can finally get those
+              Improvements in place
+              If an Improvement has been fully invested
+              in (compare the amount and
+              colors of the Time Tokens placed on
+              the card to those printed on the card),
+              play it and draw another from the pile
+              to replace the used one. All spent
+              Time Tokens on that Improvement
+              (red, yellow and green) are given back to the
+              players.
+              <li>If playing with more than three roles,
+              you may also have blue Time Tokens in play.
+              Remember that these are not given back to
+              the players in this way.</li>
+              <li>If an Improvement card states that a square
+              should be replaced, put the Improvement on
+              that square and the square is not in use any
+              more. All Work Items that are moving to this
+              square should just ignore it and go to the
+              next, non-replaced, square. If you replace a
+              square that has Work Items on it, move all
+              Work Items to the next square (toward IN
+              PRODUCTION) before putting the Improvement
+              card on the square.</li>
+              <li>The different players get tokens back,
+              or get new tokens, according to the following.</li>
         sections:
-        - name: DEVELOPMENT (Red)
+        - name: DEVELOPMENT Red player
           text: <li>Every time a DEVELOPMENT
                 Improvement is played, you get an
                 additional red Time Token.</li>
-        - name: TEST (Yellow)
+        - name: TEST Yellow player
           text: <li>Every time a TEST Improvement is
                 played, you get an additional yellow
                 Time Token.</li>
-        - name: OPERATIONS (Green)
+        - name: OPERATIONS Green player
           text: <li> Every time an OPERATIONS
                 Improvement is played, you get an
                 additional green Time Token.</li>
-        - name: CONTINUOUS DELIVERY EXPERT (Blue)
+        - name: CONTINUOUS DELIVERY EXPERT Blue player
           text: <li> You do NOT get the invested Time
                 Tokens back when the Improvement
                 is finished.</li>
                 <li> Every time an Improvement is
                 played, you get an additional blue
                 Time Token.</li>
-        - name: EXTRA RESOURCE (Blue)
+        - name: EXTRA RESOURCE Blue player
           text: <li> You do NOT get the invested Time
                 Tokens back when the Improvement
                 is finished.</li>
