@@ -106,7 +106,29 @@ sections:
           <li>6. Deadline</li>
     sections:
       - name: Invest
-        text: TBD
+        text: Plan what Improvements
+              to invest time in
+              Each player may put one Time Token
+              on any Improvement card. The
+              Improvements may need specific
+              colors (red, yellow or green) or any
+              color (white circle) to be complete. Investing
+              time in an Improvement does not give you it
+              right away, not until the Improve step.
+              <li>Any player may, instead of investing
+              time, shuffle the visible Improvements
+              into the Improvements deck
+              and draw four new Improvements.</li>
+              <li>The players decide together in what order
+              they act. You may decide that Player A reshuffles
+              the Improvements deck and draws
+              new cards instead of spending time. Then
+              Player B and Player C can choose to either
+              spend Time Tokens on a new Improvement
+              or one of them can decide to reshuffle again.</li>
+              <li>Each Role also has a special
+              power, this is when to use it
+              (instead of investing time).</li>
         sections:
         - name: DEVELOPMENT (Red)
           text: <li>Special power&#58; Once per round,
