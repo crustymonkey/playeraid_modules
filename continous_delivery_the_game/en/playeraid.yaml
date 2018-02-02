@@ -169,7 +169,6 @@ sections:
                 five steps (you must still roll for
                 Test and stop at Toll Gates).</li>
         - name: Improvement cards
-          text: TBD
           sections:
           - name: IaC
             text: Protects against
@@ -488,8 +487,29 @@ sections:
                 played, you get an additional blue
                 Time Token.</li>
       - name: Income
-        text: TBD
+        text: You get paid for your hard work.
+              If you have full features IN PRODUCTION
+              (all Work Items of one color), you gain one
+              (1) income for each full feature. Move the
+              marker on the Income Tracker one step for
+              each income you gain.
+              <li>It could be the case that a full feature IN
+              PRODUCTION stops giving you income. For
+              instance, if there are two green Work Items
+              in play and both are IN PRODUCTION this
+              gives you 1 income each round. But if you then draw an
+              Event that adds a new green Work Item, the
+              feature is no longer fully IN PRODUCTION
+              and you stop gaining income. You do not lose
+              any income, you just stop getting more.</li>
       - name: Deadline
-        text: TBD
+        text: The end of the project gets closer.
+              Move the marker on the Deadline Tracker
+              one step and continue with the next round.
+              <li>The game may end now.</li>
   - name: The game end
-    text: TBD
+    text: When the Deadline marker moves to the last square,
+          after 14 completed rounds,
+          the game is over. At this point, count how
+          much income you have gathered and compare
+          it to the income chart.
