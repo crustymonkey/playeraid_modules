@@ -527,7 +527,7 @@ sections:
                 *  Each time you place a unit in a river delta (a space that
                    is adjacent to a river flowing into a loch), you pay £3
                    less (£2 less in 1-2 player games) off the total cost.
-                   This applies ot placing your initial 2 workers as well.
+                   This applies to placing your initial 2 workers as well.
           - name: Clan Stewart
             text: |
                 *  You start with 3 additional merchants (5 total) and

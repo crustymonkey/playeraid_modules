@@ -1,0 +1,179 @@
+name: Kepler 3042
+description: Kepler is a game of exploration and colonization. [See it on BGG](https://boardgamegeek.com/boardgame/198190/kepler-3042)
+credits: Sean Owens
+enabled: true
+text_type: markdown
+
+sections:
+ - name: Setup
+   text: |
+     * Place the main, space exploration, board in the middle of the table.
+     * Pass out an action selection board, technology board, and planetary reference board to each player.
+     * Each player takes their **12** nation markers (player discs), **3** ships, and **1** action selection token of a single color.
+     * Take **7** energy (orange), **7** matter (white), and **3** antimatter (black) cubes.
+     * Take the matching Earth and reference card for that color.
+     * Place **3** energy and **3** matter on your Earth card. All other resource cubes go in the available resources pool on your action selection board.
+     * Place **5** nation markers (player discs) of your color on the 5 starting technology spaces on your technology board.
+     * Place **2** nation markers from each player on the Technology and Colonial Leadership tracks on the main board, one for each track (on the blue or purple icon, to the left of the first box).
+     * Place the player action cube of your color in the middle of the action selection section of your player board (on "Terraforming").
+     * Place medal tokens (pink and blue double-sided tokens with a W or M logo) on the marked spaces of the Technological and Colonial Leadership Tracks (5 medals per track).  Flip the tokens to match the technology or colonial color. Keep the other medal toks near the board in easy reach.
+     * If playing with three players remove one mine (exploded planet) and one colonial target (the purple icon) tile. For two players remove two of each.
+     * For less than four players, review the planetary summary board to remove specific celestial body planetary tiles and cards (noted by the two or three lines next to some planets).
+     * Return all removed celestial body tiles and cards back to the box.
+     * Shuffle remaining tiles face down and place them on the game board randomly. Each celestial tile must be adjacent to a star hex (except Sol), but must not be adjacent to any other tiles. Tiles can always be placed in hexes adjacent to single stars.  Trinary stars are not used in 3-player games, and binary stars are not used in 2-player games.
+     * Flip over the tiles in the short range area (the area that includes Sol).
+     * Each player may select **2** technology tracks on your technology board, and move them up one research space each for free.
+     * Decide whether to use standard or advanced objective (red) cards (advanced objectives have an icon on the back, and are generally more difficult). Shuffle the selected objectives deck, deal out two to each player. Keep one and return the discards along with the unused objective cards to the box.
+     * Shuffle the Progress (blue) Cards.  Remove two randomly and set the rest on the Progress Cards space on the main board.
+     * Order the Planets Cards and place them on the Planet Cards space of the main board, 
+     * Select a first player and give them the first player token.
+        
+ - name: Game Play
+   text: |
+     * Key points to keep in mind:
+       * There are 16  rounds; the final scoring starts immediately once the last player in turn order takes their turn in the 16th round.
+       * Each round consists of one primary action and one or two optional bonus action(s) per player.
+       * Starting resources for each player is all they will get for the game!
+       * Resources are not really lost or gained, instead they shift from the available resource pool when produced, to Earth or other colonized planets, but may be permanently lost to the Clausius' Pit. When a resource is spent, it moves back to the available resource pool.
+       * Other pieces are also limited:  there are five nation markers (the remaining player discs) for colonizing planets, and three ships for space travel. 
+       * While you cannot gain new resources, you can permanently lose resources (to the Clausius' Pit) as the cost of taking a bonus action.  There are limited options available for recovering any resources burned in this manner.
+       * Resources in your Clausius' Pit are unavailable for any use, unless you have unlocked a recover resource action (by advancing on a leadership track or removing a ship from a mine).
+       * Remember that while Stellar Propulsion is an action choice, your ships may also move each turn after your main and optional bonus actions are taken (assuming you have advanced at least one research step on the Space Travels technology).
+       * Note that the beginning step of each technology level provides ZERO abilities, and to gain anything from many main actions at least one technology step advancement.
+       * Alien (green numbered) planets require antimatter research to the 4th or 5th level before they can be colonized.
+       * Later technology advancements require more and more antimatter. They also provide technology leadership track advancements, as well as every 5th level technology advancement delivers 2 victory points.
+     * Perform round phases in order per the following sections.
+
+ - name: Phase 1 - Flip Progress card
+   text: |
+     * The first player for the round flips over the top progress card so all players can learn about the event that will take place at the **end** of the round.
+     * The one progress card applies to all players for the round.
+     * There are 16 progress cards in the deck, one for each round.
+     * Also, if any technology leadership or colonial leadership medals are reached in the round, place the medals on the progress card to be awarded at the end of the round.  Medals are not awarded to the first player to reach them, but to the player leading on the appropriate track at the end of the round. See more about awarding medals in the End of Round section.
+
+ - name: Phase 2 - Individual Player Turns
+   text: |
+     * Starting with the first player, each player takes their turn.  They complete all steps (including ship movement and withdrawal) before the next player takes their turn.
+
+   sections: 
+            - name: Step 1 - Main Action
+              text: |
+                * Move your action selection cube from its current location to a new action location to take that action. You cannot repeat the action you took the previous turn
+                * There are 9 total actions:
+                      * Space Missions
+                           * Build up to 3 ships at the cost of one energy and one matter.
+                           * To place a ship, spend one energy and one matter from a single planet and place your ship next to that planet
+                      * Colonize Planets
+                           * You may remove all or any of your Starships that are on Planet tiles and replace each with your Nation markers.
+                           * Take the Planet card that matches the Planet you just colonized and place it in front of you, with the Colony side up (the side without victory point icons).
+                           * Immediately move your player token on the colonial leadership track; move the number of spaces equal to the number of colonial icons shown on the card.
+                           * Colonizing an Alien planet requires "Metamaterial Generator" or higher advancement on the Antimatter Science technology track.
+                      * Technological Development
+                           * You may purchase any number of advancements on your Technology Chart by spending the resources listed.
+                           * You may purchase as many technology levels as you wish, as long as you can pay the costs, including multiple steps from the same level.
+                           * Some levels will award technology leadership, which advance your player token one step on the technology leadership track for each icon.
+                           * See the Technology Track section for more details about each track.
+                      * Stellar Propulsion
+                           * You may immediately move all of your Starships, following the rules for Step 3: Move Starships.
+                           * You will be able to move these starships again during Step 3 Move Starships again, as normal.
+                      * Terraform Planets
+                           * Spend the resources listed from a colony-side up planet card you control to flip that card to the Terraformed side.
+                           * All the resources spent to terraform must come from that planet.
+                           * You must have reached at least the minimum level of Terraforming Technology research listed on that planet card in order to terraform that planet.
+                      * Galactic Map
+                           * Advance your nation marker on the colonization or technology leadership track.
+                           * Flip over 4 celestial body tokens of your choice anywhere on the board.
+                      * Energy Storage
+                           * Produce energy based on your advancement in the Energy Development technology.
+                           * All energy produced from this action must be placed on a single planet card you control.
+                           * If you don't have as many energy cubes as your technology level allows you to produce, only produce what is available  (though you may use the Quantum Physics technology to move and trade resources during your placement, if available).
+                      * Planetary Exploitation
+                           * Produce resources on planets you have colonized and/or terraformed.
+                           * The number of planets that can produce is determined by your Terraforming Technology advancement.
+                           * Place the Resources on the Planets that Produced them. If you run out of Resources to produce, only produce what is available (though you may use the Quantum Physics technology to move and trade resources during your placement, if available).
+                      * Generate Antimatter
+                           * Produce the amount of antimatter allowed by your Antimatter Science Technology advancement.
+                           * All the Antimatter produced must be placed on a single planet card you control, of your choice.
+                           * If you don't have as many antimatter cubes as your technology level allows you to produce, only produce what is available.
+
+            - name: Step 2 - Optional Bonus Action
+              text: |
+                * Based on your main action, you will have a choice of two optional bonus actions (shown above and to the right of the player action grid).  You may take one or both of these bonus actions (though not one action twice). You are not required to take any bonus actions.
+                * Each bonus action taken has a cost: for each action taken you must burn a resource (of your choice) by moving a cube from your available resource pool to the Clausius' Pit.
+                * Bonus action choices (and the main actions that must be taken to unlock them) :
+                      * Space Logistics (Space Missions, Stellar Propulsion, Energy Storage)
+                          * Place 1 starship in a space hex adjacent to any planet you control without spending any resources (other than the one you burned).
+                          * You can place your starship next any planet you control.
+                      * Evolution of Technology (Colony Seeding, Terraforming, Planetary Exploitation)
+                          * Produce 1 antimatter resource on any planet you control.
+                      * Scientific Progress (Technological Development, Galactic Mapping, Antimatter Generation)
+                          * Advance your nation marker one space on the Technological Leadership Track.
+                      * Cultural Evolution (Technological Development, Colony Seeding, Space Missions)
+                          * Advance your nation marker one space on the Colonial Leadership Track.
+                      * Exploratory Planning (Galactic Mapping, Terraforming, Stellar Propulsion)
+                          * You may immediately move each of your starships up to 2 spaces, following normal Move Starships rules.
+                      * Exploitation of N.E.O., or Near Earth Orbit (Antimatter Generation, Planetary Exploitation, Energy Storage)
+                          * Produce one matter and one energy on your Earth card.
+
+            - name: Step 3 - Move Starships
+              text: |
+                * After your main and any optional bonus actions, you may move all of your starships that are on space hexes.
+                * Starships that are located on Celestial Objects cannot move.
+                * Each of your Starships can move any number of spaces up to your current maximum speed, which is determined by your Space Travels Technology advancement.
+                * If your starship lands on a planet or mine, it must stop moving.
+                * The first player to reach a Colonial Target removes that tile from the board and immediately advances 1 space on the colonial leadership track. The Starship can continue its movement, if it has any movement left.
+                * Some of the hexes on the game board are impassable. Starships can never enter any of these spaces: Sol, Sagittarius A*, any unrevealed Celestial Objects, and all Star hexes.
+                * A Starship may pass through a hex occupied by another starship, but it cannot end its movement there. Starships cannot enter or pass through a Celestial Body that is already occupied by another Starship or by a Nation marker (colonized Planet), even if it is your own.
+
+            - name: Step 4 - Withdraw Starships
+              text: |
+                * After you have moved all of the Starships you want to move this turn, you may choose to withdraw any or all of them, removing them from the game board and returning them to your supply.
+                * If you withdraw a Starship from a mine (the main reason to use this action), you may immediately regenerate one resource from your Clausius Pit.
+                * If you withdraw a Starship from a Space hex or a Planet, nothing happens.
+                * If you withdraw a Starship from a Planet or a Mine, other starships will be able to move onto that hex again.
+
+ - name: Phase 3 - End Round Steps
+   text: |
+     * Resolve the Progress Card: In turn order, receive the action described on the progress card, if qualified.  Some cards specify players that meet a "highest" or "lowest" criteria. There are friendly ties: all tied players receive the benefit, though benefits are still resolved in turn order.
+     * Award Medals: Note that as a player advances past a medal space on the colonial or technology leadership track, they do not immediately receive the medal; instead these medals are placed on the progress card and awarded at the end of the round. The player farthest on the technology leadership track takes all the technology medals from the progress card. The player farthest in colonial leadership takes the colonial medals. There are friendly ties: players that are tied for the lead receive the full number of medals. Pull tokens from the supply as needed.
+     * Pass the first player token to the right
+     * Start the next round
+
+ - name: Technology Track Details
+   text: |
+     * Advancing to technology levels with a blue technology leadership icon allows you to advance a number of spaces on the technology leadership track equal to the sum of the number of icons on the spaces moved past or on.
+     * Advancing to the most advanced level of any technology track provides two victory points each.
+     * Advancing to a technology level with a light bulb unlocks a Collaboration Bonus. Any other players that have not yet achieved the level noted next to the light bulb may advance to that level for free. For example, if a player advances on the Energy Development track to Antimatter Annihilation, anyone still at level zero may advance to level one (Cold Fusion) for free.
+     * Technology tracks:
+           * Space Travel
+                * Each space on this track allows you to advance 0, 1, 3, 6, 9 hexes on the board during the Move Starships phase or Stellar Propulsion action.
+                * The most advanced research level also allows you to build new ships at a cost of just one energy (instead of one energy and one matter).
+           * Quantum Physics
+                * This technology offers benefits that can be taken during any other action (even including in the middle of that action). The choices of Move Resources and Resource Transformation can be taken in any order, and can be completed all at once or (if multiple moves or trades are available) in smaller steps.
+                * Resource transformation allows a player to convert a number (indicated on the technology level - 0, 1, or infinite) of energy cubes to matter and vice versa. Swap the resource at any planet you control for the other type of resource from your resources storage (placing it back on that planet). If a resource cube is not available to be swapped from the planet or your resource storage this action cannot be taken.
+                * Move resources allows a player to move a resource from one planet to another planet (both of which you control). The number (1, 2, 3, or infinite) indicates how many resources you can move each turn. Each movement is completed independently.
+           * Energy Development
+                * Advancing in this technology determines how many energy resources you can produce when you use the Energy Storage main action on your turn (0, 2, 4, 6 or 7).
+                * All the Energy you produce must be placed on the same Planet.
+                * The most advanced  technology level allows you to take both bonus actions at a cost of burning only one resource to your Clausius' Pit (not two).
+           * Terraforming
+                * First, this advancement determines how many planets you can choose to produce resources on when you use the Planetary Exploitation main action (0, 1  or 2).
+                * Second, the terraforming level color strip denotes the complexity of planets you can terraform (which you have already colonized). Every planet has a minimum level (a matching color strip) that you must have in order to terraform that planet.
+           * Antimatter Science
+                * Determines how many antimatter resources you can produce when you use the Generate Antimatter Main Action on your turn.
+                * Also, Alien Colonies can only be colonized if you have reached the Metamaterial Generator technology. Without this technology, the Colonize Planets main action has no effect on these planets. (Your starship remains on the planet; you can remove it only during the Withdraw Starships step, or by advancing in this technology and taking the Colonize Planets action again.)
+
+ - name: Final Scoring
+   text: |
+     * 1 point for each antimatter on a planet card
+     * 5 points if you have colonized one Planet of every Type (Rocky, Oceanic, Giant, Super-Earth, and Alien).
+     * 3 points if you have colonized at least three planets of the same type.
+     * 2 points for each of your starships located on a mine.
+     * 2 points for each technology you have advanced to the maximum level.
+     * 1 point for each leadership medal you have collected.
+     * 1 point for each planet located in the stellar local group (the short-range area including Sol).
+     * 2 points for each planet located by a mid-range star (the middle area surrounding the Sol stellar local group).
+     * 3 points for each planet located by a long-range star (the deep-space area on the left side of the board).
+     * Points for the location of your nation marker on each of the leadership tracks.
+     * Points for the planets you have terraformed, per planet card.
+     * Points for completing the mission on your secret objective, as shown on each card.

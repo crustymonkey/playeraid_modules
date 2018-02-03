@@ -1,0 +1,88 @@
+name: Azul
+description: Azul is an abstract game about building tile walls. [See it on BGG](https://www.boardgamegeek.com/boardgame/230802/azul)
+credits: Sean Owens
+enabled: true
+text_type: markdown
+
+sections:
+ - name: Setup
+   text: |
+     * Pass out a player board and a black score cube to each player.
+     * Decide on using the standard (with colored tile spaces) or advanced (with unmarked tile spaces) side of the player boards.
+     * Set out factory placement spaces in a circle (these are the round coaster-looking pieces) based on the number of players
+           * Two players: **5** factories
+           * Three players: **7** factories
+           * Four players: all **9** factories
+     * Prepare the Factory Offer by filling each factory with **4** tiles each, selected randomly from the tile bag.
+     * Place the **1** first player token in the middle of the factories, to start a discard pile space.
+     * Place the black score token on the 0 space on your player board.
+     * Select a first player.
+        
+ - name: Game Overview
+   text: |
+     * Score victory points by successfully building your tile wall, scoring points for adjacency and for special objectives (see Scoring and End of Game Scoring).
+     * Each row and column can only have one tile of each color (even when using the advanced side of the player boards).
+     * Play continues until at least one player fills a horizontal row with tiles (which will be at least 5 rounds)
+     * Scoring is tallied at the end of each round, but there are end-game bonuses for each vertical row, each placement of five tiles of one color, and for each horizontal row.
+     * Perform round phases in order per the following sections.
+
+ - name: Select and Place Tiles
+   text: |
+     * Select Tiles
+           * Starting with the first player and going clockwise, each player selects tiles from one factory or the middle discard area.
+           * All the tiles of one color are kept, and the rest go in (or stay in) the discard area.
+           * All the tiles of the selected color must be kept; you can't select just a few and leave the rest, even when drawing from the discard area.
+           * The tile color selected is completely up to player choice; it doesn't have to be the most tiles or any other criteria.  It may be one tile.
+           * If you are the first player to take tiles from the discard area, also take the first player token and place it in your Floor Line.
+           * Players continue taking turns in order until all tiles are taken from all factory and discard area.  Once the last tile(s) have been selected, move to End of Round steps
+     * Place Tiles
+           * After the tile or tiles of one color are selected, the player places them in one of the five Pattern Lines (the stairstep spaces to the right of the final tile wall spaces to be built).
+           * The first line has 1 space to hold 1 tile, the fifth line has 5.
+           * Place the tiles, one by one, from right to left in your chosen pattern line.
+           * If the pattern line already holds tiles, you may only add tiles of the **same** **color** to it.
+           * Once all spaces of a pattern line are filled, that line is considered complete.
+           * If you have picked up more tiles than you can place in your chosen pattern line, you must place the excess tiles in the floor line (see Floor line).
+           * After the first round, you are not allowed to place tiles of a  color in a pattern line whose corresponding line of your wall already holds a tile of that color.
+     * Floor Line
+           * Any tiles you have picked that you cannot or do not want to place according to the rules, you must place in your floor line, filling its spaces from left to right. These tiles are considered as having fallen on the floor and give minus points in the Wall-tiling phase.
+           * If all spaces of your floor line are occupied, return any further fallen tiles to the lid of the game box. There is no further penalty for these fallen tiles after all spaces of the floor line are occupied.
+
+ - name: End of Round
+   text: |
+     * Wall Tiling
+           * All players simultaneously build their tile walls.
+           * Go through your pattern lines from top to bottom.
+           * Move the rightmost tile of each **complete** line to the space of the same color in the corresponding line of your wall. (For the advanced side of the board, place your tile in any space in that row that meets the one-color-per-column and -row rules.)
+           * Each time you move a tile, **score** **points** **immediately** (see Round Scoring).
+     * Remove Tiles
+           * Then, remove all the rest of the tiles from any pattern lines that now have no tile in the rightmost space (i.e., that you used to build your wall). Place these remaining tiles into the lid of the game box.
+           * Once that is done, any remaining tiles on the pattern lines (i.e., pattern lines that were not completed this round) stay on your player board for the next round.
+           * Remove tiles from your floor row, first adding up the negative points for filled-in spaces (including the first player token for the player that first drew from the discard pile). Subtract that sum from your score (see Round Scoring).
+     * Check for Game End or Prepare Next Round
+           * If a player has completed a horizontal line of 5 consecutive tiles, finish Round Scoring and then move immediately to End of Game Scoring.
+           * If nobody has completed a horizontal line of 5 consecutive tiles, prepare the next round.
+           * The player who took tiles from the discard area first is now the first player for the next round.  That player places the first player token back in the discard area, then refills each of the Factory displays with 4 tiles from the bag as in the setup. If the bag is empty, refill it with all the tiles that you have placed in the lid of the game box and then continue filling the remaining Factory displays. Then, start the new round.
+           * (In the rare case that you run out of tiles and there are none left in the lid, start the new round as usual even though not all Factory displays are properly filled.)
+
+ - name: Round Scoring
+   text: |
+     * Scoring for Wall Tiling
+           * Each tile you move over to your wall is always placed on the space matching its color and immediately scores as follows:
+                * If there are any tiles adjacent, however, do the following: First check if there are 1 or more tiles horizontally linked to the newly placed tile. If so, count **all** these linked tiles (including the newly placed one) and gain that many points.
+                * Then check if there are 1 or more tiles vertically linked to the newly placed tile. If so, count **all** these linked tiles (including the newly placed tile) and gain that many points.
+                * If there are no tiles directly adjacent (vertically or horizontally) to the newly placed tile, gain **1** point on the score track.
+     * Floor Line
+           * For each tile in your floor line, you **lose** the number of points indicated directly above it. Adjust your scoring marker on your score track accordingly (however, you can never drop below 0 points).
+           * Remove Floor Line tiles to the box lid, and the starting player token to the discard area.
+     * **Remember** **-** put remaining tiles from filled-in pattern lines in the box lid (after you placed the other tile in your wall).  Partly completed pattern lines remain for the next round.
+
+
+ - name: End of Game Scoring
+   text: |
+     * The game ends at the end of Round Scoring for a round in which at least one player completed a row of five consecutive tiles.
+     * In addition to your current score, three end-game bonuses are available:
+           * Gain **2** points for each complete horizontal line of 5 consecutive tiles on your wall.
+           * Gain **7** points for each complete vertical line of 5 consecutive tiles on your wall.
+           * Gain **10** points for each color of which you have placed all 5 tiles on your wall.
+           * The player with the most points on her score track wins the game.
+           * In the case of a tie, the tied player with more complete horizontal lines wins the game. If that does not break the tie, the victory is shared.
