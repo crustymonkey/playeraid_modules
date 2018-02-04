@@ -1,0 +1,221 @@
+name: Heaven & Ale
+description: Heaven & Ale is a worker placement and tile laying game focused on managing your cloister with the right resources and expertise to brew the best beer. [See it on BGG](https://boardgamegeek.com/boardgame/227789/heaven-ale)
+credits: Sean Owens
+enabled: true
+text_type: markdown
+
+sections:
+ - name: Setup
+   text: |
+     * Place the main board on the table within every player’s reach.
+     * Place the ducats and scoring discs next to the main board as reserves.
+     * Separate the resource tiles and place them face down into two piles: one pile containing all the tiles that have a **I** on their back, the second pile with the tiles that have a **II** on their back.
+     * Then place **1** resource tile with a **I** on its back face up on to each of the 15 resource spaces (darker brown spaces with a milk jug icon at the top of the space) on the main board.
+     * Place the shed (green) tiles next to the main board. Shed tiles are double sided and come in different types.
+     * Separate the 24 monk tiles according to their back (**I** and **II**).
+     * Shuffle the 12 I-monk tiles. Place a stack of 4 of them face down on to each of the spaces in the center of the main board showing a **I**.
+          * In a 2-player game, return all the II-monk tiles to the game box.
+          * In a 3-player game, shuffle the 12 II-monk tiles and then place a stack of 4 of them face down on to the leftmost space showing a **II**. Return the remaining II-monk tiles to the game box.
+          * In a 4-player game, shuffle the 12 II-monk tiles and place a stack of 4 of them face down on to each of the spaces showing a **II**.
+     * Take the leftmost stack of monk tiles and place **1** of them face up on to each of the 4 monk spaces (lighter brown spaces showing a face in profile) on the main board.
+     * Place 1 scoring disc (purple discs) from the reserve on to each of the 6 scoring disc spaces (the purple spaces with a bell icon)
+     * Take the 12 small barrels and place 1 face up on to each barrel spot on the main board (exact location doesn't matter). Then place each of the large barrels on top of its matching small barrel.
+     * Each chooses a player color and does the following
+          * Take the 1 player board, 5 privilege cards and 1 player figure of your player color and place them in front of you.
+          * Take **25** ducats from the reserve. How much money a player has is public knowledge.
+          * Take the brewmaster of your color and place it on the brewmaster starting spot on your player board.
+          * Take 1 of each of the 5 resource markers (cylinders) and place them on their starting spots on your player board.
+     * Determine a starting player. The starting player then places their player figure on the first player starting space in the starting area (with **1.**)
+     * Then, going counterclockwise, each other player places her player figure on to one of the remaining starting spaces and takes that space’s immediate reward.
+          * Move your brewmaster **1** step forward on the production track of your player board.
+          * Move 1 resource marker **2** steps forward on your production track. 
+          * Take **2** ducats from the reserve.
+     * The game is played over a set number of rounds, depending on player count
+          * 2 players - 3 rounds
+          * 3 players - 4 rounds
+          * 4 players - 6 rounds
+     * The starting player begins. Play then continues to her left with the players taking their turns in a clockwise direction.
+
+   sections:      
+      - name: Player Board Overview
+        text: |
+          * Your player board includes 15 sunny spaces, 15 shade spaces, a score track from 1 to 20 (plus some spaces before 1, that are all essentially 0), and spaces for score tokens.
+          * Sunny and shady spaces include sheds, which you can not place tiles on but provide bonuses when surrounded (see Sheds).
+          * In general, sunny spaces deliver resource advancement points, while shady spaces deliver ducats.
+          * Purchased monk and resource tiles are placed in either your sunny or shady (non-shed) hexes.
+          * Your production track measures your progress for 5 resource types - wood, yeast, hops, water and wheat.
+          * Your brewmaster advancement is also measured on this track.
+          * Collected scoring tokens are placed in an available scoring disc space on your player board. Your placement options may depend on the scoring location your player figure is on.
+          * When you place two scoring tokens in the same box, you can score a privilege achievement (see Privileged Pairs).
+          * Collected barrels and money are placed to the side of your player board.
+          * Emergency Coin Rule - at any point in your turn, you may return to the game box any of your privilege cards (that you have not yet placed next to a privilege pair) to immediately take 3 ducats from the reserve.  The backs of your privilege cards show three ducats as a reminder.
+
+ - name: Game Overview
+   text: |
+     * On your turn, move your player figure forward (clockwise) on the common track of the main board any number of spaces, but not further than the starting area.
+     * You must take the action of the space you have moved to.
+     * Then it is the next player’s turn, continuing clockwise.
+     * Players that have returned to the start area are done for the rest of the round; their turn is passed until everyone has returned to the start area.
+     * When all players have returned to the start area, the round ends.
+     * After the last round is played, the victor is the player with the most victory points (see Scoring).
+     * In general, moving all your resources as far past the 1 space as possible is a key goal.  Advancing your brewmaster as far up the track towards 20 is another key goal.
+     * The brewmaster's location at the end of the game will decide one victory point multiplier (shown by the number groupings above the production track).
+     * Your **lowest** resource location on the production track will set the second multiplier (based on the value of that resource space).  However end-game resources can be adjusted by trading highest resources with lowest ones, as well as by spending remaining ducats, to improve the value of that lowest resource.
+     * Barrel achievements provide 4 or 2 victory points each.
+     * See Scoring for full details.
+
+ - name: Game Turns
+   text: |
+     * The game is played over a set number of rounds, as explained in Setup.
+     * The starting player begins. Play continues with players taking their turns in a clockwise direction.
+     * You may NEVER move your player figure backwards nor stay with it where you are.
+     * You MAY move to an action space occupied by other player figures.
+     * You may NEVER move to any space whose action you are not able to perform. This means you may not move to a resource or monk space where there isn’t any tile, nor may you move to a scoring disc space where there isn’t any scoring disc. Similarly, you may not move to a barrel space if you have not achieved any barrel’s goal (see Barrel Spaces).
+     * On your turn, move your player figure forward (clockwise) on the common track of the main board any number of spaces, but not further than the starting area.
+     * Then you must take the action of the space you have moved to.
+     * Action spaces are as follows.     
+
+   sections: 
+      - name: Resource Space
+        text: |
+          * If you move your player figure to a resource space, you **must** buy at least 1 of the resource tiles on it.
+          * You may buy as many resource tiles from that space as you can afford.
+          * (From the second round a space may contain more than one tile.)
+          * Resource tiles may never be placed on shed spots
+          * The cost of each resource tile depends on its fertility number and on which side of your player board you place it.
+               * If you place it on the shady side of your player board, pay as many ducats to the reserve as the fertility number on the resource tile indicates. Then place it in any empty shady spot.
+               * If you place the resource tile on the sunny side of your player board, pay twice as many ducats to the reserve as the fertility number on the resource tile indicates. Then place the resource tile in any empty sunny spot.
+          * If the placement of a resource tile leads to the enclosure of a shed spot (because there is a tile in each of the six spots adjacent to it), carry out the shed tile procedure immediately. See Sheds.
+
+      - name: Monk Space
+        text: |
+          * If you move your player figure to a monk space, you **must** buy at least 1 of the monk tiles there.
+          * (From the second round a monk space may contain more than one monk tile.).
+          * You may buy as many monk tiles from that space as you can afford.
+          * The cost of the monk tile depends on the monk cost number and on which side of your player board you place it.
+               * If you place it on the shady side of your player board, pay as many ducats to the reserve as the monk cost number on the monk space indicates. Then place it in any empty shady spot.
+               * If you place it on the sunny side of your player board, pay twice as many ducats to the reserve as the monk cost number on the monk space indicates. Then place it in any empty sunny spot.
+          * If the placement of a monk tile leads to the enclosure of a shed spot (because there is a tile in each of the six spots adjacent to it), carry out the shed tile procedure immediately. See Sheds.     
+
+      - name: Resource or Monk Tiles - Enclosing a Shed
+        text: |
+          * Each time you completely enclose one of the 7 shed spots on your player board (because there is now a tile on each of the 6 adjacent spots), carry out the following procedure
+               * Sum the fertility numbers of all resource tiles that are directly adjacent to the enclosed shed spot. The result is your shed fertility sum. (Note that monk tiles have no fertility value, so they don’t add to the shed fertility sum.)
+               * Refer to the reward table on your player board, in the area matching your player color.
+               * Move your brewmaster as many steps forward on your production track as is indicated in the reward table (0 to 6 steps).
+               * Next, take from the reserve the shed tile shown in the reward table and place it on the enclosed shed spot, rotating it as desired. Each shed tile activates a number of adjacent tiles immediately. Each resource and monk tile activated this way grants its usual activation reward (see above, Resource Space and Monk Space).
+               * The four shed tiles activate
+                    * No number and no arrows - activates no tile.
+                    * 1 with arrows - activates one adjacent tile of your choice.
+                    * 2 with two white arrows - activates two tiles of your choice. The two tiles must lie at opposite edges of this shed tile (marked by arrows of the same color). Rotate the tile as needed when placed.
+                    * 3 with three spaced arrows - activates 3 tiles of your choice. They may not lie next to one another (marked by arrows of the same color). Rotate the tile as needed when placed.
+                    * 4 with arrows - Activates any 4 (of the six total) adjacent tiles of your choice.
+
+      - name: Scoring Disc Space
+        text: |
+          * To gain benefits from the tiles you have placed on your board, move to a scoring disc space to take the tile scoring action.
+          * If you move your player figure to a scoring disc space on the common track, take 1 scoring disc from that space, place it on an empty tile-scoring spot of your player board and perform that spot’s specific tile scoring action.
+          * The space from which you take the disc (A, B, C or A/B/C) determines which scoring spot you may place it on.
+          * If you take a scoring disc from disc scoring space **A**, place it on the **X-tile** scoring spot of your player board (provided it is still empty). Nominate one fertility **number** (1 to 5) and activate all resource tiles on your player board that show that exact fertility number. Each resource tile you activate this way grants you an activation reward.
+               * Each resource tile that is activated grants you a reward that depends on which side of your garden you placed it on
+               * When you activate a resource tile on your garden’s **shady** side, take as many ducats from the reserve as the tile’s fertility number.
+               * When you activate a resource tile on your garden’s **sunny** side, move your resource marker of that tile’s color as many steps forward on your production track as that tile’s fertility number.
+          * If you take a scoring disc from disc scoring space **B**, place it on one of the empty monk tile scoring spots on your player board. This triggers all monk tiles on your player board of that spot’s type (picture) of monk.
+               * Each monk tile triggered this way activates each resource tile directly adjacent to it (see above for resource activation benefits).
+               * A triggered monk also activates any monk tiles adjacent to it. When a monk tile is activated this way, it grants you an activation reward.
+               * Note: To make sure that things don’t get mixed up, if you have several monks of the triggered type you should trigger them one after the other, by collecting all activation rewards granted by one of them before triggering the next monk of that type.
+               * Also note that monks selected for scoring are **triggered** which activates adjacent tiles. Monk tiles adjacent to triggered monks are **activated**.
+               * For each of your activated (not triggered) monk tiles, move your brewmaster one step forward on your production track. (Regardless of whether the monk tile was placed in a sunny or shady spot.)
+          * If you take a scoring disc from scoring disc space **C**, place it on one of the empty resource tile scoring spots on your player board.
+          * This activates all resource tiles on your player board that match that spot’s type of resource (granting its usual activation reward, see resource activation above).
+          * If you take a scoring disc from a scoring disc space **A/B/C**, place it on any empty tile scoring spot on your player board
+               * If you place it on the x-tile scoring spot, carry out the scoring procedure described for scoring disc space A.
+               * If you place it on a monk tile scoring spot, carry out the scoring procedure described for scoring disc space B.
+               * If you place it on a resource tile scoring spot, carry out the scoring procedure described for scoring disc space C.
+          * Further rules
+               * You may never move on to an empty scoring disc space.
+               * You may never you move on to a scoring disc space whose tile scoring spots you can’t use. (You can’t use a tile scoring spot if it is already occupied by a disc or if it scores a type of tile that is not present on your player board.)
+               * In the final round of 2- and 3-player games, there may be more than one scoring disc on a scoring disc space (see page 7). However, a player who moves there can still only take 1 scoring disc.
+               * If a resource marker reaches the production spot numbered 20, it moves no further. For each subsequent step you would take, instead take 1 ducat from the reserve.
+               * After you have placed a scoring disc on a tile scoring spot and have carried out the scoring procedure, check if you have completed a privilege pair (see Privilege Pairs).
+
+        sections:
+         - name: Privilege Pair
+           text: |
+               * Whenever you complete a privilege pair on your player board (because both of its tile scoring spots now contain a scoring disc), you may place one of your privilege cards next to it and resolve its reward.
+               * If you choose not to place a card at this time, you may not place one there later.
+               * At any point in your turn, you may return to the game box any of your privilege cards (that you have not yet placed next to a privilege pair) to immediately take 3 ducats from the reserve. The back of privilege cards is used as a reminder of this option.
+               
+      - name: Barrel Space
+        text: |
+          * The 12 barrels in the center of the main board display goals that you may achieve. If you have achieved one or more of these goals, you claim the corresponding barrels when you move to a barrel space. Barrels grant additional victory points at the end of the game.
+          * When you move your player figure on to one of the two barrel spaces on the common track, take from the center of the board **all** remaining barrels whose goals you have achieved.
+               * Each goal has a large and a small barrel. If the large barrel of your goal is still available, take it, and not the small one.
+               * If only the small barrel is available take that, provided you don’t already have its large counterpart.
+          * You can’t take other players’ barrels.
+          * See Barrels a list of the goals.
+
+   
+ - name: Round End and Preparing for the Next Round
+   text: |
+     * If you enter the starting area with your player figure, place it on any of the empty spaces of the starting area. A starting space is empty if no other player figure is placed there. If this space has an immediate reward, take it now. The rewards are as follows.
+          * Be the first player in the next round. (After the last round, at final scoring, the player who took this space will gain 1 victory point.)
+          * Move your brewmaster 1 space forward on the production track of your player board.
+          * Move 1 resource marker 2 steps forward on your production track. 
+          * Take 2 ducats from the reserve
+     * Important: If all the other players have already moved to the starting area and the first player starting space is still empty, the last player to enter the starting area must place their figure on the first player starting space. (This is important for 2- and 3-player games.)
+     * Once you have placed your figure in the starting area, you are out of this round. For the rest of this round your turn is skipped, while the remaining players continue with their turns as usual.
+     * Once all the players’ figures are in the starting area, the round ends.
+     * The final round of the game is the one for which you took the last pile of monk tiles. If it was the last round for your player count (all monk tiles have been placed from the center), carry out the final scoring. See Final Scoring.
+     * Then prepare the next round.
+          * Take the next pile of monk tiles from the center of the main board and add 1 monk tile from it face up to each of the 4 monk spaces on the main board.
+          * Add 1 resource tile from the reserve face up to each resource space on the main board. As long as there are resource tiles with **I** on the back, use these to refill the resource spaces. Once you run out of resource tiles with **I**, begin placing resource tiles with **II** on their back.
+          * NOTE - if a monk or resource space already has one or more tile on it, still add a new tile.
+          * Refill the scoring disc spaces so that each contains **exactly** 1 scoring disc. 
+          * If the upcoming round is the final round of a 2- or 3-player game, then add some extra scoring tiles.
+               * In a 2- or 3-player game, place a second scoring disc on disc scoring spaces B and C.
+               * In 3-player games only, place a second disc on the first A/B/C space.
+               * This means that in the last round only, a second player may move and take a scoring action in these spaces.  If a player takes an action in a space with 2 tokens, they still only take one token and one scoring action.
+     * The player who placed her player figure in the first player starting space of the starting area begins the new round with their turn. Play then continues clockwise as usual.
+
+
+ - name: Final Scoring
+   text: |
+     * The game ends at the end of a round and there are no more monk tiles to place (based on player count, see Setup)
+     * First, Check which production spot your brewmaster is on and which resource exchange rate and victory point value it has unlocked.
+          * Resource track numbers are grouped, with exchange rate and victory point values above the track numbers.  For example, if your brewmaster is on a production track value of 9, 10, or 11, the exchange rate is 3-to-1 and the victory point value is 4.
+          * If the brewmaster has not even reached the upper part of your production track, the resource exchange rate is 5:1 and the victory point value is 2.
+     * Next, even out the positions of your resource markers on your production track.
+          * The goal is to position your least advanced resource as far up the production track as possible.
+          * Apply your unlocked resource exchange rate to move your resource markers closer together: The rate determines how many total steps you have to move any of your resource markers backwards in order to move your least advanced resource marker 1 step forward.  In the example above, you would move your most advanced resource back three spaces to move your least advanced resources one space.
+               * Continue applying your exchange rate until none of your resource markers can be moved forward without decreasing the value of another marker to below that spot. 
+          * Then, for every 10 ducats you return to the reserve, move any one of your resource markers 1 step forward on your production track.
+     * Now, calculate your victory points as follows:
+          * Check which of your 5 resource markers is furthest behind on your production track and which spot it is on. Multiply the number in this spot by the victory point value your brewmaster unlocked.  For example if your lowest resource was on 9 and your brewmaster is on a resource space corresponding to a victory point value of 4, your total victory points would be 36. (If any of your resource markers has not reached a brown production spot (numbered 1 to 20 ), your result will be 0, as you will have to multiply your victory point value by 0.)
+          * Add to that result 4 points for each large barrel and 2 points for each small barrel you have collected. If you have placed your barrel privilege card next to one of your completed privilege pairs, add 1 victory point to your score for each barrel you have collected.
+          * Finally, if your player figure is on the first player starting space, add 1 victory point to your result.
+          * The player with the most victory points wins the game. If tied all the players with the most victory points share the victory.
+
+ - name: Barrels and Goals
+   text: |
+     * Gray brewmaster icon - Your brewmaster figure must have reached at least the brown production spot numbered 1.
+     * Five resource icons - All of your resource markers must have reached at least the brown production spot numbered 1.
+     * 6x resource tiles of value 1 - You must have placed at least 6 resource tiles with a fertility number of 1 on your player board.
+     * 6x resource tiles of value 5 - You must have placed at least 6 resource tiles with a fertility number of 5 on your player board.
+     * All four monks with scoring disc - You must have a scoring disc on each of the 4 monk tile scoring spots.
+     * All five resources with scoring disc - You must have a scoring disc on each of the 5 resource tile scoring spots.
+     * 3x with = shed tiles - You must have placed at least 3 shed tiles of the same type on your player board.
+     * 4x with != (not equal) shed tiles - You must have placed at least 4 different shed types on your player board.
+     * Generic resource cylinder with value 20 - One or more of your resource markers must have reached at least the production spot numbered 20.
+     * 15x sunny spots with checkmark - You must have placed a monk tile or a resource tile in each of the 15 sunny spots on your player board.
+     * 15x shady spots with checkmark - You must have placed a monk tile or a resource tile in each of the 15 shady spots on your player board.
+     * 3x with a privilege card - You must have placed at least 3 privilege cards next to completed privilege pairs.
+
+ - name: Privilege Card Bonuses
+   text: |
+     * Five resource tokens above generic player board space per generic resource - Choose a resource color. Count how many resource tiles of that color you have placed on your player board (ignore fertility numbers). Move your resource marker of that color that many steps forward on your production track.
+     * Scoring disc per generic resource cylinder (in last place) - Count how many scoring discs you have on your tile scoring spots. Then move the resource marker that is furthest behind on your production track that many steps forward. (If more than one resource marker are furthest behind, choose one of them to move the entire amount forward. You may not split the movement between two resource markers.)
+     * Barrel per +1 beer icon (victory point) - At the end of the game, receive 1 additional victory point for each barrel (small or large) that you own.
+     * 12 Ducats - Take 12 Ducats from the supply immediately.
+     * Gray brewmaster with a value of 5 - Move your brewmaster 5 steps forward on the production track immediately.
+
