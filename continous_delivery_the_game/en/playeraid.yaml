@@ -1,21 +1,23 @@
 name: Continuous Delivery - The Game
-description: The Game is a cooperative
-             game for 3-5 players who together
-             will try to transform a software development
-             waterfall way of working into a Continuous
-             Delivery pipeline.
-             Each player represents a department, for
-             instance Development, Test or Operations.
-             Together they can discuss and plan how to
-             improve the software development process.
+description: The Game is a cooperative game for 3-5 players.
+             The game consists of a board with 20 spaces,
+             where 10-20 cubes representing software work items shall be
+             pushed forward according to the rules.
+             The goal is to make the work items finish as soon as possible
+             at the end space. A lot of set-backs will appear on cards
+             drawn from a deck. The set-backs have names that people within
+             the software development are familiar with.
+             The cooperative game is won if the group manages to overcome
+             all the trouble caused by the event cards, by choosing from
+             the development cards and implement them in a proper order.
              <a href="https://boardgamegeek.com/boardgame/238760/continuous-delivery-game">
              See it on Boardgamegeek</a>
 credits: Per Glode
-enabled: false
+enabled: true
 sections:
   - name: Setting up the game
     text: <p>Components
-          <li>10 dices</li>
+          <li>10 dice</li>
           <li>5 Role cards</li>
           <li>1 bag for Work Items</li>
           <li>28 Event cards</li>
@@ -32,10 +34,10 @@ sections:
               want to play. The roles Development, Test
               and Operations need always be part of the
               game, otherwise Improvements cannot be
-              invested in. If playing with four (4) players
+              invested in. If playing with four players
               add either Extra Resource or Continuous
               Delivery Expert to the game. If playing with
-              five (5) players, add both. It is possible to play
+              five players, add both. It is possible to play
               with less than three players, in that case give
               more than one Role card to each player.
         sections:
@@ -77,14 +79,14 @@ sections:
       - name: Improvement deck and display
         text: Shuffle the Improvement deck and place it
               face down on the designated space on the
-              board. Then draw four (4) Improvement
+              board. Then draw four Improvement
               cards from the top of the deck and place
               them face up for all players to see. The
               displayed four cards are the ones that the
               players can invest time in.
       - name: Work Items
         text: Put all Work Items into the bag. Without
-              peeking, draw five (5) Work Items and put
+              peeking, draw five Work Items and put
               them on the BACKLOG square. Then
               draw another five and put them on the Develop
               square (the first square on the DEVELOPMENT
@@ -146,7 +148,7 @@ sections:
                 Time Token to move all Work Items
                 in a single TEST square one step
                 forward (without having to roll the
-                dice).</li>
+                die).</li>
         - name: OPERATIONS (Green)
           text: <li> Special power&#58; Once per round,
                 instead of investing time in
@@ -266,7 +268,7 @@ sections:
               how you divide the moves on the Work Items.
               For instance; move 10 Work Items 1 step
               each, 5 Work Items 2 steps each, 1 Work Item
-              10 steps, or a mix of the above. Rolling a dice
+              10 steps, or a mix of the above. Rolling a die
               on a test square counts as one move.</li>
               <li>If an invested Improvement card states that a square
               is replaced,
@@ -490,7 +492,7 @@ sections:
         text: You get paid for your hard work.
               If you have full features IN PRODUCTION
               (all Work Items of one color), you gain one
-              (1) income for each full feature. Move the
+              income for each full feature. Move the
               marker on the Income Tracker one step for
               each income you gain.
               <li>It could be the case that a full feature IN
