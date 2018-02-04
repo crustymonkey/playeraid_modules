@@ -1,0 +1,517 @@
+name: Continuous Delivery - The Game
+description: The Game is a cooperative game for 3-5 players.
+             The game consists of a board with 20 spaces,
+             where 10-20 cubes representing software work items shall be
+             pushed forward according to the rules.
+             The goal is to make the work items finish as soon as possible
+             at the end space. A lot of set-backs will appear on cards
+             drawn from a deck. The set-backs have names that people within
+             the software development are familiar with.
+             The cooperative game is won if the group manages to overcome
+             all the trouble caused by the event cards, by choosing from
+             the development cards and implement them in a proper order.
+             <a href="https://boardgamegeek.com/boardgame/238760/continuous-delivery-game">
+             See it on Boardgamegeek</a>
+credits: Per Glode
+enabled: true
+sections:
+  - name: Setting up the game
+    text: <p>Components
+          <li>10 dice</li>
+          <li>5 Role cards</li>
+          <li>1 bag for Work Items</li>
+          <li>28 Event cards</li>
+          <li>30 Work Items in 5 colors (6 of each color)</li>
+          <li>20 Time Tokens in 4 colors (5 of each color)</li>
+          <li>15 Improvement cards</li>
+          <li>Board</li>
+          Start by putting the board on the table so
+          that each player can reach all squares.</p>
+    sections:
+      - name: Select one Role card
+        text: Each player selects one Role card. This can
+              be done randomly or by selecting what you
+              want to play. The roles Development, Test
+              and Operations need always be part of the
+              game, otherwise Improvements cannot be
+              invested in. If playing with four players
+              add either Extra Resource or Continuous
+              Delivery Expert to the game. If playing with
+              five players, add both. It is possible to play
+              with less than three players, in that case give
+              more than one Role card to each player.
+        sections:
+        - name: DEVELOPMENT (Red)
+          text: You are responsible for DEVELOPMENT.
+                <li>You start the game with two red
+                Time Tokens.</li>
+        - name: TEST (Yellow)
+          text: You are responsible for TEST.
+                <li>You start the game with two yellow
+                Time Tokens.</li>
+        - name: OPERATIONS (Green)
+          text: You are responsible for
+                OPERATIONS and that it works
+                IN PRODUCTION.
+                <li> You start the game with two green
+                Time Tokens.</li>
+        - name: CONTINUOUS DELIVERY EXPERT (Blue)
+          text: You are helping the organization
+                with Continuous Delivery
+                improvements.
+                <li> You start the game with two blue
+                Time Tokens.</li>
+        - name: EXTRA RESOURCE (Blue)
+          text: You are an extra resource who is
+                assigned to help with Continuous
+                Delivery improvements.
+                <li> You start the game with two blue
+                Time Tokens.</li>
+      - name: Time Tokens
+        text: Put all Time Tokens on the table so that
+              everybody can reach them. Each player
+              takes the amount and color stated on their
+              Role card.
+      - name: Event deck
+        text: Shuffle the Event deck, count the 14 first cards in it,
+              and place them facedown on the designated space on the board.
+              The other 14 cards are returned to the box forever.
+      - name: Improvement deck and display
+        text: Shuffle the Improvement deck and place it
+              face down on the designated space on the
+              board. Then draw four Improvement
+              cards from the top of the deck and place
+              them face up for all players to see. The
+              displayed four cards are the ones that the
+              players can invest time in.
+      - name: Work Items
+        text: Put all Work Items into the bag. Without
+              peeking, draw five Work Items and put
+              them on the BACKLOG square. Then
+              draw another five and put them on the Develop
+              square (the first square on the DEVELOPMENT
+              track).
+              <li>Draw two more Work Items and put one on
+              the first square of the Deadline Tracker
+              and the other beside the Income Tracker.
+              These Work Items do not count as in play
+              and are in effect removed from the game.
+              These Work Items will be used to track the
+              deadline and income respectively.</li>
+  - name: The 14 rounds
+    text: The round is divided into six parts
+          <li>1. Invest</li>
+          <li>2. Move</li>
+          <li>3. Event</li>
+          <li>4. Improve</li>
+          <li>5. Income</li>
+          <li>6. Deadline</li>
+    sections:
+      - name: Invest
+        text: Plan what Improvements
+              to invest time in
+              Each player may put one Time Token
+              on any Improvement card. The
+              Improvements may need specific
+              colors (red, yellow or green) or any
+              color (white circle) to be complete. Investing
+              time in an Improvement does not give you it
+              right away, not until the Improve step.
+              <li>Any player may, instead of investing
+              time, shuffle the visible Improvements
+              into the Improvements deck
+              and draw four new Improvements.</li>
+              <li>The players decide together in what order
+              they act. You may decide that Player A reshuffles
+              the Improvements deck and draws
+              new cards instead of spending time. Then
+              Player B and Player C can choose to either
+              spend Time Tokens on a new Improvement
+              or one of them can decide to reshuffle again.</li>
+              <li>Each Role also has a special
+              power, this is when to use it
+              (instead of investing time).</li>
+        sections:
+        - name: DEVELOPMENT (Red)
+          text: <li>Special power&#58; Once per round,
+                instead of investing time in
+                Improvements, you can discard a
+                Time Token to move any one Work
+                Item from DEVELOPMENT to any
+                square that holds a Work Item of
+                the same color (you cannot move
+                past Toll Gates).</li>
+        - name: TEST (Yellow)
+          text: <li>Special power&#58; Once per round,
+                instead of investing time in
+                Improvements, you can discard a
+                Time Token to move all Work Items
+                in a single TEST square one step
+                forward (without having to roll the
+                die).</li>
+        - name: OPERATIONS (Green)
+          text: <li> Special power&#58; Once per round,
+                instead of investing time in
+                Improvements, you can discard a
+                Time Token to move all Work Items
+                of one color from OPERATIONS to
+                IN PRODUCTION.</li>
+        - name: CONTINUOUS DELIVERY EXPERT (Blue)
+          text: <li> Special power&#58; Once per round,
+                instead of investing time in
+                Improvements, you can discard a
+                Time Token to move one Work Item
+                five steps (you must still roll for
+                Test and stop at Toll Gates).</li>
+        - name: EXTRA RESOURCE (Blue)
+          text: <li> Special power&#58; Once per round,
+                instead of investing time in
+                Improvements, you can discard a
+                Time Token to move one Work Item
+                five steps (you must still roll for
+                Test and stop at Toll Gates).</li>
+        - name: Improvement cards
+          sections:
+          - name: IaC
+            text: Protects against
+                  all problems in
+                  OPERATIONS.
+                  <li>Invest&#58; DEVEL+OPER+3</li>
+                  <li>Time Token&#58; OPERATIONS</li>
+          - name: Requirement refinement
+            text: Move all Work Items
+                  from DEVELOPMENT
+                  to Deploy To Test
+                  Environment and re-
+                  shuffle this card.
+                  <li>Invest&#58; 3</li>
+          - name: Container
+            text: Protects against all
+                  problems in TEST.
+                  <li>Invest&#58; OPER+DEVEL+3</li>
+                  <li>Time Token&#58; TEST</li>
+          - name: Pull requests
+            text: Increases probability
+                  for test success by 1.
+                  <li>Invest&#58; DEVEL+2</li>
+          - name: Visualized pipeline
+            text: Look at the top Event
+                  card in the Event deck
+                  and then re-shuffle
+                  this card.
+                  <li>Invest&#58; 2</li>
+          - name: Automatic deploy
+            text: Replace the
+                  Deployment square
+                  in OPERATIONS.
+                  <li>Invest&#58; 2xOPER+2</li>
+                  <li>Time Token&#58; OPERATIONS</li>
+          - name: Automatic regression test
+            text: Replace Regression
+                  Test in TEST.
+                  <li>Invest&#58; 2xTEST+2</li>
+                  <li>Time Token&#58; TEST</li>
+          - name: Microservices
+            text: Protects against
+                  all architectural
+                  problems.
+                  <li>Invest&#58; 5</li>
+          - name: DevOps introduced
+            text: Replace the Toll Gate
+                  between TEST and
+                  OPERATIONS.
+                  <li>Invest&#58; TEST+OPER+3</li>
+                  <li>Time Token&#58; TEST</li>
+          - name: Cross-functional teams
+            text: Replace Deploy To
+                  Test Environment in
+                  TEST.
+                  <li>Invest&#58; DEVEL+TEST+2</li>
+          - name: Automatic unit test
+            text: Replace Unit Test in
+                  DEVELOPMENT.
+                  <li>Invest&#58; DEVEL+TEST+1</li>
+                  <li>Time Token&#58; DEVELOPMENT</li>
+          - name: Code review
+            text: Increases probability
+                  for test success by 1.
+                  <li>Invest&#58; DEVEL+2</li>
+                  <li>Time Token&#58; DEVELOPMENT</li>
+          - name: Orchestration
+            text: Replace Configure
+                  Environment.
+                  <li>Invest&#58; DEVEL+OPER+3</li>
+                  <li>Time Token&#58; OPERATIONS</li>
+          - name: Automatic deployment trigger
+            text: Replace the Toll Gate
+                  between OPERATIONS
+                  and IN PRODUCTION.
+                  <li>Invest&#58; TEST+OPER+3</li>
+                  <li>Time Token&#58; OPERATIONS</li>
+          - name: Automatic test trigger
+            text: Replace the Toll
+                  Gate between
+                  DEVELOPMENT and
+                  TEST.
+                  <li>Invest&#58; DEVEL+TEST+3</li>
+                  <li>Time Token&#58; DEVELOPMENT</li>
+      - name: Move
+        text: Work Items move toward IN PRODUCTION
+              <li>Move Work Items a total of 10 steps,
+              following the rules on the board. You
+              decide together the strategy and
+              which items to move.</li>
+              <li>All special rules are
+              stated on the board and are described in
+              more detail in the Board section.</li>
+              <li>You choose
+              how you divide the moves on the Work Items.
+              For instance; move 10 Work Items 1 step
+              each, 5 Work Items 2 steps each, 1 Work Item
+              10 steps, or a mix of the above. Rolling a die
+              on a test square counts as one move.</li>
+              <li>If an invested Improvement card states that a square
+              is replaced,
+              all Work Items that are moving to this
+              square should just ignore it and go to the
+              next, non-replaced, square.</li>
+      - name: Event
+        text: Reality hits you.
+              <li>Draw an Event card and follow the
+              instructions. A good way of doing
+              this is to either take turns to read
+              out the card text, or choose a person
+              not playing to be the reader.</li>
+              <li>The events are sorted into groups below:</li>
+        sections:
+        - name: Backlog events
+          text: These events move work items back to the Backlog,
+                or add new work items to the starting set of 10.
+          sections:
+          - name: Wrong acceptance tests
+            text: Move half of all Work
+                  Items (rounded down)
+                  between BACKLOG
+                  and IN PRODUCTION to
+                  BACKLOG.
+          - name: Does not work in production
+            text: Move all Work
+                  Items in TEST and
+                  IN PRODUCTION to
+                  BACKLOG.
+          - name: New customer
+            text: Half of all Work Items
+                  (rounded down) in
+                  all squares between
+                  BACKLOG and IN
+                  PRODUCTION are
+                  moved to BACKLOG.
+          - name: New requirements
+            text: Add five random Work
+                  Items to BACKLOG.
+          - name: Missing requirements
+            text: Add two random Work
+                  Items to BACKLOG.
+          - name: Didn't think of that!
+            text: Add one random Work
+                  Item to BACKLOG.
+          - name: New hardware
+            text: Add four random Work
+                  Items to BACKLOG.
+        - name: Development events
+          text: These events effect the development part of the board.
+          sections:
+          - name: Unclear requirements
+            text: Move everything in
+                  DEVELOPMENT back
+                  one step.
+          - name: No daily
+            text: Move two Work Items
+                  from DEVELOPMENT
+                  to BACKLOG.
+          - name: No backlog refinement
+            text: Move all Work Items
+                  in DEVELOPMENT to
+                  BACKLOG.
+        - name: Test events
+          text: These events effect the Test part of the board.
+          sections:
+          - name: No acceptance criteria
+            text: Move all Work Items in
+                  TEST to BACKLOG.
+          - name: Framework problems
+            text: All Work Items in TEST
+                  move one step back.
+          - name: Old test cases
+            text: Move all Work Items in the Unit Test square
+                  and half of all Work Items (rounded down)
+                  in TEST one step back.
+          - name: Conflict in the test environment
+            text: All Work Items in
+                  TEST are moved to
+                  the square just before
+                  TEST.
+          - name: Lack of time!
+            text: Select three Work
+                  Items in TEST and
+                  move them to
+                  DEVELOPMENT.
+        - name: ARCHITECTURAL events
+          text: These events are marked as Architectural.
+                There is an improvement that specifically stops these
+                from happening.
+          sections:
+          - name: Time to build increases
+            text: Everything in
+                  OPERATIONS moves
+                  one step back.
+                  <li>ARCHITECTURAL</li>
+          - name: API upgrade
+            text: Move all Work Items
+                  between BACKLOG and
+                  IN PRODUCTION back
+                  one step.
+                  <li>ARCHITECTURAL</li>
+          - name: Database update
+            text: Add three random
+                  Work Items to
+                  BACKLOG.
+                  <li>ARCHITECTURAL</li>
+          - name: The API does not work
+            text: Move all Work Items
+                  in DEVELOPMENT to
+                  BACKLOG.
+                  <li>ARCHITECTURAL</li>
+        - name: Time Token events
+          text: These events effect the time tokens you use for
+                investing time.
+          sections:
+          - name: Flexible testing
+            text: Place a yellow Time
+                  Token on an Improvement
+                  of your choice.
+          - name: I want it ASAP!
+            text: Remove all Time
+                  Tokens invested
+                  in Improvements.
+                  Shuffle the face-up
+                  Improvements in the
+                  Improvement deck and
+                  draw new cards.
+          - name: High performance in operations
+            text: Place a green Time
+                  Token on an Improvement
+                  of your choice.
+          - name: Pilot project
+            text: No player may spend
+                  Time Tokens during
+                  the next round (not
+                  for Improvements nor
+                  special powers).
+          - name: Critical bug
+            text: Remove all Time
+                  Tokens invested by
+                  Development and Test.
+                  Those two may not
+                  invest time during the
+                  next round.
+          - name: Hero
+            text: Place a red Time Token
+                  on an Improvement of
+                  your choice.
+          - name: Re-organization
+            text: You are not allowed
+                  to discuss what
+                  Improvements to invest
+                  in during the next two
+                  rounds.
+        - name: General events
+          sections:
+          - name: Nothing happens
+            text: Everything is going
+                  according to plan.
+          - name: Descoping
+            text: Remove two Work
+                  Items of your choice.
+      - name: Improve
+        text: You can finally get those
+              Improvements in place
+              If an Improvement has been fully invested
+              in (compare the amount and
+              colors of the Time Tokens placed on
+              the card to those printed on the card),
+              play it and draw another from the pile
+              to replace the used one. All spent
+              Time Tokens on that Improvement
+              (red, yellow and green) are given back to the
+              players.
+              <li>If playing with more than three roles,
+              you may also have blue Time Tokens in play.
+              Remember that these are not given back to
+              the players in this way.</li>
+              <li>If an Improvement card states that a square
+              should be replaced, put the Improvement on
+              that square and the square is not in use any
+              more. All Work Items that are moving to this
+              square should just ignore it and go to the
+              next, non-replaced, square. If you replace a
+              square that has Work Items on it, move all
+              Work Items to the next square (toward IN
+              PRODUCTION) before putting the Improvement
+              card on the square.</li>
+              <li>The different players get tokens back,
+              or get new tokens, according to the following.</li>
+        sections:
+        - name: DEVELOPMENT Red player
+          text: <li>Every time a DEVELOPMENT
+                Improvement is played, you get an
+                additional red Time Token.</li>
+        - name: TEST Yellow player
+          text: <li>Every time a TEST Improvement is
+                played, you get an additional yellow
+                Time Token.</li>
+        - name: OPERATIONS Green player
+          text: <li> Every time an OPERATIONS
+                Improvement is played, you get an
+                additional green Time Token.</li>
+        - name: CONTINUOUS DELIVERY EXPERT Blue player
+          text: <li> You do NOT get the invested Time
+                Tokens back when the Improvement
+                is finished.</li>
+                <li> Every time an Improvement is
+                played, you get an additional blue
+                Time Token.</li>
+        - name: EXTRA RESOURCE Blue player
+          text: <li> You do NOT get the invested Time
+                Tokens back when the Improvement
+                is finished.</li>
+                <li> Every time an Improvement is
+                played, you get an additional blue
+                Time Token.</li>
+      - name: Income
+        text: You get paid for your hard work.
+              If you have full features IN PRODUCTION
+              (all Work Items of one color), you gain one
+              income for each full feature. Move the
+              marker on the Income Tracker one step for
+              each income you gain.
+              <li>It could be the case that a full feature IN
+              PRODUCTION stops giving you income. For
+              instance, if there are two green Work Items
+              in play and both are IN PRODUCTION this
+              gives you 1 income each round. But if you then draw an
+              Event that adds a new green Work Item, the
+              feature is no longer fully IN PRODUCTION
+              and you stop gaining income. You do not lose
+              any income, you just stop getting more.</li>
+      - name: Deadline
+        text: The end of the project gets closer.
+              Move the marker on the Deadline Tracker
+              one step and continue with the next round.
+              <li>The game may end now.</li>
+  - name: The game end
+    text: When the Deadline marker moves to the last square,
+          after 14 completed rounds,
+          the game is over. At this point, count how
+          much income you have gathered and compare
+          it to the income chart.
