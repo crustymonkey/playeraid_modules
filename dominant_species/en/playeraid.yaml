@@ -1,0 +1,141 @@
+name: Dominant Species
+description: Six species of animals battle to be the dominant species on Earth. [See it on BGG](https://boardgamegeek.com/boardgame/62219/dominant-species)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+        * Each player either chooses or is randomly dealt an animal and gets all of the pieces of their animal’s colour.
+        * In reverse Food Chain order, players place their animal’s initiative marker into the boxes under Initiative.
+        * Place 1 tile of each terrain type on the board. Place a Tundra tile atop the Sea tile.
+        * Shuffle the remaining terrain tiles and divide them into 3 face down stacks of 8 each. Place these on Wanderlust.
+        * Remove the Ice Age card from the Dominance deck and shuffle the remaining cards. Place Ice Age on the bottom.
+        * Draw the top 5 Dominance cards and place them in the available Dominance cards section.
+        * Take 2 elements of each type and place them on the tiles as shown on the board.
+        * Draw 4 elements from the bag and place them on the spaces for each of Adaptation, Abundance, and Wanderlust.
+        * Each player discards cubes (species) and cylinders (APs) to reach the following numbers in hand:
+            * 6P: 3 cylinders, 35 cubes.
+            * 5P: 4 cylinders, 40 cubes.
+            * 4P: 5 cylinders, 45 cubes.
+            * 3P: 6 cylinders, 50 cubes.
+            * 2P: 7 cylinders, 55 cubes.
+        * Each player places 1 cube on the 0 space of the VP track.
+        * Each player places their species from their gene pool and places them as follows:
+            * Insects: 2 on Savannah, 1 on Wetland and Desert.
+            * Arachnids: 2 on Jungle, 1 on Forest and Wetland.
+            * Amphibians: 2 on Wetland, 1 on Jungle and Savannah.
+            * Birds: 2 on Forest, 1 on Mountain and Jungle.
+            * Reptiles: 2 on Desert, 1 on Savannah and Mountain.
+            * Mammals: 2 on Mountain, 1 on Desert and Forest.
+    - name: Endangered Species
+      text: |
+        * Any species on a tile where its animal matches zero elements is endangered.
+        * Endangered species cannot claim dominance. 
+    - name: Gameplay
+      text: |
+        * When an animal is added to earth, it comes from the player’s Gene Pool.
+        * When an animal is removed from earth (besides Glaciation) it is returned to the box, not the Gene Pool.
+      sections:
+        - name: Planning Phase
+          text: |
+            * In player order, players take turns placing APs on eyeball spaces to select their actions.
+        - name: Execution Phase
+          text: |
+            * Carry out the actions in order from top to bottom, left to right.
+            * Actions are never mandatory. A player may choose to not perform the action when it is their turn to play.
+            * Sections are never skipped if there are no APs on them; always resolve their end effect if applicable.
+        - name: Reset Phase
+          sections:
+            - name: Extinction
+              text: |
+                * Eliminate all endangered animals from earth.
+                * Mammal player may save 1 endangered species from extinction, keeping it on the board.
+            - name: Survival
+              text: |
+                * Player with most species on Tundra tiles takes Survival card and gets bonus VP based on number of tiles occupied.
+                * Nobody gets tile when tied.
+            - name: Reseed
+              text: |
+                * Refill Domination cards. Will not refill once deck runs out.
+                * Slide any APs in Glaciation left.
+                * Remove all elements from Regression, Depletion, and Wanderlust.
+                * Slide elements in Wasteland down to Depletion.
+                * Slide elements in Abundance down to Wasteland.
+                * Slide elements in Adaptation down to Regression.
+                * Draw 4 elements and fill each of Adaptation, Abundance, and Wanderlust.
+                * Reveal the top tile of each Terrain stack if not already revealed.
+    - name: End of the Game
+      text: |
+        * Game ends when Ice Age is used.
+        * Finish off any remaining Domination actions.
+        * Perform final Extinction and score Survival card as normal.
+        * Remove all Domination markers from earth.
+        * Score each tile.
+        * Break ties closest to top of food chain.
+    - name: 2-Player / 3-Player Game
+      text: |
+        * Each player controls 3 animals (2P) or 2 animals (3P).
+        * Get pieces as though playing a 6P game.
+        * Each animal scores independently.
+        * Each animal is considered to be opposing, even if you control it.
+        * Lowest of your controlled animals is VP you end the game with.
+    - name: Actions
+      sections:
+        - name: Initiative
+          text: |
+            * Swap your initiative marker with the animal directly to the left.
+            * Place the AP marker that was on the eyeball into any vacant eyeball space.
+        - name: Adaptation
+          text: |
+            * Select 1 element and add it to your animal.
+            * If you already have 6 elements, discard the chosen element token.
+        - name: Regression
+          text: |
+            * Remove an element from the Regression box.
+            * Reptiles get 1 free action at end.
+            * After all APs resolved, each animal loses 1 element for each type still left in the Regression box.
+        - name: Abundance
+          text: |
+            * Place any element from Abundance and place it on any tile’s vacant hex corner.
+        - name: Wasteland
+          text: |
+            * Remove an element from the Wasteland box.
+            * Remove all elements from Tundra tiles that match the element types still left in the Wasteland box.
+        - name: Depletion
+          text: |
+            * Select any 1 element on earth that matches an element in the Depletion box and remove it.
+        - name: Glaciation
+          text: |
+            * Only resolve the AP in the first space. All other APs must wait until a future turn when they slide down.
+            * Select a non-Tundra tile that is adjacent to at least 1 other Tundra tile and place a new Tundra tile on top.
+            * Remove all elements from earth that are surrounded by 3 Tundra tiles.
+            * Gain bonus VP based on number of Tundra tiles that are adjacent to the newly-placed Tundra tile.
+            * Each animal on the Tundra tile may only keep 1 species there; rest are returned to their Gene Pool (not the box).
+        - name: Speciation
+          text: |
+            * Choose 1 element on earth that matches the element on your AP space.
+            * Place species on tiles surrounding the chosen element based on their terrain type as shown on the board.
+            * After all APs resolved, Insect may place 1 species anywhere on earth
+        - name: Wanderlust
+          text: |
+            * Select 1 of the face up Wanderlust Terrain tiles.
+            * Select any vacant hex next to at least 1 other occupied hex and place your hex there.
+            * Select 1 of the available Wanderlust elements and place it on any vacant corner of the hex you just placed.
+            * Gain bonus VP based on number of existing tiles that are adjacent to the newly-placed tile.
+            * In Food Chain order, every player may move any number of species from adjacent hexes to this new hex.
+        - name: Migration
+          text: |
+            * Select up to the indicated number of your species anywhere on earth and move them to an adjacent tile.
+            * Move species one-at-a-time.
+            * Birds may move up to 2 spaces instead of 1. 
+        - name: Competition
+          text: |
+            * Arachnid player gets a free Competition on any Terrain type.
+            * Choose up to 1 tile of each Terrain type shown that contains your species and at least 1 opposing species.
+            * Eliminate any 1 opposing species from each chosen tile.
+        - name: Domination
+          text: |
+            * Select 1 tile on earth that has not been scored this turn and score it based on who has the most species there.
+                * Break ties in descending Food Chain order (mammals first).
+            * If there is a dominant animal on that tile, they must select and execute a Dominance card, then discard the card.

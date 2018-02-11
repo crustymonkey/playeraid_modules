@@ -1,0 +1,272 @@
+name: Gaia Project Setup and Reference
+description: Gaia Project is Terra Mystica in space! Research technologies and exploit your faction powers at the right times to build planetary structures to advance your economy, create federations to build influence, and advance your civilization to score victory points and win.  This game is quite complex and includes several rules appendices - these reference sections are outlined here. [See it on BGG](https://boardgamegeek.com/boardgame/220308/gaia-project)
+credits: Sean Owens
+enabled: true
+text_type: markdown
+
+sections:
+ - name: Setup
+   text: |
+
+   sections:
+    - name: Game Board Setup
+      text: |     
+          * Game Board setup for 3 or 4 players (first game)
+                * Take the big hexagonal outer space tiles and place them in a wide hexagonal arrangement in rows of 3, then 4, then 3 tiles.
+                * For any double-sided tiles, use the **solid** number side.
+                * For the first row, place tiles 10, 1, and 5.  10 and 1 share a side, as do 1 and 5.  After that tiles should be somewhat natural to fit into the arrangement.
+                * For the second row, place tiles 9, 2, 3, and 6
+                * And for the third row, place tiles 8, 4 and 7
+                * Each tile has an arrow - these should all be pointing up, some tiles have arrangements of 1, 2 or 3 blue stars at their edges - line these up to help set arrangement.
+          * Game Board setup for 1 or 2 players (first game)
+                * Follow the same process at the 3 or 4 player setup, except that only 7 tiles are used - one in the center and the rest surrounding in a circle (or large hex).
+                * For tiles 5, 6, and 7 use the **outline** number sides.
+                * Tile 3 goes in the middle.  Tiles 1 and 5 (in that order) go above tile 3 (with the line between 1 and 5 positioned at about 12 o'clock).  Tile 2 goes on the left, tile 6 goes on the right.  Tiles 4 and 7 go below (again, in that order).
+          * Game Board setup for more advanced players - use all 10 tiles for 3 or 4 players. Use tiles 1 through 7 for 1 or 2 players.  Tiles one through four can be placed as in the standard setup above, with the rest randomized for placement and rotation.  Or all tiles can be randomly placed and rotated.  See the full rules for more guidance and options.
+
+    - name: Research Board Setup
+      text: |             
+          * Take the nine **standard** tech tiles (with green marks on the back) and randomly place each of them faceup on a different tech space of the research board. Then stack the remaining standard tech tiles on the placed tiles of the same type; this will give you nine piles of four identical tech tiles.
+          * Randomly place one **advanced** tech tile (the smaller, purple tech tiles) faceup on each space between level 4 and 5 of the six research areas. Return the unused advanced tech tiles to the box.
+          * Set aside the federation token that has icons for 1 ore, 2 knowledge, and 2 credits. This is the Gleens faction's federation token.
+          * Randomly take one federation token from those remaining and place it on level 5 of the **Terraforming** (upper left) research area.
+          * Sort and stack the remaining federation tokens by type and place these six piles next to the game board with their green sides faceup (exception - some tiles are gray on both sides).
+    
+    - name: Scoring Board Setup
+      text: |    
+          * Place the scoring board next to the game board.
+          * Randomly place one **round** scoring tile (the ones that look like pizza slices) faceup on each numbered tile space of the scoring board. Return the unused round scoring tiles to the box.
+          * Randomly place one **final** scoring tile (the rectangular tiles with half-moons cut out of one side) faceup on each tile space to the right of the green ranking tracks. Return the unused final scoring tiles to the box.
+
+    - name: Round Boosters
+      text: | 
+          * Randomly select as many round boosters (the long rectangular tiles) as there are players in the game **plus** **three** (e.g., 7 round boosters in a 4-player game) and place them next to the game board.
+          * Return the unused round boosters to the box.
+
+    - name: General Supply
+      text: | 
+          * Place all action tokens, Gaia Planet tokens, the Lost Planet token, power tokens, Q.I.C., and record tokens near the game board as a general supply.
+
+    - name: Faction Selection
+      text: | 
+          * Determine the first player using the method of your choice. Provide them with the first player marker.
+          * For your first game, the following factions are recommended
+               * 1 player - Hadsch Hallas (Human), Taklons (Automa)
+               * 2 players - Hadsch Hallas, Xenos
+               * 3 players - Terrans, Taklons, Geodens
+               * 4 players -: Terrans, Hadsch Hallas, Xenos, Taklons
+          * Or, if not using a first-game setup, the **first** player chooses any one of the seven faction **boards**, then chooses either of the faction **sides** on it and places the board on the table with that side faceup.
+          * Continuing in clockwise order, each other player does the same with the remaining faction boards.
+          * Place your faction board in front of you with the chosen faction faceup.
+          * The factions' abilities are explained in detail in the Faction Abilities section
+          * Take all structures and Gaiaformers of your color. Place the structures on their corresponding spaces of your faction board.
+          * Place your three Gaiaformers **near** your faction board (they do not go on the spaces of your faction board until they are activated).
+          * Take one ore, one knowledge, and two credit markers and place them on the starting positions of your resource track.
+          * If your faction board shows at least one Q.I.C. below your name, take that many Q.I.C. from the supply and place them on your faction board. Q.I.C. are the green cubes with a chunk missing.
+          * For each area of the power cycle on your faction board, take from the supply the number of power tokens shown and place them in that area.
+          * Take the six player tokens of your color and place one of them on level 0 of each research area on the research board.
+          * If your faction board shows level 1 of a research area, advance your token one level in the corresponding area. If that level shows a resource marked by a star and a white outline, gain that resource immediately as a one-time bonus.
+          * To gain credits, ore, or knowledge, move the credits (yellow), ore (white), or knowledge (blue) token that many spaces to the right on your resource track.
+          * To gain a Q.I.C., take a Q.I.C. token from the supply and place it on your faction board.
+          * To gain a Gaiaformer, take one of your set-aside Gaiaformers and place it on your faction board.  Gaiaformers are the hex-shaped plastic tokens that have a space on your player board, but for most factions all three tokens start off the board.
+          * Note - The level 1 bonuses of the Economy and Science research areas are not gained during setup; the income phase will take place soon after the game starts.
+          * Take the seventh player token of your color and place it on space 10 of the VP track as a VP marker.
+          * Take all satellites of your color (the solid cubes of your player color); place two on the scoring board, one on each 0 space, and the rest near your faction board.
+          * Take one player aid and place it faceup near your faction board.
+          * If you are playing the Taklons, take the brainstone and place it in area I of your power cycle.
+          * If you are playing the Gleens, take the Gleens' federation token and place it near your faction board.
+          * If you are playing the Ivits, take the six space stations and place them near your faction board.
+
+    - name: Placing First Structures and Preparing for the First Round
+      text: |
+         * If not done already, determine the first player using the method of your choice. Provide them with the first player marker.
+         * By placing your first structures, you colonize your first planets, and you reveal spaces on your faction board.
+         * For your first game, there is a recommended starting layout for your first mines. Review the full rules for this setup.
+         * If not using the first-game setup for initial mine placement, follow these rules
+              * Starting with the **first** player and continuing in clockwise order, place your **first** mine on any one home planet (matching your color) of your choice.
+              * Then, starting with the **last** player and continuing in counterclockwise order, place your **second** mine on a different home planet.
+              * Players do not charge power for mines their opponents place during setup.
+              * Remember to always take the **leftmost** mine on your faction board when placing a mine.
+              * The Xenos place their third mine after all players have placed their second mine.
+              * The Ivits place their planetary institute last, after all mines have been placed (including the Xenos' third mine).
+         * Starting with the **last** player and continuing in counterclockwise order, choose an available round booster and place it faceup in front of you. Unchosen round boosters will remain next to the board and be available in the first round.
+         * Neutral Player (1 or 2 Players) - When playing with 1 or 2 players, a neutral player is added to affect final scoring. Take two satellites of an unused color and place one on each ranking track next to the final scoring tiles; the number on each final scoring tile determines the satellite's position on that ranking track. During final scoring, these satellites count as a neutral player at the appropriate rank.
+         * Return all unused faction boards, structures, Gaiaformers, player tokens, satellites, ore markers, knowledge markers, credit markers, player aids, the brainstone, the Gleens' federation token, and space stations to the box.
+         * Return the turn order card to the box unless you are playing with variable turn order in later rounds (though using it is recommended).
+
+ - name: Faction Abilities and Planetary Institute Bonuses
+   text: |
+   sections:
+    - name: Terrans, Planet Type - Terra
+      text: | 
+           * Ability
+                * During the Gaia phase, move the power tokens in your Gaia area to area II of your power cycle instead of to area I.
+           * Planetary Institute
+                * During the Gaia phase, when you move power tokens from your Gaia area to area II of your power cycle, you may gain resources as if you were spending that much power to take free actions.
+                * Example: During the Gaia phase, you move four power from the Gaia area to area II, allowing you to gain one ore and one credit.
+    - name: Lantids, Planet Type - Terra
+      text: | 
+           * Ability
+                * When you take the Build a Mine action, you may build a mine on a planet colonized by an opponent (including the Lost Planet).
+                * Place your mine next to the opponent's structure. You do not have to pay for terraforming, but you must still pay the mine's cost.
+                * This mine counts as a normal mine in all ways **except**
+                     * This mine cannot be upgraded.
+                     * It does not count for any effects that relate to how many planet types or Gaia planets you have colonized.
+           * Planetary Institute
+                * Each time you build a mine on a planet colonized by an opponent, gain two knowledge.
+    - name: Xenos, Planet Type - Desert
+      text: | 
+           * Ability
+                * You place a third starting mine after all other starting mines have been placed.
+           * Planetary Institute
+                * You can form federations with a total power value of six instead of seven. You gain one Q.I.C. as income instead of one power token.
+    - name: Gleens, Planet Type - Desert
+      text: | 
+           * Ability
+                * If you would ever gain Q.I.C., gain that much ore instead; once you have upgraded to the indicated academy, this effect no longer applies.
+                * To make a Gaia Planet habitable, pay one ore instead of one Q.I.C. Each time you build a mine on a Gaia Planet, gain two additional VP.
+           * Planetary Institute
+                * When you upgrade to the planetary institute, immediately gain the Gleens' federation token (gaining the resources shown as normal).
+                * Gaining this tile counts as forming a federation. The planetary institute itself can still be part of a federation on the board.
+    - name: Taklons, Planet Type - Swamp
+      text: | 
+           * Ability
+                * The Brainstone counts as one power token (when starting a Gaia Project, building satellites, etc.), but you can spend it as if it were three power.
+           * Planetary Institute
+                * Each time you would charge power from the Passive Action to Charge Power, you gain one power token. You can choose to gain the power before or after charging.
+    - name: Ambas, Planet Type - Swamp
+      text: | 
+           * Ability
+                * None.
+           * Planetary Institute
+                * Once per round, as an action, you can swap your planetary institute with one of your mines on the game board (this can help you form a new federation).
+                * This has no impact on existing federations, even if their power value becomes less than seven.
+                * The swap does not count as a build or upgrade action; no VP can be gained from it, and there is no Passive Action to Charge Power for other players.
+    - name: Hadsch Hallas, Planet Type - Oxide
+      text: | 
+           * Ability
+                * None.
+           * Planetary Institute
+                * You can spend credits instead of power to take free actions that allow you to gain resources.
+                * Example: You can spend 3 credits to take the free action that allows you to gain one ore.
+    - name: Ivits, Planet Type - Oxide
+      text: | 
+           * Ability
+                * During setup, do not place mines.
+                * Instead, after all other players have placed mines (including the Xenos' third mine), place your planetary institute on any red planet.
+                * You can have only one federation during the whole game, but unlike other factions, you will be able to grow that federation to gain new federation tokens.
+                * After you have formed a federation, to take the Form a Federation action again, you must connect planets to that federation instead of forming a new federation.
+                * The power values of the structures on those planets must bring the total power value of that federation to at least to 7X, where X is the number of federation tokens you own plus one (not including the federation token from level 5 of the Terraforming research track).
+                * All other rules for forming a federation apply, including building satellites and gaining federation tokens. To build a satellite during this action, you must spend one Q.I.C. instead of discarding one power.
+           * Planetary Institute
+                * As a special action, place a space station on an accessible space that does not contain a planet or another space station.
+                * The accessibility of a space follows the same rules as the Build a Mine action.
+                * Like planets, a space station can be connected with satellites; each space station counts as having a power value of one for its federation.
+                * A space station is not a structure, so placing one does not allow opponents to take the Passive Action of Charge Power.
+                * A space station does not count as a colonized planet, but it can be used as a starting point when determining the accessibility of a planet (i.e., range can be counted from a space station). Your opponents can place satellites in a space containing a space station.
+    - name: Bal T'aks, Planet Type - Volcanic
+      text: |
+           * Ability
+                * None.
+           * Planetary Institute
+                * The first time you build a mine on each planet type, gain 3 knowledge.
+                * (You do not gain knowledge for planet types you colonized before upgrading to your planetary institute.)
+    - name: Ivits, Planet Type - Oxide
+      text: |
+           * Ability
+                * You cannot advance in the Navigation research area, even if you take the tech tile below the Navigation research area. If you do take that tech tile, no advancement occurs.
+                * As a free action, you can move a Gaiaformer from a Gaiaformer space on your faction board to your Gaia area to gain one Q.I.C.
+                * Gaiaformers in your Gaia area are not available until the next Gaia phase.
+                * In the next Gaia phase, move any Gaiaformer in your Gaia area back to its Gaiaformer space.
+                * Planetary Institute: You can now advance in the Navigation research area.
+    - name: Firaks, Planet Type - Titanium
+      text: |
+           * Ability
+                * None.
+           * Planetary Institute
+                * As an action, you can downgrade a research lab into a trading station and immediately advance one level in a research area of your choice.
+                * See the section about the Research Board for details on research areas.
+                * This counts as an Upgrade to a Trading Station action.
+                * You can later upgrade the trading station back into a research lab using the normal rules (including gaining a new tech tile).
+    - name: Bescods, Planet Type - Titanium
+      text: |
+           * Ability
+                * The positions of your planetary institute and academies are swapped on your faction board, as is the income you gain for trading stations and research labs.
+                * As with the other factions, upgrading to an academy or a research lab allows you to gain a tech tile.
+                * Once per round, as an action, you can advance your lowest-level token in a research area (without paying knowledge).
+                * If multiple of your tokens are tied for the lowest level, choose which of the tied tokens to advance.
+                * To advance to level 5 this way, you must still flip a federation token as normal.
+                * Remember, only one player can reach level 5 of each research area.
+           * Planetary Institute
+                * The power value of your structures on gray planets (your home type) is increased by one (in addition to any other effects that increase their power value).
+    - name: Nevlas, Planet Type - Ice
+      text: |
+           * Ability
+                * As a free action, you can move one power token from area III of your power cycle to your Gaia area to gain one knowledge.
+                * These power tokens follow the normal Gaia phase rules.
+                * This does not count as spending power.
+           * Planetary Institute
+                * You can spend power tokens in area III of your power cycle as if they were each two power.
+                * Otherwise, they count as one power token (when starting a Gaia Project, building satellites, etc.).
+                * When paying for a power action with an odd power cost (1, 3, 5, etc.), the unspent power is lost.
+    - name: Itars, Planet Type - Ice
+      text: |
+           * Ability
+                * Each time you discard a power token from area II of your power cycle to move another power token to area III, place the discarded power token in your Gaia area instead of returning it to the supply.
+           * Planetary Institute
+                * During the Gaia phase, you can discard 4 power tokens from your Gaia area to immediately gain a tech tile (standard or advanced).
+                * See Gaining a Tech Tile for specific rules.
+                * You may do this as many times as you can afford to.
+
+ - name: Research Board and Advancement Bonuses
+   text: |
+   sections:
+    - name: Terraforming
+      text: | 
+           * Level 0: Each terraforming step costs you three ore.
+           * Level 1: Each terraforming step costs you three ore. Immediately gain two ore.
+           * Level 2: Each terraforming step costs you two ore.
+           * Level 3: Each terraforming step costs you one ore.
+           * Level 4: Each terraforming step costs you one ore. Immediately gain two ore.
+           * Level 5: Each terraforming step costs you one ore. Immediately gain the federation token placed here. Gaining this federation token counts as Forming an Federation. Remember that you must have a previously acquired federation token in order to advance to level 5 of this research area and claim the federation token there.
+    - name: Navigation
+      text: | 
+           * Level 0: Your basic range is one.
+           * Level 1: Your basic range is one. Immediately gain one Q.I.C.
+           * Level 2: Your basic range is two.
+           * Level 3: Your basic range is two. Immediately gain one Q.I.C.
+           * Level 4: Your basic range is three.
+           * Level 5: Your basic range is four. Immediately place the Lost Planet token on an accessible space that does not contain a planet, satellite, or space station. The accessibility of a space follows the same rules as the Build a Mine action. This counts as a Build a Mine action, meaning you can gain VP and your opponents can gain power. Do not place a mine on the Lost Planet token. You are considered to have colonized the planet; place one of your satellites on the Lost Planet token as a reminder. The Lost Planet counts as its own planet type, and as a planet with a mine. You cannot upgrade this mine.
+    - name: Artificial Intelligence
+      text: | 
+           * Level 0: This level has no effect.
+           * Level 1: Immediately gain one Q.I.C.
+           * Level 2: Immediately gain one Q.I.C.
+           * Level 3: Immediately gain two Q.I.C.
+           * Level 4: Immediately gain two Q.I.C.
+           * Level 5: Immediately gain four Q.I.C.
+    - name: Gaia Project
+      text: | 
+           * Level 0: This level has no effect. You cannot start a Gaia Project.
+           * Level 1: To start a Gaia project, you must move six power tokens to your Gaia area. Immediately gain one of your Gaiaformers.
+           * Level 2: To start a Gaia project, you must move six power tokens to your Gaia area. Immediately gain three power tokens.
+           * Level 3: To start a Gaia project, you must move four power tokens to your Gaia area. Immediately gain one of your Gaiaformers.
+           * Level 4: To start a Gaia project, you must move three power tokens to your Gaia area. Immediately gain one of your Gaiaformers.
+           * Level 5: To start a Gaia project, you must move three power tokens to your Gaia area. Immediately gain 4 VP and 1 additional VP for each Gaia Planet with one of your structures on it (you do not gain VP for Gaiaformers on Gaia Planets).
+    - name: Economy
+      text: | 
+           * Level 0: This level has no effect.
+           * Level 1: During each income phase, gain two credits and charge one power.
+           * Level 2: During each income phase, gain one ore, two credits, and charge two power.
+           * Level 3: During each income phase, gain one ore, three credits, and charge three power.
+           * Level 4: During each income phase, gain two ore, four credits, and charge four power.
+           * Level 5: Immediately gain three ore, six credits, and charge six power. You no longer receive the income from level 4.
+    - name: Science
+      text: | 
+           * Level 0: This level has no effect.
+           * Level 1: During each income phase, gain one knowledge.
+           * Level 2: During each income phase, gain two knowledge.
+           * Level 3: During each income phase, gain three knowledge.
+           * Level 4: During each income phase, gain four knowledge.
+           * Level 5: Immediately gain nine knowledge. You no longer receive the income from level 4.
+                 

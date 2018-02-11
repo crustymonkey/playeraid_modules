@@ -1,0 +1,51 @@
+name: Mission Red Planet
+description: Fight for control over the regions of Mars to gain more money than everyone else. [See it on BGG](https://boardgamegeek.com/boardgame/176920/mission-red-planet-second-edition)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+        * Construct the launchpad by connecting a number of docks equal to the number of players.
+        * Shuffle the ships and place one in each dock. Unknown destination cards should be replaced.
+        * Randomly place one astronaut on each ship. Color closest to the left is the starting player.
+        * Randomly place resource tokens face down on Mars and Phobos. There should be one left over.
+        * Separate out mission cards and deal 2 to each player. Choose 1 and put the other back in the deck. Shuffle the discovery and action cards into the mission deck.
+    - name: Game Round
+      sections:
+        - name: Choose Character
+          text: |
+            Each player secretly chooses a character card from their hand.
+        - name: Resolve Character Effects
+          text: |
+            Count down from 9 to 1. Players play their cards when their number is called and resolve the effect. If two or more players are tied, start from the starting player and go clockwise around the table. If a ship does not yet have a destination, the first player to enter it picks a location plaque from the pile.  
+            A ship automatically launches once it is full.
+        - name: Land Launched Ships
+          text: |
+            Land launched ships in their specified zone after all players have played their cards. If the resource tile there is face down, flip it over. 
+        - name: Draw New Docket Ships
+          text: |
+            Fill all empty spaces with new ships.
+        - name: Assign New First Player
+          text: |
+            Whomever was the last to resolve their card’s ability becomes the new first player. 
+        - name: Advance Round Track
+          text: |
+            Move the turn gauge one step. 
+    - name: Production Phases
+      text: |
+        The sections with 1, 2, and 3 dots are production phases. Each zone with a face up resource produces tokens of its type equal to the number of downs shown on the dial. Tokens are distributed to the players with the majority of astronauts in a zone. If tied, tokens are distributed evenly with any leftovers staying in the zone for the next time. If there are no longer any astronauts in a zone, nobody claims the tokens.
+    - name: Reveal Discovery Phase
+      text: |
+        When the dial hits the atom symbol, all discovery cards on the table are flipped over. These cards are resolved when the dial hits the space that matches the icon in their lower-right corner. 
+    - name: Final Scoring
+      text: |
+        * Players reveal their mission cards and determine if they’re completed.
+        * The player with the most Ice tokens gets the Ice Monopoly bonus mission card.
+        * Points from completed missions + value of collected point tokens +/- discovery bonuses.
+    - name: Discovery Cards
+      text: |
+        When a player draws a discovery card (through the Scientist action) they must immediately play it to an outer zone on Mars. A zone may have more than one card.
+    - name: Phobos
+      text: |
+        Phobos behaves like all other zones of Mars except that it is not adjacent to any other space and cannot have discovery cards assigned to it.

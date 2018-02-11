@@ -1,0 +1,102 @@
+name: Automania
+description: Run your own car factory to try and produce the most popular cars on the market. [See it on BGG](https://boardgamegeek.com/boardgame/176544/automania)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+        * Place the gray round marker on the first space of the round track.
+        * Sort the factory tiles by their back and shuffle each one.
+        * Place 16 of the A tiles in the action area and 2 below the sales office. The remaining tiles are placed next to the board.
+        * Shuffle the demand tiles and put 1 face up in each space of the markets. Re-do if both markets are the same.
+        * Shuffle all contracts without an S on their back and reveal the first 3 to form the contract display.
+        * Each player chooses a company and gets all of the pieces of their color.
+        * Randomly determine player order.
+        * Place the scoring markers on the scoring track. Each player starts with VP equal to their player number.
+        * Each player gets $5 + their player number.
+        * Shuffle the 4 starting contracts (S on their backs) and deal 1 to each player.
+    - name: Gameplay
+      sections:
+        - name: Action Phase
+          text: |
+            * On their turn, a player must do one of the following: take an action or withdraw.
+            * Any time turn your turn, you may choose to perform the Sponsor or Marketing actions.
+            * Tiles in your factory cannot be removed but can be replaced.
+            * Manager tiles are placed in office spaces. Must pay the fee for the office space. Can have several managers of the same type. A manager can only be replaced by another manager of the same type (do not pay office fee for upgrading).
+            * Styling (orange) tiles are placed above the assembly line for any chosen car type. No car can have the same type of styling tile more than once. Must pay a fee of $1 for placing the second styling tile on a car type; $2 for the third. Styling tiles can only be replaced by another tile of the same type (do not pay fee for upgrading).
+            * If you take a money or VP tile, immediately gain the bonus and then discard the tile instead of placing it.
+          sections:
+            - name: Take an Action
+              text: |
+                * Cannot choose an action space where your color of workers already are.
+                * Use an action space by placing 1 more worker than the number already there. Any workers already there are returned to their owner so they can be used again.
+                * Special production spaces (corners) are immediately carried out.
+                * Non-corner space: you must take 1 tile from the column or row before you carry out the action. Cannot choose a row or column that has no tiles.
+                * Tile must be placed in your factory or discarded.
+                * Carry out the action of the chosen space – either produce a car or draw a contract card.
+              sections:
+                - name: Produce a Car
+                  text: |
+                    * Must pay the shown cost and produce that type of car.
+                    * Follow the assembly line for the type of car and decide which of the 2 markets you want to ship to. Compare the tiles the car passes through against the market’s demands to determine how many stars the car is worth.
+                    * If a market shows 2 matching demands, you must have 2 matching tiles in your production line to count both, otherwise take the highest.
+                    * Place the produced car on a ship space less than or equal to the car’s star value.
+                    * If you produce a car with 18 or more stars, the car is immediately shipped to the market and sold. Choose the reward of any sales space for that market. Does not count towards this turn’s sales limit.
+                    * May take back any cars from the ships at any time.
+                    * May play exactly 1 contract card from your hand if the car meets all requirements. Show the card then place it face down to score points at the end of the game.
+                    * When you play your starting contract, you immediately earn $3.
+                - name: Draw a Contract Card
+                  text: |
+                    * Take either 1 face up contract card or the top card of the contact deck.
+                    * Fill any openings in the contract deck with a new card.
+                  text: |
+                    * Place any number of workers on the sponsor space (do not bump existing, any number can be placed).
+                    * Gain $1 for each worker placed here.
+                - name: Marketing Action
+                  text: |
+                    * Place any number of workers on the marketing space (do not bump existing, any number can be placed).
+                    * Star rating of the car you just produced is increased by 1 for each worker placed here.
+            - name: Withdraw
+              text: |
+                * Place any remaining workers on the sponsor space and take $1 for each worker placed.
+                * Place your player order marker on any vacant sales office spot to determine how many cars you will be allowed to sell and the next round’s player order.
+        - name: Sales Phase
+          text: |
+            * Resolve North America ship first, then European ship.
+            * Start with the car with the highest popularity score. The owning player must either sell this car or pass and leave the car on the ship.
+            * If the car is sold, the owner places the car in any free sales space and takes the reward shown.
+                * 2P only: Only 1 car can be sold in each row. Any number of cars can be sold to the topmost space.
+            * Each player may never sell more cars than their sales office limit allows. Limit applies to the sales made in both markets combined.
+        - name: New Round
+          text: |
+            * Advance the round marker.
+            * Player furthest behind on scoring track (if tied, player with lowest sales office number) chooses which pending demand tiles move to the first space of the demand tracks (either both left tiles or both right tiles).
+            * Move the demand tiles down 1 space. Tiles that move off of the track move over to the open future space of other market.
+            * Remove all cars from sales spaces and return to their owners.
+            * All tiles remaining on the board are removed.
+            * Place new tiles on the action and sales office spaces.
+            * Change player order to match sales office sequence.
+            * All players take back their workers from the action board.
+    - name: Game End
+      text: |
+        * Game ends after the sales phase of the last round.
+        * Each car left in the North American market is sold for $1.
+        * Each car left in the European market is sold for 1 VP.
+        * Silver medals on completed contracts are worth 1 VP.
+        * Player with the most money earns 10 VP, 2nd most 6 VP, and 3rd most 3 VP (break ties with lowest sales office number).
+        * Ties are broken by the lowest sales office number.
+    - name: Manager Tiles
+      sections:
+        - name: Research Manager
+          text: |
+            Research managers increase the popularity of all your produced cars.
+        - name: Marketing Manager
+          text: |
+            Each marketing manager allows you to sell one extra car in the sales phase.
+        - name: General Manager
+          text: |
+            For each general manager, you gain 1 extra Autobuck for every worker you place in the Sponsor space.
+        - name: Staff Manager
+          text: |
+            When taking a staff manager, immediately take the shown number of neutral workers from the supply.

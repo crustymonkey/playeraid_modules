@@ -1,0 +1,192 @@
+name: Stockpile with Continuing Corruption expansion
+description: Use your knowledge of the stock market to make more money than everyone else. [See it on BGG](https://boardgamegeek.com/boardgame/161614/stockpile)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+        * Each player gets a bidding meeple and player board in their color.
+        * Each player picks an Investor and receives the amount of starting money shown on their Investor card.
+        * Place the turn marker on the calendar space based on the number of players.
+        * Place a Stock Ticker on the starting space for each stock, indicated by the dark circles.
+        * Shuffle the Company cards and place them next to the board.
+        * Shuffle all Commodity (and Tax) cards into a single deck and place them next to the board.
+        * Place and Bond cards next to the board.
+        * Give one of each of the 6 different stock cards from the Market deck to each player and shuffle the remaining cards.
+        * Each player places their cards face down into their Stock Portfolio.
+        * Pick a first player. 
+    - name: Gameplay
+      sections:
+        - name: 1 - Information Phase
+          text: |
+            * In player order, each player may purchase up to 3 Bonds for $9,000 – (# of players x $1,000).
+            * The first player rolls all Forecast dice and places them into the Forecast board.
+            * Pick out the matching Forecast cards and shuffle them.
+            * Deal one Company and Forecast card to each player. This insider info can be used to make decisions later one.
+            * Place one Company and Forecast card face-up on the board as public information.
+            * Place any remaining cards face-down next to the board. 
+        - name: 2 - Supply Phase
+          text: |
+            * Deal 1 face-up Marker card to each Stockpile based on the number of players to start each one.
+            * Deal 2 cards from the Market deck to each player. These must be kept separate from other cards.
+            * In turn order, each player places both cards into 1 or 2 Stockpiles. 1 card is placed face-up, the other face-down. After placing cards, draw a card from the Commerce deck.
+            * In turn order, each player plays their Commerce card face-up on any Stockpile.
+        - name: 3 - Demand Phase
+          text: |
+            * In player order, players place their bidding meeple on an open number of any bidding track. If placing on an occupied track, the number chosen must be higher than the current bid. A player cannot bid more money than they currently have.
+            * If a player has been outbid, they take their bidding meeple back and place it on their next turn.
+            * Bidding continues until all bidding tracks have a meeple on them.
+            * Players pay the bank the amount of money they bid, collect their stocks, and their bidding meeple.
+            * If a player’s Stockpile had a Trading Fee card, the player pays the bank that amount and discards the card.
+            * Place any Commodity cards face-up next to your board.
+            * Place remaining cards face-down in your Stock Portfolio section.
+        - name: 4 - Action Phase
+          text: |
+            * In player order, each player uses all of the Action cards they got from the Demand phase, discarding them as used.
+            * Stock Boom increases the value of a chosen stock by 2.
+            * Stock Bust decreases the value of a chosen stock by 2. 
+        - name: 5 - Selling Phase
+          text: |
+            * In player order, players may sell any number of stocks by discarding them and collecting money based on the current value.
+        - name: 6 - Movement Phase
+          text: |
+            * In turn order, player reveal their Company and Forecast card pair and move the stock accordingly.
+            * Move remaining stock values according to the face-up and face-down pairs of Company and Forecast cards.
+            * Forecast card with $$ means the stock pays out dividends. Each player gets $2,000 for each stock of that type they have. Players must reveal shares to get dividends.
+            * Stanford Steel: When the marker passes or lands on a $ space as part of a positive movement, players get $1,000 in dividends for each $ on the space.
+    - name: Stock Splits
+      text: |
+        * If a stock’s value ever moves to the split icon, it splits.
+        * All players reveal their current un-split copies of that stock, then move them to their Split Portfolio.
+        * The company’s value returns to its octagon space and will continue moving if it had any movement left.
+        * Any new stocks obtained after the split go to the regular Stock Portfolio.
+        * If a stock splits when a player already has it in their Split Portfolio, they instead get $10,000 for each in the Split pile.
+    - name: Bankruptcy
+      text: |
+        * If a stock’s value ever moves below 1, it immediately goes bankrupt.
+        * All player discard all stocks of that company, including those in their Split pile.
+        * Company value returns to its starting value.
+    - name: Round End
+      text: |
+        * Players get $1,000 for each Bond card they own.
+        * If the turn marker is on the last space, move to game end. Otherwise, move the turn marker one space to the right.
+    - name: Game End
+      text: |
+        * Each player cashes in their Bonds for their full purchase price of $9,000 – (# of players x $1,000).
+        * All players reveal how many shares of each stock they own to determine majority shareholders. Stocks in the Split Portfolio section could as double.
+        * Majority shareholders of each company get $10,000. If there is a tie, all tied players get $5,000.
+        * Each player sells back all of their shares equal to the final value of each stock.
+        * Commodity cards are scored based on the different types shown. Begin a new set with each duplicate.
+            * 1 unique: $3,000.
+            * 2 unique: $8,000.
+            * 3 unique: $15,000.
+            * 4 unique: $24,000.
+            * 5 unique: $35,000.
+            * 6 unique: $48,000.
+        * Tax Cards are scored based on the number of collected by the player.
+            * 1 card: -$2,000.
+            * 2 cards: -$6,000.
+            * 3 cards: -$12,000.
+            * 4 cards: -$20,000.
+            * 5 cards: -$30,000.
+            * 6 cards: -$42,000.
+            * 7 cards: -$56,000.
+        * Player with the most money wins.
+    - name: Investors
+      sections:
+          - name: Agile Ana
+            text: |
+                At the end of the round, you receive $1,000 for each unique
+                company you own 1 or more shares in.
+
+                **Note: You must reveal at least one of each of your
+                different stocks to receive this benefit**.
+          - name: Billionaire Bill
+            text: |
+                No abilities.  Begins the game with the most money.
+          - name: Broker Bernie
+            text: |
+                Trading fees are a bonus.  If you pick up a trading fee at the
+                end of the Demand Phase, instead **gain** that amount in
+                currency immediately after paying for the Stockpile.
+
+                **Note: You must have enough money to pay for the Stockpile
+                before gaining any money from your benefit**.
+          - name: Clever Chanda
+            text: |
+                During your turn in the Action Phase, you may choose to discard
+                1 stock that you own in order to move one stock card from
+                your Stock Portfolio to your Split Portfolio.  Alternatively,
+                you may move 1 stock from your Split Portfolio to your
+                regular Stock Portfolio to perform this action
+
+                **Note: You must reveal both stock cards affected by this
+                action**.
+          - name: Crazy Cramer
+            text: |
+                On your turn, during the Action Phase, you may move the value
+                of a singe stock up or down by 1.
+          - name: Cunning Carlos
+            text: |
+                During the Demand Phase, you must be outbid by at least 2
+                spaces on the bidding track.  Place a Blocking Token on the
+                space ahead of you to indicate that it cannot be bid on.
+                Use 2 Blocking Tokens for you bidding meeples in a 2 player
+                game.
+          - name: Daring Dangote
+            text: |
+                At the end of the round, you receive $1,000 per commodity
+                card collected. This includes commodity cards of the same
+                type.
+
+                **Note: This ability does not work for the tax cards
+                collected**.
+          - name: Discount Donald
+            text: |
+                You pay one space value less than your bidding meeple's
+                position on the bidding track for Stockpiles.
+          - name: Dividend Deborah
+            text: |
+                At the end of each round, you may declare additional dividends
+                of $1,000 per share for a company of your choice.  This
+                benefits all players with stock for that company.
+          - name: Lucrative Li
+            text: |
+                At the end of the round, you receive an additional $1,000
+                in interest for every 2 bond cards owned (round up).
+          - name: Maverick Mark
+            text: |
+                **Before** the Demand Phase begins, you may move 1 card to a
+                different Stockpile.
+
+                **Note: This ability may be used to cause a Stockpile to have
+                0 cards**.
+          - name: Golden Graham
+            text: |
+                For each stock that you sell, you gain $1,000 extra.
+
+                **Note: This ability still works at the end of the game.
+                Don't forget to double for split stocks**.
+          - name: Mayknow Martha
+            text: |
+                At any time during the Demand Phase, you may look at another
+                player's Company Card and Forecast Card.  You may do this
+                only once per round.
+
+                **Note: In a game with less than 5 players, you have the
+                option to look at one face-down pair of information instead
+                of another player's cards**.
+          - name: Secretive Stuart
+            text: |
+                During the Supply Phase, you may place both of your cards
+                face-down.
+          - name: Tactical Talal
+            text: |
+                At the end of the Selling Phase, you may sell again.
+
+                **Note: You may sell any stock cards owned with this ability**.
+          - name: Wise Warren
+            text: |
+                Before the Demand Phase, you may look at all face-down cards
+                in a single Stockpile.
