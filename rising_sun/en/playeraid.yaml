@@ -1,0 +1,391 @@
+name: Rising Sun
+description: |
+  Rising Sun is a game about honor, negotiation, and warfare in a feudal Japan where the ancient gods (kami) have returned to rebuild the empire. <a href="https://boardgamegeek.com/boardgame/205896/rising-sun" target="_blank">See it on Boardgamegeek</a>
+credits: CMON Rising Sun rules manual and FAQ, transferred to PlayerAid by Cory Osborn (https://boardgamegeek.com/user/GamePimp)
+enabled: true
+text_type: markdown
+sections:
+  - name: Setup
+    text: |
+
+      * Pick a Set of Season cards to add to the Core cards.
+        * (Dynasty Invasion) Add Lucky Gods season cards.  These are only available to Moon Clan and Sun Clan.
+        * (Monster Pack) Add Extra Monster cards as desired.
+      * Draw 4 Shrine tiles.
+      * Assign players clans.
+      * Organize the Clan markers on the Honor Track according to each Clan's Starting Honor Rank.
+      * Players start with 1 Daimyo, 1 Bushi, and 1 Stronghold in their Home Province.
+      * Players should be sitting in reverse honor order.  Lowest honor is start player, highest honor is last player.
+
+  - name: Seasons
+    text: |
+      The game is played over 3 seasons: Spring, Summer, and Autumn.  Winter concludes the game with end game scoring.
+    sections:
+      - name: Seasonal Setup
+        text: |
+          * Place War Province tokens and corresponding War Number tokens.
+          * Set current Season cards next to the board.
+          * Give each player their Seasonal Income Coins.
+          * Return any Hostages, each granting 1 Coin from the common pile.
+      - name: Tea Cermony
+        text: Negotiate to form new Alliances.  Any allied clans place their alliance markers on the game board.
+      - name: Political Phase
+        text: |
+          Each turns is either a Mandate Turn or Kami Turn.  Each season, the political phase covers:
+
+            * 3 Mandate Turns
+            * Kami Turn
+            * 2 Mandate Turns
+            * Kami Turn
+            * 2 Mandate Turns
+            * Kami Turn
+
+        sections:
+          - name: Mandate Turns
+            text: |
+              Mandates are resolved in clockwise order, starting from the player to the left of the current player.
+              Each Mandate offers one ability to all players, and one bonus ability only to the current player and their Ally.
+
+              ## Recruit
+              **All Players**: Summon one figure at each of their Strongholds. Summoned Shinto may be sent to a Shrine tile to worship.
+
+              **You and Ally**: Summon one additional figure.
+              ## Marshal
+              **All Players**: Move each of their figures across one border or shipping route.
+
+              **You and Ally**: May also build a Stronghold for 3 Coins.
+              ## Train
+              **Current player goes first.**
+
+              **All Players**: Buy one available Season card. Pay its Coin cost.
+
+              **You and Ally**: Pay one less Coin.
+              ## Harvest
+              **All Players**: Collect 1 Coin.
+
+              **You and Ally**: Collect Rewards from each Province where you have superior Force.
+
+              ## Betray
+              **You Only**: Replace any two figures (from different players) on the Map with one of your own of the
+              same type. If you have an Alliance, break it and lose Honor.
+
+          - name: Kami Turns
+            text: |
+              Resolve each Shrine tile from left to right. The player with the most Force on each Shrine gets its Kami's ability.
+
+      - name: War Phase
+        text: |
+          Resolve War in order on the Provinces with a War Number token.
+
+            * Empty Province - Discard War Province token.
+            * Only 1 player - They take the War Province token.
+            * Only 2 Allied players - Player with the highest Force takes the War Province token.
+            * At least 2 unallied players - Resolve a Battle.
+        sections:
+          - name: Battle Resolution
+            text: |
+              Players secretly bid Coins on the different War Advantages. Going from left to right, the player who
+              bid the most Coins on each War Advantage may choose to execute it:
+
+              **Seppuku**: May kill all your figures. Gain 1 VP and Honor for each.
+
+              **Take Hostage**: May take 1 hostage. *Take* 1 VP from opponent.
+
+              **Hire Ronin**: May add your Ronin tokens to your Force. You do not lose your Ronin tokens.
+
+              **Battle Outcome**: The player with the most Force in the Province wins the Battle, killing all losing
+              players' figures (unless they belong to their Ally).
+
+              **Imperial Poets**: Gain 1 VP for *every* figure killed (includes *all* killed figures, not just your own).
+
+              Losers discard the Coins they used. Winner distributes the Coins they used equally among the losers as reparations.
+
+      - name: Seasonal Cleanup
+        text: |
+          * Discard Coins and Ronin tokens.
+          * Return Shinto to their owner's reserves.
+          * Reshuffle Political Mandates.
+
+  - name: Endgame - Winter Season
+    text: |
+      To finish the game, do the following:
+
+        * Return any hostages, this can trigger bonuses for players
+        * Gain VP from
+          * Winter Upgrades
+          * War Province Tokens (points correspond to round they were captured)
+          * War Province Set Bonus (as displayed on the Clan screens).
+
+        * Player with the most VP wins the game. If tied, highest Honor wins. If tied are Allied, they share the victory.
+
+  - name: Clans
+    sections:
+      - name: Bonsai Clan
+        text: |
+          **Sacred Bounty** - Ever growing and evergreen, the Bonsai Clan needs to spend very few Coins when acquiring resources.
+
+          The cost of everything they buy, be it a Season card or a Stronghold, is limited to 1 Coin at the most. If
+          it costed 2 or more Coins, it costs them 1 Coin. If it costed zero Coins, it remains free.
+
+          In case the Bonsai player benefits from a discount, such as the *Train* Mandate Bonus, it applies after
+          the clan ability, bringing the cost to zero.
+      - name: Dragonfly Clan
+        text: |
+          **Gossamer Wings** - The Dragonfly Clan can literally fly all over the map, showing up anywhere without the normal
+          restrictions faced by other Clans.
+
+          When the Dragonfly player Summons one of their figures, it can be placed in any Province, whether they have a
+          Stronghold there or not. The number of figures they can Summon with a *Recruit* Mandate is still tied to the
+          number of Strongholds they have on the Map.
+
+          When the Dragonfly player Moves one of their figures, it can be placed in any Province on the Map, no matter
+          how far. Figures belonging to the Dragonfly Clan never have to use Shipping Routes to Move from one Province to another.
+      - name: Fox Clan (KS exclusive)
+        text: |
+          **Wily Presence** - At the start of the War Phase, the Fox player may place a Bushi in each Province where they have no force.
+      - name: Koi Clan
+        text: |
+          **Eddies in the Stream** - Ever adaptable and unpredictable, the Koi Clan is able to use Coins as if they were Ronin.
+          At the start of the War Phase, the Koi player must discard all Ronin tokens they have and take the same number of
+          Coins from the common pile.
+
+          When resolving the Hire Ronin step of a Battle, all Coins the Koi player has in their reserve count as Ronin tokens,
+          adding their Force to the figures in the Province if the Koi player won the *Hire Ronin* War Advantage.
+      - name: Lotus Clan
+        text: |
+          **Dictate the flow** - The Lotus Clan determines the flow of politics by turning the Political Mandates they play
+          into anything they wish.
+
+          On their Mandate Turns, the Lotus player selects one of the 4 Political Mandates they drew and places it facedown
+          on the board, without any of the players seeing what it is. The Lotus player then announces what Political Mandate
+          will be executed, choosing anything they want (IRecruit, Marshal, Train, Harvest, *or* Betray*).
+      - name: Moon Clan (Dynasty Invasion Expansion)
+        text: |
+          **Brutality** - The Moon Clan is a shady adversary, imbued with a powerful and myseterious force that makes them
+          much stronger than any other Clan.
+
+          All figures belonging to the Moon Clan count as 2 Force, at the very least.  If they acquire an Enhancement that
+          adds more Force to a given figure, it adds on top of the base 2 Force.  Likewise, if they acquire a Monster (Lucky
+          God) with a Force higher than 2, then that number overrides the Moon ability.
+
+          However, unlike other Clans, the Moon Clan is limited in the number of figures they can have in any given place.
+          There may never be more than 2 Moon Clan figures in a single Province.  They also cannot have more than 2 figures
+          distributed among all 4 of the Shrine tiles.
+
+          Moon Clan cannot acquire normal Monster cards.  Lucky God monster cards are only available to Moon Clan and Sun Clan.
+      - name: Sun Clan (Dynasty Invasion Expansion)
+        text: |
+          **Enlightenment** - Basking in the warm glow of Honor, the Sun Clan defies any opponent to challenge them in a
+          contest of Honor, draining those who prove unworthy.
+
+          Whenever the Sun Clan wins a dispute that is tied and needs to be decided by comparing Honor, they gain 1 Coin
+          and 1 VP, while the tied opponent loses 1 Coin and 1 VP (if they have any). This may happen when they win by Honor
+          the following situations:
+
+            * Tied in Force in a Province during a Harvest Mandate.
+            * Tied in Force in a Shrine during a Kami Turn.
+            * Tied in Force in a Province during War.
+            * Tied in Coins for a War Advantage during a Battle.
+            * Tied in VPs at the end of the game.
+            * When playing with the *Kami Unbound* expansion, the Sun ability may take place when they steal control of
+            a Kami card, but not each time they prevent that control from being stolen by another player.
+
+          Sun Clan cannot acquire normal Monster cards.  Lucky God monster cards are only available to Moon Clan and Sun Clan.
+      - name: Turtle Clan
+        text: |
+          **Shell of the Eternal ** - The Turtle Clan builds their Strongholds on top of the shells of giant legendary
+          turtles. These indestructible fortresses can move around the Map and even join in the disputes for the Provinces.
+
+          When the Turtle player Moves their figures, they can choose to Move their Strongholds as well, exactly as if they
+          were Clan figures. Each Turtle Clan Stronghold also counts as 1 Force in the Province they occupy, exactly as if
+          they were Clan figures.
+
+          This may influence both Harvest and War. However, Strongholds may never be killed, never be Taken Hostage, and
+          never be replaced by a *Betray* Mandate.
+
+  - name: Shrines
+    sections:
+      - name: Amaterasu
+        text: |
+          Goddess of the sun, Amaterasu allows her top worshipper to move their Clan marker straight to the top slot on the Honor Track.
+          It doesn't matter how low their Honor was, they climb directly to the topmost position, shifting all others down in the process.
+          
+          *IMPORTANT: Note that this may change the Honor tiebreaker when resolving the following Shrines in this Kami Turn.*
+      - name: Fujin
+        text: | 
+          God of the wind, Fujin allows his top worshipper to perform up to 2 Moves with their figures on the Map. The player may
+          either Move 2 of their figures to adjacent Provinces, or Move 1 of their figures twice in a row. Just like in a 
+          *Marshal* Mandate, the figure may either cross a Border or use a Shipping Route between Provinces. 
+      - name: Hachiman
+        text: |
+          God of war, Hachiman grants his top worshipper 2 Ronin tokens, taken from the common pile.
+      - name: Raijin
+        text: |
+          God of thunder, Raijin allows his top worshipper to Summon 1 Bushi, taking it from their Reserve and placing it in any
+          Province on the Map, even if they don't have a Stronghold there.           
+      - name: Ryujin
+        text: |
+          God of the sea, Ryujin allows his top worshipper to acquire a Season card from those available next to the board, paying
+          its full Coin cost just like in a *Train* Mandate.
+      - name: Susanoo 
+        text: |
+          God of the storms, Susanoo grants his top worshipper a number of Victory Points equal to the number of Strongholds they
+          currently have on the Map.
+      - name: Tsukuyomi 
+        text: |
+          God of the moon, Tsukuyomi grants his top worshipper 2 Coins, taken from the common pile.
+           
+  - name: FAQ
+    sections:
+      - name: Term Clarifications
+        text: |
+          **Bonuses**: If an ability increases the rewards gained by another action, they are
+          considered part of the rewards gained by that action.
+          
+          **Daimyo**: Daimyo figures (and those that count as Daimyo) are immune to any
+          special effects that target a specific figure (Fire Dragon, Earth Dragon, Benten),
+          but not immune to general effects that target a player (Oni of Plagues, Susanoo,
+          Raijin, Path of the Serpent, etc.).    
+
+          **Mandate**: All events of a Mandate are considered to happen in a single moment.
+          During a Harvest Mandate, if you gain multiple Coins or VPs from different
+          Provinces, it is considered a single instance of gaining those rewards for triggering
+          abilities. Effects that take place at the end of a Mandate only occur after all
+          players have executed that Mandate.
+          
+          **Place**: When you "place" a figure, you simply take it from your Reserve and place
+          it on the board. This does not trigger any Summon effects.
+          
+          **Start of Battle**: The Start of a Battle is right before players prepare to allocate
+          their Coins for its War Advantages.
+          
+          **Summon**: No matter how many different figures you Summon onto the board in
+          one instance (during a Recruit Mandate, for example), it is considered a single
+          Summon for triggering abilities.
+          
+          **Winning a Battle**: If a figure has a special ability that triggers off of winning a
+          Battle with that figure (Oni of Souls, Piety, Kitsune), it doesn't need to still be alive
+          and in the Battle at the end of it in order to activate its ability. It just needs to be
+          in the Battle at some point of it.
+          
+      - name: Core Box Cards
+        sections: 
+          - name: Benevolence
+            text: |
+              **Q**. Can Benevolence be used when you pay War Reparations at the end of a Battle?
+              
+              **A**. No, it only works when you spend Coins purchasing a Season card or Stronghold.
+              It doesn't trigger off of giving Coins in War Reparation, or having Coins charged/
+              taken by other effects.  
+          - name: Form of the Kindred
+            text: |
+              **Q**. Do I get this card's ability for reaching Winter with an Alliance?
+              
+              **A**. No, this only grants points for having an Alliance in Spring, Summer, and Autumn.
+              It doesn't matter whether those Alliances lasted until the end of the season or not.
+          - name: Komainu
+            text: |
+              **Q**. Does the Komainu also count as a Shinto for the purpose of Betrayal?
+
+              **A**. Yes, for all intents and purposes the Komainu counts as both a Monster and
+              a Shinto. So it can replace Monsters or Shinto during a Betray Mandate, or
+              likewise be replaced by them while on the Map.
+          - name: Loyalty
+            text: |
+              **Q**. If I have an Ally, and during a Harvest Mandate I gain 1VP from a Province and
+              2VP for another, how many extra VP does Loyalty grant me?
+              
+              **A**. All those VP were gained at the same moment, so you only get 1 extra VP.
+          - name: Loyalty and Righteousness
+            text: |
+              **Q**. If I have an Ally, and during a Battle I Seppuku 2 figures (2VP, plus another
+              2VP from Righteousness), and then I win Imperial Poets (5 VP), how many extra VP
+              does Loyalty grant me?
+              
+              **A**. The resolution of each War Advantage is a separate event, so those were two
+              separate instances of gaining VP. You gain 1 extra VP during Seppuku and 1 extra
+              VP during Imperial Poets.
+          - name: Path of the Serpent
+            text: |
+              **Q**. How often can I charge a player for using the same Shipping Route?
+
+              **A**. You may charge them once per instance when they use that Route (regardless
+              of how many figures they move through that Route at that time). For example, once
+              during a Marshal Mandate, then again when they use Fujin's Kami ability, then
+              again during another Marshal...
+          - name: Way of the Merchant
+            text: |
+              **Q**. If a richer player plays a Harvest Mandate, gaining 1 base Coin, then 2 Coins
+              from a Province, and 1 Coin from another Province, how many Coins does Way of
+              the Merchant grant me?
+
+              **A**. All those Coins the richer player got were gained at the same moment, so you
+              only get 1 Coin.
+
+      - name: Daimyo Box Cards (Promos)
+        sections:
+          - name: Daikaiju
+            text: |
+              **Q**. Can I use Betray to replace a Daikaiju that is in the ocean with one of my
+              Monsters in reserve?
+
+              **A**. No, while in the ocean the Daikaiju is not considered to be on the Map.
+          - name: Earth Dragon
+            text: |
+              **Q**. If a player has Path of the Serpent, can they charge so the Earth Dragon may
+              move a figure out of its Province through a Shipping Route?
+
+              **A**. Yes. If the player controlling the Earth Dragon chooses to move an opponent's
+              figure out of its Province through a Shipping Route, the player with Path of the
+              Serpent may choose to charge 1 Coin from the player whose figure is being
+              pushed out. The player must pay if they have the Coin, but if the player has no
+              Coins, then the figure can't be pushed via the Shipping Route.
+
+              **Q**. Does the Oni of Plagues prevent figures from being pushed into its
+              Province by the Earth Dragon?
+
+              **A**. Yes, if the figure being pushed out belongs to a player with higher
+              Honor than the Oni of Plagues player, it cannot be pushed into the Oni of
+              Plague's Province.
+
+          - name: Nure-Onna
+            text: |
+              **Q**. If a player has Path of the Serpent, can they charge the Nure-Onna so it can
+              cross a Shipping Route during the War phase?
+
+              **A**. Yes.
+          - name: Phoenix
+            text: |
+              **Q**. If my Phoenix is killed by Seppuku, comes back immediately, and then is killed
+              again at the end of the Battle, how many VP do I gain for Imperial Poets?
+
+              **A**. You gain 2 VPs. 1 for each instance of that figure being killed.
+      - name: Dynasty Invasion Cards
+        sections:
+          - name: Fukurokuju
+            text: |
+              **Q**. Since he counts as a Stronghold, can Fukurokuju be killed?
+
+              **A**. No, Strongholds cannot be killed as a basic rule (except that the Daikaiju can
+              destroy them).
+          - name: Path of the Monkey
+            text: |
+              **Q**. If 2 players are tied as the richest opponents, do I lose Honor twice for taking
+              Coins from both of them?
+
+              **A**. No, you only lose Honor once each time you use this ability.
+      - name: Kami Unbound Cards
+        sections:
+          - name: Path of the Builder
+            text: |
+              **Q**. If I am the one playing the Marshal Mandate, does Path of the Builder allow
+              me to build 2 Strongholds?
+
+              **A**. No, it only allows you to build 1 Stronghold regardless of who plays the Marshal
+              Mandate.
+          - name: Susanoo
+            text: |
+              **Q**. Does Susanoo keep a Shinto being summoned in his Region from climbing to
+              one of the Temple tiles?
+
+              **A**. No. Climbing to the Temples is not considered a Move.
