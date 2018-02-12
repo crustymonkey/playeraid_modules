@@ -1,0 +1,163 @@
+name: Noria
+description: |
+  A new era is looming on the horizon. The future of Noria is right in front of you, and you must guide your flourishing
+  trading empire into prosperity. Discover flying islands, buy ships, and build factories. Invest in prestigious projects,
+  and secure their success by passing on secret knowledge to politicians. For even above the clouds, there is still room
+  for improvement. [See it on Boardgamegeek](https://boardgamegeek.com/boardgame/233676/noria)
+credits: "[Cory Osborn](https://boardgamegeek.com/user/GamePimp)"
+enabled: true
+text_type: markdown
+sections:
+  - name: Setup
+    text: |
+
+      * Shuffle islands and select (num players + 3) islands
+      * Place 4 politicians above each of the 6 chambers.
+      * Place round markers up to the appropriate player count
+      * Place (num players + 2) discs of each type in the market
+          * Resources (Obsidian, Mycelium, Energy) in the top half
+          * Journey, City, Tool, and Bonus randomly in the bottom half
+      * Choose a start player.  It never moves.
+      * Each player places a token on the small island, and 4 in the cave
+      * Set up 7 factories on their tableau
+      * Set 1 ship of each resource type next to their plateau
+      * Set up player rings:
+          * each player starts with one disc of each type except bonuses
+          * each player's ring setup must be different
+          * Discs must be distributed as follows:
+              * 4 in the inactive halves, 2 in the active
+              * 3 on the lower ring, 2 on the middle ring, 1 on the top ring
+          * Suggested setup varies the 3 resources with each player (starting top left)
+              * Lower Ring: Tool, -, *resource*, -, -, *resource*
+              * Middle Ring: Journey, -, *resource*, -
+              * Top Ring: City, -
+      * (*beginner rule*) Each player starts with 1 knowledge, 1 basic resource of their choice.
+
+
+  - name: Game Flow
+    text: |
+      Each round begins with the start player removing a round marker from the board.  Then, in turn order, each player
+      takes a turn consisting of 4 phases: Influence, Action, Politics, Administration.
+    sections:
+      - name: Influence Phase
+        text: |
+          Take one or both actions, as many times as you like, paying an increasing cost for each subsequent action.
+
+          In later stages of the game, the base cost for each action increases by 1 knowledge.
+
+          Taking either action a second time doubles the cost.  A third time quadruples it.  Fourth multiplies by 8, etc.
+
+            Total Cost = Base Cost * 2^(n-1)
+
+          ### **Night Shift**
+          Rotate the lower or middle ring by one position.
+
+          *Base Cost*: 1 Knowledge.
+
+          ### **Modification**
+          Exchange discs in 2 positions.  It can be disc to blank space or swapping discs.
+
+          *Base Cost*: 2 Knowledge
+
+      - name: Action Phase
+        text: |
+          Activate up to 3 discs, taking a maximum of 4 of the related actions.
+
+          Each ring can only be activated once, but they can be activated in any order
+
+          Each activated disc must be adjacent to the other discs.
+
+          Each activated disc must be in the active (bottom) half of the rings.
+
+          Upgraded disc actions must be completed consecutively.
+
+        sections:
+          - name: Bonus Disc
+            text: |
+              A bonus disc must be activated before any other discs.
+
+              Choose 1 other disc you want to activate this turn and add 1 to its action count.
+
+              An upgraded bonus disc let's you add +1 activations to 2 discs, or +2 activations to 1 disc.
+
+              Applying a bonus to an upgraded disc converts it to a +3 activations.
+
+          - name: Resource Discs
+            text: |
+              Gather 1 resource per airship of the appropriate type.
+
+          - name: City Disc
+            text: |
+              With each activation, choose 1 of the following actions
+
+              ### **Market**
+              Take a disc from the market, paying the appropriate cost.  Place it on center of your wheel, it will not take
+              a slot until the Administrative phase
+
+              ### **Investment**
+              Move one of your representives higher up a track, paying the appropriate costs. Additionally, pay 1 resource
+              for each other players' representative higher than you on that track. Costs can vary between require all the
+              same type of a resource, or a mix of the allowed resources.
+
+          - name: Journey Disc
+            text: |
+              Place your ambassador on 1 island.  You can reveal a new island and place there.  You must move islands
+              with each activation of the Journey disc.
+
+              For each ambassador already on that island, pay one resource to the supply.
+
+              Once landed, you may take a ship from the island.  Alternatively, you may place on of your factories on an
+              empty slot on the island, taking the corresponding warehouses and placing them next to your tableau.
+
+          - name: Tool Disc
+            text: |
+              Either upgrade a disc or produce goods.
+
+              ### **Upgrade**
+              Flip the disc over.  You cannot activate the upgraded disc in the same turn.  A tool cannot upgrade itself.
+
+              ### **Production**
+              Produce goods by paying the resource costs on the empty side of the warehouse.  You may either produce
+              multiple of the same good, or 1 good of each type.
+
+          - name: Substitute Action
+            text: |
+              You may choose to take a knowledge instead of activating a given disc.
+          - name: Exchange Action
+            text: |
+              At any point during your action phase, you may exchange goods and knowledge on the Black Market
+
+              * 1 Simple good for 2 Knowledge
+              * 1 Complex good for 3 Knowledge
+              * 3 Knowledge for 1 basic resource
+
+      - name: Politics Phase (optional)
+        text: |
+          You may take the *Intrigue* action as many times as you like during this phase.  Each time you take it, the
+          base cost is multiplied by the next power of 2.  So the first action is the base cost, the second time that round
+          doubles it, the third time quadruples it, the fourth multiplies by 8, x16, x32, etc.
+
+          ### **Intrigue**
+          Move 1 politician from the top of any chamber into the leftmost free space of that chamber.  Then, remove
+          a politician from the top of any chamger from the game.
+
+          * Base Cost*: Knowledge equal to the number of cog wheels exposed on the round track.
+
+            Total Cost = Base Cost * 2^(n-1)
+
+      - name: Administration
+        text: |
+
+          * Rotate each ring 1 space clockwise
+          * Take knowledge based on your built factories
+          * Place any discs purchased that round onto your rings.  They can swap out existing discs if you'd like.
+
+  - name: Game End
+    text: |
+      At the conclusion of the final round, scoring takes place. Four each of the 4 main chambers, multiply the level
+      of your representative by that chamber's point value.  Then use the 2 special chambers to add additional points
+      for your highest and lowest representatives.
+
+      The winner is the player with the most points.
+
+
