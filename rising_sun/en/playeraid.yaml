@@ -235,39 +235,46 @@ sections:
         text: |
           God of the moon, Tsukuyomi grants his top worshipper 2 Coins, taken from the common pile.
            
+  - name: Term Clarifications
+    text: |
+      **Bonuses**: If an ability increases the rewards gained by another action, they are
+      considered part of the rewards gained by that action.
+
+      **Daimyo**: Daimyo figures (and those that count as Daimyo) are immune to any
+      special effects that target a specific figure (Fire Dragon, Earth Dragon, Benten),
+      but not immune to general effects that target a player (Oni of Plagues, Susanoo,
+      Raijin, Path of the Serpent, etc.).
+
+      **Honor**: Whenever there is a tie, the tied player with the highest Honor
+      wins. If there's ever a conflict in the timing of the execution of an ability,
+      the involved player with higher Honor decides whether to go first or last.
+
+      **Mandate**: All events of a Mandate are considered to happen in a single moment.
+      During a Harvest Mandate, if you gain multiple Coins or VPs from different
+      Provinces, it is considered a single instance of gaining those rewards for triggering
+      abilities. Effects that take place at the end of a Mandate only occur after all
+      players have executed that Mandate.
+
+      **Negotiation**: During the Tea Ceremony and Political Phase, players may give each other
+      Coins and Ronin tokens as part of their negotiations. Deals are never binding.
+
+      **Place**: When you "place" a figure, you simply take it from your Reserve and place
+      it on the board. This does not trigger any Summon effects.
+
+      **Start of Battle**: The Start of a Battle is right before players prepare to allocate
+      their Coins for its War Advantages.
+
+      **Summon**: No matter how many different figures you Summon onto the board in
+      one instance (during a Recruit Mandate, for example), it is considered a single
+      Summon for triggering abilities.
+
+      **Winning a Battle**: If a figure has a special ability that triggers off of winning a
+      Battle with that figure (Oni of Souls, Piety, Kitsune), it doesn't need to still be alive
+      and in the Battle at the end of it in order to activate its ability. It just needs to be
+      in the Battle at some point of it.
+          
   - name: FAQ
     sections:
-      - name: Term Clarifications
-        text: |
-          **Bonuses**: If an ability increases the rewards gained by another action, they are
-          considered part of the rewards gained by that action.
-          
-          **Daimyo**: Daimyo figures (and those that count as Daimyo) are immune to any
-          special effects that target a specific figure (Fire Dragon, Earth Dragon, Benten),
-          but not immune to general effects that target a player (Oni of Plagues, Susanoo,
-          Raijin, Path of the Serpent, etc.).    
-
-          **Mandate**: All events of a Mandate are considered to happen in a single moment.
-          During a Harvest Mandate, if you gain multiple Coins or VPs from different
-          Provinces, it is considered a single instance of gaining those rewards for triggering
-          abilities. Effects that take place at the end of a Mandate only occur after all
-          players have executed that Mandate.
-          
-          **Place**: When you "place" a figure, you simply take it from your Reserve and place
-          it on the board. This does not trigger any Summon effects.
-          
-          **Start of Battle**: The Start of a Battle is right before players prepare to allocate
-          their Coins for its War Advantages.
-          
-          **Summon**: No matter how many different figures you Summon onto the board in
-          one instance (during a Recruit Mandate, for example), it is considered a single
-          Summon for triggering abilities.
-          
-          **Winning a Battle**: If a figure has a special ability that triggers off of winning a
-          Battle with that figure (Oni of Souls, Piety, Kitsune), it doesn't need to still be alive
-          and in the Battle at the end of it in order to activate its ability. It just needs to be
-          in the Battle at some point of it.
-          
       - name: Core Box Cards
         sections: 
           - name: Benevolence
