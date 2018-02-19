@@ -90,6 +90,61 @@ sections:
         * +X PP for each Specialist.
         * -1 PP for each reserved Building that was not built.
         * -1 PP for every 2 unused boats on your player mat.
+    - name: Fleets
+      sections:
+        - name: "#1"
+          text: |
+            * Take a bamboo (green) boat from the reserve.
+            * No special effect, but you are guaranteed to play first on the
+              next round
+        - name: "#2"
+          text: |
+            * Take a wood (brown) boat from the reserve.
+            * You can choose a building from the Building Row and reserve it
+              for later.  Place the tile face up next to your player mat. Only
+              you can construct this building.  **A penalty of 1 PP will be
+              applied if you don't build it by the end of the game.**
+        - name: "#3"
+          text: |
+            * Take a stone (black) boat from the reserve.
+            * Look at the first 3 buildings in the building deck. You may
+              either place each of them back on the deck or below it, or both,
+              in the order of your choice.
+        - name: "#4"
+          text: |
+            * Take a clay (red) boat from the reserve.
+            * You can slide a boat from one spot to an adjacent empty spot.
+        - name: "#5"
+          text: |
+            * Take a gold (yellow) boat from the reserve.
+            * You may place a Sacred Ground Token on any empty region of
+              the board. As long as the Sacred Ground Token is there, no one
+              can build on that region.
+        - name: "#6"
+          text: |
+            * Take a wood (brown) boat and a bamboo (green) boat from the
+              reserve.
+            * You may switch 2 Culture Tokens anywhere on the board.
+        - name: "#7"
+          text: |
+            * Take a stone (black) boat and a bamboo (green) boat from the
+              reserve.
+            * You may remove up to 2 boats from the board and place them back
+              in the reserve.
+        - name: "#8"
+          text: |
+            * Take a clay (red) boat and a bamboo (green) boat from the reserve.
+            * You may switch 2 boats anywhere on the board.
+        - name: "#9"
+          text: |
+            * Take a stone boat (black) and a wood boat (brown) from the
+              reserve.
+            * You can build with 1 less boat than needed (your choice) during
+              this turn.
+        - name: "#10"
+          text: |
+            * Take a clay (red) boat and wood (brown) boat from the reserve,
+              plus an extra boat of your choice.
     - name: Specialists
       sections:
         - name: Amateratsu
