@@ -262,12 +262,12 @@ sections:
       **Place**: When you "place" a figure, you simply take it from your Reserve and place
       it on the board. This does not trigger any Summon effects.
 
-      **Start of War**: The Start of War phase happens once between the end of the Mandate Phase and before any battles
-      have been fought.
-
       **Start of Battle**: The Start of a Battle is right before players prepare to allocate
       their Coins for its War Advantages.  Start of Battle effects do not end a battle even
       if they remove all figures of an opponent.
+
+      **Start of War**: The Start of War phase happens once between the end of the Mandate Phase and before any battles
+      have been fought.
 
       **Summon**: No matter how many different figures you Summon onto the board in
       one instance (during a Recruit Mandate, for example), it is considered a single
