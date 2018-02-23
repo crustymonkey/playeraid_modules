@@ -15,7 +15,7 @@ sections:
       * Assign players clans.
       * Organize the Clan markers on the Honor Track according to each Clan's Starting Honor Rank.
       * Players start with 1 Daimyo, 1 Bushi, and 1 Stronghold in their Home Province.
-      * Players should be sitting in reverse honor order.  Lowest honor is start player, highest honor is last player.
+      * Players should be sitting in honor order.  The player at the top of honor track goes first, bottom goes last.
 
   - name: Seasons
     text: |
@@ -23,7 +23,8 @@ sections:
     sections:
       - name: Seasonal Setup
         text: |
-          * Place War Province tokens and corresponding War Number tokens.
+          * Place (# players + 2) War Province tokens on the board
+          * Place corresponding War Number tokens on the board
           * Set current Season cards next to the board.
           * Give each player their Seasonal Income Coins.
           * Return any Hostages, each granting 1 Coin from the common pile.
@@ -67,7 +68,7 @@ sections:
 
               ## Betray
               **You Only**: Replace any two figures (from different players) on the Map with one of your own of the
-              same type. If you have an Alliance, break it and lose Honor.
+              **same type** (bushi for bushi, monster for monster, etc). If you have an Alliance, break it and lose Honor.
 
           - name: Kami Turns
             text: |
@@ -261,8 +262,12 @@ sections:
       **Place**: When you "place" a figure, you simply take it from your Reserve and place
       it on the board. This does not trigger any Summon effects.
 
+      **Start of War**: The Start of War phase happens once between the end of the Mandate Phase and before any battles
+      have been fought.
+
       **Start of Battle**: The Start of a Battle is right before players prepare to allocate
-      their Coins for its War Advantages.
+      their Coins for its War Advantages.  Start of Battle effects do not end a battle even
+      if they remove all figures of an opponent.
 
       **Summon**: No matter how many different figures you Summon onto the board in
       one instance (during a Recruit Mandate, for example), it is considered a single
