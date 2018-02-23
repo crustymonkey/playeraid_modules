@@ -280,6 +280,10 @@ sections:
           
   - name: FAQ
     sections:
+      - name: Living FAQ
+        text: |
+          An unofficial FAQ with references is being maintained at in this
+          [Google Doc](https://docs.google.com/document/d/1TLMKfsklw1P-iFh3lFB5Iii1GCEV52uSjgQQq6v8H1g/edit?usp=sharing)
       - name: Core Box Cards
         sections: 
           - name: Benevolence
