@@ -24,7 +24,7 @@ sections:
           *  Determine which rooms are open:
               *  Each player places a key token of their color on an unclaimed
                  room of their choice.
-              *  In a 2 or 3 player game, place a key tokon of the neutral
+              *  In a 2 or 3 player game, place a key token of the neutral
                  color on each of 3 doors of the inn.  In a 4 player game,
                  place 1 on each of the 4.
           * The greediest player takes the first player card.
