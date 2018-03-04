@@ -56,6 +56,7 @@ This is the meat of your player aid.  Each section will have up to 3 items in it
 These are the 3 items that can appear in a section:
 
 * **name** (required): This will appear as the heading for the section.  This is the clickable portion that will open up and reveal any text or sections below it.
+* **id** (optional): This will set the html "id" value for the section.  This can be used such that you can link to it internally (see below).  **NOTE:** This should be a single word, or multiple words separated by underscores.  Do **not** have spaces in the id.
 * **text** (optional): This is text that will appear directly under your section.  This will contain any html snippets to format what appears in this section.
 * **sections** (optional): In addition, or in lieu of, a `text` section, you can have another `sections` item to nest more sections.  You can nest as deeply as is reasonable.
 
@@ -78,6 +79,20 @@ In the `img` directory, you can add images that are referenced in your playeraid
 
 **Note that you cannot specify a width and height for images if you are using
 Markdown.  You must size your images using an editor.**
+
+# Internal (same page) Links
+As is mentioned under *Sections* above, you can specify links directly to sections **if the *id* attribute is set for the section**.  Then, you can just have a link directly to it as follows.
+
+**Example:** If you had a section where you set the id to `my_section`, you could then link to it in text with either of the following.
+
+* HTML
+```
+<p>This is some text, and this is a <a href="#my_section">link to my section</a></p>
+```
+* Markdown
+```
+This is some text, and this is a [link to my section](#my_section)
+```
 
 # Testing Your Module
 You can test your module by entering the text here: https://playeraid.net/test
