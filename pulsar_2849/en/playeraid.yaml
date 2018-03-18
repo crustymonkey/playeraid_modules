@@ -1,0 +1,73 @@
+name: Pulsar 2849
+description: Travel around the galaxy collecting points.  See it on [boardgamegeek](https://www.boardgamegeek.com/boardgame/228341/pulsar-2849)
+text_type: markdown
+enabled: true
+credits: Jay Deiman
+sections:
+    - name: Setup
+      text: |
+          * Place the **Star Cluster Board** in the center of the table. Use
+            either side, but the "dead end" side is *not* recommended for your
+            1st game.
+          * Flip the **Dice Board** to the correct side based on player count
+          * Place the **Median Marker** near the dice board
+          * Set out the appropriate number of dice based on player count
+            * **4 players:**  9 dice
+            * **2/3 players:** 7 dice
+          * Turn the **Planetary System Tiles** face down, mix them up and
+            distribute 16 of them to to the planetary system locations on the
+            star cluster board.
+          * Place the **Gyrodyne Board** anywhere against the star cluster
+            board
+            * Separate the **Gyrodyne Tiles** by type and stack each group
+              in its place on the gyrodyne board
+            * Make 3 stacks of the **Construction Award Tiles** with the
+              7 point award on top.  Place these in their spaces on the
+              gyrodyne board
+          * Place the **Die Modifiers Board** anywhere against the star
+            cluster board.
+            * Give each player a *+/-* modifier token.  Stack the rest in
+              their spaces on the board.
+            * Put the *+/- 2* modifier tokens on the board.
+          * Shuffle the **Exploration Bonus Tiles** and put them in a face
+            down stack near the board.
+          * Randomly choose 3 of the **Goal Tiles** and place them against
+            the star cluster board.
+          * Randomly choose 3 **Technology Boards** such that you have a
+            *I*, a *II*, and a *III*.  e.g. *AI*, *DII*, *CIII*.  Place these
+            against the star cluster board with the *I* on the inside and the
+            *III* on the outside.
+            * Set the **Time Marker** pointing to the innermost row of the
+              technologies.
+          * Set the **Engineering Cubes** near the board.
+          * Place the **4 Cube Tokens** near the engineering cubes.
+          * Group the **Transmitter Tiles** according to their letters (*A*,
+            *B*, and *C*).  Stack each group letter side up and shuffle.  Then,
+            make one stack with the *C*s on the bottom, *B*s in the middle,
+            and *A*s on top.  Lay out the top 3 transmitters near the stack.
+          * Each player takes the following:
+            * 2 **Rocket Figures** (3 are used in a 2 player game)
+            * 6 **Pulsar Claim Rings**
+            * 1 **100 Point Tile**
+            * 1 **+/- Die Modifier Token** (you should have handed these out
+              in an above step)
+            * 1 **HQ Board** Pass these out at random.  The player can choose
+              which side to use.
+            * Player tokens in the player color
+          * Each player places one of their rockets on the play order spaces
+            in random order.  (Based on this play order, do the following)
+            * Each player places a token on both the engineering track and
+              the initiative track with the 1st player on the bottom and
+              the last player on top.
+            * Each player places a token on the score track with the 1st
+              player on the 5 point slot.  In player order, place each other
+              players token 1 higher on the score track.  e.g. in a 4 player
+              game, the player going last will start with 8 points.
+            * Beginning with the last player and proceeding in reverse order,
+              each player places a rocket on an unoccupied entry gate.
+    - name: Gameplay
+      text: The game is plyed over 8 rounds.  Each round consists of 3 phases
+      sections:
+          - name: Dice Phase
+            text: |
+
