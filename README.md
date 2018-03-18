@@ -21,7 +21,7 @@ There are some things you will have to adhere to for your submissions to be used
 * Your YAML/JSON should be easily human readable.  This means you need to use indentation for sub-sections and things should line up.  If you submit an unindented mess, it will be rejected.
 * If you choose to use HTML, your html snippets must be well formed.  This basically means that you have to close your tags.  So, for example, a `<p>` tag needs to have its closing `</p>` tag.  Your submission will be rejected if it is not well formed.
 * `<script>` tags are forbidden.  You cannot run any javascript from within your playeraids.  There should never be a case where this is necessary.
-* I use an 80 character line limit for my files, **you do not have to**.  I will not enforce this on anyone else. But, again, it should be properly indented and readable.
+* I use an 80 character line limit for my files, **but you do not have to**.  I will not enforce this on anyone else. But, again, it should be properly indented and readable.
 * Your directories/files may only contain the following characters: "a" to "z" and underscore.  Though multiple languages are supported in the data files themselves, the directories and files must follow this rule.
 
 # Directory Layout
