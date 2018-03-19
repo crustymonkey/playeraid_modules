@@ -94,6 +94,30 @@ As is mentioned under *Sections* above, you can specify links directly to sectio
 This is some text, and this is a [link to my section](#my_section)
 ```
 
+# Markdown Extensions
+There are a couple of non-standard Markdown extensions included on the site.
+
+## Tables
+You can include tables with the following syntax.
+```
+| heading 1 | heading 2 | heading N |
+| --------- | --------- | --------- |
+| row 1 cell 1 | row 1 cell 2 | row 1 cell 3 |
+| row N cell 1 | row N cell 2 | row N cell 3 |
+```
+There are some other options you can do in terms of alignment and such.  See [the documentation](https://michelf.ca/projects/php-markdown/extra/#table) for other table options.
+
+## Colored Text
+You can colorize chunks of text pretty simply.  You can use the following syntax to colorize text.
+```
+This is some [red text]!red! in a sentence
+```
+
+That will end up with "red text" being colored red.  Note that anything in the `[]` is the text portion (similar to a link) and in between the `!`, you can specify a color.  Note that this will work with hex designations as well.  The following would produce the same output:
+```
+This is some [red text]!#ff0000! in a sentence
+```
+
 # Testing Your Module
 You can test your module by entering the text here: https://playeraid.net/test
 
