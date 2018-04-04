@@ -1,0 +1,178 @@
+name: The Great Zimbabwe
+description: The Great Zimbabwe is a game about building a trade based civilization in ancient Africa.   [See it on BGG](https://boardgamegeek.com/boardgame/111341/great-zimbabwe)
+credits: Sean Owens
+enabled: true
+text_type: markdown
+
+sections:
+ - name: Game Concepts
+   text: |
+        * **Land** Each small square on the map that isn’t water is called a land area. At the start of the game, land areas may contain a resource or they may be empty. Land areas are adjacent with up to 8 areas in horizontal, vertical and diagonal directions.
+        * **Water** The blue areas on the map are water areas. All water that is horizontally or vertically adjacent forms one large water area. Water areas that are only diagonally adjacent do not form one water area. More water can be placed later in the game by the rain ceremony. It is not possible to build anything on water.
+        * **Resources** Some areas on the map contain resources: clay, wood, ivory or diamonds. More resources can be added later in the game by the shaman. (Separate resource tiles are provided to represent this.) Goods are the materials a resource space can produce for a craftsman to use.
+        * **Starting Areas** One of the map tiles shows 6 starting areas. These are potential starting points for players.
+        * **Monuments** Monuments can be built by players by placing a round wooden marker of their colour on the map. Monuments can later be raised by placing additional markers on top of the first one. The number of markers in a monument is called the level of the monument. A monument can contain at most 5 levels. Monuments are worth victory points according to their level.
+        * **Used Markers** Used markers are placed on resources to indicate that these have been used and are no longer available for other players in this round.
+        * **Ownership Markers** Ownership markers are placed on craftsmen on the board to show which player owns them. They are also used as price markers on the technology cards.
+        * **Cattle** All prices are paid in heads of cattle. Silver coloured cattle is worth 1, gold coloured cattle is worth 3.
+        * **Paying to a Card** A player has their own stock of cattle. Some payments are made to the common stock, but most are paid to a card. This means the cattle is placed on the card. Cattle placed on a card cannot be used by the card’s owner and remains on the card until collected by the owner in the revenue phase.
+        * **Craftsmen** There are 7 types of craftsmen, which can be placed on the board. There are four primary craftsmen: potters, ivory carvers, wood carvers and diamond cutters. There are also three secondary craftsmen: vessel makers, throne makers, and sculptors.
+        * **Technologies** Each craftsman type has two corresponding technology cards. Only a player owning the correct technology may build these craftsmen. The technology card is also used to indicate the price that craftsman demands. In addition, payments to craftsmen are made to the technology card of the player owning the craftsman.
+        * **Specialists** There are 5 specialists: the shaman, the rain ceremony, the herd, the builder, and the nomads. These cards can be taken by players to obtain certain special abilities. Specialists work only when they are paid. The payment is made to the specialist card.
+        * **Gods** The game contains 12 gods, of which 8 are in play. Each player may choose to adore at most one god. This choice is final for the rest of the game. It is not obligatory to choose a god.
+        * **Victory Requirement** (VR) At the start of the game, each player requires 20 victory points to win. This requirement is called the player’s VR (Victory Requirement). By taking specialist or technology cards, or a god card, players will increase their VR (or in some cases decrease). This changes the number of points that player will need to win. A player’s VR can never be higher than 40. An action that would increase a player’s VR above 40 is not allowed. A round wooden piece in each player colour is used to indicate the VR.
+        * **Victory Points** (VP) A player scores victory points for owning monuments and craftsmen. The current number of victory points can always be determined by counting the points of their buildings on the board, but it is easier to keep track of them on the victory points track. A wooden cube in each player colour is used to show the current VP.
+        * **Order of Play Track** The order of play track shows the order in which players will take turns during the religion and culture phase. A wooden cube in each player colour is used to show the order of play. Empire Plaques. Each player, and one of the gods, owns an empire plaque. This plaque is used for payments during the generosity of the kings phase.
+        * **Transportation Range** A building, resource or monument is in range of another one if it is at most three steps away. These steps may be horizontal, vertical or diagonal. These may cross empty or built-over land areas; craftsmen or resources do not block or alter range. Each continuous water area counts as only one step, even if it is very large.
+        * **Hubs** When determining the range to a craftsman (but not to a resource) you may use hubs. A monument owned by yourself or another player can function as a hub. If you can reach the hub, you may proceed from there to another hub or to the craftsman as if starting from there. When raising monuments, you will have to pay 1 cattle each time you use a hub. If you pass through a monument when counting range, you must use it as a hub.
+
+     
+ - name: Setup
+   text: |
+        * Give each player an *overview of play*, an *empire plaque* and the corresponding *markers of one color*. Empire plaques and player markers that are not used are returned to the box.
+        * Each player puts one cube on the *1 square* of the VP track, and one cube on the *order of play track*. Give each player *3 cattle*.
+        * Take the *central map area* (with the player start spaces) and place it in the middle of the table. Then, shuffle the other map tiles. Randomly select tiles and place them in a random placement and orientation on the board, depending on the number of players.
+            * 2 players - 4 total tiles (1 start, 3 random) in a 2x2 square.
+            * 3 players - 6 total tiles (1 start, 5 random) in an 'L' shape 3 across and 3 tall. Put the start tile in the middle of the 'L.'
+            * 4 players - 7 total tiles (1 start, 6 random); the start tile goes in the middle, then surround the middle tile except leave two opposite corners empty.
+            * 5 players - 9 total tiles (1 start, 8 random); the start tile goes in the middle, then surround it with the 8 other tiles to make a 3x3 square.
+        * Sort the *technology cards* into stacks by type, then order each stack with the cheapest one (least VR) on top. Place these stacks on the table next to the map.
+        * Place the *specialist cards* next to them, all on display and available.
+        * Shuffle the *god cards* and randomly remove four of the gods. Put these back into the box. Place the rest of the gods next to the technology cards on the table, like specialists all on display and available.
+        * Place the *turn, VP, and VR track* on the table as well.
+        * Place all the *cattle* in the common stock.
+        * Place the *water*, *resource*, and *price* markers within easy reach.
+        * Determine the *order of play*. Each player hands in their VR marker (a round wooden marker). Shuffle these markers and draw them out one by one. Stack them on the VP track at square 20 in the order that you draw them, with the first one at the bottom.
+        * Starting with the player whose marker is on top of the VR stack, and then going down the stack, in turn each player must place *one of their monuments* on one of the *starting areas*. 
+        * The game is played in four phases. In Phase I and II players take turns. Phase III and IV are played very quickly. The phases are repeated until someone has won (see phase IV)
+
+ - name: Phase 1 - Bidding for Turn Order
+   text: |
+        * First, remove the *turn order markers* from the order of play track.
+        * Each player places their *empire plaque* on the table; order them from highest to lowest VR. If tied, the owner of the bottom VR marker places their plaque first in the queue.
+        * Starting with the player with the first plaque in order each player now makes a bid by providing a gift, or passes. The first gift must be at least 1 cattle, and each subsequent gift must be at least 1 cattle larger than the previous gift. Each gift must be paid in full immediately.
+        * Bids are placed one cow on one plaque at a time, in plaque order.  The next bidder starts placement with the next plaque to receive the next cow (or the first plaque for the first bid), looping back to the first plaque when the all plaques have been filled equally.  As more bids are made keep adding cows to plaques in order. This may mean some plaques receive more cows at the end of the bidding phase.
+        * If a player passes, put turn marker on the turn order track at the last spot that is still open.
+        * When all players except one have passed, fill in the remaining turn order spaces. Each player takes their own plaque and add all the cattle on it to their stock.
+
+ - name: Phase 2 - Main Actions (in Turn Order)
+   text: |
+        * In turn order, each player may do the following, in no particular order
+        * You may either - choose a god **or** choose a specialist. You may only perform ZERO or ONE of these two actions in a turn. (optional)
+        * You may use one or more specialists (if one was just chosen, you must pay and use that specialist this turn)
+        * You must pick one (and only one) of the following actions - build a monument, place craftsmen, **or** raise monuments.
+
+   sections:   
+      - name: Choosing a God
+        text: |
+             * See the list below for details on the god’s advantages.
+             * If the player does not have a god yet, the player may choose a god by selecting a card and placing it in front of him.
+             * The player then adjusts their VR marker according to the modifier printed on the card.
+             * It is not allowed to choose a God that would take your VR over 40 points.
+             * Each God provides certain advantages. These can be used immediately.
+             * You are only allowed to choose ONE god in the course of a game. You cannot change this choice later on.
+             * You may **not** choose a god **and** a specialist in the same turn.
+
+      - name: Choosing a Specialist
+        text: |
+             * A player may choose a specialist by selecting the card and placing it in front of him.
+             * The player then adjusts their VR marker according to the modifier printed on the card.
+             * It is not allowed to choose a specialist that would take your VR over 40 points.
+             * You may have any number of specialists.
+             * If you choose a specialist, you **must** pay and use the specialist that turn. You may **not** choose more than one per turn. You may **not** choose a god **and** a specialist in the same turn.
+
+      - name: Using a Specialist
+        text: |
+             * To use a specialist, the player places the required amount of cattle on the specialist.
+             * The specialist then performs its action.
+             * A player can only use their own specialists. Each specialist can be used only once per turn.
+             * See the list below for details about specialists.
+
+      - name: Building a Monument
+        text: |
+             * You may place one new monument of level one on any empty area on the board.
+             * The new monument may not be placed adjacent (horizontally, vertically, or diagonally) to a monument already on the board.
+             * Gain a point on the victory track for the new monument.
+
+      - name: Placing a Craftsman
+        text: |
+             * Placing a Craftsmen involves placing the tile, and possibly taking an associated technology card.
+             * You may place any number of craftsmen in the same turn, provided all of the prerequisites are met regarding the technology, location, availability of input resources, limited number of craftsmen, and costs.
+             * **Technology Cards**
+                 * In order to place a craftsman, a player must own the matching technology card. If a player does not have the right technology, they can take any available technology card and place it in front of him (this does not cost any cattle).
+                 * The player then adjusts their VR marker according to the modifier printed on the card. A player may take more than one technology card in a turn.
+                 * It is not allowed to take a technology card without building at least one of the corresponding craftsmen, that would take your VR over 40 points, or that would be the second card of a technology you already own.
+                 * Note that each technology is only available twice and the second card is more expensive in VR terms. 
+                 * For each craftsman placed, a player advances 1, 2 or 3 points on the victory track as indicated by the number of laurel wreaths on the technology cardEach craftsman requires one type of good as printed on the technology card.
+             * **Placing Craftsmen** 
+                 * A craftsman requires 2 or 4 empty spaces, depending on the shape of the craftsman tile.
+                 * A craftsman may only be placed if it can reach at least one resource space of the required type which is not yet in range of another craftsman of the same type. A craftsman has range 3 to reach resources. You may **not** use hubs to increase this range.
+                 * There are only 3 of each type of craftsman. If they have all been placed, no more are available.
+                 * Place the craftsman tile on the board, and put one of your ownership markers on top.
+                 * For each craftsman placed, a player advances 1, 2 or 3 points on the victory track as indicated by the number of laurel wreaths on the technology card.
+             * **Secondary Craftsman** have some special rules
+                 * As soon as there is a secondary craftsman of a certain type on the board, the corresponding primary ritual good can no longer be used for rituals.
+                 * Secondary craftsmen may only be built if they can reach at least one primary craftsman of the required type (potter for vessel maker; wood carver for sculptor; ivory carver for throne maker). They can reach the primary craftsman if it is either in range 3, or if it is in range of a hub that is in range.
+                 * You do not have to pay for using hubs when building a secondary craftsman. All other restrictions to placing a craftsman still apply.
+                 * It is not allowed for one player to build both the first primary craftsman and the corresponding secondary craftsman in the same turn.
+                 * It is allowed to build a secondary craftsman such that it uses a same resource as the primary craftsman it depends on.
+             * **Set Resource Prices**
+                 * If a player has acquired a new technology card this turn, they must set the price of the new type of ritual good. The price may be set at 1, 2 or 3 heads of cattle. This is indicated by placing the corresponding price marker on the card.
+                 * After finishing a place craftsmen action, a player may raise any or all of the prices of all the previously owned technologies. Prices can be raised to 2 or 3 heads of cattle by placing the corresponding price marker on the card. Prices can only be raised, not lowered.
+                 * You may take a place craftsman action just to raise prices, without actually placing a craftsman. You may not raise prices at any other time.
+
+
+      - name: Raising Monuments
+        text: |
+             * A player may raise one or more of their own existing monuments to score victory points.
+             * Each monument may only be raised by one level each turn.
+             * A monument of level 5 can not be raised further.
+             * To raise a monument, a player must provide the correct combination of ritual goods.
+                 * Level 1 (placing a monument) - free
+                 * Level 2 - one ritual good of any type
+                 * Level 3 - two *different* goods
+                 * Level 4 - three *different* goods
+                 * Level 5 - four *different* goods
+             * Ritual goods are bought from craftsmen in range of the monument being raised.
+                 * A player needs to obtain the ritual goods by buying them from craftsmen in range (possibly using hubs). Each ritual good has to be paid for with cattle. The player raising monuments pays from their personal stock to the technology card that corresponds with the craftsman used (and belongs to the player who built the craftsman, which may be the acting player's technology card). The price per ritual good (1-3) is indicated by the price marker on the technology card.
+                 * For each ritual good it produces, a craftsman depletes a resource. Place one used marker on a resource in range of the craftsman.
+                 * If there are no more available resources, the craftsman cannot produce any more ritual goods.
+                 * You may **not** use hubs to extend the reach of a craftsman when connecting to resources.
+                 * As soon as there is a secondary craftsman of a certain type on the board, the corresponding primary ritual good can no longer be used for rituals. For example, as soon as a throne maker is present, you may no longer use carved ivory in a ritual.
+                 * To use a secondary craftsman, you must pay both the secondary craftsman for their ritual good, and pay for a primary ritual good to deliver to the secondary craftsman.
+                 * You **may** use hubs to transport the primary ritual good to the secondary craftsman. Both craftsmen use a resource (within range 3 of each craftsman tile, no hubs allowed) and place a used marker on it.
+             * The player then adjusts victory points on the track according to the current level of their monuments.
+
+ - name: Phase 3 - Revenues
+   text: |
+     * **Collect payments**. Players take all of the cattle on their technology cards, specialists and god in front of them and add these to their stock.
+     * **Collect income**. Based on the highest monument each player has on the board, they collect from 1 to 5 cattle; one cattle for each level. The number of monuments a player has built (or if there is more than one tied for highest) is irrelevant for income determination.
+
+ - name: Phase 4 - Check for Game End or Reset
+   text: |
+     * **Victory condition**. If at least one player has collected victory points equal or higher to their VR, the game ends immediately. If there is only one player who has achieved this, that player wins the game.
+     * **Tie breaker**. If multiple players have achieved their VR level, the player among them who overshoots their VR requirement by the most points wins. If this is equal as well, the tied player who has the most points in total wins. If even this is equal, the tied player who stands first in the order of play wins.
+     * **Clear used markers**. If there is no winner, remove all the used markers from the board and play another round.
+
+ - name: Specialists Reference
+   text: |
+     * **Shaman** place one resource tile (ivory, wood, clay, or diamond) on an empty area on the board. Resources can be placed on any empty land area, but not on an area that contains water, a monument, another resource, a starting area, a craftsman, or a used cube. If you pay the shaman, you must place a resource. If the resource tiles run out, you can no longer use the shaman.
+     * **Rain** **Ceremony** place one water area (2x1) on an empty area on the board. Water can be placed on any empty land area, but not on an area that contains water, a monument, a resource, a starting area, a craftsman, or a used cube. If you pay the rain ceremony, you must place a water tile. If the water tiles run out, you can no longer use the rain ceremony.
+     * **Nomads** You may ignore zoning restrictions for placing your new monuments this turn. This means you may place the new monument on any empty land area, even right next to another monument. You may pay the nomads and choose not to place a monument this turn. This can be relevant if you want to choose the nomads in a turn where you are not placing a monument.
+     * **Herd** You may place 2, 4 or 6 cattle on the herd. In return, you will get an additional 1, 2, or 3 cattle on the card from the common stock . You will collect all of these cattle in the revenue phase.
+     * **Builder** for each craftsman you build during this round, place the first two cattle of the building price on the builder card. You will get this cattle back during the revenue phase. Note that you must pay the builder 2 cattle before you can use the specialist's abilities, so the total amount of cattle required this turn will be higher; but you will get (some) cattle back at the end of the turn. You may pay a builder and choose not to build anything. This can be relevant if you want to choose the builder in a turn in which you are not building.
+
+ - name: Gods Reference
+   text: |
+     * **Shadipinyi, God of Drunks (I)** If the god Shadipinyi is in play, place his plaque at the front of the queue, before the first player. The plaque functions just like the player plaques, and receives cattle during the generosity of the kings phase. The player who adores Shadipinyi gets all of the cattle placed on this plaque in addition to their own, so receives about double the amount of cattle as other players do.
+     * **Elegua, God of Beginnings (I)** In each generosity of the kings phase, the player who adores Elegua may pay up to three cattle for the first gift (bid) from the common stock instead of paying them from their own stock. If the player wants to bid more, they need to add cattle from their personal stock.
+     * **Dziva, who changes her mind (II)** The player adoring Dziva may raise and/or lower the prices on all of their technology cards at the beginning of the turn, even if they have not chosen a place craftsman action. Note that this is the only way you can lower prices.
+     * **Eshu, God of Connections (II Build Craftsmen and Raise Monuments)** The player adoring Eshu has a transportation range of 6 instead of 3. Note that all craftsmen on the board have range 6, increasing the number of map resources available to craftsman. This may increase or decrease the number of available building spots! The range effect occurs only during the turn of the Eshu player.
+     * **Gu, The Master Craftsman (II Place Craftsmen)** If a player adores Gu, they only pay 1 VR for each acquired technology card. If a player starts adoring Gu after aquiring one or more technology cards, they earns a VR rebate. This effect occurs before a player incurs the additional VR for Gu; therefore, it may be possible to choose Gu when you are at 40 VR.
+     * **Obatala, Creator of Mankind (II Build a Monument)** The player adoring Obatala may place two monuments instead of one when taking the Build a Monument action.
+     * **Atete, Goddess of Fertility (II Raise Monuments)** The player adoring Atete may use each resource a second time.
+     * **Tsui-Goab, The Shape Shifter (II Raise Monuments)** The player who adores Tsui-Goab does not need to provide different types of ritual goods when raising a level 2 or higher monument. He may use the same type of ritual good multiple times, e.g. two masks instead of a mask and an ivory carving. However, even Tsui-Goab cannot use primary ritual goods once secondary ritual goods of that type become available.
+     * **Anansi, The Trickster (II Raise Monuments)** Anansi only pays 1 cattle per ritual good bought at a craftsman regardless of the set price. If a secondary ritual good is bought, the player must still provide the primary ritual good and pay that craftsman 1 cattle as well.
+     * **Qamata, God of Trade (II Raise Monuments, of each player)** If Qamata is in play, all players using hubs have to pay to the Qamata card instead of to the common stock.
+     * **Engai, Provider of Cattle (III)** The player adoring Engai gains 2 additional cattle in each revenue phase.
+     * **Xango, Lord of Drummers (IV)** Xango has no particular benefits, but lowers the VR of the player adoring him by two. In addition, should multiple players reach their VR in the same round, Xango wins any ties.

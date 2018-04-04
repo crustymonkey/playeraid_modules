@@ -1,0 +1,331 @@
+name: John Company
+description: John Company recreates the success of the East India Company while each leading family also attempts to grow its own fame and wealth.   [See it on BGG](https://boardgamegeek.com/boardgame/211716/john-company)
+credits: Sean Owens
+enabled: true
+text_type: markdown
+
+sections:
+ - name: Game Concepts
+   text: |
+        * Over the course of the game, players will advance the members of their family through positions in the East India Company, hoping to improve their family’s wealth and their reputation in polite society. The character of each game of John Company is determined by the performance of the Company, which is jointly operated by all the players. The Company will usually attempt to establish a profitable trade and a political foothold in India, but its goals are largely dependent upon the players. 
+
+        * *Regions* There are eight region cards that represent an area comprising modern-day Pakistan, India, and Bangladesh.
+            * Economic status - A region is either prosperous or depressed. The economic status of a region is indicated by which side of the card is face up, either the prosperous side (plain) or the depressed side (greyscale with striped watermark).
+            * Political status - A region is either dominated or sovereign. A region can be dominated by another region or the Company. Dominated regions and their dominator are collectively referred to as an empire. When a region is dominated, the right column of its event table is covered by the dominator.  Sovereign regions have the right column of their event table clearly visible. 
+            * Trade status - A region is either open or closed to British trade. Closed regions are placed to the left of the board. Regions that are open are placed above the board near one of the three presidencies. 
+
+        * *Offices* Throughout the game, players gain and lose control of offices within the East India Company. A player’s family members (cubes) move through the Company via promotion. In general, writers are promoted first to senior offices and then to executive offices.
+            * When a player controls an office, they place one of their cubes on the slot associated with that office. This cube is known as the officeholder and will allow its owner to control different aspects of the Company’s behavior.
+            * Most commonly, officeholders leave the Company through Attrition, which is the primary scoring mechanism in the game.
+            * When an officeholder leaves the Company due to Attrition, the owning player may move that cube onto a prize card, exchanging money for victory points and special abilities.
+
+        * *Family* cards represent the different family interests in the company. Each of the six player cards has a unique benefit.
+
+        * *Money* moves and its location matters. Money must always be located in a family treasury (near a player) or an office treasury. The Company brings most of the money into the game through its trade in India. Players may earn a share of this money through Dividends or by placing their family members in various key offices and profiteering from the Company’s activities.
+            * White = 1£
+            * Red = 5£
+            * Blue = 10£
+
+        * *Cubes* represent a players family. Players are restricted by the cubes in their stocks. If a player without remaining cubes needs to place one or more cubes, that player must use their cubes on any prize card or the manor resource box.
+
+        * *Cards* Other than regions, provinces, and families, there is an Evening Post deck where events are drawn, and Prize cards where player cubes removed through attrition can retire to for victory points and some special abilities.
+
+        * *Negotiations & Promise Cubes* Players are free to discuss the game and negotiate during play. Players are not held to any promises of actions on future phases or game turns, but may give each other the following items
+            * Family-owned money and ships.
+            * Promises on their family card. 
+            * Family cubes from their stock, which are called Promise Cubes. As part of a negotiation, a player may offer one or more cubes from their stock. These cubes are held by the player accepting the offer and are now called promises. At the end of the game, players lose two victory points for each of their promises held by another player.
+            * A promise cube must be returned to its owner player if, at any time:
+                * You pay the player holding the promise cube £2.
+                * You show hiring preference by promoting the player holding the promise over at least one other player.
+                * The holder returns the promise. If you have one of the holder’s promises, it is returned to him. 
+        
+           
+ - name: Setup
+   text: |
+        * *Early Company Scenario* - There are several setup and play scenarios detailed in the rules; this guide covers the Early Company game for 4 to 6 players (see the rules for 2-3 players, solo play, and a longer Campaign game). 
+        * Place the board in the center of the table. Use the colorful John Company side (not the back side labeled "John & Co.")
+        * Deal out six random prize cards face-up and place them in a row at the bottom of the board. 
+        * Remove "Monopoly Revoked" and "Revoke Monopoly" from the Evening Post cards. Shuffle the rest of the deck and place it facedown on the top right of the board. 
+        * Place a status marker (black cube) on the
+            * 4 space of the share price track
+            * 1 space of the game turn track
+            * 0 space of the Company revenue track
+            * Center space of the Balance of India
+            * Picture of parliament on the bottom right side of the board. 
+        * Place a black disk on the officeholder slot of the China Office.
+        * Give each player a set of colored cubes, a Family card to place in front of them (family side face-up) and a starting treasury of £5.
+        * Each player takes a number of starting cubes determined by the player count. Place these cubes above the player’s family card.
+            * Four players: 6 starting cubes each
+            * Five or Six players: 5 starting cubes each
+        * Then, each player takes an additional 12 cubes of their color and places them below their family card. These cubes form the player’s stock.
+        * Any remaining cubes, Prize cards, and unused Evening Post cards are returned to the box. 
+        * Starting with a random player and proceeding clockwise, each player places one of their starting cubes on any available vacancy (the empty squares along the blue ribbon).
+        * Once each player has filled a vacancy, repeat the process in the reverse order, with the player who previously placed last taking the next turn. Continue until all vacancies are filled.
+        * When a cube is placed on an executive office (denoted by an "E" and a gold square), an additional starting cube of that color is placed on the Court of Directors.
+        * After all vacancies in the Company are filled, players roll one die for each of their remaining starting cubes and place the cube in the resource box corresponding to the die roll.
+        * Shipyard cubes are placed in the highest empty slot in any column (so the 6 slot must be filled in any column before the 5 slot).
+        * NOTE: For your first game you can pick a start player as Chairman, and then in vacancies in order along the blue ribbon from the Chairman.
+       
+ - name: Phase 1 - The Family Action
+   text: |
+        * Beginning with the player controlling the Chairman office and proceeding clockwise, each player *must* take a single family action. If the Chairman office is currently vacant, begin with the player who was most recently Chairman.
+        * Play order
+            * *Choose* a a single family resource box and place a number of cubes on it.
+            * *Place* cube(s)
+            * *Pay* cost (if listed shown on the resource box)
+            * Buying one or more *Shares* - pay Company and Chairman allocates funds (if vacant wait until election).
+            * Buying one or more *Shipyards* - Any column may be selected. Place in 6 before 5 in a column.
+            * Buying one or more *Factories* - Any space may be selected.
+            * Placing *Writers, Officers, and Captains* - A player may place one or two cubes in one of these boxes for free. 
+            * Buying a *Manor* Only one manor can be purchased per turn.
+            * If a player without remaining cubes needs to place one or more cubes, that player must use their cubes on any prize card or the manor resource box.
+            * If a player cannot remove any such cubes, they are excused from having to take a family action that game turn.
+
+ - name: Phase 2 - Office Actions
+   text: |
+        * In the Company Phase, Company offices are given the opportunity to take actions. The Chairman begins the phase by filling any vacancies.
+        * Then, following the red Company track starting with the Ship Purchasing office, each office is given the opportunity to act.
+        * Provincial offices act after their corresponding Presidents in order of formation (oldest office acting first).
+        * When an office acts, it must resolve its actions *in the order indicated* on the office.
+        * Blue and black actions are *optional*
+        * Blue actions require a *Check*
+        * Green actions are *mandatory*
+  
+   sections:          
+      - name: Filling Vacancies
+        text: |
+             * Elect chairman
+             * Chairman fills executive offices, promoting a senior officeholder, or a writer if no senior officer
+             * Presidents fill provincial offices promoting a writer or any army officer
+             * Director of Trade promotes any writer to purchasing offices or military affairs
+             * If no promotion possible leave the space blank for the next round
+             * Pay nepotism promise cubes if necessary
+             * First, fill the Chairman position. The former Chairman makes the first nomination. Any player with at least one cube in the Court of Directors may be nominated
+             * Then each player (clockwise starting with the nominee) may choose to support the nominee or not. Each cube in the Court provides a single vote of support. Nominees may choose to not support their own nomination.
+             * If a nominee receives a simple majority support, the Chairman election is over. The successful nominee moves one of their share cubes from the Court of Directors to the Chairman office.
+             * If the nomination fails, the player to the left of the previous nominator makes the next nomination and the process repeats.
+             * If the Court fails to agree upon a nominee (after each player makes one nomination), the former Chairman decides who of the failed nominees becomes the new Chairman.
+             * The newly elected Chairman allocates any money from share purchases (during the Family Action) to Company offices with treasuries. 
+             * Continue filling offices following the blue ribbon.
+             * Executive offices are filled by the Chairman, who promotes any cube on a senior office (grey S) to the new executive office. If there are no senior officeholders, promote any writer directly to the executive office. 
+             * Provincial offices are filled by their corresponding President, who promotes any writer or officer in any army to the office.
+             * Purchasing offices are filled by the Director of Trade, who promotes any writer to the office.
+             * In the rare instance that a vacancy cannot be filled, the office remains open this game turn and is skipped during the Company Phase.
+             * Nepotism. When filling any office, except the Chairman, players are penalized for Nepotism. If a player promotes their own cube over another player’s cube, the promoting player must give one of their cubes from their stock as a promise to every player with at least one eligible candidate. 
+
+      - name: Chairman's Action - Take Debt
+        text: |
+             * Once, at any point during the Company Phase, the Chairman may take the optional Debt action.
+             * Take £5 an allocate to one or more treasuries
+             * Place black disc in Court
+             * Details: The Chairman places a black disk on the Court of Directors and immediately allocates £5 to one or more treasuries in the Company. (Each black disk on the Court of Directors costs the Company £1 each game turn during the Trade Phase. This debt can never be repaid.)
+
+      - name: Ship and Goods Purchasing Offices
+        text: |
+             * Ship Purchasing and Goods Purchasing officials have the mandatory purchase action.
+             * Purchase as many ships or goods as can be afforded and deliver those items to the Director of Trade.
+             * Buy cheapest first
+             * Check factory good cost from Evening Post discard pile.  If "X" only buy non-factory goods.
+             * Shipyard owners get £1 per cube below purchased ships. Factory owners get the value of the good with their cube below the good purchased (value is per the Evening Post discard pile).
+
+      - name: Military Affairs Office
+        text: |
+             * The Military Affairs official takes a mandatory action to buy goods (now called guns) with a purchase action and must place those guns plus any officers in its office with a logistics action.
+             * Buy as many guns as possible using treasury funds
+             * Buy cheapest first
+             * Check factory gun cost from Evening Post discard pile.  If "X" only buy non-factory guns.
+             * Pay factory owners. Factory owners get the value of the gun cube purchased (per the Evening Post discard pile).
+             * Move all officers and guns from the office to any presidency army boxes.
+             * Check if 3 officers are in the army already.  And check if no space available; those cubes are returned to owners.
+             * May transfer guns from one presidency to another with owner’s permission.
+
+      - name: Director of Trade
+        text: |
+             * The Director of Trade must take a Logistics Action to move goods and captains in its office to presidencies.
+             * Offer captaincies to families with cubes in the office, in any order.
+             * Families that purchase a ship add a cube to denote ownership. Place ship in trade office.
+             * If ship not purchased (by choice or lack of funds) return cube to owner.
+             * Move all ships and goods from the office to any presidencies.
+             * May transfer ships and goods from one presidency to another with owner’s permission.
+
+      - name: Presidencies
+        text: |
+             * Blue actions spaces require a Check to see if the action is successful. To perform this Check, a player rolls as many dice as the "strength" of the action minus any penalty (both are described in each individual action).
+             * Of the dice that are rolled, only the lowest die counts.
+                 * A roll of 1 or 2 is a success.
+                 * A roll of 3 or 4 has no effect.
+                 * A roll of 5 or 6 is a failure, and the officeholder is immediately returned to that player’s stock of unused pieces. A vacated office has no further opportunities to act this game turn.
+             * Any blue action may be taken more than once as long as the Check has not failed, and the appropriate money, resources or armies are available.
+             * There are three Presidents with three optional actions each, all requiring a Check.  Campaign, Trade, and Sail.
+                 * The Campaign Action can be used to dominate new regions (opening them if they were closed) and create new Company Offices. Select a target from those listed next to the Campaign Action icon. Presidents have only one listed target. Governors have multiple targets. Any listed region can be targeted as long as it is not already dominated by the Company.
+                 * The Open Trade Action adds closed regions to the corresponding Presidency, opening them for trade.
+                 * The Sail Action allows Presidents to complete orders on regions in their presidency to generate revenue for the Company and a Presidential Bonus for their family.
+        sections:         
+           - name: Campaign
+             text: |
+                  * Select a target from list next to Campaign icon
+                  * Calculate strength. +1 for each unexhausted gun and/or officer.  +1 for each £2 spent to hire additional mercenaries.
+                  * Subtract defense of target region (or if part of empire the total defense)
+                  * Roll check
+                  * Victory. move region to presidency area open for trade. If region was sovereign of an empire all dominated regions move to closed and are now sovereign.
+                  * Place provincial office card over right column to denote region is dominated.
+                  * Families receive plunder for each officer cube in the successful army.
+
+           - name: Open for Trade
+             text: |
+                  * Choose a target that is both closed and sovereign.
+                  * Calculate strength. +1 for each £1 spent. No penalty
+                  * Roll check
+                  * Success. move the region and its empire into the acting President’s presidency to denote open for trade.
+
+           - name: Sailing
+             text: |
+                  * Determine the strength of the action. +1 for each £1 spent.
+                  * Subtract one for each region in the presidency after the first.
+                  * Success: Fill one or more orders, selected in any order, by exhausting goods and/or ships in this presidency equal to the order’s demand.
+                  * Each order to each demand space requires ships >= goods.
+                  * After an order is filled, place a black disk on the order’s demand space
+                  * Increase the Company’s revenue on the revenue track by the order amount
+
+      - name: Provincial Offices
+        text: |
+             * There are two types of provincial offices, governorships and residencies (which one depends on the region). During their turn in the Company Phase, governors may take the Campaign Action and/or the Invest Action.  Residents may take the Invest Action.
+             * Campaign. Identical to the Presidency Campaign action. See above.
+             * Invest.
+                 * Select a depressed region
+                 * Determine strength. +1 for each £1 spent. No penalty
+                 * On success flip the region card to prosperous, keep any black disks in their relative position
+                 * Move the elephant to this region (with no event)
+                 * Tilt Balance of India toward order.
+
+ - name: Phase 3 - Trade Activities - Revenues, Expenses, Dividends, and Bailouts
+   text: |
+        * Player revenue is generated in several ways and always comes from the bank.
+            * Tax. Place money equal to the current tax value of their regions on each provincial office that currently exists. If a player occupies that office, he may transfer any portion of this game turn’s tax revenue to his family’s treasury or the region’s presidency immediately.
+            * Presidential Bonuses. The family controlling each presidency takes money equal to the number of fulfilled orders on regions in that presidency.
+            * Interlopers. Each family takes £2 for each of their ships with a captain. 
+            * Other Revenue. The "Investment Bank" and "South Seas Firm" prizes provide additional revenue as described on the card. The Sykes and Paxton families also generate revenue according to their special powers described on their family cards.
+        * Company Expenses are managed by the Chairman, paid using the revenue gained from filling orders. As expenses are paid, the Chairman should adjust the revenue marker on the revenue track.
+        * The following expenses are paid to the bank
+            * Debt Service. Pay £1 for each black disk on the Court of Directors. 
+            * Military Upkeep. Pay £1 for each gun and officer in a presidency.
+            * Country Trade. Pay £1 for each captain on a ship.
+            * If Company expenses cannot be met, take enough £5 Emergency Loans to cover the remaining expenses. Add a black disk to the Court of Directors for each £5 taken. Any portion "left over" must be immediately allocated to any Company treasuries. Any new loans do not need to be paid for until next game turn.
+        * Dividends must be paid to family treasuries
+            * The Chairman may choose to pay dividends with remaining Company revenue. The cost of paying one dividend is £1 from the bank given to each player per cube they have in the Court of Directors. Update the revenue track to indicate how much revenue remains to be allocated. Multiple dividends may be paid. If more than one dividend is paid, increase the share price one space. If no dividend is paid, the share price falls one space. Dividens may not be paid with money from Emergency Loans
+            * Angry Shareholders. 
+        * After paying expenses and distributing dividends, the Chairman must allocate all remaining revenue to office treasuries. Place money from the bank into treasuries, then update the revenue track to indicate how much revenue remains to be allocated. Money allocated to treasuries may be spent during the next Company Phase.
+        * Continue until the revenue track is reduced to 0.
+        * A Bailout occurs when the share price would fall below "3." If the Company share price is at "3" a Dividend must be paid if possible. Emergency Loans cannot be used to pay this dividend. If the dividend cannot be paid, a Bailout occurs.
+            * First, reduce shares. If a player only has a single cube in the Court of Directors, it is returned to their stock.
+            * If a player has more than one cube in the Court of Directors, all but one cube are returned to their stock.
+            * Then, reset the share price to "3."
+            * Finally, each executive officeholder (including the Chairman) must vacate and may score a prize if the owner pays an additional £2 to the bank for each prize cube.
+            * If, after reducing shares during a Bailout, no player cubes remain in the Court of Directors, the game is over. Each officeholder in an executive office subtracts three victory points from their owner’s final score. 
+
+ - name: Phase 4 - Evening Post
+   text: |
+        * Draw the top card from the Evening Post deck and place it face- up on top of the discard pile then resolve the events. Each Evening Post card has three steps. Events in India, Attrition, and Local News which will either be a Domestic Event or a Proposed Law.
+
+   sections:     
+      - name: Events in India
+        text: |        
+             * Each game turn there are a number of Events in India. 
+             * The region where these events take place depends upon the movement of the Elephant. The Elephant moves as many times as indicated by the large number on the game turn’s Evening Post card.
+             * Unless redirected by Conquest or Revolt, the Elephant’s moves are dictated by each region’s number and it will move to the next higher region e.g. from Punjab (1) the Elephant moves to Maratha (2), and if the Elephant is in Madras (8), its next move will be to Punjab (1).
+             * An event occurs in each region the Elephant visits.
+             * When the Elephant moves to a new region roll the event dice to determine the event based on the region stability, indicated by the marker on the Balance of India track at the bottom left of the board.
+                 * During order, two dice are rolled and the lowest result is used.
+                 * During chaos, two dice are rolled and the highest result is used.
+                 * During equilibrium, only a single die is rolled to determine the event
+             * The Balance of India may change over the course of play. These changes are called tilts. When a tilt occurs, the marker on the Balance of India track moves towards the direction of the tilt. If the marker was already in the space it tilted towards, it does not move.
+             * After resolving the event, if additional events remain to be resolved, the Elephant continues its move and repeat this process as another event occurs.
+             * Events include
+                 * **Conquest** The acting region attempts to conquer the target region, which is listed below the Conquest event icon.
+                     * If the target region has already been conquered by the acting region, follow the black arrow to the first unconquered region and attempt to conquer that region instead.
+                     * If all regions are dominated, the event should be treated as a Status Quo event.
+                     * To resolve the conquest, compare its strength (the number next to the cannon) to the target’s defense, which is the sum of its defense value and that of all of its dominions.
+                     * If a region within a Presidency (not dominated) is attacked, the corresponding President may allocate unexhausted guns or officers in the presidency to boost the region’s defense. Each gun or officer allocated increases the defense by one and is exhausted. Mercenaries may also be hired to increase the defense by one for every £2 spent.
+                     * Regions dominated by the Company no longer use their written defense values. Instead, if attacked, the provincial office of the region (or President if vacant) may allocate unexhausted guns or officers in the presidency to the defense and may hire mercenaries as with a region within a Presidency (above).
+                     * If the Conquest strength is greater, the target region becomes dominated by the acting region and takes the acting region’s Trade Status.
+                     * This may cause a region to move from one presidency into another or make a region closed, which disrupts any orders on it.
+                     * If the sovereign of an empire is conquered, all regions previously dominated by that empire become sovereign and closed.
+                     * When Conquest is successful and if further events remain to be resolved this game turn, the Elephant will next move to the lowest-numbered sovereign region (not including this region).
+                     * If a region dominated by the Company is conquered, place a black disk on the provincial office’s current officeholder.  This office will be eliminated at the end of Attrition.
+                     * If a presidency’s last region becomes closed, place a black disk on that presidency’s current officeholder. The office will be eliminated at the end of Attrition. If seven or more regions are now closed the game may end.
+                 * *Flip* Turn the region card over.
+                     * If flipped to depressed, any completed orders are disrupted. Additionally, the Balance of India tilts towards chaos.
+                     * If the region was flipped to prosperous, the Balance of India tilts towards order.
+                 * *Revolt* The region becomes sovereign and closed.
+                     * Any completed orders are disrupted.
+                     * If a region dominated by the Company revolts, place a black disk on that provincial office’s current officeholder. This office will be eliminated.
+                     * Revolts can be canceled in Company-dominated regions if the provincial office can equal the result of the event die roll that triggered the Revolt (per the region card) with the strength of its Police, which starts at zero and increases by one for each gun or officer it exhausts from the presidency and each £2 it spends. Orders are not disrupted nor does the Balance of India tilt.
+                     * If a presidency loses its last region, the corresponding presidency is eliminated (see Dissolution of Presidency). The Balance of India tilts towards chaos, and, if further events remain to be resolved this game turn, the Elephant will now move to the lowest-numbered dominated region if possible.
+                 * *Collapse* Any completed orders are disrupted. The Balance of India tilts towards chaos.
+                 * *Status Quo* The Balance of India tilts towards order.
+                 * *Disrupted Orders* Whenever a region becomes closed, any orders on it are disrupted.
+                     * The President (or former President if vacant) associated with the order immediately removes as many ships as the demand of each filled order (if possible) from either the Presidency’s holdings or those ships it has exhausted, and returns them to the stock.
+                     * Ships without captains must be removed before those with captains. 
+
+      - name: Attrition and Claiming Prizes
+        text: |
+             * Roll a die for each filled office.
+             * If the result is equal to or higher than that office’s stress threshold, the officeholder will vacate the office.
+             * Shift the officeholder above their slot to indicate this.
+             * Stress thresholds
+                 * Chairman - 4 or higher
+                 * Executive Offices - 5 or 6
+                 * Senior Offices - 6
+                 * Offices with a black disk - automatically role a 6 and must vacate
+             * After all attrition dice have been rolled, each vacating cube may score one prize of that office’s rank or be returned to its owner’s stock.
+             * Offices that had a black disk are now elimoinated.
+                 * The officeholder must pay an extra £2 in addition to the cost of the prize.
+                 * Return all ships, goods, captains, and money associated with the office or presidency to the appropriate stocks.
+                 * Keep the black disk over the officeholder spot to indicate it can no longer be filled.
+                 * For eliminated Provincial Offices, return the provincial office card with the rest of the unused cards.
+             * Prizes are claimed starting with the Chairman and following the blue ribbon.
+             * Pay the cost indicated on the prize card to the bank and then move the cube from the vacated office to the prize card.
+             * The Chairman is treated as an executive office.
+             * Some prizes provide players with special benefits.
+             * Eliminated Ofices are no longer available for placement. 
+
+      - name: Local News
+        text: |
+             * All Evening Post cards have either a Proposed Law or Domestic Event at the bottom of the card.
+             * Domestic Event
+                 * One-time effects. Domestic Events always take effect.
+             * Proposed Law
+                 * A law that can change the rules of the game, if voted to pass.
+                 * All effects of passed laws are cumulative.
+                 * Before voting, the Chairman (or former if vacant) should place a status marker on the voting track to indicate the proposal’s popular support.
+                 * Starting with the Chairman and proceeding clockwise, each player votes once.
+                 * When a player votes, they either increase or decrease the proposal’s current support by their total political power, which is the sum of shipyards, factories, and any money they choose to spend (1 pound per vote).
+                 * Support cannot go below -10 or above 10.
+                 * If support is greater than 0 at the end of voting, it passes and is placed to the right-hand side of the board, remaining in effect for the rest of the game.
+
+ - name: Phase 4 - Refresh 
+   text: |
+        * The board state is reset for the next game turn.
+        * In each region, remove any black disks on completed orders.
+        * Exhausted ships are returned to their Presidency or owning firm.
+        * Exhausted goods are returned to the stock. Exhausted guns and officers are unexhausted.
+        * Cubes in the captain resource box move to the Director of Trade Office.
+        * Cubes in the officer resource box move to the Military Affairs Office.
+        * Place a ship on each empty ship slot in the shipyard resource box and place a good on each empty good slot in the factory resource box.
+        * Move the marker on the game turn track forward one space.
+        * Check if any game end triggers have happened.
+
+ - name: Phase 4 - Game End 
+   text: |
+        * The game ends...
+            * At the end of the 6th game turn. Players complete that turn’s Attrition rolls and the game is over.
+            * If, after reducing shares during a Bailout, no player cubes remain in the Court of Directors, the company has failed and the game is over.
+            * If, after the third game turn, 7 or more regions are closed at the end of the Refresh, India has moved away from European interests, and the game is over.
+        * The player with the most victory points wins the game.
+            * Players gain one victory point for each share cube and two victory points for each manor cube.
+            * Players also gain victory points for each prize cube gained during Attrition.
+            * The amount of victory points associated with each prize is listed inside the large hexagon on the prize card.
+            * Players lose two victory points for each of their promises held by another player. 
+            * If after Company Failure, each officeholder in an executive office subtracts three victory points from their owner’s final score. 
+            * If after India has moved away from European interests, each presidency, provincial office, and the Chairman subtracts three victory points from their owner’s final score.
+        * If there is a tie, the player with the most prize cubes wins. If there is a further tie, the player with the most money wins. 
