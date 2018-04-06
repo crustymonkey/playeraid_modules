@@ -7,7 +7,7 @@ text_type: markdown
 sections:
  - name: Game Concepts
    text: |
-        * **Land** Each small square on the map that isn’t water is called a land area. At the start of the game, land areas may contain a resource or they may be empty. Land areas are adjacent with up to 8 areas in horizontal, vertical and diagonal directions.
+        * **Land** Each small square on the map that isn't water is called a land area. At the start of the game, land areas may contain a resource or they may be empty. Land areas are adjacent with up to 8 areas in horizontal, vertical and diagonal directions.
         * **Water** The blue areas on the map are water areas. All water that is horizontally or vertically adjacent forms one large water area. Water areas that are only diagonally adjacent do not form one water area. More water can be placed later in the game by the rain ceremony. It is not possible to build anything on water.
         * **Resources** Some areas on the map contain resources: clay, wood, ivory or diamonds. More resources can be added later in the game by the shaman. (Separate resource tiles are provided to represent this.) Goods are the materials a resource space can produce for a craftsman to use.
         * **Starting Areas** One of the map tiles shows 6 starting areas. These are potential starting points for players.
@@ -15,12 +15,12 @@ sections:
         * **Used Markers** Used markers are placed on resources to indicate that these have been used and are no longer available for other players in this round.
         * **Ownership Markers** Ownership markers are placed on craftsmen on the board to show which player owns them. They are also used as price markers on the technology cards.
         * **Cattle** All prices are paid in heads of cattle. Silver coloured cattle is worth 1, gold coloured cattle is worth 3.
-        * **Paying to a Card** A player has their own stock of cattle. Some payments are made to the common stock, but most are paid to a card. This means the cattle is placed on the card. Cattle placed on a card cannot be used by the card’s owner and remains on the card until collected by the owner in the revenue phase.
+        * **Paying to a Card** A player has their own stock of cattle. Some payments are made to the common stock, but most are paid to a card. This means the cattle is placed on the card. Cattle placed on a card cannot be used by the card's owner and remains on the card until collected by the owner in the revenue phase.
         * **Craftsmen** There are 7 types of craftsmen, which can be placed on the board. There are four primary craftsmen: potters, ivory carvers, wood carvers and diamond cutters. There are also three secondary craftsmen: vessel makers, throne makers, and sculptors.
         * **Technologies** Each craftsman type has two corresponding technology cards. Only a player owning the correct technology may build these craftsmen. The technology card is also used to indicate the price that craftsman demands. In addition, payments to craftsmen are made to the technology card of the player owning the craftsman.
         * **Specialists** There are 5 specialists: the shaman, the rain ceremony, the herd, the builder, and the nomads. These cards can be taken by players to obtain certain special abilities. Specialists work only when they are paid. The payment is made to the specialist card.
         * **Gods** The game contains 12 gods, of which 8 are in play. Each player may choose to adore at most one god. This choice is final for the rest of the game. It is not obligatory to choose a god.
-        * **Victory Requirement** (VR) At the start of the game, each player requires 20 victory points to win. This requirement is called the player’s VR (Victory Requirement). By taking specialist or technology cards, or a god card, players will increase their VR (or in some cases decrease). This changes the number of points that player will need to win. A player’s VR can never be higher than 40. An action that would increase a player’s VR above 40 is not allowed. A round wooden piece in each player colour is used to indicate the VR.
+        * **Victory Requirement** (VR) At the start of the game, each player requires 20 victory points to win. This requirement is called the player's VR (Victory Requirement). By taking specialist or technology cards, or a god card, players will increase their VR (or in some cases decrease). This changes the number of points that player will need to win. A player's VR can never be higher than 40. An action that would increase a player's VR above 40 is not allowed. A round wooden piece in each player colour is used to indicate the VR.
         * **Victory Points** (VP) A player scores victory points for owning monuments and craftsmen. The current number of victory points can always be determined by counting the points of their buildings on the board, but it is easier to keep track of them on the victory points track. A wooden cube in each player colour is used to show the current VP.
         * **Order of Play Track** The order of play track shows the order in which players will take turns during the religion and culture phase. A wooden cube in each player colour is used to show the order of play. Empire Plaques. Each player, and one of the gods, owns an empire plaque. This plaque is used for payments during the generosity of the kings phase.
         * **Transportation Range** A building, resource or monument is in range of another one if it is at most three steps away. These steps may be horizontal, vertical or diagonal. These may cross empty or built-over land areas; craftsmen or resources do not block or alter range. Each continuous water area counts as only one step, even if it is very large.
@@ -65,7 +65,7 @@ sections:
    sections:   
       - name: Choosing a God
         text: |
-             * See the list below for details on the god’s advantages.
+             * See the list below for details on the god's advantages.
              * If the player does not have a god yet, the player may choose a god by selecting a card and placing it in front of him.
              * The player then adjusts their VR marker according to the modifier printed on the card.
              * It is not allowed to choose a God that would take your VR over 40 points.
