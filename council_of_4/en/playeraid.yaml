@@ -1,0 +1,221 @@
+name: Council of 4
+description: "[See it on BGG](https://boardgamegeek.com/boardgame/173101/council-4)"
+enabled: true
+text_type: markdown
+credits: Jay Deiman
+sections:
+    - name: Setup
+      sections:
+          - name: Main Board
+            text: |
+                *  Place the main board and track board side by side (choose
+                   either side of the main board when starting)
+                *  Shuffle the 14 city tokens and place 1 token face up on the
+                   corresponding space of each city. The gray city does not
+                   receive a token
+                *  Divide the business permit tiles into 3 decks based on the
+                   region (color).  Shuffle the 3 decks separately and place
+                   them face down on their corresponding spaces.  Draw 2
+                   tiles per region and place them face up in their
+                   corresponding locations
+                *  Place the Queen mini in the gray city
+                *  Place the Queen's reward tiles on the track board in a
+                   pile in numerical order with the "1" on top and "5" on the
+                   bottom
+                *  Place the 3 region reward tiles on their corresponding spaces
+                   on the regions on the main board
+                *  Place the remaining 4 general reward tiles on their specific
+                   spaces on the center of the track board
+                *  Insert 4 councilors at random in each council line (1 for
+                   each region on the main board, and the Queen line on the
+                   track board).  Place the 8 remaining councilors next to
+                   the board
+                *  Shuffle the politics cards and place the deck facedown
+                   next to the board
+                *  Place the servant tokens in a pile next to the board
+          - name: Player Setup
+            text: |
+                *  Take the 1 big merchant of one color and the 10 small
+                   merchants of the same color
+                *  Place 1 small merchant of your color on the "0" space of the
+                   scoring track
+                *  Take the 2 cardboard marker tokens of your and place one
+                   on the 0 space of the nobility track.
+                *  *Determine a start player*
+                *  Now, depending on player order positions, place your
+                   remaining cardboard marker token on the coin track and take
+                   a number of servants based on the table below:
+  
+                | Player | Coins | Servants |
+                | ------ | ----- | -------- |
+                | 1 | 10 | 1 |
+                | 2 | 11 | 2 |
+                | 3 | 12 | 3 |
+                | 4 | 13 | 4 |
+  
+                *  Take an overview card
+                *  Draw 6 politics cards
+    - name: Gameplay
+      text: Each turn is composed of 2 phases
+      sections:
+          - name: Phase 1
+            text: |
+                Draw a politics card from the deck.  If the deck is empty,
+                shuffle the discarded cards to form a new deck.
+          - name: Phase 2
+            text: |
+                Perform 1 [*main action*](#main_actions) and,
+                optionally, 1 [*quick action*](#quick_actions).
+                You **must** perform a single main action.  If you choose
+                to perform a quick action, you can do that either before **or**
+                after your main action.
+          - name: Main Actions
+            id: main_actions
+            sections:
+                - name: Elect a Councilor
+                  id: elect_councilor
+                  text: |
+                      Choose 1 of the available councilors next to the board.
+                      In a council line of your choice, slide the councilor
+                      in on the side with the printed arrow.  "Push" the
+                      councilor at the end of the line out and place it
+                      with the other councilors next to the board.  Receive 4
+                      coins.
+                - name: Acquire a Business Permit Tile
+                  text: |
+                      Discard 1-4 politics cards corresponding to the colors
+                      of the councilors in a region.  You can pay less than
+                      4 politics cards by supplementing with coins per the
+                      table below:
+                      
+                      | Cards Played | Coins Needed |
+                      | ------------ | ------------ |
+                      | 1 | 10 |
+                      | 2 | 7 |
+                      | 3 | 4 |
+                      | 4 | 0 |
+
+                      Choose 1 of the 2 face up business permit tiles in the
+                      region you have payed for and place it face up in front
+                      of you.  Immediately take the bonus(es) on the tile.
+                      Replace the tile with the top one of the corresponding
+                      deck.
+                - name: Place a Merchant Using a Permit Tile
+                  id: place_merch_permit
+                  text: |
+                      Using 1 of the face up business permit tiles, place a
+                      small merchant in the city corresponding to the letter
+                      (you choose if more than 1 letter).
+                      Turn the used tile face down to show it has been used.
+
+                      Rules for placing a merchant:
+                      
+                      *  You may only place **1 merchant per city**
+                      *  You must return 1 servant for each merchant already
+                         in the city.
+                      *  When placing a merchant, immediately obtain the bonus
+                         indicated by the city token.  **Additionally, take the
+                         bonus for all cities directly connected by a road
+                         in which your merchants are already present**.
+                      
+                      Reward Tiles:
+                      
+                      *  If you are the first player to have a merchant in
+                         all cities of a color or a region, take the
+                         corresponding reward
+                         tile **and** the topmost Queen's reward tile (if
+                         available).
+                - name: Place a Merchant With the Help of the Queen
+                  text: |
+                      You must satisfy the requirements in the Queen's "balcony"
+                      similar to [using a permit tile](#place_merch_permit).
+                      Move the Queen to a city of your choice following
+                      these rules:
+                      
+                      *  The Queen must use uninterrupted roads to move to the
+                         new city.
+                      *  Pay 2 coins for each road traveled.
+                      *  The Queen may be left in the same city.  If so, pay
+                         no coins.
+                      
+                      Then, place a small merchant in the city where the queen
+                      ends her movement.
+
+                      Rules for placing a merchant:
+                      
+                      *  You may only place **1 merchant per city**
+                      *  You must return 1 servant for each merchant already
+                         in the city.
+                      *  When placing a merchant, immediately obtain the bonus
+                         indicated by the city token.  **Additionally, take the
+                         bonus for all cities directly connected by a road
+                         in which your merchants are already present**.
+                      
+                      Reward Tiles:
+                      
+                      *  If you are the first player to have a merchant in
+                         all cities of a color or a region, take the
+                         corresponding reward
+                         tile **and** the topmost Queen's reward tile (if
+                         available).
+          - name: Quick Actions
+            text: |
+                All of these actions are optional.  You may take 1 either
+                before **or** after your main action.
+            id: quick_actions
+            sections:
+                - name: Engage a Servant
+                  text: |
+                      Pay 3 coins and take 1 servant.
+                - name: Change Building Permit Tiles
+                  text: |
+                      Return 1 servant to the pool and return the 2 face up
+                      business permit tiles in a region to the bottom of
+                      the corresponding stack.  Draw 2 new tiles.
+                - name: Send a Servant to Elect a Councilor
+                  text: |
+                      Return 1 servant to the pool and take a councilor and
+                      insert it in a line, exactly as in the main action
+                      [Elect a Councilor](#elect_councilor)
+                - name: Perform an Additional Main Action
+                  text: |
+                      Return 3 servants to the pool and take 2 main actions
+                      instead of 1 this turn.  You may perform the same
+                      action twice.
+          - name: The Nobility Track
+            id: nobility_track
+            text: |
+                There 2 ways to move forward on this track:
+
+                * A bonus on a business permit tile
+                * A bonus on city's token
+
+                Immediately receive the bonus printed on the nobility track
+                when you reach it.
+    - name: End of the Game
+      text: |
+          The 1st player to place their 10th merchant earns 3 points.
+          **All other players** take 1 more turn, then the game ends.
+
+          Scoring:
+          
+          *  VPs marked on reward tiles
+          *  The player furthest on the [nobility track](#nobility_track)
+             receives 5 points.  2nd furthest receives 2 points.  If
+             there is a tie for 1st, all tied players receive 5 points and
+             no points are awarded for 2nd.  If there is a tie for 2nd,
+             all tied players receive 2 points.
+          *  The player with the most business permit tiles gets 3 points
+
+          If there is a tie, the player with the most servants and
+          politics cards wins.
+    - name: 2 Player Games
+      text: |
+          Setup the game as normal.  Then, draw a random business permit
+          tile for each region and add 1 merchant (of an unchosen color)
+          in each city appearing on the drawn tiles.  Shuffle the tiles
+          back into their starting decks.
+
+          [**NOTE: There will be a minimum of 3 and a maximum of 9
+          merchants present on the map at the beginning of the
+          game]!orange!
