@@ -1,11 +1,11 @@
 name: Targi
-description: A 2-player worker placement game, that works!  <a href="https://boardgamegeek.com/boardgame/118048/targi" target="_blank">See it on Boardgamegeek</a>
+description: A 2-player worker placement game, that works!  [See it on Boardgamegeek](https://boardgamegeek.com/boardgame/118048/targi)
 credits: Jay Deiman
 enabled: true
 text_type: markdown
 sections:
     - name: Setup
-      text: >
+      text: |
           * Place the 16 edge cards to form the border.  These cards have the
             numbers 1-16 in the top left corner
           * Shuffle the Goods and Tribal cards separately
@@ -15,16 +15,16 @@ sections:
           * Place the remaining Goods cards next to the Caravan Space
           * Place the grey Robber figure next to the #1 space
           * Each player receives:
-            * 3 Targi figures and 2 Tribal markers in their chosen color
-            * 2 Dates
-            * 2 Salt
-            * 2 Pepper
-            * 1 Gold
-            * 4 Victory Point tokens
+              * 3 Targi figures and 2 Tribal markers in their chosen color
+              * 2 Dates
+              * 2 Salt
+              * 2 Pepper
+              * 1 Gold
+              * 4 Victory Point tokens
     - name: Gameplay
-    - sections:
+      sections:
         - name: Overview
-          text: >
+          text: |
               Each player places their 3 Targi figures on the edge cards.
               At the 2 intersections, they place their Tribal markers.
               The cards where your Targi and Tribal markers stand indicate
@@ -35,7 +35,7 @@ sections:
         - name: Gameplay
           sections:
             - name: 1. Move the Robber 1 space forward.
-              text: >
+              text: |
                  * At the beginning of each round, the Robber is moved 1
                    space clockwise.
                  * **For the 1st round, the Robber is placed on the 
@@ -43,31 +43,31 @@ sections:
                  * No Targi figures may be placed on the space with the Robber.
                  * **When the Robber reaches a corner**, a Raid takes place
             - name: 2. Place, in turn, the Targi Figures
-              text: >
+              text: |
                   * Starting with the start player, each player alternates
                     placing 1 of their Targi figures until all 3 are placed.
                   * **No figures may be placed on the following spaces**:
-                    * On the space with the Robber
-                    * On the "Raid" corner space
-                    * On a space with another player's Targi
-                    * On a space opposite an opponent's Targi
+                      * On the space with the Robber
+                      * On the "Raid" corner space
+                      * On a space with another player's Targi
+                      * On a space opposite an opponent's Targi
             - name: 3. Place the Tribal marker on the crossing points
-              text: >
+              text: |
                   * Each player places their 2 Tribal markers at the
                     intersection(s) of their Targi figures.
             - name: 4. Executing Actions
-              text: >
+              text: |
                   * Beginning with the start player, each player plays all
                     the actions from their Targi and Tribal marker.  
-                    * They get to decide the order of execution
-                    * **An action must be completed before executing the
-                      next action**.
-                    * Once an action has been taken on a space, the player
-                      removes their Targi/Tribal marker from the card.
-                    * If a center space is used, the card is immediately
-                      replaced with a card of the opposite type.  e.g. if a
-                      Goods card is used, it is replaced by a Tribal card (and
-                      vice versa).
+                  * They get to decide the order of execution
+                  * **An action must be completed before executing the
+                    next action**.
+                  * Once an action has been taken on a space, the player
+                    removes their Targi/Tribal marker from the card.
+                  * If a center space is used, the card is immediately
+                    replaced with a card of the opposite type.  e.g. if a
+                    Goods card is used, it is replaced by a Tribal card (and
+                    vice versa).
                       * If the Goods draw pile is empty, shuffle the discard
                         pile
                       * Tribal cards are placed in front of the player and
@@ -78,11 +78,11 @@ sections:
                         instead**.
                       * A Tribal card in hand can **only be played in a later
                         round when using the "Noble" space**
-                        * The cost is paid at this time
-                        * The card may be discarded at this time instead of
-                          playing it (to make room for a new card)
+                          * The cost is paid at this time
+                          * The card may be discarded at this time instead of
+                            playing it (to make room for a new card)
             - name: 5. Turn over new Goods/Tribal cards and change the Start Player
-              text: >
+              text: |
                   * Turn over all the Goods/Tribal cards in the center of the
                     play area
                   * The start player is given to the other player
@@ -90,7 +90,7 @@ sections:
     - name: Other Rules
       sections:
           - name: Tribal Cards
-            text: >
+            text: |
                 * The cost for playing the card is in the top right portion
                   of the card
                 * If a slash is depicted, the player can choose from the items
@@ -101,35 +101,35 @@ sections:
                 * As soon as a card is played, it can be used.
                 * Players should build a tableau of 3 rows of 4 cards with
                   their Tribal cards
-                  * A row does **not** have to be completed to start a new row
-                  * **A full row of cards with the same symbol is worth 4
-                    victory points at the end of the game**
-                  * **A full row of cards with 4 different symbols is worth
-                    2 victory points at the end of the game**
+                    * A row does **not** have to be completed to start a new row
+                    * **A full row of cards with the same symbol is worth 4
+                      victory points at the end of the game**
+                    * **A full row of cards with 4 different symbols is worth
+                      2 victory points at the end of the game**
           - name: Raid
-            text: >
+            text: |
                 * If the Robber is moved to the Raid space, the player must
                   give up what is indicated on the space.
                 * Each player, beginning with the start player, gives back the
                   appropriate items.
                 * **The Robber is then moved to the next space**
           - name: Goods and Gold Stock Limitations at the End of a Round
-            text: >
+            text: |
                 * After a player's turn executing actions, the player must
                   discard down to **10 Goods** and **3 Gold**.
                 * The player may go over the limit *during* their turn.
     - name: Game End and Scoring
-      text: >
+      text: |
           * The game ends in 1 of 2 ways:
-            * At the end of the round when a player has played their 12th
-              Tribal card
-            * The Robber is moved onto the 4th Raid space.  Players must still
-              pay for this Raid, however.
+              * At the end of the round when a player has played their 12th
+                Tribal card
+              * The Robber is moved onto the 4th Raid space.  Players must still
+                pay for this Raid, however.
           * Add up all Silver crosses from tokens and Tribal cards
           * Add the points for Tribal card tableau rows:
-            * 4 points for completed rows of cards with all matching symbols
-            * 2 points for completed rows of cards with 4 different symbols
+              * 4 points for completed rows of cards with all matching symbols
+              * 2 points for completed rows of cards with 4 different symbols
           * If there is a tie:
-            1. The player with the most Gold
-            2. The player with the most Goods
-            3. The game is a draw
+              1. The player with the most Gold
+              2. The player with the most Goods
+              3. The game is a draw
