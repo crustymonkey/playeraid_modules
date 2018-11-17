@@ -1,0 +1,350 @@
+name: "KeyForge"
+description: A "unique" game from Fantasy Flight [see it on BGG](https://boardgamegeek.com/boardgame/257501/keyforge-call-archons)
+credits: Jay Deiman
+enabled: false
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+          1.  Place all the damage tokens, Æmber tokens, and status cards in a
+              common supply (if you have them).
+          2.  Each player places their identity card in their play area
+          3.  Each player places the 3 key tokens, 1 of each color, with the
+              unforged side (grey) face up.
+          4.  Randomly determine a 1st player.
+          5.  Each player shuffles their deck
+          6.  The 1st player draws a **hand of 7 cards**.  The other draws a
+              **hand of 6 cards**.
+          7.  Each player, starting with the 1st player, has 1 opportunity to
+              "mulligan" their starting hand by shuffling it back in their
+              deck and drawing a new starting hand **with 1 fewer card in it**.
+    - name: Turn Sequence
+      sections:
+          - name: 1. Forge a Key
+            text: |
+                If the active player has enough Æmber to forge a key, they
+                **must** do so.
+                
+                * **The default cost to forge a key is 6 Æmber**.  Some card
+                  abilities may modify this.
+                * No more than 1 key can be forged each turn.
+          - name: 2. Choose a House
+            text: |
+                The active player chooses one of their 3 houses to activate,
+                making it the **active house** for the turn.  The active house
+                determines what cards can be played, discarded or used.
+          - name: 3. Play, Discard, and Use Cards of the Chosen House
+            text: |
+                The active player can play, discard or use any number of cards
+                of the **active house** in any order.
+
+                * **1st Turn Rule**: During the 1st player's 1st turn of the
+                  game, that player can only play or discard 1 card from their
+                  hand.
+                * The active player may not play, use, or discard cards of
+                  other (non-active) houses unless specified by a card ability.
+                * **Æmber Bonus**: Many cards have an Æmber bonus below the
+                  house icon.  If the card has this, the 1st thing the player
+                  does is gain 1 Æmber per icon.
+                * **Play Abilities**: Some cards have a "**Play:**" ability.
+                  These resolve after the Æmber bonus is collected (if any) and
+                  immediately after the card is played.
+                * **Discarding Cards**: The active player can discard from
+                  their hand any number of cards from the **active house**.
+          - name: 4. Ready Cards
+            text: The active player readies each of their exhausted cards
+          - name: 5. Draw Cards
+            text: |
+                The active player draws from their deck until they have **6
+                cards** in hand.
+
+                * If the active player has more than 6 cards, they do **not**
+                  discard down to 6
+                * If a player needs to draw cards (at any time) and cannot
+                  because their deck is empty, that player shuffles their
+                  discard pile to form a new deck.
+                * When a player's turn ends, if that player has enough Æmber in
+                  their pool to afford a key, the player announces "Check" so
+                  their opponent knows they can forge next turn.
+    - name: Card Types
+      text: There are 4 types of cards in the game.
+      sections:
+          - name: Action Cards
+            text: |
+                When an action card is played, the player resolves the card's
+                "**Play:**" ability.  After resolving as much of the ability
+                as possible, the card is placed in the discard pile.
+          - name: Artifacts
+            text: |
+                Artifacts enter play exhausted and are placed in a row in
+                front of the player, but behind the battle line.  Artifacts
+                remain in play from turn to turn.
+
+                There are 2 types of abilities that enable a player to use
+                an artifact: "**Action:**" and "**Omni:**" abilities.
+
+                * When a player uses an artifact, they exhaust the card and
+                  then resolve its abilities.
+                * A player can only resolve an "**Action:**" ability if it is
+                  on a card that belongs to the active house.
+                * A player can resolve an "**Omni:**" ability **even if it is on
+                  a card that does not belong to the active house**.
+                * Some artifacts require that they be "sacrificed" as part of
+                  the cost of using them.  When an artifact is "sacrificed",
+                  it is discarded.  A player must still exhaust such an
+                  artifact when using it.
+                * Artifacts cannot be used to reap or fight.
+          - name: Creatures
+            text: |
+                Creatures enter play exhausted and are placed in the front row
+                of the active player's play area (in front of any artifacts,
+                if any).  This row is known as the "battle line".  Creatures
+                remain in play from turn to turn.
+
+                When a creature enters play, it must be placed on a flank
+                (at the far right or left of the battle line).  When a
+                creature leaves play, shift the battle line inward to close
+                the gap.
+            sections:
+                - name: Using Creatures
+                  text: |
+                      When using a creature, the player exhausts it.  The player
+                      has the option to reap, fight, or trigger the creature's
+                      "**Action:**" ability.
+      
+                      * **REAP**: **Any ready creature of the active house may
+                        reap**.  When a creature is used for reap, the
+                        controller gains 1 Æmber for their pool.  Any
+                        "**Reap:**" abilities also resolve.
+                      * **FIGHT**: **Any ready creature of the active house may
+                        fight**.  When a creature is used to fight, the
+                        controller selects a target of the attack.  Each of
+                        the 2 creatures deals an amount of damage equal to
+                        its power.  **Damage is dealt simultaneously**.  If
+                        the attacking creature survives, all "**Fight:**"
+                        abilities on the creature activate.
+                      * **ACTION**: **Any ready creature of the active house may
+                        trigger its "Action:" ability, if it has 1**.  When a
+                        creature is used to trigger its "**Action:**" ability,
+                        the creature exhausts and all "**Action:" abilities
+                        the creature has resolve.
+                - name: Damage and Armor
+                  text: |
+                      When a creature takes damage, place the an amount of
+                      damage tokens equal to the damage dealt on the it.
+                      If the amount of damage is greater than or equal to
+                      the creature's power, it is destroyed and discarded.
+
+                      If the creature has an armor value, the armor prevents
+                      that much incoming damage each turn.
+
+                      * When a creature leaves play, any Æmber on that
+                        creature is gained by the opponent.
+          - name: Upgrades
+            text: |
+                Upgrades enter play attached to a creature.  Each upgrade
+                remains in play from turn to turn continually modifying
+                the card it is attached to.
+
+                * If the card to which an upgrade is attached leaves play,
+                  the upgrade is discarded.
+                * If an upgrade cannot attach to a card in play, the upgrade
+                  cannot enter play.
+    - name: Card Abilities
+      text: |
+          When resolving a card ability, resolve as much of the ability as can
+          be resolved, and ignore the rest.  Unless otherwise specified, the
+          active player makes all decisions while resolving an ability.
+      sections:
+          - name: Using Cards Via Other Card Abilities
+            text: |
+                If a card ability allows a player to play/use another card
+                (or fight or reap with a card), the chosen card can belong
+                to any house unless the ability specifically states otherwise.
+
+                * When using a card via a card ability, any other requirements
+                  of using the card must be observed, or the card cannot be
+                  used.
+                * Players can only use cards they control, unless a card
+                  ability states otherwise.
+          - name: The Rule of 6
+            text: |
+                Sometimes a situation will arise when a card may be played or
+                used repeatedly during the same turn.  A player cannot play
+                and/or use the same card and/or other copies of that card
+                (by title) more than **6 times** during a given turn.
+          - name: Constant Abilities
+            text: |
+                If a card has an ability that does not have a bold precursor,
+                then the ability is a constant ability that is active while
+                the card is in play (and meets any conditions specified on the
+                card).
+                
+                * Constant abilities on a card are active **even while that
+                  card is exhausted**.
+                * Applying the effects of a constant ability is not considered
+                  *using* a card, and therefore, does not cause the card to
+                  exhaust.
+    - name: Chains
+      text: |
+          Chains reduce the amount of cards a player can draw.  The chain
+          tracker (in the starter set) breaks this down.
+
+          Each time (including during setup) a player with one or more chains
+          would draw 1 or more cards to refill their hand, that player draws
+          fewer cards (based on their current chain level, below) and then
+          reduces the chain counter by 1.
+
+          * **Chains 1-6**: draw 1 fewer card
+          * **Chains 7-12**: draw 2 fewer card
+          * **Chains 13-18**: draw 3 fewer card
+          * **Chains 19-24**: draw 4 fewer card
+    - name: Glossary
+      sections:
+          - name: Ability, Card Ability
+            id: ability
+            text: |
+                An ability is the special game text a card adds to the game.
+                
+                Unless an ability explicitly references an out-of-play area
+                (such as the discard), that ability can only interact with
+                cards that are in play.
+          - name: Action Ability
+            id: action_ability
+            text: |
+                To use an "**Action:**" ability, the active player must
+                exhaust the card.  The ability then resolves.
+          - name: Active House
+            id: active_house
+            text: |
+                The active house is the house that the active player has
+                chosen for the current turn
+          - name: Active Player
+            id: active_player
+            text: |
+                The active player is the player taking the current turn.  The
+                active player makes all necessary decisions for all card
+                abilties or timing conflicts that need to resolve.
+          - name: Æmber
+            id: ember
+            text: |
+                Æmber is tracked with Æmber tokens, and is used to forge keys.
+
+                **See also**: [Capture](#capture), [Keys](#keys), [Reap](#reap),
+                [Steal](#steal).
+          - name: Archives
+            id: archives
+            text: |
+                A player's archives is a facedown game area in front of that
+                player's identity card.  Card abilities are the only means
+                by which a player is premitted to add cards to their archives.
+                During step 2 of a player's turn, after they select an active
+                house, the active player can pick up all cards in their
+                archives and add those to their hand.
+
+                * Cards in a player's archives are considered out of play.
+                * A player may look at their archives at any time.  A player is
+                  **not** permitted to look at an opponent's archives.
+                * If the ability instructing a player to archive a card does
+                  not specify where the card is archived from, the archived card
+                  comes from that player's hand.
+          - name: Armor
+            id: armor
+            text: |
+                Some creatures have an armor value to the right of the card
+                title.  Armor prevents an amount of damage equal to the armor
+                value that the creature would take each turn.
+
+                * If a creature gains armor, the gains are additive and
+                  accumulate on top fo the creature's printed armor value.
+                * If a creature gains armor during a turn, the gained armor
+                  does not absorb damage already dealt that turn.  If a
+                  creature loses armor during a turn, it is not retroactively
+                  dealt damage that was already absorbed.
+                * If a creature has "~" symbol in its armor field, the creature
+                  has no armor.  These creatures may gain armor through card
+                  effects.
+          - name: Assault (X)
+            id: assault
+            text: |
+                When a creature with the assault (X) keyword attacks, it deals
+                damage equal to its assault value (i.e. "X") to the creature
+                it is fighting **before** the fight resolves.  The active
+                player chooses whether this occurs before or after other
+                "Before Fight" effects and keywords.  If this destroys the
+                other creature, the rest of the fight does not occur.
+
+                * If a creature with the assault (X) keyword gains another
+                  instance of the assault (X) keyword, the 2 "X" values are
+                  added together.
+          - name: Attack, Attacker, Attacking
+            id: attack
+            text: See [Fight](#fight)
+          - name: Battleline
+            id: battleline
+            text: |
+                The battleline is the ordered line of creatures a player
+                controls.
+
+                **See also**: [Creatures](#creatures)
+          - name: Before
+            id: before
+            text: |
+                If the word "before" is used in an ability (Ex:
+                "**Before Reap:**"), that ability resolves before resolving
+                the game effect of the reap/fight/etc., but after the card
+                exhausts if exhausting is required to use the card.
+          - name: Capture
+            id: capture
+            text: |
+                Captured Æmber is taken from an opponent's poll and placed
+                on a creature controlled by the capturing player. **Players
+                may not spend captured Æmber**.
+
+                When a creature with Æmber on it leaves play, the Æmber is
+                placed in the opponent's pool.
+          - name: Chain, Chains
+            id: chains
+            text: |
+                If a player gains chains, the player increases their chain
+                tracker by the number of chains gained.
+
+                If a player has any chains when refilling their hand, they
+                draw fewer cards.
+
+                | Chains | Draw Reduction |
+                | ------ | -------------- |
+                | 1 - 6 | 1 fewer card |
+                | 7 - 12 | 2 fewer cards |
+                | 13 - 18 | 3 fewer cards |
+                | 19 - 24 | 4 fewer cards |
+          - name: Control
+            id: control
+            text: |
+                A player owns the cards that begin the game in their deck.
+                When a card enters play, it is under its owner's control.
+
+                * A player can take control of an opponent's card.  When this
+                  happens, that card is placed in the new controller's play
+                  area.  If it is a creature, it is placed on a flank of the
+                  new controller's battleline.
+                * If a player takes control of a card that belongs to a house
+                  not in the new controller's deck, they can make that house
+                  the active house during step 2 of their turn.
+                * If a card that has changed control leaves play for any
+                  reason, it moves to its owner's appropriate out-of-play
+                  area.
+          - name: Cost, At Current Cost
+            id: cost
+            text: |
+                The base cost to forge a key is 6 Æmber.  This cost may be
+                modified by card abilities.  The modified cost is referred
+                to as the current cost.
+          - name: Damage
+            id: damage
+            text: |
+                Damage a creature has taken is tracked by placing damage
+                tokens on the creature.  If a creature has an amount of damage
+                on >= to its power, the creature is destroyed.
+
+                * **Damage on a creature does not reduce its power**.
