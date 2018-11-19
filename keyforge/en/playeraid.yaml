@@ -1,7 +1,7 @@
 name: "KeyForge"
 description: A "unique" game from Fantasy Flight [see it on BGG](https://boardgamegeek.com/boardgame/257501/keyforge-call-archons)
 credits: Jay Deiman
-enabled: false
+enabled: true
 text_type: markdown
 sections:
     - name: Setup
@@ -21,6 +21,7 @@ sections:
     - name: Turn Sequence
       sections:
           - name: 1. Forge a Key
+            id: forge_key
             text: |
                 If the active player has enough Æmber to forge a key, they
                 **must** do so.
@@ -29,11 +30,13 @@ sections:
                   abilities may modify this.
                 * No more than 1 key can be forged each turn.
           - name: 2. Choose a House
+            id: choose_house
             text: |
                 The active player chooses one of their 3 houses to activate,
                 making it the **active house** for the turn.  The active house
                 determines what cards can be played, discarded or used.
           - name: 3. Play, Discard, and Use Cards of the Chosen House
+            id: play_discard_use
             text: |
                 The active player can play, discard or use any number of cards
                 of the **active house** in any order.
@@ -52,8 +55,10 @@ sections:
                 * **Discarding Cards**: The active player can discard from
                   their hand any number of cards from the **active house**.
           - name: 4. Ready Cards
+            id: ready_cards
             text: The active player readies each of their exhausted cards
           - name: 5. Draw Cards
+            id: draw_cards
             text: |
                 The active player draws from their deck until they have **6
                 cards** in hand.
@@ -67,6 +72,7 @@ sections:
                   their pool to afford a key, the player announces "Check" so
                   their opponent knows they can forge next turn.
     - name: Card Types
+      id: card_types
       text: There are 4 types of cards in the game.
       sections:
           - name: Action Cards
@@ -195,10 +201,12 @@ sections:
           fewer cards (based on their current chain level, below) and then
           reduces the chain counter by 1.
 
-          * **Chains 1-6**: draw 1 fewer card
-          * **Chains 7-12**: draw 2 fewer card
-          * **Chains 13-18**: draw 3 fewer card
-          * **Chains 19-24**: draw 4 fewer card
+          | Chains | Draw Reduction |
+          | ------ | -------------- |
+          | 1 - 6 | 1 fewer card |
+          | 7 - 12 | 2 fewer cards |
+          | 13 - 18 | 3 fewer cards |
+          | 19 - 24 | 4 fewer cards |
     - name: Glossary
       sections:
           - name: Ability, Card Ability
@@ -348,3 +356,427 @@ sections:
                 on >= to its power, the creature is destroyed.
 
                 * **Damage on a creature does not reduce its power**.
+          - name: Destroyed
+            id: destroyed
+            text: |
+                When a card is destroyed, it is placed in its owner's discard
+                pile.
+
+                If a card has a "**Destroyed:**" ability, the effect resolves
+                automatically when the card is destroyed, immediately before
+                it leaves play.
+          - name: Discard Pile
+            id: discard
+            text: |
+                When a card is [destroyed](#destroyed) or discarded, it is
+                placed on the owner's discard pile.  The cards in the discard
+                pile are open information and may be referenced at any time.
+
+                * The order of cards in a player's discard pile is maintained
+                  during play, unless a card ability causes this order to
+                  change.
+                * When a player runs out of cards in their deck, they shuffle
+                  their discard pile to form a new deck.
+          - name: Elusive
+            id: elusive
+            text: |
+                The 1st time a creature with the elusive keyword is attacked
+                each turn, it is dealt no damage and deals no damage to the
+                attacker in the fight.
+
+                * Elusive only stops damage that would be dealt by each
+                  creature's power; damage dealt by keywords or abilities still
+                  applies.
+          - name: End of Turn
+            id: end_of_turn
+            text: |
+                End of turn effects are resolved when a player's turn is
+                over, which is after step 5 (the "[Draw Cards](#draw_cards)"
+                step).
+          - name: Enemy
+            id: enemy
+            text: |
+                If a card ability refers to an "enemy" game element, it refers
+                to an element currently controlled by the opponent.
+          - name: Fight
+            id: fight
+            text: |
+                When a player uses a creature to fight, the player exhausts the
+                creature and chooses an opponent's creature.  Both creatures
+                deal an amount of damage equal to their power value to the 
+                opposing creature in the fight.  Both are considered to
+                be "fighting" for the purposes of card effects.
+
+                * A creature used to fight is said to be "[attacking](#attack)"
+                  and can be referred to as "the attacker" during the fight.
+                * If the attacker is **not** destroyed, all "**Fight:**"
+                  abilities on the attacking creature then resolve.  If
+                  *either* creature in a fight has a constant ability
+                  referencing the end of the fight, the creature must
+                  survive the fight to resolve the ability.
+                * Only the attacker can trigger "**Fight:**" abilities.
+          - name: "Fight With"
+            id: fight_with
+            text: |
+                If an ability instructs a player to "fight with" or "ready
+                and fight with" a creature, the ability is granting the player
+                permission to use the designated creature to fight.  The
+                fight is resolve following the [standard rules for
+                fighting](#fight), against a creature controlled by the
+                opponent.
+          - name: Flank
+            id: flank
+            text: |
+                The creatures on the far right or left of a player's
+                [battleline](#battleline) are on the flanks of the line.
+                A creature in this position is referred to as a *flank
+                creature*.  Any time a creature enters play or changes
+                control, the active player chooses which flank of its
+                controller's battleline it is placed on.
+          - name: Forge
+            id: forge
+            text: See [forge a key](#forge_key).
+          - name: Friendly
+            id: friendly
+            text: |
+                If a card ability refers to a "friendly" game element, it
+                refers to an element currently under the control of the
+                same player.
+          - name: Hazardous (X)
+            id: hazardous
+            text: |
+                When a creature with the hazardous X keyword is attacked,
+                it deals X damage to the attacking creature **before** the
+                fight resolves.  The active player chooses whether this occurs
+                before or after other "Before Fight" effects and keywords.
+                If this damage destroys the other creature, the rest of the
+                fight does not occur.
+
+                * If a creature with the hazardous (X) keyword gains another
+                  instance of the hazardous (X) keyword, the 2 X values are
+                  added together.
+          - name: Heal
+            id: heal
+            text: |
+                If an ability "heals" a creature, remove the specified amaount
+                of damage from the creature.
+
+                * If an ability "fully heals" a creature, remove all damage
+                  from the creature.
+          - name: House Choice
+            id: house_choice
+            text: |
+                Each turn, a player must choose of the three houses indicated
+                by their identity card, if able.  Some card abilities may
+                restrict a player's house choice.
+
+                * If a player has gained control of a card that does not
+                  belong to one of their 3 houses, that card's house becomes
+                  an eligible choice for that player while the player
+                  has control of the card.
+                * If there is no legal choice of house, the player plays the
+                  turn with no active house.
+                * If a player is faced with 2 (or more) "must choose" mandates,
+                  the player may choose either of those options.
+          - name: '"if you do" and "in order to"'
+            id: if_you_do
+            text: |
+                If an ability includes the phrase "if you do" or "in order to",
+                the player referenced by the ability must successfully
+                and completely resolve the text that precedes that phrase
+                before they can resolve or perform the text that follows
+                the phrase.
+          - name: Keys
+            id: keys
+            text: |
+                The 1st player to force all 3 of their keys immediately wins
+                the game.
+
+                * The color of a key has no impact on the game.  Future
+                  card abilities may reference keys of a specific color.
+                * For more info, see [forge a key](#forge_key).
+          - name: Least Powerful
+            id: least_powerful
+            text: |
+                A reference to the "least powerful" creature refers to the
+                creature in play with the lowest power.  If there are multiple
+                creatures that qualify, each is considered "least powerful".
+
+                * If an ability requires the selection of a single least
+                  powerful creature, and multiple creatures are tied, the
+                  active player chooses one.
+          - name: Leaves Play
+            id: leaves_play
+            text: |
+                If a card that is in play leaves play (is returned to hand,
+                deck, destroyed, discarded, archived, or purged), all
+                non-Æmber tokens and status cards on the card are removed,
+                all upgrades on the card are discarded, and all lasting
+                effects applied to the card expire.
+
+                * If a creature with Æmber on it leaves play, the Æmber is
+                  returned to the opponent's Æmber pool.  If a non-creature
+                  card with Æmber on it leaves play, the Æmber is returned
+                  to the general token pool.
+                * If a card has a "**Leaves Play:**" ability,
+                  the effect happens automatically immediately before the
+                  card leaves play.
+          - name: Maverick
+            id: maverick
+            text: |
+                This symbol indicates that a card is a maverick.  A maverick
+                is an extremely rare instance of a card that has left its
+                standard house and is now part of a new house.  For all
+                game purposes, treat a maverick as belonging to the house
+                printed on its graphic template.
+
+                ![maverick](/static/img/keyforge/maverick.png)
+          - name: May
+            id: may
+            text: |
+                If an ability includes the word "may", the text that follows
+                "may" is optional.  If a player chooses to resolve a "may"
+                ability, they must resovle as much of the ability as they are
+                able.
+          - name: Most Powerful
+            id: most_powerful
+            text: |
+                See [Least Powerful](#least_powerful).  The rules are the same.
+          - name: Mulligan
+            id: mulligan
+            text: |
+                During setup, each player, starting with the 1st player, has
+                1 opportunity to mulligan their starting hand.  This is done
+                by shuffling the starting hand back into the deck and
+                drawing a new starting hand **with 1 fewer card** in it.
+
+                * After a player chooses to mulligan, they must keep the new
+                  starting hand.
+          - name: Neighbor
+            id: neighbor
+            text: |
+                The creatures to the immediate left and right of a creature
+                in a player's battleline are its neighbors.
+          - name: Omni
+            id: omni
+            text: |
+                The active player may trigger any "**Omni:**" abilities under
+                their control during any of their turns, even if the card
+                with the "**Omni:**" ability does not belong to the active
+                house.
+          - name: Off House
+            id: off_house
+            text: |
+                An off house card is any card that belongs to a house that is
+                not the active house.
+          - name: Opposing
+            id: opposing
+            text: |
+                When a creature is involved in a fight (either because it was
+                used to figh, or because it was attacked by another creature),
+                the other creature in the fight is the opposing creature.
+          - name: Pay
+            id: pay
+            text: |
+                If a player must pay Æmber to an opponent, the Æmber is removed
+                from the paying player's poll and added to the opponent's
+                pool.
+          - name: Play
+            id: play
+            text: |
+                When a card has a "**Play:**" ability, the effect occurs any
+                time the card is played.  For creatures, artifacts, and
+                upgrades, the ability resolves immediately after the card
+                enters play.  For action cards, the ability resolves, and
+                then the card is placed in the owner's discard pile.
+
+                * If an ability "plays" a card from a source other than
+                  hand, "**Play:**" abilities on the card resolve.  If an
+                  ability "puts" a card "into play", "**Play:**" abilities
+                  on the card do **not** resolve.
+          - name: Poison
+            id: poison
+            text: |
+                Any damage dealt via the power of a creature with the poison
+                keyword during a fight destroys the damaged creature.  This
+                occurs when the damage is successfully applied to the
+                opposing creature.
+
+                * Poison has no effect if all of the damage is absorbed by
+                  armor or prevented by another ability.  Poison only
+                  resolves when 1 or more damage is successfully dealt.
+                * Poison refers only to damage that would be dealt by the
+                  creature's power, not by damage that is dealt by keywords
+                  or other card abilities.
+          - name: Power Counter +1, Power Status Card
+            id: power_counter
+            text: |
+                When a creature is given a "+1 power counter", one such
+                status card is placed on the creature.  For each of these
+                cards that is on a creature, that creature's power is
+                increased by 1.
+          - name: Preceeding, Repeat the Preceeding
+            id: preceeding
+            text: |
+                If a card text instructs players to repeat a preceeding effect,
+                the entirety of the effect before the text providing the
+                instruction to repeat resolves again.
+          - name: Purge
+            id: purge
+            text: |
+                When a card is purged, it is removed from the game and placed
+                facedown beneath its owner's identity card.  Purged cards
+                no longer interact with the game state in any manner.
+          - name: Rarity
+            id: rarity
+            text: |
+                A card's rarity symbol can be found at the bottom of the
+                card, near the collector number.  A card's rarity (common,
+                uncommon, rare, or special) is used by the deck-generation
+                algorithm to determine how frequently it will appear in decks.
+                Special cards have a different type of distribution and do
+                not obey the game's standard rarity rules.
+
+                | Symbol | Rarity |
+                | ------ | ------ |
+                | ![common](/static/img/keyforge/common.png) | Common |
+                | ![uncommon](/static/img/keyforge/uncommon.png) | Uncommon |
+                | ![rare](/static/img/keyforge/rare.png) | Rare |
+                | ![special](/static/img/keyforge/special.png) | Special |
+          - name: Reap
+            id: reap
+            text: |
+                When a player uses a creature to reap, the player exhausts the
+                creature, gains 1 Æmber for their pool, and then all
+                "**Reap:**" abilities on the creature resolve.
+          - name: Return
+            id: return
+            text: |
+                When a captured Æmber is returned, it is placed in the
+                opponent's Æmber pool.
+          - name: Sacrifice
+            id: sacrifice
+            text: |
+                Whena player is instructed to sacrifice a card, that player
+                must discard that card from play.
+
+                * When a card is sacrificed, that card is considered to have
+                  been destroyed, and any "**Destroyed:**" abilities the
+                  card has resolve.
+          - name: Search
+            id: search
+            text: |
+                When a player searches a game area (such as a deck), that
+                player looks at all the cards in the specified area without
+                showing those cards to the opponent.  A player may choose to
+                fail to find the object of a search.
+
+                * If an entire deck is searched, the deck must be shuffled
+                  after the search.
+                * If a discard pile is searched, the cards are kept in
+                  the same order.
+          - name: Self-referential Text
+            id: self_text
+            text: |
+                If a card's ability refers to its own title, that reference
+                is only to itself and not to other copies of the card.
+          - name: Skirmish
+            id: skirmish
+            text: |
+                When a creature with the skirmish keyword is used to fight,
+                it takes no damage from the opposing creature when the damage
+                from the fight is dealt.
+
+                * This applies only to damage that would be dealt by the
+                  opposing creature's power, not by damage that is dealt by
+                  keywords or other card abilities.
+          - name: Splash
+            id: splash
+            text: |
+                When an ability deals damage to a creature "with splash damage",
+                the splash damage is dealt to each of the target creature's
+                neighbors.
+          - name: Steal
+            id: steal
+            text: |
+                When an ability steals Æmber, the stolen Æmber is removed from
+                the opponent's Æmber pool and added to the pool of the player
+                resolving the steal ability.
+
+                * If an ability steals more Æmber than a player has remaining
+                  in their pool, the ability steals only the amount remaining
+                  in the pool.
+          - name: Stun, Stun Status Card
+            id: stun
+            text: |
+                When a creature becomes stunned, place a stun status card on
+                it.  The next time the creature is used, the only thing that
+                happens is the creature exhausts and the stun card is removed.
+                It does not reap or fight, and any "**Reap:**", "**Fight:**",
+                or "**Action:**" abilities on the creature do **not** resolve.
+
+                * Constant abilities and abilities that do not require the
+                  creature to reap, fight, or be used are still active.
+                * If a stunned creature is attacked, it still deals damage
+                  to the attacking creature during the fight
+                * While a creature is stunned, it cannot become stunned
+                  again.
+          - name: Swap
+            id: swap
+            text: |
+                If 2 game elements are swapped, they exchange places with one
+                another.
+
+                * When 2 creatures are swapped, they exchange positions.  This
+                  means that each takes the position in the battleline of the
+                  other.  The swapped creatures must be controlled by the same
+                  player.
+                * If cards from 2 distinct game areas are swapped (such as
+                  a card in play and a card in hand), the cards switch game
+                  areas.
+          - name: Taunt
+            id: taunt
+            text: |
+                If a creature has the taunt keyword, any of its neighbors that
+                do not have the taunt keyword cannot be attacked by an enemy
+                creature that is being used to fight.
+
+                * In the battleline, taunt creatures are slid slightly forward
+                  to indicate their presence to the opponent.
+          - name: '"this way"'
+            id: this_way
+            text: |
+                If an ability refers to an effect that occurred "this way", it
+                is referring to an effect that was produced by the same
+                resolution of that same ability.
+          - name: Turn
+            id: turn
+            text: |
+                A turn consists of 1 player performing the 5 steps in the
+                game's turn sequence:
+
+                1. [Forge a key](#forge_key)
+                2. [Choose a house](#choose_house)
+                3. [Play, discard, and use cards of the chosen house](#play_discard_use)
+                4. [Ready cards](#ready_cards)
+                5. [Draw cards](#draw_cards)
+          - name: Traits
+            id: traits
+            text: |
+                Traits are descriptive attributes (such as "Knight" or
+                "Specter") that may be referenced by other cards.  Traits are
+                listed at the top center of a card's text box.
+
+                * Traits have no inherent game effect, but may be referenced
+                  by card abilities.
+          - name: Unforge
+            id: unforge
+            text: |
+                If a previously forged key is "unforged", flip the key token
+                to its unforged side.  The key no longer counts toward its
+                controller's victory condition and must be forged again to
+                win the game.
+          - name: Use
+            id: use
+            text: See [Card Types](#card_types) for info on using cards.
+
