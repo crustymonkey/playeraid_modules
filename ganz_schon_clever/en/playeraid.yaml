@@ -1,0 +1,66 @@
+name: Ganz Schön Clever
+description: See it on [BGG](https://boardgamegeek.com/boardgame/244522/s-pretty-clever)
+credits: Jay Deiman (BGG user nyfilmfest for original translation content)
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+          * Each player takes a pen and score sheet
+          * Randomly choose a start player, who gets the 6 dice
+    - name: Gameplay
+      text: |
+          The game is played over 4 (4 players), 5 (3 players), or 6
+          (1 and 2 player) rounds.  At the start of the first 4 rounds,
+          each player gets 1 bonus, as shown on the round tracker on the
+          score sheet (players choose 1 of the 2 options in round 4).
+      sections:
+          - name: Active Player
+            text: |
+                1. The active player rolls all 6 dice at once, then chooses 1,
+                   placing it on of their 3 dice fields (top left of score
+                   sheet), without changing the number of the die.
+                2. Using the chosen die, the player must now use the value and
+                   the color to mark on his sheet a corresponding number in the
+                   same color field.  The white die a wild color and can be
+                   used in place of any other color.
+                3. The active player puts **all dice that show a lower value**
+                   than the currently selected die on the silver tray printed
+                   in the box.  If a player picks the lowest value, no dice
+                   are placed on the silver tray.  Dice on the silver tray
+                   can no longer be used by the active player (*exception:
+                   Additional Dice action*)
+                4. With the remaining dice, the active player rolls a 2nd time.
+                   They again choose a die, place in on a free dice field, and
+                   enters its value in the matching color field on their game
+                   sheet.  All dice that show a lower value than the selected
+                   die again are placed on the silver platter.
+                5. The active player then rolls a 3rd time and executes the
+                   actions as described above 1 last time.  Then they place
+                   **all remaining dice** not on their score sheet on the
+                   silver platter.
+
+                **Attention**:  If a player decides in the 1st or 2nd roll to
+                take high dice, it may happen that there are no dice left for
+                a reroll.  If this happens, the player simply performs fewer
+                than 3 rolls.
+          - name: Passive Players
+            text: |
+                Only after the active player has placed 3 dice on their game
+                board or can no longer reroll because all remaining dice are on
+                the silver platter do the other players get a turn.
+
+                * All passive players now get the dice set aside on the silver
+                  platter.
+                      * Of these dice, each player can choose 1 die to use
+                        to mark a space on their score sheet.
+                      * All passive players choose simultaneously, and a die
+                        can be chosen by multiple passive players.
+                      * After each passive player has marked their chosen die,
+                        the player to the left becomes the active player.  They
+                        get all 6 dice and rolls and rerolls, as described
+                        above.
+    - name: The Score Sheet
+      text: |
+          The score sheet has 5 colored areas.  For each die, a player will
+          mark 1 field or write 1 number in 1 space.
