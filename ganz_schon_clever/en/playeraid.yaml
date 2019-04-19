@@ -1,7 +1,7 @@
 name: Ganz Schön Clever
 description: See it on [BGG](https://boardgamegeek.com/boardgame/244522/s-pretty-clever)
 credits: Jay Deiman (BGG user nyfilmfest for original translation content)
-enabled: true
+enabled: false
 text_type: markdown
 sections:
     - name: Setup
