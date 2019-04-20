@@ -1,7 +1,7 @@
 name: Ganz Schön Clever
-description: See it on [BGG](https://boardgamegeek.com/boardgame/244522/s-pretty-clever)
-credits: Jay Deiman (BGG user nyfilmfest for original translation content)
-enabled: false
+description: "See it on [BGG](https://boardgamegeek.com/boardgame/244522/s-pretty-clever)"
+credits: Jay Deiman (BGG user **nyfilmfest** for original translation content)
+enabled: true
 text_type: markdown
 sections:
     - name: Setup
@@ -60,7 +60,142 @@ sections:
                         the player to the left becomes the active player.  They
                         get all 6 dice and rolls and rerolls, as described
                         above.
+          - name: Special Cases
+            text: |
+                * If a passive player can't use any die from the silver platter,
+                  they may use one die from the active player's pad.  It is not
+                  possible to voluntarily refuse a die from the silver platter
+                  to do this.
+
+                * If the active player can't use any of the dice from a given
+                  roll, they simply cannot put a die on their sheet for that
+                  roll. This still takes one of their maximum of 3 rolls
     - name: The Score Sheet
       text: |
-          The score sheet has 5 colored areas.  For each die, a player will
-          mark 1 field or write 1 number in 1 space.
+          * The score sheet has 5 colored areas.  For each die, a player will
+            mark 1 field or write 1 number in 1 space.
+          * 3 areas (green, orange, and purple) show an arrow on the left.
+            You will start entering numbers at the left of these lines and
+            proceed right, in order without skipping spaces.
+          * In the 2 areas without numbers (yellow and blue), you can enter an
+            appropriate number no matter where it is.  The white die is wild
+            and can either be used as a yellow, green, orange, or purple die or
+            can be combined with the blue die to create a sum for the blue area.
+      sections:
+          - name: The Yellow Area
+            text: |
+                You simply cross out the value of the chosen die in this area.
+                Although each value appears twice, you may only cross out 1
+                block per chosen die.  Spaces can be marked off in any order.
+                Once a column is filled, the player circles the starred number
+                at the bottom of the column.  **These spaces can be completed
+                in any order**.
+          - name: The Blue Area
+            text: |
+                If a player chooses a blue die, they add the current value of
+                the white die to it to determine the combined value (no matter
+                where the white die is).  The same applies in reverse.  If the
+                player uses the white die as a wild blue, they add the current
+                value of the blue die to the white die to come up with a total.
+                If the active player chooses the blue die on 1 turn and the
+                white die on another turn, they could potentially mark 2 blue
+                fields on the same turn.  **These spaces can be completed
+                in any order**.
+
+                At the end of the game, players count how many marks they have
+                made in the blue area.  The point scale at the top of the area
+                indicates how many points they get for the section.
+          - name: The Green Area
+            text: |
+                Players must start at the leftmost space and proceed to the
+                right, not skipping any spaces.  For each space, players must
+                meet the minimum required value in order to be eligible to mark
+                the next space.
+
+                The white number in the star above the last selected field
+                indicates the number of points scored for this section at
+                the end of the game.
+          - name: The Orange Area
+            text: |
+                Players must start at the leftmost space and proceed to the
+                right, not skipping any spaces.  There are no restrictions
+                here, but some spaces have multipliers.  Here, the player
+                multiplies the die value times the multiplier and records
+                **that** number.
+
+                At the end of the game, players score the sum of all recorded
+                number from the orange row.
+          - name: The Purple Area
+            text: |
+                Players must start at the leftmost space and proceed to the
+                right, not skipping any spaces.  For each space, the number
+                entered must be higher than the previous number.  There is an
+                exception!  After a player enters a 6, any number may come next.
+
+                At the end of the game, players score the sum of all recorded
+                number from the purple row.
+          - name: The Bonuses
+            text: |
+                Players can earn bonuses, which are listed at the end of
+                the rows or columns, or directly below certain fields.
+
+                * X-bonus: As soon as a player completes a row, column, or
+                  fields with an X-bonus, they must **immediately** mark a
+                  box in the corresponding color area.  This can be any number
+                  in the yellow or blue area and will always be the next field
+                  in the green area.
+                * A purple or orange background with a number indicates that a
+                  player can immediately place this number in their next
+                  available space in the corresponding area.  This must be done
+                  **immediately** and can't be saved for later.
+                * If entering a bonus awards another bonus, it is executed
+                  immediately.  Players can chain bonuses.
+                * Bonus on an individual field -> Redeemed immediately as a
+                  number is entered in this field.
+                * Bonus at the end of a line or column -> Redeemed only once
+                  all fields in the line/column are marked.
+                * Foxes: Foxes award points at the end of the game.  Each
+                  activated fox will score as many points as the
+                  lowest-scoring colored area.
+          - name: The Actions
+            text: |
+                The 2 action bars can be unlocked during the game.  Unlike
+                bonuses, actions can either be used immediately after
+                they've been unlocked or can be saved for a later turn.
+
+                When a player unlocks an action, they should circle the next
+                space in the corresponding row.  After they use the action,
+                they should cross out the 1st available circled space.
+                Players can perform as many actions as they wish on a given
+                turn.
+
+                * Reroll action: This can be used only by the active player.
+                  If they wish to reroll all of the dice they just rolled,
+                  they can spend an action to do so.  **All rolled dice must
+                  be rerolled when doing this**.
+                * Extra die action: Using this action, an extra die can be
+                  selected.  This action can only be performed at the end of
+                  a turn.  This is after either the active player has regularly
+                  assigned a die to one of their die fields or after a passive
+                  player has chosen a die from the silver platter.
+                    * With this action, the player can choose any of the 6
+                      dice, including a die that the active player has taken
+                      or even the die that the player just took with their
+                      regular action.
+                    * Players can use multiple additional die actions during
+                      a single turn, but each individual die can only be
+                      chosen once in a turn.
+    - name: Game End
+      text: |
+          The game ends after the last active player has finished their
+          last turn in the last round and after the passive players have
+          all taken their actions for this turn.
+
+          A player will then record the scores for each player in each
+          colored area.  Earned foxes will be scored for each player.  A
+          player's foxes are each worth that player's lowest scoring area.
+
+          Points are summed, and the player with the highest total wins.
+          If there is a tie, the player with the highest score in an
+          individual area breaks the tie.  If no winner can still be
+          determined, the victory is shared.
