@@ -17,7 +17,7 @@ The best advice here is just to look through some of the existing player aids an
 # Standards and Rules
 There are some things you will have to adhere to for your submissions to be used.  They are pretty simple rules, and mostly obvious.
 
-* Your YAML/JSON **must be valid**.  There are validators out there that will test these files for validity before submission.  I will test them myself upon submission, but I would ask you make sure they are syntactically valid before submitting.  You can also test them on the playeraid site.  See Testing Your Module below.
+* Your YAML/JSON **must be valid**.  There are validators out there that will test these files for validity before submission.  I will test them myself upon submission, but I would ask that you make sure they are syntactically valid before submitting.  You can also test them on the playeraid site.  See Testing Your Module below.
 * Your YAML/JSON should be easily human readable.  This means you need to use indentation for sub-sections and things should line up.  If you submit an unindented mess, it will be rejected.
 * If you choose to use HTML, your html snippets must be well formed.  This basically means that you have to close your tags.  So, for example, a `<p>` tag needs to have its closing `</p>` tag.  Your submission will be rejected if it is not well formed.
 * `<script>` tags are forbidden.  You cannot run any javascript from within your playeraids.  There should never be a case where this is necessary.
