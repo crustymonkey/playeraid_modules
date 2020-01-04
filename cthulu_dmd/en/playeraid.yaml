@@ -1,0 +1,331 @@
+name: "Cthulu: Death May Die"
+description: Stop the ritual and destroy the old one! [See it on BGG](https://boardgamegeek.com/boardgame/253344/cthulhu-death-may-die)
+enabled: true
+text_type: markdown
+credits: Jay Deiman
+sections:
+    - name: Setup
+      text: |
+          * Set out the story board, tokens and dice
+          * Choose an Elder One
+              * Place the Elder One on the 1st space of the summoning track
+              * Place the Minions reference card on the story board
+              * Set aside the the 8 Mythos cards
+              * Set out the tokens
+              * Place the Elder One stage cards in ascending order (1 on top)
+                on the story board
+          * Choose an episode
+              * Set aside its 8 Mythos cards
+              * Shuffle the Discovery cards and set them out
+              * Put the episode card on the story board
+              * Set out the tokens
+              * Place the Monsters reference cards on the story board
+          * Take out all the figures for the enemies shown on the
+            reference cards
+          * Set up the map according the back of the episode card
+              * Arrange the map tiles
+              * Set out the enemy figures and tokens
+              * Put the episode card back on the story board with the story
+                side faceup
+          * Shuffle all 16 Mythos cards and place them facedown
+          * Shuffle the discovery deck and place it facedown
+          * Players
+              * Each player takes an investigator board and its figure
+              * Each player takes a colored base (attach to figure) and
+                "tentacle" tokens
+                  * Place 3 tentacle markers on the 1st level of the
+                    investigators skills
+                  * Place the other 3 tentacle markers on the leftmost space
+                    of the wound, stress, and sanity tracks
+              * Place the investigators on the starting space of the map
+          * Shuffle the insanity cards and deal 1 to each player.  The players
+            place this faceup in front of them
+          * Select a starting player
+    - name: Turn Sequence
+      text: |
+          1. [Take 3 actions](#take_3_actions)
+          2. [Draw Mythos Card](#draw_mythos_card)
+          3. [Investigate or Fight](#investigate_or_fight)
+          4. [Resolve End of Turn](#resolve_eot)
+      sections:
+          - name: 1. Take 3 Actions
+            id: take_3_actions
+            text: |
+                * You may take the same action more than once
+                * Actions may be standard actions or from the 2 unique to every
+                  episode
+                * **Some actions can only be done on a Safe space** (a space
+                  without enemies)
+            sections:
+                - name: Run
+                  text: |
+                      Move up to 3 spaces.
+
+                      * **You can only move between spaces if there are arrows
+                        on both sides of the passage pointing at each other**
+                      * You may also travel between 2 spaces with a staircase
+                        or tunnel
+                      * When you leave a space with enemies, **all enemies
+                        will follow you to your new space**
+                      * When you leave a space with fire, **place 1 fire token
+                        from the reserve onto your investigator board for
+                        each token on the space**
+                - name: Attack
+                  text: |
+                      Target a single enemy and [make a roll](#dice_and_checks)
+
+                      * Each success (!) rolled causes 1 wound to the target.
+                        Place wound tokens, or if this is >= to their health,
+                        you've killed them
+                - name: Rest (only on a Safe space)
+                  text: |
+                      You may heal any combinator of 3 **total** spaces in
+                      stress and/or health
+
+                      **NOTE:** Sanity **CANNOT** be healed by resting
+                - name: Trade
+                  text: |
+                      You and all investigators in the space may trade any
+                      number of items or companions with each other.
+
+                      * A traded card **must** remain on the same side as it
+                        was
+                      * **You may not trade Conditions**
+                - name: Episode Actions
+                  text: |
+                      Each episode has 2 unique actions on the episode card.
+                      These will generally help you disrupt the ritual
+          - name: 2. Draw Mythos Card
+            id: draw_mythos_card
+            text: |
+                Draw the top Mythos card and resolve it, then place it in a
+                faceup discard.  The card must be resolved from top to bottom.
+                If you can't do a step, skip it.
+            sections:
+                - name: Elder One Summoning
+                  text: |
+                      If the card has an Elder One symbol at the top, *make
+                      sure it is visible when discarded*
+                - name: Special Effects
+                  text: |
+                      These effects only affect the player whose turn it is,
+                      *unless otherwise stated*
+
+                      * When an effect moves an enemy, it must be moved by the
+                        shortest path.  If there is a tie, the active player
+                        chooses.
+                          * The enemy stops when it reaches its target
+                - name: Summon Enemies
+                  text: |
+                      The bottom of the card may indicate a gate color and a
+                      specific enemy that must be summoned there
+
+                      * If there are multiple gates and enemies, summon them in
+                        order.
+                      * Skip any gates where you are out of that figure
+          - name: 3. Investigate or Fight
+            id: investigate_or_fight
+            text: |
+                This step varies based on whether or not you have enemies
+                in your space
+            sections:
+                - name: Investigate (in a Safe space)
+                  text: |
+                      Draw the top card of the Discovery deck and read the
+                      center text
+
+                      * Some cards tell you something you must do, but most
+                        will give you a choice
+                      * Some cards will allow to *claim* an item or companion
+                      * Some cards may have a Condition which changes your
+                        mental state
+                      * Companions
+                          * Any wounds you take may be applied to Companions
+                          * **Companions can never be healed**
+                          * Companions are discarded if the wounds >= their
+                            health
+                          * They may give you a skill level:
+                              * Move up 1 level in that skill (if you have it)
+                              * You gain level 1 of that skill (if you don't
+                                have it)
+                - name: Fight (enemies in your space)
+                  text: |
+                      Each enemy in your space attacks you in the order *you*
+                      choose.
+
+                      **NOTE:** If an effect makes you enter a space with
+                      an enemy or an enemy moves into your space, **that
+                      enemy will attack you**.  If an enemy *leaves* your
+                      space, it doesn't attack you anymore
+                      
+                      * Enemy attacks
+                          * Roll the number and type of dice shown on their
+                            ref. card
+                          * Each success (!) gives you a wound
+                          * Each tentacle costs you 1 sanity
+                          * Elder signs have no effect unless indicated on
+                            the enemy's card
+                          * You may use stress to reroll these dice
+                          * You may use skills to help avoid the attacks
+          - name: 4. Resolve End of Turn
+            id: resolve_eot
+            sections:
+                - name: 1. End of Turn Effects
+                  text: |
+                      Any effects that happen at the end of the turn,
+                      **except the Elder One effects**, happen in an order
+                      chosen by the active player
+                - name: 2. Fire!
+                  text: |
+                      Roll 1 standard (black) die for every fire token on
+                      your investigator.
+
+                      * You may use stress to reroll dice
+                      * Take 1 wound for each success (!)
+                      * Lose 1 sanity for each tentacle
+                      * Discard all fire tokens on your investigator
+                - name: 3. Check the Mythos Discard Pile
+                  id: check_mythos_discard
+                  text: |
+                      If there are 3 cards in the discard pile with the
+                      Elder One symbol, the Elder One advances
+
+                      * If there are 3 Elder One symbols
+                          * Advance the Elder One on the track.  If the
+                            Elder One is on the board, advance the
+                            progression token
+                          * The revealed Elder One stage cards and episode
+                            card will tell you what to do when they advance
+                              * Resolve the Elder One effects first
+                          * All of the discarded Mythos cards are shuffled
+                            back into the deck
+                - name: 4. Check the Elder One Summoning
+                  id: check_elder_summon
+                  text: |
+                      The Elder One is summoned if the Elder One entered
+                      the 1st red space **OR** the ritual was disrupted this
+                      turn
+
+                      * When the Elder One is summoned:
+                          * Move the stage 1 card to the side, revealing the
+                            stage 2 card
+                              * Resolve the stage 2 reveal effects
+                              * **The stage 1 effects remain in play until
+                                the end of the game!**
+                          * Place the progression token on the summoning
+                            track
+                - name: 5. Elder One End of Turn Effects
+                  text: |
+                      Resolve all the End of Turn effects on the stage cards
+                      in stage order (1, then 2, then 3, then final)
+
+                      * If an effect refers to "you", that is the current
+                        investigator
+    - name: Dice and Checks
+      id: dice_and_checks
+      sections:
+          - name: Make a Roll
+            text: |
+                Some actions and Discovery cards will tell you to "make a roll".
+
+                * You always roll 3 standard (black) dice
+                * You may also be allowed to add green dice
+                * Enemies roll a specific number and type of dice when
+                  attacking, as indicated on their ref. card
+            sections:
+                - name: 4 Possible Results
+                  text: |
+                      * **Exclamation Point (!):** This denotes a **success**
+                        for attacking, an enemy attacking you, or a test
+                      * **Elder Sign:** This means nothing unless a skill or
+                        card uses them
+                      * **Tentacle:** For each tentacle, lose 1 sanity.  Move
+                        your tracker 1 space to the right.  **Note that
+                        tentacles cost you sanity on EVERY roll!**  See
+                        [sanity](#sanity) for more info
+                      * **Blank:** No effect (most of the time)
+                - name: Bonus (green) Dice
+                  text: |
+                      * Some skills and cards my give you these
+                      * Some checks may give you bonus dice for a relatedx
+                        ability
+                      * You will use 1 additional die for every bonus die symbol
+                        you've met or passed on the sanity track
+                      * *There is no limit to the number of bonus dice that may
+                        be rolled.*
+                - name: Rerolls
+                  text: |
+                      * After rolling, you may take 1 stress to reroll 1 die
+                      * You may do this multiple times on any roll
+                      * You may also use stress on enemy attacks
+                - name: Applying Results
+                  text: |
+                      * Use any successes
+                          * Investigator attacking: each success is 1 wound
+                            applied to the target
+                          * Enemy attacking: each success is 1 wound applied
+                            to the target (usually an investigator)
+                          * "make a roll" from an action: you must meet or
+                            exceed the number of successes on the card
+                      * Resolve any effects tied to the result of the roll
+                          * "If wounded..."
+                          * "If it survives an attack..."
+                          * "When the enemy dies..."
+                          * etc.
+                      * Apply any tentacles
+                          * Lose 1 sanity for each tentacle rolled
+                              * If you reach a red space:
+                                  * Stop moving the marker (**even if you
+                                    didn't lose the full amount of sanity**)
+                                  * Activate your insanity on your card
+                                  * Level up a skill
+    - name: Death of an Investigator
+      text: |
+          * If the Elder One is still on the Summoning track, **the game is
+            immediately lost**
+          * Otherwise, the investigator:
+              * Discards all Discovery cards and tokens
+              * The episode may specify what to do with any special tokens
+          * If the investigator died during their turn, skip all the following
+            turn phases **except for
+            [Check the Mythos Discard Pile](#check_mythos_discard) phase
+              * If there are 3 summoning symbols, the Elder One advances
+          * Thereafter, the player's turn is skipped
+    - name: Disrupting the Ritual
+      text: |
+          * Each episode describes the tasks needed to disrupt the ritual
+          * The Elder One cannot be attacked or damaged until the ritual
+            is disrupted, but it **can attack you**
+          * If the investigators disrupt the ritual, [the Elder One is summoned
+            at the end fo the turn](#check_elder_summon)
+          * See also [Fighting the Elder One](#fighting_elder_one)
+    - name: Fighting the Elder One
+      id: fighting_elder_one
+      text: |
+          * Until the ritual is disrupted, **the Elder One cannot be attacked
+            or damaged**
+          * The Elder One has multiple stages, with individual health, that
+            must be defeated one at a time
+          * Starting with stage 2, each card shows:
+              * A one-time effect for when the card is revealed
+              * An ongoing effect that **remains in play until the end of the
+                game**
+              * Health showing the number of wounds the stage can take
+              * The number and type of dice it **adds** to the Elder One's
+                attacks
+          * When the stage wounds are >= the health, the stage is defeated
+              * Reveal the next stage and activate the "When Revealed" effect
+              * Excess wounds do **NOT** carry over to the next stage
+              * **All previous stage effects and dice remain in play**
+    - name: Ending the Game
+      text: |
+          * Everyone wins if:
+              * You kill the Elder One by defeating its final stage
+              * If multiple end-game triggers happen at the same time,
+                **winning conditions have precedence**
+          * Everyone loses if:
+              * An investigator is killed or consumed by madness before the
+                Elder One is summoned
+              * All investigators are killed or consumed by madness
+              * The progression token reaches the last (8th) space of the
+                Summoning track
