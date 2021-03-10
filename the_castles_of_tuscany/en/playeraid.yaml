@@ -47,10 +47,131 @@ sections:
           6. Flip 8 of the beige hexes face up in 2 rows of 4
     - name: Player Board Symbols
       text: |
-          ![Draw Region Card](/static/img/the_castles_of_tuscany/draw_region.jpg)  **Draw region card**:  Players normally draw 2 region cards, but draw 1
+          * ![Draw Region Card](/static/img/the_castles_of_tuscany/draw_region.jpg)  **Draw region card**:  Players normally draw 2 region cards, but draw 1
           extra for each bonus tile. **Does not count when playing a 
           Monastery hex**.
-
-          ![Hex Storage Space](/static/img/the_castles_of_tuscany/hex_storage.jpg) **Hex Storage Space**: Place an acquired hex here.  Bonus tiles allow 
+          * ![Hex Storage Space](/static/img/the_castles_of_tuscany/hex_storage.jpg) **Hex Storage Space**: Place an acquired hex here.  Bonus tiles allow 
           storage of an extra hex.
+          * ![Marble Storage Space](/static/img/the_castles_of_tuscany/marble_storage.jpg) **Marble Storage Space**: Gain +1 marble for each tile.
+          * ![Worker Storage Space](/static/img/the_castles_of_tuscany/worker_storage.jpg) **Worker Storage Space**: Gain +1 worker for each tile.
+              * **Using a worker**: A worker counts as 1 of the 2 required
+                cards when placing hex tiles on your board.  If you use 2
+                workers, you can play a hex without cards.
+          * ![Draw Yield Cards](/static/img/the_castles_of_tuscany/draw_yield.jpg) **Draw Yield Cards**: Draw +1 yield card for each tile.
+    - name: Playing the Game
+      text: |
+          * The game lasts 3 rounds.
+          * There is a scoring phase at the end of each round.
+          * After the 3rd scoring phase, there is a final scoring.
+          * Once the starting player has taken their turn, play proceeds
+            clockwise.
+      sections:
+          - name: Summary
+            text: |
+                * The 1st round ends at the end of the turn when a player
+                  has removed all hex tiles from the left-most stack on their
+                  player board.
+                * There is then a scoring phase.
+                * **Players do not empty their hex tiles stacks after a round!**
+                * The 2nd round ends when a player has removed all hex tiles
+                  from stack 2.
+                * There is another scoring phase.
+                * The 3rd round ends when the 3rd stack is depleted for a
+                  player.  Each player gets **1 more turn**, then the 3rd
+                  round ends.
+                * There is another scoring phase.
+          - name: Player Actions
+            text: |
+                You perform 1 of 3 actions on your turn.
+
+                * Draw Region Cards:
+                    * Take 2 region cards.  **There is no hand limit**.
+                    * If the draw pile is empty, shuffle the discards.
+                * Take a Tile:
+                    * Take 1 of the face up hex tiles and place it on a
+                      storage space.  If you don't have an open space, you
+                      can discard a tile to the box.
+                    * After taking a tile, replace the missing tile with one
+                      from your own stack.  **You must take the top tile from
+                      the left-most stack**.
+                    * If this was the last tile of the stack, **the player 
+                      must announce this**.
+                        * Play until everyone has completed a turn (right of
+                          the start player).
+                        * Proceed to scoring phase.
+                    * **Note**: If your tile is the 5th tile of the same color:
+                        * The 5 tiles of the same color are removed and placed
+                          face up next to the beige tile in a stack.  These are
+                          no longer available.
+                        * Draw 5 new tiles from the face down beige stacks to
+                          replace the discarded tiles.
+                        * Repeat as necessary until there are not 5 tiles of
+                          the same color.
+                * Place a Tile:
+                    * Discard 2 region cards matching the color of the tile
+                      to be placed.
+                        * You can sub 2 same color cards for 1 card of another
+                          color.
+                    * The tile **must be connected to a previously places hex**.
+                    * The tile **must match the color of the space on the region
+                      board**. (orange tile on an orange hex zone)
+                    * **Hex tile scoring**: Check for a completed color zone and
+                      score on the green track.
+                        * 1 VP for a 1 hex zone
+                        * 3 VP for a 2 hex zone
+                        * 6 VP for a 3 hex zone
+                    * **Color bonus scoring tiles**:
+                        * When all zones of a color have been covered, they
+                          gain victory points on the green track for what is
+                          shown on the bonus tile.
+                        * If the VP number showing is 1, flip the tile.  If
+                          the number showing is a 2, put it back in the box.
+    - name: Hex Tiles
+      text: |
+          Placing a tile awards a player based on the type of tile
+
+          * [Castle (Dark Green)]!#1d3a15!
+              * Take any of the 8 tiles and place it **without playing cards**.
+                Then replace the missing tile with the top of your left-most
+                stack.
+          * [City (Red)]!#97171f!
+              * Take any square bonus tile and place it next to your board.
+          * [Inn (Blue)]!#307a86!
+              * Place a blue hex piece on the staging area of your player board.
+              * On a **future** turn, you can place this on any space on your
+                region board by playing 2 cards of the color of the space.
+              * If you don't have the space for a blue hex piece on your player
+                board, score 2 points on the red track instead.
+          * [Agriculture (Light Green)]!#83cd2d!
+              * Gain 1 VP on the green track per agriculture type **not** in
+                that area.
+          * [Quarry (Gray)]!#888b8e!
+              * Take a marble from the supply.
+          * [Village (Orange)]!#f1631e!
+              * Take a worker from the supply.
+          * [Monastery (Yellow)]!#f9b51f!
+              * Take 3 region cards from the draw pile.  **The +1 region card
+                tile bonus does not apply!**
+          * [Wagon (Beige)]!#b2a97e!
+              * Draw a yield card and gain the reward, then discard it.
+              * If there are no more cards in the yield deck, shuffle the
+                discard.
+    - name: Scoring
+      text: |
+          * When the round ends, transfer the points from the green track to the
+            red scoring track. **Do not reset the green track!**
+          * If you reach 50 points on the red track, place your 50 marker on
+            the lion's head.  Flip it if you surpass 100 points.
+    - name: Game End
+      text: |
+          * Gain the following additional points on the red scoring track:
+              * 1 VP for each unplaced hex tile
+              * 1 VP for each unplaced blue hex piece
+              * 1 VP for each marble
+              * 1 VP for each worker
+              * 1 VP for every 3 cards in hand
+          * Tie breakers:
+              1. The player with the most empty spaces on their region board
+              2. The player with the fewest VP on the green scoring track
+              3. The player with the fewest remaining region cards
 
