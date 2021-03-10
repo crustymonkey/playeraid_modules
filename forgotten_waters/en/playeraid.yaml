@@ -2,7 +2,7 @@ name: "Forgotten Waters"
 description: "Explore the seas! [See this on BGG](https://boardgamegeek.com/boardgame/302723/forgotten-waters)"
 text_type: markdown
 credits: Jay Deiman
-enabled: false
+enabled: true
 sections:
     - name: Setup
       text: |
@@ -85,7 +85,7 @@ sections:
                 * ![locked](/static/img/forgotten_waters/locked.jpg)
                   **Locked Action**: These can't be chosen.
                 * ![required](/static/img/forgotten_waters/required.jpg)
-                  **Required Actions**: Theset **MUST** be chosen by exactly
+                  **Required Actions**: These **MUST** be chosen by exactly
                   1 player.
 
 
@@ -106,165 +106,165 @@ sections:
             text: |
                 Read the entry listed under the current page's Round End
                 section.
-      - name: Turning to a New Page
-        text: |
-            * Remove all tokens from the current page.
-            * If there is a location warning section, read that aloud.
-            * Go immediately into a new round by starting the [planning
-              phase](#planning_phase) (start the timer and select actions).
-      - name: Winning and Losing
-        text: |
-            * The game can end in 1 of 4 ways:
-                * **Drowned**: If the ship's hull reaches 0, everyone loses.
-                * **Mutiny**: If the discontent is >= than the crew, everyone
-                  loses.
-                * **Threat**: If the last threat event is reached, everyone
-                  loses.
-                * **Scenario Goal Reached**: If a scenario entry says that
-                  players have reached the goal, then all players that have
-                  completed at least 4 constellation events win the game.  If
-                  a player has completed all 5 of their events, they have
-                  achieved a superior victory. In infamy order (high to low),
-                  each player consults the Endings chart on their player sheet
-                  and reads their ending.
-      - name: Saving Your Game
-        text: |
-            * When you reach part 2 of a scenario, you have the option to save
-              your game.
-            * Write "Part 1 Complete" on the ship's log and follow instructions
-              on how to record the game state on the back of the ship's log.
-            * Follow instructions in the app by clicking on the View Setup.
-      - name: Resolving Game Effects
-        sections:
-            - name: Performing Skill Checks
-              text: |
-                  Perform the following in order:
-                  
-                  1. Roll a 12-sided die.
-                  2. Add 1 for each filled in box for that skill from your
-                     player sheet.
-                  3. Add the number under each icon matching that skill on your
-                     treasure and story cards.
-                  4. Consult the text associate with the skill check and resolve
-                     the appropriate option.
+    - name: Turning to a New Page
+      text: |
+          * Remove all tokens from the current page.
+          * If there is a location warning section, read that aloud.
+          * Go immediately into a new round by starting the [planning
+            phase](#planning_phase) (start the timer and select actions).
+    - name: Winning and Losing
+      text: |
+          * The game can end in 1 of 4 ways:
+              * **Drowned**: If the ship's hull reaches 0, everyone loses.
+              * **Mutiny**: If the discontent is >= than the crew, everyone
+                loses.
+              * **Threat**: If the last threat event is reached, everyone
+                loses.
+              * **Scenario Goal Reached**: If a scenario entry says that
+                players have reached the goal, then all players that have
+                completed at least 4 constellation events win the game.  If
+                a player has completed all 5 of their events, they have
+                achieved a superior victory. In infamy order (high to low),
+                each player consults the Endings chart on their player sheet
+                and reads their ending.
+    - name: Saving Your Game
+      text: |
+          * When you reach part 2 of a scenario, you have the option to save
+            your game.
+          * Write "Part 1 Complete" on the ship's log and follow instructions
+            on how to record the game state on the back of the ship's log.
+          * Follow instructions in the app by clicking on the View Setup.
+    - name: Resolving Game Effects
+      sections:
+          - name: Performing Skill Checks
+            text: |
+                Perform the following in order:
+                
+                1. Roll a 12-sided die.
+                2. Add 1 for each filled in box for that skill from your
+                   player sheet.
+                3. Add the number under each icon matching that skill on your
+                   treasure and story cards.
+                4. Consult the text associate with the skill check and resolve
+                   the appropriate option.
 
-                  * **Misfortune Tokens**: If you have 1 or more of these, roll
-                    a 2nd die and keep the lower roll.  Then discard 1 token.
-                  * **Re-Roll Tokens**: If you have 1 or more of these, you
-                    discard 1 token to re-roll 1 die.  You may do this
-                    multiple times on a skill check.
-            - name: Gaining Skills
-              text: |
-                  * When a player gains a skill, they fill in the left-most
-                    unfilled box for that skill.
-                  * If there is a ★ in it, that player also fills in a circle
-                    on their constellation.
-                  * **Note**: Boxes with an "X" printed on them cannot be filled
-                    in. Players do not gain the skill if all boxes are already
-                    filled.
-            - name: Highest/Lowest Skill
-              text: |
-                  If you need to determine who has the highest/lowest amount
-                  of a skill, **only count the boxes filled on the player's
-                  sheet**.  Do not count treasure/story cards.
-            - name: Filling in Stars on Constellations: ★
-              text: |
-                  * Fill in an empty star (circle) when directed.
-                      * The new star must be connected to an already filled
-                        star or the starting star.
-                  * If the star has a "!", the player takes a constellation
-                    event token.
-            - name: Resolving Constellation Events: !
-              text: |
-                  * When a player is directed to resolve their constellation
-                    events:
-                      * Discard all constellation event tokens.
-                      * For each token discarded, check off the next
-                        unchecked constellation event and read it aloud,
-                        filling in any blanks with words from the story
-                        blanks section of their sheet.
-            - name: Gaining/Losing/Checking Threat
-              text: |
-                  * The Lookout adds/removes threat tokens from the threat
-                    track when gaining/losing threat.
-                  * When directed to check threat (**and only when directed**),
-                    if the number of threat tokens on the track >= to the
-                    current objective card's threat limit, check off the
-                    next unchecked Threat Event ont he ship's log and read
-                    the entry.
-            - name: Gaining/Losing Ship Stats
-              text: |
-                  * The appropriate player (First Mate, Boatswain, Cooper)
-                    moves the corresponding ship stat marker.  No stats can go
-                    below 0 or above its max.
-            - name: Moving the Ship
-              text: |
-                  * When instructed, move the ship to an adjacent space.
-                  * If the ship moves to an empty space (no token on it),
-                    draw a navigation token and place it face up on the space
-                    before moving onto it.
-                  * **When moving, do NOT go to the entry listed on the new
-                    space until directed to**.
-                  * If the ship moves onto navigation token or special location
-                    with a "!" on it, the ship can't be moved further.
-                  * The ship can't be moved onto rocky waters.
-            - name: Scouting
-              text: |
-                  1. Draw a navigation token and place it (still face down)
-                     either adjacent to the ship or another nav. token. Do this
-                     for the number of spaces directed to scout.
-                  2. Flip all the newly drawn nav. tokens face up.
-            - name: Cannons
-              text: |
-                  * When directed to upgrade a cannon, the Gunner can replace
-                    a cannon with 1 that has a value 1 higher. **An unloaded
-                    canon stays unloaded, and vice versa**.
-                  * Cannons can be discarded at any time to make room for new
-                    ones.
-            - name: Gaining/Losing Infamy
-              text: |
-                  * Move the infamy token up or down the specified number of
-                    spaces, but shift all tokens accordingly so there are no
-                    gaps (from left to right).
-            - name: Breaking Ties
-              text: |
-                  * Break any/all ties in infamy order with the higher infamy
-                    player having the higher result.
-            - name: Objective Cards
-              text: |
-                  * At all times, exactly 1 objective card will be in play.
-                  * When players are directed to discard the card, they will
-                    also be given directions for which card to replace it with.
-            - name: Treasure Cards
-              text: |
-                  * When a player gains a treasure, they draw and put 1 treasure
-                    card into play.
-                  * If the treasure deck runs out, shuffle the discard.
-                  * Treasure cards are played face up.
-                  * Treasure can be stolen from other players.
-                  * **A player can never have more than 4 treasure cards in
-                    play at a time**.
-                      * If a player gets another treasure, they must first
-                        discard an existing treasure.
-                      * +1 to Supplies for each treasure discarded in this
-                        manner.
-                      * **A player does not fill in a box on their player
-                        sheet when gaining a treasure with skill icons**.
-                      * Skill bonuses are added to skill checks.
-                  * Some cards have discard effects.
-                      * They only resolve when they are specifically discarded.
-                        This is **not activated when discarding down to 4 or
-                        when burying treasure**.
-                      * Discard effects can only be used during the player's
-                        turn (during the action phase), unless otherwise
-                        instructed on the card.
-            - name: Story Cards
-              text: |
-                  * These function similar to treasure cards, but are
-                    specifically *not* treasure cards.
-                  * They cannot be buried, discarded, stolen, or used to pay
-                    a treasure cost.
-                  * There is no limit to the number of story cards a player
-                    can have.
-                  * They should be taken from the story deck, or else the player
-                    that has it.
+                * **Misfortune Tokens**: If you have 1 or more of these, roll
+                  a 2nd die and keep the lower roll.  Then discard 1 token.
+                * **Re-Roll Tokens**: If you have 1 or more of these, you
+                  discard 1 token to re-roll 1 die.  You may do this
+                  multiple times on a skill check.
+          - name: Gaining Skills
+            text: |
+                * When a player gains a skill, they fill in the left-most
+                  unfilled box for that skill.
+                * If there is a ★ in it, that player also fills in a circle
+                  on their constellation.
+                * **Note**: Boxes with an "X" printed on them cannot be filled
+                  in. Players do not gain the skill if all boxes are already
+                  filled.
+          - name: Highest/Lowest Skill
+            text: |
+                If you need to determine who has the highest/lowest amount
+                of a skill, **only count the boxes filled on the player's
+                sheet**.  Do not count treasure/story cards.
+          - name: "Filling in Stars on Constellations: ★"
+            text: |
+                * Fill in an empty star (circle) when directed.
+                    * The new star must be connected to an already filled
+                      star or the starting star.
+                * If the star has a "!", the player takes a constellation
+                  event token.
+          - name: "Resolving Constellation Events: !"
+            text: |
+                * When a player is directed to resolve their constellation
+                  events:
+                    * Discard all constellation event tokens.
+                    * For each token discarded, check off the next
+                      unchecked constellation event and read it aloud,
+                      filling in any blanks with words from the story
+                      blanks section of their sheet.
+          - name: Gaining/Losing/Checking Threat
+            text: |
+                * The Lookout adds/removes threat tokens from the threat
+                  track when gaining/losing threat.
+                * When directed to check threat (**and only when directed**),
+                  if the number of threat tokens on the track >= to the
+                  current objective card's threat limit, check off the
+                  next unchecked Threat Event ont he ship's log and read
+                  the entry.
+          - name: Gaining/Losing Ship Stats
+            text: |
+                * The appropriate player (First Mate, Boatswain, Cooper)
+                  moves the corresponding ship stat marker.  No stats can go
+                  below 0 or above its max.
+          - name: Moving the Ship
+            text: |
+                * When instructed, move the ship to an adjacent space.
+                * If the ship moves to an empty space (no token on it),
+                  draw a navigation token and place it face up on the space
+                  before moving onto it.
+                * **When moving, do NOT go to the entry listed on the new
+                  space until directed to**.
+                * If the ship moves onto navigation token or special location
+                  with a "!" on it, the ship can't be moved further.
+                * The ship can't be moved onto rocky waters.
+          - name: Scouting
+            text: |
+                1. Draw a navigation token and place it (still face down)
+                   either adjacent to the ship or another nav. token. Do this
+                   for the number of spaces directed to scout.
+                2. Flip all the newly drawn nav. tokens face up.
+          - name: Cannons
+            text: |
+                * When directed to upgrade a cannon, the Gunner can replace
+                  a cannon with 1 that has a value 1 higher. **An unloaded
+                  canon stays unloaded, and vice versa**.
+                * Cannons can be discarded at any time to make room for new
+                  ones.
+          - name: Gaining/Losing Infamy
+            text: |
+                * Move the infamy token up or down the specified number of
+                  spaces, but shift all tokens accordingly so there are no
+                  gaps (from left to right).
+          - name: Breaking Ties
+            text: |
+                * Break any/all ties in infamy order with the higher infamy
+                  player having the higher result.
+          - name: Objective Cards
+            text: |
+                * At all times, exactly 1 objective card will be in play.
+                * When players are directed to discard the card, they will
+                  also be given directions for which card to replace it with.
+          - name: Treasure Cards
+            text: |
+                * When a player gains a treasure, they draw and put 1 treasure
+                  card into play.
+                * If the treasure deck runs out, shuffle the discard.
+                * Treasure cards are played face up.
+                * Treasure can be stolen from other players.
+                * **A player can never have more than 4 treasure cards in
+                  play at a time**.
+                    * If a player gets another treasure, they must first
+                      discard an existing treasure.
+                    * +1 to Supplies for each treasure discarded in this
+                      manner.
+                    * **A player does not fill in a box on their player
+                      sheet when gaining a treasure with skill icons**.
+                    * Skill bonuses are added to skill checks.
+                * Some cards have discard effects.
+                    * They only resolve when they are specifically discarded.
+                      This is **not activated when discarding down to 4 or
+                      when burying treasure**.
+                    * Discard effects can only be used during the player's
+                      turn (during the action phase), unless otherwise
+                      instructed on the card.
+          - name: Story Cards
+            text: |
+                * These function similar to treasure cards, but are
+                  specifically *not* treasure cards.
+                * They cannot be buried, discarded, stolen, or used to pay
+                  a treasure cost.
+                * There is no limit to the number of story cards a player
+                  can have.
+                * They should be taken from the story deck, or else the player
+                  that has it.
