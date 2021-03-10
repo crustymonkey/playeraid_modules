@@ -62,8 +62,8 @@ sections:
     - name: Playing the Game
       text: |
           * The game lasts 3 rounds.
-          * There is a scoring phase at the end of each round.
-          * After the 3rd scoring phase, there is a final scoring.
+          * There is a [scoring phase](#scoring) at the end of each round.
+          * After the 3rd scoring phase, there is a [final scoring](#game_end).
           * Once the starting player has taken their turn, play proceeds
             clockwise.
       sections:
@@ -71,17 +71,19 @@ sections:
             text: |
                 * The 1st round ends at the end of the turn when a player
                   has removed all hex tiles from the left-most stack on their
-                  player board.
-                * There is then a scoring phase.
+                  player board. See [Taking a Tile](#player_actions)
+                * There is then a [scoring phase](#scoring).
                 * **Players do not empty their hex tiles stacks after a round!**
                 * The 2nd round ends when a player has removed all hex tiles
                   from stack 2.
-                * There is another scoring phase.
+                * There is another [scoring phase](#scoring).
                 * The 3rd round ends when the 3rd stack is depleted for a
                   player.  Each player gets **1 more turn**, then the 3rd
                   round ends.
-                * There is another scoring phase.
+                * There is another [scoring phase](#scoring).
+                * Perform [final scoring](#game_end)
           - name: Player Actions
+            id: player_actions
             text: |
                 You perform 1 of 3 actions on your turn.
 
@@ -160,12 +162,14 @@ sections:
               * If there are no more cards in the Yield deck, shuffle the
                 discard.
     - name: Scoring
+      id: scoring
       text: |
           * When the round ends, transfer the points from the green track to the
             red scoring track. **Do not reset the green track!**
           * If you reach 50 points on the red track, place your 50 marker on
             the lion's head.  Flip it if you surpass 100 points.
     - name: Game End
+      id: game_end
       text: |
           * Gain the following additional points on the red scoring track:
               * 1 VP for each unplaced hex tile
