@@ -2,7 +2,7 @@ name: "The Castles of Tuscany"
 description: "Build your region in Tuscany [See this on BGG](https://boardgamegeek.com/boardgame/300327/castles-tuscany)"
 text_type: markdown
 credits: "Jay Deiman"
-enabled: false
+enabled: true
 sections:
     - name: Setup
       text: |
@@ -51,7 +51,8 @@ sections:
           extra for each bonus tile. **Does not count when playing a 
           Monastery hex**.
           * ![Hex Storage Space](/static/img/the_castles_of_tuscany/hex_storage.jpg) **Hex Storage Space**: Place an acquired hex here.  Bonus tiles allow 
-          storage of an extra hex.
+            storage of an extra hex.  When acquired, **gain 2 points on the
+            green track**.
           * ![Marble Storage Space](/static/img/the_castles_of_tuscany/marble_storage.jpg) **Marble Storage Space**: Gain +1 marble for each tile.
           * ![Worker Storage Space](/static/img/the_castles_of_tuscany/worker_storage.jpg) **Worker Storage Space**: Gain +1 worker for each tile.
               * **Using a worker**: A worker counts as 1 of the 2 required
@@ -98,11 +99,11 @@ sections:
                       must announce this**.
                         * Play until everyone has completed a turn (right of
                           the start player).
-                        * Proceed to scoring phase.
+                        * Proceed to the scoring phase.
                     * **Note**: If your tile is the 5th tile of the same color:
                         * The 5 tiles of the same color are removed and placed
-                          face up next to the beige tile in a stack.  These are
-                          no longer available.
+                          face up next to the beige tile in a stack. **These are
+                          no longer available**.
                         * Draw 5 new tiles from the face down beige stacks to
                           replace the discarded tiles.
                         * Repeat as necessary until there are not 5 tiles of
@@ -112,7 +113,7 @@ sections:
                       to be placed.
                         * You can sub 2 same color cards for 1 card of another
                           color.
-                    * The tile **must be connected to a previously places hex**.
+                    * The tile **must be connected to a previously placed hex**.
                     * The tile **must match the color of the space on the region
                       board**. (orange tile on an orange hex zone)
                     * **Hex tile scoring**: Check for a completed color zone and
@@ -153,8 +154,10 @@ sections:
               * Take 3 region cards from the draw pile.  **The +1 region card
                 tile bonus does not apply!**
           * [Wagon (Beige)]!#b2a97e!
-              * Draw a yield card and gain the reward, then discard it.
-              * If there are no more cards in the yield deck, shuffle the
+              * Draw a Yield card and gain the reward, then discard it.
+                **Note that you do not get any bonuses with Yield cards,
+                you only receive what's on the card**.
+              * If there are no more cards in the Yield deck, shuffle the
                 discard.
     - name: Scoring
       text: |
