@@ -1,0 +1,56 @@
+name: "The Castles of Tuscany"
+description: "Build your region in Tuscany [See this on BGG](https://boardgamegeek.com/boardgame/300327/castles-tuscany)"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+sections:
+    - name: Setup
+      text: |
+          Play area setup:
+          
+          1. Assemble the scoring board and place it.
+          2. Shuffle the region cards and place them in a stack.
+          3. Shuffle the yield cards and place them in a stack.
+          4. Sort the square bonus tiles and set them in piles by type.
+          5. Place the 8 color bonus tiles with the "1" side face up.
+          6. Place the marble, workers, and blue hexagons near the scoring
+             board.
+          7. Mix the neutral hex tiles (beige back) and set them face down
+             in small stacks.
+
+          Each player:
+
+          * 1 player board.
+          * Place the double-sided starting castle aside and mix the other
+            21 hex tiles in their color.  Create **3 facedown stacks of 7 tiles
+            each** and place them on the 3 fields (1. / 2. / 3.) at the top
+            of the player board.
+          * **Counters**: place the thinner marker on the **50** square of the
+            inner scoring bar (red) and the thicker one on the **50** field of
+            the outer scoring bar (green).
+          * Set aside the 50/100 victory point marker.
+
+          Continue setup:
+          
+          1. Each player draws 5 region cards.
+          2. Each player draws 3 random region boards -- one of each A, B,
+             and C -- place them next to each other **long edge to long edge**,
+             but **the boards can't be offset by more than 1 hex up or down**.
+          3. Each player places their starting castle on one of the 3 dark
+             green hexes.
+          4. The youngest player is the starting player and they take the
+             starting player tile.
+          5. All players, in turn order, beginning with the starting player,
+             takes any square bonus tile and places it to the right of the 
+             corresponding icon on their player board.  **Anyone who takes
+             a *+1 storage space* also moves up on the green track 2 spaces**.
+          6. Flip 8 of the beige hexes face up in 2 rows of 4
+    - name: Player Board Symbols
+      text: |
+          ![Draw Region Card](/static/img/the_castles_of_tuscany/draw_region.jpg)  **Draw region card**:  Players normally draw 2 region cards, but draw 1
+          extra for each bonus tile. **Does not count when playing a 
+          Monastery hex**.
+
+          ![Hex Storage Space](/static/img/the_castles_of_tuscany/hex_storage.jpg) **Hex Storage Space**: Place an acquired hex here.  Bonus tiles allow 
+          storage of an extra hex.
+
