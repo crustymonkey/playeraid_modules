@@ -1,0 +1,306 @@
+name: "Trickerion with Expansions"
+description: In a Victorian steampunk world, magicians perform dazzling tricks for money and fame. [See it on BGG](https://www.boardgamegeek.com/boardgame/163068/trickerion-legends-illusion)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+        * Separate the Trick cards by the type and arrange them based on their Fame Thresholds.
+        * Place 1 Wood, 1 Metal, 1 Glass, and 1 Fabric in the Market Row's stock.
+        * Create the Performance deck with 2 Magnus Pantheon, 2 Grand Magorian, and 2 Riverside Theater cards in that order.
+            * 2P: Use the cards with the grey Trick Markers printed on the back.
+        * Place # of players – 1 Riverside cards from the supply (not the deck) onto the Performance spaces.
+        * Shuffle the Special Assignment cards and place them face down in stacks beneath their Dark Alley spaces.
+        * Place the Trickerion Stone on space I of the Turn Counter track.
+        * Place the Academy board to the left of the main board with the 8 Room side face up. (4P: 10 Rooms)
+        * Place Closed Room tiles over Classroom and Practice Room slots marked A and B.
+            * 3P: Cover A only.
+        * Place an Open Room token on spaces IV and VI of the Turn Counter track. (3P: place 1 on space V only).
+        * Separate the Practice Room and Classrom tiles by their Fame Threshold to create 6 face down stacks.
+        * Shuffle the Secret tiles to form a face down stack. Place 2 face up on the indicated spots of the Academy board.
+        * 2P: Shuffle the Turn Setup cards and place them in a stack next to the board.
+        * Choose a starting player and place turn order markers. 2P: Only first and third positions are used.
+        * Get starting Coins based on player order. 12 / 14 / 16 / 18.
+        * In player order, each player chooses a Magician whose Favourite Trick category has not yet been chosen, their cards, and all components of their colour.
+            * A player that chooses Professor Bernard gets his 2 special Symbol and Academy markers.
+        * Each player gets the Contraption board for their Favourite Trick category and takes their 4 matching Contraptions.
+        * Each player gets their Magician disc, 1 Assistant disc, and 2 Trickerion Shards which are placed on the lowest 2 slots of your Contraption board.
+        * In player order, each player gets the following items:
+            * A total Coin value of 2 goods and places them in their Workshop.
+            * A Fame 1 Trick card from their Magician's Favourite Trick category and places a symbol marker on it. If the player has all of the components for their chosen Trick, they may immediately prepare it for free.
+            * A starting hand of 3 Theater, 2 Workshop, 2 Market Row, 2 Downtown, and 1 Academy cards.
+            * A Specialist, taking their board and bonus discs.
+            * A Protégé, taking their board and bonus discs.
+        * Each player gets their Signature Trick and sets it next to the player board.
+            * Players who chose the Mechaniker, Lumenia the Radiant, Priestess of Mysticism, or Professor Bernard may pay 1 Shard to place their Signature Trick into their Workshop instead of a standard Trick.
+            * Players may not choose their Signature Trick as their bonus starting Trick if they chose the Engineer Specialist.
+        * If you meet your chosen starting Trick's Component requirements, receive the Trick with the number of Trick markers on it equal to the number of overlapping squares on the card's Trick marker slot; essentially a free Prepare Action.
+        * Each player places their wooden Magian meeple on their spot of the Initiative Order track.
+        * Each player places their wooden cylinder on the 3 Fame slot of the Fame Track.
+        * 3P: Cover 1 +1 Action Point slots in Downtown, Market Row, Dark Alley, and Academy locations with neutral markers.
+        * Shuffle the Prophecy tokens, remove 7 at random and place the 7 blue Prophecies into the bag. Place 3 Prophecies on the board. No active Prophecy on the first turn.
+    - name: Gameplay
+      text: |
+        * When you acquire a Shard, it is placed on your Contraption board, filling it from bottom to top.
+        * When you spend a Shard, it must come from the topmost spot on your Contraption board.
+        * May discard any unwanted Trick from your Magician at any time, returning it to its deck, along with any of its Components.
+        * Effects that would affect all of Downtown, Market Row, and Dark Alley also affect the Academy.
+      sections:
+        - name: Roll Dice Phase
+          text: |
+            * Roll the Downtown dice and place them on their locations.
+            * 2P: Flip over the top Turn Setup card and block off the depicted spots with neutral discs. The Academy is blocked off the same way as the Dark Alley.
+        - name: Set Initiative Order Phase (skipped on first turn)
+          text: |
+            * Rearrange the player order markers in ascending order of Fame points (fewest first, most last).
+        - name: Advertise Phase
+          text: |
+            * In player order, players may choose to pay the number of coins on their Initiative slot to place their poster and gain 2 Fame.
+        - name: Assignment Phase
+          text: |
+            * Players choose their action cards for the round by placing them face down in the space for each disc.
+            * Workers without a card are idle for the round and do not need to be paid.
+        - name: Place Character Phase
+          text: |
+            * Players reveal all of their assignment cards.
+            * In player order, each player places one character on one free spot on the board and performs actions there.
+            * Before you place a Character, you may activate any number of your Contraptions for their benefits, turning them to their Inactive side.
+            * The number of action points is equal to the number printed on the character + the number on the chosen spot.
+                * Players may increase this number by 1 by paying a Shard (except the Theater), max 1 per placement.
+                * Players may increase this number by 1 by discarding the chosen Special Assignment card.
+                * If you learn your Signature Trick, locate its standard counterpart printed on the back of the card:
+                    * If this Trick is in the Trick deck, remove it from the game.
+                    * If the Trick is in your Workshop, replace it with the Signature version and remove the replaced one from the game. Any markers on the original Trick move to the Signature version.
+                    * If another player has this Trick, they keep it.
+            * After taking a die action, turn that die to its X face.
+          sections:
+            - name: Downtown
+              sections:
+                - name: Learn Trick (3 AP)
+                  text: |
+                    * Choose any Trick matching a die face, your Magician's favourite type, or your Signature Trick. "?" face means any type.
+                        * Player's Fame must be greater than or equal to the Trick's Fame Threshold. May spend money to cover difference.
+                        * Do not need to meet the Trick's Component requirements to learn it.
+                    * Place an unused Symbol Marker on the trick to indicate which symbol the trick will use in performances.
+                - name: Hire Character (3 AP)
+                  text: |
+                    * Hire 1 Specialist who type matches a die face and stack its worker disc on top of your placed worker.
+                    * Each player may only have one of any type of Specialist.
+                - name: Take Coins (3 AP)
+                  text: |
+                    * Take the number of coins shown on a die face.
+                - name: Reroll Die (1 AP)
+                  text: |
+                    * Reroll a single die in Downtown.
+                - name: Set Die (2 AP)
+                  text: |
+                    * Set one die in Downtown to any value.
+            - name: Market Row
+              sections:
+                - name: Buy (1 AP)
+                  text: |
+                    * Buy up to 3 copies of a single Component available in the Market. 1/2/3 Coins each for Basic/Advanced/Superior Components.
+                    * Each player may only have up to 3 of each type of component.
+                - name: Bargain (1 AP)
+                  text: |
+                    * Must be used in conjunction with a Buy action.
+                    * May decrease total price of Components you buy by 1 coin per AP spent on Bargain. Cannot go below 0 Coins.
+                - name: Order (1 AP)
+                  text: |
+                    * Place a component from the supply on the open slot in the Order area. Will be available to Buy next turn.
+                        * Cannot order a component that is already in the Market.
+                - name: Quick Order (2 AP)
+                  text: |
+                    * Choose a Component and put it in the Quick Buy spot. Any player may Buy it on their turn but costs 1 extra Coin.
+            - name: Workshop
+              sections:
+                - name: Prepare (1-3 AP)
+                  text: |
+                    * Number of AP needed to prepare a Trick is printed on its card.
+                    * May prepare multiple Tricks with a single character; only limited by number of AP.
+                    * Place a number of Trick markers on the Trick equal to the number of overlapping squares shown in the lower left box.
+                        * Components are NOT spent when preparing a Trick.
+                    * To prepare a Signature Trick, you must have a number of Contraptions built equal to the Trick's Level, Active or Inactive.
+                - name: Move Tricks (1 AP)
+                  text: |
+                    * Move a Trick to your Engineer's Trick slot or exchange it with another one.
+                - name: Move Components (1 AP)
+                  text: |
+                    * Move 1 Component pile to the Manager's Multi Component slot or exchange it with another one.
+                - name: Move Apprentice (1 AP)
+                  text: |
+                    * Permanently reallocated an Apprentice and assignment card below it (if any) to the Assistant's Apprentice slot (if empty).
+                - name: Build Contraption (1 AP)
+                  text: |
+                    * Place a Contraption token on the bottommost empty slot of your Contraction board with its Active side face up.
+                    * Contraptions may be built in slots even if there are not enough Shards in its space.
+            - name: Dark Alley
+              sections:
+                - name: Draw First Card (1 AP)
+                  text: |
+                    * Draw 2 cards from any Special Assignment deck in the Dark Alley, choose 1 to keep and put the other at the bottom of its deck. May only do this once per Character placement
+                - name: Draw Further Cards (2 AP)
+                  text: |
+                    * As Draw First Card action but at a higher AP cost.
+                - name: Fortune Telling (1 AP)
+                  text: |
+                    * Move each Pending Prophecy one slot clockwise.
+            - name: Academy
+              sections:
+                - name: Renovate (2 AP)
+                  text: |
+                    * May only perform this action if you have at least 1 Banner remaining in your supply.
+                    * Select an empty space with no Closed Room tile on it.
+                    * Choose 1 of the 3 Coin-Fame ratios printed on the selected space. Must meet the Fame Threshold of the chosen option or pay Coins to make up the difference.
+                    * Pay Coins and game Fame based on the chosen ratio.
+                    * Choose 1 Classroom or Practice Room tile with the same Fame Threshold as the chosen Coin-Fame ratio. Place the chosen tile face up on a space that it is allowed to be placed on (Classrooms on left, Practice Rooms on right).
+                    * Place a number of your Banners on the Academy as shown on the chart.
+                        * If you run out of Banners, each other player must discard 1 Banner for each Banner you cannot place.
+                - name: Practice (1-3 AP)
+                  text: |
+                    * Choose 1 of your Tricks and place the Academy marker corresponding to its suit on an empty slot on a Practice Room tile.
+                        * Trick being placed does not need to meet its Component Requirements.
+                        * May instead move an Academy marker from a Practice Room slot to another Practice Room slot.
+                        * Cannot move markers from a Classroom slot to a Practice Room slot.
+                        * May return 1 of your Academy markers from a Practice Room slot at any time to free it up for a different Trick.
+                    * AP cost is based on the chosen Trick's Level.
+                    * As long as a Trick's Academy marker is on a Practice Room slot, its bonus applies to the Trick.
+                - name: Teach (1-3 AP)
+                  text: |
+                    * Choose 1 of your Tricks and place the Academy marker corresponding to its suit on an empty slot on a Classroom tile.
+                        * Trick being placed must either meet its Component requirements or have at least 1 Trick marker on it.
+                        * May instead move an Academy marker from a Practice Room slot to a Classroom slot.
+                        * May instead move an Academy marker from a Classroom slot to another Classroom slot.
+                        * May NOT return your Academy marker from a Classroom slot to free it up for a different Trick.
+                    * AP cost is based on the chosen Trick's Level.
+                    * If the Trick and Classroom it is placed on have the same Fame Threshold, gain the one-time bonus printed on the Classroom tile between the 2 slots.
+                    * When a Trick's Academy marker in on a Classroom:
+                        * The Trick can no longer be Prepared in the Workshop but keeps any preparations it currently has and can still be performed.
+                        * If the Trick is discarded from the Workshop, its Academy marker is also removed from the Classroom.
+                - name: Learn Secret (2 AP)
+                  text: |
+                    * May only be taken once per Character placement.
+                    * Choose 1 Secret from the Academy and place it either on the bottommost empty Secret slot on your Protégé board or replace an existing Secret on your Protégé board, returning the replaced one to the box.
+                    * Each Secret grants your Protégé a new ability.
+                    * The second and third Secret added to your Protégé each gives them 1 extra AP.
+                    * The first and second Secret added to your Protégé each increase their wage by 1 Coin.
+                - name: Discver New Secrets (1 AP)
+                  text: |
+                    * Draw a Secret from the stack and place it face up on an empty Secret slot in the Academy.
+            - name: Theater
+              text: |
+                * Cannot buy additional AP with Shards in the Theater.
+                * Each player may only place their Characters on a single weekday.
+              sections:
+                - name: Set Up Trick (1 AP)
+                  text: |
+                    * Place a Trick's marker from your Workshop onto a free space of any Performance card.
+                        * Symbol of the chosen Trick must be placed in one of the circles on the Performance card.
+                        * The same Trick (colour and symbol) cannot be in any Performance more than once.
+                    * If 2 of the same Trick category symbols are in the same link circle, player that placed this tile immediately gets a bonus for each link based on the placed Trick's fame threshold.
+                        * 2P: You may create links with the pre-printed gray trick markers on the card.
+                        * If the link circle shows a Shard symbol, each player involved in the link gets 1 Shard.
+                - name: Reschedule (1 AP)
+                  text: |
+                    * Move 1 of your Trick markers to any other free slot on any card. Placement rules still apply. Do not receive link bonus.
+                - name: Perform (Magician Only)
+                  text: |
+                    * No immediate effect; triggers a Performance at the end of the round.
+        - name: Performance Phase
+          text: |
+            * Resolved in Thursday to Sunday order, not player initiative order.
+            * Player for that day chooses one Performance that contains at least one of their Tricks.
+            * All players receive the Trick yields for their Tricks on the chosen card.
+            * Performer (player that chose the performance) gets the following bonuses:
+                * 1 Fame for each linked Trick.
+                * Bonus from Specialists.
+                * Bonus on the bottom of the Performance card.
+            * All Trick markers are returned to the supply.
+            * Performance card remains on the board for use again.
+        - name: Classrom Phase
+          text: |
+            * If a Trick in a Classroom still has Trick markers in the Theater and/or Workshop, remove those Trick markers and place them in their owner's personal supply.
+            * In player order, each player receives the Yields for their Tricks in the Classrooms. Most Classroom slots modify the Yield of the Tricks on them. Modifiers in the Theater do not affect Classroom Yields.
+        - name: End Turn Phase
+          text: |
+            * Must pay 1 Coin for each working Apprentice (except Assistant's Apprentice which is free).
+            * Must pay 2 Coins for each working Specialist.
+            * Lose 2 Fame for each Coin that cannot be paid.
+            * Return all Characters to their spots.
+            * Turn each Inactive Contraption to its Active side if each Shard symbol in its space is covered.
+                * If a Contraption has a Fame bonus printed under it, you get this bonus when the Contraption is flipped to Active.
+            * Orders arrive by moving the Order tile to its assigned space, kicking out anything already there.
+            * Move Performance cards 1 slot clockwise. From third round on, discard the last Performance card on the track and anything on it and place the top card of the Performance deck face up. Should have 3/4/5 Performance cards available from the third turn onward for 2/3/4 players.
+            * Discard the Active Prophecy.
+            * Prophecy in the leftmost slot is move to the Active Prophecy slot.
+            * Move remaining Prophecies clockwise and put a new one in the blank spot.
+            * Any used Special Assignment cards are discarded.
+            * Return any Secrets still on the Academy to the bottom of the Secrets stack and deal 2 new ones to the Academy.
+            * Return Posters to their owners.
+            * Advance turn marker.
+            * If the turn marker lands on an Open Room token, remove 2 Close Room tiles from the Academy slots marked with letter.
+    - name: End of the Game
+      text: |
+        * 2 Fame / 3 Trickerion Shards, round up (max 20 Fame).
+        * 1 Fame / 3 leftover Coins (max 20 Fame).
+        * 2 Fame / unspent Special Assignment card (max 20 Fame).
+        * Points from Fame Threshold 36 tricks whose conditions have been met (max 20 Fame) and have either their Component requirements met or have at least 1 Trick marker on them.
+        * 2P: Player with the most Banners on the Academy scores 8 Fame. 0 Fame if tied. Must have played at least 1 Banner.
+        * 3P: Player with the most Banners on the Academy scores 12 Fame, second most scores 6 Fame. Tied players score lower amount for the positions. Must have placed at least 1 Banner to score.
+        * 4P: Player with the most Banners on the Academy scores 15 Fame, second most scores 10 Fame, third most scores 5 Fame. Tied players score the lower amount for the positions. Must have placed at least 1 Banner to score.
+        * Break ties in Initiative Order.
+    - name: Magician Abilities
+      sections:
+        - name: The Mechaniker (Mechanical Enhancement)
+          text: |
+            Once per turn, one of your Apprentices receives an additional Action Point when placed at any Location except for the Theater.
+        - name: Priestess of Mysticism (Deja Vu)
+          text: |
+            During the Discard Special Assignment Cards subphase, you may pay 1 Shard. If you do, you may return one of your placed Special Assignment cards to your hand instead of discarding it.
+        - name: Master of Chains (The Secret Combination)
+          text: |
+            When you Perform, each Trick Link with your Trick marker in it awards a Performance Bonus of 2 Fame instead of 1.
+        - name: The Great Optico (Mimesis)
+          text: |
+            Once per turn, you may use one of your Permanent Assignment cards with an effect of an opponent's revealed Special Assignment card of the same Location. You may use either the copied card's printed ability or gain its +1 Action Point bonus instead.
+        - name: The Red Lotus (Trick Steal)
+          text: |
+            You may choose to receive the Yield of an opponent's Trick in the same Performance instead of your own Trick's Yield, as long as you are the Performer and the opponent's Trick has the same or lower Fame Threshold as yours. The opponent receives one less Fame for the Trick stolen this way.
+        - name: Yoruba Spiritmaster (Soul Possession)
+          text: |
+            Once per turn, before an opponent chooses a card to Perform, you may pay one Shard. If you do, you may choose the card to Perform for that player. The chosen card must have at least one of the opponent's Trick Markers on it.
+        - name: Electra (Supercharge)
+          text: |
+            You may choose to pile two markers of the same Trick on a Trick slot when she sets up a Trick. It counts as one Trick and Link Bonuses are paid only once. When performed, this Trick yields 1/2/3 additional Fame point(s) and Coin(s) depending on its Fame Threshold (1/16/36).
+        - name: The Gentleman (Magic for the Masses)
+          text: |
+            Whenever the Magician is placed on a Downtown, Market Row or Dark Alley slot, you receive Fame equal to the number of Trick cards you have.
+        - name: Geer Van Augustin (Magoria's Benefactor)
+          text: |
+            When you use the Renovate Action, you may choose a Coin-Fame ratio with a Fame Threshold one level higher than your current Fame. Whenever you spend 6 or more Coins on a Renovate Action, you may immediately Advertise without spending any Coins, if you haven't already. You receive the usual 2 Fame.
+        - name: Anjali (Whisperer of Secrets)
+          text: |
+            During the Assignment phase, you may place 1 Coin onto as many Secrets learned by your Protégé, up to all of them, as you wish. Before place an Apprentice during the Place Characters phase, you may spend the Coin from one Secret. If you do, the ability granted by that Secret also applies to your Apprentice during its placement. During the Return Characters subphase, return all Coins that are still on the Secrets to the general supply.
+        - name: Professor Bernard (Mentor of Magicians)
+          text: |
+            Whenever you receive the Yield of one of your Tricks in the Classroom (during a Classroom phase), you may remove that Trick from your Workshop and set it aside. Replace its Symbol marker and its Academy marker in the Classroom with your own special markers. Until the end of the game, you will benefit from this Trick in the Classroom phase, but it does not occupy a slot in your Workshop. You may do this with up to 2 of your Tricks. Tricks set aside this way are ignored ruing the endgame scoring.
+        - name: Lumenia the Radian (Luminous Bonds)
+          text: |
+            You receive 1 additional Fame or Coin (but not Shard) for each Link you create when you set up Tricks in the Theater.
+    - name: Specialists
+      sections:
+        - name: Assistant
+          text: |
+            * Additional Apprentice who does not need to be paid in the Pay Wages phase.
+        - name: Engineer
+          text: |
+            * When the Trick on the Engineer's Trick slot is prepared, it receives 1 additional Trick marker.
+        - name: Manager
+          text: |
+            * Has 2 Multi Component slots. Components on these spots count as if there was 1 more copy of that Component but still to a max of 3.
+        - name: Protégé
+          text: |
+            * Abilities change as Secrets are assigned to them.
+            * Second and Third Secret assigned to them each grant +1 AP; flip their disc as needed.
+            * First and Second Secret assigned to them each increase their wage by 1 Coin.
