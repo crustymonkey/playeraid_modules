@@ -1,0 +1,137 @@
+name: "Tekhenu: Obelisk of the Sun"
+description: As the Obelisk's shadow moves, use dice to build Ipet-Isut and the temple of Amun-Ra. [See it on BGG](https://www.boardgamegeek.com/boardgame/297030/tekhenu-obelisk-sun)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+        * Place the Obelisk Wheel in a random position on the game board.
+        * Place the scoring marker showing 1 hourglass 4 lines away from where the arrow on the Obelisk Wheel is currently pointing. Place the second scoring marker 4 lines away from the first.
+        * Shuffle the Pillar tiles and form a facedown stack. Place 3 faceup in the Ra action area.
+        * Shuffle the Horus Bonus tiles and place them in a random order on the 6 spaces in the Horus action area.
+        * Place 1 Gold into the 2 status spaces in the Temple, the 2 Statue spaces of the Osiris action, and on row 2 of the Osiris action.
+        * Remove 1 yellow, brown, white, and black die from the game. (3P: remove 2 gray; 4P: remove no dice)
+        * For each section around the Obelisk Wheel, roll 3 dice and arrange them to match the shade level of that section.
+        * Each player chooses a colour and gets all pieces in their colour.
+        * Each player places all Buildings and Statues on their board. 1 cube go on 2 of each Production Track.
+        * Each player places 1 disc on the 10 VP space.
+        * Each player places their Happiness marker (small meeple) on 2 of the Populace track.
+        * Each player places their Population marker (large meeple) on 5 of the Populace track.
+        * Each player gets 1 Gold and 1 Scribe.
+        * Shuffle each deck of cards and deal the appropriate type to the tan and red spaces of the Card Market.
+        * Deal 2 Decrees to each player who chooses 1 to keep and discards the other to the bottom of the deck.
+        * Randomly select 5/7/9 Starting cards for 2/3/4 players, placing them faceup.
+        * Lay out the 4 Destiny cards faceup.
+        * Choose a starting player.
+        * In player order, each player selects 1 Starting card. Repeat this in reverse player order.
+        * Determine new player order in order of highest total value of Starting cards (value on top). Break ties with highest single number. Each player places a disc on the Turn Order track based on their place.
+        * In new player order, each player selects 1 Destiny card and gains what is on it. Keep this card faceup next to you.
+        * In new player order, each player gains the items shown on their Starting cards.
+        * Return all Starting cards to the box.
+    - name: Gameplay
+      text: |
+        * Gold is a wild resource and may count as any other resource.
+        * When a Population marker reaches a new coloured section, fill the matching section in the Card Market if it is still empty.
+        * On your turn, you must take 1 die from the Obelisk Wheel.
+            * You MUST be able to perform the action you choose. If you cannot pay its cost, you cannot perform that action.
+            * When taking a die from the Obelisk Wheel, you may spend Scribes to alter the die's value. Each Scribe spent can adjust the die value up or down by 1 or 2.
+            * You may spend 2 Scribes to instead perform an Anubis Action.
+            * Taking an Anubis Action and adjust the die value can be combined.
+            * When taking a die, you must either use it to Produce Resources or perform a God Action.
+            * The die must be placed on the Pure or Tainted side of your scales, matching the shade level that you took it from. Dice taken with the Anubis Action must always be placed in the Anubis space on the bottom of your player board.
+      sections:
+        - name: Produce Resources
+          text: |
+            * You cannot use a grey die to perform this action.
+            * Colour of the die determines the resource produced.
+            * Take a number of resources equal to the value of the die.
+            * If you took more resources than your production value in that resource, keep up to your production value and place the rest on the Tainted side of your scale.
+        - name: Anubis Action
+          text: |
+            * Take any 1 die from around the Obelisk Wheel, including Forbidden dice.
+            * Use the selected die to perform any action, regardless of which section you took the die from. 
+                * You may perform ANY god action or produce ANY single resource, regardless of where it came from and its colour. Only the value matters.
+        - name: Horus
+          text: |
+            * Pay the amount of Granite printed below your leftmost available Statue.
+            * Choose one of the options:
+                * Place the Statue on the Statue space for the god that matches your die's value if there is room.
+                    * 4P: You gain the bonus each time an opponent performs this god action.
+                    * 3P: You gain the bonus each time an opponent performs this god action; also gain the bonus immediately after building this.
+                    * 2P: You gain the bonus each time any player takes this god action.
+                * Place the Statue in an empty Statue space in the Temple Complex or Orisis action.
+                * If you placed your Statue at the Temple Complex, gain 3 VP for each of your Pillars in the same row or column.
+        - name: Ra
+          text: |
+            * Must build the Pillar matching the value of your die.
+            * Pay the cost shown on the top of the Pillar tile.
+            * Place the Pillar tile in any empty space in the Temple Complex, rotating it any way you wish.
+            * Score 1 VP per Building, regardless of owner, in the same row and column.
+            * Score 1 VP for every edge on the Pillar tile that matches the adjacent edge colour of a Pillar tile or the Temple Complex.
+            * Gain the reward shown on the space covered by the Pillar tile.
+            * Score the VP shown in the space you took the Pillar tile from.
+            * If the Pillar's shade level matches the shade level of the Ra action, gain the reward shown on the Pillar tile.
+            * Place a Pillar from your supply onto the placed Pillar tile.
+            * Slide the remaining Pillar tiles in the Ra action to the right, filling in empty spaces, then refill the row from the draw pile.
+        - name: Hathor
+          text: |
+            * Choose any open Building space around the Temple Complex, regardless of your die's value.
+            * Pay the space cost in Bread and place your leftmost Building on the chosen space.
+            * Gain exactly 1 of each Resource and Faith shown in the Building's row and column, regardless of how many icons are on that space.
+            * Score 3 VP for each of your Pillar in the Building's row and column.
+            * Move your Population marker ahead a number of spaces equal to your die's value.
+        - name: Bastet
+          text: |
+            * Pay 2 Papyrus and move your Happiness marker ahead a number of spaces equal to your die's value.
+                * If your Happiness marker reaches a space with an icon for the FIRST time, immediately gain the bonus.
+            * Gain the number of Scribes shown based on your die's value.
+        - name: Thoth
+          text: |
+            * Pay the amount of Papyrus shown based on your die's value.
+            * Before selecting cards, you may pay 1 Papyrus to discard all cards in 1 section and immediately refill them. May do this up to once per colour section.
+            * May take up to the number of cards shown from a single coloured area. You may take cards from any area up to the colour that your Happiness marker sits on.
+            * Refill the display after you have finished taking cards.
+            * White Blessing cards are one-time use. You may use them during the indicated action and any number may be used at a time. Discard after use.
+            * Technology cards are permanent bonuses.
+            * Decree cards provide end game scoring.
+        - name: Osiris
+          text: |
+            * Decrease your Happiness by 1.
+            * Place the leftmost building on your player board onto any empty Building space on the row matching your die's value.
+            * Increase your production and gain rewards from the chosen Building space.
+    - name: Rotation
+      text: |
+        * If every player has either 2 or 4 dice, rotate the Obelisk Wheel 1 space clockwise.
+        * If every player has 4 dice, immediately perform a Maat phase:
+            * Each player determines the balance of their scales.
+                * Each Pure die counts as positive value based on it pips.
+                * Each Tainted die counts as negative value based on its pips.
+                * Each Resource on the Tainted side counts as -1.
+                * Players may adjust their balance using Faith tokens with each counting as 1.
+            * Each player places their Turn Order disc on the Maat track matching their final balance (if you go beyond +/- 10, stay on 10).
+            * Any player on a negative point spaces loses the indicated VP.
+            * Players arrange the Turn Order based on closest to 0. +/- spaces are equidistant, break ties using Ankh value on Destiny cards or Technology.
+            * If the arrow on the Obelisk Wheel is pointing at the lowest numbered Scoring marker, immediately perform a Scoring:
+                * The player with the most Buildings + Statues in each of the 4 columns of the Osiris action gains 3 VP.
+                    * Each Statue spans 2 columns.
+                    * Break ties for most with the topmost Building/Statue in the column. Statues are always the topmost.
+                * Each player gets 1 VP for each of their Buildings and Statues around the Temple Complex.
+                * Each Pillar in the Temple Complex scores 1 VP for each Building and Statue belonging to that Pillar's owner.
+                * Each player gains the highest number of VP shown in their exposed Statues.
+                * Each player scores 3 VP for each pyramid icon their Happiness marker has reached.
+                * Each player scores 2 VP for each of their Production markers that sits in the topmost 6 space of its track.
+                * Each player scores the SUM of all VP visible on the Building row of their player board.
+                * Each player must pay the SUM of all Bread visible on the Building row of their player board. Lose 3 VP for each Bread unwilling/unable to pay.
+                * Remove the scoring marker from the board.
+                * If this was the final scoring:
+                    * Each player reveals their Decree cards and may score up to 3 of them, but no more than 1 of each icon.
+                    * Score 3 VP if your marker is first on the Turn Order track.
+                    * 3/4P: Score 2 VP if your marker is second on the Turn Order track.
+                    * Game immediately ends. Highest VP wins. Break ties with total number of Scribes, then player order if necessary.
+            * Return all dice from player boards to the draw bag.
+            * Return all Resources and Faith tokens from scales to the pool.
+            * Return all Destiny cards to the display.
+            * In new player order, players take 1 Destiny card and receive its bonus.
+        * For each of the 2 Shaded section around the Obelisk Wheel, draw (# of players) dice, roll them, and add them to that section.
+        * Assess each section and rearrange dice as necessary.

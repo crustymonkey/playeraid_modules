@@ -1,0 +1,159 @@
+name: "Brass: Lancashire"
+description: Test your economic mettle as you build and network in the industrial revolution. [See it on BGG](https://www.boardgamegeek.com/boardgame/28720/brass-lancashire)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+        * Remove all Distant Cotton Market tiles that show a number players higher than the number that will be playing.
+        * Remove the 2 Distant Cotton Market tiles that show the ! icon.
+        * Shuffle the remaining Distant Cotton Market tiles and place them on the top Distant Cotton Market space on the board.
+        * Place the white Distant Cotton Market Marker on the topmost space of the Distant Cotton Market Track.
+        * Place 1 black cube on each space of the Coal Market.
+        * Place 1 orange cube on each space of the Iron Market.
+        * Remove the blue and teal Location cards from the Draw Deck. (3P: Remove only teal, 4P: do not remove any cards).
+            * These cities can still be built in and linked to regardless of player count.
+        * Each player chooses a colour and gets all pieces of their colour.
+        * Each player starts with £30.
+        * Each player places their Industry tiles on their player mat in the spaces shown with the black side face down.
+        * Each player places their VP Marker on the 0 VP space.
+        * Each player places their Income Marker on the 10 space of the Progress track.
+        * Each player draws 8 cards to form their Hand.
+        * Shuffle the Character tiles and place them randomly on the Turn Order Track.
+    - name: General
+      text: |
+        * After flipping an Industry tile, the owner moves their Income Marker number of spaces shown in the arrow.
+        * A location on the board is considered to be part of your network if the location contains 1 or more of your Industry tiles or is adjacent to 1 or more of your Link tiles.
+        * Locations are considered connected to each other if you can trace a route of Link tiles owned by any player between them.
+        * Cotton Mills and Ports are flipped when you perform the Sell action.
+        * Coal Mines and Iron Works are flipped when the last cube is removed from them.
+        * Shipyards are flipped immediately when built.
+        * Cards are placed face up in your personal Discard Area after being played.
+      sections:
+        - name: Consuming Iron
+          text: |
+            * An Industry tile does not need to be connected to a source of Iron in order to be built.
+            * If there are any unflipped Iron Works from any player, Iron must be consumed from there first for free in any combination.
+            * If there are no unflipped Iron Works, you must purchase from the Iron Market by paying its indicated cost.
+                * If the Iron Market is empty, you can still purchase Iron for £5 each.
+            * All spent Iron cubes are returned to the supply.
+        - name: Consuming Coal
+          text: |
+            * Rail Links and Industry tiles must be connected to a source of Coal when they are placed.
+            * Coal must be consumed from the closest (fewest Links) connected unflipped Coal Mine owned by any player for free.
+                * If multiple places are closest, chose which ones to consume from.
+            * If there are no connected unflipped Coal Mines, you must purchase from the Coal Market by paying its indicated cost.
+                * If the Coal Market is empty, you can still purchase Coal for £5 each.
+            * All spent Coal cubes are returned to the supply.
+    - name: Gameplay
+      text: |
+        * Whenever a player spends money, the place the spent money on their Character tile instead of in the bank.
+        * A player gets 2 actions on their turn. During the first round of the Canal Era, each player performs only 1 action.
+            * You may perform the same action twice in a single turn.
+            * You may pass but must discard a card when doing so.
+        * After completing your 2 actions, draw back up to 8 cards. If the deck is empty, do not draw but keep playing cards.
+        * After all players have taken their 2 actions, the round ends.
+      sections:
+        - name: End of Round
+          text: |
+            * Rearrange player order based on least money on Character tiles. Tied players keep their relative position the same.
+            * Return all money on Character tiles to the bank.
+            * Each player gains money equal to number below their Income Marker on the Progress Track.
+                * DO NOT perform this step during the final turn of the game.
+                * If a player's marker is on a negative space, that money must be paid to the bank.
+                * If you do not have enough money to pay, remove 1 or more of your Industry tiles from the board with each being worth half of its cost, rounded down, until you can cover your debt. Keep any excess money.
+                * If you still do not have enough money, lose 1 VP if possible for each £1 you are short.
+        - name: End of an Era
+          text: |
+            * Ends following the round in which all players use their final cards from their Hand.
+            * For each of your Link tiles, score 1 VP for each Link icon displayed on adjacent locations. Remove tiles after scoring.
+            * Score the number of VP shown on each of your flipped Industry tiles (black side face up).
+          sections:
+            - name: End of Canal Era
+              text: |
+                * Remove all level 1 Industry tiles from the board and return them to the box.
+                * Move the Distant Cotton Market Marker back to the first space on the Distant Cotton Market Track.
+                * Shuffle the discarded Distant Cotton Market tiles with the rest of the deck and place them in their spot.
+                * Shuffle all player cards and insert the Nathan Rothschild tile so that there are 2 x # of players cards under it.
+            - name: End of Rail Era
+              text: |
+                * Score 1 VP for every £10 you have.
+    - name: End of the Game
+      text: |
+        * Player with most VP wins.
+        * Break ties with highest income, then by money remaining.
+    - name: Actions
+      sections:
+        - name: Build
+          text: |
+            * Discard a card from your hand:
+                * Discard a location card to build any Industry in the named location, even if not part of your network.
+                * Discard an industry card to build a matching Industry in any location that is part of your network. If no locations are in your network, you may build it anywhere with a matching icon.
+                * Discard 2 cards to treat it like any single location card. This uses both of your actions for this turn.
+            * Take the lowest level tile of the chosen Industry from your board and place it on an undeveloped space in the location.
+                * If possible, place the tile on a space that contains only that Industry's icon.
+                * Otherwise place it on a space where the Industry's icon shares a space with another icon.
+                * If no undeveloped space shows this Industry's icon, it cannot be built in that location.
+                * Tiles with a lock icon cannot be built; they must be removed through the Develop action to access higher ones.
+            * Pay the cost of the tile as shown on your player board. If Coal is required, this location must be connected to Coal.
+            * If you built a Coal Mine or Iron Works, place cubes on it as shown on the tile.
+            * If you built a Coal Mine connected to the market trade icon (double arrow) or Iron Mine (regardless of connection):
+                * Immediately move as many cubes as possible from the tile to open spaces in its Market (most expensive first), collecting the value of each space when the cube is placed.
+                * If the last cube is removed from your tile, flip it and advance your Income Marker on the Progress Track as normal.
+            * Canal Era:
+                * Each player may only have a single tile in a location.
+                * Shipyard tiles with half moon (white on left) to the left of their slot cannot be built. Can remove with Develop.
+            * Rail Era:
+                * Each player may have any number of tiles in a location.
+                * Industry tiles with a half moon (white on right) to the left of their slot cannot be built. Can remove with Develop.
+          sections:
+            - name: Overbuilding
+              text: |
+                * May replace an Industry tile with one of the same type with a higher level.
+                * Remove replaced tiles from the game; the owner does not lose anything for the tile being removed.
+                * If the tile you are replacing is your own:
+                    * You may overbuild any Industry tile.
+                    * If there are any cubes on the tile being replaced, return them to the general supply.
+                * If the tile you are replacing is owned by another player:
+                    * You may only overbuild a Coal Mine or Iron Works.
+                    * There must be no cubes on the entire board (including the Market) of the type that is being replaced.
+        - name: Sell
+          text: |
+            * Discard any card from your Hand.
+            * Choose 1 of your unflipped Cotton Mills and perform 1 of the following.
+          sections:
+            - name: Sell Using a Port
+              text: |
+                * Choose an unflipped Port owned by any player that is connected to the Cotton Mill.
+                * Flip the Port tile and advance the owner's Income Marker on the Progress Track the number of spaces shown in the arrow.
+                * Flip your Cotton Mill tile and advance your Income Marker the number of spaces shown.
+                * You may choose another of your unflipped Cotton Mills and choose a Sell action for them (without discarding).
+                    * You may do this as many times as desired until you run out of unflipped Cotton Mills.
+            - name: Sell to the Distant Cotton Market
+              text: |
+                * Chosen Cotton Mill must be connected to a location that shows a trade icon (double arrow).
+                * Flip the topmost Distant Cotton Market tile and place it into its discard area.
+                * Move the Distant Cotton Market Marker a number of spaces shown on the bottom center of the flipped tile.
+                * If the Distant Cotton Market Marker reaches the X space, end this action and do not perform the next steps.
+                * Move your Income Marker a number of spaces on the Progress Track shown on left of Distant Cotton Market Marker row.
+                * Flip your Cotton Mill tile and advance your Income Marker the number of spaces shown.
+                * You may choose another of your unflipped Cotton Mills and choose a Sell action for them (without discarding).
+                    * You may do this as many times as desired until you run out of unflipped Cotton Mills.
+        - name: Loan
+          text: |
+            * May not take this action once there are no cards left in the Draw Deck. Place the Nathan Rothschild tile beside the bank as a warning. After this round, flip the Nathan Rothschild tile over to the Stephenson's Rocket side to show loans can no longer be taken.
+            * May not take this action if this would put your income level below -10.
+            * Discard any card from your Hand.
+            * Take £10/£20/£30 from the bank and move your Income marker 1/2/3 levels back on the Progress Track, placing it on the highest numbered space available in the new, lower income level.
+        - name: Develop
+          text: |
+            * Discard any card from your Hand.
+            * Remove 1 or 2 Industry tiles from your player mat and return them to the box. These may be different types but must always be the lowest available level of the chosen types.
+            * Consume 1 Iron for each tile removed.
+        - name: Network
+          text: |
+            * Discard any card from your Hand.
+            * Place a Link tile on an undeveloped line on the board that is adjacent to a location that is part of your network.
+            * During Canal Era, you may only build Canal links on blue lines. Max 1 per action for £3.
+            * During Rail Era, you may only build Rail links on black lines. 1 Link for £5 or 2 for £15. Consume 1 Coal for each Link built. Each must be connected to a source of Coal after being placed.

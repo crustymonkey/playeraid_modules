@@ -1,0 +1,147 @@
+name: "Trismegistus: The Ultimate Formula"
+description: Discover the formula to the Philosopher's Stone as you become the greatest alchemist! [See it on BGG](https://www.boardgamegeek.com/boardgame/281442/trismegistus-ultimate-formula)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+        * Remove all cards that are not used for the current player count.
+        * Separate all cards into their own decks and shuffle each one.
+        * Place the Level 1 Experiment deck on the current Experiment deck space of the board and fill each Experiment space with a faceup Experiment card.
+        * Place the Publication deck on its space on the board.
+        * Place the Level 1 Artifact stack on the current Artifact stack space on the board and place 1 tile faceup on each Artifact space.
+        * Randomly place 1 Dominant Essence token faceup on the top space of each Mastery track.
+        * Place a random Bonus Token on each of Bonus space of the Mastery track. Return the rest to the box.
+        * Remove 1 red and 1 black die from the game. (3P: 1 black; 4P: none)
+        * Roll all of the dice and distribute them to their bowls. If there are more than 5 dice in a bowl, reroll all of those dice and place them, repeating as necessary until no bowl has more than 5 dice.
+        * Deal 4 random Achievements faceup. Return the rest to the box.
+        * Each player chooses a colour and gets all pieces in their colour.
+        * Choose a starting player. Each player places a large disc on a space on the Round Order track based on player order.
+        * In reverse player order, each player chooses a Laboratory Board and takes the corresponding Formula tiles.
+        * Each player gets 2 Reaction tokens.
+        * Second player gets 1 Ethereal Die token. Third player gets 2 Ethereal Die tokens. Fourth player gets 2 Ethereal Die tokens and a raw Mercury.
+        * Each player places a small disc on the 0 space of each Mastery track.
+        * Each player places a large disc on the 0 space of the VP track.
+        * Each player places 1 cube on each of the first 4 raw essences.
+        * Each player takes 1 of each Essence token.
+        * Each player randomly places their 8 Formula tiles into the slots at the top of their board.
+        * Deal 2 Starting Experiments, 2 Masterpiece Experiments, 2 Publications, and 2 Starting Artifacts to each player.
+        * Each player chooses 1 of each of the items deal to them, revealing their chosen Artifact and Starting Experiment. Chosen Publication and Masterpiece Experiment are kept secret. Unselected Publications are shuffled together and placed on the bottom of the Publication deck. Return other unselected components to the box.
+        * Each player places their Starting Artifact in any Artifact space on their player board.
+    - name: Gameplay
+      text: |
+        * After each player's turn, opponents have an opportunity to spend 1 reaction token to react.
+            * When reacting, you always use the die as it is; Chameleon tokens never impact the die for reactions.
+        * Gold is a wild resource and can be used as any other material for any purpose.
+        * Refined materials may always be used as a raw version of the same material.
+        * May discard a Chameleon token during your turn to treat your die as having any colour and symbol for this action.
+        * All players that reach a Bonus token on the same turn may benefit from it.
+        * On your turn, you must either draft a die or perform an action.
+            * If you have no die in your Potency track, you must draft a die.
+            * If you have a die in your Potency track, you may move it to your used area to draft a new die.
+        * After all opponents have reacted:
+            * If your die is on 0 Potency, move it to the used dice box on your board.
+            * If your used dice box has 3 dice in it, move your Turn Order marker to the first open space in the bottom row.
+            * If any player markers are on or above Bonus tokens on the Mastery tracks, remove those tokens from the game.
+            * If all players are now on the bottom row of the Turn Order track, move to End of Round.
+      sections:
+        - name: Draft
+          text: |
+            * Choose a bowl and count the number of dice currently there.
+            * Place the chosen die on a numbered space equal to the number you counted.
+            * You may spend 1 Ethereal Die token to gain 1 more Potency with the chosen die. Cannot go above 5.
+            * If you drafted a die with the infinity symbol, change the die to a face of your choice.
+        - name: Harvest Materials
+          text: |
+            * Spend X Potency to gain X raw materials matching the symbol on your die.
+        - name: Acquire Alchemical Essences
+          text: |
+            * Spend X Potency to gain X alchemical essences.
+            * The type of essence gained is shown next to the bowl corresponding to your die's symbol.
+                * If you're allowed to choose any essence, all essences gained with the single action must be of the same type.
+        - name: Perform Transmutations
+          text: |
+            * Spend X Potency to perform X transmutations.
+            * For each transmutation, you may move 1 cube following the arrows whose colour matches the colour of your die.
+                * When performing multiple transmutations, all transmutations must follow along a single arrow.
+            * For each transmutation, spend 1 Essence token or 1 Mercury.
+            * Move your marker 1 space up on the corresponding Mastery track for each Essence or Mercury spent.
+                * If you're already at the top of the Mastery track gain only 1 VP instead, ignoring extra movements.
+                * If your marker enters a space with a Bonus token, immediately perform its action.
+            * If the Transmutation you moved on passes over an active (faceup) Artifact, you may flip it facedown to gain its bonus.
+        - name: Acquire an Artifact
+          text: |
+            * Spend 3 Potency to take 1 Artifact from the display.
+            * You may only take Artifacts that occupy a coloured space that match the colour of your die.
+            * Place the Artifact in any empty Artifact slot on your player board and resolve its ability immediately without flipping it.
+            * Refill the Artifact display.
+        - name: Recharge an Artifact
+          text: |
+            * Spend 1 Potency to recharge 1 of your Artifacts, flipping it faceup.
+        - name: Acquire an Experiment
+          text: |
+            * Cannot perform this action if you already have 2 Experiment cards (not including your Masterpiece).
+            * Spend 1 Potency to take 1 Experiment card from the section of the board matching the symbol on your die.
+            * Place the Experiment in your playing area faceup.
+            * If the purchased Experiment came from the current Experiment deck, refill the display.
+    - name: Free Actions
+      text: |
+        * May perform any number of free actions any number of times you want during your turn.
+      sections:
+        - name: Purchase a Formula
+          text: |
+            * Spend a number of Gold equal to the number of cubes currently sitting in empty Formula spaces.
+            * Place a Formula of your choice in an empty space on your Vault.
+                * Only 1 Formula from each column may be purchased this way.
+            * Place 1 cube into the now-empty Formula space.
+        - name: Sample a Formula
+          text: |
+            * Flip a Formula in your Vault facedown to gain its bonus.
+        - name: Perform an Experiment
+          text: |
+            * Your marker must be on the space >= the Mastery requirement on your chosen Experiment.
+                * For each Silver you spend, reduce the Mastery requirement by 1.
+            * Pay the Experiments cost.
+            * Each Formula unlocked from the matching colour column on your board may either reduce this Experiment's Mastery requirement by 1 or ignore any one material cost on the Experiment.
+            * Receive any bonuses printed on the Experiment in any order (bottom left).
+            * Slide the Experiment into the matching coloured column on your player board.
+            * If this is the first Experiment of its type, receive 1 Formula tile from that column and place it in your Vault.
+        - name: Unlock an Achievement
+          text: |
+            * Must be able to show you have the required components present on your board. These are not spent.
+            * Take the Achievement card and place it facedown next to your board, gaining any immediately bonus (bottom left).
+    - name: Philosopher's Stone
+      text: |
+        * When a Formula is unlocked, place the tile faceup on a space in your Vault to add to your Philosopher's Stone.
+        * If placing a Formula into a row and/or column would completely fill it, immediately receive all bonuses printed on the ends of that row and/or column.
+    - name: Reactions
+      text: |
+        * May turn 1 Reaction token facedown to perform one of the Reaction options. Cannot perform Free actions.
+            * Gain 1 raw material matching the symbol on the opponent's die.
+            * Gain 1 essence shown next to the bowl matching the opponent's die symbol.
+            * Transmute 1 material following a Transmutation arrow matching the colour of the opponent's die.
+            * Recharge a single exhausted Artifact on your board.
+    - name: End of the Round
+      text: |
+        * All players flip their Artifacts and Reaction tokens faceup.
+        * If this was the third round, move to End Game Scoring, skipping the remaining steps here.
+        * Remove all faceup Artifacts from the Artifacts market.
+        * Refill the Artifacts market with Artifacts from the stack matching the new round number.
+        * Remove all faceup Experiments of level 1 lower than the finished round number from the main board.
+        * Replace the Experiment deck with the one for the new round number.
+        * Deal 1 new Experiment card to each Experiment space on the main board.
+        * Slide all markers on the Turn Order track up to the top row, retaining their current order.
+        * Roll all of the dice and distribute them to their bowls. If there are more than 5 dice in a bowl, reroll all of those dice and place them, repeating as necessary until no bowl has more than 5 dice.
+    - name: End of the Game
+      text: |
+        * Game ends after the third round finishes.
+        * Each player gains the VP print in the bottom right corner of their completed Experiments.
+        * Each player reveals their hand of Publications and scores them.
+            * Each requires a number of elemental symbols that are printed on Artifacts, 1 per space your marker has moved on the Mastery track, and any bonuses.
+            * Symbols are virtually consumed by assigning them to Publications.
+        * Gain 1/4/9/16/25/36 VP for having 2/3/4/5/6/7 Formula in your Vault.
+        * Gain 1 VP for each Gold or Ethereal Die token you have.
+        * Gain VP for any spaces you occupy on the Mastery tracks.
+        * Gain VP for any Achievement cards you have.
+        * Most VP wins. Break ties with most completed Experiments.

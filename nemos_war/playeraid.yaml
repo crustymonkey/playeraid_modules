@@ -1,0 +1,242 @@
+name: "Nemo's War (Second Edition)"
+description: Sail the Seven Seas as the hardened captain Nemo, fighting the Imperialist powers. [See it on BGG](https://www.boardgamegeek.com/boardgame/187617/nemos-war-second-edition)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+        * Select a Nemo Motive and place it faceup in the Motives area.
+        * Set aside the Act, Rising Action, and Finale cards.
+        * Shuffle the Event cards.
+        * Pick a random Finale facedown and shuffle it with 4 Event cards to create the bottom of the Draw Pile.
+        * Shuffle the Rising Action card in with a number of Event cards based on the number shown in Act 3 of your Motive, placing these on top of the Draw Pile.
+            * Science/Humanist: 6, Explore/Adventure: 8, Anti-Imperialism/World Order: 11, War!/Piracy: 13.
+        * Place the Second Intermission card (Act Three) face down on top of the Draw Pile.
+        * Add a number of Event cards based on the number shown in Act 2 of your Motive, placing these on top of the Draw Pile.
+            * Science/Humanist: 10, Explore/Adventure: 8, Anti-Imperialism/World Order: 5, War!/Piracy: 3.
+        * Place the First Intermission card (Act Two) face down on top of the Draw Pile.
+        * Place 6 Event cards on top of the Draw Pile.
+        * Place the Prologue card (Act One) on top of the Draw Pile.
+        * Place 25 of the remaining Event cards facedown on the Adventure Deck space of the board, and 1 gemstone on top. The remaining cards are removed from the game.
+            * Easy: 2 gemstones. Hard: 0 gemstones.
+        * Place the Nemo, Crew, and Hull Resource markers on the leftmost space of their tracks.
+        * Find the Nautilus Upgrade cards that matches your Motive. You may immediately purchase this card by spending Ship Resources equal to its cost. If you do not purchase the card, place it faceup in an available upgrade slot.
+        * Shuffle the remaining Nautilus Upgrade cards and deal 1 faceup to each unoccupied available upgrade slot.
+            * Optional: Choose 7/5/3 Upgrade cards and shuffle 3/5/7 random ones together to form a deck of 10 cards. Fill the slots as normal. May buy 1 of these revealed upgrades for double its cost, then deal a new card to fill the display.
+        * Place the White and Light Yellow Ship tokens into a draw bag.
+        * Place the Black, Dark Yellow, Orange, and Red Ships faceup on their spaces above the Tonnage track.
+        * Place the Blue and Green Ship tokens on their boxes on the Notoriety track.
+            * Easy: Place both groups 3 boxes to the right. Hard: Place both groups 3 boxes to the left.
+        * Place 1 Hidden Ship marker on each highlighted box on the map.
+            * Easy: 1 less in Western Pacific, North Atlantic, and European Seas. Hard: 1 more in Easter Pacific, South Atlantic, and Indian Ocean.
+        * Deadly Seas (slight disadvantage): Place 2/3/4 Deadly Seas tokens in the Ship bag. Add 1 facedown Deadly Season token to the Dark Yellow, Orange, Red, Blue, and Green Ship stacks. Remove the rest of the tokens from the game.
+        * World Order Motive: Remove the 13 Wonder tokens from the Treasure bag. Place 1 on Notoriety space 10, then 1 on every 3 spaces after it (13, 16, 19, etc). Place the Wonder in the Treasure bag when your Notoriety reaches that space.
+        * World Order Motive: Add all Ally tokens to the Treasure bag.
+        * Place the Treasure tokens in a separate draw bag.
+        * Place the Notoriety marker on the 0 space of the Notoriety track.
+        * Place 1 gemstone on each Major Ocean (marked with a die icon).
+        * Place the Character Resource tiles faceup in your tableau. (except Nadeen Dakkar)
+        * Ship Officer Attributes (slight advantage): Randomly assign to tokens to characters. Discard if the Character is sacrificed.
+            * Easy: 1 token to the Chief Engineer and Second Officer, 2 on First Officer. May replace 1.
+            * Normal: 1 token to the Chief Engineer and Second Officer, 2 on First Officer.
+            * Hard: 1 token to First Officer.
+        * Place the Action Points marker on the 1 space of the Action Point track.
+            * Easy: on space 2. Hard: on space 0.
+        * Place the Uprising cubes in their available box.
+        * Place 1 black die on space 44 of the Notoriety track.
+        * Adventure Motive: Mix Adventure tokens facedown. Place 1 Adventure token facedown in a random Major Ocean.
+        * World Order Motive: Add the Ally tokens to the Treasure bag.
+        * Reveal the top card of the Adventure Deck and follow the Prologue's instructions.
+    - name: Tests
+      text: |
+        * Roll 2d6 and apply any modifiers.
+            * -1 if there are any revealed Warship tokens in the same Ocean as the Nautilus.
+            * Piracy Motive: -1 if there are any number of Hidden Ship tokens in the same Ocean as the Nautilus.
+            * +X for Event and/or Ship Upgrade cards used to modify the result.
+            * +X for Exerting specific Ship Resources. You can only Exert any or all Ship Resources permitted for that Test.
+                * Move the appropriate Ship Resource markers one half position to the right to gain its +X DRM.
+            * +X for Spending Treasure. Can only spend (discard) 1 Treasure token per Rest, Refit, Repair, or Incite Test Action, and that Treasure must have a Treasure VP value on it. Gain the Treasure's VP value as +X DRM.
+        * Pass if the total is >= the test difficult. Fail if total < the test difficulty.
+            * A roll of snake eyes is an automatic failure, regardless of any modifiers.
+        * After the outcome is known, you may Sacrifice (flip) available Character tiles and discard equipped Nautilus Upgrade cards to the fail pile to alter the outcome.
+            * Discarded Nautilus Upgrade cards satisfy the loss of any 1 Ship Resource.
+            * After sacrificing a Character, pay any penalty indicated on them.
+        * If the Test passes, immediately reclaim any Exerted Ship Resources.
+        * If the Test fails or the Test Action result has a red title, you lose Exerted Ship Resources.
+            * Lose 1 of each Exerted Ship Resource if the lowest die roll was 1.
+            * Lose 2 of each Exerted Ship Resource if the lowest die roll was not a 1.
+    - name: Combat
+      text: |
+        * If the Ship an Attack Strength (top left):
+            * Roll 2d6. Apply -1 DRM for each other revealed Warship in that Ocean.
+            * If the modified result >= Attack Strength, nothing happens.
+            * If the modified result < Attack Strength, Nautilus suffers number of Hits equal to lowest die's result.
+            * If snake eyes are rolled, inflict 1d6 Hits on the Nautilus.
+            * Lose 1 random Ship Resource per Hit suffered by rolling 1d6 and moving in the indicated Ship Resource right.
+                * After determining the Hit location, you may discard an equipped Upgrade to cancel the Hit.
+        * Roll 2d6:
+            * +1 DRM for Stalk Attack
+            * +X DRM for Exerted Ship Resource (maximum of 1 Resource).
+            * -1 DRM if there are any other revealed Warships in that Ocean.
+            * If the result >= Ship Defense Strength (top right), the Ship token is sunk.
+            * If result < Ship Defense Strength, gain +1 Notoriety and lose Exerted Ship Resources.
+            * If snake eyes are rolled, gain +2 Notoriety and lose 2 of each Exerted Ship Resource.
+        * For each Sunk ship, gain their Notoriety Value and any “Gain” effects, then choose 1 option:
+            * As Tonnage:
+                * Place the Ship on the leftmost Tonnage space of the Major Ocean where it sank. If it sank in a Transitional Ocean, choose which connected Major Ocean row to place it on. If the last slot is full, stack additional Ships on top in the last slot. These Ships are worth VP at the end of the game.
+            * As Salvage:
+                * Place the Ship in the Salvage Point box, filling it from top to bottom. If there are no open spots, the Ship must be taken as Tonnage. Each Ship here counts as 1 Salvage Point.
+                * Taking a Ship as Salvage immediately ends your Bold Attack streak.
+    - name: Gameplay
+      text: |
+        * If the Notoriety marker reaches a set of Ship tiles, immediately add those Ship tiles to the draw bag.
+        * If the Notoriety marker reaches the black die, add it to your dice pool.
+        * If the Notoriety marker reaches space 36, flip all non-Gray Warships on the map to their Purple side for rest of the game.
+        * Piracy Motive: You cannot be defeated by Notoriety. If your Notoriety is at max and you are given a choice to gain Notoriety or another effect, you must choose the other effect.
+        * World Order Motive: When in any Ocean where a cube in in a Land space:
+            * You can spend Ally tokens as Emergency Resources.
+            * You can place Ally tokens facedown on the Tonnage track as if they were Ship tokens sunk there.
+      sections:
+        - name: Event Phase
+          text: |
+            * Reveal the top card of the Draw Pile.
+          sections:
+            - name: Act Cards
+              text: |
+                * Perform the instructions and keep the indicated dice until replaced by another act card.
+                * Place the Act card beside the board and immediately draw another card.
+                    * If this is the Act 3 card, choose to either change your Motive or add a Nautilus Upgrade card to the display.
+                    * If you change to or from the Humanist Motive during Act 3, immediately return all Incite cubes on Land spaces to the available box.
+                    * If you change to the World Order Motive during Act 3, add the Ally tokens to the Treasure bag.
+            - name: PLAY Event Cards
+              text: |
+                * Perform the instructions and place it faceup in the appropriate pass or fail pile.
+                * If instructed to take a Ship token and fight it immediately, you must attack that ship, even if it is a Stalk Attack. This does not count against your Actions this turn. If that Ship survives, add it to the Ocean where the Nautilus is located, even if that Ocean is already full of Ship tokens.
+            - name: KEEP Event Cards
+              text: |
+                * Place the card faceup in your Tableau where you may play them at any time.
+            - name: TEST Event Cards
+              text: |
+                * Immediately perform the test and place the card in the appropriate pass or fail pile.
+        - name: Placement Phase
+          text: |
+            * Roll the dice for the current Act (plus the extra black die if unlocked).
+            * Choose 2 of the rolled white dice. Gain a number of Action Points equal to their difference. If their value is the same, this is a Lull Turn.
+                * Piracy Motive: If your Notoriety is at max, determine using the 2 black dice instead of the 2 white dice.
+            * In ascending order, place a Ship for each die thrown, regardless of colour. Ignore any black dice if this is a Lull Turn.
+                * Place 1 Hidden Ship marker in an empty Ocean space in the indicated Major Ocean.
+                * If there is no open space for this marker:
+                    * Place a Hidden Ship marker in an empty Ocean space in an adjacent Ocean if there are any available. Any Ocean connected by any line is considered adjacent for this purpose.
+                    * If there is no empty Ocean space to place that Hidden Ship marker in an adjacent Ocean, draw 1 Ship from the draw bag and replace 1 Hidden Ship marker in the target Ocean or an adjacent Ocean with this Ship. If this is a White ship token, place with White side faceup; otherwise, place it non-Purple side faceup, unless all Ships should now be flipped to their Purple side.
+                    * If a Hidden Ship marker was not placed and all spaces in the target Ocean and its adjacent Oceans contain Ship tokens, flip 1 White Ship in one of these Oceans to its Gray Warship side.
+            * If there are no White Ships to flip, draw a Ship token from the draw bag and place it anywhere in the world.
+                * If it has a White non-Warship side, place it on the map directly on its Gray Warship side.
+                * If it does not have a White non-Warship side, place it showing its appropriate colour.
+            * If this Ship is placed in the Nautilus' Ocean, immediately Stalk Attack that Ship for free.
+            * If there are no spaces available to place this Ship, you immediately lose.
+            * If this is a Lull Turn:
+                * Place a gemstone on the Ocean matching their pair of dice you chose. If that Ocean already has a gemstone, place one in an adjacent Ocean that does not have a gemstone. If all adjacent Oceans have one, skip this step.
+                * Place 1 gemstone on top of the Adventure Deck.
+                * For each Ocean that has Uprising cubes:
+                    * Add the number of Uprising cubes and revealed Ship tokens in this Ocean and roll 1d6.
+            * If result >= the sum, nothing happens.
+            * If result < the sum, either remove 1 Uprising cube from this Ocean or gain Notoriety equal to the die roll + the number of Uprising cubes in this Ocean.
+                * Adventure Motive:
+                    * Get 2 AP. You do not get Lull Turn discounts shown on the board but may still get them from cards.
+                    * Place 1 Adventure token facedown in the doubles Ocean, or in an adjacent one if Ocean already has one.
+        - name: Action Phase
+          text: |
+            * May spend Action Points to perform the available actions. In a Lull Turn, all Actions cost 1 AP.
+            * You may only save 1 AP between rounds.
+            * Humanist Motive: All Notoriety gains during this phase are tripled.
+          sections:
+            - name: Adventure (2 AP)
+              text: |
+                * Draw the top card of the Adventure Deck. You may choose to perform the card's ability or put it on the bottom of the deck.
+                    * If you perform the card's action, collect 1 Treasure token for each gemstone on top of the deck, then return all gemstones on the deck to the supply.
+                * Adventure Motive: If there is a faceup Adventure token in this Ocean, claim the token.
+            - name: Attack (1 AP)
+              text: |
+                * Choose 1 Revealed Ship or Hidden Ship marker in your Ocean and place the Attack marker on it with the appropriate side faceup based on the type of attack you want to perform (Bold, Stalk, Torpedo, or Diplomacy).
+                    * If targeting a Hidden Ship, you must immediately replace it with a Ship from the draw bag.
+                        * White Ships are placed White side faceup.
+                        * Coloured ships are placed with their appropriate colour side faceup.
+                * Adventure Motive: If the attack was successful and there is a faceup Adventure token in this Ocean, claim the token.
+              sections:
+                - name: Bold Attack
+                  text: |
+                    * Initiate combat with the Ship.
+                    * If you sink the ship, you may immediately conduct another Bold Attack in this Ocean for 0 AP a +1 Notoriety.
+                        * You can continue fighting ships via Bold Attacks in this Ocean until all Ships are destroyed, you decide to Salvage a Ship you just sank instead of scoring it as Tonnage, your Attack fails to sink the targets Ship, or you decide to stop.
+                - name: Stalk (Cautious Attack)
+                  text: |
+                    * Initiate combat with the Ship and gain +1 DRM.
+                - name: Torpedo Attack
+                  text: |
+                    * max 1/turn; must have the Steam Torpedoes Upgrade; costs 0 AP
+                    * Place the red and black Torpedo Attack marker on the target Ship. Roll the number of dice shown on the Torpedo Attack marker. Sink a non-Warship on 5+ and Warship on 6+.
+                        * If you miss, flip the marker to its 1d6 side where it remains for the rest of the game.
+                - name: Diplomacy Attack
+                  text: |
+                    * max 1/turn; must have the Hospital Machines Upgrade; costs 0 AP
+                    * Place the red and purple Diplomacy Attack marker on the target Ship. Warships fire first but roll 3d6 and choose which 2 dice to use. Roll the number of dice shown on the Diplomacy Attack marker but is unmodified by other Ships in the Ocean. Parley a non-Warship on 5+ and Warship on 6+.
+                        * Success: choose 1
+                            * Place the Ship on the Tonnage track upside down. Ignore any Notoriety increase on the Ship and do not collect any additional benefits on this Ship.
+                            * Place the Ship token on the Salvage Track normally, suffering any Notoriety gain.
+                            * Discard the Ship, ignoring its Notoriety gain, and place 1 cube in the Nautilus Ocean if possible.
+                        * Failure: flip the marker to its 1d6 side where it remains for the rest of the game.
+                            * At any time, you may flip this back to the 2d6 side by returning 1 Uprising cube from any Land space. You must have the Science, Explore, Adventure, or Humanist Motive and the Hospital Machines Upgrade.
+            - name: Incite (1 AP)
+              text: |
+                * May only perform if there are Uprising cubes in the holding box.
+                * Perform an Incite Test. If successful, place 1 Uprising cube on an empty Land space connected to your Ocean and reduce your Notoriety as indicated. (see Action Success Table on board)
+                    * Each revealed Ship token and Uprising in this Ocean (not Land) applies -1 DRM.
+                * World Order Motive: Draw 1 Treasure token.
+            - name: Move (1 AP)
+              text: |
+                * Move the Nautilus to an adjacent Ocean along blue lines.
+            - name: Rest (2 AP)
+              text: |
+                * Perform a Rest Test to gain Crew. (see Action Success Table on board)
+            - name: Repair (2 AP)
+              text: |
+                * Perform a Repair Test to gain Hull. (see Action Success Table on board)
+                    * If you pass with an Expensive result, you must discard 1 of our available Treasure tokens of any type. This is in addition to the Treasure token you may have just spend to modify the dice roll. If you have none to lose, you still pass the Test.
+            - name: Refit (2 AP)
+              text: |
+                * Perform a Refit Test to gain an available Nautilus Upgrade card. (see Action Success Table on board)
+                    * If you pass with an Expensive result, you must discard 1 of our available Treasure tokens of any type. This is in addition to the Treasure token you may have just spend to modify the dice roll. If you have none to lose, you still pass the Test.
+                * If the Test is successful, discard the desired Upgrade's cost in Salvaged Ships and add the Upgrade to your Tableau.
+                    * New cards are not added to the available Nautilus Upgrades.
+            - name: Search (1 AP)
+              text: |
+                * Perform a Search Test to gain Treasure tokens. (see Action Success Table on board) There must be a gemstone in your Ocean to perform this action.
+                    * Each revealed Ship in your Ocean applied -1 DRM.
+                * If the Test is successful, remove the gemstone from the Ocean and draw a Treasure token. If the Treasure has an Immediate effect, resolve it, otherwise add it to your Collected Treasures box.
+                * Adventure Motive: If there is a facedown Adventure token here, reveal it and place it faceup in the named Ocean.
+    - name: End of the Game
+      text: |
+        * Game ends immediately when one of the following occurs:
+            * Defeat: You reach the red space of the Nemo, Crew, or Hull Ship Resource track.
+            * Defeat: Your Notoriety reaches the threshold shown on the Notoriety track (Pariah) matching your Motive.
+                * Piracy Motive: You cannot be defeated by Notoriety.
+            * Defeat: Every Ocean is completely full of Ship tokens (revealed or unrevealed) when a Warship needs to be placed anywhere in the world.
+            * Conducting the game's Finale car.
+        * In a Defeat condition, read the Defeat paragraph in the Epilogue booklet, otherwise determine your score.
+        * Place each Adventure card in your Tableau in the Pass or Fail piles as instructed on each.
+        * Place all equipped Nautilus Upgrade cards in the Pass pile.
+        * Score VP from icons on each card in the Pass pile and in Tonnage, where your Ship Resource marker is positioned, and Collected Treasure and Treasure in your Tableau, adjusted by your Motive. Each icon can never be worth negative VP.
+            * Liberation VP = Uprising cubes in play x Motive value.
+        * Humanist Motive: Gain 1 VP for each different Nationality amongst the upside down ships on your Tonnage Track.
+        * Humanist Motive: Gain 1 VP for each upside down ship on your Tonnage Track if you decline scoring the VPs printed on all Ships in your Tonnage Track.
+        * Earn VP from surviving Characters and Crew Ship Resource.
+        * Earn VP equal to the rightmost completely filled column of the Tonnage track.
+            * World Order Motive: Gain VP equal to the 2 rightmost completely filled columns.
+        * Lose VP based on any negative modifiers in Ship Resource Track.
+        * Compare your total VP to the following chart, reading the appropriate paragraph based on the level and your Motive:
+            * < 185 VP: Defeat
+            * 185 – 219 VP: Failure
+            * 220 – 249 VP: Inconsequential
+            * 250 – 274 VP: Success
+            * 275+ VP: Triumph
