@@ -1,0 +1,117 @@
+name: "Railroad Revolution with Railroad Evolution"
+description: Manage your own railroad company and ruthlessly compete to be the most powerful railroad tycoon across all of America. [See it on BGG](https://www.boardgamegeek.com/boardgame/207691/railroad-revolution)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+        * Each player chooses a colour and gets all pieces of their colour, their player board, and board extension.
+        * Each player places their buildings and rails into the slots on the top of their board and rail extension.
+        * Place 1 rail of each player colour between Washington and Charlotte.
+        * Place 1 rail and building of each player colour beside the board.
+        * Give each player $600 and 3 Telegraph Shares.
+        * Each player gets 4 white Workers. Return any unused white Workers to the box.
+        * Place all coloured Workers in the common supply.
+        * Give each player a Promote 2 Workers train. Return unused copies to the box.
+        * Divide the trains by their fronts and place them in stacks. Each stack should contain # of player + 1 tiles. Return unused tiles.
+        * Place the Tenders in a faceup stack next to the Tender section of the Trade Area.
+        * Shuffle the Wagons and randomly place them faceup next to each of the Wagon sections of the Trade Area (2 in each row).
+        * Sort the Milestone tiles by their letter and number and place them in face down stacks.
+        * Give each player 1 A1 and 1 A2 Milestone. Return unused A1 and A2 Milestones to the box.
+        * Each player places a Performance marker next to the bottom space of the Performance Track, off of the board.
+        * Sort the Performance tiles according to their backs and set 1 random tile from each stack aside.
+        * Shuffle the remaining Performance tiles by their types and randomly place them faceup next to the symbols on the Performance Track, forming 3 rows of (# of players) Performance tiles each. Return the rest to the box.
+        * Shuffle the Reward tiles and randomly place them faceup next to the symbols on the Performance track, forming 2 rows of (# of players) Reward tiles each. Return the rest to the box.
+        * Shuffle the Deal tiles and place them face down on their space. Reveal the top tile.
+        * Shuffle the City tiles by their type and deal 1 tile to each City of the matching number.
+        * Place a neutral building on the First Station slot of San Diego, Salt Lake City, Duluth, and Little Rock. (3P: San Francisco, Bismarck, and Houston; 4P: no neutral buildings)
+        * Shuffle the Telegraph tiles and randomly deal 1 to each of the 5 central Telegraph sections. Return the rest to the box.
+        * Shuffle the Telegraph VP tiles and randomly place 1 faceup in each of the 5 leftmost Telegraph VP slots.
+        * Randomly select a number of Setup tiles equal to the number of players. Return any unused tiles to the box.
+        * From the 4 Performance tiles previously set aside, randomly choose (# of players) of them and return the rest to the box.
+        * Take 1 Worker of each colour and pair it with one of the Performance tiles just selected. Return unused Workers to supply.
+        * Choose a starting player.
+        * In reverse player order, each player takes a Performance tile and the Worker placed with it. The Performance tile goes in the Player Board Extension in the bottom right corner.
+    - name: Gameplay
+      text: |
+        * In player order, each player must place 1 Worker from their supply, place it on an action space on their player board, and perform the space's main action.
+            * No limit to the number of Workers that can be on any space.
+            * If you have no Workers in the supply, move them all back to your personal supply. Does not count as your turn.
+            * Coloured Workers may always be used like white Workers if desired.
+        * The special ability of white Workers is the same for each space:
+            * May Promote 1 of your Workers.
+        * The effects of your turn may be applied in any order, including anything from your bonus action.
+        * A player may never have fewer than 4 Workers available to them at the end of their turn. This means you cannot perform an action that would put you below 4 Workers by the end of your turn.
+        * A player may sell Telegraph Shares for $150/Share at any time.
+        * A player may buy any colour of Worker for $800 at any time.
+        * Any time a Train is flipped facedown, you may receive its bonus and the bonus of its connected Wagon and Tender.
+        * Any time during your turn, you may discard 1 or more Reward tiles to take their bonus. Take the indicated rail or building from your Player Board Extension and place it in a rail or City space at no cost. You don't trigger any deal and you don't take any reward. Must follow normal connection rules.
+    - name: Action Spaces
+      sections:
+        - name: Station
+          text: |
+            * Place the leftmost building from your player board and place it as a Station on a City that your rail network is connected to by paying the City's cost.
+                * Each City may only have 1 Station per player.
+            * If you are the first to place a Station in that City, place it in the First Station slot and may take the First Station bonus.
+        - name: Railroad
+          text: |
+            * Pay $400 and place the leftmost 2 rails from your player board onto any available spaces to extend your current network.
+                * Each space may have up to 1 rail of each player colour.
+                * You must be able to place both rail to take this action; you cannot place only 1 rail unless you only have 1 left.
+            * Pay $100 per difficult terrain (triangle) icon on the spaces where you build.
+            * After the action, if you have built on any spaces with a Deal icon, resolve the current Deal.
+        - name: Telegraph
+          text: |
+            * Take the leftmost building from your player board and place it as an Office in an available space of the Telegraph line.
+                * Each Telegraph space may only have 1 Office per player.
+            * Immediately take the number of Telegraph Shares indicated on the space.
+            * If you are the first to place an Office on that space, place it in the First Office slot and may take the First Office bonus.
+            * If there is a Telegraph tile in the spot, you may discard 1 Worker (from either your board or supply) to take the tiles' bonus.
+        - name: Trade
+          text: |
+            * Take 1 rail or building from the leftmost section of your player board that still has a piece in it (choose if necessary) and place it in the Trade Area of the board in either a Wagon or Tender section.
+                * Only 1 rail and 1 building can be placed in each Wagon section. Tender section may have any number.
+            * Take 1 of the tiles form the section you placed in and place it faceup next to 1 of your Trains which may be either faceup or facedown.
+                * Each Train may only have 1 Wagon and 1 Tender.
+                * If you do not have a Train to attach this tile to, place the tile faceup in front of you. The next time you take a Train, immediately connect this tile to the Train.
+            * Gain the indicated amount of money above the section from which the piece was taken from.
+            * Before or after the sale, you may flip 1 of your Train tiles. Take the tile's bonus if you flipped a face-up tile face-down.
+    - name: Deals
+      text: |
+        * In player order, starting with the player that triggered the Deal, each player may pay the cost of 1 of the deals to get its indicated reward.
+            * The triggering player may take both deals by paying the cost of both.
+        * Discard the tile and reveal the next one from the stack.
+        * If the stack is depleted, shuffle the Deal tiles to form a new stack and reveal the top tile.
+    - name: Milestones
+      text: |
+        * You must fulfill the conditions on the tile and have the appropriate Workers promoted to the tile.
+        * After completing a Milestone, draw 3 Milestones from the stack with the next highest letter and choose 1 to keep. The rest are placed on the bottom of the stack.
+            * Do not take a replacement Milestone if you have completed a D Milestone.
+    - name: Performance Tracks
+      text: |
+        * When instructed to advance on the Performance Tracks, you instead gain Advancement points. Each point lets you choose 1 of the following options.
+      sections:
+        - name: Move Your Marker Up in the Performance Track
+          text: |
+            * Move your marker 1 step upon the Performance Track. Some lines require you to pay costs before moving over them.
+            * If you stop on or pass through a slot with a Performance tile number, you may take 1 of the associated Performance tiles and place it on your Player Board Extension in an empty slot with the depicted numeral. You can only take a tile if you have room for it.
+            * If you stop on or pass through a slot with the Reward symbol, you may take 1 of the associated Reward tiles and place it faceup in front of you by discarding 1 Worker. You may only take 1 rail and 1 building Reward tile during the game.
+        - name: Move Your Performance Tiles Up in the Player Board Extension
+          text: |
+            * Move 1 Performance tile up 1 slot by spending the number of advancement points shown.
+            * To move from row III to row IV, you must also discard 1 Worker.
+                * Any tile from III may move into IV.
+            * Each slot may only have 1 tile.
+    - name: End of the Game
+      text: |
+        * Triggered when 1 player has no buildings and no rails to the left of their company logo.
+        * Continue playing until all players have had the same number of turns, then each player takes 1 more turn.
+        * 8 VP/face-up Train tile.
+        * VP for each completed Milestone.
+        * VP of the highest number you reach on the Performance Track.
+        * For each Performance tile on your Player Board Extension, multiple the VP depicted on the tile by the number of times you satisfy its condition. Then, if the tile is on row II or higher, multiple that result by the VP multiplier depicted on its row.
+        * VP from Telegraph VP tiles if you have a Telegraph Office on each side of the tile.
+            * For the rightmost connection, you sore 4 VP for each City of a different level you connected.
+            * For the other connections, multiple the number of Stations you have built in the indicated level of City by VP.
+        * Break ties with most money (including $150/Share).

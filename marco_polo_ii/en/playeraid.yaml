@@ -1,0 +1,141 @@
+name: "Marco Polo II: In the Service of the Khan"
+description: Travel to cities along the silk road, trading silk, spice, gold & jade along the way. [See it on BGG](https://www.boardgamegeek.com/boardgame/283948/marco-polo-ii-service-khan)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+        * Shuffle the Goal cards and place them face down next to the board.
+        * Shuffle the City Bonus markers and randomly place 1 on each city that has a space for them.
+        * Shuffle the Outpost Bonus tiles and place 1 on each city that has a space for them.
+        * Shuffle the City cards and place 1 each in city that has space for them.
+        * Place 2 City cards faceup on the spaces in the action area. Place the remaining cards facedown as a deck.
+        * Shuffle the Starting Contracts (blue).
+        * Shuffle the red Contracts. Place 1 faceup in each city contract space. Place the rest as a facedown deck.
+        * Sort the Offer Tiles by the number on their backs, shuffling each set. Return 1 from each pile to the box. Place 1 from each stack faceup on the matching board locations.
+        * Sort the Guild Seals by their type and place them next to the board with their basic side faceup.
+        * Place (2 + # of players) black dice on the appropriate board space.
+        * Choose a starting player.
+        * Each player selects a colour and gets all pieces of their colour, placing all of their trading posts on their board.
+        * Each player rolls their dice and sets them on their board.
+        * Each player draws 1 Starting Contract and places it faceup on their board.
+        * Each player places 1 figure on Beijing and another on the 50 VP space.
+        * Each player gets 3 camels and 8 coins.
+        * Each player draws 3 goal cards.
+        * Shuffle the character tiles and deal (1 + # of players) tiles faceup.
+        * In reverse player order, each player chooses a character. Return all unused characters to the box.
+        * Each player chooses 1 of their goal cards and return the rest to the box.
+        * 3P: Place 1 unused die on the first space of Khan's Favor action with value 1. This remains there the entire game.
+        * 2P: Place unused dice on the following spaces. All of these remain there the entire game:
+            * Khan's Favor: 2 dice set to value 1.
+            * Baghdad, Balkh, and Hormuz: 1 die set to value 1 in each city.
+            * Books: 1 die set to value 5 onto the lower blue action space of the third offer tile.
+    - name: Gameplay
+      text: |
+        * Can place on any unoccupied space for free.
+        * Can place on any occupied blue space by paying a number of coins equal to the lowest value die you are placing.
+            * Occupied brown spaces cannot be used.
+        * Each player colour can only use each action space once.
+        * White and black dice are not considered player colours. No limit to how many black or white dice can be on an action.
+        * May choose to perform an action fewer times than allowed. Must perform it at least once.
+        * When building trading posts, you must take the topmost one from the leftmost column.
+        * Jade may be used as 1 coin or 1 camel when paying costs.
+    - name: Round
+      text: |
+        * All players roll their dice simultaneously.
+        * If any player rolls less than 15, they get 1 point of compensation for each point of difference between their total and 15.
+        * For each point of compensation, take 1 camel or 1 coin in any combination.
+        * In player order, players perform a main action and any number of bonus actions.
+        * Repeat until all players are done.
+      sections:
+        - name: Start the Round
+          text: |
+            * The topmost player on the highest travel space becomes the new first player. No change if nobody traveled.
+            * Retrieve all dice.
+            * Remove the current 3 offer tiles from the game and refill them from the supply.
+            * Award city, character, and guild bonuses (any ! mark on a small city you have a trading post in or on your character).
+            * Remove the current 2 city cards in the action space from the game and refill them from the deck.
+            * Roll all dice and receive compensation if necessary.
+        - name: Main Actions
+          sections:
+            - name: Books
+              text: |
+                * Choose 1 of the 4 available offers from the action space and gain its rewards. The top 2 offers have no cost while the bottom 2 cost jade.
+            - name: The Khan's Favor
+              text: |
+                * Take 4 coins and 2 camels.
+                * First player to place here places any value of die.
+                * All other players must place a die whose value is greater than or equal to the previous die placed.
+            - name: Guild Seals
+              text: |
+                * Lowest value die indicates which guild seals you can claim.
+                * Take 1 guild seal and place it front of you with its brown basic side faceup and gain the bonus for taking that seal.
+                    * Each player may only have 1 of each guild seal.
+            - name: Travel
+              text: |
+                * Lowest value die indicates maximum number of spaces you can move, also limited by the maximum number of the space.
+                * Travel up to the maximum number of spaces, paying any costs indicated on the board along the way.
+                    * Some routes require you have a matching guild seal. You do not spend the seal.
+                * Must place a trading post if you end your movement in a city. (Max 1 trading post per player)
+                    * If the city has a bonus marker, immediately receive the tile's bonus and continue to receive it every turn.
+                    * If the city has a card, you may use the city's card ability by placing a die on it on future turns.
+                * First player to a city with an Outpost bonus takes the bonus then discards the tile.
+                * Immediately get 5 VP or 10 VP when building the trading post from that spot on your player board.
+                * The upper Travel action that uses 3 dice lets you place a trading post in any city you moved through this turn, but you only gain the bonuses from the city you end in.
+            - name: Contracts
+              text: |
+                * Must have at least 1 trading post in a city with contracts to take this action.
+                * Take 1 or 2 Contracts from any cities you have a trading post in based on your die's value. Place the selected Contracts in active Contract spaces on your board.
+                    * If you already have 2 Contracts on your board, you must make room for the new Contracts by discarding them to the bottom of their piles.
+                    * You cannot discard newly-acquired contracts.
+                * Take 3 coins.
+                * Refill empty Contract spaces from the deck.
+            - name: Special Cities (Baghdad, Balkh, Hormuz)
+              text: |
+                * Must have a trading post in the city in order to use this action.
+                    * Each die colour may only appear once in the city.
+                * Take the reward from the action space, regardless of die value.
+                * If you have an improved guild seal of the appropriate type, immediately gain the bonus shown on the seal. Your die value determines if you get this bonus once or twice.
+            - name: City Cards
+              text: |
+                * Must have a trading post in the city in order to use the card in a city.
+                * Any player may use the 2 city cards shown in the action area; they do not belong to any city.
+        - name: Bonus Actions
+          text: |
+            * May perform any number of these in any order before and after your main action.
+          sections:
+            - name: Complete 1 Contract
+              text: |
+                * Spend the resources shown on the left side of your Contract.
+                * Receive indicated reward on the right side of the Contract.
+                * Place the completed Contract face down in your drawer.
+            - name: Improve 1 Guild Seal
+              text: |
+                * Pay the cost shown next to the checkmark.
+                * Flip the guild seal over to its red improved side and gain any ! bonus shown.
+            - name: Money Bag
+              text: |
+                * Place any 1 die onto the money bag to take 3 coins, 2 camles, or 1 jade.
+                * Do not need to pay to use this space, regardless of how many dice are here.
+                * More than 1 die of any colour can be on this space.
+            - name: Reroll 1 Die
+              text: |
+                * Pay 1 camel to reroll 1 of your dice including black in possession.
+            - name: Adjust 1 Die Result by 1
+              text: |
+                * Pay 2 camels to +1 or -1 a single die including black in possession. (Cannot go above 6 or below 1)
+            - name: Take 1 Black Die
+              text: |
+                * Pay 3 camels to take 1 black die from the supply and immediately roll it.
+                * May have any number of black dice.
+                * Can only take 1 black die per turn.
+    - name: End of the Game
+      text: |
+        * Game ends after 5 rounds. Can tell how many rounds are left by how many offer tiles are left.
+        * Each player gets VP for each of their improved guild seals shown on their goal card.
+        * For each different shield on cities with your trading posts, score points as shown on the track. All +1 shields are counted here as well.
+        * 1 VP for every 2 goods (pepper, silk, gold, jade) you have left. Camels are not worth anything.
+        * 1 VP for every 10 coins left.
+        * Player with the most completed Contracts gets 8 VP. Second most gets 4 VP (not warded in 2P game).
+        * Break ties with most camels.

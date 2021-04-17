@@ -1,0 +1,106 @@
+name: "AquaSphere"
+description: Coordinate programmer and scientist to gather data from the depths of the Ocean. [See it on BGG](https://www.boardgamegeek.com/boardgame/159508/aquasphere)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+        * Deal a random Base Lab to each player and choose a staring player.
+        * Players get all pieces of their colour. One worker goes on the first space of the Programming Board. Place one Bot on the turn order space of the Programming Board. Place one worker and one Submarine in the Section of the Station matching your Base Lab's letter. Place one cube on the 0 of the score track and one cube on the + space of the score track.
+        * Each player gets one pre-programmed Bot matching their starting location's white Bot action.
+        * Each player gets 4 Time Markers unless their space has the 0 hatch, in which case they get 3 Time Markers instead.
+        * Take the appropriate setup card based on the number of players. Each player's Sector gets the indicated resources. The remaining ones are determined by drawing leftover Base Lab tiles. For neutral Submarines, use the unused colours.
+        * Take the Centre Tiles based on the number of players and orient them randomly in a stack in ascending order.
+        * See Preparing for Next Round for board setup.
+    - name: General
+      text: |
+        * Each Loading Station can hold a number of Bots based on the number of players: 2P = 2 Bots, 3P = 4 Bots, 4P = 5 Bots.
+        * When a Loading Station exceeds its capacity, each player must remove all but one Bot from the Loading Station.
+        * You may return a programmed Bot to your supply during your turn as a free action to gain 2 Time Markers.
+        * The symbols in your Lab determine the maximum capacity for anything you can have.
+    - name: Gameplay
+      sections:
+        - name: "A: Program a Bot"
+          text: |
+            * You may not have more than 2 programmed Bots at a time and no more than 1 of any type.
+            * Programming a Bot can be done one of two ways:
+                * Move your engineer one space on the Programming Board following the arrows and receive the depicted Bot.
+                * Pay 3 Time Markers to program a Bot of your choice. Place 1 of the Time Markers on your board to indicate you have taken this action; limit once per game round.
+        - name: "B: Carry Out an Action with a Programmed Bot"
+          sections:
+            - name: Determine Where to Carry Out the Action
+              text: |
+                * You may keep your scientist in their current Sector or move them to another Sector by paying the depicted number of Time Markers for each lock you pass through.
+                * Place your scientist in one of the coloured action areas for which you have a programmed Bot.
+            - name: Place the Bot
+              text: |
+                * Move the Bot from its space on your player board to the hub of the Sector your scientist is currently in. If the hub already has a Bot in it, move that Bot to the Loading Station.
+                * If the Loading Station now exceeds its capacity, each player must retrieve all but 1 Bot from that Loading Station.
+            - name: Carry Out the Action
+              text: |
+                * You may now carry out the action of the section that your scientist occupies. You are not required to carry out the action.
+              sections:
+                - name: Expand the Lab (Green)
+                  text: |
+                    * Take the topmost Lab Expansion tile from the Sector and place it next to your Base Lab.
+                    * If the Lab Expansion shows 1 or 2 letters, you may place 1 Bot on the hub of each of the corresponding Sectors. These Bots come from your general supply; they do not need to be programmed.
+                - name: Take Time Markers (Yellow)
+                  text: |
+                    * Take as many Time Markers as your Lab allows from the section. If you did not get at least 2 Time Markers from the section, take Time Markers from the general supply until you have received 2.
+                - name: Take Crystals (Black)
+                  text: |
+                    * Take as many Crystals from the sector as your Lab allows.
+                - name: Catch Octopods (Purple)
+                  text: |
+                    * Remove as many Octopods from the Sector as your Lab allows and return them to the general supply.
+                    * Score 1/3/6/10/15/21 KP for 1/2/3/4/5/6+ Octopods captured.
+                - name: Place a Submarine (Blue)
+                  text: |
+                    * You may only have one Submarine in each Sector.
+                    * Take the next Submarine from your player board and place it in the next available space in the Sector.
+                    * Pay as many Time Markers as depicted on the space. You cannot do this if you do not have enough Time Markers.
+                    * Receive a number of points equal to the number depicted on the current Centre Tile.
+                - name: Take a Research Card (Red)
+                  text: |
+                    * Take the topmost Research Card from the Sector and place it next to your player board.
+                    * Receive a number of points equal to the number depicted on the current Centre Tile.
+                - name: Program a Bot (White)
+                  text: |
+                    * Take the next Bot from your supply and program a bot matching the colour depicted in the symbol of the Sector's white action space.
+                    * If a Bot of the depicted type is already programmed, do not program a new Bot and receive 2 Time Markers instead.
+        - name: "C: Pass"
+          text: |
+            * Move your programmer to the next free space on the pass order track. You no longer take turns this round.
+    - name: Intermediate Scoring
+      text: |
+        * Happens when all players have passed.
+        * Each player returns the Time Marker on the player board, if any.
+        * Each player gets the number of Time Markers shown on their exposed Submarine space on their player board.
+        * Players with cards that can be used during Intermediate Scoring can use them now.
+        * Calculate the total score for each player before moving their scoring marker.
+        * To cross a red line, a player must pay 1 Crystal. If the player has no Crystals, they may choose to return a programmed Bot to their supply (without receiving Time Markers) instead. If losing points, you cannot fall back over a red line.
+        * Calculate each player's score as follows.
+            * The player who controls the most Sectors gets 6 KP. If 2 or more players are tied, then each score 3 KP.
+            * Number in the highest Bot supply column that has no Submarine.
+            * Number of Crystals in the player's supply (see Octopod scoring table).
+            * Negative points from leftover Octopods (see Octopod scoring table), calculated for each Sector.
+    - name: Prepare for Next Round
+      text: |
+        * Place new Research Cards into the Station, covering any existing ones.
+        * Place new Lab Expansions into the Station, covering any existing ones.
+        * Remove any leftover Time Markers in the Station and place markers as indicated by the Centre Tile.
+        * When adding neutral Submarines, each colour can only appear once. If you cannot place any neutral Submarine into the indicated tile, find the next possible one in clockwise order.
+        * Return the topmost Centre Tile to the box.
+        * Rearrange player order markers based on the passing order track.
+        * Return programmers to the bottom of the Programming board.
+        * Rearrange the Programming Tiles to match the current Program Card, then return it to the box.
+    - name: Final Scoring
+      text: |
+        * Perform immediately after 4th Intermediate Scoring.
+        * You do not need to spend Crystals or Bots to move past a red line during final scoring.
+        * Calculate each player's score as follows:
+            * KP for different letters in your Lab (see Octopod scoring table).
+            * 1 KP per Time Marker leftover.
+            * 5 KP if all 6 Submarines are in the Station.
+            * 5 KP for a completed Lab.

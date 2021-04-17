@@ -1,0 +1,236 @@
+name: "Barrage with The Leeghwater Project"
+description: Nations vie for hydroelectric dominance in a dystopia where water is power. [See it on BGG](https://www.boardgamegeek.com/boardgame/251247/barrage)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+        * Use the desired side of the board (side with icons recommended for basic game).
+        * Place the Energy Track, Management, Patent, and Extra Management boards next to the Map.
+        * Shuffle the Headstream tiles and randomly place 4 faceup in the designated spaces on the Map. Return the rest to the box.
+        * Shuffle the Bonus tiles and place 5 faceup on the Energy track. Return the rest to the box.
+        * Shuffle the Objective tiles and place 1 in the space on the Energy Track. Return the rest to the box.
+        * Sort the External Work tiles by their back, shuffle each separately, and place them facedown on their spaces on the Extra Management board.
+        * Draw the top 3 External Work tiles from the A stack and place them faceup on the Extra Management board.
+        * Shuffle the Private Building tiles. Place 5 faceup on the Extra Management board and return the rest to the box.
+        * Shuffle the National Contract tiles. Place (# of players – 1) tiles on the Management board. Return the rest to the box.
+        * Sort the Private Contact tiles by their back, shuffle each separately, and place them facedown on the Management board.
+        * Deal 2 faceup Private Contract tiles from each stack onto their spaces on the Management board.
+        * Sort the Neutral Dam Setup tiles by their back and shuffle each separately.
+        * Draw 1 tile from each Neutral Dam stack and place the Neutral Dams in the building spaces of the basins indicated on the drawn tiles. Place 1 Water Drop behind each Neutral Dam. Return all Neutral Damn tiles to the box.
+        * Sort the Advanced Technology tiles by their back and shuffle each separately, placing them facedown on the Patent board.
+        * Draw the top 3 Advanced Technology tiles from the I pile and place them faceup on the Patent board.
+        * Randomly pick # of players Company boards and return the rest to the box.
+        * Randomly pick # of players Executive Officer tiles and return the rest to the box.
+        * Randomly combine 1 Company board and 1 Executive Officer to create a set.
+        * Randomly pick # of players Starting Contract tiles and return the rest to the box.
+        * Choose a starting player.
+        * In player order, each player picks one of the Company board and Executive Officer combinations and a Starting Contract.
+        * Each player takes the Extension board for their Company and adds the 5 Building Pieces of their colour to it.
+        * Each player takes the Basic Technology tile of their Company.
+        * Place the Turn Order markers in reverse player order.
+        * Return the basic wild Technology tiles (with the ? symbol) to the box as they are not used in the full game.
+    - name: Gameplay
+      text: |
+        * Excavators and Concrete Mixers are never lost; they are placed into your Construction Wheel and become available again once construction is complete.
+        * Action rows with a number on them are not available if not playing with that player count; both sides are unavailable.
+        * All uncovered Power House bonuses are cumulative.
+      sections:
+        - name: Income and Headstreams
+          text: |
+            * Each player collects income shown on their player boards indicated with a ! symbol.
+            * Place Water Drops on the Headstream tiles according to the number indicated on the tile for the current round.
+        - name: Actions
+          text: |
+            * Players take turns in the indicated turn order.
+            * A player must place Engineers onto one free action space on their turn.
+                * Placing on a space with a red outline requires you pay 3 Credits to place Engineers there.
+                * Must place the required number of Engineers to take the desired action.
+                * Must take the action of the space.
+            * A player must pass if they have no Engineers left.
+            * Phase ends once all players have passed.
+        - name: Water Flow
+          text: |
+            * All Water Drops on the Headstream tile flow following rivers and basins. They continue flowing until reaching a Dam that can hold the Water Drop back or until they reach the end of the board where they are lost.
+        - name: Scoring
+          text: |
+            * Player highest up on the Energy Track scores 6 VP (must have generated at least 1 Energy).
+                * If tied, all tied players even split 8 VP (round up). Do not score second place.
+            * Player second-highest up on the Energy Track scores 2 VP (must have generated at least 1 Energy).
+                * If tied, all tied players get 1 VP.
+            * Each player gains a number of credits equal to the highest Credit value on the Energy Track they are on or have passed. (Max 8)
+            * Each player scores VP from the current round's Bonus tile.
+                * If your Energy Marker is before the number 6 space of the Energy Track, you do not score the Bonus tile.
+                * If your Energy Marker is in the section for the current round or further, score the full VP shown on the tile.
+                * If your Energy Marker is on a section lower than the current round, score the Bonus tile but deduct 4 VP for each section you are behind. This cannot result in losing points.
+            * Discard the Bonus tile for the current round. If this was the last Bonus tile, move to Game End.
+        - name: End of Round
+          text: |
+            * Rearrange player order with the player that produce the least Energy going first and continuing in ascending order.
+                * If 2 players are tied for an amount, reverse their relative player order.
+            * Move all Energy markers back to the 0 space of the Energy Track.
+            * Each player takes back their Engineers from action spaces.
+            * If there are any Advanced Technology tiles left on the Patent Office board, return them to the box, then refill the spaces using the lowest-numbered tiles.
+            * If there are any External Work tiles left on the Extra Management board, return them to the box, then refill the spaces using the lowest-lettered tiles.
+    - name: End of the Game
+      text: |
+        * Game ends after the fifth Scoring Phase.
+        * Gain VP from the Objective tile based on who satisfied it the best.
+            * First place scores 15 VP. Second scores 10 VP. Third scores 5 VP.
+                * If tied, evenly divide the VP for the respective tiers among all tied players, rounding up if necessary.
+        * Gain VP for Private Buildings that you have built.
+        * 1 VP for every 5 resources you have (Excavators, Concrete Mixers, and Credits).
+            * Resources on the Construction Wheel are not counted.
+        * 1 VP for each Water Drop held by your Personal Dams.
+        * Most VP wins. Break ties with most produced Energy Units during the last round.
+    - name: Actions
+      text: |
+        * May only use the action of Private Buildings that you have already built. Each player may use each Building once per round.
+      sections:
+        - name: Construction
+          text: |
+            * Place the required number of Engineers in the first available actions space on your board starting from left to right.
+                * If you place your Engineers in a red outline area, you must pay 3 Credits (for the whole group).
+            * Put the Technology tile related to the structure you want to build from your supply into the open segment of your Construction Wheel.
+            * Put the Machineries you must use to build the structure in the open segment of your Construction Wheel.
+            * Rotate your Construction Wheel one segment clockwise.
+            * Take the first available structure piece from the left of your Company Board and place it in 1 corresponding available building space on the Map.
+                * If you build in a space with a red outline, you must pay 3 Credits.
+                * If you uncover an income space after building, immediately collect that income.
+          sections:
+            - name: Base
+              text: |
+                * Creates a Dam that collects and holds Water.
+                * Can be built in any available building space with a Base icon.
+                * Costs 3 Excavators if built in the Plains, 4 in Hills, or 5 in Mountains.
+                * Cannot build 2 Bases of the same colour in the same basin.
+            - name: Elevation
+              text: |
+                * Increase the amount of Water a Dam can hold.
+                * Always built over a Base or another Elevation belonging to your colour.
+                * Costs 2 Concrete Mixers if built in the Plains, 3 in Hills, or 4 in Mountains.
+                * Does not cost 3 Credits if building over a building space with a red outline.
+                * Cannot have more than 2 Elevations on the same Base (Dam's max level is 3).
+            - name: Conduit
+              text: |
+                * Used to bring Water Drops from a Dam to a Powerhouse during production.
+                * Can be built in any available building space with a Conduit icon.
+                * Costs 2 Excavators multiplied by the production value of the Conduit you are building.
+            - name: Powerhouse
+              text: |
+                * Used to activate the production of Energy.
+                * Can be built in any available building space with the Powerhouse icon.
+                * Costs 2 Concrete Mixers + 1 extra Concrete Mixer for every Powerhouse you have already built.
+                * Cannot build 2 Powerhouses of the same colour in the same basin.
+            - name: Private Building
+              text: |
+                * Creates a Private Building of your choice.
+                * Cost is shown in the upper left corner of the chosen building tile.
+        - name: Management Actions
+          text: |
+            * Place the required number of Engineers on the Management board and perform the action of the space.
+                * You cannot place Engineers into a space if you cannot perform the action.
+                * If you place your Engineers in a red outline area, you must pay 3 Credits (for the whole group).
+          sections:
+            - name: Turbine Station
+              text: |
+                * Must have at least 1 Water Drop on a Dam of your colour or a neutral Dam.
+                * Must have a Powerhouse of your colour already built on the Map.
+                * Must have a Conduit of any colour which directly connects the relevant Dam to your Powerhouse.
+                * Any production bonuses (+ or -) must be applied.
+                * Cannot perform a production action if the total amount of produced Energy Units would be less than 1.
+                * Take as many Water Drops as you wish from the relevant Dam and move them along the Conduit to reach your Powerhouse. This immediately produces a quantity of Energy Units equal to the Conduit's production value multiplied by the number of Water Drops you decided to move. +/- is applied after multiplying. The Water Drops are placed in the basin immediately ahead of your Powerhouse.
+                * If you are using a Conduit belonging to another player, give that player 1 Credit for each Water Drop you move. That player also gets 1 VP for each Water Drop.
+                * Move your Energy marker on the Energy Track a number of spaces equal to the number of Energy Units produced.
+                    * If you would go above 30, flip your marker to the 30 side and continue counting from the beginning of the track.
+                * May fulfill up to 1 Contract in your supply if you produced at least the number of Energy Units shown on the Contract.
+                    * Only count the numb of Energy Units produced with this single action, not those produced this round.
+                    * Collect the Contract's bonus and flip it facedown to show that is has been fulfilled.
+                    * Placement/constructions DO NOT let you rotate your construction wheel.
+                * If you produce at least enough energy to fulfill a National Contract, you may fulfill that one instead of one 
+            - name: Water Management
+              text: |
+                * If placing on the 2 space, may place up to 2 Water Drops onto any combination of Headstream tile(s).
+                * If placing on the 1 space, place 1 Water Drop onto 1 Headstream tile and immediately flow it following the water flow rules.
+            - name: Bank
+              text: |
+                * May place here even if other players are already in this action space.
+                * Gain a number of Credits equal to the number of Engineers you just placed here.
+            - name: Workshop
+              text: |
+                * Pay any cost shown and rotate your Construction Wheel the appropriate number of spaces.
+                    * After each rotation, you must take back any Machineries or Technology tiles that move into the open segment.
+            - name: Machinery Shop
+              text: |
+                * Pay the number of Credits shown to take the number of Machineries indicated, placing them on your Executive Officer.
+            - name: Contract Office
+              text: |
+                * Take the action of the chosen row, either taking 1 available Private Contract for free or paying 1 Credit to take 2 available Private Contracts and place them next to your board.
+                    * Immediately discard down to 3 faceup Contracts if you have more than 3.
+                * Refill the Private Contract display at the end of your turn.
+            - name: Patent Office
+              text: |
+                * Take the tile from the chosen space and add it to your personal supply.
+            - name: External Works
+              text: |
+                * Discard the indicated number of Machineries from your personal supply and immediately gain the bonus of the External Work tile. Take the tile and place it facedown in front of you.
+            - name: Private Buildings
+              text: |
+                * May only perform the actions of Private Buildings that you have built.
+                * Each player may only activate each Private Building once per round.
+    - name: Company Boards
+      text: |
+        * Power production bonuses on the player boards are cumulative, so uncovering +1 and +2 effective gives you +3.
+      sections:
+        - name: USA - Marguerite Grant (Red)
+          text: |
+            * In any phase of the round, if a Water Drop naturally flows through one of your Powerhouses, move your Energy marker 1 step.
+        - name: Germany - Oberst Dassler (Black)
+          text: |
+            * After your have performed a production action, you can perform a second production using another Powerhouse. The production does not have any modifiers, even if you have unlocked you Powerhouse production modifiers.
+        - name: Italy - Enrico Olivi (Green)
+          text: |
+            * After you have performed a production action, move your Energy marker by 3 additional step on the Energy Track.
+        - name: France - Joseph Fontaine (White)
+          text: |
+            * The cost to fulfill any Contract (including National Contracts) is 3 points lower for you.
+        - name: Netherlands - Ellen Vos (Orange)
+          text: |
+            * After you have performed a production action, you can immediately add 1 Water Drop on 1 of your Dams. You cannot add it on the Dam that you just used for production.
+    - name: Executive Officers
+      sections:
+        - name: Anton Krylov
+          text: |
+            * Copy another Technology tile currently in your Construction Wheel.
+        - name: Graziano del Monte
+          text: |
+            * Your level 3 Dams can hold up to 4 Water Drops.
+        - name: Jill McDowell
+          text: |
+            * You can build Conduits using Concrete Mixers instead of Excavators. When building with Concrete Mixers, you pay 1 Machine times the Conduit production value. Cannot mix both Excavators and Concrete Mixers.
+        - name: Leslie Spencer
+          text: |
+            * When taking an External Works action, you may place her special tile along with the required Machineries in your Construction Wheel as though you were performing a Construction action. Rotate the Wheel 1 segment.
+        - name: Mahiri Sekibo
+          text: |
+            * You have a personal action space that lets you copy the ability of another player's Executive Officer.
+        - name: Margot Fouche
+          text: |
+            * May use her personal action space to perform the special action of a Private Building that you have already activated this round.
+        - name: Simone Luciani
+          text: |
+            * You can have up to 4 Contract tiles face up in front of you.
+            * You can fulfill multiple Contracts with a single production action provided their combined value is <= the amount of Energy you produced with this action.
+        - name: Solomon P. Jordan
+          text: |
+            * Whenever you build a structure you can pay 3 Credits instead of a requested Machinery, mixing and matching. Credits are paid to the bank.
+        - name: Tommaso Battista
+          text: |
+            * Replace 1 of your starting Engineers with the yellow Architect at the beginning of the game. If you place the Architect in an action space requiring only 1 Engineer, you can immediately take another turn.
+        - name: Viktor Fiesler
+          text: |
+            * When you produce < 4 Energy units with a production action, you produce 4 Energy Units instead. This is evaluated after multiplying the number of Water Drops times the production value. Any bonuses/maluses are factored in AFTER this calculation.
+        - name: Wilhelm Adler
+          text: |
+            * Bases always cost 3 Excavators.

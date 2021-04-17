@@ -1,0 +1,133 @@
+name: "Spirit Island with Expansions"
+description: Island Spirits join forces using elemental powers to defend their home from invaders. [See it on BGG](https://www.boardgamegeek.com/boardgame/162886/spirit-island)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+        * Optional: Select an Adversary and/or Scenario and alter setup based on their instructions.
+        * Put 4 Fear Markers per player into the Fear Pool.
+        * Put the Beast, Wilds, Disease, and Strife tokens in their spaces on the Invader Board extension.
+        * Shuffle the Event deck and put it on the Events space on the Invader Board extension.
+        * Shuffle the Fear cards and put 9 on the Fear Deck space. Place the Terror Level 3 divider 3 cards from the bottom and the Terror Level 2 divider 3 cards above that.
+        * Sort the Invader cards by stage and shuffle each. Form the Invader deck using 5 Stage III, 4 Stage II, and 3 Stage I cards.
+        * Shuffle the Blight cards and place 1 Healthy Island side up on the Blight space. Place Blight onto the card as instructed. IMPORTANT: ADD 1 MORE BLIGHT THAN INSTRUCTED.
+        * Choose 1 random Island board per Spirit and arrange the tiles.
+        * Place Dahan, Blight, and Invaders as shown on each island space.
+        * Place 1 Beast token on the lowest-numbered land with no printed Setup icons on each Island board.
+        * Place 1 Disease token on land #2 on each Island board.
+        * Shuffle the Minor and Major Power decks.
+        * Each player chooses a Spirit and gets their Spirit's board and starting cards.
+        * Each player follows the setup instructors shown on the back of their Spirit board with each player choosing a unique Island board to start on.
+        * Reveal the top Invader card. Invaders Explore in that land type. Place the card in the Build action space.
+    - name: Gameplay
+      text: |
+        * When using Powers, you may always choose to skip them but do not get any Energy back.
+        * Elements are never spent; an Element icon can power multiple effects.
+        * When using a Power, you must choose a space within the appropriate range and any other targeting criteria.
+        * When all of the Fear tokens have been moved to the Generated Fear, place the top Fear card from the deck face down into the earned space. Move all Fear tokens back to the Fear Pool and continue adding to the Generated Fear if necessary.
+        * If a Blight token is added to a land that already has a Blight token, place a Blight token onto an adjacent land as well. This may cause a cascade.
+            * If a Blight token is added to a space with Spirit Presence, each Spirit in that land must remove 1 of their discs in that space from the game.
+            * If the Health Island card is emptied of Blight, immediately flip it to its Blighted Island side.
+            * If the last Blight is removed from the Blighted Island card, carry out its effect.
+        * If an Explorer would ever be placed into a space with a Wilds token, do not place the Explorer and discard a Wilds token.
+        * If Invaders would ever build in a space with a Disease token, do not build and instead discard a Disease token.
+        * If an Invader has a Strife token under them, they deal 0 damage and discard one of their Strife tokens. This happens even if the Invader would deal 0 damage because of a Defend X. If Invaders damage other Invaders, the Strife token has no effect and is not removed. Invaders bring any Strife tokens they have with them if they move. An Invader's Strife tokens are removed if they are replaced by something else.
+        * The first time each Action Damages Invaders in a land, increase that Damage by 1 per Badlands. The first time each Action Damages Dahan in a land, increase that damage by 1 per Badlands. This only applies if at least 1 point of Damage is inflicted normally.
+        * "Origin land" refers to the land with the Presence from which you're targeting the Power or measuring Range.
+        * If a piece is saved from destruction, remove all damage from that piece; they cannot be destroyed or dealt damage a second time by the action they were just saved from.
+      sections:
+        - name: Spirit Phase
+          text: |
+            * Each player chooses a number of different Growth options from their Spirit board. # of actions is specified on their board.
+                * You must do everything shown on the chosen action space(s) but may perform them in any order.
+                * When placing Presence, you may instead choose to move a Presence already on the board.
+            * Gain an amount of Energy equal to the highest uncovered number on your Energy Presence track.
+            * May play a number of Power cards from your hand up to the maximum shown on your Spirit board. Must immediately pay the energy cost shown in the upper-left corner. You immediately gain the Elements shown on the left side of the card
+        - name: Fast Power Phase
+          text: |
+            * As a group, players activate all Fast Powers and Power Cards in any order they choose.
+                * Fast Powers cannot be delayed until the Slow Phase.
+        - name: Invader Phase
+          text: |
+            * If an Invader space has no cards, do not perform that action.
+            * If an Invader space has multiple cards, you perform that action multiple times, starting with the bottommost card.
+          sections:
+            - name: Blighted Island
+              text: |
+                * If the Blight card is flipped to its Blighted Island side, follow its instructions.
+            - name: Event
+              text: |
+                * Draw and resolve the top Event card. If a choice has a cost, players determine how to pay that cost amongst themselves.
+                    * During the first round, just draw and discard the card without applying its effect.
+            - name: Fear
+              text: |
+                * If any Fear cards have been earned, flip the earned Fear cards over so that they are in the order they were earned and resolve them one at a time. Place the resolved cards in the Fear discard space.
+            - name: Ravage
+              text: |
+                * Invaders ravage each land of the type(s) shown on the card in the Ravage space.
+                    * If an Invader has any number of Strife tokens, that Invader deals 0 damage and remove 1 of their Strife tokens.
+                    * If a particular Invader's Damage is boosted, Strife applies afterwards and cancels it. If the total Damage is boosted, this boost applies after Strife.
+                * Explorer: 1 damage, Town: 2 damage, City: 3 damage.
+                * If a space is Defended, Defend cancels X damage to both the land and the Dahan.
+                * If 2+ damage is dealt, place 1 Blight token onto the land.
+                * Every 2 points of damage destroys 1 Dahan. If 1 or more Damage is done to them, they take +1 Damage/Badlands token.
+                * After damage is dealt (even 0 but not if Ravage is cancelled), any surviving Dahan fight back. Each Dahan inflicts 2 points of damage on Invaders distributed however you wish.
+                * Anything that "does not participate in Ravage" does no damage and cannot have damage dealt to it during this phase.
+            - name: Build
+              text: |
+                * Invaders build in each land of the type(s) shown on the card in the Build space, as long as any Invader piece is present there.
+                    * If Invaders would build in a land with a Disease token, instead remove 1 Disease token from that land.
+                * If the land has more Towns than Cities, add a City, otherwise add a Town.
+            - name: Explore
+              text: |
+                * Reveal the top card of the Invader deck.
+                * Place 1 Explorer in each land of the type(s) shown which either contains a City or Town or is next to a City, Town, or Ocean.
+                    * If an Invader would explore to a land with a Wilds token, instead remove 1 Wilds token from that land.
+            - name: Advance Invader Cards
+              text: |
+                * Slide all Invader cards left with Ravage being discarded.
+        - name: Slow Power Phase
+          text: |
+            * As Fast Power phase but activate Slow Powers.
+        - name: Time Passes
+          text: |
+            * Discard all cards that were played this turn to their personal discard piles.
+            * Remove all Damage.
+            * Remove any Single-Turn effect tokens including Isolate tokens.
+    - name: End of the Game
+      text: |
+        * Game ends in loss immediately if a Spirit loses their last presence disc from the board, you need to draw an Invader card but there are none left, the Blight card or Invader and/or Scenario cards result in a losing condition.
+        * Game ends immediately in victory if you satisfy the current victory condition based on the Terror level (Level 1: destroy all Explorers, Towns, and Cities; Level 2: destroy all Towns and Cities; Level 3: Destroy all Cities).
+    - name: Actions
+      text: |
+        * Anything that refers to "Once per Action" can be defined like this:
+            * One use of a Power
+            * A Ravage, Build, or Explore in a single land.
+            * Everything 1 Fear Card, Main Event, Token Event, Dahan Event, or Blight Card does. Any effect that applies for "each board/land/player/spirit" is treated as separate actions.
+      sections:
+        - name: Gain Power Card
+          text: |
+            * Choose either Minor or Major, draw 4 cards from the chosen deck, and add 1 to your hand, discarding the rest.
+                * If you choose a Major Power, you must also Forget 1 Power card by discarding it to its deck's discard pile.
+        - name: Defend X
+          text: |
+            * Prevent X damage to both the land and Dahan.
+        - name: Remove Blight
+          text: |
+            * Removed Blight is returned to the Blight card on whichever side it is on. It can never flip back to the Healthy side.
+        - name: Gather
+          text: |
+            * Target a single space. May move described number and type of pieces from any number of adjacent lands to targeted land.
+        - name: Push
+          text: |
+            * Target a single space. May move described number and type of pieces to any number of adjacent lands from targeted land.
+        - name: Repeat
+          text: |
+            * Activate the Power again as though it was played again but do not gain any Elements from this repeat effect.
+        - name: Isolate
+          text: |
+            * Place an Isolate token on the land.
+            * Invaders do not Explore Isolated lands and Isolated lands are not a source of Explorers.
+            * For Invaders, Isolated lands are not adjacent to anything unless you want it to be.

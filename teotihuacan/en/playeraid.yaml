@@ -1,0 +1,180 @@
+name: "Teotihuacan with Late Preclassic Period"
+description: Use your worker dice to raise the legendary and breathtaking Pyramid of the Sun. [See it on BGG](https://www.boardgamegeek.com/boardgame/229853/teotihuacan-city-gods)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+        * Place the expansion board and new Tile board next to the main board.
+        * Shuffle the Action Boards and randomly place them on the 2, 3, 4, 5, 6, and 7 spaces. 1 is never covered. 8 is covered with its new version.
+            * Use the Nobles (6) Action Board showing the orange Worshiper space.
+            * Use the Architecture (7) Action Board showing a chart.
+            * Use the Development (8) Action Board showing a chart.
+        * Randomly select 1 Royal tile of each letter and place them face up on the Palace (1).
+        * Draw 6 randomly Technology tiles and order them by the reference number (top-right). Place them face up on the Alchemy board (5) in ascending order from left to right, top to bottom.
+        * Randomly select 4 Temple Bonus tiles and place 1 on the penultimate step of each Temple.
+        * Place the light disc on 0 of the Calendar track and the dark disc on 10. (3P: 11, 4P: 12)
+        * Place a Building on each space of the Buildings row excluding the leftmost space.
+        * Shuffle the Decoration tiles and create a face down pile on the Decorations tile board. Place 4 face up on this board.
+        * Shuffle the Pyramid tiles and create a face down pile. Place 3 face up on the new Tile board (8).
+        * Randomly draw Pyramid tiles to create the pattern shown in the setup rules based on the number of players.
+        * Shuffle the Discovery tiles and create a face down pile.
+        * Place 1 Discovery tile face up on the Worship areas of the Palace (1), Forest (2), Stone Quarry (3), Gold Deposit (4), Nobles (6), and Decorations (7).
+        * Draw 6 Discovery tiles and place them face up on the Avenue of the Dead. 3 on the first spot, 2 on the 2nd, 1 on the 3rd.
+        * Place a number of Discovery tiles face up on the major step of each Temple track based on # of players (shown on the step).
+        * Place the Season board next to the main board.
+        * Shuffle the Season tiles and place 1 face up on the designated spot on the new Tile board. This affects all turns until the next Eclipse.
+        * Each player chooses a colour and gets all pieces of their colour.
+        * Choose a starting player and give that player 1 cocoa.
+        * The last player gets 3 cocoa. The players between the first and last get 2 cocoa each.
+        * Each player places 1 disc on the following spots: 0 of the Pyramid track, bottom of the Avenue of the Dead track, and on 0 VP.
+        * Each player places 1 worshipper on the bottom step of each temple.
+        * Each player sets a worker to power 3 and places them onto the Ascension wheel.
+        * Each player sets their remaining workers to power 1.
+        * Deal 4 Starting tiles to each player. If any tile has a Discovery icon, those players draw a Discovery tile for each shown.
+        * Each player chooses 2 Starting tiles and discards the other 2.
+        * Each player gains the benefits of their chosen tiles.
+            * Discovery icon: Gain 1 of your drawn Discoveries by paying its cost.
+            * Technology icon: Place a marker on the lowest reference number Technology tile for free and gain Temple move.
+        * Shuffle the Priest and Priestess tiles and deal 2 to each player. Each player chooses 1 to keep and discards the other.
+        * Place your staring workers on the Action Boards of 3 unique numbers shown on your Starting tiles.
+        * 2P/3P: Draw 2 Starting tiles and place 3 neutral workers of 1 colour to the first 3 different Action boards shown.
+        * 2P: Draw 2 more Starting tiles and place 3 neutral workers of the other colour to the first 3 different Action boards shown.
+    - name: Gameplay
+      text: |
+        * On your turn you must take 1 of the possible actions.
+        * If you are the last player, move the light disc on the Calendar tracks 1 space. This may trigger an Eclipse.
+        * Any time during your turn, you may pay 3 cocoa to unlock all of your locked workers.
+      sections:
+        - name: Take a Normal Turn
+          text: |
+            * Choose a worker and move them 1 – 3 spaces, then perform an action on the space where they land.
+          sections:
+            - name: Collect Cocoa
+              text: |
+                * Before placing your moved worker, count the number of different coloured unlocked workers on this space.
+                * Receive this number + 1 cocoa.
+                * Place the moved worker on the action space.
+                * Discovery tiles are gained face up. You may flip them face down at any time to use them once.
+            - name: Worship
+              text: |
+                * Choose a Worship space on the action space.
+                * If there is already a worker of another colour on this Worship space, you may pay 1 cocoa to bump them out.
+                    * You cannot bump workers of your own colour.
+                    * If you do not pay to bump an occupied space, you may not perform the action.
+                * Choose one of the following options:
+                    * Activate the Worship space ability.
+                    * Claim the Discovery tile near the Worship space by paying its cost.
+                    * Pay 1 cocoa to choose both of these options activated in any order.
+                    * For the Palace (1), you must always perform the action of the chosen Royal tile but may also pay 1 cocoa to take the Discovery tile.
+                * If you claimed a Discovery tile, draw a new one and place it face up on the empty space.
+            - name: Perform Main Action
+              text: |
+                * Before placing your moved worker, count the number of different coloured unlocked workers on this space.
+                * Pay a number of cocoa equal to this number. If you cannot pay, you cannot perform this main action.
+                * Place the moved worker on the action space.
+                * Count the number of workers you have on this action space (max 3) and identify the lowest numbered workers.
+                * Perform the main action of the action space using this information.
+        - name: Unlock All of Your Locked Workers for Free
+          text: |
+            * Unlock all of your workers for free and end your turn.
+    - name: Temple Tracks
+      text: |
+        * When advancing, move your marker one step at a time and gain any bonuses you land on.
+        * If you land on a space with Discovery tiles, you may look through the stack and buy any 1 or claim the reward printed on the step itself.
+        * If you reach the penultimate step, you qualify for the end-game scoring bonus shown on it.
+        * If you reach the topmost step, claim reward shown. May only advance to the topmost step if there are no other discs on it.
+        * If you gain a special ability, place 1 of your makers adjacent to the chosen ability to show you can use it for the rest of the game.
+        * If you reach the 1-2 ← space, you may move 1 of your unlocked workers 1 or 2 spaces backwards.
+    - name: Ascension
+      text: |
+        * Triggers immediately when a worker reaches power 6.
+        * Advance your marker 1 step on the Avenue of the Dead.
+        * Move the worker to the Palace (1) and set its power back to 1. This does not trigger any powers that fire when a worker reaches the Palace (1).
+        * Select 1 of the rewards show on the Ascension wheel:
+            * Gain 5 VP
+            * Gain 5 cocoa
+            * Advance a marker 1 step on 1 of the temples
+            * Pay 3 cocoa to move 2 steps on the temples in any combination
+            * Gain your fourth worker (if available) at a power of 3 and place it on the Palace (1), plus gain 2 cocoa
+        * Advance the light disc 1 step on the Calendar track. This may trigger an Eclipse.
+    - name: Eclipse
+      text: |
+        * Discard the current Season tile and replace it with a new one to affect all players.
+        * Triggers when the light disc reaches the dark disc. If any effect would move the light disc beyond it, stop extra movement.
+        * If light disc reached dark disc on the last player’s turn, play 1 more full round and then perform scoring.
+        * If light disc reached dark disc on another player’s turn, finish the current round and play 1 more full round, then score.
+      sections:
+        - name: Eclipse Scoring
+          text: |
+            * Find lowest visible # on Buildings row. Each player gets this # of VP for each step they’ve moved on the Avenue of the Dead.
+            * Player or players furthest ahead on the Pyramid track score 4 VP.
+            * Each player gets VP for each step they have moved on the Pyramid track: 4 VP in 1st eclipse, 3 VP in 2nd, 2 VP in 3rd.
+            * Move all markers on the Pyramid track back to the starting position.
+            * Each player organizes their masks into unique sets. Each set is scored based on the number of unique masks in it:
+                * 1/2/3/4/5/6/7 masks score 1/3/10/15/21/28 VP
+            * Each player must pay 1 cocoa per worker, plus 1 additional cocoa for each worker of power 4 or 5.
+                * Lose 3 VP for each cocoa you are unwilling or unable to pay.
+            * If this is not the third eclipse, move the light disc back to the start and move the dark disc 1 space closer to the light.
+            * 2P/3P: Draw 2 Starting tiles and move 3 neutral workers of 1 colour to the first 3 different Action boards shown.
+            * 2P: Draw 2 more Starting tiles and move 3 neutral workers of the other colour to the first 3 different Action boards shown.
+            * If this was the third Eclipse or was triggered by placing the final Pyramid block, each player who has qualified for Temple Bonuses now scores them. The game is now over.
+            * Break ties with most remaining cocoa, then in player order.
+    - name: Action Spaces - Main Actions
+      text: |
+        * If you get 1 or more power ups from the action, you may distribute those power ups to any of your workers on this space.
+      sections:
+        - name: Palace (1)
+          text: |
+            * This action space does not have a main action. Workers must choose to worship on one of the Royal tiles or collect cocoa.
+        - name: Forest (2)
+          text: |
+            * Gain wood as shown on the action space.
+        - name: Stone Quarry (3)
+          text: |
+            * Gain stone as shown on the action space.
+        - name: Gold Deposit (4)
+          text: |
+            * Gain gold as shown on the action space.
+        - name: Alchemy (5)
+          text: |
+            * If you have only 1 worker on this space, you must choose the first row unless they are power 4+.
+            * If you have 2 or more workers on this space or 1 with power 4+, you may choose either row.
+            * Choose a Technology tile, pay its cost, and place 1 marker on this tile.
+            * If there are other discs on the chosen Technology, each player with a disc there immediately gains 3 VP.
+            * Advance 1 step on the Temple shown next to the Technology.
+        - name: Nobles (6)
+          text: |
+            * Pay 2 wood to take the first available building from the Buildings row and place it in the leftmost space of the Nobles board.
+            * Place the building in the appropriate row based on how many workers you have on this action. You may always choose to place into a lesser-valued row if necessary. If you cannot legally place a building, you cannot take this action.
+            * Score VP shown on the space you covered with the Building.
+            * Advance 1 step on the Avenue of the Dead track.
+        - name: Decorations (7)
+          text: |
+            * Gain gold and Decoration tiles as shown on the action space. Gold may be gained before paying for Decoration tiles.
+            * If you gain an unlock reward, unlock any 1 of your workers for free.
+            * For each Decoration tile you want to play, pay 3 gold and select 1 of the available Decoration tiles. You must be able to buy at least 1 tile.
+            * Add the selected tile to the Pyramid with the following restrictions:
+                * Must be placed in the middle of one of the edges of the Pyramid with the arrow facing into the Pyramid.
+                * You must place it on the lowest unoccupied level of that edge.
+            * Score 1 VP for each icon you cover that matches the icon on the Decoration tile (orientation matters).
+            * If you scored a VP for a matching red, green, or blue icon, advance 1 step on that Temple track.
+            * Score 3 VP and move 1 step on the Pyramid track.
+            * Refill the Decoration display after you have placed all of the tiles you want to place.
+        - name: Construction (8)
+          text: |
+            * Gain Pyramid tiles as shown on the action space. You must be able to add at least 1 Pyramid tile.
+            * If you gain an unlock reward, unlock any 1 of your workers for free.
+            * Select a number of tiles up to the maximum number you are allowed based on the reward you receive.
+            * Pay the cost of each tile based on which level of the Pyramid you place the tile on.
+            * For each tile placed:
+                * You may rotate the tile any way you choose.
+                * Score 1 VP for each icon you cover that matches the icon below it (orientation matters).
+                * If you scored a VP for a matching red, green, or blue icon, advance 1 step on that Temple track.
+                * Score 1 VP for each tile added to the first level.
+                * Score 3 VP for each tile added to the second level.
+                * Score 5 VP for each tile added to the third level.
+                * Score 7 VP if you place a tile on the top. Immediately move the light disc to the dark disc on the Calendar track and trigger the final eclipse.
+                * Advance 1 step on the Pyramid track.
+            * Refill the Pyramid tile display.
