@@ -1,0 +1,87 @@
+name: "The Fox in the Forest"
+description: "A 2 player trick taking game (that works!) [See this on BGG](https://boardgamegeek.com/boardgame/221965/fox-forest)"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+sections:
+    - name: Setup
+      text: |
+          The game is played over a number of rounds, where the dealer
+          alternates each round.  Randomly choose a dealer for the 1st
+          round.  The dealer does the following each round:
+
+          1. Shuffle the 33 game cards.
+          2. Deal 13 cards to each player
+          3. Set aside the remaining 7 cards as a draw deck
+          4. Flip the top card of the draw deck face up.  This is known as the
+             *Decree Card*.
+    - name: Gameplay
+      text: |
+          Each round consists of the play of all 13 tricks.
+      sections:
+          - name: Trick Details
+            text: |
+                * **Leading**:  The **non-dealer leads the 1st trick.  After
+                  that, the winner of the trick will lead the next trick.
+                  The leader can lead any card.
+                * **Following**:  The non-lead player that must (if possible)
+                  match the led suit.  If the follower does not have a card
+                  in the led suit, they can play any card.
+                * **Determining the winner of the trick**:  After both
+                  cards are played, a winner is determined.  Usually, the
+                  highest card in the led suit wins.  However the *Decree
+                  card* suit is considered the trump suit, and **higher
+                  than other cards of different suits**.
+                    * The winner takes the trick.  The number of tricks won
+                      is public info.  However, **no one can look at the
+                      cards in the previously won tricks**.
+                    * The winner leads the next trick.
+          - name: Abilities
+            text: |
+                All odd numbered cards have special abilities, which
+                trigger when the card is played.  See the card text for
+                how each card works.
+          - name: End of Round Scoring
+            text: |
+                The number of tricks won determines the points that each
+                person scores.
+
+                | Tricks | Points | Description |
+                | ------ | ------ | ----------- |
+                | 0-3 | 6 | Humble |
+                | 4 | 1 | Defeated |
+                | 5 | 2 | Defeated |
+                | 6 | 3 | Defeated |
+                | 7-9 | 6 | Victorious |
+                | 10-13 | 0 | Greedy |
+
+                After the end of round scoring, **if either player has at
+                least 21 points, the game is over**.  Otherwise, keep playing
+                rounds.
+    - name: End of Game
+      text: |
+          The game ends when someone has 21 points after the end of round
+          scoring.  The most points wins.  If there's a tie, the player
+          that scored the most points in the last round wins.
+
+          **Game Length Variants**
+          * Play to 16 points for a shorter game.
+          * Play to 35 points for a longer game.
+    - name: Common Questions
+      text: |
+          * **When do the abilities on the 3 and 5 occur?**
+              * Both of these abilities take place immediately when played.
+                Specifically, this is **before another card is played or
+                the trick winner is determined**.
+          * **If my opponent leads a 9, do I have to follow the 9's suit or
+            the trump suit?**
+              * You must follow the 9's suit if you can.  A non-trump 9 is
+                not treated as if it were in the trump suit until after
+                both cards have been played.
+          * **Who wins the trick with two 9 cards in it?**
+              * The witches abilities cancel each other out.  If the 9 of the
+                trump suit was played, it wins.  Otherwise, the 9 of the lead
+                suit wins.
+          * **Who leads the next trick after a trick with two 1 cards in it?**
+              * If both players play a 1, the player who loses the trick leads
+                the next trick.
