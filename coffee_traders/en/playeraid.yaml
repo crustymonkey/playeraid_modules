@@ -1,0 +1,273 @@
+name: "Coffee Traders"
+description: Develop coffee regions around the world while building your coffee trading network. [See it on BGG](https://www.boardgamegeek.com/boardgame/325022/coffee-traders)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      sections:
+        - name: Main Board Setup
+          text: |
+            * Place 1 Coin in each of the 5 Trading Houses in the space number matching the # of players.
+            * Place 6 Workers in each of the 5 Town Centers.
+            * Shuffle the Arabica counters and deal number shown faceup to each Contract Bonus space. Return the rest to the box.
+                * 2P: Deal 2 for each Contract Bonus space.
+            * In each Cooperative, place 1 Animal counter that matches the colour of the Cooperative and 1 Wild Animal counter.
+            * Take 5 different Animal counters and randomly place 1 on each 6 space of the Coffee Bars.
+            * Place 1 Wild Animal counter on the 3 and 4 spaces of the Kopi Luwak bar.
+            * 4P/5P: Place # of players Wild Stock counters next to the Coffee Bars.
+            * Place the Period Marker on 1970 of the Period track.
+            * Place the Phase marker on Phase 1.
+            * Randomly place 1 of each player's Company disc on the Turn Order track.
+            * Sort the Milestones by letter and shuffle each stack separately. Place 1 of each faceup on the Milestones area of the board. Return the rest to the box.
+            * Each player places 1 Company Disc to the left of each line on the Arabica track.
+            * Each player places 1 Trader and 1 Truck next to eh main board near the Arabica track.
+            * Each player places 1 Civet Cat in Sumatra.
+            * Take 5 different Animal counters and randomly assign 1 to each player. Return any remaining Animal counters to the box.
+            * Sort Contracts by letter and shuffle each stack separately. Give 1 of each letter to each player.
+            * Give each player the F-Contract that matches the number on their E-Contract.
+        - name: Player Board Setup
+          text : |
+            * Place 3 action cubes in the Company Cubes area. Set the fourth aside for now. (4P: 1 action cube)
+            * Place Plantation and Farms on their designated spaces.
+            * Take 3 Coins and 1 Donkey and place them in your Company Supply.
+            * Take 3 Coins, 1 black action cube, and 1 Trader and place them in your Bonus Supply.
+            * Take 2 Workers and place them in your Worker Pool. (5P: 1 Worker)
+            * Place 4 Traders on the Traders & Contractors area (4P/5P: 3 Traders)
+            * Place the Buildings on their corresponding spaces in the Buildings area.
+            * Place your Trade counter with the "4 to 1" side faceup.
+            * Place the last Warehouse on the top shaded space of your Warehouse track.
+            * Place 1 Coffee cube on each of the 0 spaces or your Warehouse track.
+            * Place your randomly assigned Animal counter and 1 Civet Cat next to the Contracts. (4P/5P: Also place 1 Trader)
+            * Place your Contracts in their corresponding spaces of your board.
+            * Receive 2 Coffee of the topmost variety shown on your F-Contract and 1 of each of the other 2 by moving your Coffee cubes. (5P: Also move 1 step on the Arabica track of the topmost variety of your E-Contract)
+            * Place your 3 remaining Level-1 Plantations in Cooperatives on the main board according to the Arabica Coffee variety depicted on your F-Contract:
+                * In the Cooperative that matches the top variety, place a Level-1 Plantation in the center space of the 5 spaces on the "1" row.
+                * In the Cooperative that matches the second bean variety, place a Level-1 Plantation in the rightmost space of the 5 spaces on the "1" row.
+                * In the Cooperative that matches the third bean variety, place a Level-1 Plantation in the leftmost space of the 5 spaces on the "1" row.
+        - name: 2P Bot Setup (Andre)
+          text : |
+            * Take 5 different Arabica counters aside, mix them facedown, and place them on Andre's Play Guide.
+            * Choose an unused colour for Andre.
+            * Deal a random F-Contract to Andre's 3, place his Level 1 Plantations based on it, then discard the Contract.
+            * Place Andre's turn order disc last in the third position of the Turn Order track. Andre is always last.
+            * Deal a random A, B, and C contract to Andre. Stack them with A on top and place them on Andre's Play Guide.
+    - name: Gameplay
+      text: |
+        * When using Powers, you may always choose to skip them but do not get any Energy back.
+        * For every Arabica counter, Animal counter, or Arabica Step symbol you collect, advance 1 step on the corresponding Arabica track, receiving any printed bonuses.
+            * First time you reach the second step on all 5 Tracks, take your Trader from beside the board and place it in your Traders & Contractors area.
+            * First time you reach the third step on all 5 Tracks, take your Truck from beside the board and add it to your Company Supply.
+            * If your marker reaches a Coin, take 1 Coin.
+            * If your marker is the first to reach a Donkey, take 1 Donkey.
+            * A marker can never move backwards if it is on a Coin or Donkey space but can move back out of a VP space. Going backwards never forces you to give back the Trader or Truck.
+            * Each 4 VP space can only be occupied by 1 player.
+        * When you collect an Arabica counter, Animal counter, or Wild Animal counter, place it on the bottommost available space on the Counter track on the right of your player board. If you receive a second counter of the same type and colour, including Wild Animal counters, place them next to your player board.
+            * If you receive a Wild Animal counter, you may choose whichever track to advance on.
+            * If you have 2 counters of the same colour next to your board, stack the 2 counters and place them on the next available empty space on the Counter track. Wild Animal counters can be combined with any counter colour. You do not move on the corresponding track again for placing this stack.
+        * At the end of each Phase, move the Phase marker to the next space on the Phase track.
+        * During each Period, players may use 2 of the 3 bonus items form their Bonus Supply.
+        * The Hospital can only be built if all of the Buildings from a single column above it have been built or if completing a Contract lets you explicitly build the Hospital.
+        * When gaining Coffee as a bonus from a Building, you cannot choose Kopi Luwak.
+        * Any time you gain a Trader/Contractor or Coins, you may immediately place them into an empty Bonus Supply spot. This can allow you to take another Bonus Supply item, as long as 1 spot remains fully populated.
+
+      sections:
+        - name: Phase 1 - Work
+          text: |
+            * Players take turns performing 1 of the 4 Cooperative actions.
+            * A player may pass, dropping out for the rest of the phase.
+            * A player may take the same action multiple times.
+            * 2P Andre Turn:
+                * Andre always places in a manner to not obstruct players if possible.
+                * Andre places Workers onto Plantations in the order show on the Turn Order track.
+                * On his first turn, Andre places a Planation on the topmost Cooperative on the visible Contract.
+                * On his second turn, Andre places a Plantation on the second Cooperative on the visible Contract.
+                * On his third turn, Andre places Workers on the topmost Cooperative on the visible Contract.
+                * On his fourth turn, Andre places Workers on the second Cooperative on the visible Contract.
+          sections:
+            - name: Add a Plantation to a Cooperative
+              text: |
+                * Place 1 action cube on the space you want to use.
+                * Take the leftmost available Plantation from any row of your choice on your board, pay its cost, and place it on a space in a Cooperative.
+                    * The Level of the Plantation must match the Level of the row where it is placed.
+                    * Each Plantation can only support 1 other Plantation directly above it OR on the 2/3 row with a Truck.
+                * If adding the Plantation to a Cooperative where you have no Plantations, place 1 Worker from your Worker Pool in the Town Center of that Cooperative.
+                    * The first Plantation in a new Cooperative must be a Level-1 Plantation on the "1" row.
+                * Adding a Plantation to the "1/2" row:
+                    * Select an available building space on the "1/2" row that directly connects, via pathways, to 1 of your Plantations. The connected pathway cannot be occupied by a Donkey of other players.
+                    * If the pathway is empty, you must place 1 Donkey from your Company Supply on it.
+                    * Each Plantation must be directly connected to one of your Plantations of the next lowest level. Each Plantation can only support a single other Plantation above it.
+                * Adding a Plantation to the "2/3" row:
+                    * With 2 Donkeys:
+                        * Select a space on the "2/3" row that connects via pathways to 1 of your Plantations on the "1/2" row. The connected pathway cannot be occupied by a Donkey of other players. For each of your Plantations on the 2/3 row, you must have 1 Plantation on the 1 row.
+                        * If the connecting space is empty or only 1 of your Donkeys is present, you must place the requisite number of Donkeys from your Company Supply on that space to bring it up to 2.
+                    * With a Truck:
+                        * Select an available building space on the "2/3" row.
+                        * You do not need a Plantation on the "1/2" row.
+                        * For each of your Plantations on the "2/3" row you must have 1 Plantation on the "1" row of that Cooperative.
+                        * You must choose a Building space that does not have another player's Donkeys on its connecting pathway. If all pathways hold a Donkey belonging to other players, you may not choose a Building space.
+                        * Take 1 Truck from your Company Supply and place it on the spot above your Plantation third row.
+                * Take the bonus depicted under the Plantation on your player board and place it in your Worker Pool, Company Supply, or Sumatra Co.
+                * If you add a Plantation on the "1/2" or "2/3" row in a Cooperative, you immediately advance 1 step on the Arabica track corresponding to that coffee variety.
+                    * Players adding Plantations to the third row also take 1 available Animal counter if available.
+                * When all Plantations have been removed from row A or C on your player board, you may unlock a Farm. Unlocked Farms may immediately be placed in the Cooperative of your choice by paying 1 Coin. If you cannot, or choose not to construct the Farm, remove it from the game.
+                * When you place all of your Plantations, take a Civet Cat from your general supply and place it in the Sumatra Co.
+            - name: Send Workers to Harvest
+              text: |
+                * Place 1 action cube on the matching action space.
+                * Choose 1 Cooperative.
+                * Place 1 Worker from the Town Center onto 1 of each player's Plantations.
+                    * Each Plantation only holds 1 Worker.
+                    * If a player has multiple empty Plantations, they only receive 1 Worker on their Plantation of the lowest row.
+                    * Remaining Workers remain in the Town Center.
+                    * If there are not enough Workers to place on each Plantation, active player decides where to place them.
+                    * If there are no more Workers in the Town Center after completing this, place 1 Worker from the general supply in the Town Center.
+                    * If you placed a Worker on 1 or more Plantations that belong to other players, immediately advance 1 space on the Arabica track that corresponds to the Cooperative.
+            - name: Breed a Donkey
+              text: |
+                * Place 2 action cubes on the matching action space.
+                * Take 1 Donkey from the general supply and place on any available pathway in a Cooperative above 1 of your previously-placed Plantations.
+            - name: Income
+              text: |
+                * Place 1 action cube on the matching space and choose 1:
+                    * Place 1 Civet Cat from your general supply into the Sumatra Co area of the board.
+                    * Take 2 Coins from the general supply and add them to your Company Supply.
+        - name: Phase 2 - Workers
+          text: |
+            * Simultaneously, players may place Workers from their Worker Pool onto their own empty Plantations in any Cooperative.
+                * Player must place a Worker in a Plantation in the "1" row before placing Workers in any higher rows.
+            * In turn order, players may place workers on other players' Plantations if their own Plantations contain a Worker.
+                * Advance 1 step on the corresponding Arabica track for each Worker placed on an opponent's Plantation.
+            * For each Plantation without a Worker, the owner must pay a penalty in any combination of 1 Coin or 1 step backwards on any Arabica track based on the era (cannot move backwards when on a Coin or Donkey space):
+                * 1975: pay 1
+                * 1980: pay 2
+                * 1985: pay 3
+                * If the player cannot pay the penalty, they must remove their highest placed Plantation from the game.
+            * 2P Andre Turn:
+                * If any of Andre's Plantations do not have a Worker on them, place Workers from the Town Centre on them.
+        - name: Phase 3 - Trader and Contractor
+          text: |
+            * Players take turns performing 1 of the 3 actions or pass.
+            * Passing only skips that turn, it does not drop you out of the phase. Phase ends once all players pass in succession.
+            * Players that have passed may still piggyback off another player's action.
+            * In continued player order, other players choose whether or not they want to piggyback and perform the action.
+            * 2P Andre Turn:
+                * Turn over a facedown Arabica counter and place a Trader in the matching Trading House. If the Trading House already has Traders, flip another counter until a Trader can be placed. Other players may piggyback.
+            * 2P Andre Special Rule:
+                * After all players have passed, Andre builds 1 Fair Trade post in the bottommost Cooperative of the visible Contract, placing in the 4/5 player position if possible.
+          sections:
+            - name: Place a Trader
+              text: |
+                * Pay 2 Coins and place 1 Trader on the first position in a Trading House of your choice.
+                * Take the Stock counter and place it at the bottom of the corresponding Warehouse track.
+                * Piggyback:
+                    * Place your Trader on the next open space of the activated Trading House.
+                        * 4P/5P: Only (# of players – 1) Traders can be placed in a Trading House.
+                    * If only 1 player did not place a Trader in the Trading House, they take the Coin from that Trading House.
+                    * 2P Andre: Andre will piggyback and place a Trader only if it gives him the second position.
+            - name: Hire a Contractor
+              text: |
+                * Pay 2 Coins.
+                * Choose the topmost Building in a column on your player board that you want to construct.
+                    * When constructing a Warehouse:
+                        * You may place it on the next available space to the right of the Warehouse tracks on your board. This increases the storage of each type by 1.
+                        * You may place it at the top of 1 of your Warehouse tracks. This increases the storage of that type by 10.
+                    * When constructing a non-Warehouse Building, place it on the main board in a location matching the type of Building. If that location has an Arabica Step symbol, advance 1 space on the matching track.
+                * Gain any bonuses based on the type of Building constructed.
+                * Replace the Building with a Contractor from your Supply.
+                * Piggyback in player order:
+                    * Pay 1 coffee of your choice to the active player. Cannot piggyback if you cannot pay. Build 1 of your Buildings without paying its cost, replacing it with a Contractor from your Supply.
+                        * If the active player built a Warehouse, all piggybacking may only construct on their player board.
+                        * If the active player built in a Cooperative, all piggybacking may build a Building in that Cooperative.
+            - name: Remove a Trader
+              text: |
+                * Pay 2 Coins.
+                * Remove 1 Trader permanently from the game to advance 2 Steps on the Arabica tracks, either 2 on 1 track or 1 on 2 tracks.
+                * No piggyback action.
+        - name: Phase 4 - Harvest
+          text: |
+            * Each Plantation with a Worker harvests 3 coffee each for the corresponding Cooperative. (4P/5P: 2 coffee each)
+            * Each player who owns a Fair Trade post in the Cooperative gains 1 coffee.
+            * The player who placed the first Trader in that Cooperative's Trading House gains 1 coffee.
+            * Beginning with the first Trader in the Cooperative's Trading House and continuing in order, give 1 coffee to each Trader. Continue distributing in this circular manner until there is no more coffee to assign or each Trader has 5 coffee.
+                * This 5 coffee limit only applies to this step, not coffee earned from the Fair Trade and first Trader bonus.
+            * Each player adjusts the storage in their Warehouses to match the coffee they received.
+            * Each player with at least 6 coffee in all 5 Warehouses (excluding Kopi Luwak) immediately receives a Civet Cat and places it in Sumatra Co. (4P/5P: 4 coffee in all 5 Warehouses)
+            * Each player receives 1 Kopi Luwak coffee for each Civet Cat of their colour in Sumatra Co.
+            * Return all Civet Cats to their owner's general supply.
+        - name: Phase 5 - Contract
+          text: |
+            * 2P Andre Special Rule:
+                * Andre places 2 scoring markers in the Coffee Bars on the lowest available number according to the second and third colours depicted on the visible Contract.
+            * In reverse player order, players take turns performing 1 of the 2 actions.
+            * A player may pass, dropping out for the rest of the phase. Move your Turn Order marker to the space closest to 1.
+            * A player may take the same action multiple times.
+            * During their turn a player may:
+                * Spend Kopi Luwak coffee as any other type of coffee.
+                * Trade any combination of coffee for 1 type of coffee using their current trade value.
+                    * May never trade for Kopi Luwak coffee.
+                * Purchase any amount of coffee except Kopi Luwak for 2 Coins each in the first 2 Periods or 3 Coins each in the last Period.
+                * May spend either 3 different Stock counters to construct 1 Warehouse or 5 different Stock counters to construct 2 Warehouses. Wild Stock counters are their own type for this purpose.
+          sections:
+            - name: Fulfill a Contract
+              text: |
+                * Select 1 of your Contracts to fulfill and spend the indicated amounts of coffee.
+                * Remove the Contact from the game and receive the bonus listed beside the Contract and in the space under the Contract. If multiple bonuses are listed, choose which one to take.
+                    * When you get a Building bonus, do not pay Coins or a Contractor. Others do not get to piggyback.
+                    * When you get a Civet Cat, place it in Sumatra. If this is the third Period, place it in your Company Supply instead.
+                    * Any bonus Coins, Donkeys, and Trucks are placed in your Company Supply.
+                    * Workers are placed in the Worker Pool.
+                    * If an advance symbol is shown, advance 1 step on the Arabica track of your choice.
+                * Whenever a horizontally-matched pair of Contracts is fulfilled, receive a bonus from those available to the right of the Contracts.
+                    * 3P: The Trader bonus is not available.
+                * Take the top Arabica counter from the Contract Bonus area that matches the letter of the delivered Contract, if available, and advance 1 step on the corresponding Arabica track. Place the Arabica counter on the bottommost available space of the Contract track.
+            - name: Deliver to Coffee Bars
+              text: |
+                * Choose any empty space in 1 of the Coffee Bars to deliver coffee to.
+                * Adjust your storage by the amount of coffee you are delivering and place a scoring maker on that position in the Coffee Bar.
+                    * The last spot of each bar (except Kopi Luwak Coffee Bar) requires 6 of any colour of coffee.
+                    * All coffee delivered must be of the same colour.
+                * Take the Coin bonus shown above the corresponding box and any counters there, advancing on the matching Arabica track.
+                * 4P/5P: If you have delivered at least once to all 6 Coffee Bars, take a Wild Stock counter. This may be placed at the bottom of any Warehouse track and may be moved to another location at any time.
+                * May make a second delivery performed in the same manner. If you choose to skip the second delivery, you must immediately pass and move your Turn Order marker.
+        - name: Phase 6 - Refresh
+          text: |
+            * Each player returns all of their Traders and Contractors to their player board.
+            * Return action cubes to the Company Cubes area. (4P: return action cubes in your colour to the general supply)
+            * Adjust your coffee storage based on available Warehouses. Any beyond what you can store is lost.
+                * Players may rearrange their constructed Warehouses to store the coffee of their liking.
+            * Each player receives 1 coffee, on the corresponding track, for each Stock counter they have.
+                * This happens after checking for capacity in the step above.
+                * Wild Stock counters can be moved around before collecting this bonus.
+            * Each player refills their Bonus Supply with 3 Coins from their Company Supply. For each Coin you cannot fill up to the 3 Coins needed, take a -3 VP token. Take the necessary Coins from the general supply.
+            * Move the Turn Order markers to the top of the track.
+            * Refill the Coin of each Trading House.
+            * 2P Andre Special Rule:
+                * Discard the visible Contract from Andre's Play Guide.
+                * Shuffle the 5 Arabica counters facedown and place them on the Play Guide.
+    - name: End of the Game
+      text: |
+        * Game ends at the end of the third Period.
+        * Determine the Quality Value of each player in each Cooperative:
+            * Each Plantation is worth is Level in Quality Value (QP): 1, 2, or 3 points.
+            * Each Building is worth 1 QV, except the Hospital which is worth 2 QV. 
+                1* Must have at least 1 Plantation in the Cooperative in order for Buildings to be worth anything.
+            * Highest QV earns 16 VP, second 8 VP, third 4 VP (not scored in 3P games).
+        * Score points from items in your Company Supply and Worker Pool only. (This does not apply to items in personal supply or used on the board like Donkeys, Trucks, etc.)
+            * Workers, Donkeys, or Civet Cats: 1 VP each.
+            * Trucks: 3 VP each
+            * 	-3 VP tokens.
+        * Score points from your Counter track based on the topmost covered VP space.
+        * Score points based on advancement on the Arabica tracks (all gains are cumulative):
+            * Second space of all 5 tracks: 3 VP.
+            * Third space on all 5 tracks: 7 VP.
+            * Sixth space of a track: 6 VP.
+            * First player to reach the end of the track: 4 VP.
+        * Score points from fulfilled Milestones.
+        * Score points from fulfilled Contracts.
+        * Score points for Coffee Bar deliveries.
+        * Score points for Coffee Bar majorities. If tied, the player closest to the bottom of the track wins.
+            * Player with the most markers earns 4 VP.
+            * Second most markers earns 2 VP.
+        * Score points for Plantations and Buildings constructed.
+            * 1 Plantation and all Buildings have a VP value if they were constructed.

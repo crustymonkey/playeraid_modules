@@ -1,0 +1,134 @@
+name: "Praga Caput Regni"
+description: Wealthy citizens of medieval Prague organize building projects to gain king's favor. [See it on BGG](https://www.boardgamegeek.com/boardgame/308765/praga-caput-regni)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+        * Assemble Charles Bridge and place it on the river.
+        * Sort the bridge tiles by number and shuffle each stack. Place the IV stack facedown by the bridge.
+        * Place 3 V bridge tiles facedown by Charles Bridge and 3 facedown by the Cathedral.
+        * Place the production tokens in the river.
+        * Randomly place the plaza tiles on hexes of their matching colour based on # of players. Return any remaining to the box.
+        * Sort the technology tiles by number, shuffle each, and place them facedown beside the board.
+        * Turn the action crane so that its arrow points at the number of players.
+        * Place a cube in the hole of the wheel.
+        * Place a cube on the space of the action crane platform matching the number of players.
+        * Choose to use side A or side B of the action tiles, then randomly place the tiles in the 4 red and first 2 green spaces of the action crane.
+        * Separate the hex tiles by type, rarity, and era. Set the Era II stacks aside and shuffle each Era 1 stack facedown.
+        * Turn 1 special and 3 normal tiles of each type faceup.
+        * Place a normal Era I building from the stack on each space showing the number of players. (4P: none)
+        * Each player chooses a colour.
+        * Each player turns their gold and stone cranes to show 2 of each.
+        * Each player places 1 cube on the 3 space of their quarry track, 4 of the gold mine track, the bottom spaces of the technology and Charles University tracks, and the 3 spaces near their cranes. The other 2 cubes are set aside.
+        * Each player places 1 cube on the lower right corner of the Hunger Wall and the lower left corner of the Cathedral.
+        * Each player places their pawn near the King's Road.
+        * Each player places their disc on the 0 space of the VP track.
+        * Choose a starting player.
+    - name: Gameplay
+      text: |
+        * When you gain or spend gold or stone, move your crane as necessary.
+            * If this would cause you to reach 6 or 9 stone or gold for the first time, remove the appropriate cube and gain the bonus shown under it.
+        * Once per turn at any time, you may spend 1 gold or stone to remove 2 hex tiles from a single row (including special).
+            * Discard the tiles to the bottom of their stack and immediately refill the display.
+        * If you are at the top of your technology or Charles University track and gain additional steps, gain 2 VP for each step you cannot move.
+        * When your technology marker moves onto a marked space, draw 3 tiles from the corresponding technology stack, choose 1 to keep and discard the rest to the bottom of its stack.
+            * Level I and II technologies provide permanent effects.
+            * Level III and IV technologies give you a one-time benefit. Discard the tile in order to use it.
+        * When moving on the Hunger Wall or Cathedral, move your marker 1 space in the indicated direction.
+            * If you land on a VP space, immediately score those VP.
+            * If you land on an arrow, immediately move that direction.
+                * If moving up to a new tier, you must pay the indicated cost for crossing tiers or not perform the action.
+                * If you reach the top tier of the Cathedral, you may take 1 of the final scoring tiles there.
+        * Any time during your turn, you may spend 2 silver windows to move up 1 row on the Hunger Wall or Cathedral.
+            * If moving up to a new tier, you must pay the indicated cost for crossing tiers.
+        * Once per turn, you may spend 2 windows (1 of which must be gold) to buy an extra action.
+            * Choose any 1 of the 6 actions to perform.
+            * This may be done before or after taking an action tile.
+      sections:
+        - name: Choose an Action Tile
+          text: |
+            * Take 1 tile from the wheel.
+                * Immediately pay any cost (red) or gain any reward (blue) indicated on the outside of the wheel.
+                * At any time during your turn, you may take the bonus indicated on the inside of the wheel.
+        - name: Perform One Action and Possibly One Extra Action
+          text: |
+            * Perform 1 of the 2 actions shown on the tile you took from the wheel.
+        - name: End of Turn
+          text: |
+            * Discard down to 2 windows if you have more than 2.
+            * Rotate the wheel of the action crane 1 space clockwise.
+            * Place your action tile in the empty space at the beginning of the red zone. If this space is blocked by the square box on the action wheel, rotate it 1 more space so that you can put your tile there.
+            * If a tile rotates beyond the blue zone, remove it and place it in the first pen space in the green zone. Place the 5 VP token on this tile.
+            * If the cube in the crane drops into the hole, move the platform cube 1 space toward the hourglass on the end.
+            * If the platform cube moves across the Era line, remove the 3 rows of Era I hex tiles and replace them with Era II tiles and deal out new hex tiles.
+                * 2P: This mid-point occurs when the wheel's white arrow reaches the final space of the red zone indicated by a star.
+            * Game ends if the platform cube moves off of the platform and onto the hourglass.
+    - name: Actions
+      text: |
+        * If you marker reaches the last space of the gold mine or quarry track, you may claim a seal now or any time during one of your turns.
+            * Pay the cost of an unclaimed seal (bottom) and put a cube on it. No other player may claim this seal.
+      sections:
+        - name: Manage Mines
+          text: |
+            * Choose 1 option:
+                * Gain 1 gold and move your gold mines marker 1 space to the right.
+                * Gain gold equal to your number of gold mines (number to the left of your marker) as well as all production bonuses to the left of your marker.
+        - name: Manage Quaries
+          text: |
+            * Choose 1 option:
+                * Gain 1 stone and move your quarries marker 1 space to the right.
+                * Gain stone equal to your number of quarries(number to the left of your maker) as well as all other production bonuses to the left of your marker.
+        - name: Upgrade an Action
+          text: |
+            * Choose a hex tile from the upgrade row.
+                * If the bonus action shows an S, you may choose the Special tile.
+            * Place the tile on the matching hex of your action board, orienting it however you like.
+                * You may stack multiple tiles of the same type but only the top one applies.
+                * You do not get any bonuses from already used connection but brand new connections are evaluated as usual.
+            * Move up 1 space on your Charles University track if you took an Era I tile, or 2 if it was an Era II tile.
+            * Whenever you perform the action that was upgraded, you get the indicated bonus.
+                * If you perform the action twice in one turn, the bonus applies both times.
+                * You may retroactively take the bonus if you upgraded an action that you performed earlier during this turn.
+        - name: Construct a Wall
+          text: |
+            * Choose a hex from the wall row, pay its cost, then gain its reward.
+                * If the bonus action shows an S, you may choose the Special tile.
+            * Place the tile adjacent to your action board, orienting it however you like.
+                * The wall tile does not need to be placed next to another wall tile.
+                * If the symbol on the wall lines up with a symbol on your board, immediately gain both bonuses. These icons do not need to match.
+                * If you match a red or blue corner to another of the same colour, take 1 corner bonus token of that colour for each one that the newly-placed tile matches up with.
+        - name: Construct a Building
+          text: |
+            * Choose a hex from the building row, pay its cost, then gain its reward.
+            * Place the tile on any yellow hex on the board.
+                * If the hex has a red coin cost below it, you must pay the cost to build there but also gain the space's reward.
+            * If your building has a space of a cube, put a cube on this building.
+            * If your building has no space for a cube, immediately gain 1 VP for every building tile around the plaza including the one you just placed.
+            * If your building is the last one that can be built around that plaza, each player with a cube adjacent to that plaza gets to choose 1 of the rewards depicted on it. The player with the most cubes around the plaza gets both rewards. Break ties in favour of the player who spent the most on their buildings (stone + gold, ignoring buildings with no cubes). If still tied, all tied players get both rewards.
+        - name: Construct the King's Road
+          text: |
+            * Advance your marker 1 space along the King's Road to the next space with your colour.
+            * Immediately resolve the 2 effects shown to the left of the space.
+                * 1 of the effects requires an egg if you wish to perform it.
+            * You must pay 1 egg in order to advance to space IV.
+                * Draw the top 3 bridge tiles from the IV stack. Choose 1 and return the rest to the bottom of the stack.
+                * Place your chosen tile as a plank on the bridge.
+                * Gain the bonus of the spaces you covered up and the bonus on your tile.
+                * If there is no room to place the tile, you only gain the bonus on your tile and then discard it.
+            * You must pay 1 egg in order to advance to space V.
+                * Choose 1 bridge tile from the V stack.
+                * Place your chosen tile as a plank on the bridge and put your marker on it.
+                * Gain the bonus of the spaces you covered up.
+                * If there is no room to place the tile, keep the tile in front of you.
+    - name: End of the Game
+      text: |
+          * Plazas that are not enclosed give out wards. Every player with a claim on the plaza gets the reward shown on the lower half of the plaza tile.
+          * Each player scores 0/1/2/3 VP for each step they have moved up the technology track, based on their position on the Charles University track.
+          * Each player scores VP for the row of the Hunger Wall and Cathedral that their marker is on.
+          * Each player scores VP for their red and blue corner bonus tokens, based on the column their marker is in on the Hunger Wall and Cathedral.
+          * 4 VP if you have exactly 3 walls build around your action board. 10 VP for 4 or 5. 18 VP for 6+.
+          * VP from final scoring abilities like the V bridge tiles.
+          * 3/6/10 VP for 2/3/4+ eggs.
+          * Most points win. Break ties in reverse player order.

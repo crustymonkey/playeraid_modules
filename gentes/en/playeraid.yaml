@@ -1,0 +1,139 @@
+name: "Gentes"
+description: Develop your civilization through balancing between time and wealth consumption. [See it on BGG](https://www.boardgamegeek.com/boardgame/217780/gentes)
+credits: Keith Rudolph
+enabled: true
+text_type: markdown
+sections:
+    - name: Setup
+      text: |
+        * 2P: Use the 1-2 players side of the board.
+        * Randomly place the training cost meeples on the spaces in the upper right corner of the board.
+        * Place the action tiles on their spaces in the top left corner of the board, removing any tiles not meant for the player count (number of dots in the lower left corner of the tile).
+        * Place the bonus point tiles on their spaces on the bottom of the board, removing any tiles not meant for the player count.
+        * Sort the additional bonus point tiles by their backs and place them near the board.
+        * Place the purple round marker on the 1 space of the round track.
+        * Each player chooses a colour and takes the player board and city tokens in their colour.
+        * Each player places 1 hourglass token on the space shown on their player board.
+        * Each player places 1 lock token on each space shown on their player board. Return unused tokens to the box.
+        * Each player gets 20 coins.
+        * Each player places their victory marker on the 0 space of the score track and keeps their excess victory point marker.
+        * Choose a starting player.
+        * Sort the civilization cards by their back and shuffle each deck. Deal (# of players x 3) cards from the Era I deck to the table.
+        * In reverse player order, each player takes 1 of the revealed cards to their hand. Repeat this so that all players have 2 cards. Remove the remaining cards from the game (3P/4P: Shuffle remaining cards back into the Era I deck.)
+        * 2P: Remove the top 2 cards of each Era deck from the game without looking at them.
+        * Deal 1 Era I card face up to each card slot at the bottom of the board.
+        * Each player places their population markers on the indicated 0 spaces of their player boards.
+        * Each player chooses 4 population in any combination.
+        * Advanced: Cover the first Tax Collector space with a lock token so that it cannot be used this game.
+        * Take the 4 hometown action tokens and 6 city benefit tokens and let them fall to the table.
+        * In player order, each player places 1 hometown or city benefit token on the board until all players have placed 2 tokens:
+            * City tiles must be placed on a suitable city site of the board (ie: temple city to temple city)
+            * New hometown tiles replace the actions of the hometowns on the board and are placed on the action spaces to the left. You may place a hometown only 1 of the 2 action spaces in each row of hometowns.
+            * As soon as there is only 1 city tile or 1 hometown tile left, the corresponding tile is returned to the box.
+    - name: Gameplay
+      sections:
+        - name: Heyday Phase
+          text: |
+            * 2P: Put 1 indicator cube on each card that shows the cube symbol above it.
+                * If you take a card with a cube on it, return that cube to the supply.
+            * Must perform an available action if you have any empty spaces on your time track.
+            * Action is either taking an action tile, placing an indicator cube, or using a multiple-use action.
+            * If you meet the requirements of a bonus point tile after performing an action, immediately claim the tile and score its indicated VP. You may only gain each bonus point tile once.
+            * May only pass if there are no empty spaces left in your time track; you drop out of the current phase.
+            * Phase ends once all players have passed.
+            * Any number of times per turn you may return indicator cubes to do the following:
+                * Return 1 cube from squares below the eye symbol on your board to trade up to 2 of your population of any types.
+                * When playing a civilization card, return any number of cubes from below the building symbol on your board to gain that number of temporary population of your choice. This does not get counted on your chart or count towards the bonus tile.
+                * Return 3 cubes from any squares on your player board to train 1 population of any type, recording it on your chart.
+          sections:
+            - name: Action Tile
+              text: |
+                * Choose an action tile and place it into an empty space on your time track.
+                * Pay the coin cost of the tile (top left), if any.
+                * Place the indicated number of hourglasses (top right) into empty spaces on your time track.
+                    * If placing multiple hourglasses, up to 2 may be placed into each space.
+                * Perform the action of the tile.
+            - name: Place an Indicator Cube
+              text: |
+                * Place an indicator cube from the supply on an indicator cube symbol (civilization cards that are face up or the same row as a city token you placed on a hometown space).
+                * Pay the coin cost of the action (top left), if any.
+                * Place the indicated number of hourglasses (top right) into empty spaces on your time track.
+                    * If placing multiple hourglasses, up to 2 may be placed into each space.
+                * Perform the action of the space.
+            - name: Multiple-Use Action
+              text: |
+                * May be taken any number of times per round but only once per turn.
+                * Do not need to take an action tile or place an indicator cube to take this action.
+        - name: Decline Phase
+          text: |
+            * 2P: Any card in the card row with an indicator cube on it is removed from the game (not discarded).
+            * Each player returns all action tiles from their time track to their spots on the board.
+            * Each player removes 1 hourglass token from each space in their time track that has hourglasses.
+            * Each player slides any remaining hourglasses to the leftmost spaces of their time tracks with each one taking up 1 space.
+            * Each player takes back all of their indicator cubes from the main board and their civilization cards. Do not remove cubes from your player board.
+            * If anyone took and returned the leader action tile this round, they take the start player token.
+            * Move the round marker 1 space to the right.
+                * If the round marker moved to a new Era:
+                    * Take all previous Era cards from below the board and the remaining deck and place them in the discard.
+                    * Deal 1 card to each space on the bottom of the board from the new Era deck.
+                    * Each player removes 1 lock token from their player board if able.
+            * If you cannot remove a lock token, add an indicator cube to a space below the building or eye symbol of your player board.
+                * If the round marker was already on round 6, the game will end after this decline phase.
+            * In any order, players may do the following:
+                * Choose 1 of your city tokens in each region of the map and takes the reward shown below it.
+                * Activate any cards they have that show the decline (moon) symbol.
+                * Cards and cities may be activated in any order.
+            * Each player with more than 3 civilization cards in their hand must place 1 hourglass token on their time track for each card beyond 3. If you take multiple tokens, you may place 2 in the same space.
+            * Each player gets 1 VP for each facedown additional bonus tile in front of them.
+    - name: Actions
+      sections:
+        - name: Tax Collector (Multiple-Use)
+          text: |
+            * Choose one:
+                * Place 1 hourglass and gain 4 coins.
+                * Place 2 hourglasses and gain 8 coins.
+        - name: Leader (Action Tile)
+          text: |
+            * Place the leader action tile onto your time track and gain 2 coins.
+        - name: Philosopher
+          text: |
+            * Choose one:
+                * Train 1 population whose value on the top track is <= the amount you paid.
+                * Train 2 population whose value on the bottom track is <= the amount you paid. The second worker must be the same type as the first one or one of any lower value.
+            * Remove the chosen worker type(s) from the track.
+            * Slide all remaining worker types left on the track.
+            * Place the chosen worker types at the back of the track, reversing their relative order if you trained 2 different types.
+            * Workers on your population board cannot share a space; if a worker type must move into another worker, it pushes the other work backwards.
+            * If you reach 18 or more total population on your population chart, take the top bonus point tile from the appropriate stack.
+        - name: Scribe
+          text: |
+            * Choose one:
+                * If you paid at least 6 coins, take 1 civilization card of your choice from the discard pile into your hand.
+                * If you paid at least 10 coins, take 2 civilization cards of your choice from the discard pile into your hand.
+                * Take 1, 2 or 3 cards from the display into your hand. Refill the display by sliding cards left and dealing out new ones from the current Era. If there are no more cards of this Era, spaces will be left open.
+                    * Each card column shows 3 costs based on the number of cards you want to take. Choose the highest value from which you want to take and take that number of cards from that column or lower.
+        - name: Navigator (Action Tile)
+          text: |
+            * Place 1 of your city tokens onto an empty space on the board with a city outline with the same symbol as the action tile you took. Swirl icon is wild and may be placed into any empty space with a city outline.
+            * If you place your city token on a space in a coloured region, immediately activate all of your cities in that region, including the city just placed, gaining its benefits.
+            * If you place your city token on a hometown space, you may choose any colour of region and activate all of your cities in that region, gaining their benefits.
+                * Hometowns grant access to the actions and modifier abilities in the same row as that hometown. Each city in that row lets you activate the action/ability once per round.
+            * If all 6 of your city tokens are on the board, you may take the top bonus tile of the appropriate type.
+                * If you perform a city action, you may choose to move 1 of your cities.
+        - name: Chronicler (Action Tile)
+          text: |
+            * Select 1 civilization card from your hand and play it in front of you.
+                * Must meet the requirements listed on the left side of the card.
+            * Receive the rewards shown on the right side of the card. Must accept all rewards.
+            * Choose 1 of the synergy symbols shown on the card (top right). Score 1 VP for every civilization card you have in play with a matching symbol, including this card.
+            * As soon as you have played 8 civilization cards, you may take the top bonus point tile of the appropriate type.
+    - name: End of the Game
+      text: |
+          * Plazas that are not enclosed give out wards. Every player with a claim on the plaza gets the reward shown on the lower half of the plaza tile.
+          * Each player scores 0/1/2/3 VP for each step they have moved up the technology track, based on their position on the Charles University track.
+          * Each player scores VP for the row of the Hunger Wall and Cathedral that their marker is on.
+          * Each player scores VP for their red and blue corner bonus tokens, based on the column their marker is in on the Hunger Wall and Cathedral.
+          * 4 VP if you have exactly 3 walls build around your action board. 10 VP for 4 or 5. 18 VP for 6+.
+          * VP from final scoring abilities like the V bridge tiles.
+          * 3/6/10 VP for 2/3/4+ eggs.
+          * Most points win. Break ties in reverse player order.
