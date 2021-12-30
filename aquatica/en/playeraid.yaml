@@ -1,0 +1,126 @@
+name: "Aquatica"
+description: "Explore the ocean depths.  Check it out on [BGG](https://boardgamegeek.com/boardgame/283393/aquatica)!"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+sections:
+    - name: Setup
+      text: |
+          1. Shuffle the *Ocean Characters* deck and place it in the bottom
+             row.  Fill the 6 slots with cards from the deck.
+          2. Shuffle the *Locations* deck and place it in the middle row.  Take
+             6 cards from the top of the deck to fill the 6 slots.
+          3. Place all *Wild Mantas* effect side up next to the board.
+          4. You can use the 4 printed goals or do the advanced setup.
+          5. For the basic *King* card distribution, give the 1st player card
+             number 1, 2nd player card 2, etc.
+          5. Advanced Setup:
+              1. Shuffle the *Goal* tokens and take 4 at random
+                 and place them on the goal spots in any order.
+              2. Shuffle as many *King* cards as players + 1 and give them to
+                 the last player.  That player takes 1 and passes the rest
+                 counter-clockwise.
+          6. Each player takes 1 of the player boards.
+          7. Each player takes one of the colored symbol mantas and
+             corresponding 6 starting character cards.
+          8. Each player turns all the Mantas effect side up.
+    - name: Playing the Game
+      text: |
+          On a turn, players **must** do 1 *Main action* and may also do any
+          number of *additional actions*.  These can be done in any order.
+      sections:
+          - name: Main Action
+            text: |
+                * During your turn, you **must** play 1 of the character cards
+                  from your hand.
+                    * If you can perform all of the card's effects, **you must
+                      do so**. You may still play the card if you can't use all
+                      the effects.
+                * After playing the character card, put it in your personal
+                  discard pile face up.
+          - name: Addtional Actions
+            text: |
+                * **Flipping Mantas**: You can use a ready manta to resolve it
+                  and flip it to its used side.
+                * **Exploiting Locations' Depths**:
+                    * **Resources**: You can only gain resources (coins and
+                      power) during your main action.
+                    * **Effects**: You can use these before and/or after your
+                      main action.
+                    * You can only exploit the top depth that is show on a
+                      location card.
+                    * Empty depths are blocked until you use a *raise* effect.
+          - name: Effects
+            text: |
+                An effect can be gained by playing a character card, using a
+                Manta, or exploiting depths.
+
+                * **Recruit**:
+                    1. Choose 1 character from the board.
+                    2. Pay the amount of coins show below the card and **put
+                       it in your hand**.
+                    3. Slide the other characters to the left and turn over the
+                       top card from the deck to fill the space.
+                * **Buy Location**:
+                    1. Choose a location from the board.
+                    2. Pay the number of coins shown at the top of the card.
+                    3. Insert the location in an empty slot of your player
+                       board so the top depth is visible in the circle.
+                * **Conquer Location**:
+                    1. Choose a location from the board.
+                    2. Pay the amount of power shown at the top of the card.
+                    3. Insert the location in an empty slot of your player
+                       board so the top depth is visible in the circle.
+                * **Raise Location**:
+                    1. Choose a location, or multiple locations (if the effect
+                       is more than 1 move), and move it up the number of depths
+                       specified by the effect icon.  **You do not get any
+                       resources or effects from the depths you covered!**
+                    2. When a location is fully risen, you receive the specified
+                       wild manta if there is one on the card.  This manta
+                       can be used immediately.
+                * **Score** (treasure chest): This allows you to move a
+                  **fully risen** location and place it in your scoring pile
+                  face down.
+                * **Scout**:
+                    1. Take every location from the top location row and place
+                       them in the discard pile.
+                    2. Move every location from the bottom row to the top row.
+                       If there are more than 4 locations in the bottom row,
+                       discard your choice of locations until 4 remain.
+                    3. Re-fill the bottom row with 6 locations.
+          - name: Goals
+            text: |
+                If a player fulfills a goal on their turn, they can place one
+                of their (their player color) mantas on the 1st available
+                spot for that goal. The manta can be used or unused. **Each
+                goal can only be completed once by each player**.
+          - name: End of the Game
+            text: |
+                Players take turns until of the 3 game end conditions are met.
+                When this happens, everyone (including the player who
+                triggered the game end) takes 1 more turn.  Game end
+                conditions:
+                
+                * 1 player has accomplished all 4 goals (with mantas on
+                  them).
+                * The location deck runs out.
+                * The character deck runs out.
+
+                Scoring is as follows:
+                
+                * 1 point for each character card in your hand, including
+                      your king, but **not** counting those in your discard
+                      pile.
+                * The number of points shown above your mantas on the
+                      goals track.
+                * The total number of points from locations in your
+                      scoring pile.  Locations on your player board do **not**
+                      give you any points.
+
+                Tie breaks:
+                
+                1. The player with the most mantas in their reserve.
+                2. The player with the lowest number on their king card.
+                3. (if not playing with kings) The last player in turn
+                       order wins.
