@@ -1,4 +1,4 @@
-name: "Aquatica"
+name: "Aquatica + Cold Waters"
 description: "Explore the ocean depths.  Check it out on [BGG](https://boardgamegeek.com/boardgame/283393/aquatica)!"
 text_type: markdown
 credits: "Jay Deiman"
@@ -8,8 +8,24 @@ sections:
       text: |
           1. Shuffle the *Ocean Characters* deck and place it in the bottom
              row.  Fill the 6 slots with cards from the deck.
+              * [(Cold Waters)]!blue!: Separate the *Ocean Characters* into 2
+                decks based on the ◯ or ◇ symbol in the lower right of the card.
+                   * 5 players:  Shuffle both decks together.
+                   * 4 players:  Discard 5 random cards from 1 of the decks and
+                     shuffle together.
+                   * 2 or 3 players:  Discard 10 random cards from 1 deck and
+                     shuffle together.
           2. Shuffle the *Locations* deck and place it in the middle row.  Take
              6 cards from the top of the deck to fill the 6 slots.
+              * [(Cold Waters)]!blue!: Change the *Locations* deck by adding
+                the expansion cards and removing some based on player count:
+                  * 5 players: Shuffle the expansion deck in.
+                  * 4 players: Discard 2 random locations of each type (10
+                    total).
+                  * 3 players: Discard 4 random locations of each type (20
+                    total).
+                  * 2 players: Discard 6 random locations of each type (30
+                    total).
           3. Place all *Wild Mantas* effect side up next to the board.
           4. You can use the 4 printed goals or do the advanced setup.
           5. For the basic *King* card distribution, give the 1st player card
@@ -24,6 +40,13 @@ sections:
           7. Each player takes one of the colored symbol mantas and
              corresponding 6 starting character cards.
           8. Each player turns all the Mantas effect side up.
+          9. [(Cold Waters)]!blue! Tribe Module:
+              1. Place the Tribe board on top of the Ocean board so that it
+                 covers the Goal Tracks.
+              2. Take the Tribe cards and divide them into 2 decks based on
+                 their backs (I or II).
+              3. Shuffle the decks separately and draw 4 cards from each deck
+                 and place them face up in their slots on the tribe board.
     - name: Playing the Game
       text: |
           On a turn, players **must** do 1 *Main action* and may also do any
@@ -47,7 +70,7 @@ sections:
                       power) during your main action.
                     * **Effects**: You can use these before and/or after your
                       main action.
-                    * You can only exploit the top depth that is show on a
+                    * You can only exploit the top depth that is shown on a
                       location card.
                     * Empty depths are blocked until you use a *raise* effect.
           - name: Effects
@@ -97,18 +120,20 @@ sections:
                 goal can only be completed once by each player**.
           - name: End of the Game
             text: |
-                Players take turns until of the 3 game end conditions are met.
+                Players take turns until 1 of the 3 game end conditions are met.
                 When this happens, everyone (including the player who
                 triggered the game end) takes 1 more turn.  Game end
                 conditions:
-                
+
                 * 1 player has accomplished all 4 goals (with mantas on
                   them).
+                    * [(Cold Waters)]!blue!: **This is no longer an end game
+                      trigger if playing with the Tribes module**.
                 * The location deck runs out.
                 * The character deck runs out.
 
                 Scoring is as follows:
-                
+
                 * 1 point for each character card in your hand, including
                       your king, but **not** counting those in your discard
                       pile.
@@ -119,8 +144,33 @@ sections:
                       give you any points.
 
                 Tie breaks:
-                
+
                 1. The player with the most mantas in their reserve.
                 2. The player with the lowest number on their king card.
                 3. (if not playing with kings) The last player in turn
                        order wins.
+          - name: Cold Waters (Tribes)
+            text: |
+                This module adds Tribe cards of 2 different types:
+
+                * [Dark blue]!#24295A! cards provide an ongoing bonus (bottom
+                  of the card).
+                * [Light blue]!#2881C5! cards provide an instant bonus (bottom
+                  of the card).
+
+                You no longer use the Goals and instead will be
+                recruiting Tribes to help you.  To get the help of
+                a Tribe:
+
+                1. Choose the Tribe to recruit.
+                2. Play a Recruit Character action.
+                3. Calculate the cost of the Tribe card: Base cost + 1
+                   coin for each Manta that has already been placed there
+                   by other players.
+                4. Pay for the Tribe. **You can help pay for the card by
+                   removing Locations from your score pile and returning them
+                   to the box**.  If you do this, you gain an amount of coins
+                   equal to the amount of points on the Location card.
+                5. Place 1 of your mantas on the chosen Tribe card.
+                6. Get the instant bonus as applicable.
+
