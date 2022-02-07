@@ -1,0 +1,429 @@
+name: "Now or Never"
+description: "The 3rd game in the Ryan Laukat trilogy [See this on BGG](https://boardgamegeek.com/boardgame/314745/now-or-never)"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+sections:
+    - name: Setup
+      text: |
+          **Important**: Do not cover up any mountain symbols on the board.
+
+          1. Place the game board.
+          2. Shuffle the 3 location tiles and place them
+             at random on the board in spaces with a small scroll in the top
+             left corner.
+          3. Shuffle the order tokens and place them in the top left space
+             (Tower of Miners)
+          4. Place enemy tokens on the 9 spaces with enemy symbols.  Match the
+             enemy number with the number on the board.  Place 1 enemy per
+             player for each level. **For level 9, place 2 enemy tokens if you
+             have 3-4 players, and 1 if 1-2 players**.
+          5. Shuffle the search tokens and place 1 face down on each space with
+             a letter in the corner (A-N).
+          6. Place the season board next to the game board.  Place the side with
+             the reputation track **face down**.
+          7. Shuffle the villager tokens in a pile face down, then draw 6 and
+             place them face up in their slots on the season board.
+          8. Shuffle the red and blue gear tokens (separately).  Place them in
+             separate piles on the season board and draw 3 of each for their
+             respective slots.
+          9. Place the season marker on space 1 of the season track.
+          10. Organize the quest cards into 3 piles by their back.  Shuffle
+              each pile.
+          11. Shuffle the starting specialist tiles (sunset on the back) and
+              give each player a random builder and healer.
+          12. Shuffle the specialists and place them face down near the game
+              board.  Draw the top 4 tiles and place them in a face up row.
+          13. Place the coins and experience tokens near the board.
+          14. Choose a start player.  The 2nd and 3rd players start with 1
+              extra coin, the 4th player with 2 extra coins.
+      sections:
+          - name: Player Setup
+            text: |
+                Each player takes a hero board and sets up their play area.
+
+                1. Place their starting specialists in open slots
+                2. Place a heart marker in the farthest right space on
+                   their heart track.
+                3. Place 1 mana token on each mana symbol.
+                4. Take 3 hero action tokens and place them on the faded
+                    arrow symbols on your hero board.
+                5. Take your 6 matching hero ability tokens and place them
+                    **below your player board**.
+                6. Take 17 coins.
+                7. Take 1 4-sided die.
+                8. Take a town board and place with the above ground face
+                    up (unless playing underground).
+                9. Take 1 set of matching building tiles (color coded).
+                    Shuffle them face down and place them face upin a 5x4
+                    grid near your town board.
+                10. Draw 6 basic [quest cards](#quests), 1 artifact quest, and 1
+                    advanced quest.  Choose 4 cards to keep and discard
+                    the others.
+                11. Place your hero in standee and place it on the
+                    Monument space.
+                12. Take 1 of each resource markers and place them on the
+                    0 space on your town board.
+    - name: Turns
+      sections:
+          - name: Specialist Action
+            text: |
+                Pay a specialist to perform their action.  Choose one of the
+                following:
+
+                * *Pay your own specialist*.  Pay the upper coin amount to the
+                  supply and take the action.
+                * *Pay another player's specialist*. Pay the upper coin amount
+                  to the supply. The player with the specialist collects the
+                  small coin amount from the supply.  Then take the action.
+                * *Recruit a new specialist*. Pay **double** the upper coin
+                  amount to the supply. Take the specialist and place them in
+                  an open slot. If there are no open slots, you may replace
+                  a specialist (used or unused). Take the specialist's action.
+                  **Draw a new specialist and place it in the row**.
+
+                Flip the specialist you just used face down. The specialist
+                cannot be used again this season.
+
+                You may pay a specialist and perform no action or a partial
+                action.  You still flip them face down.
+            sections:
+                - name: Build
+                  text: |
+                      You may place 1 building tile on your town board. Take 1
+                      building tile from your unbuilt grid and build it.  The
+                      following rules apply:
+
+                      * If this is your 1st building, choose any outer building
+                        in your grid. **After that, you can only choose
+                        buildings orthogonally adjacent to empty spaces**.
+                      * Your first building must be placed in one of the slots
+                        in your starting row (row with a star). **After that,
+                        buildings may only be placed orthogonally adjacent to
+                        previously placed buildings.
+                      * Pay the coin cost of the building to the supply.
+                      * If you place the building on a space with a resource,
+                        gain 1 of that resource.
+                      * If you place the building on a space with a
+                        "coins: build" icon, you must pay the additional coins
+                        to build there.
+                      * If the building you place has a book with an arrow icon,
+                        immediately gain 1 book.
+                      * Note that some buildings give a bonus when built. The
+                        bonus will be attached to the build icon.
+                - name: Heal
+                  text: |
+                      Move your heart marker to the furthest space to the right.
+                      Gain a resource or mana tokens that may be attached to
+                      the heal icon.
+                - name: Gain Experience
+                  text: |
+                      Gain the show number of experience tokens and any
+                      resources shown.
+                - name: Buy Gear
+                  text: |
+                      * You may purchase 1 gear token from the season board.
+                      * Pay the coin cost on the token and place it in a
+                        matching red/blue slot on your hero board.
+                      * Refill the slot on the season board.
+                      * If you don't have an open slot, you may replace 1 gear
+                        on your board and remove the replaced gear from the
+                        game.
+                      * **Note that red gear covers up a basic ability on your
+                        hero board**.
+                - name: Rest
+                  text: |
+                      **Instead of paying a specialist**, you may flip the
+                      specialist face down and **either** 2 hearts or 1 coin.
+                      You may **only rest your own specialists**.
+          - name: Hero Action
+            text: |
+                1. *Move*: Slide one of your available hero action tokens to
+                   cover the action slot.  Then, move your hero.
+                    * You **must** move to a new space.
+                    * You may move a number of spaces up to the number on the
+                      action you covered. You may move further by spending 1
+                      heart per additional space.
+                    * **You cannot move diagonally**.
+                    * When you enter a space with a mountain icon, **lose 
+                      1 heart**.
+                    * If you enter a space and don't fight it, **lose 1 heart**.
+                      You may continue moving though.
+                2. *Play a [quest card](#quests) (optional)*: On the space you
+                   stopped, you may play **1** quest card.  You must be on the
+                   location matching the quest card.
+                3. *Choose 1*: Visit a location, fight an enemy, or search
+            sections:
+                - name: Visit a Location
+                  text: |
+                      Locations have a name on a scroll with an action below
+                      the scroll.  You may perform the action on the location.
+                      See [Locations](#locations) for more info.
+                - name: Fight an Enemy
+                  text: |
+                      If you stop on an enemy, you can fight it.
+
+                      1. Roll a die. Check the result on your [red]!red! combat
+                         abilities. Deal any damage listed on the ability. **The
+                         enemy attacks you simultaneously**, losing hearts equal
+                         to the enemy's damage. Be sure to subtract any defense
+                         you have.
+                      2. If you've dealt cumulative damage equal to the enemy's
+                         health, it's defeated.  Otherwise, start a new combat
+                         round (goto #1) or retreat. If you defeated the enemy,
+                         gain the rewards, then discard the enemy token.
+                      3. If you have [run out hearts](#out_of_hearts), you
+                         lose and your turn ends immediately. **Remember,
+                         combat is simultaneous so you can lose even if you've
+                         defeated the enemy!**
+                      4. To retreat, leave your hero where they are, but your
+                         turn ends.
+                      5. If you retreat or run out of hearts, the enemy token
+                         remains on the board, but you gain 1 experience token.
+
+                      If you get a villager reward, take one of the face up
+                      villagers. **If there are no villagers left**, draw 6 new
+                      villagers.
+
+                      **Note about abilities/gear**: Some abilities/gear allow
+                      you to receive other benefits **if you pay mana for
+                      them**. Some [blue]!blue! abilities do not cost mana.
+                - name: Search
+                  text: |
+                      * When on a space with a search token, you may roll a die
+                        and lose hearts equal to the die roll. **If you [end up
+                        with zero hearts](#out_of_hearts), your turn ends and
+                        you do not get the search token**.
+                      * After rolling, take the search token and gain the reward
+                        on the opposite side. Then, place the token face down
+                        near your town board as it **provides 1 coin during each
+                        production phase**.
+                      * If the search token tells you to discard it, **do not
+                        keep it**.
+          - name: Pass
+            text: |
+                If you cannot or do not want to take more actions, you pass.
+                Once you've passed, you can't take any more actions until the
+                next season.  Once all players pass, the production phase
+                begins.
+          - name: Anytime Actions
+            text: |
+                You may take any of these actions at any time, **even after you
+                have passed or it's not your turn**. These can even be done
+                during the production phase.
+            sections:
+                - name: Sell Goods for Coins
+                  text: |
+                      Use the chart on the season board to sell resources for
+                      the listed amount of coins.
+                - name: Place One of Your Villagers
+                  text: |
+                      Place a villager you gained on the right side of your
+                      town board.
+
+                      * You must use one of the 4 rows and you **must have
+                        enough buildings in the row to hold the villager.
+                      * Each building can hold 1 villager.
+                      * Each bed icon allows for 1 more villager.
+                      * Once a villager is place, **it cannot be moved**.
+                      * If you just gained a villager, it can be "housed"
+                        immediately.
+                      * If you don't have room for a new villager, place it
+                        below your town board.  You may "house" it later when
+                        you acquire a building for it.
+                - name: Complete One of Your Order Tokens
+                  text: |
+                      Pay the specified goods to gain the listed coin reward.
+                      Then, place the token face down near your board. **Each
+                      order can only be completed once**. At the end of the
+                      game, you gain 2 points per completed order.
+                - name: Pay 2 Experience to Refill Villagers
+                  text: |
+                      Pay 2 XP to refill all the empty villager slots. This
+                      can be done in the middle of gaining 2 or more villagers.
+                - name: Purchase 1 of Your Hero Abilities
+                  text: |
+                      Pay the specified XP and place it on your board in an
+                      appropriately colored slot.
+
+                      * You **must** meet the ability requirements on the
+                        ability.
+                      * The level is the number of hexagons on the right side
+                        of the token.
+                      * You **must** own a level 1 ability to purchase a level
+                        2 ability **in the same color**. Same with 2 before a 3.
+    - name: Production Phase
+      text: |
+          If it is the final round, see [End of the Game](#end_of_game). When
+          all players have passed:
+
+          1. Collect produced goods.  Each housed villager produces, while
+             **unhoused villagers do not**.  Some buildings produce a good or
+             bonuses (light gray area at the bottom left on the building).
+             Collect 1 coin per search token you have.
+          2. Refresh your mana by filling the mana slots.
+          3. Return hero action tokens to their starting spaces.
+          4. Flip all your specialists face up.
+          5. Move the season marker 1 space forward.
+          6. Begin the next season, starting with the player with the 1st player
+             token.
+    - name: End of the Game
+      id: end_of_game
+      text: |
+          During the 6th and final production phase, do the following:
+
+          1. Before producing, you must **discard all of your coins and set
+             all resource markers to 0**.
+          2. Now, produce goods and coins and sell all of your goods for as
+             many coins as possible.
+          3. Tally final victory points:
+              * Each coin is 1 victory point.
+              * Gain points points for full building rows.
+              * Gain victory points for each housing row that contains villagers
+                that produce at least 1 of each type of good (shell, tool,
+                bottled demon, crystal), 5, 5, 6, and 7 points, respectively.
+              * Check buildings for victory points based on requirements.
+              * Gain victory points for completed [quest cards](#quests).
+              * Gain victory points for completed orders. 2 points/order.
+
+          The player with the most points wins. If there is a tie, the player
+          with the most remaining XP and books is the winner. If still tied,
+          the player with the most remaining hearts wins.
+    - name: Running out of Hearts
+      id: out_of_hearts
+      text: |
+          * If you ever reach 0 hearts, your turn ends immediately.
+          * You cannot take another hero action until you have at least 1 heart.
+          * You do not defeat an enemy or get the search token.
+    - name: Quest Cards
+      id: quests
+      text: |
+          You may play 1 (and only 1) quest card on the location you've stopped
+          your hero.
+
+          * Follow the instructions on the quest card.  Most have a cost to
+            play. Some cards have an asterisk (*) with requirements that must
+            be met.
+          * You **must** be at the indicated location (white text).
+          * After playing the card, tuck it under your town board so that
+            the bottom half with "Ongoing" or "At Game End" is showing.
+          * *Artifact quest cards* usually cost 2 books and give you an ability
+            you can use by paying mana.  These can only be used on your turn.
+            If there's a "once per session" note, place the used mana on the
+            card, and remove it at the end of the season.
+          * Whenever you draw quest cards, you can choose to draw them from any
+            of the 3 piles.
+          * If a pile runs out, reshuffle its discard pile.
+          * **There is no hand limit**.
+    - name: Locations
+      id: locations
+      text: |
+          * *Tower of Miners*: Draw 2 order tokens and keep 1 (Place the other
+            at the bottom of the pile).  Place the order face up near your
+            town board.
+          * *Hermit's Hut*: You may swap the position of 2 unbuilt buildings in
+            your grid. Also gain 1 shell and 4 hearts.
+          * *Crystal Meteorite*: Roll a die and lose the resulting number of
+            hearts. Gain 1 crystal and 1 XP.
+          * *Nomad Camp*: Lose 1 heart, pay 1 book, and gain 1 villager.
+          * *Ublo Tower*: Lose 1 heart to gain 1 tool.
+          * *The Monument*: Gain 4 hearts and 1 coin. Also take the 1st player
+            token. Whoever has the 1st player token at the start of the next
+            round takes the 1st turn.
+          * *Scholar's Tower*: Pay 3 coins to gain 1 book.
+          * *Undergarden*: Pay 2 XP, draw 2 [quest cards](#quests) of any type,
+            keep 1 (discard the other), and gain 6 coins.
+          * *Forest of Faces*: Lose 5 hearts to gain 5 coins.
+          * *Snail Caves*: Lose 2 hearts to gain 1 XP and 2 coins.
+          * *Flying Casino*: Pay 1 coin and draw 3 [quest cards](#quests) of any
+            type and keep 2 (discard the other). Gain 5 hearts.
+          * *City of Spirits*: Lose 2 hearts and gain 1 bottled demon and 1
+            coin.
+          * *Istreka*: You may buy 1 gear token from the season board. Also 
+            draw 2 [quest cards](#quests) and keep 1 (discard the other).
+          * *Wailing Cavern*: Lose 8 hearts and pay 1 mana to gain 1 villager.
+
+          **Underground location changes**
+
+          * *Tower of Miners*: You may buy 1 gear token. Also gain 1 shell.
+          * *Hermit's Hut*: Gain 1 XP and draw 3 [quest cards](#quests) of any
+            type and keep 1 (discard the others).
+          * *The Monument*: Gain 4 hearts. Also take the 1st player token.  You
+            may also swap the location of 2 buildings in your unbuilt grid.
+          * *Undergarden*: Pay 1 XP to gain 2 hearts and 4 coins.
+          * *Forest of Faces*: Pay 1 coin, 1 mana, and lose 5 hearts to gain 1
+            villager.
+          * *Flying Casino*: Lose 5 hearts to gain 5 coins.
+          * *Snail Caves*: Pay 2 XP to draw 2 [quest cards](#quests) of any
+            type and keep 1 (discard the other).  Also gain 6 coins.
+          * *Istreka*: Gain 1 heart and draw 2 order tokens and keep 1 (the
+            other goes to the bottom of the pile).
+          * *Wailing Caverns*: Lose 8 hearts and draw 3 [quest cards](#quests)
+            and keep 2 (discard the other).  Also gain 1 shell.
+    - name: Gear, Artifact, and Hero Abilities
+      sections:
+          - name: Gear Abilities
+            text: |
+                * *Arzian Helm*: Any time you roll a 4 during combat, gain 1
+                  heart.  You can choose when to gain the heart.
+                * *Azure Gloves*: If both the Azure Gloves and the Azure Coat
+                  are equipped, you gain +1 max mana.  Gain the mana as soon
+                  as you equip this gear.  This extra mana replenishes at the
+                  end of each season as long as you still have both gear items.
+                * *Shield Crystal*: When you equip this, gain +1 max mana.  As
+                  long as you have this gear, this mana replenishes at the end
+                  of each season.
+                * *Vampire Knife*: Gain 1 mana immediately (if you have an
+                  empty slot) You can use this mana to activate abilities on
+                  the same attack roll.
+          - name: Artifact Abilities
+            text: |
+                * *Demon Trap*: Pay 1 mana at any time (except during final
+                  production) to gain 1 bottled demon.  You can only do this
+                  once per season.  Place the spent mana on the token.
+                * *Warp Stone*: When taking the hero action, pay 1 mana to move
+                  +4 spaces.
+                * *Metal Hound*: Pay 3 mana on your turn to pick up any search
+                  token on the game board. You can only do this once per season.
+                  Place the spent mana on the token.
+                * *Life Candle*: Pay 1 mana at any time (except in the middle
+                  of combat) to gain 6 hearts.  You may only activate this
+                  once per season.  Place the spent mana on the token.
+                * *Magic Chest*: Pay 1 mana at any time (except during final
+                  production) to gain 4 coins.  You may only perform this once
+                  per season.  Place the spent mana on the token.
+                * *Lightning Fungus*: Pay 1 mana to take 1 hero action with
+                  a movement of 3. You can only use this on your turn and it
+                  will be your entire turn.  You many only do this once per
+                  season. Place the spent mana on the token.
+          - name: Hero Abilities
+            text: |
+                Basic hero abilities (on the hero boards):
+
+                * *Marklun (Haste)*: Pay 1 mana to move 2 extra spaces during
+                  a hero action.  You may do this multiple times on the same
+                  die roll.
+                * *Halia (Strange Luck)*: Pay 1 mana to reroll a die.  You
+                  may perform this multiple times on the same turn, or even
+                  multiple times on the same die roll.
+                * *Namal (Armored)*: You may pay 1 mana to ignore all enemies
+                  for 1 turn. Move **through** enemies without taking damage.
+                * *Zeik (Farsight)*: Once per season, you may pay 1 mana to
+                  draw a [quest card](#quests) from any of the 3 piles.
+
+                Other hero abilities:
+
+                * *Toughness (Zeik)*: Take 1 fewer damage each time you
+                  search/make a choice in a story encounter.
+                * *Self-repair (Namal)*: You may spend 1 tool to gain 7 hearts.
+                  You may only use this outside of combat and only once per
+                  season.
+                * *Leadership (Halia)*: Whenever you recruit a new specialist,
+                  you pay 1 fewer coin.
+                * *Research (Marklun)*: Pay 3 mana to gain 1 book. You may
+                  do this as many times as you want during your turn.
+                * *Siphon Power (Marklun)*: Pay 1 bottled demon to gain 4 mana.
+                  You cannot gain more mana than available slots.  You may
+                  do this multiple times in one turn.
+                * *Gravity Orb (Marklun)*: Spen 1 mana to roll a die and add
+                  the result to the damage.
