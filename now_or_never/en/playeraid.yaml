@@ -427,3 +427,64 @@ sections:
                   do this multiple times in one turn.
                 * *Gravity Orb (Marklun)*: Spen 1 mana to roll a die and add
                   the result to the damage.
+    - name: Story Mode
+      sections:
+          - name: Setup Changes
+            text: |
+                * Retrieve the current chapter book for your campaign. Apply the
+                  modified setup rules at the beginning of the of the chapter
+                  booklet.
+                * Use side of the season board with the reputation track. Place
+                  the player markers at the zero location.
+          - name: Rule Changes
+            text: |
+                * *When searching*, **ignore the reward on the opposite side of
+                  the search token**. Instead check the letter of the space
+                  (A-H) and find the specified entry for your character 
+                  (i.e. Zeik C).
+                * The player to your left reads entries from the story book.
+                * The reader only reads the title and the skill or combat level
+                  after the story paragraph.  **Do no read the reaciton
+                  paragraph being the choice or the rewards**.
+                * (skills) The player selects 1 of the choices, and rolls a
+                  die and loses hearts to add to the result in an attempt to
+                  reach or exceed the skill required.
+                * (combat) Do this as you would any other combat.
+                * If you reach [zero hearts](#out_of_hearts) or don't succeed,
+                  the search ends and you don't get the search token or rewards.
+                * If successful, take the listed rewards and search token.
+                * If you exceed the skill by 2 or more, there is an additional
+                  reward.
+                * **Note**: Some story choices require an additional payment.
+                * *Reputation*: The player **must** move their marker on the
+                  reputation track as specified.
+                * *End of the Game*: In addition to the normal [end game
+                  scoring](#end_of_game), players earn or lose victory points
+                  based on their location on the reputation track.
+                    * The player with the with the highest reputation also
+                      receives 3 extra victory points. If there is a tie, all
+                      players receive the 3 extra victory points.
+          - name: Mission Tokens
+            text: |
+                1. If instructed to place your mission token somewhere, place
+                   the token with your hero image on the specified location.
+                2. You may perform a search at this location to continue a
+                   storyline.
+                3. When you complete the search, remove your token from the
+                   board (or move it to a new location, if instructed).  Take a
+                   random search token from the box and add to your pool of
+                   claimed search tokens (so you gain 1 coin during production).
+          - name: Campaign Sheet
+            text: |
+                * Track each player's victory points and reputation points at
+                  the end of each chapter.
+                * When all chapters are completed, combine from all 6 chapters
+                  for each player to get a campaign score.
+                * The player with the highest total reputation gets a bonus
+                  25 points.
+                * The player with the highest points is the campaign winner.
+                * When starting a new chapter (except chapter 1): 
+                    * The player with the lowest score in the previous chapter
+                      starts with +4 coins and +1 reputation.
+                    * The player with the highest score can start on any space
+                      on the board.
