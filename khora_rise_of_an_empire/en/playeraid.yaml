@@ -1,0 +1,262 @@
+name: "Khora: Rise of an Empire"
+description: "Build your own empire in this lighter civ game [See this on BGG](https://boardgamegeek.com/boardgame/299684/khora-rise-empire)"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+sections:
+    - name: Setup
+      sections:
+          - name: Each Player
+            text: |
+                Each player sets up the following.
+
+                * One city board.
+                * One city tile chosen randomly from the 7 tiles.
+                * Place your economy, culture, and military tokens in the
+                  level 1 spaces.
+                * Place your development marker next to the bottom
+                  development on your city tile.
+                * Place one of your dice in the empty space below your culture
+                  track.
+                * Place your 7 action tiles in your color in front of you.
+                * Deal each player 5 random politics cards, face down.
+                    * All players draft the politics cards by taking 1 and
+                      passing to left until all cards have been drafted.
+                * Take 4 Drachmas.
+          - name: General Setup
+            text: |
+                * Place the central board.
+                * Place the deck of politics cards near the board.
+                * Place the Drachma pool near the board.
+                * Place 36 Knowledge tokens on the matching space on the right
+                  side of the board.  Place the Minor Knowledge tokens near
+                  the board.
+                * All players place their Citizen marker on level 3 of the
+                  citizen track.
+                * The tax, glory, and troop markers all start at level 0.
+                * Create the Event card deck:
+                    * Set aside the *Growing Populations* and *Conquest of
+                      the Persians* cards.
+                    * Place the *Conquest of the Persians* face down next to
+                      the board.
+                    * Shuffle the 14 remaining cards and take 7 at random and
+                      place them face down on top of *Conquest of the Persians*.
+                    * Put *Growing Populations* face down on top of the stack.
+                * Each player places their victory point marker on the zero
+                  space of the score track.  Place the victory point tiles
+                  near the zero space of the score track.
+                * Place the Philosophy tokens near the board.
+                * All players now apply the text of their 1st (unlocked)
+                  Development.  Note that some cities gain an immediate
+                  benefit.  **If you move up on a track, also gain the
+                  benefits from the new level**.
+                * Randomly choose a start player.
+    - name: Gameplay
+      text: |
+          Khora is played over 9 rounds, tracked by the event deck.  Each
+          round is divided into 7 phases.
+      sections:
+          - name: A. Event Announcement
+            id: event_announce
+            text: |
+                The start player reveals the top card of the event deck, placing
+                it face up and reading the text.  Note that **the event will be
+                resolved in [F. Event Resolution](#event_resolution).
+
+                **Exception**: The *Growing Population* event takes place
+                during the [C. Dice](#dice) phase of the round it is revealed
+                in.
+          - name: B. Tax
+            text: |
+                Each player gains Drachma equal to the level of the marker on
+                the tax track.
+          - name: C. Dice
+            id: dice
+            text: |
+                Each of the following steps are done simultaneously.
+
+                1. Roll all of your available dice.
+                    * **The player who rolls the lowest total sum will be the
+                      start player for the round**. If tied, the start player
+                      is the player closest to the last start player, going
+                      clockwise.
+                2. Choose your actions.
+                    * Each player secretly assigns 1 of their 7 action tiles
+                      to each of their dice. **Each tile can only be matched
+                      with 1 die**.
+                3. Reveal your chosen actions.
+                4. Adjust the position of your citizen marker.
+                    * For each die/tile pair, if the die value is **less than**
+                      the number on the tile, you must lower your citizen
+                      marker by the difference between the 2 values.
+                    * If you can't lose the required citizens, you **cannot
+                      use that tile** this round and it must be set aside.
+          - name: D. Actions
+            id: actions
+            text: |
+                Resolve all the action tiles in increasing order.  The tiles
+                can be resolved simultaneously until the Military tile (#4),
+                which must be done in turn order.  **All actions are optional**.
+
+                See clarifications in the sections below.
+            sections:
+                - name: 0  Philosophy
+                  text: |
+                      There is **no limit** to the number of Philosophy tokens
+                      you can have.  [There 3 ways to use them](#philosophy).
+                - name: 1  Legislation
+                  text: |
+                      You can **temporarily exceed level 15** on the citizen
+                      track and spend these extras this round.  Any unspent
+                      citizens over 15 will be reset to 15 at the end of
+                      the action phase.  **There is no limit to the number
+                      of politics cards you have in hand**.
+                - name: 2  Culture
+                  text: |
+                      If your scoring marker passes 89 on the score track,
+                      place your victory point tile in front of you.
+                - name: 3  Trade
+                  text: |
+                      You can buy any color of Minor Knowledge token from the
+                      reserve next to the board by paying 5 Drachmas.
+
+                      **You can only buy 1 Knowledge token per action**, but
+                      there is no limit to the number of Knowledge tokens you
+                      can have.
+
+                      The reserves for Drachmas and Knowledge tokens are
+                      unlimited.
+                - name: 4  Military
+                  text: |
+                      **You can temporarily exceed level 15 on the Military
+                      track** and explore with extra Military.  If you still
+                      exceed 15 at the end of the action phase, reset the
+                      marker to 15.
+
+                      To Explore:
+
+                      1. Choose a Knowledge token that is still available.
+                      2. Your Military must be **>=** to the value of the
+                         Military to the right of the Knowledge token.
+                      3. Lose Military on the track equal to the skull value.
+                      4. Take the Knowledge token.  Also gain any benefits
+                         shown below the token's space.  **You can only
+                         explore once per action to gain 1 Knowledge token**.
+                           * **Exception**: *Exploring Persepolis* allows you
+                             to take all the Major Knowledge tokens from
+                             the board at the same time.
+                - name: 5  Politics
+                  id: politics
+                  text: |
+                      To play a Politics card:
+
+                      1. Verify you have the token(s) required, shown in the
+                         upper right of the card.  Minor or Major Knowledge
+                         tokens don't matter. **Do not spend the tokens!**
+                      2. Pay the required Drachma shown in the upper left of
+                         the card. Note that some cards have no Drachma cost.
+                      3. Place the card in front of you.
+                          * Cards with a [yellow]!#bfa619! background have an
+                            immediate effect. Apply its effect as much as
+                            possible and leave it in front of you.
+                          * Cards with a [purple]!purple! background have an
+                            an ongoing effect.  Its effect remains active for
+                            the rest of the game.
+                          * Cards with a [red]!red! background have an end-game
+                            effect.  Apply its effect during final scoring.
+                - name: 6  Development
+                  id: development
+                  text: |
+                      To unlock the next development on the development track
+                      of your City tile, do the following:
+
+                      1. Verify you have the Knowledge tokens required, shown
+                         just above the next development.  It doesn't matter
+                         if the Knowledge tokens are Major or Minor.  **Do
+                         not spend the tokens!**
+                      2. Pay the required Drachma. Some developments don't have
+                         a Drachma cost.
+                      3. Move the development marker to the next space. The
+                         effect to the right is now active, **along with every
+                         effect below the marker**.  There are 3 types of
+                         developments.
+                           * Immediate effects (lightning bolt) are applied
+                             as soon as this is unlocked.
+                           * Ongoing effects (infinity) are applied for the
+                             rest of the game.
+                           * Final scoring effects are applied during final
+                             scoring.
+                      4. You can only take this action 3 times during the game.
+          - name: E. Progress
+            id: progress
+            text: |
+                In turn order, each player may choose to improve a single
+                track on their city board: economy, culture, or military.  To
+                improve on the track, they must pay the Drachma cost for the
+                next level on that track.
+          - name: F. Event Resolution
+            id: event_resolution
+            text: |
+                Apply the effect of the Event card that was revealed earlier
+                this round.
+
+                * If an effect targets the player with the most/least military,
+                  only that player applies the effect. If multiple players are
+                  tied, all tied players apply the effect.
+                * If the effect concerns an element other than military, all
+                  players apply the effect.
+          - name: G. Achievment
+            text: |
+                **Each Achievement can only be completed once**, and only
+                during this phase of the round.  If more than one player
+                achieves the same Achievement in the same round, they all
+                earn that Achievement.
+
+                If you have completed an Achievement, place 1 of your
+                Achievement tokens on the matching space of the central board.
+                Then, recieve:
+
+                * If you are the **only player** to complete the Achievement,
+                  move up 1 space on either the tax **or** glory track.
+                * If multiple players completed the Achievement, each player
+                  moves up 1 space on the tax track
+
+                Achievements can never be lost, even if you no longer meet the
+                requirements later. Once an Achievement is complete, **no
+                other player can earn that Achievement in later rounds**.
+
+                If you have reached the end of round 9, go to [End of the
+                Game](#end_game) or proceed to the next round with [Event
+                Announcement](#event_announce).
+    - name: Philosophy Tokens
+      id: philosophy
+      text: |
+          There are 3 different ways to use Philosophy tokens.
+
+          * During the [C. Dice phase](#dice) (step 4, adjust the citizen
+            marker), you may spend as many Philosophy tokens as you like. For
+            each token spent, gain 3 citizens on the citizen track.
+          * During the [Politics](#politics) or [Development[(#development)
+            action during [D. Actions](#actions) phase, you may spend as many
+            **pairs** of Philosophy tokens as you like. For each **pair** of
+            tokens spent, you can ignore 1 Knowledge token requirement to
+            play a card or unlock a development.  **Do not take these
+            Knowledge tokens**.
+          * During the [E. Progress](#progress) phase, you may spend as many
+            Knowledge tokens as you like. For each token spent, you can move
+            up one extra level on the track of your choice, but you must
+            still pay the required Drachmas.
+    - name: End of the Game (Final Scoring)
+      id: end_game
+      text: |
+          The game ends after 9 rounds.
+
+          Final Scoring (add the following):
+
+          * Any points from end game developments.
+          * Any points from end game politics cards.
+          * Points equal to their glory level multiplied by the number of Major
+            Knowledge tokens they possess.
+
+          The player with the most points wins. If there is a tie, the player
+          with the most Drachma wins. If there's still a tie, share the victory.
