@@ -1,0 +1,194 @@
+name: "Smartphone Inc."
+description: "Build your smartphone empire [See this on BGG]()"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+sections:
+    - name: Setup
+      text: |
+          1. Place the game board.
+          2. Place the markers at the beginnings of the round and phase tracks.
+          3. Place the victory point board near the main board.
+          4. If there are less than 5 players, place Retailers:
+              * **2 Players**: Cover China, Canada, and the Caribbean, as well
+                as all the medium-sized regions without a player's Office.
+                marker.
+              * **3 Players**: Cover Europe and the RSA, as well as all the
+                medium-sized regions without a player's Office.
+              * **4 Players**: Cover Canada and the 1 medium-sized region
+                without a player's Office.
+          5. Place the patents on the matching spaces.
+          6. Place the Technologies next to the matching patents. Decide which
+             side up or choose one at random.
+          7. Shuffle the Improvements and place 5 of them face-up in the
+             Improvement area.  Place the rest in a face down pile near the
+             board.
+          8. Place the goods tokens near the board.
+          9. Each player should do the following:
+              1. Choose a color and take a tray with their Progress, Office,
+                 and Goods markers.
+              2. Take 2 Pads, 1 with the white symbol and 1 with the black.
+              3. Take the screen matching their color.
+              4. Using the info on the player screen:
+                  * Place an Office marker on the 1st Office space of their
+                    home region.
+                  * Place a Goods marker on the VP scorecard in the space
+                    matching their color.
+                  * Take the Improvement matching their color.
+              5. Place a goods marker on the "5" space of the Price Block.
+                 The order should match the order on the VP board.
+    - name: Gameplay
+      text: |
+          The game consists of 5 rounds and each round has 8 phases.  Phases
+          are played in order from left to right.
+      sections:
+          - name: Phase 1. Planning (Simultaneous)
+            text: |
+                Players overlap their 2 pads in this phase to set their
+                desired actions to take this round.  This should be done in
+                secret behind their screens.
+
+                * Pads **must** be parallel or perpindicular to each other.
+                * 1 Pad must overlap 1-4 spaces of the other Pad.
+                * You may place Improvements on top of the Pad(s).
+                * Improvements **must** cover 2 spaces (they can't hang off
+                  a Pad).
+                * Improvements may overlap other Improvements.
+                * A Pad may overlap part of an Improvement.
+          - name: Phase 2. Set Prices (Simultaneous)
+            id: prices
+            text: |
+                * All prices should be set to 5 at the beginning of this
+                  phase.
+                * Each "-$" **reduces** the price by 1 and each "+$" 
+                  **increases** the price by 1.
+                * **Prices will determine player turn order in future phases**.
+                  See the section on [Priority Rule](#pri_rule) for more info.
+          - name: Phase 3. Production (Simultaneous)
+            id: production
+            text: |
+                Players produce Goods to sell later. Move Good cubes from the
+                supply in their token tray to the available Goods portion.
+
+                1. Move 1 Good for each black Good symbol showing on their pads.
+                2. Move 1 Good for each covered cell on their Pads.  **Note that
+                   you only count the cells covered by another Pad, and NOT
+                   cells covered by Improvements**.
+                3. Each yellow Good token produces 1 Good.
+                4. Each unused Improvement (face down, not on your Pads)
+                   produces 1 Good.
+                3. Some researched Technologies or Retailers may also produce
+                   additional Goods.
+          - name: Phase 4. Improve Production (Priority order)
+            text: |
+                * If a player has the yellow Improvement symbol active
+                  (showing), they take 1 Improvement of their choice from
+                  the board.
+                * If a player does **not** have the yellow Improvement symbol
+                  active, they take a yellow Good token instead.
+                * **New Improvements/Goods cannot be used until the NEXT
+                  round**.
+          - name: Phase 5. Research Technology (Priority order)
+            text: |
+                1. Players take as many Progress markers as they have
+                   purple Progress symbols on their Pads.
+                2. On their turn, the player places their Progress markers
+                   in the "spinner" space below the patent space of the
+                   Tech. they wish to research.
+                3. If the number of Progress markers matches the number in the
+                   top of the patent space, the player has researched that Tech.
+                   and places an Office marker in 1 of the spaces below the
+                   Tech.  They should remove their Progress markers.
+                    * If the player is the 1st to research the tech, they also
+                      take the Patent tile (VP at the end of the game).
+                    * **Important**: Taking the Patent tile may mean that other
+                      players will also immediately meet the new cost of that
+                      Tech. and place their own Office marker.
+                4. Each Tech. will grant players who have researched it a bonus
+                   of some sort.  They will also allow players to sell to
+                   customers seeking that Tech.
+                5. Any unused Progress markers are returned to the player's
+                   token tray.
+          - name: Phase 6. Logistics (Priority order)
+            text: |
+                1. Players take as many Progress markers as they have blue
+                   Logistics symbols showing on their Pads.
+                2. On their turn, the player places their Progress markers in
+                   the "spinner" space next to the Logistics symbol for a
+                   region(s).
+                3. If the cost to enter that region (number in the Logistics
+                   symbol) has been met, the player removes the Progress tokens
+                   and places an Office marker in the left-most space for that
+                   region.
+                    * **If there are no empty Office spaces for the
+                      region, players CANNOT add an Office to that region**.
+                    * **Each player may only have 1 Office in a region**.
+                4. Any unused Progress markers are returned to the player's
+                   token tray.
+          - name: Phase 7. Selling Goods (Priority order)
+            text: |
+                In this phase, players place Goods from their **available
+                Goods** they produced during the
+                [Production phase](#production).
+
+                * On their turn, the player may sell goods to buyers in
+                  **regions where they have an Office** that does **not**
+                  contain a Retailer.
+                * Each square in the region is a buyer.
+                    * To sell to the red (numbered) buyers, the player's price
+                      (set in [Phase 2](#prices)) must be <= to the price
+                      printed on the buyer.
+                    * To sell to the purple (symbols) buyers, the player must
+                      have researched the matching Tech.
+                * **Any unsold goods are lost** and returned to the supply in
+                  the player's tray.
+          - name: Phase 8. Receive VP (Simultaneous)
+            text: |
+                * Each player multiples the number of Goods on the main board
+                  by the price set on the board and receive that many VP.
+                * *Controlling Regions*:
+                    * If a player has the most Goods in a region, they receive
+                      bonus VP.
+                        * They receive the number of VP specified in the
+                          right-most **occupied** Office space (can be any
+                          player's Office).
+                        * If there are 2 VP numbers for the Office space, the
+                          player with the most Goods receives the top number
+                          and the player with the 2nd most receives the
+                          bottom number.
+                        * If there is a tie, it is broken by the player with
+                          a good on the furthest left buyer.
+          - name: End of Round
+            text: |
+                * All players return all goods on the board back to their
+                  Goods supply area of their tray (**not** in the available
+                  Goods portion).
+                * Remove any Improvements on the game board and put them
+                  back in the box.  Add 5 new Improvements.
+                * Reset all prices back to 5.
+                * Move the round marker to the next round.
+                * Reset the phase marker back to phase 1.
+    - name: End of the Game
+      text: |
+          After 5 rounds, players add VP to their existing total for:
+
+          1. Any VP for Patents they've collected.
+          2. Any VP earned from Retailers.
+
+          If there is a tie, the player with the most Tech. researched wins.
+          If there is still a tie, the player with the most Patents wins.
+          If there is still a tie, tied players share the victory.
+    - name: Priority Rule (player turn order)
+      id: pri_rule
+      text: |
+          The "Priority Rule" is used to define turn order during a round after
+          prices are set. Similarly, this is also used for tie breaks.
+          Priority/turn order is resolved in this order:
+
+          1. The player with the lowest price.
+          2. (if tied) Then, the player with the lowest VP count.
+          3. (if still tied) Then, the player lower in the order of the starting
+             spaces printed on the VP board.
+
+          **Important**: Priority/turn order may change during phases as prices
+          may change.
