@@ -1,0 +1,426 @@
+name: "Familiar Tales"
+description: "Create your own stories as a wizard's familiar [See this on BGG](https://boardgamegeek.com/boardgame/350948/familiar-tales)"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+sections:
+    - name: Starting a campaign
+      text: |
+          1. Choose familiars
+              * **4 players**: Each player chooses 1 familiar
+              * **3 players**: 1 player chooses 2 familiars, the others get 1
+              * **2 players**: Each player chooses 2 familiars
+              * **1 player**: The player controls all 4 familiars
+          2. Setup skill decks
+              * **1 familiar**: Shuffle your familiar's starting deck
+              * **2 familiars**: Combine both of the starting decks and remove
+                the following, then shuffle the remainder together:
+                  * 2x Reckless
+                  * 2x Assist
+                  * 1x Focus
+              * **4 familiars**: Combine both of the starting decks and remove
+                the following, then shuffle the remainder together:
+                  * 4x Reckless
+                  * 4x Assist
+                  * 2x Focus
+          3. Set sideboard dials to 0
+          4. Set your familiars' power dial(s) to 0 and set the life dial(s) to
+             the highest number
+          5. Record which players have which familiars in the campaign journal
+          6. Fill in the START CHAPTER 1 (101) bubble on the campaign sheet
+          7. Continue to [setup](#setup)
+    - name: Setup
+      id: setup
+      text: |
+          1. Set out the location book and chance die.
+          2. Place the sideboard next to the location book.
+          3. Set the discontent key card in its sideboard slot.
+          4. Place the child character card next to the sideboard.
+          5. Place the artifact cards face up next to the book.
+          6. Place the Fatigue cards face up next to the book.
+          7. Shuffle all available skill cards and reveal 4 from the top of the
+             deck to form the training row.
+          8. Shuffle all available item cards and reveal 4 from the top of the
+             deck to form the crafting row.
+          9. Sort the various tokens and put them next to the book.
+          10. Each player does the following: 
+              * Takes their character card, dashboard, and deck box for their 
+                familiar.
+              * Shuffles their skill cards and draws a hand of 5.
+              * Equips their item cards and places extras in their character's
+                stash.
+              * Apply any affliction tokens or marks of devotion to their
+                characters.
+          11. Give the campaign journal to a player.
+          12. Each familiar will have its own turn. Set the turn order in the
+              app, but make sure anyone controlling 2 familiars does not play
+              in back-to-back turns.
+          13. Find the last location bubble filled in the campaign journal,
+              which is the highest number, and enter that in the app.  The
+              app can be found at
+              [www.FamiliarTalesGame.com](https://www.familiartalesgame.com/)
+    - name: Enemy Encounters
+      text: |
+          When an enemy is encountered in the game, do the following:
+
+          1. The app or location book will tell you how many enemies are
+             generated, collect the figures for them.
+          2. Unless otherwise instructed, place them on the entry space
+             ![enemy](/static/img/familiar_tales/enemy.png).  If there's
+             more than 1, divide them equally across each entry space.
+          3. Review the encounters section in the location book.  If enemies
+             have life tracks, place a life marker on the highest numbered
+             slot.
+          4. Continue playing until instructed to resolve an enemy turn.
+    - name: Location Book
+      id: loc_book
+      text: |
+          * **Starting Setup**: Follow these instructions when you first get
+            to the page, before any turns.
+          * **Special Rules**: These rules only apply at this location.
+          * **Victory Objectives**: This will tell players what must be done to
+            advance.
+          * **Spaces**: These are defined by lines, dotted or solid.  Note that
+            each space has dot in the middle for determining line of sight.
+            **Line of sight is determined by drawing an imaginary line
+            between 2 dots without crossing a double solid line**.
+          * ![gear](/static/img/familiar_tales/gear.png) **Spaces/Sections**:
+            When a familiar moves onto one of these spaces, read the section
+            in the book for how to interact here.
+          * **Encounters Section**: This is where you will find enemy info
+            for this page.
+          * ![exit](/static/img/familiar_tales/exit.png) **Section**: This
+            section lists any instructions for leaving the location.  This
+            is where familiars need to gather to leave.
+          * ![fire](/static/img/familiar_tales/fire.png) **Space/Section**:
+            When on a campfire space, refer to the corresponding section for
+            instructions.
+          * ![flag](/static/img/familiar_tales/flag.png) **Space**: During
+            starting setup, players will place their figures here.
+          * ![enemy](/static/img/familiar_tales/enemy.png) **Spaces**:
+            This is where enemies will be place when generating encounters.
+          * ![book](/static/img/familiar_tales/book.png) **Spaces**: When a
+            familiar is on a space with an **uncovered**
+            ![book](/static/img/familiar_tales/book.png), they can encounter
+            that event by putting the code into the app.  Any instructions
+            from the app are **only for that familiar**.
+          * **Forage Spaces**: Familiars can forage for the indicated resources
+            on these spaces.
+          * **Forage Difficulty**: The number (top right of page) indicates
+            the difficulty of the insight
+            ![insight](/static/img/familiar_tales/insight.png) skill test.
+    - name: Skill Tests
+      text: |
+          Skill tests will be required to pass many things in the game,
+          including enemy encounters.  Follow these steps to resolve the
+          tests:
+
+          1. Play any number of skill cards from your hand, 1 at a time.  As
+             you play them, resolve its [icon effect](#icon_effects)
+             (upper left).  Note that some skill cards have additional effects
+             when played to specific types of skill tests. **Other players can
+             also play cards with the chain
+             ![link](/static/img/familiar_tales/link.png) icon to assist**.
+          2. After all skill cards have been played, count the total skill
+             value from cards played (including from other players) and any
+             relevant bonuses.
+          3. Roll the chance die:
+              * If you roll a positive, add it to your skill total.
+              * If you roll a negative, subtract it from your skill total.
+              * If you roll a danger
+                ![danger](/static/img/familiar_tales/danger.png) symbol, add
+                1 danger in the app.
+              * If you roll a power
+                ![power](/static/img/familiar_tales/power.png) symbol **and
+                pass the test**, add 1 power to your familiar.
+              * If your total is >= the difficulty, you pass and resolve the
+                pass effect. Otherwise, resolve the fail effect (if there is 1).
+          4. Discard all cards played into that skill test. Players who also
+             played link ![link](/static/img/familiar_tales/link.png) cards
+             should also discard those.
+    - name: Player Turns
+      text: |
+          After turning to a location book page, and doing the starting setup,
+          players will begin taking turns and the app will tell you whose turn
+          it is.  Each turn consists of 2 phases.
+      sections:
+          - name: 1. Action Phase
+            text: |
+                You may have your familiar(s) perform any number of actions
+                during action phase.
+            sections:
+                - name: Move
+                  text: |
+                      1. Play any number of skill cards and resolve the
+                        [icon effects](#icon_effects) on them.
+                      2. Total the move
+                        ![move](/static/img/familiar_tales/move.png) points on
+                        the cards and move your familiar across dashed lines
+                        <= to that number of move points. Note that double
+                        dashed lines take 2 movement to cross. **Familiars can't
+                        move across solid lines**.
+                      3. Discard all played cards.
+                - name: Forage
+                  text: |
+                      If your familiar is on a forage space, make an insight
+                      ![insight](/static/img/familiar_tales/insight.png)
+                      skill test using the difficulty number in the top right
+                      of the current page.  If the familiar passes, cover one
+                      of the resource symbols with a 
+                      ![done](/static/img/familiar_tales/done.png) token and
+                      collect the matching resource.  **If there are no more
+                      of that resource in the supply, it can't be foraged**.
+                - name: Care
+                  text: |
+                      1. To do this action, the familiar must be on the space
+                         with the child.
+                      2. Consult the discontent
+                         ![discontent](/static/img/familiar_tales/discon.png)
+                         dial and its key card. Follow the instructions for
+                         card on the card for the discontent level.
+                      3. If successful, reduce discontent by 1.
+                - name: Equip
+                  text: |
+                      To perform an equip action, retrieve any number of items
+                      from the familiar's stash and equip them.
+
+                      * **Equipped Items**: To show that a familiar has an
+                        item equipped, place it face up near that familiar.
+                        Item bonuses and effects are only active when equipped.
+                      * **Stash**: This is a face down pile of cards the
+                        familiar has.  There is no limit to the number of
+                        items in familiar's stash.
+                      * **Equipment Limits**: A familiar can only have 1
+                        Weapon, 1 Armor, and 1 Accessory equipped at a time.
+                        **There is no limit to the number of consumable items
+                        a player has equipped**.
+                - name: Melee Attack
+                  id: melee
+                  text: |
+                      1. Target an enemy in the familiar's space.
+                      2. Make a might
+                         ![might](/static/img/familiar_tales/might.png) skill
+                         test.  The difficulty is the enemy's defense.
+                      3. If the skill test is passed, reduce the enemy's life.
+                         The amount is reduced by the damage
+                         ![damage](/static/img/familiar_tales/damage.png)
+                         value on the familiar's equipped weapon plus any
+                         bonuses.
+
+                      If an enemy is hit, reduce it's counter on the appropriate
+                      track.  If they don't have a track, they have 1 life.
+
+                      If the enemy is defeated, remove its life marker
+                      from its track, remove the figure, and give any loot
+                - name: Ranged Attack
+                  text: |
+                      1. Target an enemy in the familiar's line of sight
+                         to the player who defeated the enemy. See the "Spaces"
+                         entry under [Location Book](#loc_book) for info on line
+                         of sight.
+                      2. Make an agility
+                         ![agility](/static/img/familiar_tales/agility.png)
+                         skill test.  The difficulty is the enemy's defense
+                         value.
+                      3. If the skill test is passed, reduce the enemy's life.
+                         The amount is reduced by the damage
+                         ![damage](/static/img/familiar_tales/damage.png)
+                         value on the familiar's equipped weapon plus any
+                         bonuses.
+
+                      See [Melee Attack](#melee) for info on assigning damage.
+                - name: Trade
+                  text: |
+                      Gain 1 danger
+                      ![danger](/static/img/familiar_tales/danger.png), then
+                      the familiar can trade items and resource tokens
+                      with any familiar on its space. **The items may be
+                      immediately equipped or stashed**.
+                - name: Craft
+                  text: |
+                      Aquire a card from the crafting row by paying its
+                      resource cost and equipping it or adding it to your
+                      familiar's stash.  Draw a new card from the deck to
+                      replace it.  If the deck is empty, shuffle the discard
+                      to create a new deck.
+                - name: Train
+                  text: |
+                      1. Choose a card from the training row and pay the
+                         power cost for it to acquire it.
+                      2. Resolve any Acquire effects on the card.
+                      3. Add the card to your discard pile.
+                      4. Draw a new card from the deck to replace it.  If the
+                         deck is empty, shuffle the discard to create a new
+                         deck.
+
+                      **Bond and Story Craft cards**: These cards can only be
+                      acquired by a specific familiar.  The cards will tell
+                      you what to do when acquired.
+                - name: Special Actions
+                  text: |
+                      These actions are sometimes available.
+
+                      * An action granted by a skill card.
+                      * An action available to remove a status effect.
+                      * The action on the familiar's life dial.
+                      * Actions that are available on gear
+                        ![gear](/static/img/familiar_tales/gear.png) spaces
+                        or a space with an objective **!** token on it.
+                        These are always described in the location book.
+
+                      **Skill Card Actions**: Some skill cards have effects
+                      preceded by the word "ACTION". These actions are performed
+                      by playing that card, resolving the action, and discarding
+                      the card.  **The icon effect is not triggered when
+                      playing a card for its action**.
+
+                      If a skill card's action effect a specific familiar, they
+                      always affect that familiar regardless of who played the
+                      card.
+          - name: 2. Draw Phase
+            text: |
+                Draw back up to a hand of 5 cards.  If your draw pile is ever
+                empty, shuffle your discard to create a new draw pile.
+
+                [NOTE]!red!: Even if a player is controlling multiple familiars,
+                they will still only draw 5 cards.
+          - name: End Turn
+            text: |
+                When a familiar's turn is complete, push the End Turn button
+                on the app. The app will show whose turn it is next or have
+                players resolve negative effects.
+
+                The higher your danger
+                ![danger](/static/img/familiar_tales/danger.png) level, the
+                more likely it is to have negative effects.
+    - name: Enemy Turn
+      text: |
+          The app will instruct players to resolve an enemy turn and give the
+          players steps to follow.
+      sections:
+          - name: Moving an Enemy
+            text: |
+                Move the enemy a number of spaces equal to its move
+                ![move](/static/img/familiar_tales/move.png) points. If there
+                is a tie in where the enemy should move, the players decide.
+          - name: Attacking with an Enemy
+            text: |
+                * **Melee Attack**: Target a familiar in the same space.  If
+                  there is more than 1 familiar, players decide who to target.
+                * **Ranged Attack**: The enemy will target a familiar it does
+                  **not** share a space with and has line of sight to. If there
+                  is more than 1 target, players decide.
+          - name: Defending with a Familiar
+            text: |
+                When a familiar you control has been targeted, they may defend
+                if the player has skill cards in their hand.  If so:
+
+                1. Make a resilience
+                   ![shield](/static/img/familiar_tales/shield.png) skill test
+                   with that familiar.  The difficulty of the test is equal to
+                   the enemy's melee or ranged attack value.
+                2. If the familiar passes the test, it takes no damage. If they
+                   fail, subtract the test result from the enemy's attack
+                   value and take that much damage.
+
+                If a familiar does not defend, they take the full value of the
+                enemy's attack.
+          - name: Defeated Familiar
+            text: |
+                If a familiar's life reaches zero, the familiar is defeated.
+                Do the following in order:
+
+                1. Remove that familiar's figure from the board and place it
+                   on its character card.
+                2. Misfortune ![crow](/static/img/familiar_tales/crow.png) +2.
+                3. Acquire 2 Fatigue.
+                4. Set that familiar's life dial to its max.
+                5. That familiar becomes Badly Injured and places the affliction
+                   token on its card.
+
+                **Returning to play**: At the start of the defeated familiar's
+                next turn, return it to play on any space containing another
+                familiar. If there are no other familiars, place it on a
+                ![flag](/static/img/familiar_tales/flag.png) or
+                ![fire](/static/img/familiar_tales/fire.png) space.
+          - name: Fatigue Cards
+            text: |
+                When you are instructed to draw Fatigue cards, take them from
+                the pile.  When you play a Fatigue card, **return it to the
+                supply instead of your discard pile**.  If a player is
+                instructed to take a Fatigue card, but there are none in the
+                supply, nothing happens.
+    - name: Afflictions and Marks of Devotion
+      sections:
+          - name: Afflictions
+            text: |
+                When a character gets an affliction, place to corresponding
+                token on their character card.  If there are no tokens of that
+                type available, ignore the effect.
+
+                ![fire](/static/img/familiar_tales/on_fire.png) **On Fire**:
+                When this happens, banish any items equipped to it that have
+                the Flammable keyword.  At the start of that familiar's turn,
+                reduce its life by 1, then roll the chance die.  If a positive
+                number is rolled, remove the affliction. If a danger
+                ![danger](/static/img/familiar_tales/danger.png) is rolled,
+                +1 danger.  If an On Fire familiar enters a water space, remove
+                this affliction.  As an action, an On Fire familiar can make
+                a resilience ![shield](/static/img/familiar_tales/shield.png)
+                test with a difficulty of 4; remove it on success.
+
+                ![poison](/static/img/familiar_tales/poison.png) **Poisoned**:
+                At the start of the familiar's turn, reduce its life by 1, then
+                roll the chance die and remove the affliction on a positive
+                number. If danger
+                ![danger](/static/img/familiar_tales/danger.png) is rolled,
+                danger +1. When this familiar is healed, remove the affliction.
+
+                ![trap](/static/img/familiar_tales/trap.png) **Trapped**:
+                A trapped familiar cannot move from its current space. When
+                a trapped familiar loses life, it loses 1 additional life. As
+                an action, the familiar can make a might
+                ![might](/static/img/familiar_tales/might.png) test with a
+                difficulty of 4. On success, remove this affliction.
+
+                ![injured](/static/img/familiar_tales/injured.png) **Badly
+                Injured**: When a familiar loses life, it loses 1 additional
+                life. When the familiar is healed, remove this affliction.
+
+                **Knocked Down**: When a familiar is knocked down, lay it on
+                its side. The next time that familiar moves, 2 move points
+                must be used to stand up.  Enemies represented by tokens
+                can't be knocked down.
+          - name: Marks of Devotion
+            text: |
+                When a familiar gains a mark of devotion, they choose a mark
+                of devotion token and place it on the familiar's character
+                card.  For each token it will add +1 to the matching type of
+                skill test. **If a player would get a mark, but there are
+                none of that type left, the player receives nothing**.
+    - name: Skill Card Icon Effects
+      id: icon_effects
+      text: |
+          There are 2 types of icon effects. **!** icon effects are triggered
+          immediately without any other cards needed. **▯** icon effects are
+          only triggered when you have an item card with a matching symbol.
+
+          ![danger](/static/img/familiar_tales/danger_l.png) **Danger (!)**:
+          Increase the danger level in the app by 1.
+
+          ![heal](/static/img/familiar_tales/heal_l.png) **Heal (!)**:
+          Increase your familiar's life by 1.
+
+          ![draw](/static/img/familiar_tales/draw_l.png) **Draw (!)**:
+          You may acquire 1 Fatigue (to your discard) to draw 1 card.
+
+          ![reroll](/static/img/familiar_tales/reroll_l.png) **Reroll (!)**:
+          After rolling the chance die, you may reroll it.
+
+          ![link](/static/img/familiar_tales/link.png) **Link (!)**:
+          If playing solo, draw 1 card.  If playing with others, you can
+          play this out of turn to assist another player with a skill test.
+
+          ![items](/static/img/familiar_tales/item_powers.png) **Item Powers
+          (▯)**: For each of these played, you may choose 1 effect with a
+          matching symbol on 1 item card that your familiar has equipped.
