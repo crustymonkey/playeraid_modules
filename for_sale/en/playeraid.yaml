@@ -1,0 +1,62 @@
+name: "For Sale"
+description: "Buy and sell some property [See this on BGG](https://boardgamegeek.com/boardgame/172/sale)"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+sections:
+    - name: Setup
+      text: |
+          * Separate the cards by type (Property and Currency) and shuffle each
+            pile
+              * Set aside the Currency cards (used in part 2)
+              * Place the Property cards face down as a deck
+          * Give players starting money.  **Money should be kept secret**:
+              * **3-4 players**: 2 $2,000 coins and 14 $1,000 coins
+              * **5-6 players**: 2 $2,000 coins and 10 $1,000 coins
+          * **With 3 players**, remove 6 Property and 6 Currency cards from the
+            game at random
+          * **With 4 players**, remove 2 Property and 2 Currency cards from the
+            game at random
+    - name: Playing, Phase 1
+      text: |
+          * **Setup**: Turn up a number of Property cards equal to the number of
+            players.  These cards are then auctioned.
+          * **Bidding**: The first player bids any number of their coins. Play
+            continues clockwise wherein the next player must either bid or
+            pass.  Note that **bidding is not required**.  A player can pass
+            right away and take the lowest value card on the table (see below).
+              * *If they bid*, the bid amount must be more than the previous
+                bid. Bidding continues until all players have passed.
+              * *If they pass*, they take the property that remains with the
+                lowest value.  Then, they take back half their bid, rounded
+                down and the rest is returned to the bank.  **If the person
+                is the last to pass, they pay all bid money to the bank**.
+              * Purchased properties are placed face down in from of the
+                player.
+              * The person who took the most valuable property turns over
+                the next set of Property cards and begins the next auction
+                by bidding (or passing).
+              * Repeat until [all Property cards have been sold](#phase_2).
+                Unused coins are kept by the players as they will be worth
+                their face value at the end of the game.
+    - name: Playing, Phase 2
+      id: phase_2
+      text: |
+          * **Setup**: Turn up a number of Currency cards equal to the number
+            of players. Each player picks up their Property cards to form
+            a hand.
+          * **Play**:
+              1. Each player places 1 Property card face down in front of
+                 themselves.
+              2. All players simultaneously reveal their Property cards.
+              3. The person with the most valuable Property card takes the
+                 highest Currency card.  The 2nd most valuable Property takes
+                 the 2nd most valuable Currency card, and so on.
+              4. Property cards are discarded from the game
+              5. Flip a new set of Currency cards and repeat the auction until
+                 everyone has sold all their properties.
+    - name: Game End
+      text: |
+          Players add up their Currency cards and any remaining coins.  The
+          person with the most money wins. If there is a tie, the person with
+          the most value in coins wins.
