@@ -1,0 +1,141 @@
+name: "Foundations of Rome"
+description: "Build your own Rome [See this on BGG]()"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+sections:
+    - name: Setup
+      text: |
+          * Lay out the City board, Deed board, and Score board.  Be sure to
+            use the correct side (smaller for 2-3 players, larger for 4-5).
+          * Each player picks a color and takes the tray and cubes of their
+            color.
+          * Score cubes should be placed on their dedicated places on the
+            Score board.
+          * Pick a start player and give them the Start Player token.
+              * The start player takes 5 coins and each other takes 1 more
+                than the previous. e.g. the 4th player would take 8 coins.
+          * Place the rest of the coins near the board.
+          * If playing with less than 5 players, remove some cards:
+              * **4 players**: Remove all the red deeds.
+              * **3 players**: Remove all the red and purple deeds.
+              * **2 players**: Remove all the red, purple, and blue deeds.
+          * Shuffle the remaining deeds and deal 6 to each player.
+              * **Optional draft variant**: You may draft deed cards instead
+                of just using the randomly dealt cards. To do this (after
+                the 6 cards have been dealt):
+                  1. Each player selects a card from their hand and places it
+                     face down.
+                  2. After all players have selected a card, everyone
+                     simultaneously reveals their cards and places a lot marker
+                     on the corresponding location on the City board.
+                  3. Each player passes the remaining cards to the person on
+                     their left.
+                  4. Repeat this until all cards have been drafted.
+          * Each player places lot markers corresponding to their deeds.  Then,
+            players keep the deed cards in a pile in front of themselves.
+          * Split the remaining deed cards in approximately 3 equal piles and
+            place them on the 3 eras on the Deed board.
+          * Flip over the top 6 cards from Era 1.
+          * **If playing with Monuments**:
+              * Shuffle all the Monument cards together.
+              * Turn over a number of Monuments equal to the number of players
+                + 3 and place them near the City board.  Place the matching
+                monuments on them.
+              * Return the unused monuments and their cards to the box.
+    - name: Player Turns
+      text: |
+          Players do **1** of the following on their turn.
+
+          * **Take Income**: Take 5 silver plus an amount of silver equal
+            to the value of any commercial buildings you've built.
+          * **Buy a Deed**:
+              1. Pay the amount of silver shown above the deed and take the deed
+                 card.
+              2. Slide the other deeds from right to left fill in the open
+                 space.
+              3. Fill the last spot with the top card from the current era.
+              4. Place one of your lot markers on the matching lot on the
+                 city board.
+              5. **If the last deed for the current era was purchased, do NOT
+                 fill the deeds from the next era yet**.  Instead, proceed to
+                 the [End of an Era](#end_era).
+          * **Construct a Building**: Build a building from your player supply
+            with the following rules:
+              * You can build on empty lots you own without restriction.  If
+                you are doing this, simply replace the lot markers with a
+                building.
+              * You can replace an already built building(s) **as long as the
+                new building is larger in size**. If that would leave owned
+                spaces open, be sure place lot markers in those owned lots.
+                **You can never replace a building that is the same size or
+                larger**.
+              * **If you have constructed a residential building**, move your
+                population marker up the the Population tracker equal to the
+                amount of citizens on the building you built.
+              * *If you are playing with Monuments*:
+                  * If you meet the requirement (if any) for the Monument and
+                    as well as the above conditions, you may build that
+                    Monument.  Place a Monument marker of your color on
+                    the newly built Monument.
+    - name: End of an Era
+      id: end_era
+      text: |
+          When all available deeds for the current Era have been purchased (not
+          when the deck runs out), the Era ends.
+
+          * When the deed board is empty, **each player takes one final turn
+            to collect income or build**, including the player who purchased
+            the last deed.
+          * Pass the Start Player token to the player to the left of the
+            1 who took the last turn in the previous Era.  They will begin the
+            next Era.
+          * Perform [end of Era scoring](#end_era_scoring).
+      sections:
+          - name: End of Era Scoring
+            id: end_era_scoring
+            text: |
+                * **Residential Buildings**:
+                    * Each player verifies the total number of citizens on
+                      constructed buildings matches their position on the
+                      Population tracker.
+                    * All ties are friendly, so any tied players get the same
+                      points/bonuses.
+                    * The player with the most citizens scores victory points
+                      equal to their position plus the era bonus:
+                        * Era 1: 4 points
+                        * Era 2: 7 points
+                        * Era 3: 10 points
+                    * Each other player scores a number of points equal to
+                      the number of citizens the next player in front of them
+                      has. **You must have at least 1 citizen to gain these
+                      points!**
+                * **Civic Buildings**:
+                    * Players score victory points for symbols on adjacent
+                      buildings. **Buildings are only adjacent if they share
+                      an edge (orthogonal adjacency)**.
+                * **Commercial Buildings**:
+                    * Each player takes a number of silver equal to the value
+                      of all their constructed buildings. **If it is the
+                      final Era, players score victory points instead of
+                      collecting silver**.
+                    * Each player scores points for any buildings that show
+                      a point value on their uncovered spot on their player
+                      board.
+                * **Monuments**: If playing with Monuments, take the listed
+                  silver or points on the Monument card for the monument you
+                  built.  These generally score the same as their regular
+                  building type.
+                * After all players have collected their silver and victory
+                  points, refill the Deed board from the next Era and begin
+                  the next Era.
+    - name: End of Game
+      text: |
+          The game ends after the 3rd Era.  In addition to the [End of Era
+          Scoring](#end_era_scoring), score the following:
+
+          * **Reminder**: Commercial buildings should receive victory points
+            instead of silver at the end of the 3rd Era.
+          * Players score 1 victory point for each lot marker they have on
+            the City board (marking empty, owned lots).
+
