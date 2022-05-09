@@ -1,5 +1,5 @@
 name: "Foundations of Rome"
-description: "Build your own Rome [See this on BGG]()"
+description: "Build your own Rome [See this on BGG](https://boardgamegeek.com/boardgame/284189/foundations-rome)"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
@@ -130,6 +130,7 @@ sections:
                   points, refill the Deed board from the next Era and begin
                   the next Era.
     - name: End of Game
+      id: end_of_game
       text: |
           The game ends after the 3rd Era.  In addition to the [End of Era
           Scoring](#end_era_scoring), score the following:
@@ -138,4 +139,173 @@ sections:
             instead of silver at the end of the 3rd Era.
           * Players score 1 victory point for each lot marker they have on
             the City board (marking empty, owned lots).
+          * *If playing with [Trading and Stealing](#trading_stealing)*,
+            add the points shown on any Favor tokens the player has.
+          * *If playing with [Objectives](#objectives)*, add any points from
+            completed objectives.
+          * *If playing with [Invocations](#invocations)*, add any points on
+            **unused** Invocation cards.
+    - name: Modules
+      sections:
+          - name: Trading and Stealing
+            id: trading_stealing
+            text: |
+                This module is recommended for 4-5 players.  There are 3 ways
+                to add the module to the game:  *Trading*, *Stealing*, or
+                *Both*.
 
+                * Regardless of which combo of mechanisms being used, each
+                  player receives 2 Favor tokens at the start of the game.
+                    * **The 4 VP side of the token is only used when using
+                      *Stealing***. Only the 2 VP side should be used when just
+                      playing with *Trading*.
+                    * At the end of the game, players earn VP based on the
+                      Favor tokens they have.
+                * **Trading**: On your turn, you may trade empty lots you own
+                  with any players that wish to trade with you. **Trading can
+                  only involve the active player**.
+                    * When trading, lots, silver, and favor tokens can be used
+                      to make a trade. *If playing with
+                      [Invocations](#invocations), players may use unused or
+                      ongoing Invocation cards as part of a trade.
+                    * Players may make promises as part of the trade, but
+                      **promises are not binding and can be broken**.
+                    * Trades can be done in addtion to taking your normal turn.
+                    * **Building can NEVER be traded**.
+                * **Stealing**: During your turn, you may forcefully take an
+                  **empty** lot from another player.
+                    * This, like Trading, is a free action that can be done
+                      in addition to your normal action.
+                    * **You can never seize a building, only an empty lot**.
+                    * You must own **at least 2** lots and/or buildings
+                      orthogonally adjacent to the lot you are stealing.
+                    * You must have at least one 2 VP Favor token.  Flip this
+                      to the 4 VP side and give it to the player you are
+                      stealing from.
+                    * Once stolen, take the Deed card and replace the lot
+                      token with one of yours.
+                    * **A Favor token on the 4 VP side is "spent" and may
+                      not be used to steal**.
+                        * If you are playing with Trading as well, the 4 VP
+                          token can be used in a trade, but remains in its
+                          "spent" state.
+          - name: Objectives
+            id: objectives
+            text: |
+                This module allows for new ways to acquire VP.  It can be
+                played 2 different ways: Hidden Objectives and Public
+                Objectives. In either case, people that have met objectives
+                score bonus points during the [end of game](#end_of_game)
+                scoring.
+
+                * **Hidden Objectives**: At the beginning of the game, each
+                  player is dealt 2 objectives. Players choose one and removes
+                  the other from the game.
+                * **Public Objectives**: At the beginning of the game, lay out
+                  a number of objectives face up equal to the number of
+                  players. Multiple players can complete each objective.
+                * Clarification: **Contiguous lots**.  If 2 or more lots share
+                  an orthogonally adjacent edge, they are considered
+                  contiguous.
+          - name: Invocations
+            id: invocations
+            text: |
+                * **Setup**: After Deed cards have been dealt to players
+                  and separated into 3 decks, but before flipping 6 face
+                  up during setup, deal 9 Invocation cards face down at
+                  random. Shuffle 3 Invocation cards into each Era deck.
+                    * **IMPORTANT**: Some Invocation cards can only be used
+                      with certain modules. Remove cards that do no match
+                      modules you are using.
+                * Invocation cards are treated like Deed cards and can be
+                  purchased.  Once purchased, the player keeps it face down
+                  until used.
+                * Activating an Invocation card is a free action.
+                * Unless otherwise specified, it can only be used on your turn.
+                * After using an Invocation card, it is placed face up in your
+                  Deed pile.
+                * Some Invocation cards have ongoing abilities, keep these
+                  separate and face up in your play area.
+                * Some Invocation cards show a VP value. These points **are
+                  only awarded if the Invocation card has NOT been used**.
+          - name: Player Roles
+            id: roles
+            text: |
+                * **Setup**: Shuffle the player Role cards and deal 2 face down
+                  to each player. Players secretly select 1 and remove the
+                  other from the game.  Once all players have selected, all
+                  Role cards are flipped face up and abilities are shared.
+          - name: Will of the Consul
+            id: consul
+            text: |
+                This module is only playable with 2-4 players.  You may use
+                Monuments, but **no other modules may be combined with this**.
+            sections:
+                - name: Setup
+                  text: |
+                      1. Setup the game as usual.
+                      2. Select an unused player color to use as the Consul on
+                         the victory point and Population trackers.
+                      3. Players and the Consul begin the game with 5 VP, but
+                         still 0 VP.
+                      4. Place the Consul card **PLANNING** side face up in
+                         front of the 1st player.  That player will control
+                         the Consul until the end of the Era.
+                      5. Shuffle the size 1 Building tokens and create a face
+                         down pile.  Do the same for other sizes.
+                      6. Select a difficulty:
+                          * **Standard**: The Consul starts with 0 Deed cards.
+                          * **Hard**: The Consul starts with 2 random Deed
+                            cards.  Place a Building token on each lot.  If
+                            the lots are adjacent, place a size 2 token.
+                          * **Challenge**: The Consul starts with 4 random Deed
+                            cards.  Place a Building token on each associated
+                            lot.  Make the largest building possible in case
+                            of adjacency.
+                          * If playing with the Monuments module, *Hard* or
+                            *Challenge* difficulties are recommended.
+                - name: Gameplay
+                  text: |
+                      * Players take turns as usual. After the start player
+                        finishes their turn, the must flip the Consul card to
+                        the **READY** side and do the following:
+                          1. Take the leftmost Deed card. Place this in a
+                             separate pile for the Consul.  Slide the cards down
+                             and draw a new card as normal.
+                          2. Construct a building token.
+                              * If the new lot does not expand an area for
+                                the Consul, take a random token from the
+                                size 1 pile and place it in the new lot.
+                              * If the new lot connects to one or more of the
+                                Consul's existing buildings, place the largest
+                                building tile possible on those lots.  Remove
+                                the replaced tokens and place them in token
+                                discards based on their size.
+                                  * If this causes 1 or more lots to become
+                                    empty, draw the largest token that can take
+                                    that spot(s) and place it.
+                              * If the face down token pile is empty, shuffle
+                                the discards and add them face down.
+                              * **If there are no more of the needed building
+                                size, the Consul takes 7 VP instead**.
+                          3. Flip the Consul card back to the **PLANNING** side.
+                - name: Special Rules
+                  text: |
+                      * **Population Scoring**: Players do not receive VP as
+                        normal for their population.  Instead the player with
+                        the most Population (including the Consul) will get
+                        the majority bonus. All other players receive a VP
+                        *penalty* for the diff between their Population and
+                        the player with the most.  The rest of the buildings
+                        score as normal.
+                      * **Consul's Commercial Buildings**: When the Consul
+                        places Commercial buildings, it changes the
+                        *minimum* price on the board.
+                          * Every 2 silver on the Consuls buildings raises
+                            the *minimum* price by +1 silver.  Place coins
+                            on the Deed board to remind people of this.
+                      * **End of an Era**: Pass the Consul card and control of
+                        the Consul to the next clockwise player.
+                      * **Winning and Losing**: After final scoring, the
+                        players win if each player has a higher score than the
+                        Consul.  If not, the Consul wins.
