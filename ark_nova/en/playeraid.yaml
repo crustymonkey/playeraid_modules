@@ -1,0 +1,149 @@
+name: "Ark Nova"
+description: "Build your zoo and contribute to conservation efforts [See this on BGG]()"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+sections:
+    - name: Setup
+      text: |
+          * Place the game board and place the Break token on the start
+            space corresponding to player count.
+          * Shuffle the 9 [**bonus tiles**]!#d5d600! and place a random tile on
+            each of the 4 open [**yellow**]!#d5d600! spaces.
+          * Shuffle the zoo cards and place them face down on the board.  Deal
+            6 **face-down** cards from the deck to the spaces on the board.
+          * Place the 2 organizers near the board.
+          * Place the Association board next to the game board.
+              * Place 1 partner zoon of each continent and 1 of each university
+                on their spaces on the Association board.
+              * Shuffle the base Conservation project cards and place them
+                face down next to the board. Flip 3 cards face up below the
+                board, or 4 cards in a 4 player game.
+              * **In a 2 player game**, take 6 player tokens of an unused
+                player and cover:
+                  * On the base Conservation project cards:
+                      * the left level on the left card
+                      * the middle level on the middle card
+                      * the right level on the right card
+                  * Cover the 3 spaces in the left column of the donation
+                    area on the Association board.
+          * Shuffle the Final Scoring cards and place them face down
+            next to the Association board.
+          * Randomly determine a start player.
+          * **For each player**:
+              * Take a Map A zoo map.
+                  * You can also play with Map 0 for a more advanced game.
+                  * You can also play with Map 1-8.  Deal 2 random maps to
+                    each player, then each player chooses to use 1 of them.
+              * If the Zoo map has starting instructions on it, follow those.
+              * Take a set of Action cards and place "Animals" on its
+                [blue]!blue! side under the 1 slot and randomize the other
+                4 cards and slot them, also on their [blue]!blue! sides.
+              * Take all components of a chosen color.
+                  * Place the counters for appeal, conservation, and
+                    reputation on their tracks on the game board. On the
+                    Appeal track:
+                      * The start player on space 0, the 2nd player on space 1,
+                        and so on.
+              * Place 7 of the player tokens (cubes) on the spaces on the
+                left edge of their zoo map.
+              * Place 1 of the Association workers standing up on the notepad.
+                Lay the 3 remaining workers on the spaces below the notepad.
+              * Take 25 money from the supply.
+              * Draw 2 Final Scoring cards and place them next to your board.
+                *You will only score one of these at the end of the game*.
+              * Draw 8 Zoo cards and choose 4 of them to keep, discarding the
+                rest.
+          * Reveal the 6 cards on the display (folders).
+    - name: Gameplay
+      text: |
+          The game is played in a series of turns that are interrupted for
+          *breaks*, when things are put on hold for administration, then
+          resumed with the next player.
+
+          Each turn consists of performing 1 action (which may trigger effects
+          and bonuses).  The action is performed by executing one of the
+          5 action cards below your zoo map.
+      sections:
+          - name: Your Zoo Map
+            text: |
+                This is where you'll build your zoo. There are some key
+                things to know:
+
+                * **You are not allowed to build on rock and water**.
+                * Some animals require water or rock touching their enclosure.
+                * You cannot build on ![level 2](/static/img/ark_nova/l2.png)
+                  spaces until you have upgraded your build action to level 2.
+                * Some spaces show a [**yellow ⬠**]!#d5d600! bonus space, which
+                  you receive when the space is covered.
+                * When you support a conservation project, you will take one
+                  of the player tokens (cubes) on the left side of the board
+                  and place it on a Conservation card. You'll take the
+                  uncovered bonus at that time.
+                * Partner zoos and universities are placed on the right side
+                  of your zoo map from the bottom to the top. Spaces showing
+                  a [**yellow ⬠**]!#d5d600! bonus space are activated when
+                  covered.
+                    * Your Association card must be upgraded to take a 3rd
+                      partner zoo.
+                    * Each partner zoo reduces the cost of playing an
+                      animal card by 3 money for matching continent icons.
+                    * Universities grant the bonuses shown on the.
+                * Association workers are also used from the bottom to the
+                  top. When hired, they are placed standing on your notepad.
+                * You may have a maximum of 5 X-tokens.
+          - name: The Break Track
+            text: |
+                The Break token is moved via different means during the
+                game. When it reaches the last space on the track, a break
+                occurs with the steps below at the end of that player's turn.
+                The player that pushed it to the end receives 1 X-token.
+
+                1. Everyone discards down to their hand limit of 3, or 5 if
+                   they have the appropriate university.
+                2. Remove any Multiplier, Venom, and/or Construction tokens
+                   on your Action cards and return them to the supply.
+                3. Everyone returns all their Association workers to their
+                   notepads on their zoo maps.
+                4. Replenish any missing partner zoos and universities.
+                5. Discard the bottom 2 cards of the display (folders 1 and 2),
+                   move the remaining cards down, and replenish the display.
+                6. Take income.  Some effects (e.g. take cards from the
+                   display) will require things to be executed in turn order,
+                   otherwise, these items can be done simultaneously.
+                    1. Collect income according to the appeal of your zoo.
+                       This is indicated by the darker color above the appeal
+                       spot on the board.
+                    2. Take 1 money for each unique building, special
+                       enclosure, **occupied** standard enclosure, and
+                       pavilion adjacent to each kiosk.
+                    3. Collect income indicated by the
+                       ![income](/static/img/ark_nova/income.png) icon on
+                       Sponsor cards and your zoo map.
+                7. Return the Break token to its starting space for your
+                   player count.
+                8. Continue the game with the next player's turn.
+          - name: Action Cards
+            text: |
+                The number on the slot of each action card indicates its
+                strength when used. Once the action has been completed, the
+                action card is removed, all cards to the left are slid to the
+                right to fill the space, and removed action card is put in
+                slot 1.
+
+                * You can use X-tokens to increase the strength of the action
+                  by 1 for each token used.
+                    * These are returned to the supply when used.
+                    * **Note**: This may allow you to increase the strength
+                      of your action to more than 5!
+                    * You cannot use X-tokens that would be gained from the
+                      action to increase the strength of the action.
+                * Some zoo cards have an effect "after finishing".  These are
+                  done after the action is complete and action cards have
+                  been moved.
+            sections:
+                - name: Cards
+                  text: |
+                      ## Level 1
+                      **Advance the Break token 2 spaces. Then draw cards
+                      from the deck OR snap**.
