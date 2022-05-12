@@ -93,6 +93,7 @@ sections:
                   top. When hired, they are placed standing on your notepad.
                 * You may have a maximum of 5 X-tokens.
           - name: The Break Track
+            id: break
             text: |
                 The Break token is moved via different means during the
                 game. When it reaches the last space on the track, a break
@@ -147,3 +148,63 @@ sections:
                       ## Level 1
                       **Advance the Break token 2 spaces. Then draw cards
                       from the deck OR snap**.
+
+                      * 1st advance the Break token 2 steps. If you get to
+                        the end of the track, see [the instructions](#break) for
+                        resolving the Break track at the end of your turn.
+                      * Compare the strength of the action with the table on
+                        the card to find the number of cards to draw.
+                      * If you execute the action with a **strength of 5+**,
+                        you may **instead** take 1 card from the display
+                        (Snapping).  You may take **any card, regardless of
+                        your reputation**.
+
+                      ## Level 2
+                      **Advance the Break token 2 spaces. Then draw cards
+                      from the deck or within reputation range OR snap**.
+
+                      * You may draw cards from within your rep. range and/or
+                        from the top of the deck (in any order).
+                      * You may also snap with a strength of **at least 3**.
+                        and like the Level 1 action, this allows you to take
+                        any card, regardless of reputation.
+                      * This will also let you progress past 9 on the rep.
+                        track.
+
+                      ## Important Notes
+                      * When taking cards from the display, regardless of how,
+                        **the cards are only replenished at the end of your
+                        turn!**.  This is done by sliding existing cards down
+                        and refilling any open spaces at the top.
+                      * You may **not** look through the discard pile.
+                - name: Build
+                  text: |
+                      ## Level 1
+                      **Build exactly 1 building of your choice with maximum
+                      size of <strength> on your zoo map.  Pay 2 money per
+                      space.**
+
+                      * **Available**: Kiosk, pavillion, standard enclosure,
+                        and Petting Zoo.
+                      * The size of the building is equal to the number of
+                        spaces it covers.
+                      * **Each zoo can only contain 1 Petting Zoo**.
+                      * Enclosures are used to accommodate animals.
+                      * Building a pavillion increases the appeal of your zoo
+                        by 1.
+                      * The building cost (money) is payed to the supply.
+                      * The building must be built adjacent to an existing
+                        building.
+                          * **If it is your 1st building**, you can build it
+                            such that 1 space must be on a border space.
+                      * You can only build on empty spaces.  **You cannot build
+                        on rock or water spaces**.
+                      * You can't build on
+                        [level 2](/static/img/ark_nova/l2.png) (level 2) spaces.
+                      * **A kiosk must be at least 3 spaces from another
+                        kiosk**.
+                      * Standard enclosures are built with the empty side
+                        face up.  Note that the Petting zoo is the same on
+                        both sides.
+                      * If you cover a space with a [**yellow ⬠**]!#d5d600!,
+                        you immediately take the bonus.
