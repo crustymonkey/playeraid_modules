@@ -72,7 +72,7 @@ sections:
 
                 * **You are not allowed to build on rock and water**.
                 * Some animals require water or rock touching their enclosure.
-                * You cannot build on ![level 2](/static/img/ark_nova/l2.png)
+                * You cannot build on ![level 2](/static/img/ark_nova/l2_build.png)
                   spaces until you have upgraded your build action to level 2.
                 * Some spaces show a [**yellow ⬠**]!#d5d600! bonus space, which
                   you receive when the space is covered.
@@ -88,7 +88,7 @@ sections:
                       partner zoo.
                     * Each partner zoo reduces the cost of playing an
                       animal card by 3 money for matching continent icons.
-                    * Universities grant the bonuses shown on the.
+                    * Universities grant the bonuses shown on them.
                 * Association workers are also used from the bottom to the
                   top. When hired, they are placed standing on your notepad.
                 * You may have a maximum of 5 X-tokens.
@@ -200,7 +200,7 @@ sections:
                       * You can only build on empty spaces.  **You cannot build
                         on rock or water spaces**.
                       * You can't build on
-                        ![level 2](/static/img/ark_nova/l2.png) (level 2)
+                        ![level 2](/static/img/ark_nova/l2_build.png) (level 2)
                         spaces.
 
                       * **A kiosk must be at least 3 spaces from another
@@ -235,7 +235,7 @@ sections:
                           * Note that any "after finishing" bonuses only
                             trigger at the end of the Build action.
                       * You can now build on
-                        ![level 2](/static/img/ark_nova/l2.png) (level 2)
+                        ![level 2](/static/img/ark_nova/l2_build.png) (level 2)
                         spaces.
                       * **If you cover every space in your zoo**, not including
                         water/rocks, **immediately increase the zoo appeal
