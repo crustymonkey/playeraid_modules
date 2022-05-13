@@ -2,7 +2,7 @@ name: "Ark Nova"
 description: "Build your zoo and contribute to conservation efforts [See this on BGG]()"
 text_type: markdown
 credits: "Jay Deiman"
-enabled: false
+enabled: true
 sections:
     - name: Setup
       text: |
@@ -200,7 +200,9 @@ sections:
                       * You can only build on empty spaces.  **You cannot build
                         on rock or water spaces**.
                       * You can't build on
-                        [level 2](/static/img/ark_nova/l2.png) (level 2) spaces.
+                        ![level 2](/static/img/ark_nova/l2.png) (level 2)
+                        spaces.
+
                       * **A kiosk must be at least 3 spaces from another
                         kiosk**.
                       * Standard enclosures are built with the empty side
@@ -208,3 +210,234 @@ sections:
                         both sides.
                       * If you cover a space with a [**yellow ⬠**]!#d5d600!,
                         you immediately take the bonus.
+
+                      ## Level 2
+                      **Build as many different buildings as you like
+                      with a maximum total size of <strength> on your zoo
+                      map**.
+
+                      * **Newly available**: Large Bird Aviary and the Reptile
+                        House.
+                          * If built, you may **immediately** move animals
+                            from standard enclosures to the the new building.
+                              * **You are not allowed to do this at any other
+                                point in the game**.
+                      * **Each zoo can only contain 1 Reptile House and 1
+                        Large Bird Aviary!**
+                      * This action does **not** allow you to build *unique
+                        buildings*, those come into play via Sponsor cards.
+                      * You can now build more than 1 building with 1 action.
+                        **You can not build 2 identical buildings though**.
+                        The total size cannot exceed the <strength>.
+                          * Each building should be built in its entirety
+                            before building the next building, which includes
+                            taking bonuses.
+                          * Note that any "after finishing" bonuses only
+                            trigger at the end of the Build action.
+                      * You can now build on
+                        ![level 2](/static/img/ark_nova/l2.png) (level 2)
+                        spaces.
+                      * **If you cover every space in your zoo**, not including
+                        water/rocks, **immediately increase the zoo appeal
+                        by 7**.
+                - name: Animals
+                  text: |
+                      ## Level 1
+                      **Play Animal cards from your hand**.
+
+                      * Compare the strength of the action with the table on
+                        the card to determine the number of cards that can
+                        be played.
+
+                      1. Check the conditions on the left side of the card
+                         to make sure you meet them.
+                      2. Pay the cost to play the animal in the upper left of
+                         the card.
+                          * **If you have a partner zoo matching the continent,
+                            pay 3 less per continent icon**.
+                          * If the card gives you money for playing the animal,
+                            you can **not use this money to pay for the
+                            animal**.
+                      3. Fill an empty enclosure.
+                          * The standard enclosure must be at least the size
+                            required by the animal (upper left of card). Flip
+                            the enclosure to its occupied side. **Make sure
+                            any water/rock requirements are met for the
+                            enclosure**.
+                          * Petting zoo animals can **not** be put into a
+                            standard enclosure.
+                          * All reptiles and birds can be put in the Reptile
+                            House and Large Bird Aviary, respectively.
+                      4. Place the animal card next to your zoo map.
+                      5. Execute all effects.
+                          * Increase your appeal as indicated on the card.
+                          * Check for any conservation project points or
+                            reputation increases on the card.
+                          * If the text effect says "after finishing", do this
+                            after you've completed your Animals action.  **All
+                            other effects on the card should be finished before
+                            moving on to the next Animal card**.
+                          * If multiple effects trigger simultaneously, you
+                            decide the order to execute them.
+
+                      ## Level 2
+                      **Play Animal card from your hand or within reputation
+                        range**.
+
+                      * When upgraded, you can play animals directly from the
+                        display.
+                          * The card must be in your reputation range.
+                          * **You must pay an additional cost equal to the
+                            number on the folder**.
+                          * Do not replenish the display until after your turn.
+                      * You may increase the reputation of your zoo by 1 if
+                        you have a strength of at least 5. This is done at the
+                        **beginning** of your action.
+                      * You may play ![level 2](/static/img/ark_nova/l2.png)
+                        (level 2) Animals.
+                - name: Association
+                  text: |
+                      ## Level 1
+                      **Perform exactly 1 association task**
+
+                      * You need at least 1 unused worker to perform this task.
+                      * Place the worker on Association board. If 1 of **your**
+                        workers is already on the task, you must place **2
+                        workers** to perform the task. **If 3 of your workers
+                        are already on the task, you cannot do this task**.
+                      * Make sure you have the required strength for the task.
+                      * **Str. 2**: Increase the rep. of your zoo by 2.
+                      * **Str. 3**: Take a partner zoo from the association
+                        board and place it in the lowest empty space on your
+                        zoo board.
+                          * You can **not** take a partner zoo you already have.
+                          * **Your association action must be level 2 to take
+                            a 3rd and 4th partner zoo.
+                          * Each partner zoo reduces the cost of playing
+                            Animal cards matching the continent by 3 money per
+                            continent icon on the card.
+                          * Some animals *require* a partner zoo.
+                      * **Str. 4**: Take a university from the board and place
+                        it on your zoo map in the lowest spot.
+                          * Take bonuses and advance your rep. counter if
+                            shown on the university.
+                          * You can **not** take a university you already have.
+                      * **Str. 5**: You may either support a project already
+                        in play or play a Conservation project card from your
+                        hand and support that.
+                          * If you play a new project card, place it **above**
+                            the Association board in the leftmost space. If
+                            there is a project there, slide all projects to
+                            the right first.
+                              * If there are more projects than you can
+                                have for your player count (1 per player),
+                                discard the right-most card.  Tokens on the
+                                card are returned to players' **supplies**.
+                          * To support a project, you must fulfill the
+                            requirement for the space on the card.
+                          * **You can not support a project that already
+                            has your token on it**.
+                          * The token to cover the space on the project card
+                            comes from the left hand side of your zoo map,
+                            **not your supply**.  Take the uncovered bonus
+                            immediately.
+                          * Take any additional bonuses shown on the project
+                            card.
+
+                      ## Level 2
+                      **Perform one or more different Association tasks. You
+                      may make 1 donation**
+
+                      * You may take more than 1 task if you have the 1 or 2
+                        workers necessary for **each task**.
+                      * The total value of all tasks can not exceed the
+                        strength of the action.
+                      * For Conservation projects, you may play a project
+                        directly from the display within your reputation
+                        range.  **You must pay an amount of money equal to
+                        the number on the folder**.  Replenish the display
+                        at the end of your turn.
+                      * **In addition** to association task(s), you may make
+                        1 donation.  Pay the smallest amount of money in an
+                        uncovered space and cover the space with a token
+                        **from your supply**, not your zoo map.  Gain 1
+                        conservation point.
+                          * If all spaces are covered, additional donations
+                            all cost 12 money.
+                          * To donate, you **must** have completed at least
+                            1 Association action.
+                - name: Sponsors
+                  text: |
+                      ## Level 1
+                      **Play exactly 1 Sponsor card OR advance the Break token
+                      and take money**.
+
+                      * The strength of the action must be at least the
+                        strength shown on the card.
+                      * You must meet all conditions on the left hand side of
+                        the card.
+                      * Execute the instant or recurring effect of the card
+                        and then place it next to your zoo map.
+                      * **Alternatively**, you can use this action to advance
+                        the Break token <strength> steps and take <strength>
+                        money for doing so. You always take <strength> money
+                        regardless of how far the Break token moves.
+
+                      ## Level 2
+                      **Play 1 or more Sponsor cards OR advance the Break
+                      token and take money**
+
+                      * You may play multiple Sponsor cards for 1 action.
+                      * The strength of your action **plus 1** must be at
+                        least as high as the sum of the levels on played cards.
+                      * If you play multiple cards, you complete everything
+                        on 1 card before moving on to the next.
+                      * If cards have "after finishing" in the text, this is
+                        executed after your entire action is complete.
+                      * You may play Sponsor cards from the display within
+                        your reputation range. Pay an **additional** amount
+                        equal to the number of the folder. Do not replenish
+                        the display until the end of your turn.
+                      * If you use this action to advance the Break token,
+                        **take 2x the money**.
+                      * You can now play ![level 2](/static/img/ark_nova/l2.png)
+                        (level 2) Sponsor cards.
+                - name: X-Token
+                  text: |
+                      **Take 1 X-token**.
+
+                      * If you can't do another action or you don't want to
+                        do another action, you can use this to take 1 X-token.
+                          * This is performed using any Action card, but the
+                            strength isn't used.
+                          * Move the selected action card to slot 1 and adjust
+                            the other cards as normal.
+                      * **You can only have a max of 5 X-tokens so you can't
+                        take this action if you already have 5 tokens**.
+    - name: End of Game
+      text: |
+          ## End of Game Trigger
+          * The game end is triggered if, at the end of a turn or during a
+            break, a player's Conservation and Appeal counters are ever in the
+            **same scoring area**.  Note that there are multiple appeal spaces
+            in most conservation areas.
+          * If the end of game is triggered at the end of your turn, all
+            **other** players get 1 final turn, **but not you**.
+          * If the end game is triggered during a break, **all** players get
+            1 final turn.
+
+          ## Final Scoring
+          * **If no player reached 10 conservation points, all players should
+            discard one of their Final Scoring cards now**.
+          * Gain any conservation or appeal points from Final Scoring cards.
+          * Gain any conservation or appeal points from any cards with the
+            hourglass (also, brown stripe in the top left) symbol on them.
+          * Your final score is your appeal value minus the **lowest appeal
+            value** in the space your conservation token exists. This means
+            your score **may be negative**. The person with the highest score
+            wins.
+              * If there is a tie, the tied player who supported the most
+                Conservation projects wins. (Count the number of missing tokens
+                from the left side of player boards)
+              * If there is still a tie, the players share the victory.
+
