@@ -1,0 +1,317 @@
+name: "Genotype"
+description: "Genetically modify pea plants [See this on BGG](https://boardgamegeek.com/boardgame/252752/genotype-mendelian-genetics-game)"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+sections:
+    - name: Setup
+      id: setup
+      text: |
+          1. Place the board.
+          2. Place the 5 offspring dice and the 2 parent gene tiles next to
+             the board and their matching punnet squares.
+          3. Create a supply of coins and trait markers.
+          4. Place 4 starting coins on the board in the matching spots
+             next to the 4 punnet squares.
+          5. Place the round tracker on the 1 space (upper right).
+          6. Place the 4 abacus price markers on their starting spaces
+             (darker beads).
+          7. Place the new plot tiles, dice slots, and assistant cards
+             next to the research upgrades area.
+              1. Draw 3 assistant card and place them face up next to the
+                 deck.
+          8. Shuffle the pea plant and tool cards, then place them face down
+             next to the nursery and tool shed (respectively).
+               1. Flip cards face up to fill the nursery and tool shed from
+                  their decks.  (See the table below for the number of cards
+                  based on player count)
+          9. Give each player a player mat as well as 3 action markers and
+             3 phenotype research markers in their color.
+              1. The 2 additional action markers for each player are placed
+                 with the research upgrades.
+              2. Each player takes 1 coin, then draws 3 pea plant and 1 tool
+                 cards from their decks.  Players then place 1 pea plant
+                 in a garden plot on their player mat, keep 1 of the 
+                 remaining 2, and discard the last.
+          1. Give the 1st player marker to the player who has most recently
+             done any garden work.
+
+          ## Pea Plant and Tool Cards Table
+          | **Players** | 1-2 | 3 | 4-5 |
+          | ----------- | --- | - | --- |
+          | **Cards**   |  3  | 4 |  5  |
+    - name: Gameplay
+      text: |
+          The game takes place over 5 rounds, with each round consisting of
+          3 phases.
+      sections:
+          - name: Working Phase
+            id: working
+            text: |
+                In this phase, players take turns placing action markers and
+                excuting the actions selected.
+            sections:
+                - name: Gardening
+                  id: gardening
+                  text: |
+                      This action is taken on your player mat. Follow these
+                      steps for this action:
+
+                      1. Draw 1 pea plant or tool card, either face up or face
+                         down.
+                      2. Harvest any pea plant cards that have all their traits
+                         covered with trait markers. Return trait markers to the
+                         supply and place the pea plant face down next to your
+                         player mat for end game scoring.
+                      3. You may place pea plant cards from your hand in any
+                         open slots on your player mat.
+                - name: Temporary Dice Slot
+                  text: |
+                      * When you place an action marker in one of the slots on
+                        your player mat, there is no immediate effect.
+                      * During
+                        the [plant breeding phase](#breeding_phase), you will
+                        be able to take an additional die and place it in this
+                        slot.
+                - name: Setting Parent Genes
+                  text: |
+                      * Take 1 of the 4 set parent genes actions.
+                      * You then either add 1 gene tile to the board face
+                        up on either side **or** remove a gene tile.
+                        **You cannot flip a tile already on the board*.
+                      * If there is a coin next to the corresponding punnet
+                        square, take it.
+                - name: Shifts
+                  text: |
+                      ## 1st Shift
+                      * Taking this action has no immediate effect, but it will
+                        allow you take 1st pick of a die during the plant
+                        breeding phase.
+                      * If there is a coin next to the corresponding punnet
+                        square, take it.
+
+                      ## 2nd Shift
+                      * Taking this action has no immediate effect, but it will
+                        allow you take 1 earlier pick of a die during the plant
+                        breeding phase.
+                      * The 2nd shift may hold any number of action markers.
+                      * Action markers are added to space from right to left.
+                          * Players will also receive their picks from right to
+                            left.
+                - name: Set Phenotype Research Goal
+                  text: |
+                      * Pay the cost shown on the action space (2-3 coins) and
+                        place 1 of your phenotype research markers on any
+                        unoccupied research space.
+                      * During end game scoring, you will earn additional
+                        points for each completed pea plant with the matching
+                        genotype(s) above their chosen goal(s).
+                - name: Treasury
+                  text: |
+                      * Take 2 coins.
+                - name: University
+                  text: |
+                      * Pay the cost shown (1-2 coins) to validate (cover) any 1
+                        trait on your pea plant cards.
+                - name: Nursery and Tool Shed
+                  text: |
+                      * Take the nursery action to draw 2 pea plant cards from
+                        the face up cards or the deck.
+                          * Add these cards to your hand.
+                          * **Pea plants can only be placed on your player
+                            mat with a [gardening](#gardening) action**.
+                      * Take the tool shed action to draw 1 tool card from
+                        the face up cards or the deck.  See
+                        [tool cards](#tool_cards) for a list of effects.
+          - name: Plant Breeding Phase
+            id: breeding_phase
+            text: |
+                1. Roll all 20 dice and sort result according to the current
+                   punnet square layout for dice **I-IV**.
+                    * A die showing an **X** is rerolled **exactly once**.
+                        * If it shows a number, put it in the appropriate place.
+                        * If it again shows an **X**, place it in the *De Novo*
+                          mutations area for its color (see below).
+                2. Players take turns picking dice to validate (cover) traits
+                   on their pea plants. Each die taken is used to cover a trait
+                   on the player's board and then is place in an unused die
+                   slot.  **In order to take a die, the player *must* have an
+                   available die slot and *must* use the die**.
+                     1. Players with 1st shift spots take a die of the matching
+                        color
+                     2.  In right to left order, players with action markers
+                        on the 2nd shift select **any** 1 die.
+                     3. Finally, players continue taking dice in turn order
+                        beginning with the 1st player until everyone passes.
+
+                ## *De Novo* Mutations
+                * The dice in these slots can be taken instead of normal dice.
+                  When taking taking these dice, they are used in **1** of 2
+                  ways:
+                    * Gain 1 coin and place the **X** die in a die slot.
+                    * "Mutate" another die: Take the **X** die and another
+                      die of the same color and place them in 2 dice slots.
+                      You may validate (cover) **any trait of the die color**.
+          - name: Research Upgrade Phase
+            text: |
+                * **Skip this phase in round 5**.
+                * Players can purchase 1 or more permanent upgrades.
+                * Turns are taken in **reverse turn order**.  Start with the
+                  player to the right of the 1st player.
+                * There are 4 types of research upgrades:
+                    * **New Plot**: Take a new plot tile and place it next
+                      to your player mat.
+                    * **Dice Slot**: Take a dice slot and place it next to your
+                      play mat.
+                    * **Action Marker**: Take an additional action marker in
+                      your player color.
+                    * **Hire Assistant**: Take 1 of the available face up
+                      [Assistant cards](#assistants) and place it next to
+                      your player mat.  **Assistant cards are not refilled
+                      until the end of the round**.
+                * Player must pat the cost in coins of the current price of
+                  that upgrade. **Each time a player purchases an upgrade,
+                  the price is increased by 1**.
+                * Players continue taking turns (again, in **reverse turn
+                  order**) buying 1 upgrade at a time until all players have
+                  passed.
+                * Players may choose not to buy any upgrades.
+          - name: End of Round
+            text: |
+                * Advance the round tracker.
+                * Pass the 1st player marker clockwise.
+                * Move each abacus marker 1 space to the left.
+                * Discard the remaining pea plant, tool, and assistant cards.
+                  Refill tool and pea plant cards based on player count in
+                  the [setup](#setup). If decks have run out, shuffle the
+                  discards to make a new deck.
+                * Refill 1 coin next to each punnet square.
+                * Return all action markers to players.
+                * Return all dice to their pools next to the board.
+                * **Do NOT** remove or modify the parent gene tiles or any
+                  of the players' phenotype research markers, pea plants,
+                  trait markers, or research upgrades.
+                * Start the next round by going back to the
+                  [working phase](#working).
+    - name: End of Game
+      text: |
+          The game ends after the plant breeding phase of round 5.  **Each
+          player may harvest any completed pea plant cards**.
+
+          * **Completed pea plant cards**: Score the points printed on completed
+            pea plants.
+          * **Phenotype research goals**: Score the indicated points for each
+            instance of the matching trait(s) among completed pea plants.
+          * **Incomplete research**: Players score 1 point per trait marker
+            on their incomplete pea plants.
+          * **Unspent coins**: Players score 1 point for each unspent coin.
+
+          The player with the most points wins.  If tied, the player with
+          the most completed pea plants wins.  If there's still a tie,
+          the tied players share the victory.
+    - name: Tool Cards
+      id: tool_cards
+      text: |
+          These provide a 1 time benefit and are kept in hand until played.
+          Discard these once played. These can be played any time during the
+          [working phase](#working) and do not replace your normal action.
+          **Tool cards with an → may only be played when the condition to
+          the left of the arrow is met**.
+
+          ![seed bag](/static/img/genotype/seed_bag.png) **Seed Bag**: Draw
+          5 pea plant cards from the deck, keep 2, and discard the rest.
+
+          ![wattering funnel](/static/img/genotype/wat_fnl.png) **Watering
+          Funnel**: Validate (cover) any 1 trait. **This must be played
+          immediately when received!**
+
+          ![dissertation](/static/img/genotype/diss.png) **Dissertation**:
+          Pay 1 coing to set a phenotype research goal.
+
+          ![flower pot](/static/img/genotype/fl_pot.png) **Flower Pot**:
+          Play next to your player mat and immediately take 1 pea plant
+          card from the nursery or deck and place it on the flower pot.
+          This acts as another plot in your garden **until the plant is
+          harvested, after which the pot is discarded.
+
+          ![grafe knife](/static/img/genotype/grft_knife.png) **Graft
+          Knife**: Play when taking a die to immediately take another die.
+          Place the additional die on graft knife.
+
+          ![rake](/static/img/genotype/rake.png) **Rake**: Play when taking
+          a die to validate (cover) any 1 trait of the die color instead
+          of using the die as normal.
+
+          ![pollen brush](/static/img/genotype/pln_brush.png) **Pollen
+          Brush**: Play when validating (covering) a trait to cover every
+          copy of the same genotype on your pea plants.
+
+          ![hl pw gl](/static/img/genotype/hlpwgl.png) **Hand Lens,
+          Pocket Watch, Garden Line**: Play when taking the parent gene,
+          1st shift, or 2nd shift (respectively) to gain 2 coins.
+
+          ![grant](/static/img/genotype/grant.png) **Grant**: Play when
+          purchasing a research upgrade to discount it by 2 coins.
+    - name: The Assistants
+      id: assistants
+      text: |
+          Assistants provide ongoing benefits.  Assistants showing the
+          ![tap](/static/img/genotype/tap.png) symbol may only be used
+          once per round.  Tap the card to show it's used.  **Assistant
+          cards with an → may only be played when the condition to the left
+          of the arrow is met**.
+
+          ![brother alipius](/static/img/genotype/bro_ali.png) **Brother
+          Alipius**: When [gardening](#gardening), draw another card, face
+          up or from the deck.
+
+          ![sis elizabeth](/static/img/genotype/sis_eli.png) **Sister
+          Elisabeth**: Once per [working phase](#working) you may validate
+          (cover) a trait that matches 1 of the phenotype research markers
+          you have placed.
+
+          ![sis anna](/static/img/genotype/sis_anna.png) **Sister Anna**:
+          Once per [working phase](#working) you may pay 1 coin to validate
+          (cover) a trait.
+
+          ![father omari](/static/img/genotype/fth_omari.png) **Father
+          Omari**: You may place an action marker on this card during
+          the [working phase](#working) to take a special action.
+          * Roll 1 die of each color and re-roll any **X** results until
+            they are not **X** results.
+          * For each die, you may validate 1 matching trait (according to
+            matching punnet squares) on your pea plants as though you had
+            taken a die.
+          * Return the dice after using them.
+
+          ![father anton](/static/img/genotype/fth_anton.png) **Father
+          Anton**: In the [breeding phase](#breeding_phase), you are always
+          1st in the 2nd shift area **without placing an action marker**.
+          After 1st shifts, you select a die before anyone in the 2nd shift
+          area.
+
+          ![brother franz](/static/img/genotype/bro_franz.png) **Brother
+          Franz**: You have 2 additional dice slot during the [breeding
+          phase](#breeding_phase), but **you must pay 1 coin to use them
+          for the round**.  Pay before taking the 1st die that would be
+          placed here.
+
+          ![sister maria](/static/img/genotype/sis_maria.png) **Sister
+          Maria**: Once per [breeding phase](#breeding_phase), when taking
+          a die, you may validate (cover) any trait of that color instead
+          of using the die normally.
+
+          ![brother leopold](/static/img/genotype/bro_leo.png) **Brother
+          Leopold**: All your coin costs are reduced by 1, **to a minimum
+          of 1**.
+
+          ![sister may](/static/img/genotype/sis_may.png) **Sister May**:
+          Whenever you validate (cover) a trait, you may validate every
+          copy of the same genotype on your pea plants.
+
+          ![brother edward](/static/img/genotype/bro_ed.png) **Brother
+          Eduard**: This acts as a permanent extra with its own pea
+          plant that automatically refills. When hired, immediately take
+          1 pea plant card (face up or from the deck) and place it on
+          this card.  When the pea plant on this is harvested, take another
+          pea plant in the same way.
