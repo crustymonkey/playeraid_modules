@@ -41,7 +41,7 @@ Your directory should be layed out as follows:
 The layout of your data in your YAML/JSON file is pretty simple.  The allowed key values in the mappings are pretty straightforward here.
 
 ## The Top Level of the Data Structure
-This will have the following 5 mapping items:
+This will have the following 7 mapping items (some optional):
 
 * **name** (required): This is the name that will show up on the playeraid.net home page
 * **description** (required):  This is a short description of the game.  This could just be a simple link to the BGG page
