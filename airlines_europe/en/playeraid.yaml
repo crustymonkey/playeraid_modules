@@ -2,6 +2,7 @@ name: Airlines Europe
 description: Acquire shares and build up the various arilines in Europe in order to earn the most money. [See it on BGG](https://boardgamegeek.com/boardgame/90419/airlines-europe)
 credits: Keith Rudolph
 enabled: true
+thumbnail: https://cf.geekdo-images.com/MWSJ6c001o3HAk00qek9Rw__thumb/img/ZgcRUnCdSNZZyCnpBBs1ST5ESwE=/fit-in/200x150/filters:strip_icc()/pic975416.jpg
 text_type: markdown
 sections:
     - name: Setup
