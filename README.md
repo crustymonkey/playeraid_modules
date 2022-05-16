@@ -49,6 +49,12 @@ This will have the following 5 mapping items:
 * **sections** (required): This will map to a list of your sections (more on `sections` below).
 * **enabled** (optional): This is either *true* or *false* for whether it is enabled.  You must set this to *true* to enable your player aid.  The default is *false*
 * **text_type** (optional): This is either *html* or *markdown*. If not specified, the default is *html*.
+* **thumbnail** (optiona): This is a url pointing to a thumbnail image. There is an included tool, `gthumb.py`, in the root directory that can be used to fetch a thumbnail url from BGG. Note that you will have to `pip3 install py-bgg` to use the script.  I can also add this for you if you don't include it.
+
+```
+$ ./gthumb.py yamatai
+Yamataï: https://cf.geekdo-images.com/3F1FUd4HRn2xLJpXEfmMbA__thumb/img/80Hmhnfjv7BEKgHBNP6rGcM5tfk=/fit-in/200x150/filters:strip_icc()/pic3357724.jpg
+```
 
 ## Sections
 This is the meat of your player aid.  Each section will have up to 3 items in it, including another `sections` mapping.  This means you can have nested sections within sections.  You can find examples of these on https://playeraid.net.
