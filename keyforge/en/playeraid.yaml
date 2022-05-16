@@ -2,6 +2,7 @@ name: "KeyForge"
 description: A "unique" game from Fantasy Flight [see it on BGG](https://boardgamegeek.com/boardgame/257501/keyforge-call-archons)
 credits: Jay Deiman
 enabled: true
+thumbnail: https://cf.geekdo-images.com/ZzJ2NGZz4CXxr1VIRkQZtA__thumb/img/ywNMVg_jcW9XNWvn80xOB_nT7Eo=/fit-in/200x150/filters:strip_icc()/pic4298867.jpg
 text_type: markdown
 sections:
     - name: Setup

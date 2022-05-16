@@ -2,6 +2,7 @@ name: Targi
 description: A 2-player worker placement game, that works!  [See it on Boardgamegeek](https://boardgamegeek.com/boardgame/118048/targi)
 credits: Jay Deiman
 enabled: true
+thumbnail: https://cf.geekdo-images.com/wHg4fOf48cs1kw1PDOk1tQ__thumb/img/6l-jqYlfECK1SVSsUs7FXUheKzQ=/fit-in/200x150/filters:strip_icc()/pic3958793.jpg
 text_type: markdown
 sections:
     - name: Setup

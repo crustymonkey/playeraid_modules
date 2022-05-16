@@ -2,6 +2,7 @@ name: Carson City with Gold & Guns and Horses & Heroes expansions
 description: Compete to become the richest person while building up Carson City, Nevada. [See it on BGG](https://boardgamegeek.com/boardgame/39938/carson-city)
 credits: Keith Rudolph
 enabled: true
+thumbnail: https://cf.geekdo-images.com/DxNZPNkfjS-exbFa_ASi0Q__thumb/img/ABNJVaqRzjMTxfs8Rn7IZWXFN4s=/fit-in/200x150/filters:strip_icc()/pic577030.jpg
 text_type: markdown
 sections:
     - name: Setup

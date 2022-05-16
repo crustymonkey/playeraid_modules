@@ -60,7 +60,7 @@ def do_search(args):
             name = item['name'][0]['value']
         else:
             name = item['name']['value']
-        print(f'{name}: {item["thumbnail"]["TEXT"]}')
+        print(f'\033[0;33m{name}\033[0m: {item["thumbnail"]["TEXT"]}')
 
 
 

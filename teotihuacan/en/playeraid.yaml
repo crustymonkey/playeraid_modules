@@ -2,6 +2,7 @@ name: "Teotihuacan with Late Preclassic Period"
 description: Use your worker dice to raise the legendary and breathtaking Pyramid of the Sun. [See it on BGG](https://www.boardgamegeek.com/boardgame/229853/teotihuacan-city-gods)
 credits: Keith Rudolph
 enabled: true
+thumbnail: https://cf.geekdo-images.com/wW5xjgBJcFyLaEWZwrYuKA__thumb/img/MppmP7GtDAfKiB5LiAl-ZtPxOPE=/fit-in/200x150/filters:strip_icc()/pic4583626.jpg
 text_type: markdown
 sections:
     - name: Setup

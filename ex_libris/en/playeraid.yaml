@@ -2,6 +2,7 @@ name: Ex Libris
 description: A game of fantasy librarians.  <a href="https://goo.gl/AY2jsV" target="_blank">See this on boardgamegeek</a>
 credits: Jay Deiman
 enabled: true
+thumbnail: https://cf.geekdo-images.com/DYOUITVYzZEC45u4suwezQ__thumb/img/27aO3vgzM7MwAPSiKLpehEpAsVI=/fit-in/200x150/filters:strip_icc()/pic3578008.png
 sections:
     - name: Setup
       text: >

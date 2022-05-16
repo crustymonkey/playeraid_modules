@@ -2,6 +2,7 @@ name: Stockpile with Continuing Corruption expansion
 description: Use your knowledge of the stock market to make more money than everyone else. [See it on BGG](https://boardgamegeek.com/boardgame/161614/stockpile)
 credits: Keith Rudolph
 enabled: true
+thumbnail: https://cf.geekdo-images.com/T7CvF_oFrEMNgS0Eyrbr5g__thumb/img/8ebaZ-3iSTwY0mvlc8FFULp8B4k=/fit-in/200x150/filters:strip_icc()/pic2537618.jpg
 text_type: markdown
 sections:
     - name: Setup

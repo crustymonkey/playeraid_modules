@@ -2,6 +2,7 @@ name: "Gentes"
 description: Develop your civilization through balancing between time and wealth consumption. [See it on BGG](https://www.boardgamegeek.com/boardgame/217780/gentes)
 credits: Keith Rudolph
 enabled: true
+thumbnail: https://cf.geekdo-images.com/PUF7QgKx50WOVuB0tEHLaw__thumb/img/4WS47K3z3mtKbWKJ2p5iGkIwSUo=/fit-in/200x150/filters:strip_icc()/pic3338929.jpg
 text_type: markdown
 sections:
     - name: Setup

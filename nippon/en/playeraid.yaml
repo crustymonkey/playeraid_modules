@@ -2,6 +2,7 @@ name: Nippon
 description: Develop your Zaibatsu's influence and power to usher in Japan's industrial era. [See it on BGG](https://boardgamegeek.com/boardgame/154809/nippon)
 credits: Keith Rudolph
 enabled: true
+thumbnail: https://cf.geekdo-images.com/DVJamHS1e24-scuM8aRH8g__thumb/img/GfDVi8Cdml30yla1ui0y3exXG7g=/fit-in/200x150/filters:strip_icc()/pic2683981.jpg
 text_type: markdown
 sections:
     - name: Setup

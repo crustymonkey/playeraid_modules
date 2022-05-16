@@ -2,6 +2,7 @@ name: "Civilization: A New Dawn"
 description: Streamlined civilization game.  See it on <a href="https://boardgamegeek.com/boardgame/233247/sid-meiers-civilization-new-dawn" target="_blank">BGG</a>.
 credits: Jay Deiman
 enabled: true
+thumbnail: https://cf.geekdo-images.com/S0GM2Mxfh8Tmvsdeog0W0g__thumb/img/FmFQ2XURW1ndAFqlvnUYV7cxCAA=/fit-in/200x150/filters:strip_icc()/pic3764168.jpg
 sections:
     - name: Setup
       sections:

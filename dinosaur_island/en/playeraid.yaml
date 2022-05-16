@@ -2,6 +2,7 @@ name: Dinosaur Island
 description: Build your own dinosaur park!  See more about it <a href="https://boardgamegeek.com/boardgame/221194/dinosaur-island" target="_blank">on Boardgamegeek</a>
 credits: Jay Deiman
 enabled: true
+thumbnail: https://cf.geekdo-images.com/hLJv1A1TwrMrLLIJhVpKVA__thumb/img/cHgvJgF-Gr6mgDKj51uPoqbjHQk=/fit-in/200x150/filters:strip_icc()/pic3429338.png
 sections:
     - name: Setup
       sections:

@@ -2,6 +2,7 @@ name: Mombasa
 description: Acquire shares and build up the various companies in Mombasa in order to earn the most money. [See it on BGG](https://boardgamegeek.com/boardgame/172386/mombasa)
 credits: Keith Rudolph
 enabled: true
+thumbnail: https://cf.geekdo-images.com/VceWk5QVkgIp6rWDl5qHKQ__thumb/img/_4ZkvkgZey9R2OJOw_TqF426Qew=/fit-in/200x150/filters:strip_icc()/pic2611318.jpg
 text_type: markdown
 sections:
     - name: Setup

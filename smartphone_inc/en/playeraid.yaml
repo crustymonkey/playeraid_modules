@@ -3,6 +3,7 @@ description: "Build your smartphone empire [See this on BGG]()"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
+thumbnail: https://cf.geekdo-images.com/Ndctxvd7kBXYubeYRKRqzw__thumb/img/hJtPqShJYdb8DsdnTvpdkXrx-CU=/fit-in/200x150/filters:strip_icc()/pic4258616.jpg
 sections:
     - name: Setup
       text: |

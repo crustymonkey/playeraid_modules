@@ -2,6 +2,7 @@ name: "Barrage with The Leeghwater Project"
 description: Nations vie for hydroelectric dominance in a dystopia where water is power. [See it on BGG](https://www.boardgamegeek.com/boardgame/251247/barrage)
 credits: Keith Rudolph
 enabled: true
+thumbnail: https://cf.geekdo-images.com/jEPmWvvYpqkWrKOzqIHFsg__thumb/img/kMLIpeqA6UcUvQg2AdMwwQoEIfU=/fit-in/200x150/filters:strip_icc()/pic4336469.png
 text_type: markdown
 sections:
     - name: Setup

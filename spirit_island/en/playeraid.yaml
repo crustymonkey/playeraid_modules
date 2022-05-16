@@ -2,6 +2,7 @@ name: "Spirit Island with Expansions"
 description: Island Spirits join forces using elemental powers to defend their home from invaders. [See it on BGG](https://www.boardgamegeek.com/boardgame/162886/spirit-island)
 credits: Keith Rudolph
 enabled: true
+thumbnail: https://cf.geekdo-images.com/a13ieMPP2s0KEaKNYmtH5w__thumb/img/SKiHQ4zAj8uVdtwxOYKIveY9jCo=/fit-in/200x150/filters:strip_icc()/pic3615739.png
 text_type: markdown
 sections:
     - name: Setup

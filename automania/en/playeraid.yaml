@@ -2,6 +2,7 @@ name: Automania
 description: Run your own car factory to try and produce the most popular cars on the market. [See it on BGG](https://boardgamegeek.com/boardgame/176544/automania)
 credits: Keith Rudolph
 enabled: true
+thumbnail: https://cf.geekdo-images.com/fPIcD46QczD1Og8EUafUTw__thumb/img/U72WAOEnl64mhQ5bqd3Tqkbh4N0=/fit-in/200x150/filters:strip_icc()/pic3749920.jpg
 text_type: markdown
 sections:
     - name: Setup

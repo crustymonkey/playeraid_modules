@@ -2,6 +2,7 @@ name: Yamatai
 description: For Queen Hamiko's Smile. [See it on BGG](https://boardgamegeek.com/boardgame/213893/yamatai)
 credits: Keith Rudolph
 enabled: true
+thumbnail: https://cf.geekdo-images.com/3F1FUd4HRn2xLJpXEfmMbA__thumb/img/80Hmhnfjv7BEKgHBNP6rGcM5tfk=/fit-in/200x150/filters:strip_icc()/pic3357724.jpg
 text_type: markdown
 sections:
     - name: Setup

@@ -2,6 +2,7 @@ name: "Railroad Revolution with Railroad Evolution"
 description: Manage your own railroad company and ruthlessly compete to be the most powerful railroad tycoon across all of America. [See it on BGG](https://www.boardgamegeek.com/boardgame/207691/railroad-revolution)
 credits: Keith Rudolph
 enabled: true
+thumbnail: https://cf.geekdo-images.com/0A9aGzLzmBxN_M6rgpb6Dg__thumb/img/pupJXts3kO3x05Ki-lhREAPWrhw=/fit-in/200x150/filters:strip_icc()/pic3200781.jpg
 text_type: markdown
 sections:
     - name: Setup
