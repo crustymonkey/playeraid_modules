@@ -3,6 +3,7 @@ description: "Buy and sell some property [See this on BGG](https://boardgamegeek
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
+thumbnail: https://cf.geekdo-images.com/dJh9HkZC346NgPTAicJq_A__thumb/img/3cgW5aP-JJeKSpZMjA0NFheMnfY=/fit-in/200x150/filters:strip_icc()/pic1513085.jpg
 sections:
     - name: Setup
       text: |
