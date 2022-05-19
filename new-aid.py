@@ -14,6 +14,7 @@ YAML_TPL = dedent('''
     text_type: {text_type}
     credits: "{credits}"
     enabled: false
+    thumbnail: https://example.com/image.png
     sections:
         - name: Setup
           text: |
@@ -34,11 +35,13 @@ def get_args():
         help='A short description for the module [default: %(default)s]')
     p.add_argument('-D', '--debug', action='store_true', default=False,
         help='Add debug output [default: %(default)s]')
-    p.add_argument('name',
+    p.add_argument('name', nargs='+',
         help='The name of the player aid.  This should be written in proper '
         'title format in terms of case and spacing')
 
     args = p.parse_args()
+
+    args.name = ' '.join(args.name)
 
     return args
 

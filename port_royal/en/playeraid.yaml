@@ -1,0 +1,9 @@
+name: "Port Royal"
+description: "Yarrr, gather some gold [See this on BGG]()"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+thumbnail: https://cf.geekdo-images.com/9lQIIxg_l6G-ZWmTqEHlOA__thumb/img/uiCYTRqVF3TMqfpFGM-O0az_Q4A=/fit-in/200x150/filters:strip_icc()/pic1949286.jpg
+sections:
+    - name: Setup
+      text: |
