@@ -7,3 +7,38 @@ thumbnail: https://cf.geekdo-images.com/9lQIIxg_l6G-ZWmTqEHlOA__thumb/img/uiCYTR
 sections:
     - name: Setup
       text: |
+        * If playing with less than 5 players, remove the special Expedition
+          that is 5 players only (only card **without** a coin on the back).
+        * Shuffle the remaining cards and set them face down.
+        * Deal 3 "coins" to each player face down from the draw pile.  This is
+          their personal display
+        * **Note**: Each time a player gains coins, draw the appropriate
+          number of cards from draw pile and place them face down with
+          every coin visible in your display, but don't look at the front of
+          the card.  Each card == 1 coin.
+        * The player who last visited a harbor is the start player.
+    - name: Gameplay
+      text: |
+        Players take turns being the *active player* with each turn consisting
+        of 2 phases, where sometimes the 2nd phase will be skipped.  If there's
+        a 2nd phase, then **after the active player**, each other player
+        may also act in that phase.  Then the active player changes.
+
+        If the draw pile is ever empty, shuffle the discard to create a new
+        draw pile.
+      sections:
+        - name: Phase 1: Discover
+          text: |
+            * The active player draws a card to place in the middle of the
+              table, forming the "harbor display".
+            * The player repeats the draw of cards until they either stop or
+              2 identically colored ships are in the harbor display.
+                * **Stopping**: Proceed to [phase 2](#phase_2).
+                * **"Busting"**: Drawing 2 ships of the same color **that
+                  cannot be repelled** will end the player's turn.
+                    * Discard all of the harbor display (except Expeditions)
+                      and move to the next player's turn.
+                    * All players with a Jester in their personal display gain
+                      1 coin.
+
+            * There are 4 different types of cards that behave differently:
