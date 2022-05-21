@@ -2,7 +2,7 @@ name: "Port Royal"
 description: "Yarrr, gather some gold [See this on BGG]()"
 text_type: markdown
 credits: "Jay Deiman"
-enabled: false
+enabled: true
 thumbnail: https://cf.geekdo-images.com/9lQIIxg_l6G-ZWmTqEHlOA__thumb/img/uiCYTRqVF3TMqfpFGM-O0az_Q4A=/fit-in/200x150/filters:strip_icc()/pic1949286.jpg
 sections:
     - name: Setup
@@ -27,18 +27,151 @@ sections:
         If the draw pile is ever empty, shuffle the discard to create a new
         draw pile.
       sections:
-        - name: Phase 1: Discover
-          text: |
-            * The active player draws a card to place in the middle of the
-              table, forming the "harbor display".
-            * The player repeats the draw of cards until they either stop or
-              2 identically colored ships are in the harbor display.
-                * **Stopping**: Proceed to [phase 2](#phase_2).
-                * **"Busting"**: Drawing 2 ships of the same color **that
-                  cannot be repelled** will end the player's turn.
-                    * Discard all of the harbor display (except Expeditions)
-                      and move to the next player's turn.
-                    * All players with a Jester in their personal display gain
-                      1 coin.
+          - name: "Phase 1: Discover"
+            text: |
+              * The active player draws a card to place in the middle of the
+                table, forming the "harbor display".
+              * The player repeats the draw of cards until they either stop or
+                2 identically colored ships are in the harbor display.
+                  * **Stopping**: Proceed to [phase 2](#phase_2).
+                  * **"Busting"**: Drawing 2 ships of the same color **that
+                    cannot be repelled** will end the player's turn.
+                      * Discard all of the harbor display (except Expeditions)
+                        and move to the next player's turn.
+                      * All players with a Jester in their personal display gain
+                        1 coin.
+              * There are 4 different types of cards that behave differently:
+                  * **Person**: If you draw a person, it goes into the harbor
+                    display (row of cards in the middle of the table). Each
+                    person has an ability at the top of the card. It will also
+                    have a shield with a number of victory points.
+                  * **Ship**: These can be added to the harbor display or
+                    repelled.
+                      * **Repelling**: If you have enough Swords on
+                        sailors/pirates **in your personal display** >= the
+                        number of swords depicted on the ship, you can repel
+                        it. If you do this, put the ship in the discard pile
+                        *instead of* into the harbor display. If you don't
+                        have enough swords, it **must** go into the harbor
+                        display.
+                          * You may only repel a ship that has just been drawn.
+                          * Swords are never spent, they can be used multiple
+                            times during your turn.
+                      * If you choose not to, or cannot, repel the ship, add it
+                        to the harbor display. **If this is the 2nd ship of a
+                        particular color, you have busted**. See "Busting"
+                        above for the process there.
+                  * **Expedition**: Put these cards in the middle of the table,
+                    but **separate from the harbor display**. These will stay
+                    where they are until a player claims it.
+                      * To claim an epedition, the player must have people
+                        with matching symbols >= to what is shown on the bottom
+                        of the expedition card.
+                      * The person cards used to take the expedition **are
+                        discarded**.
+                      * Take any gold show at the top of the expedition card.
+                      * Expeditions may be claimed at any time during a player's
+                        turn. Any number of expeditions may be claimed.
+                  * **Tax Increase**: If this is drawn, all players that have
+                    12+ coins, lose half (rounded down) of their coins.  Put them
+                    in the discard pile.
+                      * After coins are discarded, resolve the bottom of the
+                        tax increase with rewards based on what is shown.  Ties
+                        are friendly, so all tied players get the reward.
+                      * After resolving the bottom of the card, the tax increase
+                        is discarded.
+          - name: "Phase 2: Trade & Hire"
+            id: phase_2
+            text: |
+              In this phase, the active player will take 1-3 cards from the
+              harbor display, then **all other players, in clockwise order,
+              will have a chance to take 1 card**.
 
-            * There are 4 different types of cards that behave differently:
+              * The other players must pay for the card as normal
+                (if applicable, see below).
+              * Additionally, the other player **must pay the active player
+                1 coin to do this**.
+              * If a ship is taken, the coin(s) on the ship can be used to
+                pay the active player.
+
+              The number of cards the active player can take is based on
+              ships in the harbor display.
+
+              | Ships | Cards |
+              | ----- | ----- |
+              | **0-3 differently colored ships** | take 1 card |
+              | **4 differently colored ships** | take 2 cards |
+              | **5 differently colored ships** | take 3 cards |
+
+              Cards are taken 1 by 1, so the ability of 1 card may be available
+              for the next cards.
+
+              * **Trade**: The player takes 1 ship from the harbor display,
+                puts it in the discard pile, and gains the coins shown at the
+                top of the card.
+              * **Hire**: The player pays an amount of coins equal to the
+                cost in the bottom part of the person card. Then, they put the
+                person into their personal display. The ability at the top
+                of the card is **immediately available for use**.
+    - name: End of Game
+      text: |
+        * As soon as 1 player acquires 12 points in their personal display,
+          the end is triggered.  The round is finished such that everyone
+          has the same number of turns.
+        * If there is a tie in points, the player with the most coins left wins.
+        * If there is still a tie, the players share the win
+
+        ### End of Game Variant
+        * The game end is triggered when 1 player has 12 points **and at least
+          1 Expedition** in their personal display.
+        * All other rules are the same.
+    - name: Person Abilities
+      text: |
+        ### (5x each) Settlers, Captains, Priests, and (3x) Jack of all Trades
+        ![settler](/static/img/port_royal/settler.png)
+        ![captain](/static/img/port_royal/captain.png)
+        ![priest](/static/img/port_royal/priest.png)
+        ![jack](/static/img/port_royal/jack.png)
+
+        These will help you claim Expeditions.  The Jack of All Trades can be
+        used as any of the others.
+
+        ### (2x each color) Trader
+        ![trader yellow](/static/img/port_royal/trader_1.png)
+        ![trader black](/static/img/port_royal/trader_2.png)
+
+        The player will can 1 more coin for each Trader of the matching color.
+
+        ### (10x) Sailor and (3x) Pirate
+        ![sailor](/static/img/port_royal/sailor.png)
+        ![pirate](/static/img/port_royal/pirate.png)
+
+        The active player can you these to repel ships.
+
+        ### (6x) Admiral
+        ![admiral](/static/img/port_royal/admiral.png)
+
+        During [Phase 2](#phase_2), if there are 5 or more cards in the harbor
+        display **when it is your turn to take cards**, gain 2 coins.
+
+        ### (5x) Jester
+        ![jester](/static/img/port_royal/jester.png)
+
+        If you are **not** the active player during [Phase 2](#phase_2) and
+        it is your turn to take a card, but there are none left, gain 1 coin.
+        Additionally, if the active player busts such that [Phase 2](#phase_2)
+        is skipped, any player with a Jester gains 1 coin.
+
+        ### (4x) Governor
+        ![governor](/static/img/port_royal/gov.png)
+
+        When it is your time to take cards during [Phase 2](#phase_2), you may
+        take 1 extra card. If you are not the active player, **you must pay
+        the active player 1 coin per card taken**.
+
+        ### (4x) Mademoiselle
+        ![mademoiselle](/static/img/port_royal/mad.png)
+
+        The hire cost of a person is reduced by 1 coin. **The cost cannot be
+        discounted to less than 0**.
+
