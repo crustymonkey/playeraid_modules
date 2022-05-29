@@ -1,0 +1,147 @@
+name: "Libertalia: Winds of Galecrest"
+description: "Ride the wind and collect some booty [See this on BGG](https://boardgamegeek.com/boardgame/356033/libertalia-winds-galecrest)"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+bgg_id: 356033
+thumbnail: https://cf.geekdo-images.com/6e-V_Xb2IsAsMNXU18Fi6A__thumb/img/KJIHXXkkIU7R-oK5i9byIyGdfm4=/fit-in/200x150/filters:strip_icc()/pic6669033.jpg
+sections:
+    - name: Setup
+      text: |
+          * Place the board on the table on either the calm or stormy side.
+              * Optionally, you can use the tiles to randomize loot rewards
+                on either side (*Uncharted* mode).
+              * **Note that some tokens are only used with the Automa**.
+          * Put all the loot tokens in the bag.
+          * Each player takes a set of cards, score dial (set to 0), and a
+            graveyard tile in their matching color
+          * Mix all 6 reputation tokens (regardless of player count) and
+            place them randomly on the reputation track.
+          * **2 players**:
+              * Cover the 2nd and 3rd spaces of the island with the Midshipman
+                tile.
+              * Randomly place the active players' reputation tokens on the
+                3rd and 4th places of the reputation track.
+              * Place the rest of the reputation tokens on the other spaces of
+                the reputation track.
+    - name: Setup (Before Each Voyage)
+      id: before_voyage
+      text: |
+          * Randomly draw loot tokens from the bag to place in the "day" spaces
+            on the board equal to the number of players in the game.
+              * Only use the days corresponding to your current voyage.
+                  * **Voyage 1**: 4 days.
+                  * **Voyage 2**: 5 days.
+                  * **Voyage 3**: 6 days.
+              * **2 players**:  Place 3 loot tokens on the day spaces.
+          * 1 player is designated as the randomizer or [use the randomizer
+            available here](/libertalia_random).
+              * Only that person shuffles their deck.
+              * Then, they draw 6 cards from their randomized deck.
+              * Everyone else removes the same 6 cards.
+              * Add the chosen cards to each player's respective hands
+          * Each player gains coins equal to the number shown below their
+            reputation tokens.
+    - name: Gameplay
+      text: |
+          The game is played over the course of 3 voyages, with each voyage
+          getting longer by 1 day (see table).
+
+          * Whenever you gain or lose doubloons, only use coins (not your
+            score dial).  **The score dial is only changed at the end of a
+            voyage**.
+          * Whenever you are instructed to discard 1 of your char. cards,
+            place it face down on your graveyard tile.
+
+          | Voyage | Days |
+          | -----  | ---- |
+          | 1 | 4 |
+          | 2 | 5 |
+          | 3 | 6 |
+
+          * Each day, all players simultaneously select a card from their hand
+            and play it face down.
+          * When all players have selected their cards, reveal all cards.
+          * Place all revealed cards in ascending numerical order from left
+            to right.  Ties are broken by the reputation track (highest rep.
+            placed to the right).
+          * Proceed to the phases below:
+
+          ## Phases
+          1. **Daytime** ![daytime](/static/img/libertalia/daytime.png):
+             Starting with the leftmost char. and proceeding to the right,
+             activate any chars. with a daytime ability.
+          2. **Dusk** ![dusk](/static/img/libertalia/dusk.png):
+             Starting with the rightmost char. and proceeding to the left,
+             each player with a char. does the following:
+              1. Gain a loot token from the current day.
+              2. If your char. or the token have dusk abilities, resolve them
+                 now.
+              3. If your char. is still on the island, place it in your ship.
+              4. If any loot tokens remain, put them in the bag.
+          3. **Night** ![night](/static/img/libertalia/night.png):
+             All players simultaneously active all night abilities on chars in
+             their ship.
+      sections:
+          - name: Reputation
+            text: |
+                * Reputation is a tie-breaker for any ties in the game.
+                * When you gain reputation, move your token that many spaces
+                  to the right and slide any other tokens to the left to open
+                  your new slot.  The same is done when losing reputation, but
+                  in the opposite direction.
+                * If you lose more reputation than the track allows, lose 1
+                  doubloon for each rep. you would have lost.
+                * If you gain more reputation than the track allows, gain 1
+                  doubloon for each rep. you would have gained.
+                * The number on the space below reputation slot is the number
+                  of doubloons the player will receive before a voyage.
+                * All 6 spaces are always occupied, regardless of player count.
+          - name: Loot Tokens and Tiles
+            text: |
+                * All loot tokens accumulated are **public information**.
+                * If an ability would have you discard a loot token (from
+                  anywhere), that token is put back in the bag.
+                * Loot abilities are described on the board.
+                * Loot tokens with dusk abilities are **only triggered when
+                  they're first gained**, not on future dusk phases. They
+                  are also not triggered if passed between players.
+                * Some loot tokens have abilities that trigger at night.
+                * Anchor abilities trigger at the end of the voyage.
+                * Unless stated otherwise, all loot tokens are put back in
+                  the bag at the end of a voyage.
+          - name: 2-Player Mode
+            text: |
+                * The Midshipman is placed so it covers slot 2 and 3 on the
+                  island.
+                * Players place their characters respective of the Midshipman.
+                * If only 1 player has a char. ranked <= 20, place it directly
+                  to the left of the Midshipman.
+                * At dusk, if your character is directly to the left of the
+                  Midshipman, your opponent removes a loot token from the
+                  current day **before you gain a loot token**.
+                * The Midshipman counts as a character, but can never be
+                  discarded or gain/give anything.
+    - name: End of Voyage
+      text: |
+          After the night phase of the final day, do the following:
+
+          1. **Anchor abilities** ![anchor](/static/img/libertalia/anchor.png):
+             Activate all anchor abilities on loot tokens and chars. in your
+             ship in any order.  **You cannot "game" the order of operations
+             to avoid temporarily having fewer than 0 doubloons**.
+          2. **Score dials**: Increase your score dial by your number of
+             doubloons. Then, discard all your doubloons.
+          3. **Discard look tokens and chars. in ships**: Unless noted on a
+             char. or loot tile, put all loot tokens back in the bag and all
+             char. cards in your ship into your graveyard.  **Keep all
+             remaining cards in your hand though!**
+          4. After the 1st and 2nd voyage, go to the [setup steps for the next
+             voyage](#before_voyage).  [The game ends after the 3rd
+             voyage](#end_game).
+    - name: End of Game
+      id: end_game
+      text: |
+          * After the end of the 3rd voyage, the player with the highest score
+            dial wins.
+          * If there is a tie, the player with the highest reputation wins.
