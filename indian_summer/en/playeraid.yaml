@@ -1,0 +1,185 @@
+name: "Indian Summer"
+description: "Go on a hike and score some forest treasures [See this on BGG](https://boardgamegeek.com/boardgame/233678/indian-summer)"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+bgg_id: 233678
+thumbnail: https://cf.geekdo-images.com/bloH9_cfn7U0ZxilTblA9w__thumb/img/8L96NRWJxXeFgtYSivzGYPtMlNU=/fit-in/200x150/filters:strip_icc()/pic3749870.jpg
+sections:
+    - name: Setup
+      text: |
+          1. Shuffle the 6 forest floor boards and give each player a board
+             and a backpack.
+          2. Turn the 2 game boards to the multiplayer side and place them
+             next to each other in the middle of the table.
+          3. Place the animal tiles on their designated spaces on the
+             game board. Place the corresponding treasures on the 3
+             specially marked animal tiles.
+          4. Create a common supply of treasures and squirrels.
+          5. Shuffle the leaf tiles and each player starts with 5 random tiles
+             (below). Put the tiles in order from front (left) to back (right)
+             in the order shown below, starting at their backpack, which should
+             be the furthest left item. This is known as the Player Path.
+              1. 2 [greeen]!green!
+              2. 2 [orange]!orange!
+              3. 1 [red]!red!
+          6. Randomly place leaf tiles in a circle around the game board.
+             Leave an opening of ~1 hand width anywhere in the circle. This
+             is known as the Common Path.
+          7. Put the berry bush in the empty space of the common path.
+          8. Set aside the remaining leaf tiles for now.
+          9. Give each player 1 berry, 1 nut, and 1 mushroom.
+          10. The last person to have taken a stroll in a forest is 1st player.
+    - name: Gameplay
+      text: |
+          Players take turns in clockwise order. A turn consists of **1 main
+          action** plus any number of special actions that can be taken
+          **before or after** the main action.
+
+          The game end is triggered when 1 player has covered their **entire**
+          forest floor.  The round is played until all players have had
+          equal turns, and then proceed to [end of game](#end_game).
+
+          ## Main Action
+          You may perform 1 of the 2 main actions following [tile placement
+          rules](#tile_placement).  **You are not allowed to pass**.
+
+          1. Take 1 leaf tile from your player path and place it on your
+             forest floor.
+          2. Take 1 squirrel from the supply and place it on your forest floor.
+             Squirrels are **never placed into your supply**.
+
+          ## The Common Path
+          When the common path contains **less than 7 tiles**, refill it with
+          the tiles that were set aside during setup.  These are added to
+          the end of the current path. During the game, repeat this as
+          necessary until all tiles have been added to the common path.
+      sections:
+          - name: Tile Placement Rules
+            id: tile_placement
+            text: |
+                With the leaf tiles you may:
+
+                * [place them on empty squares]!green!.
+                * [place them on spaces with printed treasures]!green!.
+                * [flip them over and rotate them any way]!green!.
+                * [only place them on your own forest floor]!green!.
+                * [place them with the hole over empty forest floor]!green!.
+                * [place them with the hole over printed treasures]!green!.
+                * [place them on a line between 2 or more areas]!green!.
+                * [place leaf tiles or squirrels so they are **not** adjacent
+                  with other tiles (you can place them anywhere)]!green!
+                * [only place them in your main action]!green!.
+                * [not place them on animal tiles]!red!.
+                * [not place them on squirrels]!red!.
+                * [not place them overlapping or onto tiles]!red!.
+                * [not place them where the stick out over an edge of your
+                  forest floor]!red!.
+                * [never move them again when your main action is complete]!red!
+
+                With animal tiles, you may:
+
+                * [only put them on free holes in the leaf tiles whose outline
+                  corresponds to the shape of the animal]!green!
+
+                All other restraints apply for animal tiles as leaf tiles.
+          - name: Treasure Management
+            id: treasure_mgmt
+            text: |
+                * If you cover a printed treasure with the **hole** on your
+                  leaf tile, take the same treasure from the supply and cover
+                  that hole.
+                * Nothing happens if you completely cover up a treasure with
+                  a leaf tile or squirrel.
+                * When you have completed a 3x4 area of your board by covering
+                  all of the spaces in it (including holes), you immediately
+                  take all of the treasures in that area on your leaf tiles
+                  and add them to your supply.
+          - name: Player Path
+            id: player_path
+            text: |
+                Refill your player path immediately when you take the last
+                leaf tile from your player path.  To do this:
+
+                1. take the first 5 leaf tiles next to the berry bush and
+                   place them next to your backpack, **preserving the order**
+                   (first leaf tile is next to your backpack).
+                2. Then, move the berry bush to fill the gap.
+
+                You may also pay 1 berry to take new leaf tiles, even when you
+                still have leaf tiles.  See [treasures](#treasures) for more
+                information.
+          - name: Animal Tiles
+            text: |
+                * At any time during your turn, you may take a place an animal
+                  tile over **free** holes on your board.
+                    * The shape of the animal tile **must** correspond to the
+                      shape of the holes.
+                * Any printed treasures covered up are taken from the supply
+                  and added to your personal supply.
+                * **Note**: The holes **must be empty** when placing the
+                  animal tile.  They **cannot** have treasures over them.
+                * If you've taken an animal tile with a treasure on it, also
+                  take that treasure.
+
+    - name: Treasures
+      id: treasures
+      text: |
+          You can play use as many treasures as you would like before or
+          after your main action.  **Instead of a normal main action, you
+          may execute 1 alternative main action**. These will involve a
+          mushroom or feather.
+
+          You may have as many treasures as you like in your personal supply.
+
+          * ![berry](/static/img/indian_summer/berry.png) **Berry**:
+            Spending a berry allows you to refill your player path to 5 tiles.
+            If you already have 5 tiles, you may take a 6th tile.  You can
+            **never have more than 6 tiles** in your player path.
+          * ![nut](/static/img/indian_summer/nut.png) **Nut**: Spend a nut to
+            place a squirrel tile from the supply onto your forest floor.
+            The same rules apply if you fill an area as described under
+            [treasure management](#treasure_mgmt).
+          * ![mushroom](/static/img/indian_summer/mushroom.png) **Mushroom**:
+            Take the first leaf tile from **2 other players** (next to their
+            backpack) and place them on your forest floor.  If there is no
+            more space on your forest floor, you can then place only 1 of the
+            tiles, otherwise you **must** place both.
+              * **2 player game**: You take an opponents leaf tile and the
+                1st tile in the common path.
+              * If you take the last leaf tile from an opponent, they refill
+                their path immediately as described in the [player path
+                section](#player_path). If this happened to both players, they
+                refill in turn order.
+              * This is done **instead of your main action**.
+          * ![feather](/static/img/indian_summer/feather.png) **Feather**:
+            Place **2** leaf tiles from your player path onto your forest
+            floor.
+              * **You must have 2 leaf tiles on your player path to perform
+                this action!**
+              * This is done **instead of your main action**.
+
+          ### Exchanging Treasures
+          As depicted on the game board, you may exchange treasures in the
+          following manner:
+
+          * Exchange 1 treasure for a treasure of lower value.
+          * Exchange 2 berries for 1 nut.
+          * Exchange 2 nuts for 1 mushroom.
+          * Exchange 2 mushrooms for 1 feather.
+    - name: End of the Game
+      id: end_game
+      text: |
+          The game ends when 1 person has completely filled their forest floor
+          and the round completes such that everyone has had the same number
+          of turns.
+
+          * The player who has completed their forest floor wins.
+          * If there is a tie, the tied players should convert all their
+            remaining treasures to nuts and the **player with the most nuts
+            wins**.
+          * If there is still a tie, the player with a remaining berry wins.
+          * If there is still a tie, the players share the victory.
+
+          For the ordering of players that did not complete their forest floor,
+          the player with the least number of empty spaces ranks higher.
