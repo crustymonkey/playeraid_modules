@@ -2,6 +2,7 @@ name: Bruxelles 1893
 description: Build buidlings in the Art Nouveau style in the city of Brussels. [See it on BGG](https://boardgamegeek.com/boardgame/144592/bruxelles-1893)
 credits: Keith Rudolph
 enabled: true
+bgg_id: 144592
 thumbnail: https://cf.geekdo-images.com/sDga04VbcuQdapSSJme-Tg__thumb/img/SUmDJc11Sw3bvV1r5q_mF1IfJjU=/fit-in/200x150/filters:strip_icc()/pic1726346.jpg
 text_type: markdown
 sections:

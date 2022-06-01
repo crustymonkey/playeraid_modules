@@ -2,6 +2,7 @@ name: Star Wars - Rebellion
 description: The epic conflict between the Galactic Empire and the Rebel Alliance. [See it on BGG](https://boardgamegeek.com/boardgame/187645/star-wars-rebellion)
 credits: Keith Rudolph
 enabled: true
+bgg_id: 187645
 thumbnail: https://cf.geekdo-images.com/7SrPNGBKg9IIsP4UQpOi8g__thumb/img/gAxzddRVQiRdjZHYFUZ2xc5Jlbw=/fit-in/200x150/filters:strip_icc()/pic4325841.jpg
 text_type: markdown
 sections:

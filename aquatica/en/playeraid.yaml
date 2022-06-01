@@ -3,6 +3,7 @@ description: "Explore the ocean depths.  Check it out on [BGG](https://boardgame
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
+bgg_id: 283393
 thumbnail: https://cf.geekdo-images.com/_8WvjlAU1_Y0qhwTjXvbnA__thumb/img/8zjeyk9juPqsHIwuPt7wiZFia-M=/fit-in/200x150/filters:strip_icc()/pic5578646.jpg
 sections:
     - name: Setup

@@ -3,6 +3,7 @@ description: "Build your region in Tuscany [See this on BGG](https://boardgamege
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
+bgg_id: 300327
 thumbnail: https://cf.geekdo-images.com/_MfRr0gL7MZkqhea1qIyeA__thumb/img/jE0NT5PExNN-U-ppO01ts-tqtyw=/fit-in/200x150/filters:strip_icc()/pic5657331.jpg
 sections:
     - name: Setup

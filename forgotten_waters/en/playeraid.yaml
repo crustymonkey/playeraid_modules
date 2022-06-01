@@ -3,6 +3,7 @@ description: "Explore the seas! [See this on BGG](https://boardgamegeek.com/boar
 text_type: markdown
 credits: Jay Deiman
 enabled: true
+bgg_id: 302723
 thumbnail: https://cf.geekdo-images.com/gLnzfyJio2MYbG9J-uQSiQ__thumb/img/Th5Wf0ynMEA14i06HUSqzz-8g24=/fit-in/200x150/filters:strip_icc()/pic5253984.jpg
 sections:
     - name: Setup

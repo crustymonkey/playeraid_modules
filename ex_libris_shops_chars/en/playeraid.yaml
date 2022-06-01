@@ -2,6 +2,7 @@ name: Ex Libris (Shops and Characters)
 description: A game of fantasy librarians.  <a href="https://goo.gl/AY2jsV" target="_blank">See this on boardgamegeek</a>
 credits: Jay Deiman
 enabled: false
+bgg_id: 201825
 sections:
     - name: Library and Special Assistants
       sections:

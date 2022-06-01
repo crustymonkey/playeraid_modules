@@ -2,6 +2,7 @@ name: Heaven & Ale
 description: Heaven & Ale is a worker placement and tile laying game focused on managing your cloister with the right resources and expertise to brew the best beer. [See it on BGG](https://boardgamegeek.com/boardgame/227789/heaven-ale)
 credits: Sean Owens
 enabled: true
+bgg_id: 227789
 thumbnail: https://cf.geekdo-images.com/P0B68R2CLFTuiD8M9lCYPQ__thumb/img/1Omy3H6zspL0HKrUjgdolrGxmwk=/fit-in/200x150/filters:strip_icc()/pic3563904.jpg
 text_type: markdown
 
