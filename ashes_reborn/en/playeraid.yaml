@@ -31,14 +31,14 @@ sections:
                 1. **Roll dice**: Roll all your dice **in your exhausted pool**
                    and place them to the left of your reference cards (active
                    pool).
-                     * **One the 1st round**:  the player who rolls the most
+                     * **On the 1st round**:  the player who rolls the most
                        basic ![basic](/static/img/ashes_reborn/basic.png)
                        symbols chooses who should go 1st and that person
                        takes the first player token.  If there is a tie, reroll
                        all dice until there isn't a tie.
                 2. **Discard cards**: You may discard any number of cards from
                    your hand.
-                3. **Draw cards**: Draw back up to 5 cards.
+                3. **Draw cards**: Draw back up to **5** cards.
                     1. Starting with the 1st player, players alternate placing
                        1 wound token on their phoenixborn until all players
                        have placed wounds equal to the cards they should
@@ -120,15 +120,127 @@ sections:
                       turn when its conditions are met. **Each player can only
                       play 1 reaction per turn**.
                         * **Other Reactions**: Some cards have reaction
-                          abilities or effects on them (blue box). These may
-                          be played from your hand as reactions when conditions
-                          are met. **This counts toward your limit of 1
-                          reaction per turn**.
+                          abilities or effects on them ([blue box]!blue!).
+                          These may be played from your hand as reactions
+                          when conditions are met. **This counts toward your
+                          limit of 1 reaction per turn**.
               - name: "Main Action: Attack"
                 text: |
-                    When you attack, 1 or more of your **unexhausted** units
-                    will enter battle.
+                    When you attack, 1 or more of your **unexhausted** (no
+                    exhaustion ![exhaust](/static/img/ashes_reborn/exhaust.png)
+                    tokens) units will enter battle.
+
+                    * **Battle**: An attacker deals damage equal to its attack
+                      value and 1 exhaustion token is placed on it **and on
+                      the defender if they counter**.
+                    * **Counter**: Deal damage equal to the attack value of the
+                      defender to the attacker. **Attack and counter damage
+                      happen simultaneously**.
+
+                    ### Attacking a Phoenixborn
+                    1. **Declare attackers**: Choose any number of unexhausted
+                       units to be attackers.
+                    2. **Opponent declares blockers**: Your opponent may block
+                       each attacker with up to 1 unexhausted unit.
+                    3. **Resolve battles**: Resolve each battle 1 at a time.
+                        * If blocked, the attacker battles the blocker and the
+                          blocker counters.
+                        * If unblocked, the attacker battles the opponent's
+                          phoenixborn.
+
+                    ### Attacking a Unit
+                    1. **Declare attackers**: Choose **1** unexhausted unit
+                       to be the attacker.
+                    2. **Opponent declares guard**: Your opponent can guard
+                       with their phoenixborn or an unexhausted unit.
+                        * **A phoenixborn can only guard once per round, but
+                          may guard even if exhausted**.
+                    3. **Resolve battle**: 
+                        * If guarded, the attacker battles the guard.  If the
+                          guard is a unit, the guard counters.  If the guard
+                          is a phoenixborn, tap it to show it can't be used
+                          as a guard again this round.
+                        * If unguarded, the attacker battles the target unit.
+                          If it is unexhausted, your opponent may counter with
+                          it.
+              - name: "Main Action: Pass"
+                text: |
+                    When passing, you do nothing for your main action, but
+                    **you may still take a side action**. If your opponent
+                    does not pass on their next turn, you may take a main
+                    action on your next turn.
+              - name: Side Actions
+                text: |
+                    * **Pay a ![side](/static/img/ashes_reborn/side_action.png)
+                      Cost**: Play or activate a card with a 
+                      ![side](/static/img/ashes_reborn/side_action.png) play
+                      or activation cost.
+                    * **Activate a dice power**: Exhaust a die on it's power
+                      side to activate it's power effect. See the dice power
+                      reference card corresponding to that die.
+                    * **Meditate**: This allows you to raise the levels of your
+                      dice.  For each card you discard from the following
+                      options, turn an active die to a side of your choice.
+                        * Cards in your hand.
+                        * Cards off the top of your deck.
+                        * Ready spells from your spellboard.
           - name: Recovery Phase
             id: recovery_phase
             text: |
-                
+                During the recovery phase, each player simultaneously resolves
+                the following steps **in order**:
+
+                1. **Recover**: Remove a number of wounds from each unit equal
+                   to its recover value.
+                2. **Remove exhaustion**: Remove 1 exhaustion token from each
+                   card you have in play. Rotate your phoenixborn so it is
+                   upright.
+                3. **Exhaust dice**: Move any number of dice from your active
+                   pool to your exhausted pool.
+          - name: End of Round
+            text: |
+                Note that some effects take place *after* the
+                [recovery phase](#recovery_phase) as "at the end of the round"
+                effects.
+
+                * Resolve all of these effects one at a time starting with
+                  the 1st player, who resolves all of their effects before
+                  moving to the next player.
+                * The effects can be resolved in any order.
+                * After all effects are resolved, pass the 1st player token
+                  to the next player.
+    - name: Winning and Losing
+      text: |
+          If a player's phoenixborn has a number of wound tokens equal to or
+          greater than its life value, that phoenixborn is destroyed and the
+          other player wins.
+    - name: Clarifications
+      text: |
+          * **Damage, wound tokens and destruction**: When damage is dealt,
+            place a number of wound tokens on it equal to the amount of
+            unprevented damage.
+              * If a unit or phoenixborn has would tokens equal to its life,
+                it is destroyed.
+                  * A destroyed unit is discarded.
+                  * A player's phoenixborn being destroyed means that player
+                    loses.
+              * A card's life is not reduced when placing wounds on it.
+              * An effect that "deals damage" places wounds and destroys, but
+                an effect hat "destroys" does not deal damage or place wound
+                tokens.
+          * **Discarding cards**: When a card in play is discarded or removed
+            from play, set it aside **along with any cards underneath (attached)
+            to it**. These cards will go to the player's discard pile.
+              * **Discarded conjurations and conjured alteration spells return
+                to the owner's conjuration pile**.
+          * **Exhaustion tokens**: When a card has 1 or more of these tokens
+            on it, it is exhausted.
+              * Exhausted cards have no abilities or effects, but it retains
+                its attack, life, and recover values (on units).  It also
+                retains value bonuses (on alteration spells).
+              * Exhausted units **cannot** attack, block, guard or counter.
+              * Some cards have inexhaustable effects or abilities.  These
+                are indicated by a [yellow text box]!#696a01!. These remain
+                in effect even when exhausted.
+          * **Status tokens**: These are generic counters that can mean
+            different things as defined by their cards.
