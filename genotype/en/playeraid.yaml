@@ -171,7 +171,7 @@ sections:
                       [Assistant cards](#assistants) and place it next to
                       your player mat.  **Assistant cards are not refilled
                       until the end of the round**.
-                * Player must pat the cost in coins of the current price of
+                * Player must pay the cost in coins of the current price of
                   that upgrade. **Each time a player purchases an upgrade,
                   the price is increased by 1**.
                 * Players continue taking turns (again, in **reverse turn
@@ -228,21 +228,21 @@ sections:
           immediately when received!**
 
           ![dissertation](/static/img/genotype/diss.png) **Dissertation**:
-          Pay 1 coing to set a phenotype research goal.
+          Pay 1 coin to set a phenotype research goal.
 
           ![flower pot](/static/img/genotype/fl_pot.png) **Flower Pot**:
           Play next to your player mat and immediately take 1 pea plant
           card from the nursery or deck and place it on the flower pot.
           This acts as another plot in your garden **until the plant is
-          harvested, after which the pot is discarded.
+          harvested, after which the pot is discarded**.
 
           ![grafe knife](/static/img/genotype/grft_knife.png) **Graft
           Knife**: Play when taking a die to immediately take another die.
           Place the additional die on graft knife.
 
           ![rake](/static/img/genotype/rake.png) **Rake**: Play when taking
-          a die to validate (cover) any 1 trait of the die color instead
-          of using the die as normal.
+          a die to validate (cover) any 1 trait of the die color **instead
+          of** using the die as normal.
 
           ![pollen brush](/static/img/genotype/pln_brush.png) **Pollen
           Brush**: Play when validating (covering) a trait to cover every
@@ -313,7 +313,7 @@ sections:
           copy of the same genotype on your pea plants.
 
           ![brother edward](/static/img/genotype/bro_ed.png) **Brother
-          Eduard**: This acts as a permanent extra with its own pea
+          Eduard**: This acts as a permanent extra plot with its own pea
           plant that automatically refills. When hired, immediately take
           1 pea plant card (face up or from the deck) and place it on
           this card.  When the pea plant on this is harvested, take another
