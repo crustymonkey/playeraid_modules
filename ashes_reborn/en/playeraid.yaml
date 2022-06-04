@@ -1,0 +1,134 @@
+name: "Ashes Reborn"
+description: "Battle with your Pheonixborn (Rules version 1.5) [See this on BGG]()"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+bgg_id: 167400
+thumbnail: https://cf.geekdo-images.com/BxBWqnm98y1qgk9cEmStgQ__thumb/img/hMH88NFG6vP60vUif6fTr1ctsOA=/fit-in/200x150/filters:strip_icc()/pic5868255.jpg
+sections:
+    - name: Setup
+      text: |
+          1. Choose a deck or build a deck.
+          2. Place your phoenixborn in your play area with the information side
+             face up.
+          3. Place your conjuration pile face down to the left of your
+             phoenixborn.
+          4. Place the reference cards that correspond to your dice in your
+             play area and take a phases reference card.
+          5. Place all 10 of your dice to the right of your power reference
+             cards (exhausted pool).
+          6. Choose your 1st 5 by taking 5 cards of your choice from your
+             deck as your starting hand.  You **cannot** have more than 1 copy
+             of a card in your starting hand.  Shuffle the rest of your deck.
+          7. Make a supply of wound, exhaustion, and status tokens.
+    - name: Gameplay
+      text: |
+          The game is played over a series of rounds consisting of 3 phases
+          in each round.
+      sections:
+          - name: Prepare Phase
+            text: |
+                1. **Roll dice**: Roll all your dice **in your exhausted pool**
+                   and place them to the left of your reference cards (active
+                   pool).
+                     * **One the 1st round**:  the player who rolls the most
+                       basic ![basic](/static/img/ashes_reborn/basic.png)
+                       symbols chooses who should go 1st and that person
+                       takes the first player token.  If there is a tie, reroll
+                       all dice until there isn't a tie.
+                2. **Discard cards**: You may discard any number of cards from
+                   your hand.
+                3. **Draw cards**: Draw back up to 5 cards.
+                    1. Starting with the 1st player, players alternate placing
+                       1 wound token on their phoenixborn until all players
+                       have placed wounds equal to the cards they should
+                       have drawn but could not.
+          - name: Player Turns Phase
+            text: |
+                Players take turns taking 1 or 2 actions on their turn until
+                both players consecutively pass on their turn.
+
+                Each turn consists of 1 main action and 1 optional side action.
+                These can be taken in either order.
+
+                Once both players have passed for their main action
+                consecutively, move to the [recovery phase](#recovery_phase)
+            sections:
+              - name: "Main Action: Pay a Main Action Cost"
+                text: |
+                    Play or activate a card with the
+                    ![main](/static/img/ashes_reborn/main_action.png) symbol
+                    in the play or activation cost.
+
+                    ### Playing a Card
+                    Play a card from your hand by paying its cost(s).
+
+                    **Costs**:
+
+                    | Symbol | Usage |
+                    | ------ | ----- |
+                    | ![main](/static/img/ashes_reborn/main_action.png) | **Main action**: Take your main action for the turn |
+                    | ![side](/static/img/ashes_reborn/side_action.png) | **Side action**: Take your side action for the turn |
+                    | ![exhaust](/static/img/ashes_reborn/exhaust.png) | **Exhaust**: Place 1 exhaustion token on this card |
+                    | ![discard](/static/img/ashes_reborn/discard.png) | **Discard**: Discard a number of cards from your hand equal to the num shown |
+                    | ![magic](/static/img/ashes_reborn/magic_all.png) | **Magic**: Exhaust dice of the appropriate type and number.  Remember that higher level dice can be used to pay for lower level costs |
+                    |  | **Parallel Costs**: If 2 costs are connected, you pay one **or** the other, not both |
+
+                    ### Card Types
+                    There are 5 different types of cards in a player's deck and
+                    2 types that can be included in a player's conjuration pile.
+
+                    * **Ally (Unit)**: Play an ally to an empty slot on your
+                      battlefield.  **The number of slots in your battlefield
+                      is determined by the battlefield value of your
+                      phoenixborn**.
+                        * Attack: How much damage your ally does.
+                        * Life: How many wound tokens it takes to destroy the
+                          unit.
+                        * Recover: How many wounds are removed during the
+                          recovery phase.
+                    * **Conjuration (Unit)**: These start in a conjuration pile
+                      and are brought into play by other card effects.  They
+                      return to that conjuration pile when they leave play.
+                      Attack, life, and recover work the same as an ally
+                    * **Action Spell**: These are a 1-time effect that is then
+                      played to your discard pile.
+                    * **Alteration Spell**: These modify the units they are
+                      *attached* to. When played, place it under a unit so that
+                      its text is showing.
+                    * **Conjured Alteration Spell**: These are considered to
+                      be alteration spells, **not conjurations**.  These start
+                      in a conjuration pile and are brought into play by card
+                      effects. They return to the conjuration pile when they
+                      leave play.
+                    * **Ready Spells**: These remain in play to be activated
+                      later. When played, they take an empty spot on your
+                      spellboard. **The number of slots in your spellboard is
+                      determined by the spellboard value on your
+                      phoenixborn**.
+                        * If you already have 1 or more copies of the same
+                          ready spell, place the new on top of the existing
+                          one(s).  **It does not take an extra slot**.
+                        * Ready spells can be activated on a later turn.
+                        * **Focusing a Ready Spell**: If you have more than
+                          1 copy of ready spell, the spell is *focused*. Each
+                          copy of the spell is separate and can have its
+                          own exhaustion and status tokens.  It can be also
+                          be activated separately. Some spells have focus
+                          effects that can be used by all copies of that spell.
+                    * **Reaction Spell**: These can be played on any player's
+                      turn when its conditions are met. **Each player can only
+                      play 1 reaction per turn**.
+                        * **Other Reactions**: Some cards have reaction
+                          abilities or effects on them (blue box). These may
+                          be played from your hand as reactions when conditions
+                          are met. **This counts toward your limit of 1
+                          reaction per turn**.
+              - name: "Main Action: Attack"
+                text: |
+                    When you attack, 1 or more of your **unexhausted** units
+                    will enter battle.
+          - name: Recovery Phase
+            id: recovery_phase
+            text: |
+                
