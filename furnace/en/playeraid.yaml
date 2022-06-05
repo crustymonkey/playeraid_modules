@@ -1,0 +1,135 @@
+name: "Furnace"
+description: "Run your factories for profit [See this on BGG]()"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+bgg_id: 318084
+thumbnail: https://cf.geekdo-images.com/7UK6bLlP0Cz3EFYCqhtcSw__thumb/img/7WjwLTkySTiSMQu89ClZRhspd5Q=/fit-in/200x150/filters:strip_icc()/pic5934958.png
+sections:
+    - name: Setup
+      text: |
+          1. Each player gets the following:
+              * A random Start-up card (not double-sided).
+              * A random Capitalist card.
+                  * If a player gets the capitalist card that gives them an
+                    extra disc, take the extra disc now.
+              * A set of discs and matching colored token.
+              * Gain the starting resources at the top of their Start-up card.
+          2. Place the round counter on the table and set it to 1.
+          3. Choose a random 1st player and give them the 1st player token.
+    - name: Gameplay
+      text: |
+          The game is played over 4 rounds, with each round consisting of
+          an [auction phase](#auction) followed by a
+          [production phase](#production).
+      sections:
+          - name: Auction Phase
+            id: auction
+            text: |
+                This phase consists of the auction and the resolution
+                of the auction.
+
+                * At the beginning of the round, the 1st player cuts the deck.
+                * Deal out a number of cards based on the player count:
+                    * **2 players**: 6 cards
+                        * **If playing with 2 players**, you will also need a
+                          set of discs in a non-player color, and the die, to
+                          act as a dummy player.  See the [2 player
+                          mode](#twoplayer) section for more info.
+                    * **3 players**: 7 cards
+                    * **4 players**: 8 cards
+
+                ### Bidding
+                Players take turns in clockwise order beginning with the
+                1st player.
+
+                The player **must** place a disc on one of available company
+                cards following these rules (note that some capitalists
+                break these rules):
+
+                * There **cannot** be 2 discs belonging to the same player on
+                  1 card.
+                * There **cannot** be 2 discs with the same value on 1 card.
+
+                The bidding continues until all discs have been placed.
+
+                ### Resolving the Auction
+                Resolve the cards in the middle of the table from **left to
+                right**.
+
+                * Resolve the cards 1 at a time until completely resolved
+                  before moving to the next card.
+                * If there is no disc on the card, remove it from the game.
+                * If there is at least one disc on the card:
+                    * The player with the highest bid gets the card.
+                    * All **losing** players take the "compensation" shown
+                      at the top of the card.
+                        * **Compensation**: The compensation that is received
+                          is the number on the disc times whatever is shown
+                          at the top.
+                            * Resources: Take the number of resources multiplied
+                              by the disc value.
+                            * Processing: Take the processing action a number
+                              of times up to the disc value.
+                    * **Note**: The person who takes the card does **NOT** get
+                      compensated.  They only get the card.
+                * When all cards are resolved, players take their discs back.
+          - name: Production Phase
+            id: production
+            text: |
+                Players run their engine in this phase to gain or process
+                resources.  This can be done simultaneously.
+
+                The cards in each player's display are resolved with the
+                following rules:
+
+                * The cards can be activated in any order.
+                * Each card can only be activated **once** per production
+                  phase.
+                * When activating a card, you only activate the colored
+                  symbols. "Transparent" symbols are **not** activated.
+                * **All** effects must be activated (that the player
+                  can/wishes to activate) on 1 card before moving on to
+                  another card.
+                * Start-up cards allow you to upgrade another card in your
+                  display if the player can pay the cost.
+                    * If a card has already been resolved, and is later
+                      upgraded in the same round, the player **cannot go
+                      back and get the additional effect**.
+                    * If a card is upgraded before being resolved, both
+                      effects can be used when resolving the card.
+          - name: End of Round
+            text: |
+                * Move the round marker to the next number.
+                    * If the 4th round was completed, players add up their
+                      money to determine final scores.
+                * Pass the 1st player token to the left.
+    - name: 2 Player Mode
+      id: twoplayer
+      text: |
+          * Take a set of discs in a non-player color and the die to act as
+            a "dummy" player for the game.
+          * During the auction phase, **after the 2nd player's bid**, roll the
+            die and place the lowest numbered "dummy" player disc on the
+            card corresponding to the number (furthest left = 1, furthest
+            right = 6). **Follow regular placement rules**. If the lowest
+            number can't be placed on the indicated card, do the following:
+              1. Proceed up in disc numbers until a disc can be placed.
+              2. If no discs can be placed on the card, move to the next card
+                 (to the right) and repeat step 1.
+                  * If the 6th card (furthest right) cannot have a disc placed
+                    on it, go to the 1st card (furthest left)
+          * At the end of the auction phase, remove any cards from the game
+            that would have gone to the dummy player. Note that players still
+            receive compensation for those cards as normal.
+    - name: Variant Rules
+      text: |
+          * All of the player's cards (including their Start-up cards) must
+            form a horizontal chain.
+          * After each auction phase, players must assign places for the
+            newly received cards in their chain.
+              * The relative order of the cards in the chain **must stay
+                the same**.
+          * In the production phase, the cards in the chain are executed **in
+            order** from left to right.
+
