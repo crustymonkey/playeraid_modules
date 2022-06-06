@@ -1,0 +1,112 @@
+name: "Caesar!"
+description: "Rome vs. Pompey, fight! [See this on BGG]()"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+bgg_id: 338957
+thumbnail: https://cf.geekdo-images.com/Mw_WmNeSTRgEgiQG87YPgQ__thumb/img/vq3rQ-SOu-77cD61UeJq58dcZZQ=/fit-in/200x150/filters:strip_icc()/pic6228356.png
+sections:
+    - name: Setup
+      text: |
+          1. Place the board on the table.
+          2. Place 1 Senate Province Bonus token face up on Italia's space.
+          3. Randomly place 1 Province Bonus token face up on the rest of the
+             province spaces. Do **not** place on the 2nd space in Italia.
+          4. Choose who will be [Caesar]!red! and [Pompey]!blue! and each player
+             takes the influence tokens of their color and puts them in their
+             bag.
+          5. Each player secretly draws 2 tokens from their bag and places them
+             behind their screen.
+          6. Each player also takes their control markers and places them on
+             their side of the board.
+    - name: Gameplay
+      text: |
+          Caesar takes the 1st turn followed by alternating turns. On your turn:
+
+          1. Place an influence token on a free border space on the map with
+             a matching icon.  Orient it whichever way you choose such that
+             the line on the token lines up with the border.
+          2. If all the border spaces are occupied around 1+ province(s), the
+             provinces are closed and the following happens:
+              1. The player who placed the last influence token takes
+                 the province bonus token from **all** provinces just closed.
+              2. Add up the value of each player's influence tokens and
+                 whoever has the most influence takes control.  They place
+                 one of their control markers on in the now empty province
+                 space. **If there is a tie**, no one takes control of the
+                 province.
+              3. If the province is Italia, the controlling player places a
+                 2nd control marker on the 2nd space (dashed line circle).
+              4. If 1+ adjacent provinces are controlled by the same player,
+                 an additional control marker is placed on the border spaces
+                 between these provinces, covering any tokens there (usually
+                 influence).
+              5. The player who placed the influence token and took the bonus
+                 token can now resolve the bonus.
+          3. Draw a new influence token from your bag.
+    - name: End of Game
+      text: |
+          The game ends immediately when a player places their last control
+          marker on the map or under a senate token.  That player wins.
+    - name: Bonus Tokens
+      text: |
+          | Token | Effect |
+          | ----- | ------ |
+          | ![tactics](/static/img/caesar/tactics.png) | **Tactics**: Take a new turn after this one. **Note**: If you receive 2 Tactics tokens on the same turn, you only get **1** extra turn (not 2). |
+          | ![wealth](/static/img/caesar/wealth.png) | **Wealth**: Increase your influence token hand size by 1. Draw 1 token immediately (in addition to the one at the end of your turn). |
+          | ![might](/static/img/caesar/might.png) | **Might**: Flip an opponent's influence token or control marker on the board face down. Flipped influence markers count for 0 influence. Controlling provicnes adjacent to a flipped control marker to not provide additional control markers on border spaces. |
+          | ![senate](/static/img/caesar/senate.png) | **Senate**: Place the token in front of you. If you also won the province providing this token, place a number of your control markers under this senate token equal to your total number of senate tokens. |
+          | ![poison](/static/img/caesar/poison.png) | **Poison**: (Used with the [Poison expansion](#poison)) Return of your opponenents influence tokens to their bag. |
+          | ![centurion](/static/img/caesar/centurion.png) | **Centurion**: (Used with the [Centurions expansion](#centurions)) Instead of drawing from your bag at the end of your turn, select one of your available centurion influence tokens. |
+    - name: Expansions
+      sections:
+          - name: Poison
+            id: poison
+            text: |
+                ### Setup
+                1. Mix the 3 poison province bonus tokens with the rest of the
+                   bonus tokens, then randomly remove 3 bonus tokens from play
+                   and setup the map as usual.
+                2. Players start the game with **3** tokens behind their
+                   screen.
+
+                ### Gameplay
+                * Play as usual.
+                * When someone gains a poison bonus token, their opponent
+                  randomly chooses one of their tokens behind their screen
+                  and returns it to their bag.
+                    * Both players can see the token before putting it in
+                      their bag.
+                * If a player starts their turn with no tokens behind their
+                  screen, they immediately lose.
+          - name: Centurions
+            id: centurions
+            text: |
+                ### Setup
+                1. Mix the 3 poison province bonus tokens with the rest of the
+                   bonus tokens, then randomly remove 3 bonus tokens from play
+                   and setup the map as usual.
+                2. Give each player the 3 centurion influence tokens in their
+                   color (white line). These are placed **in front** of their
+                   player shield.
+
+                ### Gameplay
+                * Play as usual.
+                * When someone gets a centurion bonus token, they choose 1 of
+                  their remaining centurion influence tokens in front of their
+                  screen and put it behind their screen.
+                    * The players **skips the next draw phase**.
+                    * **This does not increase a player's hand size!**
+          - name: Border Control
+            text: |
+                ### Setup
+                1. Instead of removing the spare province bonus tokens, place
+                   place them face down next to the board.
+
+                ### Gameplay
+                * Play as usual.
+                * On the 3 spaces marked with a double line, the player may
+                  choose to place 1 of their influence tokens face down. If
+                  they do, they immediately draw 1 of the set aside bonus
+                  tokens and resolve it. **The face down token that was
+                  placed counts for 0 influence**.
