@@ -1,0 +1,154 @@
+name: "Gutenberg"
+description: "Print some books [See this on BGG](https://boardgamegeek.com/boardgame/339958/gutenberg)"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+bgg_id: 339958
+thumbnail: https://cf.geekdo-images.com/bDUgQ1CfnrTniZytZ5UlQA__thumb/img/M1mWVYtIfyKxWFO8Pn4KH3aS1-c=/fit-in/200x150/filters:strip_icc()/pic6618432.jpg
+sections:
+    - name: Setup
+      text: |
+          1. Place the board with the correct side up based on player count.
+          2. Shuffle both decks of order cards separately and place the
+             decks face down next to the board.
+          3. Shuffle and Draw printing and refinement cards based on player
+             count and place them face up next to the board (the space used is
+             temporary).
+              * **2 players**: 6 cards
+              * **3 players**: 8 cards
+              * **4 players**: 10 cards
+          4. For each printing and refinement space on the board, add a
+             a matching card face up.
+          5. Put all the ink tokens in the bag and then draw and place 1
+             ink token on each space on the board. Keep the token bag handy.
+          6. Shuffle the specialty cards and place them face down next to
+             the board.
+          7. Place a specialty card face up in each of space on the board.
+          8. Shuffle the gears deck and place it face down next to the board.
+              * **In a 2 player game**, return the gears with white lines
+                between sectors to the box.
+          9. Place a face up gear card in each space on the board.
+          10. Shuffle the patronage cards and place 1 face up in each space
+              on the board. Return the rest to the box.
+          11. Place the round marker on the 1st space of the round track.
+          12. Place the guilders and types near the board.
+          13. Choose a 1st player and give them the 1st player token. Turns
+              are taken in clockwise order.
+          14. Each player picks a player color and takes:
+              * A printing house board
+              * An initiative board
+              * A screen
+              * The first player takes 7 initiative markers and each player
+                then takes 1 more than the previous player such that the
+                4th player takes 10.
+              * 3 gray cylinders which are put in the 3 gear axle holes on
+                the printing house board.
+              * 5 player markers in their color
+                  * 1 goes on each of the 4 specialty tracks
+                  * 1 marker goes beside their printing house
+              * 2 player discs in their color
+                  * 1 goes on the fame track on the main board at 0
+                  * 1 goes on the leftmost space of the reward track on their
+                    printing house board
+              * 10 guilders
+              * 3 used gear markers next to their printing house
+              * 2 random character tiles and chooses 1 to keep, discarding the
+                other
+              * Starting with the 1st player, each player selects 1 printing
+                and 1 refinement card of their choice from the face up options.
+                Then repeat this in reverse order, starting with the last
+                player.  Return the 4 unselected cards to their respective
+                discards.
+                  * An order consists of the pair of printing + refinement
+                    cards, which slot in on open slots on the side of their
+                    printing house board.
+              * Each player chooses 3 types from the type pool
+    - name: Gameplay
+      text: |
+          The game is played over 6 rounds with each round consisting of 5
+          phases.
+      sections:
+          - name: Turn Gears
+            text: |
+                Each player **must** turn the top gear on their printing
+                house board clockwise 1 sector.  **Skip this step in the
+                1st round**.
+          - name: Plan
+            text: |
+                Players secretly plan their actions during this phase.
+
+                * Each player hides their initiative board and markers behind
+                  their screen.
+                * Everyone simultaneously allocates their markers among the
+                  5 actions.
+                    * Markers go in empty slots, **from left to right** on
+                      an action's row.
+                * When all players are ready, the plans are revealed.
+                * Actions are resolved from top to bottom.  Note that the
+                  sequence on the initiative board matches the main board.
+                * For each action, the number of player markers in that row
+                  determines the player order for the action.
+                    * The player with the most markers is 1st.
+                    * Ties are broken by player order.
+                * A player **must have at least 1 marker on an action to take
+                  that action**.
+          - name: Execute Plans
+            section:
+                - name: Take Orders
+                  text: |
+                      * Each acting player may choose 1 printing and 1
+                        refinement card from the main board, creating an order.
+                      * The order is placed in a free slot connected to their
+                        printing house board.
+                          * The 2 cards of an order can **never** be separated
+                            or re-combined.
+                          * A player may have a max of 4 orders.
+                          * If a player has 4 orders and takes another, they
+                            must 1st discard an existing order.
+                      * Once all players have taken this action, discard any
+                        remaining printing and refinement cards.
+                      * If a player receives an order as a reward, they draw
+                        2 printing and 2 refinement cards from their decks and
+                        chooses 1 of each type to keep.  The unchosen cards are
+                        discarded.
+                          * If a player doesn't like the drawn cards, they may
+                            pay 2 guilders to draw 2 additional cards of their
+                            choice (2 printing, 2 refinement, 1 of each).  This
+                            **can be repeated** as many times as the player can
+                            afford.
+
+                - name: Take Inks
+                  text: |
+                      * Each acting player may select 1 of the 3 inks from the
+                        main board and may take 1-3 inks from that set.
+                          * The 1st ink is free, the 2nd costs 1 guilder, and
+                            the 3rd costs 2 guilders.
+                          * Inks **must be taken from left to right**.
+                          * A player may choose a set that was partially taken
+                            by another player, but **the costs remain the
+                            same**, which means 1 or 2 guilders for the 2nd
+                            and 3rd inks.
+                          * Inks are placed next to the player's printing house
+                            board.
+                      * Once all players have taken this action, discard any
+                        remaining inks back to the bag.
+                - name: Develop Specialties
+                  text: |
+                      * Each player taking this action may choose 1 specialty
+                        card from the main board.  Cards can be used in 1 of
+                        2 ways:
+                          * Move the indicated specialty marker(s) up 1 level
+                            for each of that specialty's symbol on the card.
+                          * Move any *other* specialty marker 1 level up.
+                      * After players are done with this action, discard
+                        all remaining specialty cards on the board.
+                      * The 1st time a player reaches a level marked with
+                        "**>**" on any of their specialty tracks, the player
+                        advances their disc on the reward track to the next
+                        space and takes the reward.
+                      * Reaching the same reward level on another track does
+                        **not** give any additional reward.
+                      * If level VI is reached and the track would go up,
+                        the player instead receives 3 guilders.
+                - name: Improve Printing Houses
+                  text: |
