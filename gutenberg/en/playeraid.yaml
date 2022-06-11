@@ -2,7 +2,7 @@ name: "Gutenberg"
 description: "Print some books [See this on BGG](https://boardgamegeek.com/boardgame/339958/gutenberg)"
 text_type: markdown
 credits: "Jay Deiman"
-enabled: false
+enabled: true
 bgg_id: 339958
 thumbnail: https://cf.geekdo-images.com/bDUgQ1CfnrTniZytZ5UlQA__thumb/img/M1mWVYtIfyKxWFO8Pn4KH3aS1-c=/fit-in/200x150/filters:strip_icc()/pic6618432.jpg
 sections:
@@ -93,7 +93,7 @@ sections:
                 * A player **must have at least 1 marker on an action to take
                   that action**.
           - name: Execute Plans
-            section:
+            sections:
                 - name: Take Orders
                   text: |
                       * Each acting player may choose 1 printing and 1
@@ -296,6 +296,7 @@ sections:
           * 8 points for each acquired patronage card
           * 1 point for every 3 guilders
 
+          ### Final Scoring
           1. The player with most fame wins.
           2. If there is a tie, the player with the fewest types wins.
           3. If there is still a tie, the player with the fewest inks wins.
@@ -321,3 +322,15 @@ sections:
     - name: Characters
       id: characters
       text: |
+          | Symbol | Rules |
+          | ------ | ----- |
+          | ![gutenberg](/static/img/gutenberg/c_gutenberg.png) | **Johannes Gutenberg** After all players have revealed initiative boards, but before actions are taken, this player can move 1 initiative marker to a different action. |
+          | ![manutius](/static/img/gutenberg/c_aldus.png) | **Aldus Manutius** If the player fulfills 2 or more orders at the same time, they can ignore 1 of the required types on 1 order. |
+          | ![schoyffer](/static/img/gutenberg/c_petrus.png) | **Petrus Schoyffer** This player may use the active sector of 1 gear 2 times in a round. **They may still only do 3 gear actions in a round**. |
+          | ![plantinus](/static/img/gutenberg/c_christo.png) | **Christophorus Plantinus** Once per round, this player can **permanently** swap the levels of 2 of their specialties, adjusting the markers on both tracks. |
+          | ![fiol](/static/img/gutenberg/c_sveboldus.png) | **Sveboldus Fiol** If this player fulfills only 1 of the 2 refinement requirements on an order, they still gain the reward for completely fulfilling the order. |
+          | ![guillard](/static/img/gutenberg/c_carola.png) | **Carola Guillard** Immediately after selecting this character, this player draws 4 random gears, keeps 2, and installs them in their printing house. |
+          | ![ungler](/static/img/gutenberg/c_helena.png) | **Helena Ungler** Immediately after selecting this character, the player advances 1 specialty to level I and another to level II. Then they advance their reward marker on the reward track to level II and gets the reward. |
+          | ![torinus](/static/img/gutenberg/c_godofredus.png) | **Godofredus Torinus** At the end of each round, if this player can assign all of their inks to their current orders, they gain 3 fame. **Note**: The inks are **not** permanently assigned to these orders and may be assigned to other orders. |
+          | ![caxton](/static/img/gutenberg/c_guliel.png) | **Gulielmus Caxton** Immediately after selecting this character, the player takes the 2 large William Caxton tokens.  At the start of each round, the player must select 1 ink color which will be wild for this player only during the round. Put the corresponding Caxton token with that selected color next to the Caxton character tile as a reminder. |
+          | ![vietor](/static/img/gutenberg/c_heir.png) | **Hieronymus Vietor** At the end of the game, this player doubles their fame points from guilders. |
