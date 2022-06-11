@@ -152,3 +152,172 @@ sections:
                         the player instead receives 3 guilders.
                 - name: Improve Printing Houses
                   text: |
+                      * Players taking this action may take 1 gear from the
+                        main board.
+                          * Gears are installed starting at the top gear
+                            (number 1).
+                          * Each successive gear must touch the previously
+                            installed gear and should be correctly meshed.
+                          * When adding a new gear, make sure that 1 of its
+                            sectors lines up with the gear's active sector.
+                      * Instead of taking a gear, a player can remove an
+                        existing gear from their board, rotate it, and put it
+                        back.
+                      * A printing house can have at most 3 gears. If a player
+                        has 3 gears and takes a new gear, they must discard
+                        1 to make room for the new gear.
+                      * If a player has used a gear this round, **that gear
+                        cannot be repositioned or discarded**.
+                      * The gear sections next to the lightened areas are
+                        active.
+                          * Players can gain the bonus from these sectors
+                            at any time.
+                          * When used, place a used gear marker on the gear.
+                          * Rewards can only be gained once per round.
+                          * Players are not required to take gear bonuses.
+                          * See [Gear Rewards](#gear) for info on symbols.
+                      * After players are done with this action, discard all
+                        remaining gears.
+                - name: Patronage
+                  text: |
+                      Players taking this action may do 1 of these actions
+
+                      * Choose 1  of the following available rewards by
+                        putting their marker on it (not available to
+                        anyone else this round).
+                          * Take 1 order
+                          * Advance 1 specialty by 1 level
+                          * Take 3 guilders
+                          * Take any 2 inks from the bag
+                      * (**or**) Take 1 patronage card if the card's conditions
+                        are met.
+                          * The card may be taken if it's on a space below or
+                            to the left of the round marker.
+                          * If a player uses ink to take a patronage card,
+                            the ink is put back in the bag.
+                          * Types and specialties are not spent.
+                          * **Note**: In the 1st 2 rounds, the round marker
+                            has not reached any patronage cards.
+          - name: Fulfill Orders
+            text: |
+                This is done in clockwise order, starting with the 1st player.
+
+                ## Orders
+                * To fulfill an order, the player needs the resources
+                  indicated on the cards.
+                * **Important**: Types and specialties are never
+                  discarded. The player merely needs to have them to meet
+                  requirements.
+                * Printing cards reward *guilders* and refinement cards
+                  reward *fame points*.
+                * The printing card **must** be fulfilled to complete an
+                  order.
+                * The refinement card is **optional**. The player may
+                  fulfill both, 1, or none of the requirements.
+                * When the order is fulfilled, **both** cards are
+                  discarded, regardless of how much of the refinement
+                  card was fulfilled.
+                * Unfulfilled orders simply remain in their slots.
+                * Orders are fulfilled simultaneously. **You cannot
+                  use rewards from 1 order to fulfill other orders**.
+
+                ### Printing
+                * The player assigns the required types to the printing card
+                  and receives the specified number of guilders.
+                * Again, **types are not spent**, but are retained.
+                * Players can buy additional types. The cost is based on how
+                  many types you already have (see table).
+
+                | Cost | Buying n-th type |
+                | ---- | ---------------- |
+                | 3 | 3 |
+                | 4 | 4 |
+                | 5 | 5 |
+                | ... | ... |
+
+                * Players can buy types at any time during a round.  It is
+                  **not an action**.
+                * There is no limit on the number of types a player can own.
+                * A given type can be **assigned to only 1 order in a round**.
+                    * Types should be placed on order cards to show what is
+                      being used where.
+                * Types are unlimited, if a particular type runs out, use a
+                  replacement.
+
+                ### Refinements
+                * Refinements include colors and decorations. Both parts are
+                  optional.
+                * Fulfilling both of the requirements gives an additional
+                  bonus.
+                * *Colors* require discarding (to the bag) matching inks.
+                    * **Inks are limited by the bag's contents**.
+                * *Decorations* require the player to have the indicated
+                  specialties. Again, **specialties are never discarded**, you
+                  must simply have them.
+
+                | Reward | Description |
+                | ------ | ----------- |
+                | ![ink](/static/img/gutenberg/ink_reward.png) | Take the number of ink shown from the bag |
+                | ![money](/static/img/gutenberg/money_reward.png) | Take the number of guilders shown |
+                | ![fame](/static/img/gutenberg/fame_reward.png) | Take the number of fame points shown |
+                | ![specialty](/static/img/gutenberg/spec_reward.png) | Move 1 specialty 1 level higher |
+                | ![order](/static/img/gutenberg/order_reward.png) | Take a new order |
+          - name: End of Round
+            text: |
+                Do the following at the end of each round:
+
+                * **If any deck runs out, shuffle its discard to create a new
+                  deck**.
+                * Refill the main board:
+                    * Order cards face-up on each printing and refinement card
+                      space.
+                    * 1 ink from the bag on each ink space.
+                    * 1 face-up specialty card on each specialty space.
+                    * 1 gear on each gear space.
+                * Move the round marker 1 space.
+                * Return all players' markers on patronage spaces.
+                * Remove used gear markers from gears
+                * Remove initiative markers from initiative boards.
+                * Pass the 1st player token clockwise.
+                * Each player gives 1 initiative marker to the player who just
+                  passed the 1st player token.
+                    * This means that the 1st player will have 7 initiative
+                      markers, the 2nd player has 8, the 3rd player has 9 and
+                      the 4th player has 10.
+    - name: End of Game
+      text: |
+          The game ends after 6 rounds. Final scoring of fame points occurs.
+          In addition to already earned points, the players take the following:
+
+          * Specialties
+              * 6 points for each specialty at level VI
+              * 3 points for each specialty at level V
+              * 1 points for each specialty at level IV
+          * 8 points for each acquired patronage card
+          * 1 point for every 3 guilders
+
+          1. The player with most fame wins.
+          2. If there is a tie, the player with the fewest types wins.
+          3. If there is still a tie, the player with the fewest inks wins.
+          4. If there is still a tie, the players share the victory.
+    - name: Gear Rewards
+      id: gear
+      text: |
+          | Symbol | Reward |
+          | ------ | ------ |
+          | ![ink](/static/img/gutenberg/g_ex_ink.png) | Exchange 1 ink for another ink in the bag |
+          | ![types](/static/img/gutenberg/g_ex_type.png) | Exchange 1 type for another from the pool |
+          | ![specialty](/static/img/gutenberg/g_inc_spec.png) | Increase your **lowest** specialty by 1 level. If there's a tie, the player chooses. |
+          | ![fame](/static/img/gutenberg/g_fame_rnd.png) | Gain fame points equal to the current round |
+          | ![order](/static/img/gutenberg/g_order.png) | Take an order |
+          | ![type](/static/img/gutenberg/g_disc_type.png) | Discard 1 type to take either 3 fame points or 5 guilders |
+          | ![ink](/static/img/gutenberg/g_fame_ink.png) | Gain 2 fame points for each of the orders being fulfilled where the indicated ink is being used. If an order requires more than 1 of the indicated ink, **only 2 points are gained**. |
+          | ![ink](/static/img/gutenberg/g_ink.png) | Gain an ink of the indicated color from the bag |
+          | ![ink](/static/img/gutenberg/g_ex_ink2.png) | Exchange 1 ink for any 2 inks from the bag. The player can re-take the color they put in the bag. |
+          | ![type](/static/img/gutenberg/g_fame_order.png) | Gain 2 fame points for each of the orders being fulfilled showing the indicated type. If an order requires more than 1 of the indicated type, **only 2 points are gained**. |
+          | ![type](/static/img/gutenberg/g_type_3g.png) | Buy 1 of the indicated types with a 3 guilder discount. |
+          | ![decoration](/static/img/gutenberg/g_fame_dec.png) | Gain 2 points for each of the order being fulfilled with the indicated specialty. |
+          | ![specialty](/static/img/gutenberg/g_spec.png) | Advance the indicated specialty by 1 level |
+    - name: Characters
+      id: characters
+      text: |
