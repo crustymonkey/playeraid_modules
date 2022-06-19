@@ -1,0 +1,310 @@
+name: "Memoir 44"
+description: "Battle in WWII settings [See this on BGG]()"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+thumbnail: https://cf.geekdo-images.com/chfLNSL0l7afCA5go9pAtA__thumb/img/hS1XE61e9MpzeJWfh1mdwT2gxQc=/fit-in/200x150/filters:strip_icc()/pic43663.jpg
+bgg_id: 10630
+sections:
+    - name: Setup
+      text: |
+          1. Select a battle from the scenario section.
+          2. Place the board on the table.
+          3. Place any needed terrain hexes as indicated in the scenario
+          4. Add the bunkers and bridges and any removable obstacles (if any).
+          5. Place figures on the board so they match the units' positions
+             as they are in the scenario's battle map.
+          6. Add the special unit badges to the indicated units and victory
+             medals to specific objectives on the map (if required by scenario).
+          7. Place the terrain summary cards for any terrain, obstacle cards,
+             and unit summary cards next to the board.
+          8. Optionally setup the card holders.
+          9. Shuffle the command deck thoroughly and deal command cards to
+             each based on directions for the scenario.
+          10. Place the remainder of the command deck face down near the board.
+          11. Each side takes 4 battle dice.
+          12. The starting player (noted in the scenario) begins play.
+    - name: Gameplay
+      text: |
+          The object of the game is to win a number of victory medals based on
+          the scenario.
+
+          * A victory medal is earned when an entire enemy unit is defeated.
+            Place the last defeated enemy on a medal space on your side in
+            the bottom left part of the board.
+          * Some scenarios will give additional medals for certain battlefield
+            objectives.
+      sections:
+          - name: Game Turn
+            text: |
+                Each turn consists of up to 5 different steps.
+            sections:
+                - name: "1. Play a Command Card"
+                  text: |
+                      * Play 1 command card at the start of your turn.
+                          * If it is a section card, follow the directions for
+                            moving troops in that section.
+                          * If it is a tactics card, follow the directions
+                            on the card to do the special action.
+                - name: "2. Order units"
+                  text: |
+                      * Announce which unit(s) you are going to order.
+                          * Only those units may move, battle, or take
+                            special actions.
+                      * Units on a hex with a [red]!red! dotted line may
+                        be ordered from either section.
+                      * You **may not give more than 1 order to each unit**.
+                        If the card allows you to give more orders than you
+                        have units, the additional orders are lost.
+                - name: "3. Move Units"
+                  text: |
+                      * Movements are announced and made sequentially, 1 unit
+                        at a time, but in any order.
+                          * **A unit may only move once per turn**.
+                          * An ordered does not have to move.
+                      * You must complete 1 unit's movement before beginning
+                        another.
+                      * All unit movements **must** be completed before
+                        starting the [Battle phase](#battle).
+                      * Units may move between sections on the map.
+                      * **Only 1 unit may occupy a hex at any time**. When
+                        moving units, you may **not** move through a hex
+                        occupied by a friendly or enemy unit.
+                      * You cannot split individual figures off from a unit.
+                        Everyone in a unit always stays together.
+                      * Units that are reduced via casualties cannot combine
+                        with other units.
+                      * Some terrain affects movement and may prevent the
+                        unit from moving or battling.
+                      * Retreat movement is done a bit differently.
+
+                      ### Infantry Movement
+                      * An infantry unit may move 1 hex and battle **or**
+                        move 2 hexes and not battle.
+                      * Special forces infantry can move up to 2 hexes **and**
+                        battle.
+
+                      ### Armor Movement
+                      * Armor may move up to 3 hexes and battle.
+
+                      ### Artillery Movement
+                      * Artillery may move 1 hex **or** battle.
+                - name: "4. Battle"
+                  id: battle
+                  text: |
+                      * Battles are checked and resolved 1 at a time, but in
+                        the order of your choosing. 1 battle must be completed
+                        before starting another.
+                      * A unit may only battle once per turn.
+                      * An ordered unit does not have to battle.
+                      * A unit may not split its battle dice between multiple
+                        targets.
+                      * The number of casualties a unit suffers does not
+                        affect the number of dice it will roll.
+                      * A unit attacking an adjacent enemy is in *Close
+                        Assault* with that enemy.
+                      * A unit attacking an enemy more than 1 hex away is
+                        said to *Fire* at the enemy.
+                      * A unit adjacent to an enemy unit **must** *Close
+                        Assault* that enemy.
+
+                      ### Battle Procedure
+                      1. Announce the attacking unit and its target.
+                          1. Verify that your target is within battle range
+                             or contact.
+                              * **Infantry**: The unit may battle any target
+                                3 or fewer hexes away. 1 hex away, 3 dice;
+                                2 hexes away, 2 dice; 3 hexes away, 1 die.
+                              * **Armor**: The unit may battle any target 3
+                                or fewer hexes away. Always roll 3 dice.
+                              * **Artillery**: The unit may battle any target
+                                6 or fewer hexes away. The dice, starting
+                                from the 1st hex, are: 3, 3, 2, 2, 1, 1.
+                          2. Verify that your target is within line of site.
+                              * If a line can be drawn, unobstructed, from
+                                the center of the unit's hex to the center of
+                                the enemy's hex, it's in line of sight.
+                              * Terrain **in** a target hex does **not** block
+                                line of sight.
+                              * If the imaginary line runs along the edges
+                                of other hexes, line of sight is blocked when
+                                obstructions are on **both** sides of the line.
+                      2. Determine the number of battle dice based on battle
+                         range (above).
+                      2. Check terrain and obstacles for any reductions of
+                         battle dice for units on that terrain or obstacle.
+                      3. Resolve the battle.
+                          * Hits are resolved 1st, followed by retreats.
+                          * Hits are scored for each dice symbol matching
+                            the attacking unit (infantry symbol for infantry).
+                          * Grenades act as "wild" hits. They are **always**
+                            a hit.
+                          * If more hits are rolled than there are figures,
+                            the additional hits are lost.
+                          * "Star" symbols are misses, but may have effects
+                            from the command card.
+                          * "Flag" symbols cause the enemy unit to retreat 1
+                            space for each symbol rolled.
+                              * The player controlling the unit decides the
+                                space a unit retreats to.
+                              * Terrain has no effect on retreat moves.
+                                Impassable terrain is still impassable when
+                                retreating.
+                              * A retreating unit may not retreat onto or
+                                through a hex containing another unit.
+                              * If a unit cannot retreat (edge of map,
+                                impassable terrain, etc.), it loses 1 figure
+                                for each space it would have to retreat.
+                              * Some obstacles will allow units to ignore the
+                                1st flag rolled against them.
+                          * **Taking Ground**:
+                              * When a unit in *Close Assault* forces an enemy
+                                to retreat, it may "take ground" by moving
+                                into the vacated hex.
+                              * An artillery unit may **not** take ground.
+                              * Terrain movement and battle restrictions still
+                                apply.
+                              * When an armor unit eliminates or forces the
+                                enemy to retreat, if my advance into the
+                                vacated hex and perform an *Armor Overrun*.
+                          * **Armor Overrun**:
+                              * On a successful *Close Assault*, the armor
+                                unit may move into the vacated hex and perform
+                                a 2nd battle.
+                              * A unit may "take ground" again after a
+                                successful overrun combat.
+                              * **An armor unit may only make 1 overrun combat
+                                during a turn**. (no chaining)
+                              * All battles, *Close Assault*, and overrun
+                                combats must be completed before the next
+                                unit can battle.
+                - name: "5. Draw a Command Card"
+                  text: |
+                      Discard your played command card and draw a new card
+                      from the deck.  Your turn is now over.
+
+                      * If the deck runs out, shuffle the discards to create
+                        a new deck.
+    - name: Terrain
+      sections:
+          - name: Forests
+            text: |
+                * **Movement**: A unit that enters a forest must stop and may
+                  move no further on that turn.
+                * **Battle**: A unit may not battle the turn it moves onto
+                  a forest.
+                    * When battling an enemy in the forest:
+                        * Infantry reduces battle dice by 1.
+                        * Armor reduces battle dice by 2.
+                        * Artillery battle dice are not reduced.
+                * **Line of sight**: A forest blocks line of sight.
+          - name: Hedgerows
+            text: |
+                * **Movement**: A unit that enters a hedgerow must stop and may
+                  move no further on that turn. A unit on a hedgerow may only
+                  move onto an adjacent hex.
+                * **Battle**: A unit may not battle the turn it moves onto a
+                  hedgerow hex.
+                    * When battling an enemy on a hedgerow:
+                        * Infantry reduces battle dice by 1.
+                        * Armor reduces battle dice by 2.
+                        * Artillery battle dice are not reduced.
+                * **Line of sight**: A hedgerow blocks line of sight.
+          - name: Hills
+            text: |
+                * **Movement**: No restrictions.
+                * **Battle**: When battling an enemy that is up a hill:
+                    * Infantry and armor reduce battle dice by 1.
+                    * Artillery dice are not reduced.
+                    * If both units are at the same height, there is no dice
+                      reduction.
+                * **Line of sight**: A hill blocks line of sight for units
+                  trying to "look over" a hill. Line of sight is not blocked
+                  for units at the same height.
+          - name: "Towns & Villages"
+            text: |
+                * **Movement**: A unit that enters a town must stop and may
+                  move no further on that turn.
+                * **Battle**: A unit may not battle the turn it moves into a
+                  town.
+                    * When battling an enemy in a town:
+                        * Infantry reduces battle dice by 1.
+                        * Armor reduces battle dice by 2.
+                        * Artillery battle dice are not reduced.
+                        * Armor on a town hex will reduce the number of battle
+                          dice it rolls by 2.
+                * **Line of sight**: A town blocks line of sight.
+          - name: "Rivers & Waterways"
+            text: |
+                * **Movement**: A river is impassable. Units can only cross
+                  a river at a bridge space.
+                * **Battle**: A unit on a bridge space battles normally.
+                * **Line of sight**: A river does not block line of sight.
+          - name: Oceans
+            text: |
+                * **Movement**: A unit that moves onto an ocean hex may only
+                  move 1 hex. **An ocean hex is impassable for retreat moves**.
+                * **Battle**: A unit on an ocean hex cannot battle.
+                * **Line of sight**: An ocean hex does not block line of sight.
+          - name: Beaches
+            text: |
+                * **Movement**: A unit that moves onto a beach may only move 2
+                  hexes.
+                * **Battle**: No combat restrictions. A unit may still take
+                  ground after a successful *Close Assault*.
+                * **Line of sight**: A beach does not block line of sight.
+    - name: Fixed Obstacles
+      text: |
+          When an obstacle is on a terrain hex, the battle dice reductions
+          are **not cumulative**. You reduce the dice by the greater of the
+          2.
+      sections:
+          - name: Bunkers
+            text: |
+                * **Movement**: An infantry unit may battle the turn it moves
+                  onto a bunker. Armor and artillery units **cannot move onto
+                  bunkers**. Artillery units starting on a bunker **cannot
+                  move from that hex**.
+                * **Battle**: Only the side noted in the briefing for the
+                  scenario may claim a bunker as a defensive position.
+                    * When battling an enemy on a bunker hex:
+                        * Infantry reduces battle dice by 1.
+                        * Armor reduces battle dice by 2.
+                        * Artillery does not reduce battle dice.
+                    * Remove 1 artillery figure for each retreat flag rolled
+                      against an artillery unit on a bunker.
+                    * A unit in a bunker may ignore the 1st flag rolled
+                      against it.
+                * **Line of sight**: A bunker blocks line of sight.
+          - name: Hedgehogs
+            text: |
+                * **Movement**: Only infantry units may enter a hedgehog hex.
+                  No movement restrictions.
+                * **Battle**: No combat restrictions. A unit on a hedgehog may
+                  ignore the 1st flag rolled against it.
+                * **Line of sight**: A hedgehog does not block line of sight.
+    - name: Removable Obstacles
+      sections:
+          - name: Sandbags
+            text: |
+                * **Movement**: No movement restrictions. When a unit leaves
+                  a hex with sandbags, the sandbags are removed.
+                * **Battle**: A unit on sandbags is protected on all sides,
+                  **not just along the edges where the sandbags are placed**.
+                    * When battling an enemy on sandbags (and no other terrain):
+                        * For infantry and armor, the battle dice are reduced
+                          by 1.
+                        * Artillery does not reduce battle dice.
+                    * A unit with sandbags ignores the 1st flag rolled against
+                      it.
+                * **Line of sight**: Sandbags do not block line of sight.
+          - name: Wire
+            text: |
+                * **Movement**: A unit that enters a wire hex must stop and
+                  can move no further that turn.
+                * **Battle**: An infantry unit on a wire hex reduces the number
+                  of battle dice it rolls by 1.
+                    * An infantry unit that can battle may remove the wire
+                      **instead of battling**.
+                    * Armor **must** remove the wire, but may still battle.
+                * **Line of sight**: Wire does not block line of sight.
