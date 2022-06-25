@@ -2,7 +2,7 @@ name: "Catan"
 description: "Settle Catan [See this on BGG](https://boardgamegeek.com/boardgame/13/catan)"
 text_type: markdown
 credits: "Jay Deiman"
-enabled: false
+enabled: true
 thumbnail: https://cf.geekdo-images.com/W3Bsga_uLP9kO91gZ7H8yw__thumb/img/8a9HeqFydO7Uun_le9bXWPnidcA=/fit-in/200x150/filters:strip_icc()/pic2419375.jpg
 bgg_id: 13
 sections:
@@ -27,7 +27,8 @@ sections:
             dice near the board.
           * Place the robber in the desert.
           * Each player will place 2 settlements and 2 roads:
-              1. Each player rolls both dice and the highest roll starts.
+              1. Each player rolls both dice and the highest roll starts and
+                 will also be 1st player.
               2. The starting player places a settlement on an unoccupied
                  intersection with a road adjacent to it.
               3. Continue clockwise with each player doing this, following
@@ -58,7 +59,7 @@ sections:
                       take 1 resource for *each* settlement.
                     * Take 2 resource cards for each of your cities bordering
                       a matching hex.
-                    * If there are not enough of a given resource in the
+                    * If there is not enough of a given resource in the
                       supply to fulfill everyone's production, **no one
                       receives any of that resource that round** unless only
                       1 player is affected.
@@ -70,8 +71,8 @@ sections:
                         1. Moves the robber onto the number token of any
                            other hex or the desert. 
                         2. Steal 1 **random** resource card from an opponent
-                           of your choice with settlement/city attached to
-                           the hex where the robber was placed.
+                           of your choice with a settlement/city on a corner
+                           of the hex where the robber was placed.
           - name: "2. Trade"
             text: |
                 After production is complete, you may freely trade in 1 of
@@ -83,10 +84,11 @@ sections:
                    with the player whose turn it is**.
                 2. **Maritime Trade**: You have the following options for
                    trades with the "bank":
-                    * You can always trade 4:1.  4 identical resources in
-                      exchange for 1 other resource.
+                    * You can always trade 4:1 with the bank. 4 identical
+                      resources in exchange for 1 other resource.
                     * If you have a settlement on a harbor, those will allow
-                      for 3:1 or 2:1 ratios for the resource shown.
+                      for 3:1 trades, or 2:1 trades of the particular
+                      resource shown.
           - name: "3. Build"
             text: |
                 * **Roads** (brick and lumber):
@@ -126,3 +128,17 @@ sections:
                         * If another player later has more Knights than the
                           player currently holding the Largest Army card,
                           they take the Largest Army card.
+                    * **Progress cards** (green frame):
+                        * Follow the instructions on the card when it is played.
+                        * These are removed from the game after being played.
+                    * **Point cards** (orange frame):
+                        * Keep these cards hidden.
+                        * They may only reveal these cards **on your turn** and
+                          when you have 10 victory points.
+                        * **These may be played on the turn they are acquired**
+                          if it would put you at 10 points or more.
+    - name: Game End
+      text: |
+          The game ends if you have 10 or more points **during your turn**.
+          It you reach 10 points and it is not your turn, play continues until
+          someone has 10 points on their turn.
