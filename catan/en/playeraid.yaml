@@ -1,0 +1,128 @@
+name: "Catan"
+description: "Settle Catan [See this on BGG](https://boardgamegeek.com/boardgame/13/catan)"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+thumbnail: https://cf.geekdo-images.com/W3Bsga_uLP9kO91gZ7H8yw__thumb/img/8a9HeqFydO7Uun_le9bXWPnidcA=/fit-in/200x150/filters:strip_icc()/pic2419375.jpg
+bgg_id: 13
+sections:
+    - name: Setup
+      text: |
+          * Variable map setup:
+              1. Randomly place the terrain tiles face up inside the frame.
+              2. Randomly place the harbor tiles on top of each harbor on the
+                 frame.
+              3. Sort the number tokens by letter.
+              4. Starting at an island corner, place the number tokens in
+                 alphabetic order counter-clockwise around the outer edge and
+                 proceeding inward.  You can also do a fully random setup by
+                 randomly placing the number tokens.
+          * Each player takes 5 settlements, 4 cities, and 15 roads in their
+            color.
+          * Sort the resource cards into 5 stacks and place them face up by the
+            board.
+          * Shuffle the development cards and place them face down by the
+            board.
+          * Place the 2 special cards (Longest Road and Largest Army) and
+            dice near the board.
+          * Place the robber in the desert.
+          * Each player will place 2 settlements and 2 roads:
+              1. Each player rolls both dice and the highest roll starts.
+              2. The starting player places a settlement on an unoccupied
+                 intersection with a road adjacent to it.
+              3. Continue clockwise with each player doing this, following
+                 the distance rule (you cannot build a settlement 1
+                 intersection from another settlement).
+              4. Now, starting with the last player, repeat steps 1-3 until
+                 all players have placed a 2nd settlement and road in
+                 *counter-clockwise* order this time (again, following the
+                 distance rule).
+              5. After placing the 2nd settlement, each player will take 1
+                 resource for each hex connected to the intersection where
+                 the 2nd settlement was placed.
+    - name: Gameplay
+      text: |
+          Each turn is broken down into 3 high-level steps.
+      sections:
+          - name: "1. Resource Production"
+            id: production
+            text: |
+                * Roll both dice and the sum of the dice determines which
+                  hexes will produce.
+                    * Each player with a settlement on an intersection that
+                      that has a hex marked with a matching number tile takes
+                      1 resource card of the hex type.
+                    * **If the robber is on a hex, that hex does not produce
+                      resources**.
+                    * If you have more than 1 settlement bordering that hex,
+                      take 1 resource for *each* settlement.
+                    * Take 2 resource cards for each of your cities bordering
+                      a matching hex.
+                    * If there are not enough of a given resource in the
+                      supply to fulfill everyone's production, **no one
+                      receives any of that resource that round** unless only
+                      1 player is affected.
+                * **If a "7" is rolled**: This will activate the robber instead
+                  of producing resources (there is no "7" number token).
+                    * Every player with more than 7 resource cards must discard
+                      half (rounded down) of their resources.
+                    * The player who rolled the "7": 
+                        1. Moves the robber onto the number token of any
+                           other hex or the desert. 
+                        2. Steal 1 **random** resource card from an opponent
+                           of your choice with settlement/city attached to
+                           the hex where the robber was placed.
+          - name: "2. Trade"
+            text: |
+                After production is complete, you may freely trade in 1 of
+                2 fashions.
+
+                1. **Domestic Trade**: You can trade resource cards with any
+                   of the other players.  Other players are allowed to make
+                   proposals and counteroffers, but **trading can only be done
+                   with the player whose turn it is**.
+                2. **Maritime Trade**: You have the following options for
+                   trades with the "bank":
+                    * You can always trade 4:1.  4 identical resources in
+                      exchange for 1 other resource.
+                    * If you have a settlement on a harbor, those will allow
+                      for 3:1 or 2:1 ratios for the resource shown.
+          - name: "3. Build"
+            text: |
+                * **Roads** (brick and lumber):
+                    * A new road must always connect to 1 of your existing
+                      roads.
+                    * Only 1 road can be built on a given path.
+                    * The 1st player to build a continuous road of at least
+                      5 segments takes the Longest Road (worth 2 points)
+                      card.
+                    * If another player creates a **longer** road, they
+                      take the Longest Road from the player that currently
+                      has it.
+                * **Settlement** (brick, lumber, wool, & grain):
+                    * Distance rule: You may only build a settlement at least
+                      2 intersections away from an existing settlement.
+                    * The settlement must connect to 1 of your roads.
+                    * Each settlement is worth 1 point.
+                * **City** (3 ore & 2 grain):
+                    * Cities are only created by upgrading an existing
+                      settlement.
+                    * When upgrading a settlement, replace the settlement with
+                      a city and put the settlement back in your supply.
+                    * Each city is worth 2 points.
+                * **Buying a Development Card** (ore, wool, & grain):
+                    * When buying a dev. card, draw the top card of the deck.
+                    * Development cards can be played at any time during the
+                      active player's turn. However, **you cannot play a card
+                      that you purchased this turn**.
+                    * **Knights** (purple frame):
+                        * When played, you **must** immediately move the
+                          robber. Seeing the "7 is rolled" part of the
+                          [resource production](#production) phase.
+                        * Keep your knight face up in front of you after
+                          playing it.
+                        * The 1st player to have 3 knights in front of them
+                          takes the Largest Army card (worth 2 points).
+                        * If another player later has more Knights than the
+                          player currently holding the Largest Army card,
+                          they take the Largest Army card.
