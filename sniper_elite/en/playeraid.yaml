@@ -1,0 +1,341 @@
+name: "Sniper Elite: The Board Game"
+description: "Stealthily accomplish your mission as a WWII sniper [See this on BGG]()"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+bgg_id: 295262
+thumbnail: https://cf.geekdo-images.com/gGDwoohdi6ky6Z3EZfpz3g__thumb/img/Srxptd_xiygDumqiPqR0d2OdIY4=/fit-in/200x150/filters:strip_icc()/pic6863775.jpg
+sections:
+    - name: Setup
+      text: |
+          1. Choose a map to play on and place it on the table.
+          2. **Sniper Setup**:
+              * Take the matching dry erase map board.
+              * Shuffle the objective cards for the chosen map and draw 2.
+                If they are the same suit, return 1 (your choice) to the
+                bottom of the deck and draw a new one.  Repeat this until
+                you have 2 objectives in different suits.
+              * Place 6 aim, 2 noise, and 3 recoil tokens in the shot bag.
+                Place the remaining aim and noise tokens near the board and
+                return the remaining recoil tokens to the box.
+              * Choose any 3 loadout cards.  Shuffle the rest and place them
+                face down near the board.
+          3. **Defender Setup** (after the sniper setup):
+              * Place the defender minis on their starting spaces. Officers
+                go on the spaces with the iron cross.
+              * Choose any 3 specialists (1 for each set of colored squads)
+                and place them face up.
+                  * Put 2 cubes of the color matching the squad on each card.
+                  * Put 1 suppression token on each card.
+                  * If the "Kennel Master" is chosen, that player also takes
+                    the 2 dog tokens.
+              * Put the remaining colored cubes on the "10" space of the
+                countdown track.
+    - name: Gameplay
+      text: |
+          The sniper takes the 1st turn, followed by the defenders with
+          each squad taking their turn. This constitutes a round.
+      sections:
+          - name: The Sniper
+            text: |
+                The sniper's goal is to complete their 2 objectives before
+                time runs out on the countdown track or they are killed.
+
+                At the start of the game, mark 1 of the 4 starting locations
+                (arrows) as your entry point. **It must not be in the same
+                colored zone as either of your objectives**.
+
+                If your mini is on the board at the start of your turn,
+                remove it.
+
+                Your turn consists of 3 things you can do in any order:
+
+                * Move
+                * Use **1** loadout card
+                * Take **1** additional action
+                    * Shooting
+                    * Looting
+                    * Completing an objective
+
+                You can do any/all/none of these on your turn.
+            sections:
+                - name: Movement
+                  text: |
+                      * You can move 0-3 spaces.
+                      * If you move 0 or 1 spaces, you remain hidden.
+                      * If you move 2 or 3 spaces, you must tell your opponents
+                        exactly which enemies heard noise.
+                          * They will hear noise if you passed through a
+                            space adjacent to an enemy unit.
+                          * **This includes your starting and ending spaces**.
+                          * Note that defenders **can** hear you through walls,
+                            obstructions or other elevations.
+                      * You cannot enter a space that contains a defending
+                        unit. If a defender moves into your space, you do
+                        **not** disclose this to the defender.
+                      * You cannot move into a space you already occupied this
+                        turn.
+                      * You can only enter/exit elevated/enclosed spaces
+                        via the designated locations.
+                      * After your movement is complete, write the current
+                        number on the countdown track on your final space on
+                        your hidden board.
+                - name: Shooting
+                  text: |
+                      The tokens in your bag are (potentially):
+
+                      * [Grey]!grey! aim tokens - these are needed to hit.
+                      * [Yellow]!#fbe55e! recoil tokens - can cause misfires.
+                      * [Red]!red! noise tokens - these reveal your position
+                        if 2+ are drawn.
+                      * [Blue]!blue! suppression tokens - these "cancel" out
+                        noise tokens when deciding if you reveal your position.
+
+                      **Note**: You **cannot** shoot from your starting
+                      position.
+
+                      Note that the shot bag tokens **are limited**.
+
+                      The process for shooting is:
+
+                      1. Secretly choose your target in [line of sight](#los).
+                      2. Count the shortest number of spaces to said unit.
+                      3. Declare how many tokens you will draw from the bag
+                         for all to hear.
+                      4. Draw the tokens from the bag (visible to everyone) and
+                         resolve the results.
+                          * If you drew at least 1 aim token for each space
+                            to the target's space, you hit. e.g. If the target
+                            is 3 spaces away, you need 3 aim tokens. **If
+                            you are in the same space as the target, you still
+                            need at least 1 aim token**. Remove the target
+                            from the board.
+                              * If you killed a soldier, add an aim token to
+                                the shot bag.
+                              * If you killed an officer, add the suppression
+                                token from their card to the shot bag. If
+                                you've already done that, add an aim token
+                                instead.
+                          * If you drew 2+ noise tokens, reveal your position
+                            by placing your mini on the board. Remember that
+                            each suppression token will cancel out a noise
+                            token for this purpose.
+                          * If you draw 5+, combined, recoil and noise tokens
+                            (**regardless of suppression tokens**), you misfire
+                            and miss your shot.
+                          * After resolution, return all tokens to the shot
+                            bag.
+                - name: Looting
+                  text: |
+                      If you are in a numbered space that is **not** one of
+                      your objectives, you can loot.
+
+                      * Announce that you are looting, but **do not reveal your
+                        location**.
+                      * Draw 3 loadout cards and choose 1 to keep.
+                      * Shuffle the unkept cards back into the deck.
+                      * Mark the looted space on your hidden board, you cannot
+                        loot this space again.
+                - name: Completing Objectives
+                  text: |
+                      **You have 10 rounds to complete each objective!** If
+                      the countdown track ever runs out, you have lost.
+
+                      If you are on the space matching 1 of your objectives:
+
+                      * Reveal your objective card.
+                      * Put your mini on the space.
+                      * Reset the defenders action cubes to the 10 space on
+                        the countdown track.
+                      * Add 1 noise token to the shot bag.
+                - name: Using Loadout Cards
+                  text: |
+                      Loadout cards grant a **1 time** special ability.
+
+                      To use a card:
+
+                      * Declare you are using a loadout.
+                      * Place the card face down on the table. Reveal it at
+                        the time specified on the card.
+                      * Loadout cards **cannot** be played midway through
+                        another action or movement.
+                      * If a loadout card would affect other actions on your
+                        turn, it must be played **before** those actions.
+          - name: The Defenders
+            text: |
+                As the defenders, you are trying to wound the sniper twice
+                or slow them down in completing objectives.
+
+                * As actions are taken, move an action cube down to the next
+                  number down on the countdown track.
+                * Actions can be interleaved between the different squads
+                  (colors).
+                * Actions can be completed in any order between all units.
+                * Before or after any action, each officer may use their
+                  specialist ability **once per round**.
+                * **A single soldier or officer cannot do the same move
+                  twice**. e.g. A single soldier cannot take a move action
+                  twice.
+            sections:
+                - name: Gathering Intel
+                  id: intel
+                  text: |
+                      * The officer performing this action must be in their
+                        matching colored sector.
+                      * **This moves both action cubes on the countdown track
+                        for that squad's color**.
+                      * Declare the "intel" action and the sniper either
+                        confirms they are in that same colored zone or not.
+                - name: Unit Actions
+                  text: |
+                      Each action listed here moves 1 action cube down
+                      on the countdown track.
+
+                      * **Movement**:
+                          * Move up to 2 spaces.
+                          * Units can move through other units.
+                          * Units cannot share a space at the end of the
+                            movement.
+                      * **Attack**:
+                          * Choose a unit on the board.
+                          * If the sniper is in the same space, they place
+                            their mini there and flip the wound token to
+                            the wounded side.  If it is the 2nd wound, the
+                            sniper is killed and the defenders win.
+                      * **Spot**:
+                          * Choose a space adjacent to a unit.
+                          * If the sniper is in that space, they must place
+                            their mini there and add 1 noise token to their
+                            shot bag.
+                      * **Sweep**:
+                          * Choose 2 [matching-adjacent](#maps) spaces to a
+                            unit.
+                          * If the sniper is in either of those spaces or
+                            the space with the declaring unit, they must
+                            say they are there, but **they do not reveal
+                            which space**.
+                      * **Deploy Officer**:
+                          * If the squad's officer is off the board, put him
+                            on his matching starting space for that color.
+                      * **Deploy Soldier**:
+                          * If the squad's officer is in their own colored
+                            zone, place a soldier of that color not on the
+                            board in a [matching-adjacent](#maps) space next
+                            to the officer.
+                          * The soldier may be placed in a different colored
+                            zone if the officer is on the edge of their zone.
+                          * This counts as an action for the soldier being
+                            deployed. This means 2 different soldiers can be
+                            deployed (and it is not considered a duplicate
+                            action).
+                      * **Dismiss**:
+                          * Remove one of the squad's units (officer or
+                            soldier) from the board. **They cannot be deployed
+                            this round**.
+                - name: Specialist Abilities
+                  text: |
+                      * These are available to be used 2 times per game (the
+                        2 cubes on the specialist card represent this).
+                      * Only **officers** can use the abilities.
+                      * Officers do **not** have to be in their own zone to
+                        use the ability.
+                      * When the ability is used, remove 1 of the action cubes
+                        from the game.
+                      * You cannot use the ability if the officer is not on
+                        the board.
+                      * Multiple specialist abilities can be used per round.
+                      * The **same specialist ability can only be used once
+                        per round**.
+                      * If the ability modifies an action, you must use the
+                        ability **before** taking that action.
+                      * If an ability refers to "soldier(s)", it can **only**
+                        be used on soldiers, not officers.
+                      * Abilities that prevent a specific unit from taking
+                        an action do not prevent the squad from [gathering
+                        intel](#intel).
+    - name: End of the Game
+      text: |
+          * The sniper wins immediately if they complete their 2nd objective.
+          * The defenders win immediately if:
+              * They wound the sniper a 2nd time.
+              * If their action cubes are on the final space of the countdown
+                track at the start of their turn.
+    - name: Line of Sight
+      id: los
+      text: |
+          * You have line of sight to a target if you can trace a straight
+            line from any edge of the space you are on to any edge of the
+            space the target is on, **without going through an enclosed space**.
+          * You can shoot into or out of an enclosed space (windows).
+          * If you are in a building or room, you have line of sight to every
+            other space in said building.
+          * You cannot trace line of sight *through* enclosed spaces either:
+              * From an open space.
+              * From an enclosed space to an open space.
+          * From an elevated space, every other elevated space is in line of
+            sight unless it would pass through an obstruction.
+          * When targeting other elevated spaces, you can shoot over open or
+            enclosed spaces below you.
+          * You cannot shoot through an elevated space to an open or enclosed
+            space.
+    - name: Maps
+      id: maps
+      text: |
+          * Each map has its own set of 9 objective cards. The initials of
+            the map name are on the backs.
+          * Each map is broken down into [red]!red!, [yellow]!#fbe55e!, and
+            black sectors.  There may be more than 1 neutral (white) sector.
+          * Defenders may leave their sector at any point.
+          * Each space can only have 1 defender, but defenders can move
+            through spaces with another defender.
+          * If a defender moves into the space with the sniper, **the sniper
+            says nothing**.
+          * Spaces are adjacent if they share an edge.
+          * Spaces are **matching-adjacent** if they share an edge and are the
+            same type (open, enclosed, or elevated).
+
+          Space Types:
+
+          * **Open**: Main outdoor spaces.
+              * They are separated by white lines.
+          * ![enclosed](/static/img/sniper_elite/enclosed.png)
+            **Enclosed**: Spaces inside a building, or inside rooms.
+              * They are separated by black lines.
+              * The borders are also thicker lines.
+              * You can only move in and out of these via the indicated
+                doorways.
+              * These spaces affect [line of sight](#los).
+          * ![elevated](/static/img/sniper_elite/elevated.png)
+            **Elevated**: These are high ground.
+              * They are separated by [grey]!grey! lines.
+              * There is a dashed line where they border lower ground.
+              * You can only move in and out of the these spaces via the
+                designated access points.
+              * These spaces affect [line of sight](#los).
+
+          Special spaces:
+
+          * ![objectives](/static/img/sniper_elite/objectives.png)
+            **Objectives**: Numbered spaces. There is a matching card in the
+            objective deck for each space.
+          * ![difficult](/static/img/sniper_elite/difficult.png)
+            **Difficult Terrain**: Any mini (sniper or enemy) entering this
+            space reduces their max movement by 1.
+          * ![water](/static/img/sniper_elite/water.png) **Water**: You
+            cannot move into these spaces, but they do not block [line of
+            sight](#los).
+          * ![obstruction](/static/img/sniper_elite/obstruction.png)
+            **Obstruction**: You cannot move into these spaces and they always
+            block [line of sight](#los).
+
+          Starting spaces:
+
+          * ![officers](/static/img/sniper_elite/officers.png)
+            **Officers**: They start in their matching color on the iron cross
+            spaces.
+          * ![soldiers](/static/img/sniper_elite/soldiers.png)
+            **Soldiers**: They start on the matching colored spaces *without*
+            an iron cross.
+          * ![sniper](/static/img/sniper_elite/sniper.png) **The Sniper**: 
+            They enter via 1 of the 4 arrows. The sniper cannot start on a
+            space matching the color of 1 of their objectives.
