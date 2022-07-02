@@ -1,0 +1,605 @@
+name: "Scythe"
+description: "Gather resources and build your empire in this Euro/American crossover [See this on BGG]()"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+bgg_id: 169786
+thumbnail: https://cf.geekdo-images.com/7k_nOxpO9OGIjhLq2BUZdA__thumb/img/eQ69OEDdjYjfKg6q5Navee87skU=/fit-in/200x150/filters:strip_icc()/pic3163924.jpg
+sections:
+    - name: Setup
+      text: |
+          * Place the board on the table.
+          * Place 1 encounter token on each territory with a matching symbol:
+            ![encounter](/static/img/scythe/encounter.png)
+          * Place the resources and coins near the board.
+          * Shuffle the combat cards and put them in their place on the board.
+              * If this pile ever runs out, shuffle the discard for a new
+                draw pile.
+          * Shuffle the Factory cards and randomly a number of cards equal to
+            the number of players + 1.  Place them face down on their
+            matching spot on the board.
+          * Shuffle the objective cards and put them on the board.
+          * Shuffle the encounter cards and put them on the board.
+          * Randomly select 1 of the structure bonus tiles and place it
+            face up at the bottom of the Popularity track.
+          * Randomly shuffle the Faction and Player mats and deal 1 of each
+            to each player. Each player should sit near their home territory.
+          * Using the Faction and Player mats, each player should take/set
+            their starting resources.  This includes objective cards, starting
+            location on the Popularity and Power tracks, combat cards, and
+            coins.
+          * Each player should take their mini and other figures of their
+            color.
+          * On each player mat:
+              * Put 6 tech cubes on the green boxes with a blank square in
+                the bottom right corner.
+              * Put 6 of your workers on the rectangles above the produce
+                action.
+              * Put the 4 structure tokens in their corresponding boxes.
+              * Place the 4 recruit tokens (cylinders) in their spots along
+                the bottom row of the mat.
+              * Set your action pawn next to the board.
+          * The player with the lowest number in the starting resources
+            label of their player mat begins and play will continue clockwise
+            from there.
+          * Place your 6 stars on your faction mat.
+          * Place your mechs in their spots on the faction mat.
+          * Give each player a quick-start card and a riverwalk card.
+    - name: Gameplay
+      text: |
+          The game is played in a continous fashion until a player places
+          their 6th star on the board, which will **immediately** end the
+          game. Proceed to [final scoring](#scoring).
+
+          Each turn consist of placing your action pawn on 1 of the 4 sections
+          of your player mat and taking either the top action, bottom action,
+          or both.
+
+          * If both actions are taken, the top action must be taken 1st.
+          * The section of the mat you choose **must** be different than the
+            selection from your previous turn (you can choose anything for
+            your 1st turn).
+          * The [costs]!red! and [benefits]!green! are shown as empty boxes
+            on your player mat.
+          * To take an action, 1st pay the [cost]!red! and take as much of the
+            [benefit]!green! as you'd like.
+          * After a turn is completed, the next player in clockwise order takes
+            their turn.
+      sections:
+          - name: "Top-Row Actions"
+            sections:
+                - name: Move
+                  id: move
+                  text: |
+                    Choose 1:
+
+                    * Move up to 2 **different** units you control 1 space
+                      **OR**
+                    * Gain 1 coin.
+
+                    Important notes:
+
+                    * Units may pick up/drop off any number of resources
+                      during a move action.
+                    * Mechs can also carry any number of workers in addition
+                      to resource tokens.
+                        * You can "chain" actions in this manner. e.g. A mech
+                          could pick up a worker, move 1 space and drop off
+                          the worker, and then that worker could move 1 more
+                          space.
+                    * Rivers and lakes cannot be crossed by default. Some mech
+                      abilities allow you to break this rule.
+                        * A river is a body of water on the border between 2
+                          land hexes.
+                        * A lake takes up almost the entirety of the hex.
+                    * All territories with a tunnel are considered adjacent.
+                    * If your character and/or mech move into a territory:
+                        * *Only controlled by opponent's workers*: Their
+                          movement ends and they cannot be moved again.
+                            * All of the opponent workers are moved back to
+                              their home territory.
+                            * You lose 1 popularity for each worker moved.
+                            * **Your workers alone cannot move into a territory
+                              controlled by opponent workers**.
+                        * *Controlled by a structure*: The player who controls
+                          the unit now controls the territory.
+                        * *Controlled by characters/mechs*: Their movement
+                          ends and they cannot move again this turn.
+                            * Start a [combat](#combat) in this territory.
+                            * **Your workers alone cannot move into a territory
+                              controlled by opponent characters/mechs**.
+                    * No units can ever voluntarily be moved onto a home base,
+                      including your own.
+                    * If you move your character onto an encounter space, their
+                      movement ends and they cannot be moved again this turn.
+                        * After resolving combats, discard the encounter token
+                          and resolve the encounter.
+                    * There is **no limit** to the number of units on a
+                      territory from the same faction.
+                - name: Bolster
+                  text: |
+                      Pay the 1 coin cost and choose 1:
+
+                      * Increase your power by 2 on the power track.
+                      * Draw 1 combat card.
+                - name: Trade
+                  text: |
+                      Pay the 1 coin cost and choose 1:
+
+                      * Gain any 2 resources (any combination of oil, metal,
+                        food, and/or wood). Place them on any territory you
+                        control **with a worker on it**.
+                          * You may **not** take this action if all your workers
+                            are in your home territory.
+                      * Increase your popularity by 1 on the popularity track.
+                - name: Produce
+                  text: |
+                      1. Pay the cost (if any) shown in the red boxes with
+                         exposed costs (where workers are/were placed on your
+                         player mat).
+                      2. Choose a number of **different** territories up to the
+                         number of exposed [green boxes]!green! on the action
+                         and produce on those territories.
+                          * See the [territories](#territories) section for what
+                            each type produces.
+                      3. On the selected territories, produce 1 resource per
+                         worker on the territory.
+                          * If you are producing on a village, the new worker
+                            is placed from the left-most spot on your player
+                            mat.
+                          * There are **no limits** to the number of
+                            resources/workers on a territory.
+                          * Workers placed on the board can never be returned
+                            to your player mat.
+          - name: Bottom-Row Actions
+            text: |
+                * These actions can be taken even if some of the actions can
+                  no longer be taken.  e.g. the Upgrade action with nothing
+                  more to upgrade.
+                * If recruits (cylinders) have been enlisted (removed), you
+                  will also gain those benefits for the bottom row action
+                  when you or your neighbors take it. See the [enlist](#enlist)
+                  action for more info.
+                * Players **must** announce their bottom row actions as it may
+                  trigger bonuses for other players due to their removed
+                  recruits (cylinders).  See [enlist](#enlist) for more info.
+            sections:
+                - name: Upgrade
+                  text: |
+                      * Pay the cost. 
+                      * Pick up a tech cube from any
+                        [green box]!green! and place it on any empty
+                        [red box]!red! with bracketed borders.
+                          * You **cannot** place cubes on red boxes with
+                            solid borders.
+                - name: Deploy
+                  text: |
+                      * Pay the cost.
+                      * Deploy 1 mech from your faction mat and place it on
+                        a territory you control with a worker on it.
+                      * From now on, your mechs **and** your character gain
+                        the now exposed benefit.
+                - name: Build
+                  text: |
+                      * Pay the cost.
+                      * Take 1 building from your player mat and place it on
+                        the board in a territory you control with a worker on
+                        it.
+
+                      Important notes:
+
+                      * Only 1 structure can be built on each territory.
+                      * Opponents **cannot** use your structure abilities.
+                      * A territory with a structure on it is under your
+                        control even if there are no units there. If an
+                        opponent has any units there, they control the
+                        territory instead.
+                      * Structures cannot be moved or destroyed.
+                      * You may build on the Factory territory.
+                      * You cannot build on your home base.
+                      * You cannot build on lakes.
+                      * The exposed area on your player mat is an additional
+                        benefit you will now gain for that top-row action.
+
+                      Benefits:
+
+                      | Name | Benefit |
+                      | ---- | ------- |
+                      | Monument | When taking the bolster action, gain 1 popularity. |
+                      | Mill | Whenever you take the produce action, you may also produce on the territory with the mill **in addition** to the other territories you selected. |
+                      | Mine | This acts as a tunnel **only you can use**. You may move units to/from your mine like a tunnel, even if an opponent controls the territory the mine is on. |
+                      | Armory | Whenever you take a trade action, gain 1 power. |
+                - name: Enlist
+                  id: enlist
+                  text: |
+                      * Pay the cost.
+                      * Pick up a recruit token (cylinder) from your player
+                        mat and place it on a 1-time bonus spot on your
+                        faction mat.
+                      * Immediately gain the covered bonus on your faction
+                        mat.
+                      * The 4 bonuses are:
+                          * Gain 2 power
+                          * Gain 2 coins
+                          * Gain 2 popularity
+                          * Draw 2 combat cards
+                      * The uncovered space on your player mat reveals an
+                        ongoing bonus.
+                          * For the rest of the game, when **you or the player
+                            to your immmediate right/left** take the bottom
+                            row action matching the action the recruit was
+                            taken from, you gain the specified bonus.
+                          * If more than 1 person would gain one of these
+                            bonuses, they are gained in clockwise order.
+                              * This is done because a 6th star could be
+                                placed due to this bonus, which means that
+                                subsequent players would **not** receive
+                                the bonus.
+                              * In a 2 player game, you only get the bonus
+                                **once** when your opponent takes the action.
+          - name: Combat
+            id: combat
+            text: |
+                Combat occurs at the end of a [move action](#move), but
+                **before** the player takes their bottom row action. This
+                occurs when the active player's mechs/character share a
+                space with an opponents mechs/character.
+
+                * It's possible for combat to occur on multiple territories.
+                  In this case, the active player chooses the order of
+                  resolution.
+                * Whoever wins the combat will gain a star.
+                * Other players may try to influence the combat by bribing
+                  them with coins.
+                * If the attacking player has a mech ability that affects
+                  combat, they use that ability 1st.
+                * If combat results in a tie, the **attacking** player wins.
+
+                ## Combat Phases
+
+                1. Players simultaneously select the power they want to spend.
+                    * You cannot choose more power than you currently have.
+                    * You cannot spend more than 7 power in a combat.
+                2. (optional) Secretly add combat card(s).
+                    * You can add 1 card for each of your character/mechs
+                      in the battle.
+                    * You do not have to reveal the number of combat cards
+                      played (0+).
+                3. Both players reveal their power dials and combat cards
+                   simultaneously.
+                4. The player with highest total power wins, with ties going to
+                   the attacker.
+                    * *Both players* spend the power they bid.
+                    * *Both players* discard all used combat cards.
+                    * *The winner* gains or maintains control of the territory.
+                    * *The winner* places 1 star on 1 of the 2 combat spaces of
+                      the triumph track (if both haven't been filled already).
+                    * If *the winner* was the attacker, they lose 1 popularity
+                      for each worker they've forced back to their home base.
+                    * If there's an encounter token on the space, *the winner*
+                      can now perform the encounter.
+                    * *The loser* must retreat all their units to their home
+                      base.
+                    * **All resources remain on the territory**, regardless of
+                      the winner.
+                    * If *the loser* revealed at least 1 power via their dial
+                      or combat cards, they gain 1 combat card.
+
+                ## Combat card distribution
+
+                | Power | Quantity |
+                | ----- | -------- |
+                | 2 | 16 |
+                | 3 | 12 |
+                | 4 | 8 |
+                | 5 | 6 |
+          - name: Encounters
+            text: |
+                * **Only characters (not mechs/workers) can trigger an
+                  encounter.
+                * When moving your character onto a territory with an
+                  encounter token on it, their movement ends for this turn.
+                * After movement and combat are complete, **but before you
+                  take your bottom row action**, discard the encounter token
+                  and draw an encounter card.
+                    * If the character moving into the territory loses
+                      combat, the encounter token stays on the board and the
+                      encounter is **not** resolved.
+                * Show the art and read the encounter out loud, then select
+                  one of the options and resolve it.
+                    * If you cannot pay the cost for an option, you cannot
+                      take that option.
+                    * Any resources/structures/mechs/workers you gain from
+                      the encounter go on the same territory as your character.
+          - name: The Factory
+            id: factory
+            text: |
+                * The factory does not produce resources.
+                * The factory counts as 3 territories if you control it at
+                  the end of the game for the purposes of
+                  [end game scoring](#scoring).
+                * The **1st time** your character moves onto the factory,
+                  you can look through the available factory cards and
+                  choose 1. Return the rest to the board face down.
+
+                ## Factory cards
+                * Each factory card acts as a 5th section of your player mat.
+                * You may place your action pawn on the card to take
+                  the top and/or bottom actions on that card in the
+                  same fashion as other action spaces.
+                * All factory cards have a move action on their bottom
+                  row that works differently.
+                    * Move 1 unit up to 2 spaces.
+                    * All other [movement rules](#move) apply.
+                    * If you have a mine, you can move through the mine.
+                    * If you've unlocked the "speed" mech ability, 1 of
+                      your mechs or character may move up to 4 spaces.
+                * **You can only have 1 factory card**.  You get this
+                  only the 1st time you visit the factory.
+                * You can never swap your factory card for another.
+          - name: Objectives
+            text: |
+                * Each player starts the game with 2 objectives.
+                * You may reveal a completed objective any time **during your
+                  turn**.
+                * If you have completed an objective, place a star in the
+                  objective spot on the triumph track and **discard both of
+                  your objective cards** to the bottom of the deck.
+                * The Saxons can complete 2 objectives.
+          - name: Alliances and Bribes
+            text: |
+                * Players may make informal agreements.
+                * The only *tangible* thing that can be exchanged is coins.
+                * You can't negotiate your way out of combat that has already
+                  begun.
+                * Agreements between players are non-binding.
+          - name: Star Objectives
+            text: |
+                * Complete all 6 upgrades
+                * Deploy all 4 mechs
+                * Build all 4 structures
+                * Enlist all 4 recruits
+                * Have all 8 workers on the board
+                * Reveal 1 completed objective card
+                * Win combat (2x)
+                * Have 18 popularity
+                * Have 16 power
+
+                When you achieve any of these, place a star in its spot. **You
+                cannot lose a star after it has been placed**. By default,
+                each spot can only be completed 1 time by each player.
+    - name: Final Scoring
+      id: scoring
+      text: |
+          The game ends **immediately** when anyone places a 6th star on the
+          board (even mid-turn). If this happens as part of a bottom row
+          action, gain the primary benefits before placing a star.
+
+          The person with the most coins wins the game. You get coins for:
+
+          * The coins in hand at the end of the game.
+          * Using your place on the popularity track:
+              * Gain coins for stars placed.
+              * Gain coins for territories controlled.
+                  * **The factory is worth 3 territories**.
+                  * Home bases do not count as territories.
+                  * You must have a worker/mech/character in a territory to
+                    control it.
+                  * You control a territory with your structure and no enemy
+                    units on it.
+              * Gain coins for every 2 resources you control. Workers are
+                **not** resources.
+              * Gain coins according to the [structure bonus
+                tile](#struct_bonus).
+
+          If there is a tie, it is broken in this order:
+
+          1. Number of workers, mechs, structures
+          2. Power
+          3. Popularity
+          4. Number of resource tokens controlled
+          5. Number of territories controlled
+          6. Number of stars on the board
+    - name: Factions
+      sections:
+          - name: Saxony
+            text: |
+                * **Riverwalk**: Your character and mechs can move across
+                  rivers onto forests and mountains.
+                * **Underpass**: For move actions for your character and mechs,
+                  all mountains *you control*, tunnels, and your mine are
+                  considered adjacent.
+                * **Disarm**: Before combat on a tunnel, your opponent loses
+                  2 power. Set this on the power track.  This can only be
+                  done once per combat.
+                * **Speed**: Your character and meches may move 1 additional
+                  space per move action.
+                    * If they move onto a territory containing an opponent's
+                      charater/mech, their movement ends.
+                    * Moving through tunnels (including "underpass") counts
+                      as 1 space.
+                    * Your mech can pick/drop off resources in the middle of
+                      a move action.
+          - name: Rusviet
+            text: |
+                * **Riverwalk**: Your character and mechs can move across
+                  rivers onto farms and villages.
+                * **Township**: For move actions for your character/mechs,
+                  villages *you control* and [the Factory](#factory) are
+                  considered adjacent.
+                * **People's Army**: In combat where you have at least 1
+                  worker, you may play 1 additional combat card.
+                    * There must still be a character/mech to engage in combat.
+                * **Speed**: Your character and meches may move 1 additional
+                  space per move action.
+                    * If they move onto a territory containing an opponent's
+                      charater/mech, their movement ends.
+                    * Moving through tunnels counts as 1 space.
+                    * Your mech can pick/drop off resources in the middle of
+                      a move action.
+          - name: Nordic
+            text: |
+                * **Riverwalk**: Your character and mechs can move across
+                  rivers onto forests and mountains.
+                * **Seaworthy**: Your character and mechs can move to/from
+                  lakes and retreat onto adjacent lakes.
+                    * You cannot leave workers/resources on a lake.
+                    * Workers may not move off of the lake without a mech.
+                    * You cannot build a structure on a lake.
+                    * You cannot deploy a mech on a lake.
+                    * If 2 factions have the lake movement ability, it's
+                      possible to have a combat on a lake.
+                * **Artillery**: Before you engage in combat, you may pay 1
+                  power to force your opponent to lose 2 power.
+                    * This is done on the power track.
+                    * You may only do this once per combat.
+                * **Speed**: Your character and meches may move 1 additional
+                  space per move action.
+                    * If they move onto a territory containing an opponent's
+                      charater/mech, their movement ends.
+                    * Moving through tunnels counts as 1 space.
+                    * Your mech can pick/drop off resources in the middle of
+                      a move action.
+          - name: Crimea
+            text: |
+                * **Riverwalk**: Your character and mechs can move across
+                  rivers onto farms and tundra.
+                * **Wayfare**: Your charcter and mechs may move from a
+                  territory or home base to any **inactive** (not in the game)
+                  faction's home base.
+                * **Scout**: Before you engage in combat, steal 1 of your
+                  opponent's combat cards **at random** and add it to your
+                  hand.
+                    * You may only do this once per combat.
+                * **Speed**: Your character and meches may move 1 additional
+                  space per move action.
+                    * If they move onto a territory containing an opponent's
+                      charater/mech, their movement ends.
+                    * Moving through tunnels counts as 1 space.
+                    * Your mech can pick/drop off resources in the middle of
+                      a move action.
+          - name: Polania
+            text: |
+                * **Riverwalk**: Your character and mechs can move across
+                  rivers onto villages and mountains.
+                * **Submerge**: Your character and mechs may move to/from
+                  lakes *and* move from any lake to another (like tunnels).
+                    * You cannot leave workers/resources on a lake.
+                    * Workers may not move off of the lake without a mech.
+                    * You cannot build a structure on a lake.
+                    * You cannot deploy a mech on a lake.
+                    * If 2 factions have the lake movement ability, it's
+                      possible to have a combat on a lake.
+                * **Camaraderie**: You do not lose popularity when forcing
+                  opponent workers to retreat after winning combat **as the
+                  attacker**.
+                * **Speed**: Your character and meches may move 1 additional
+                  space per move action.
+                    * If they move onto a territory containing an opponent's
+                      charater/mech, their movement ends.
+                    * Moving through tunnels counts as 1 space.
+                    * Your mech can pick/drop off resources in the middle of
+                      a move action.
+          - name: Clan Albion
+            text: |
+                * **Burrow**: Your character and mechs may cross rivers into
+                  or out of any adjacent tunnel territory.
+                    * A territory containing your mine is included in this.
+                    * A territory containing an opponent's mine is **not**
+                      included in this.
+                * **Sword**: Before you engage in combat *as the attacker*,
+                  the defender loses 2 power.
+                    * This is done on the power track.
+                    * This is done only once per combat.
+                * **Shield**: Before you engage in combat *as the defender*,
+                  gain 2 power.
+                    * This is done on the power track.
+                    * This is done only once per combat.
+                * **Rally**: When moving your character/mechs, they can move
+                  to any territory that contains at least 1 of your workers
+                  or a Flag token.
+          - name: Togawa Shogunate
+            text: |
+                * **Toka**: Once per turn when moving, either your character or
+                  **1** mech may move across a river.
+                    * A mech can transport workers.
+                    * The character/mech cannot move across multiple rivers
+                      when using a move action on a factory card.
+                * **Suiton**: Your character/mechs can move to/from lakes.
+                    * If combat occurs on a lake, you may play 1 additional
+                      combat card.
+                    * You cannot leave workers/resources on a lake.
+                    * Workers may not move off of the lake without a mech.
+                    * You cannot build a structure on a lake.
+                    * You cannot deploy a mech on a lake.
+                    * If 2 factions have the lake movement ability, it's
+                      possible to have a combat on a lake.
+                * **Ronin**: Before combat where you have exactly 1 unit
+                  (0 workers and either 1 charactor or 1 mech), you may
+                  gain 2 power on the power track.
+                    * Do **not** count airships or workers on airships.
+                * **Shinobi**: Your character/mechs can move to any territory
+                  with a Trap token.
+                    * If your character/mech ends their movement on a space
+                      with a disarmed trap token, you can arm the trap.
+                        * If the movement initiates combat, the trap can
+                          only be armed if you win.
+    - name: Structure Bonus Tiles
+      id: struct_bonus
+      text: |
+          ![tun adj](/static/img/scythe/tun_adj.png)
+
+          * The number of tunnels adjacent to your structures.
+          * Only count each tunnel **once**.
+          * Mines are **not** counted as tunnels.
+          * Rivers do not break adjacency.
+
+          ---
+
+          ![lake adj](/static/img/scythe/lake_adj.png)
+
+          * The number of lakes adjacent to your structures.
+          * Only count each lake **once**.
+
+          ---
+
+          ![enc adj](/static/img/scythe/enc_adj.png)
+
+          * The number of encounters adjacent to your structures.
+          * Only count each encounter **once**.
+          * These count whether or not the encounter token is on the space.
+          * Rivers do not break adjacency.
+
+          ---
+
+          ![tun structs](/static/img/scythe/tun_structs.png)
+
+          * The number of tunnels with your structures on them.
+          * A mine does **not** count as a tunnel for this.
+
+          ---
+
+          ![structs row](/static/img/scythe/structs_row.png)
+
+          * The number of your structures in a row.
+          * Any continuous straight line is ok.
+          * Only count the longest row of structures you have.
+          * Rivers do not break adjacency.
+
+          ---
+
+          ![farm tundra](/static/img/scythe/farm_tundra.png)
+
+          * The number of farms or tundras with your structures on them.
+    - name: Territories
+      id: territories
+      text: |
+          | Symbol | Type | Production |
+          | ------ | ---- | ---------- |
+          | ![factory](/static/img/scythe/factory.png) | Factory | |
+          | ![farm](/static/img/scythe/farm.png) | Farm | ![food](/static/img/scythe/food.png) |
+          | ![forest](/static/img/scythe/forest.png) | Forest | ![wood](/static/img/scythe/wood.png) |
+          | ![lake](/static/img/scythe/lake.png) | Lake | |
+          | ![mountain](/static/img/scythe/mountain.png) | Mountain | ![metal](/static/img/scythe/metal.png) |
+          | ![tundra](/static/img/scythe/tundra.png) | Tundra | ![oil](/static/img/scythe/oil.png) |
+          | ![village](/static/img/scythe/village.png) | Village | ![worker](/static/img/scythe/worker.png) |
