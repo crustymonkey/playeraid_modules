@@ -41,9 +41,9 @@ sections:
           * Flip over the top 6 cards from Era 1.
           * **If playing with Monuments**:
               * Shuffle all the Monument cards together.
-              * Turn over a number of Monuments equal to the number of players
-                + 3 and place them near the City board.  Place the matching
-                monuments on them.
+              * Turn over a number of Monuments equal to the number of
+                players + 3 and place them near the City board.  Place
+                the matching monuments on them.
               * Return the unused monuments and their cards to the box.
     - name: Player Turns
       text: |
