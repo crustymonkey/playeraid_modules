@@ -36,7 +36,6 @@ Your directory should be layed out as follows:
   - img <- This is a directory that you can put images in.  You can use these images in your aids.  More on images below.
 ```
 
-
 # Data Layout
 The layout of your data in your YAML/JSON file is pretty simple.  The allowed key values in the mappings are pretty straightforward here.
 
@@ -45,16 +44,11 @@ This will have the following 7 mapping items (some optional):
 
 * **name** (required): This is the name that will show up on the playeraid.net home page
 * **description** (required):  This is a short description of the game.  This could just be a simple link to the BGG page
-* **credits** (optional):  If you are copying this playeraid from an existing aid and wish to credit the original creator, you can specify them here.  You can also add your own name if you put this aid together.
+* **BGG ID** (required): This is ID of the game from board game geek. You can get this from the url for the game. e.g. `339958` is the ID for "Gutenberg" from this URL: https://boardgamegeek.com/boardgame/339958/gutenberg
 * **sections** (required): This will map to a list of your sections (more on `sections` below).
+* **credits** (optional):  If you are copying this playeraid from an existing aid and wish to credit the original creator, you can specify them here.  You can also add your own name if you put this aid together.
 * **enabled** (optional): This is either *true* or *false* for whether it is enabled.  You must set this to *true* to enable your player aid.  The default is *false*
 * **text_type** (optional): This is either *html* or *markdown*. If not specified, the default is *html*.
-* **thumbnail** (optional): This is a url pointing to a thumbnail image. There is an included tool, `gthumb.py`, in the root directory that can be used to fetch a thumbnail url from BGG. Note that you will have to `pip3 install py-bgg` to use the script.  I can also add this for you if you don't include it.
-
-```
-$ ./gthumb.py yamatai
-Yamataï: https://cf.geekdo-images.com/3F1FUd4HRn2xLJpXEfmMbA__thumb/img/80Hmhnfjv7BEKgHBNP6rGcM5tfk=/fit-in/200x150/filters:strip_icc()/pic3357724.jpg
-```
 
 ## Sections
 This is the meat of your player aid.  Each section will have up to 3 items in it, including another `sections` mapping.  This means you can have nested sections within sections.  You can find examples of these on https://playeraid.net.
