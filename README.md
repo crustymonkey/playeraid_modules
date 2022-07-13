@@ -44,9 +44,10 @@ This will have the following 7 mapping items (some optional):
 
 * **name** (required): This is the name that will show up on the playeraid.net home page
 * **description** (required):  This is a short description of the game.  This could just be a simple link to the BGG page
-* **BGG ID** (required): This is ID of the game from board game geek. You can get this from the url for the game. e.g. `339958` is the ID for "Gutenberg" from this URL: https://boardgamegeek.com/boardgame/339958/gutenberg
+* **bgg_id** (required): This is ID of the game from board game geek. You can get this from the url for the game. e.g. `339958` is the ID for "Gutenberg" from this URL: https://boardgamegeek.com/boardgame/339958/gutenberg
 * **sections** (required): This will map to a list of your sections (more on `sections` below).
-* **credits** (optional):  If you are copying this playeraid from an existing aid and wish to credit the original creator, you can specify them here.  You can also add your own name if you put this aid together.
+* **expansions** (optional): This is YAML list of expansions included in the player aid.
+* **credits** (optional):  If you are copying this player aid from an existing aid and wish to credit the original creator, you can specify them here.  You can also add your own name if you put this aid together.
 * **enabled** (optional): This is either *true* or *false* for whether it is enabled.  You must set this to *true* to enable your player aid.  The default is *false*
 * **text_type** (optional): This is either *html* or *markdown*. If not specified, the default is *html*.
 
