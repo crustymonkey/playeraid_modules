@@ -1,10 +1,10 @@
 name: "Furnace"
-description: "Run your factories for profit [See this on BGG]()"
+description: "Run your factories for profit"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
 bgg_id: 318084
-thumbnail: https://cf.geekdo-images.com/7UK6bLlP0Cz3EFYCqhtcSw__thumb/img/7WjwLTkySTiSMQu89ClZRhspd5Q=/fit-in/200x150/filters:strip_icc()/pic5934958.png
+expansions:
 sections:
     - name: Setup
       text: |

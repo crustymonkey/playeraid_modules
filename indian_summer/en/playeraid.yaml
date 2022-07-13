@@ -1,10 +1,10 @@
 name: "Indian Summer"
-description: "Go on a hike and score some forest treasures [See this on BGG](https://boardgamegeek.com/boardgame/233678/indian-summer)"
+description: "Go on a hike and score some forest treasures"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
 bgg_id: 233678
-thumbnail: https://cf.geekdo-images.com/bloH9_cfn7U0ZxilTblA9w__thumb/img/8L96NRWJxXeFgtYSivzGYPtMlNU=/fit-in/200x150/filters:strip_icc()/pic3749870.jpg
+expansions:
 sections:
     - name: Setup
       text: |

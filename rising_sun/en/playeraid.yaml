@@ -1,11 +1,11 @@
 name: Rising Sun
 description: |
-  Rising Sun is a game about honor, negotiation, and warfare in a feudal Japan where the ancient gods (kami) have returned to rebuild the empire. [See it on Boardgamegeek](https://boardgamegeek.com/boardgame/205896/rising-sun)
+  Rising Sun is a game about honor, negotiation, and warfare in a feudal Japan where the ancient gods (kami) have returned to rebuild the empire.
 credits: "CMON Rising Sun rules manual and FAQ, transferred to PlayerAid by Cory Osborn (https://boardgamegeek.com/user/GamePimp)"
 enabled: true
 bgg_id: 205896
-thumbnail: https://cf.geekdo-images.com/iwevA6XmiNLHn1QnGUucqw__thumb/img/UNKv6MWzJUAwhhP7-ng6HoinRa8=/fit-in/200x150/filters:strip_icc()/pic3880340.jpg
 text_type: markdown
+expansions:
 sections:
   - name: Setup
     text: |

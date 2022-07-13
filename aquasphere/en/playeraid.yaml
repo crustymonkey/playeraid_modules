@@ -1,10 +1,10 @@
 name: "AquaSphere"
-description: Coordinate programmer and scientist to gather data from the depths of the Ocean. [See it on BGG](https://www.boardgamegeek.com/boardgame/159508/aquasphere)
+description: Coordinate programmer and scientist to gather data from the depths of the Ocean.
 credits: Keith Rudolph
 enabled: true
 bgg_id: 289223
-thumbnail: https://cf.geekdo-images.com/K7Hq_KDgr8jJHMtW21XcfQ__thumb/img/ZddcJnCbwkBUoilb5x-Bj-k7tio=/fit-in/200x150/filters:strip_icc()/pic2197124.jpg
 text_type: markdown
+expansions:
 sections:
     - name: Setup
       text: |

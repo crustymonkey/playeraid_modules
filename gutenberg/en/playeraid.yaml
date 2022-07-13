@@ -1,10 +1,10 @@
 name: "Gutenberg"
-description: "Print some books [See this on BGG](https://boardgamegeek.com/boardgame/339958/gutenberg)"
+description: "Print some books"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
 bgg_id: 339958
-thumbnail: https://cf.geekdo-images.com/bDUgQ1CfnrTniZytZ5UlQA__thumb/img/M1mWVYtIfyKxWFO8Pn4KH3aS1-c=/fit-in/200x150/filters:strip_icc()/pic6618432.jpg
+expansions:
 sections:
     - name: Setup
       text: |

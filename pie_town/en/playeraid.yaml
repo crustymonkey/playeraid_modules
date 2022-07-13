@@ -1,10 +1,10 @@
 name: Pie Town
-description: Make some pies! [See this on BGG](https://boardgamegeek.com/boardgame/233976/pie-town)
+description: Make some pies!
 text_type: markdown
 credits: Jay Deiman
 enabled: true
 bgg_id: 233976
-thumbnail: https://cf.geekdo-images.com/gos1YxpIG2bhauZrzijnYg__thumb/img/-n4BxdA3Y6z0QMdTlPXgFjeNQgU=/fit-in/200x150/filters:strip_icc()/pic3710496.jpg
+expansions:
 sections:
     - name: Setup
       text: |

@@ -1,10 +1,10 @@
 name: Kepler 3042
-description: Kepler is a game of exploration and colonization. [See it on BGG](https://boardgamegeek.com/boardgame/198190/kepler-3042)
+description: Kepler is a game of exploration and colonization.
 credits: Sean Owens
 enabled: true
 bgg_id: 198190
-thumbnail: https://cf.geekdo-images.com/vBOp95hH-UhrDawnMyY-xQ__thumb/img/om3xN3SKlSlZrN2ka4_6bIyjlXk=/fit-in/200x150/filters:strip_icc()/pic3673652.png
 text_type: markdown
+expansions:
 
 sections:
  - name: Setup

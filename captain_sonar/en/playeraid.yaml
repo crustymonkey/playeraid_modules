@@ -1,11 +1,9 @@
 name: Captain Sonar
 description: Hunt the enemy submarine, a two team 4+4 player submarine duel.
-             <a href="https://boardgamegeek.com/boardgame/171131/captain-sonar">
-             See it on Boardgamegeek</a>
 credits: Per Glode
 enabled: true
 bgg_id: 171131
-thumbnail: https://cf.geekdo-images.com/eVy9IyAVtzzKv2VvPHFPbA__thumb/img/RavsPCF6el7VEaVR1OG5M2ZGCrk=/fit-in/200x150/filters:strip_icc()/pic3013621.png
+expansions:
 sections:
   - name: Set up
     text: This text only describe the turn-by-turn rules for the first scenario, not the real-time mode.

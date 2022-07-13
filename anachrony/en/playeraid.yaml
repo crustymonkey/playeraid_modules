@@ -1,10 +1,12 @@
-name: Anachrony with Expansions
-description: Anachrony with Pioneers of New Earth and Guardians of the Council expansions. [See it on BGG](https://boardgamegeek.com/boardgame/185343/anachrony)
+name: Anachrony
+description: Anachrony with Pioneers of New Earth and Guardians of the Council expansions.
 credits: Keith Rudolph
 enabled: true
 bgg_id: 185343
-thumbnail: https://cf.geekdo-images.com/31quLNzteInnevVRAABoow__thumb/img/a0G93aMOKp3_mmnCURYWuZd210U=/fit-in/200x150/filters:strip_icc()/pic3499707.jpg
 text_type: markdown
+expansions:
+    - Pioneers of New Earth
+    - Guardians of the Council
 sections:
     - name: Setup
       text: |

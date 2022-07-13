@@ -1,10 +1,10 @@
 name: "Sniper Elite: The Board Game"
-description: "Stealthily accomplish your mission as a WWII sniper [See this on BGG]()"
+description: "Stealthily accomplish your mission as a WWII sniper"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
 bgg_id: 295262
-thumbnail: https://cf.geekdo-images.com/gGDwoohdi6ky6Z3EZfpz3g__thumb/img/Srxptd_xiygDumqiPqR0d2OdIY4=/fit-in/200x150/filters:strip_icc()/pic6863775.jpg
+expansions:
 sections:
     - name: Setup
       text: |

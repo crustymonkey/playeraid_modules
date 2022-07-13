@@ -1,10 +1,10 @@
 name: "Smartphone Inc."
-description: "Build your smartphone empire [See this on BGG]()"
+description: "Build your smartphone empire"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
 bgg_id: 246684
-thumbnail: https://cf.geekdo-images.com/Ndctxvd7kBXYubeYRKRqzw__thumb/img/hJtPqShJYdb8DsdnTvpdkXrx-CU=/fit-in/200x150/filters:strip_icc()/pic4258616.jpg
+expansions:
 sections:
     - name: Setup
       text: |

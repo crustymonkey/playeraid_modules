@@ -1,10 +1,10 @@
 name: "Praga Caput Regni"
-description: Wealthy citizens of medieval Prague organize building projects to gain king's favor. [See it on BGG](https://www.boardgamegeek.com/boardgame/308765/praga-caput-regni)
+description: Wealthy citizens of medieval Prague organize building projects to gain king's favor.
 credits: Keith Rudolph
 enabled: true
 bgg_id: 308765
-thumbnail: https://cf.geekdo-images.com/aUPeXVwc40xrgud2XeZwyA__thumb/img/1TYDRYM7iz0-jLJ-YZj6d5bhweg=/fit-in/200x150/filters:strip_icc()/pic5671087.png
 text_type: markdown
+expansions:
 sections:
     - name: Setup
       text: |

@@ -1,15 +1,15 @@
 name: "The Castles of Tuscany"
-description: "Build your region in Tuscany [See this on BGG](https://boardgamegeek.com/boardgame/300327/castles-tuscany)"
+description: "Build your region in Tuscany"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
 bgg_id: 300327
-thumbnail: https://cf.geekdo-images.com/_MfRr0gL7MZkqhea1qIyeA__thumb/img/jE0NT5PExNN-U-ppO01ts-tqtyw=/fit-in/200x150/filters:strip_icc()/pic5657331.jpg
+expansions:
 sections:
     - name: Setup
       text: |
           Play area setup:
-          
+
           1. Assemble the scoring board and place it.
           2. Shuffle the region cards and place them in a stack.
           3. Shuffle the yield cards and place them in a stack.
@@ -33,7 +33,7 @@ sections:
           * Set aside the 50/100 victory point marker.
 
           Continue setup:
-          
+
           1. Each player draws 5 region cards.
           2. Each player draws 3 random region boards -- one of each A, B,
              and C -- place them next to each other **long edge to long edge**,

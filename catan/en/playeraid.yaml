@@ -1,10 +1,10 @@
 name: "Catan"
-description: "Settle Catan [See this on BGG](https://boardgamegeek.com/boardgame/13/catan)"
+description: "Settle Catan"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-thumbnail: https://cf.geekdo-images.com/W3Bsga_uLP9kO91gZ7H8yw__thumb/img/8a9HeqFydO7Uun_le9bXWPnidcA=/fit-in/200x150/filters:strip_icc()/pic2419375.jpg
 bgg_id: 13
+expansions:
 sections:
     - name: Setup
       text: |

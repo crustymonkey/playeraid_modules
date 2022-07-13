@@ -1,10 +1,10 @@
 name: "Brass: Lancashire"
-description: Test your economic mettle as you build and network in the industrial revolution. [See it on BGG](https://www.boardgamegeek.com/boardgame/28720/brass-lancashire)
+description: Test your economic mettle as you build and network in the industrial revolution.
 credits: Keith Rudolph
 enabled: true
 bgg_id: 28720
-thumbnail: https://cf.geekdo-images.com/tHVtPzu82mBpeQbbZkV6EA__thumb/img/AghH1bAEhqzvyRcP3cy5G-rz0So=/fit-in/200x150/filters:strip_icc()/pic3469216.jpg
 text_type: markdown
+expansions:
 sections:
     - name: Setup
       text: |

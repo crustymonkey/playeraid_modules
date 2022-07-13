@@ -1,10 +1,10 @@
 name: "Now or Never"
-description: "The 3rd game in the Ryan Laukat trilogy [See this on BGG](https://boardgamegeek.com/boardgame/314745/now-or-never)"
+description: "The 3rd game in the Ryan Laukat trilogy"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
 bgg_id: 314745
-thumbnail: https://cf.geekdo-images.com/By59lVylKiQh_ICJUgK5Tg__thumb/img/a-AYlm8qtSbpqeqydP09w1Aorfw=/fit-in/200x150/filters:strip_icc()/pic6209785.jpg
+expansions:
 sections:
     - name: Setup
       text: |

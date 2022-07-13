@@ -1,10 +1,10 @@
 name: Terror in Meeple City / Rampage
-description: Prove you're the toughest monster in Meeple City by smashing buildings and eating meeples! [See it on BGG](https://boardgamegeek.com/boardgame/97903/terror-Meeple-city)
+description: Prove you're the toughest monster in Meeple City by smashing buildings and eating meeples!
 credits: Keith Rudolph
 enabled: true
 bgg_id: 97903
-thumbnail: https://cf.geekdo-images.com/loyFNu06XcKcRcoouNkn5Q__thumb/img/w5H9B8agVcPdAfNYgvN1qoFjLsc=/fit-in/200x150/filters:strip_icc()/pic2482302.jpg
 text_type: markdown
+expansions:
 sections:
     - name: Setup
       text: |

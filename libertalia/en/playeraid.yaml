@@ -1,10 +1,10 @@
 name: "Libertalia: Winds of Galecrest"
-description: "Ride the wind and collect some booty [See this on BGG](https://boardgamegeek.com/boardgame/356033/libertalia-winds-galecrest).  Also check out the [voyage randomizer](/libertalia_random) to save the pain of one deck being shuffled."
+description: "Ride the wind and collect some booty. Also check out the [voyage randomizer](/libertalia_random) to save the pain of one deck being shuffled."
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
 bgg_id: 356033
-thumbnail: https://cf.geekdo-images.com/6e-V_Xb2IsAsMNXU18Fi6A__thumb/img/KJIHXXkkIU7R-oK5i9byIyGdfm4=/fit-in/200x150/filters:strip_icc()/pic6669033.jpg
+expansions:
 sections:
     - name: Setup
       text: |

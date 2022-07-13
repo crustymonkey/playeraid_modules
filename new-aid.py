@@ -10,11 +10,12 @@ from textwrap import dedent
 
 YAML_TPL = dedent('''
     name: "{name}"
-    description: "{description} [See this on BGG]()"
+    description: "{description}"
     text_type: {text_type}
     credits: "{credits}"
     enabled: false
     thumbnail: https://example.com/image.png
+    expansions:
     sections:
         - name: Setup
           text: |
