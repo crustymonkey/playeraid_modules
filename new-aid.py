@@ -14,7 +14,7 @@ YAML_TPL = dedent('''
     text_type: {text_type}
     credits: "{credits}"
     enabled: false
-    thumbnail: https://example.com/image.png
+    bgg_id: {bgg_id}
     expansions:
     sections:
         - name: Setup
@@ -78,9 +78,66 @@ def norm_name(name):
     return ret
 
 
+def select_item(bgg_res):
+    """
+    Given a list of results, let the user select the correct item
+    """
+    num_res = len(bgg_res)
+    selected = None
+    tpl = '{}: {} ({})'
+
+    while not selected:
+        for i, item in enumerate(bgg_res):
+            name = ''
+            if isinstance(item['name'], list):
+                name = item['name'][0]['value']
+            else:
+                name = item['name']['value']
+
+            print(tpl.format(i + 1, name, item['id']))
+
+        selected = input('Select the correct game: ')
+        try:
+            selected = int(selected)
+        except Exception:
+            print(f'Invalid selection ({selected}), select a valid number\n')
+            selected = None
+            continue
+
+        if selected < 1 or selected >= num_res:
+            print(f'Invalid selection ({selected}), select a valid number\n')
+            selected = None
+            continue
+
+        # We have a valid selection, return the ID
+        return int(bgg_res[selected - 1]['id'])
+
+
+def get_bgg_id(args):
+    # Try to import the bgg library, if that fails, return None
+    try:
+        from libbgg.apiv2 import BGG
+    except Exception:
+        return None
+
+    bgg = BGG()
+
+    res = bgg.search(args.name)
+
+    tot = int(res['items']['total'])
+
+    res = res['items']['item']
+    if tot == 1:
+        # If we only have 1 result, just return it
+        return int(res['id'])
+
+    return select_item(res)
+
+
 def create_new(args):
     fdir = os.path.dirname(__file__)
     dir_name = norm_name(args.name)
+    bgg_id = get_bgg_id(args) or 'supply BGG ID number here (required)'
     base_dir = os.path.join(fdir, dir_name)
     en_dir = os.path.join(base_dir, 'en')
 
@@ -101,6 +158,7 @@ def create_new(args):
             name=args.name,
             description=args.description,
             text_type=args.text_type,
+            bgg_id=bgg_id,
             credits=args.credits,
         ))
 
