@@ -1,0 +1,586 @@
+name: "Vagrantsong"
+description: "Give the haints their humanity back"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+bgg_id: 340325
+expansions:
+sections:
+    - name: Setup
+      text: |
+          * Players should choose their [vagrants](#vagrants)
+              1. Take:
+                  * The vagrant card
+                  * A humanity token
+                  * Your 3 matching coins
+                  * 2 Starting skills (see [vagrants](#vagrants))
+              2. Place the humanity token on the max humanity
+              3. Place your starting skills in the matching spaces (denoted by
+                 the "diamond" on the cards).
+          * Place the junk cards near the board.
+          * Place the haint effect tokens near the board.
+          * Place all the rummage tokens in the bindle (bag).
+          * Follow the setup instructions for the chosen scenario.
+          * Place any remaining event tokens near the board.
+    - name: Vagrant Turns
+      id: vagrant_turns
+      text: |
+          At the beginning of a round, the vagrants determine the order in
+          which they will take turns.  Each vagrant turn is followed by a
+          [haint turn](#haint_turn).
+      sections:
+          - name: Move
+            text: |
+                * For each coin, the character can move their designated number
+                  of spaces.
+                * Movement is always orthogonal.
+                * Movement may be split between other actions. e.g. With a
+                  move value of 3, the character could move 1, investigate,
+                  then move the remaining 2 spaces.
+                * Vagrants cannot move through terrain.
+                * Vagrants can move through spaces with a haint, vagrant, or
+                  tokens.
+                * Vagrants cannot end their movement on spaces with the haint
+                  or other vagrants.
+          - name: Rummage
+            id: rummage
+            text: |
+                A full explanation of rummage tokens and their rules is
+                [here](#bindle).
+
+                * Draw 1 rummage token per coin placed on this action.
+                    * No matter how many tokens were drawn, **only 1 token is
+                      kept**.
+                    * Unkept tokens are returned to the bindle.
+                * The rummage value on the player card is the maximum amount
+                  of tokens a player can have.
+                    * If a player goes over their threshold, return tokens
+                      **to the bindle** until they are at their max.
+                * If event tokens are drawn from the bindle:
+                    * Resolve the event immediately.
+                    * If multiple event tokens are drawn, resolve them in order
+                      from lowest to highest.
+                    * After resolving the event(s), draw a replacement rummage
+                      token.
+                * A rummage token may be used immediately after drawing, but
+                  remember that you can only use **1 rummage token per round**.
+                * Rummage tokens are discarded to the cycle track after use.
+                    * If this meets the threshold for the token's limit on
+                      the cycle track, [cycle the track](#cycling).
+          - name: Investigate
+            id: investigate
+            text: |
+                * A vagrant in the same space as an event token can investigate
+                  it.
+                * Roll a number of dice equal to the number of coins on the
+                  action.
+                * For each coin placed on the action, roll a die.
+                * 1 success is added for each die meeting/exceeding the
+                  investigate value on the character sheet. See the rules for
+                  [booming boxcars](#bb) if a 6 is rolled.
+                * Most events will normally need 0-2 successes.
+                * Regardless of success or failure, read the associated event
+                  text in the scenario book.
+                * Discard the event token if the event was successful, unless
+                  otherwise stated in the event text.  Generally, events stay
+                  on the board if the success criteria was not met.
+                * "Moments" are like events, but are in the back of the rule
+                  book.
+                * Event tokens on tracks (round, break, etc.), they are
+                  triggered when the marker enters (or moves past) its space.
+                * Event tokens may be drawn from the bindle, see
+                  [the bindle and rummage tokens](#bindle) for more info on
+                  this.
+          - name: Patch Up
+            text: |
+                * Roll a number of dice equal to the number of coins placed
+                  on the action.
+                    * Gain 1 humanity for each success.
+                * A vagrant can never gain more humanity than their max.
+          - name: Bust (fight)
+            text: |
+                * Roll a number of dice equal to the number of coins placed
+                  on the action.
+                    * For each success, the haint gains 1 humanity.
+    - name: The Haint's Turn
+      id: haint_turn
+      sections:
+          - name: "1. Determine the Haint Action"
+            text: |
+                * The vagrant who most recently took a turn draws a rummage
+                  token from the bindle. If an event token is drawn, follow
+                  the instructions in the [bindle section](#bindle).
+                * Perform the action as noted in the section of the scenario
+                  book that represents the current [haint mood](#moods).
+                * Discard the rummage token to the cycle track.
+          - name: "2. Determine the Target Priority"
+            id: target_pri
+            text: |
+                Determine the haint's target in the following order:
+
+                1. **Special priority**: The vagrant with the Special Target
+                   Priority token.
+                2. **Action specific**: The vagrant or (non-candle) token that
+                   is considered the target priority from an action or effect
+                   in any train car. e.g. "target furthest vagrant" or "target
+                   closest vagrant".
+                3. **Candle**: The closest candle **in the same train car**.
+                   Haints may only target a candle with an action that would
+                   move them a number of spaces.
+                4. **Hurt vagrant**: A vagrant with the most humanity currently
+                   **lost** in the same train car, **not the vagrant with the
+                   lowest humanity**.
+                    * The number of wounds is ignored for this purpose.
+                    * [Westbound](#westbound) vagrants are not considered for
+                      this.
+                5. **Nearby vagrant**: The vagrant closest to the haint in any
+                   train car.
+                    * [Westbound](#westbound) vagrants are not considered for
+                      this.
+                6. **[Westbound](#westbound) vagrants**: A
+                   [westbound](#westbound) vagrant in any train car.
+                7. **Recent vagrant**: The vagrant whose turn was the most
+                   recent in any train car.
+          - name: "3. Move the Haint"
+            text: |
+                * Haints move orthogonally only.
+                * Haints may move through terrain and vagrants.
+                    * If a haint moves through a vagrant, they
+                      [haunt](#haunted) the vagrant.
+                * If the haint would end its move on a space with a vagrant,
+                  the vagrant moves to an adjacent space of their choice.
+                * The haint will move up to its move value so that it ends
+                  in range of a vagrant.
+                * The haint will move such that it haunts as many vagrants as
+                  possible.
+                * If the haint is already in range of a target, it moves such
+                  that it haunts as many vagrants as possible and ending in
+                  range of the target.
+                * If the [target priority](#target_pri) is not in range, and
+                  won't be after moving, the haint still moves toward the
+                  target.
+                    * As noted in [resolve action](#resolve), the [target
+                      priority](#target_pri) may change after moving if a
+                      different target is in range at that point.
+                * If no range/target is specified, the haint will move towards
+                  the highest [target priority](#target_pri).
+                * If there are multiple paths a haint can take, always choose
+                  the one that is the worst for the vagrants. If there is not
+                  a potential worst outcome, players decide the path.
+          - name: "4. Resolve the Action"
+            id: resolve
+            text: |
+                * If the haint has moved and is is not range of its target,
+                  but there is another vagrant(s) in range, it will target them
+                  based on [target priority](#target_pri).
+                * If the haint action can't be resolved, it's ignored.
+          - name: "5. Add the Rummage Token to the Cycle Track"
+            text: |
+                After the action has been resolved, add the rummage token to
+                the cycle track. If a threshold is met for that token, [cycle
+                the track](#cycling). Then, the haint's turn is over.
+    - name: Winning and Losing
+      text: |
+          Many victory conditions are, or include, saving the haint. See the
+          victory conditions for the scenario for specifics.
+
+          * If victorious, read the victory moment at the start of the
+            [camp phase](#camp).
+          * If all vagrants are [Westbound](#westbound) at the end of the
+            scenario, they are defeated. Some scenarios may have other ways
+            for the vagrants to be defeated. Read the Defeat Moment at the
+            start of the [camp phase](#camp).
+          * Victorious or defeated, players move on to the next scenario.
+
+          Proceed to the [camp phase](#camp).
+    - name: Various Rules
+      text: |
+          There are many assorted rules in Vagrantsong.  This collects all the
+          various rules in this section.
+      sections:
+          - name: The Bindle and Rummage Tokens
+            id: bindle
+            text: |
+                **Reminder**: Only 1 rummage token may be used per round.
+
+                * Rummage tokens may be used at any point during a round.
+                * Rummage tokens do not require coins.
+                * A rummage token may be used immediately after drawing it on
+                  a vagrant's turn.
+                * Rummage tokens are discarded to the cycle track after use.
+                    * If this meets the threshold for the token's limit on
+                      the cycle track, [cycle the track](#cycling).
+                * Rummage tokens may be traded/given to an adjacent vagrant.
+                    * **Trading/giving is considered to be "using" the token
+                      for that round**.
+                * If event tokens are drawn from the bindle:
+                    * Resolve the event immediately.
+                    * If multiple event tokens are drawn, resolve them in order
+                      from lowest to highest.
+                    * After resolving the event(s), draw a replacement rummage
+                      token.
+
+                | Symbol | Name | Effect |
+                | ------ | ---- | ------ |
+                | ![nails](/static/img/vagrantsong/nails.png) | **Iron Nails** | Target a haint within range 2 to have the haint gain 2 humanity. |
+                | ![candle](/static/img/vagrantsong/candle.png) | **Candle** | The candle is placed in an open, adjacent space. A candle **in the same train car** becomes the haint's highest [target priority](#target_pri). Once the haint moves onto the candle, the haint ends its movement and the candle is discarded. After the movement, the haint targets a vagrant in range. |
+                | ![salt](/static/img/vagrantsong/salt.png) | **Salt** | When used, the vagrant may ignore the effects of a haint's action that targets the vagrant. Salt does not nullify a haint's move, haunted effects, or effects that target another vagrant. |
+                | ![rabbit foot](/static/img/vagrantsong/rabbit.png) | **Rabbit's Foot** | The rabbit's foot is treated as a 4th coin. This is discarded after use. |
+                | ![apple](/static/img/vagrantsong/apple.png) | **Apple** | The vagrant using the apple may flip a wounded skill card face up so it can be used again. |
+          - name: Booming Boxcars
+            id: bb
+            text: |
+                Booming boxcars (commonly referred to as "exploding dice") is
+                a concept wherein, when dice are rolled, if a 6 is rolled, an
+                additional die can be rolled.
+
+                * This can be repeated as long as a 6 keeps getting rolled.
+                  All the successes are counted.
+                * It **must be a natural 6**. e.g. It cannot be a 5 with a
+                  +1 modifier.
+          - name: Cycling and the Cycle Track
+            id: cycling
+            text: |
+                * When the number of rummage tokens of a particular type meets
+                  its cycle value (number to the right), the track is cycled.
+                    1. Resolve the cycle effect for the haint's current
+                      [mood](#moods).
+                    2. Put all rummage tokens on the cycle track back in the
+                       bindle.
+          - name: Haint Effects
+            text: |
+                * Haint effects are represented by 2 different tokens.
+                * *Normally*, a vagrant may only gain 1 of each type of haint
+                  effect.
+                * Haint effects are removed in the way defined in the given
+                  scenario.
+                * If negating a haint effect requires discarding a rummage
+                  token, only the player with the token may discard it to
+                  negate it. e.g. Vagrant 1 cannot discard a token to remove
+                  a haint effect from vagrant 2.
+          - name: Haint Moods
+            id: moods
+            text: |
+                * Haints have 2 different moods.
+                * The mood is tracked via the mood token. Flip this over as
+                  the haint mood changes.
+                * Haints always begin a scenario with the top-most mood.
+                * When the mood changes, use the actions/effects from the new
+                  mood thereafter.
+          - name: Haunted
+            id: haunted
+            text: |
+                * If the haint moves onto a space with a vagrant, they are
+                  haunted.
+                * After the haint move is resolved, resolve the haunted effect
+                  for the haint's current [mood](#moods).
+                * A vagrant can only be haunted **once per turn**.
+          - name: Humanity
+            id: humanity
+            text: |
+                Both vagrants and the haint (zero by default) have a humanity
+                value. You are generally trying to restore humanity to the
+                haint to win a scenario.
+
+                ## Vagrant Humanity
+                If a vagrant's humanity reaches zero:
+
+                * The vagrant suffers a wound and either:
+                    * Flips a skill card to the wounded side **OR**
+                    * Flips a junk card to its broken side.
+
+                If a vagrant would reach zero and all of their junk/skills are
+                flipped to broken/wounded, they become [Westbound](#westbound).
+
+                ## Haint Humanity
+                * If the haint's humanity reaches the humanity threshold
+                  (breaking the haint):
+                    * Any additional humanity the haint would have gained is
+                      **lost**.
+                    * Move the marker up 1 space on the break track. Resolve
+                      any events on the space. See the [investigate
+                      action](#investigate) for more info on resolving events.
+                        * If the marker would move off of the 1 space, the
+                          haint has been saved and (usually) the vagrants have
+                          won the scenario.
+                    * Reset the humanity tracker to zero.
+                    * **The haint does not take its next turn!**
+                    * **All vagrants gain 1 humanity**.
+          - name: Junk
+            id: junk
+            text: |
+                * Junk is always active, unless broken.
+                * They do not require a coin to use.
+                    * Some junk might give additional benefits if a coin is
+                      placed on them.
+                        * **Coins cannot be placed on junk in 2 consecutive
+                          rounds**, like [skills](#skills).
+                * Junk cards can be traded during the [camp phase](#camp).
+                * Broken junk can only be fixed during the [camp phase](#camp).
+          - name: Passive abilities
+            id: passives
+            text: |
+                Each character has an ability that is available in either
+                the scenario or camp phase.  These are always in effect
+                regardless of whether or not it is the vagrant's turn.
+          - name: Placing Skills and Junk
+            text: |
+                When placing skills, note that the skills, when matched with
+                the player card, will form a ◆.  This limits you to 2 skills
+                per side and 1 junk card (unless you are the wayfarer).
+          - name: Rounds
+            id: rounds
+            text: |
+                1 round consists of each character taking a turn (followed by
+                haint turns).  See [turns](#turns) for more info.
+                If the round marker is on the 6th space and would move, move it
+                back to the 1 space.
+          - name: Skill Cards
+            id: skills
+            text: |
+                * **The same skill card cannot be used in 2 consecutive
+                  rounds**.
+                * Common skills are available to all vagrants.
+                    * These can be obtained by spending coins on them during
+                      the [camp phase](#camp).
+                    * These can be exchanged between vagrants during the
+                      [camp phase](#camp) or held along with junk in the
+                      belongings.
+                * Exclusive skills are tied to the vagrant matching the shown
+                  symbol.
+                    * These do not cost coins.
+                    * These are obtained via story elements in the game.
+                    * These cannot be traded.
+                    * They can be saved as personal belongings and swapped
+                      out during the [camp phase](#camp).
+                * Skills that summon:
+                    * Summoned characters cannot be placed on terrain.
+                    * Vagrants may move through summoned characters, but
+                      cannot end their movement there (as is normal).
+                    * Haints may haunt it to remove it from the train board.
+                    * It cannot be targeted by skills other than the skill
+                      that placed the character.
+          - name: Targeting and Range
+            id: targeting
+            text: |
+                * Targets are one of 3 things:
+                    * "V": vagrant
+                    * "H": haint
+                    * "Any": either a vagrant or haint
+                * Be sure to check the action text as it may allow for
+                  additional targets.
+                * Vagrant's targeting:
+                    * Count the specified distance orthogonally from the
+                      character to the target location.
+                    * A "0" (zero) range means the vagrant can target
+                      themselves.
+                    * Range can be drawn through other characters.
+                    * Range cannot be drawn **through** terrain.
+                        * A haint on terrain **can** be targeted.
+                * Haint's targeting:
+                    * Count the specified distance orthogonally from the
+                      character to the target location.
+                    * Range can be drawn through terrain.
+          - name: Turns
+            id: turns
+            text: |
+                Turns in the game cycle back and forth between a character
+                and the haint such that the haint has a turn after each
+                character (unless the haint is [broken](#humanity)).
+          - name: Westbound
+            id: westbound
+            text: |
+                If all of a vagrant's skills and junk are flipped to their
+                wound/broken side, the vagrant becomes Westbound and does the
+                following:
+
+                * Discard any haint effect tokens.
+                * Flip your vagrant card to the Westbound side.
+                * Place your humanity token on the 1 space.
+                * Keep any rummage tokens.
+                * Place your character's Westbound skill **on top of** 1 of
+                  your skill cards.
+                    * Note that this skill will be lost if the vagrant is
+                      still Westbound at the end of the scenario (below).
+                * **A Westbound vagrant cannot lose humanity if they only
+                  have 1 humanity**.
+                * Westbound vagrants cannot perform skills, even if they are
+                  healed, but can do general actions.
+                * If a vagrant is ever told to flip their card to the
+                  Westbound side, flip all their skills to wounded and junk to
+                  broken.
+                * If all vagrants are Westbound at the end of a scenario,
+                  read **Moment 13**.
+                * If a vagrant is Westbound at the start of the [camp
+                  phase](#camp), they must permanently discard the skill
+                  they placed their Westbound action on.
+                    * If they became Westbound multiple times during the
+                      scenario, they still only discard 1 skill.
+                    * The discarded skill may be wounded or normal.
+                * If a Westbound vagrant would lose humanity and their
+                  humanity is greater than 1, they may instead have the
+                  closest, non-Westbound, vagrant lose the humanity instead.
+                * When a Westbound vagrant regains all their humanity (during
+                  the scenario or during the [camp phase](#camp)):
+                    * They flip over any 1 of their wounded skills to the
+                      normal side.
+                    * They flip over their character card.
+                    * Place the humanity token on the max value.
+                    * Set aside the Westbound action card.
+    - name: Vagrants
+      id: vagrants
+      text: |
+          ## Cursebearer
+          * **Ability**: (Passive - Devil on Your Heels) Once per turn,
+            after you're haunted, that haint gains 1 humanity.
+          * **Starting skills**:
+              * *Old Knife, Strange Blade* -- #67
+              * *Distant Memory* -- #68
+
+          ## Empress
+          * **Ability**: (Passive - Boxcar Queen) The 1st time your roll a
+            booming boxcar (6 on the die), roll an extra die.
+          * **Starting skills**:
+              * *General's Orders* -- #51
+              * *Strangely Resonant Speech* -- #52
+
+          ## Songsmith
+          * **Ability**: (Passive - Upbeat Tempo) If you only have 1 coin
+            on a skill, reduce the success value of that skill by 1.
+          * **Starting skills**:
+              * *A Little Rhythm* -- #35
+              * *An Old Medley* -- #36
+
+          ## Revivalist
+          * **Ability**: (Passive - Selfless) When you would gain humanity,
+            you many have another vagrant in range 2 gain that humanity
+            instead.
+          * **Starting skills**:
+              * *Soothing Hymn* -- #59
+              * *Copal Incense* -- #60
+
+          ## Runaway
+          * **Ability**: (Passive - Girl's Best Friend) You have the pup.
+              * The runaway has 2 standees, herself and the pup.
+              * When placing vagrants during setup, place the pup in an open
+                space adjacent to the runaway.
+              * If both the pup and runaway are affected by a single effect,
+                only the runaway is affected.
+              * They share humanity, coins, junk effects, rummage value, and
+                haint effects.
+              * Coins may be placed on the pup card to have the pup perform
+                move, investigate, or bust actions.
+              * The pup is considered a vagrant for targeting purposes, but
+                is not affected by the haunted by haints.
+              * If a haint ends its move in the same space as the pup, the pup
+                is moved 1 space (like vagrants).
+              * The pup cannot use rummage tokens or perform the rummage action.
+              * If the pup finds a rummage token via an event, is is placed on
+                the pup's card.
+                  * The pup can hold onto this as long as the runaway has
+                    capacity to do so.
+                  * It must be given to another vagrant to be used.
+                  * If the pup gives a rummage token to the runaway, the
+                    runaway cannot use a rummage token that turn.
+          * **Starting skills**:
+              * *Soothing Hymn* -- #59
+              * *Copal Incense* -- #60
+
+          ## Wayfarer
+          * **Ability**: (Passive - Thrifty) You may hold 1 additional junk.
+          * **Starting skills and junk**:
+              * *In a Pinch* -- #75
+              * *Feathery Friend* -- #76
+              * *Writer's Satchel* -- Junk #31
+    - name: Camp Phase
+      id: camp
+      text: |
+          First, read the Moment for victory or defeat as appropriate.
+
+          ## Tear Down
+          1. Restore humanity
+              * Flip over any [Westbound](#westbound) vagrant cards to the
+                normal side.
+              * Restore humanity back to the maximum for vagrants.
+              * Haint effects are removed.
+              * Any coins not available to vagrants are returned to them.
+          2. Clean up scenario
+              * Remove any unused event tokens from the bindle.
+              * Discard the Seance card.
+              * Return any rummage tokens to the bindle.
+
+          ## Build Up
+          1. Spend coins
+              * Players collaboratively decide how to spend their coin pool.
+              * All coins from each vagrant plus any earned from rituals are
+                available to use.
+                  * Players may also discard any broken junk to get 1 coin per
+                    discarded junk.
+                  * Any coins not spent will be lost.
+              * Coins can be spent on the various actions:
+                  * **Acquire new skills**: (2 coins) There are 2 skills
+                    available per scenario. The new skill is added to a slot
+                    for the chosen vagrant. If skills are acquired via Moments,
+                    they do not cost coins.
+                  * **Heal a wound/fix junk**: (1 coin) Wounds and broken junk
+                    can be healed/fixed for 1 coin per item.
+                  * **Rummage**: (1 coin) Players may rummage 1 (as normal)
+                    to acquire rummage tokens that can be brought into the
+                    next scenario.
+                  * **Acquire junk**: (3 coins) Shuffle the junk deck for your
+                    current tier (tier 1 at the start of the game) and draw
+                    the top card. This can be purchased for 3 coins.
+                      * Any replaced junk can be put in the groups belongings.
+                      * Only 1 junk can be purchased per camp phase.
+                  * **Draw different junk**: (1 coin) Vagrants may put the
+                    offered junk on the bottom of the deck and draw a new junk.
+                    This can, again, be acquired for 3 coins.
+                  * **Perform a seance**: (1 coin per vagrant) Vagrants may
+                    gain the seance card for use in the next scenario. The
+                    seance is used per the scenario rules.
+                  * **Bank coins**: (1+ coins) Mark off the number of banked
+                    coins on page 41 of the rule book, or your campaign sheet
+                    (see Mile Posts below for a link to download the sheet
+                    for printing), as boxes in the appropriate location on
+                    the sheet from left to right.
+          2. Save game (optional)
+              * Keep the skill and junk cards associated with each vagrant for
+                use in the next scenario.
+                  * Wounded skills and broken junk stay in the same state.
+          3. Manage vagrants
+              * Vagrants may switch out skills and/or junk as long as they
+                have space in the appropriate locations for said items.
+              * Personal skills may be swapped in out for each vagrant at this
+                time.
+              * Personal belongings, like group belongings, are unlimited.
+              * A new vagrant can chosen during this phase.
+                  * Permanently discard any exclusive skills for your current
+                    vagrant.
+                  * Starting skills are not permanently discarded and may be
+                    used if a player switches to this vagrant later.
+                  * Choose any non-wounded skill/unbroken junk to keep for the
+                    new vagrant.
+                  * Choose a new vagrant that is not [Westbound](#westbound) and
+                    gain that vagrant's starting skills.
+              * **At this stage, a new player can be added to the group**.
+                  * They take the character's starting items and may also take
+                    skills/junk from the group's belongings.
+          4. Witness the In-Between
+              1. Return any pooled coins to each vagrant.
+              2. Draw the top card from the In-Between deck and read the story
+                 out loud. *The In-Between deck should be in numerical order
+                 and never be shuffled*.
+              3. Each player **secretly** chooses one of the available
+                 reactions.
+                  * Each player will place a coin with their choice face down
+                    (A for choice A, etc).
+              4. After all players have chosen, flip the In-Between card and
+                 each player resolves their results individually.
+          5. Start the next scenario
+              * Players should progress to the next scenario per their victory,
+                defeat, or the In-Between card.
+
+          ## Mile Posts
+          * You can check off mile posts in the rule book on page 41 or you
+            can download and print off a copy of the tracking sheet at:
+            [http://www.wyrd-games.net/vagrantsong](http://www.wyrd-games.net/vagrantsong)
