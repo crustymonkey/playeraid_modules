@@ -2,7 +2,7 @@ name: "Meadow"
 description: "Build out your own meadow full of flora and fauna"
 text_type: markdown
 credits: "Jay Deiman"
-enabled: false
+enabled: true
 bgg_id: 314491
 expansions:
 sections:
