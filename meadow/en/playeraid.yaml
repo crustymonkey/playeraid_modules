@@ -1,0 +1,233 @@
+name: "Meadow"
+description: "Build out your own meadow full of flora and fauna"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+bgg_id: 314491
+expansions:
+sections:
+    - name: Setup
+      text: |
+          1. Place the game board.
+          2. Place the road tokens near the board.
+          3. Shuffle the N, S, W, E decks separately.
+          4. Place the W, S, E decks in their holders and place these on the
+             board in their correct spot.
+          5. Place the N deck off the board near the other decks.
+          6. Fill the board with cards from their corresponding decks (W on
+             the left, E on the right, and S in the 2 middle columns).
+          7. Place the campfire corresponding to the player count near the
+             main board.
+          8. Shuffle the goal tokens and randomly place them on the square
+             spots on the campfire board. Return unused tokens to the box.
+          9. **When playing with 2 or 3 players**, block notches of the campfire
+             board with block tokens. Block 2 in a 2 player game and 1 in a 3
+             player game.
+          9. Each player chooses a color and takes:
+              * 5 path tokens, or **4 in a 4 player game** (return the "?"
+                token)
+              * 3 bonus tokens
+              * 1 road token with the visible road symbol
+              * 1 2-sided starting ground card
+          10. Place the round marker on the 1st rock of the round tracker.
+          11. Determine a start player.
+          11. Players now take starting cards:
+              * Beginning with the player to the right of the start player and
+                proceeding in counter-clockwise order:
+                  1. A player selects a **row** of 4 cards and takes it plus
+                     the top card from the N deck as their starting hand.
+                  2. The row of cards are refilled from their respective decks.
+                  3. Repeat until each player has a starting hand of 5 cards.
+              * Optionally, you can deal 5 cards to each player randomly such
+                that each player ends up with:
+                  * 2 S cards
+                  * 1 each of N, E, and W cards
+          12. Each player then creates a play area with their starting ground
+              and road token.
+          13. Each player then places 1 of their cards to the left or right
+              of their starting ground.
+
+          ### Components by Player Count
+          | Players | Path tokens | Goal tokens | Block tokens | Rounds |
+          | ------- | ----------- | ----------- | ------------ | ------ |
+          | 1 | 1, 2, 3, 4, ? | 3 | 2 | 6 |
+          | 2 | 1, 2, 3, 4, ? | 5 | 2 | 6 |
+          | 3 | 1, 2, 3, 4, ? | 8 | 1 | 6 |
+          | 4 | 1, 2, 3, 4 | 11 | 0 | 8 |
+
+    - name: Gameplay
+      text: |
+          The game is played over the course of 6 or 8 rounds, with players
+          taking turns in clockwise order starting with the 1st player.
+
+          Players will take actions using their path tokens by slotting them
+          into a notch on the main board or the campfire board.
+      sections:
+          - name: Main Board Actions
+            text: |
+                * Place your path token in one of the notches in the main
+                  board.
+                    1. You then **must** take the card N spaces away from the
+                       token, where N is the number printed on the top half
+                       of the token.
+                        * If you've played the "?" token, you may
+                          take any card in the row.
+                    2. Refill the slot where the card was taken with the top
+                       card of the corresponding deck.
+                        * If the corresponding deck is empty, leave the slot
+                          empty. Any further tokens placed referencing this
+                          empty location can **only** play a card from their
+                          hand (#3).
+                    3. You may then play 1 card from your hand into your play
+                       area (including the card you just picked up). See [card
+                       rules](#card_rules) for more info on how to play cards.
+          - name: Campfire Board Actions
+            text: |
+                * You may slot your path token into 1 of the available square
+                  slots on the edge of the board and take the special action
+                  as shown on the bottom half of the path token (see the
+                  table below for actions). The "?" action allows you to take
+                  any of the 4 actions. **OR**
+                    * If you qualify, you may place your **lowest numbered**
+                      bonus token in between 2 of the goal tiles on the
+                      campfire board.
+                        * You must have both symbols in your meadow/surrounding
+                          area.
+                        * This can be placed, before, during, or after the
+                          action on the path token (whenever you meet the
+                          requirements, which could involve playing cards).
+                * You may place a path token on any of the open benches and
+                  take the action, which is playing 1 card.
+                    * **Note**: You may **not** place a bonus token if you
+                      are taking this action
+
+                | Symbol | Action |
+                | ------ | ------ |
+                | ![take card](/static/img/meadow/take_card.png) | Take any face up card from the main board and refill the spot from the corresponding deck. You cannot play this card this round. |
+                | ![road tokens](/static/img/meadow/road_tokens.png) | Take 2 road tokens and place them in your "surrounding area" with the road symbol face up. |
+                | ![top 3 cards](/static/img/meadow/3_cards.png) | Look at the top 3 cards of 1 deck **on the board**. Add 1 to your hand and discard the other 2 to the bottom of the corresponding deck. |
+                | ![play 2](/static/img/meadow/play_2.png) | Play up to 2 cards from your hand. |
+          - name: End of Round
+            text: |
+                The round ends when all players have placed all their path
+                tokens. Then:
+
+                * Players retrieve their path tokens.
+                * Path the 1st player token to the person on the 1st player's
+                  left.
+                * Move the round marker 1 space. If you have passed the
+                  hourglass symbol, perform the actions below for the
+                  "Halfway Point".
+
+                ## Halfway Point
+                When the hourglass symbol is passed, do the following:
+
+                1. Discard all of the cards from the main board and randomly
+                   place them on the bottom of their corresponding decks.
+                2. Replace the S deck with the N deck.
+                3. Refill the board with new cards from the corresponding
+                   decks.
+    - name: End of the Game
+      text: |
+          Players count the following victory points and the player with
+          the most points wins.
+
+          * The points on the cards in your meadow/surrounding area.
+          * The points from the bonus tokens on the campfire board. The number
+            on the token is the number of points it is worth.
+
+          If there is a tie:
+
+          1. The player with the most discovery cards played wins.
+          2. (if still tied) The players share the victory.
+    - name: Rules for Playing Cards
+      id: card_rules
+      text: |
+          * Vertically oriented "ground" and "observation" cards are played
+            in your *meadow*.
+          * Horizontally oriented "landscape" and "discovery" cards are played
+            in your *surrounding area*.
+      sections:
+          - name: Ground Cards (vertically oriented)
+            id: ground
+            text: |
+                * Ground cards are played to the left or right of already
+                  played ground cards.
+                * You can have a **maximum of 10 ground cards** in your meadow.
+                * The ground symbols (below) should always be visible.
+                * Ground cards cannot be played on top of other cards.
+
+                | Symbol | Name |
+                | ------ | ---- |
+                | ![litterfall](/static/img/meadow/litterfall.png) | Litterfall |
+                | ![grass](/static/img/meadow/grass.png) | Grass |
+                | ![sands](/static/img/meadow/sands.png) | Sands |
+                | ![rocks](/static/img/meadow/rocks.png) | Rocks |
+                | ![wetlands](/static/img/meadow/wetlands.png) | Wetlands |
+          - name: Observation Cards (vertically oriented)
+            text: |
+                * Observation cards can be played on top of ground cards or
+                  other observation cards.
+                * You may have any number of observation cards in a column.
+                * You must meet the requirements shown on the card by having
+                  the symbols somewhere in your meadow.
+                    * **Card has 1 requirement**: This card must be played on
+                      top of a card with the required symbol.
+                    * **Card has 2+ requirements**: You can play this card
+                      on top of any card with 1 of the required symbols.
+                        * **All symbols must be visible in your meadow to play
+                          this card**.
+                        * If 1 of the requirements is a [ground
+                          symbol](#ground), you can play it directly on top
+                          of said ground card or on top of another observation
+                          card at the top of the column (regardless of the
+                          symbols on the card at the top).
+                * If requirements have a slash (/) in between them, you
+                  only need to meet 1 of the 2 requirements. You decide.
+                * If a requirement has left/right "arrows" (<>), the card
+                  must be played in a column where the requirement is met
+                  in an adjactent column.
+                    * If this requirement is accompanied by another requirement
+                      without arrows, you can then choose where to place it.
+                      Either fulfilling the adjacency **or** putting it on
+                      top of the symbol without the arrows.
+                * **You can always discard 2 cards to ignore 1 missing
+                  symbol**.  This can be done multiple times.
+                    * Cards are discarded to the bottom of their corresponding
+                      decks.
+          - name: Landscape Cards (horizontally oriented)
+            text: |
+                * These cards have the
+                  ![landscape](/static/img/meadow/landscape.png) symbol on them.
+                * Landscapes are played in the *surrounding area*.
+                * Landscapes require a road token to be played with them.
+                * You must meet the requirements of a landscape to play it.
+                    * **Card requires only a road token**: Play the card and
+                      place 1 unused road token below it flipped so that the
+                      road symbol is **not** visible.
+                    * **Card requires a road token + other symbols**: You must
+                      have the required symbols in your meadow and 1 unused
+                      road token. If so, place it as in the previous bullet.
+                * **You can always discard 2 cards to ignore 1 missing
+                  symbol**.  This can be done multiple times.
+                    * Cards are discarded to the bottom of their corresponding
+                      decks.
+                    * **You cannot use this to ignore the road token symbol**.
+          - name: Discovery Cards (horizontally oriented)
+            text: |
+                * These cards have the
+                  ![discovery](/static/img/meadow/discovery.png) symbol on them.
+                * Discovery cards are placed on top of previously placed
+                  landscape cards.
+                * You must meet the requirements of a discovery card to play it.
+                    * **Card requires only a landscape**: Simply place it on
+                      an unused landscape, leaving the point value on the right
+                      showing.
+                    * **Card requires a landscape + other symbols**: You must
+                      have an unused landscape and all of the required symbols
+                      in your meadow. If so, place it as in the previous bullet.
+                * **You can always discard 2 cards to ignore 1 missing
+                  symbol**.  This can be done multiple times.
+                    * Cards are discarded to the bottom of their corresponding
+                      decks.
+                    * **You cannot use this to ignore the landscape symbol**.
