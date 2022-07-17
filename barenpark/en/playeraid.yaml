@@ -1,0 +1,209 @@
+name: "Bärenpark"
+description: "Build your very own bear park"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+bgg_id: 219513
+expansions:
+sections:
+    - name: Setup
+      text: |
+          * Place the supply board in the center of the table.
+          * Stack the green areas on the designated spaces.  See the table
+            below for quantities.
+          * Select the appropriate animal houses. See the table below for
+            quantities.  These are also printed on the supply board.
+              * Stack the tiles on their designated spaces sorted from
+                lowest (bottom) to highest (top).
+          * Place the enclosures on the designated spaces -- always use all
+            tiles, regardless of player count.
+          * Lay out the bear statues next to the game board in numerical order.
+            See the table below for which tiles to use based on player count.
+          * Shuffle the 12 park areas without an entrance and place them in
+            2 piles of 6 tiles near the board. Only the top park area in each
+            pile should be visible.
+          * Give each player a random park area with an entrance. Each player
+            should place it so the entrance is closest to themselves.
+          * Choose a starting player.
+              * The start player gets a toilet.
+              * The 2nd player gets a playground.
+              * The 3rd player gets a playground.
+                  * **If it is a 3 player game**, the 3rd player instead gets
+                    a food street.
+              * The 4th player gets a food street.
+          * If playing with achievements (expert variant):
+              * Choose 3 of the 10 types of achievements.
+              * Place the 3 tiles of each chosen type in separate piles with
+                the highest value on the top of each pile and the lowest value
+                on the bottom.
+              * **If playing with 2 players**, remove the lowest value tile
+                from each stack.
+
+          |         | 👤👤 | 👤👤👤 | 👤👤👤👤 |
+          | ------- | ---- | ------ | -------- |
+          | **Toilets** | 10 | 10 | 10 |
+          | **Playgrounds** | 10 | 10 | 10 |
+          | **Food Streets** | 8 | 12 | 16 |
+          | **Rivers** | 8 | 12 | 16 |
+          | **Animal Houses** | 2, 4, 6 | 2, 3, 4, 5, 6 | all |
+          | **Bear Statues** | 2, 4, 6, 8, 10, 12, 14, 16 | 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 | all |
+    - name: Gameplay
+      text: |
+          Players continuously take turns until the game ends.  The game
+          ends when a player completes all of their 4 park areas, at which
+          point each **other** player gets 1 more turn.
+
+          Each turn consists of 3 steps.
+      sections:
+          - name: "1. Place a Tile"
+            id: place_tile
+            text: |
+                You **must** place **1** (and only 1) tile from your supply in
+                your park.
+
+                * If you cannot place a tile, you must [pass](#passing).
+                * The tile **must** fit within the marked spaces in your park.
+                * You **cannot** cover the pit.
+                * The tile **cannot** hang over the edge of your park.
+                * The tile **cannot** overlap another tile.
+                * You may rotate or flip the tile as you wish.
+                * The tile must be **orthogonally** adjacent to another
+                  previously placed tile.
+                    * **The 1st tile placed may be placed anywhere**.
+          - name: "2. Evaluate Icons"
+            text: |
+                Now, evaluate the icons you covered on that turn.
+
+                * If you covered more than 1 icon, carry them out in any order.
+                * **There is no limit to the number of tiles you can have in
+                  your supply**.
+                * A player may only have a **max of 4 park areas**. If you
+                  cover your 4th construction crew, you do not take another
+                  park area.
+
+                ### Green Wheelbarrow
+                ![wheelbarrow](/static/img/barenpark/wheelbarrow.png) Take a
+                green area of your choice (toilet, playground, food street,
+                or river). If a pile runs out, you cannot take any more of that
+                tile.
+
+                ### White Cement Truck
+                ![cement truck](/static/img/barenpark/cement.png) Take the top
+                animal house from a pile of your choice (polar bears, gobi
+                bears, koalas, or pandas). Alternatively, you may take a green
+                area of your choice instead.
+
+                ### Orange Excavator
+                ![excavator](/static/img/barenpark/excavator.png) Take an
+                enclosure of your choice. Alternatively, you may take a green
+                area or animal house of your choice instead.
+
+                ### Construction Crew
+                ![crew](/static/img/barenpark/crew.png) Take the top park area
+                from 1 of the 2 piles.  If 1 pile is empty, you must take
+                the top of the available stack.
+
+                **Immediately** add the new park area to your park using
+                the following rules:
+
+                * The new park area must be orthognally adjacent to another
+                  park area and the edges must fully align.
+                * All icons in the park area must be in the correct alignment.
+                  i.e. right side up.
+                * You may **not** place the board below the entrance. i.e. it
+                  may not be closer to you than the entrance to your park.
+          - name: "3. Place a Bear Statue"
+            text: |
+                If you have completed a park area (covered all spaces except
+                the pit), take the bear statue with the highest value and
+                place it on the pit of the just completed park area.
+
+                If you complete more than 1 park area on the same turn, repeat
+                this for each area.
+          - name: "4. Claim an Achievement (expert variant)"
+            text: |
+                If you meet the requirements of 1 or more achievements, claim
+                the top tile from said pile.
+
+                * **You can only ever claim 1 tile from each pile**.
+          - name: Passing
+            id: passing
+            text: |
+                * If you cannot place any tiles from your supply during the
+                  [place tile](#place_tile) phase, you must pass.
+                * Take a free green area of your choice (toilet, playground,
+                  food street, or river).
+                    * Your turn ends immediately after taking your free
+                      green tile.
+                    * **You can only place the free tile on your next turn!**
+                * **You may not pass if you can place a tile**.
+    - name: Game End and Scoring
+      text: |
+          The game ends after a player has completed all 4 of their park areas
+          and each **other** player has had 1 more turn.
+
+          Add up all all the values of the tiles in your park. If playing with
+          achievements (expert variant), add those points to your total.
+          The player with the most points wins.
+
+          In case of a tie:
+
+          1. Tied players count up the number of points on tiles in their
+             supply (not placed) and the player with the highest total wins.
+          2. If still tied, the players share the victory.
+    - name: Achievements
+      text: |
+          ### Polar Bears
+          ![polar bears](/static/img/barenpark/a_polar.png) (values: 8, 5, 2)
+          There are 3 tiles with polar bears in your park. They don't need
+          to be adjacent to 1 another.
+
+          ### Koalas
+          ![koalas](/static/img/barenpark/a_koalas.png) (values: 8, 5, 2)
+          There are 3 tiles with koalas in your park. They don't need
+          to be adjacent to 1 another.
+
+          ### Green Areas
+          ![green areas](/static/img/barenpark/a_green.png) (values: 9, 6, 3)
+          There is a cluster of 6 green areas in your park (toilet, playground,
+          food street, or river). Each tile must be **orthogonally** adjacent
+          to each other.
+
+          ### Long River
+          ![long river](/static/img/barenpark/a_river.png) (values: 10, 7, 4)
+          There are 3 river tiles in your park forming an uninterrupted
+          watercourse across these tiles.
+
+          ### Animal Houses
+          ![animal houses](/static/img/barenpark/a_animal.png) (values: 8, 5, 2)
+          There is at least 1 each of the 4 different shapes of animal houses
+          in your park.  They do not need to be adjacent to 1 another.
+
+          ### Gobi Bears
+          ![gobi](/static/img/barenpark/a_gobi.png) (values: 8, 5, 2)
+          There are 3 tiles with gobi bears in your park. They don't need
+          to be adjacent to 1 another.
+
+          ### Pandas
+          ![pandas](/static/img/barenpark/a_pandas.png) (values: 8, 5, 2)
+          There are 3 tiles with pandas in your park. They don't need
+          to be adjacent to 1 another.
+
+          ### Long Food Street
+          ![food street](/static/img/barenpark/a_food.png) (values: 9, 6, 3)
+          There is a (horizontal or vertical) line of 3 contiguous food streets
+          in your park.
+
+          ### Enclosures
+          ![enclosures](/static/img/barenpark/a_enclosures.png) (values: 9, 6,
+          3) All 3 enclosures in your park form a cluster. Each enclosure
+          is orthogonally adjacent to at least 1 other enclosure.
+
+          ### Twice is Nice
+          ![twice](/static/img/barenpark/a_twice.png) (values: 10, 7, 4)
+          You have placed 2 (or more) bear statues in a single turn.
+    - name: Pit Variant
+      text: |
+          On your **last turn** in the game, you may ignore the pits and cover
+          them with tiles. **You do not get a bear statue for a completed
+          park area where the pit was covered by a tile in this fashion**.
