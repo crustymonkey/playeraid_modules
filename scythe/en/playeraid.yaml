@@ -5,6 +5,8 @@ credits: "Jay Deiman"
 enabled: true
 bgg_id: 169786
 expansions:
+    - Invaders from Afar
+    - The Wind Gambit
 sections:
     - name: Setup
       text: |
@@ -45,6 +47,17 @@ sections:
           * Place your 6 stars on your faction mat.
           * Place your mechs in their spots on the faction mat.
           * Give each player a quick-start card and a riverwalk card.
+          * **If playing with [The Wind Gambit](#wind)**:
+              * Each player takes the airship in their faction's color and
+                places it on their home base.
+              * Shuffle the 2 types of airship tiles separately and reveal 1
+                [aggressive tile]!red! and 1 [passive tile]!green!. Place these
+                next to the encounter deck.
+                  * All players airships have both abilities at all times.
+              * **If playing with the [Resolution Module](#resolution)**:
+                  * Shuffle the resolution tiles and randomly select 1.
+                  * Read the tile out loud and place it face up near the
+                    triumph track. This applies to all players for this game.
     - name: Gameplay
       text: |
           The game is played in a continous fashion until a player places
@@ -97,7 +110,9 @@ sections:
                         * *Only controlled by opponent's workers*: Their
                           movement ends and they cannot be moved again.
                             * All of the opponent workers are moved back to
-                              their home territory.
+                              their home base immediately. This could allow
+                              another unit to be moved through this territory
+                              on the same turn.
                             * You lose 1 popularity for each worker moved.
                             * **Your workers alone cannot move into a territory
                               controlled by opponent workers**.
@@ -340,7 +355,8 @@ sections:
           - name: Objectives
             text: |
                 * Each player starts the game with 2 objectives.
-                * You may reveal a completed objective any time **during your
+                * You may reveal a completed objective before or after you
+                  complete a top or bottom row action **during your
                   turn**.
                 * If you have completed an objective, place a star in the
                   objective spot on the triumph track and **discard both of
@@ -404,6 +420,10 @@ sections:
       sections:
           - name: Saxony
             text: |
+                * **Dominate** (faction ability): There is no limit to the
+                  number of stars you can place from completing objectives or
+                  winning combat. Both objective cards may be completed and
+                  you are not limited to 2 combat stars.
                 * **Riverwalk**: Your character and mechs can move across
                   rivers onto forests and mountains.
                 * **Underpass**: For move actions for your character and mechs,
@@ -422,6 +442,9 @@ sections:
                       a move action.
           - name: Rusviet
             text: |
+                * **Relentless** (faction ability): You may choose the same
+                  section on your player mat multiple turns in a row. This
+                  also applies to a factory card you may have.
                 * **Riverwalk**: Your character and mechs can move across
                   rivers onto farms and villages.
                 * **Township**: For move actions for your character/mechs,
@@ -439,6 +462,8 @@ sections:
                       a move action.
           - name: Nordic
             text: |
+                * **Swim** (faction ability): Your workers (and only your
+                  workers) may move across rivers.
                 * **Riverwalk**: Your character and mechs can move across
                   rivers onto forests and mountains.
                 * **Seaworthy**: Your character and mechs can move to/from
@@ -462,6 +487,11 @@ sections:
                       a move action.
           - name: Crimea
             text: |
+                * **Coercion** (faction ability): Once per turn, you may spend
+                  1 combat card as any resource token. Note that combat cards
+                  are still worth nothing during final scoring.
+                    * **If playing with 6-7 players**, the ability becomes:
+                      Move to any unoccupied farm.
                 * **Riverwalk**: Your character and mechs can move across
                   rivers onto farms and tundra.
                 * **Wayfare**: Your charcter and mechs may move from a
@@ -480,6 +510,13 @@ sections:
                       a move action.
           - name: Polania
             text: |
+                * **Meander** (faction ability): Pick up to 2 options per
+                  encounter card. You can use the benefit from the 1st option
+                  to pay for the 2nd option. Note that only 1 encounter card
+                  is drawn.
+                    * **If playing with 6-7 players**, the ability becomes:
+                      Pick up to 2 options per encounter card. At the end,
+                      gain $3 for each encounter territory you control.
                 * **Riverwalk**: Your character and mechs can move across
                   rivers onto villages and mountains.
                 * **Submerge**: Your character and mechs may move to/from
@@ -502,6 +539,18 @@ sections:
                       a move action.
           - name: Clan Albion
             text: |
+                * **Exalt** (faction ability): After ending your character's
+                  movement , you can place a flag token from your supply on
+                  the territory.
+                    * If your character enters combat and/or has an encounter,
+                      those are resolved 1st.
+                    * A territory can only have 1 faction token (flag or trap)
+                      on it.
+                    * Flag tokens may **not** be moved or removed once placed.
+                    * Each flag counts as an additional territory during end
+                      game scoring if they control flag's territory **and**
+                      the flag token is **not** on a territory adjacent to
+                      the Albion home base.
                 * **Burrow**: Your character and mechs may cross rivers into
                   or out of any adjacent tunnel territory.
                     * A territory containing your mine is included in this.
@@ -518,8 +567,39 @@ sections:
                 * **Rally**: When moving your character/mechs, they can move
                   to any territory that contains at least 1 of your workers
                   or a Flag token.
+                    * **If playing with [The Wind Gambit](#wind)**: If moving
+                      to a territory with a worker, the worker must be on the
+                      territory, not on your airship.
           - name: Togawa Shogunate
             text: |
+                * **Maifuku** (faction ability): After ending your character's
+                  movement , you can place an armed trap token from your
+                  supply on the territory.
+                    * If your character enters combat and/or has an encounter,
+                      those are resolved 1st.
+                    * A territory can only have 1 faction token (flag or trap)
+                      on it.
+                    * Trap tokens may **not** be moved or removed once placed.
+                    * During end game scoring, an **armed** trap token grants
+                      control of the territory.
+                    * If an opponent moves onto a territory with trap token, it
+                      is triggered.
+                        * Flip the token to reveal the penalty and apply it to
+                          the opponent (if possible)
+                        * **This happens before anything else**, including
+                          combat and encounters.
+                        * The disarmed trap remains on the territory.
+                    * An opponent may build a structure on a territory with a
+                      trap.
+                        * During end game scoring, if there is only the trap
+                          token and structure on the territory, the player
+                          with the structure controls it, regardless of the
+                          trap's state.
+                    * Trap penalties:
+                        * Lose 2 popularity
+                        * Lose 3 power
+                        * Lose $4
+                        * Discard 2 combat cards at random
                 * **Toka**: Once per turn when moving, either your character or
                   **1** mech may move across a river.
                     * A mech can transport workers.
@@ -603,3 +683,94 @@ sections:
           | ![mountain](/static/img/scythe/mountain.png) | Mountain | ![metal](/static/img/scythe/metal.png) |
           | ![tundra](/static/img/scythe/tundra.png) | Tundra | ![oil](/static/img/scythe/oil.png) |
           | ![village](/static/img/scythe/village.png) | Village | ![worker](/static/img/scythe/worker.png) |
+    - name: Playing with 6-7 Players
+      text: |
+          Below are the changes to apply when playing with more than 5 players,
+          aka with the expansion(s).
+
+          * **Crimea**: Cover the Wayfare ability with the token from the
+            *Invaders from Afar* expansion.  This becomes:
+              * Move to any unoccupied farm.
+          * **Polania**: Cover the Meander ability with the token from the
+            *Invaders from Afar* expansion.  This becomes:
+              * Pick up to 2 options per encounter card. At the end, gain $3
+                for each encounter territory you control.
+          * When determining a 1st player (based on the numbers on the player
+            mats), the order is: 1, 2, 2a, 3, 3a, 4, 5.
+    - name: The Wind Gambit
+      id: wind
+      text: |
+          Most of the following rules pertain to the airships.
+
+          * Airships **never** control territories.
+              * They can fly into any territory, even those controlled by
+                opponents.
+              * If there are resources and **only** an airship on a
+                territory, you cannot spend those resources (you don't control
+                the territory).
+              * For end game scoring, if there is **only** an airship on a
+                territory, you do not count it as a controlled territory.
+          * Airships transporting resources:
+              * Airships cannot pick up resources on territories controlled
+                by opponents.
+              * Resources on an airship remain under your control until they
+                are spent or dropped off.
+              * Resources on an airship count during end game scoring.
+          * Airships transporting workers:
+              * A worker on an airship does **not** give you control of a
+                territory.
+              * The workers on an airship cannot produce or trade on that
+                territory.
+              * Opponents cannot interact with workers on an airship.
+              * Workers can only be dropped off on territories void of
+                opponents.
+              * An airship must drop off a worker during its move action.
+                  * A worker cannot move directly from an airship to another
+                    territory.
+              * A worker picked up by an airship cannot transport resources
+                onto the airship.
+          * Airship movement:
+              * The airship can only be moved as part of a standard move
+                action, like any other unit.
+              * The range is indicated in the hex on the upper right part of
+                the [passive airship tile]!green!.
+              * Airships are not constrained by rivers or lakes.
+              * Airships can freely move in and out of any territory, including
+                those controlled by opponents.
+              * Any number of airships can be on a territory.
+              * If using the move ability from a factory card, the airship's
+                movement is increased by +1.
+              * Airships do **not** benefit from mech abilities.
+              * Airships may not move onto home bases.
+              * Airships may **not** move through tunnels/mines.
+          * Airships are not considered to be "occupying" a territory by
+            itself. There must be at least 1 unit **on the territory** to be
+            "occupied".
+          * Having an airship on a territory does **not** increase the number
+            of combat cards that can be played.
+          * Airships do not trigger traps.
+          * **Blitzkrieg**: This [agressive ability]!red! allows combat to
+            happen between airships.
+              * The winner gains a star.
+              * It is the only time an airship can retreat. Other units on
+                the territory do not engage or retreat.
+      sections:
+          - name: Advanced Variant
+            text: |
+                * Deal 1 [aggressive airship tile]!red! and 1 [passive airship
+                  tile]!green! to each player.
+                * Each player will have it's own set of airship abilities.
+                * This is **not recommended** for games with 4+ players.
+          - name: Resolution Module
+            id: resolution
+            text: |
+                This changes the way a game of Scythe ends. If playing with
+                this module, ignore the standard end-game trigger.
+
+                * Some resolution tiles allow you to place stars on the tiles,
+                  objective cards, etc.  These are counted for end game
+                  scoring.
+                    * You can never place more than 6 stars.
+                    * It will be possible now for multiple players to place
+                      6 stars.
+                * You may not take any action more than once per turn.
