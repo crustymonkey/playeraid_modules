@@ -1,0 +1,293 @@
+name: "Mobile Markets"
+description: "Develop and sell your smartphones to customers"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+bgg_id: 344768
+expansions:
+sections:
+    - name: Setup
+      text: |
+          * Place the game board using all 4 parts and place them side by side
+            in ascending order.
+          * Place the phase marker on the 1st space of the phase track.
+          * Place the setup card with the section matching the number of
+            players face up.
+          * Shuffle the event cards and draw 5 cards at random and place them
+            in a face down pile near the board as the event deck.
+              * Return the remaining event cards to the box.
+          * Place the scoring track next to the game board.
+          * Shuffle all the customer card decks separately and place them in
+            3 face down piles.
+          * Shuffle all other cards separately (Technology, Feature, and
+            Marketing Campaign cards) to form their decks.
+              * Reveal 4 cards from the technology deck to create the
+                technology display.
+              * Reveal 6 cards from the feature deck to create the feature
+                display.
+              * Reveal 4 cards from the marketing campaign deck to create the
+                marketing display.
+              * Put a pile of progress tokens and a pile of discount tokens
+                next to the tech. and feature displays.
+          * Player setup for each player:
+              * Take 1 pair of planning pads.
+              * Take a personal corporation board in their color.
+              * Take 5 markers in their color.
+                  * 2 markers are place on zero spaces on the scoring track.
+                  * Place a 3rd marker next to the scoring track (price
+                    marker).
+                  * Place 1 marker on the zero space of the goods produced
+                    track (player board).
+                  * Place 1 marker on the zero space of the net profit
+                    track (player board).
+              * Take 1 random starting technology card.
+              * Take 1 random starting feature card.
+              * Return the rest of the starting cards to the box.
+    - name: Gameplay
+      text: |
+          The takes place over 5 years (rounds) with 8 phases per round.
+          At the beginning of each phase, move the phase marker 1 phase to
+          the right (to the current phase).
+      sections:
+          - name: "1. Preparation"
+            sections:
+              - name: "1. Resetting Price Markers"
+                text: |
+                    * All price marker should be one the "5" space of the price
+                      track.
+                    * **During the 1st round**: Place the markers in order based
+                      on the initiative number of their starting tech. cards
+                      where the lowest number is furthest to the left on the
+                      track (next to the "5"). Place the rest in ascending
+                      order.
+                        * This defines turn order for the round.
+                    * **In later rounds**, the player with the least money on
+                      the scoring track is in the 1st slot (furthest left)
+                      and again others placed in ascending order.
+                        * If there is a tie, it is broken by the starting
+                          technology card with the lowest number.
+              - name: "2. Revealing Event"
+                text: |
+                    * Reveal the top card of the event deck and place it onto
+                      the setup card (1st round), overlapping the bottom half
+                      of it.
+                    * **In later rounds**, place the event on the previous card
+                      without covering the customer and additional production
+                      icons of that card.
+                    * Apply the event's instructions.  Note that these will
+                      modify the core rules of the game.  This usually affects
+                      the whole round.
+              - name: "3. Refilling the Displays"
+                text: |
+                    [**Skip this step during the 1st round!**]!red! Refresh the
+                    technology, feature, and marketing campaign cards.
+
+                    1. Discard any cards with a discount token and all the cards
+                       with a cost of 1.
+                    2. Place a discount token on all the remaining cards.
+                    3. Refill the technology and marketing displays up to 4
+                       cards.
+                    4. Refill the feature display up to 6 cards.
+              - name: "4. Adding Customers"
+                text: |
+                    * Add new customer cards to the market.
+                        * The number of cards to be added is the number on the
+                          setup card + the total on all event cards.
+                    * Place each customer card under the price track space
+                      matching its number.
+                    * **Note** that the customers from the previous round
+                      remain!
+                    * New cards are placed below the existing customers.
+                    * If there are no cards in a given deck, shuffle its discard
+                      to make a new deck.
+          - name: "2. Planning (simultaneous)"
+            id: planning
+            text: |
+                * Each player arranges their 2 pads **secretly** to set
+                  management decisions.
+                * Pads must be placed 1 on top of the other following these
+                  rules:
+                    * At least 1 of the squares of the lower pad must be
+                      covered.
+                    * At least 1 of the squares of the lower pad must be
+                      visible.
+                    * Each square must be either completely hidden or
+                      completely visible.
+                * When everyone has finished arranging their pads, everyone
+                  reveals their decisions.
+
+                ### Cells and Production
+                * Each ![money+](/static/img/mobile_markets/money+.png)
+                  increases the price of your product during the [pricing
+                  phase](#pricing).
+                * Each ![money-](/static/img/mobile_markets/money-.png)
+                  lowers the price of your product during the [pricing
+                  phase](#pricing).
+                * Each ![tech](/static/img/mobile_markets/tech.png)
+                  gives you 1 technology point during the [technology
+                  phase](#tech).
+                * Each ![marketing](/static/img/mobile_markets/marketing.png)
+                  gives you 1 marketing point during the [marketing
+                  phase](#marketing).
+                * Each ![good](/static/img/mobile_markets/good.png)
+                  will produce 1 good during the [production
+                  phase](#production).
+                * Each covered cell will produce 1 good during the [production
+                  phase](#production).
+          - name: "3. Pricing"
+            id: pricing
+            text: |
+                * Starting with the player in the leftmost spot of the "5"
+                  space on the pricing track and moving to the right, each
+                  player adjusts their pricing based on exposed
+                  ![money+](/static/img/mobile_markets/money+.png) and
+                  ![money-](/static/img/mobile_markets/money-.png) symbols.
+                    * For each price, always fill the slots from left to right.
+                * **Note**: At the end of this phase, the turn order may have
+                  changed.  The turn order is always left (1st) to right (last)
+                  by position on the pricing track.
+          - name: "4. Technology"
+            id: tech
+            text: |
+                * In turn order, players can spend technology points and
+                  progress tokens to purchase at most **1** technology card
+                  and as many feature cards as they can afford.
+                * Any leftover technology points are convert (1 to 1) to
+                  progress tokens to be spent on a later round.
+                * Discard progress tokens when they are spent as tech. points.
+                * The phases on the tech. cards indicate when their ability
+                  is used/active.
+          - name: "5. Marketing"
+            id: marketing
+            text: |
+                * **In reverse turn order** (right to left on the pricing
+                  track), players spend marketing points to buy at most **1**
+                  marketing campaign card or private customers.
+                * Private customers cost 1 marketing point each and multiple
+                  can be purchased.
+                    * They can be taken from any deck, but **not** from the
+                      visible customers in the market.
+                    * These customers stay with you until you can sell them
+                      a product that meets their requirements during the
+                      [sales phase](#sales).
+                    * Other players **cannot** sell to your private customers.
+                * Marketing campaign cards can be used immediately after
+                  purchase.
+                * Marketing points cannot be saved for later.
+                * The phases on the marketing campaign cards indicate when
+                  their ability is used/active.
+          - name: "6. Production (simultaneous)"
+            id: production
+            text: |
+                * Each player calculates the number of goods they produce by
+                  adding the following:
+                    * Number of goods icons on the event cards **+**
+                    * Number of visible goods icons on their pads **+**
+                    * Number of covered cells of their lower pad **+**
+                    * Any effects from event, technology, or marketing campaign
+                      cards.
+                * Set the total number of goods on the goods track on your
+                  player board.
+          - name: "7. Sales"
+            id: sales
+            text: |
+                * In turn order, players create a product and sell their goods.
+            sections:
+              - name: "1. Creating a product"
+                text: |
+                    * You may create a product by placing your feature cards
+                      on the spaces on your player board and tech. cards
+                      (that supports this).
+                    * Star icons on feature cards indicate how advanced your
+                      product is.  Some customers want advanced phones.
+
+                    ### Feature Types
+                    | Symbol | Feature |
+                    | ------ | ------- |
+                    | ![multi camera](/static/img/mobile_markets/mcamera.png) | Phones with multiple camera lenses |
+                    | ![5G](/static/img/mobile_markets/5g.png) | Phones compatible with 5G |
+                    | ![NFC](/static/img/mobile_markets/nfc.png) | Phones equipped with NFC tech. |
+                    | ![8K](/static/img/mobile_markets/8k.png) | Phones with 8K video recording capabilities |
+                    | ![flexible](/static/img/mobile_markets/flex.png) | Phones with flexible screens |
+              - name: "2. Determining Net Profit per Sale"
+                text: |
+                    * Calculate the cost of the goods being produced.
+                    * Start with where your price marker as your base profit
+                      and decrease this by 1 for each 
+                      ![dollar](/static/img/mobile_markets/dollar.png) symbol.
+                        * There is a base cost of 1
+                          ![dollar](/static/img/mobile_markets/dollar.png)
+                          symbol.
+                        * Some features have
+                          ![dollar](/static/img/mobile_markets/dollar.png)
+                          symbols.
+                        * If a 3rd feature is added, that incurs an additional
+                          cost of 1.
+              - name: "3. Sales"
+                text: |
+                    * Sell goods to customers, placing the customer cards in
+                      your sales pile.
+                    * Customers have requirements consisting (possibly) of
+                      features and star requirements.
+                        * Needs separated by a slash (/) can be fulfilled by
+                          satisfying any of those requirements.
+                        * The red square with the number indicates the **max**
+                          price that customer is willing to pay.
+                        * ![plus](/static/img/mobile_markets/plus.png) icons
+                          indicate that the customer will pay the price
+                          specified (or lower) **if all other needs are met**.
+                        * ![slash](/static/img/mobile_markets/slash.png) icons
+                          mean the customer will buy at the indicated price
+                          **or** any price if the requirements are met.
+                    * **You must sell goods to private customers if possible**.
+                        * Start with the customer with the lowest preferred
+                          price (2) and continue in ascending order.
+                        * Private customers whose needs are not met stay in
+                          front of you.
+                    * **After selling to private customers**, you must sell
+                      your remaining goods to the market, if possible.
+                        * Start with the customer with the lowest preferred
+                          price (2) and continue in ascending order. (resolve
+                          columns from left to right)
+                        * Continue selling goods to customers until the number
+                          of customer cards in your sales pile equals the
+                          number of goods produced during the [production
+                          phase](#production) or you've exhausted all customers.
+          - name: "8. Profit (simultaneous)"
+            id: profit
+            text: |
+                * There is a bonus for selling the most goods:
+                    * 1st place: 8 dollars
+                    * 2nd place: 4 dollars
+                    * 3rd place: 2 dollars
+                    * If players are tied, add the rewards for the next N
+                      places (where N is the number of tied players), then
+                      divide by N, rounded down, for the reward that the tied
+                      players get.
+                    * If a player has sold zero goods, they cannot receive
+                      this reward.
+                * Any technology and marketing campaign cards that trigger
+                  at the end of the round are resolved now.
+                * Each player receives dollars equal to the number of goods
+                  sold x the net profit per sale.
+                * After adding up all profit, move up that many spaces on
+                  the score track.
+          - name: End of Round
+            text: |
+                * Discard all customers from all players sales piles to the
+                  corresponding discard piles.
+                * Each player removes all feature cards used to create their
+                  product and sets them aside with their other feature cards.
+                  These are usable in later rounds.
+                * Reset the markers for number of goods and net profit to
+                  zero on their tracks.
+    - name: End of the Game
+      text: |
+          The game ends at the end of the 5th round (you'll be out of event
+          cards).
+
+          * Any technology and marketing cards that trigger at the end of the
+            game trigger now.
+          * The player with the most money wins.
+              * If there is a tie, the player with the lowest number on
+                their starting technology card wins.
