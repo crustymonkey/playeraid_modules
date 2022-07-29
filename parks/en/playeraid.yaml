@@ -1,0 +1,26 @@
+name: "Parks"
+description: "Explore the national parks"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+bgg_id: 266524
+expansions:
+sections:
+    - name: Setup
+      text: |
+          * Place the board and the 2 token trays on either side.
+          * Shuffle all the park cards and place them face down on the board
+            and deal 3 face up parks to the top slots of the board.
+          * Shuffle the gear cards and place them face down on the board and
+            deal 3 face up gear cards to the top slots of the board.
+          * Shuffle the canteen cards and place them face down on the board
+            and deal 1 canteen face up to each player.
+          * Shuffle the year deck and deal 2 cards to each player.
+              * Each player chooses 1 of the 2 cards as their secret personal
+                bonus. Discard the other card face down.
+              * Return any unused year cards to the box.
+          * Shuffle the season deck, place it on the board, and reveal the
+            topmost card.
+          * Create the trail:
+              * Place the trail head on the far left.
+              * 
