@@ -19,8 +19,87 @@ sections:
               * Each player chooses 1 of the 2 cards as their secret personal
                 bonus. Discard the other card face down.
               * Return any unused year cards to the box.
-          * Shuffle the season deck, place it on the board, and reveal the
-            topmost card.
+          * Shuffle the season deck, place it on the board.
           * Create the trail:
               * Place the trail head on the far left.
-              * 
+              * Take the 5 basic tiles (tent in the bottom right), and **if
+                playing with 4-5 players**, add the "sun/water" site with a
+                **4+** in the bottom right.
+                  * Shuffle the advanced tiles (* in the bottom right) and add
+                    1 random tile to the 5 (or 6) other tiles.
+                  * Set the remaining advanced sites to the side, they will be
+                    used later.
+                  * Shuffle all the gathered tiles and lay them out one at a
+                    time to the right of the trail head.
+              * Add the trail end to the end of the trail.  Be sure it is
+                **not** on the side showing the SOLO icon in the bottom right.
+          * Give each player 2 hikers in a color and the matching campfire
+            tile.
+          * Each player places both their hikers on the trail head.
+          * Give the first player token to the player who most recently took
+            a hike or choose someone at random.
+          * Give the camera tile to the player to the right of the first player.
+    - name: Gameplay
+      text: |
+          The game is played over the course of 4 seasons. **Each player has 
+          a limit of 12 tokens**.  If a player has more than 12 tokens at
+          the *end* of their turn, they must discard down to 12.
+      sections:
+          - name: Start of the Season
+            text: |
+                * Flip the top card of the season deck and place it on top of
+                  the deck.
+                * Looking at the weather pattern (lower right), and starting
+                  with the **2nd** trail site (not counting the trail head),
+                  place tokens on the cards matching the pattern, repeating
+                  until there are tokens on the remaining trail sites, but
+                  **not** the trail end.
+          - name: Taking Turns
+            text: |
+                Starting with the 1st player, each player takes a turn by
+                moving 1 of their hikers to a site on the trail. Play
+                continues clockwise.
+
+                * Your hiker can be moved as far along the trail as the
+                  player would like, **but you must be able to take the site
+                  action**.
+                    * If there is another hiker (including your own) is on the
+                      site, you must flip your campfire tile to the extinguished
+                      side.  **If it's already on the extinguished side, you
+                      cannot move to a site with another hiker!**
+                * Once you've moved to the site, you take any tokens on the
+                  site, then perform the [action on the site](#actions).
+          - name: Action Details
+            text: |
+                In addition to the [site action summaries](#actions), the
+                following covers specifics for some actions.
+
+                * **Canteens**: When you draw a canteen card, place it face
+                  up with the
+                  [empty canteen](/static/img/parks/canteen_empty.png) showing.
+                    * To fill the canteen, place a **gained** water token on
+                      the card and perform the action.
+                    * **Canteens cannot be filled with water that was not
+                      received during a turn**.
+                    * You may have any number of canteens.
+                    * Once filled, the water remains on it until the end of
+                      the season and cannot be used until the water is
+                      removed.
+                * **Photos and the camera**: When 
+    - name: Site Actions
+      id: actions
+      text: |
+          | Symbol | Description |
+          | ------ | ----------- |
+          | [basic](/static/img/parks/basic_site.png) | Basic sites |
+          | [forest](/static/img/parks/forest.png) | Gain a forest token |
+          | [mountain](/static/img/parks/mount.png) | Gain a mountain token |
+          | [sun](/static/img/parks/sun.png) | Gain 2 sun tokens |
+          | [water](/static/img/parks/water.png) | Gain 2 water tokens |
+          | [canteen](/static/img/parks/canteen.png) | Draw a canteen **OR** [photo](/static/img/parks/photo.png) turn in 2 tokens to take a photo and gain the camera |
+          | [water+sun](/static/img/parks/water_sun.png) | Gain 1 sun and 1 water token |
+          | [advanced](/static/img/parks/adv.png) | Advanced sites |
+          | [wildlife](/static/img/parks/wildlife.png) | Turn in any token to gain a wildlife token |
+          | [exchange](/static/img/parks/1for1.png) | Exchange 1 token for another token.  This can be done 2 times. |
+          | [parks](/static/img/parks/parks.png) | Reserve or visit a park **OR** [gear](/static/img/parks/gear.png) buy a gear card |
+          | [water action](/static/img/parks/water_action.png) | Spend 1 water to copy the action from another site occupied by a hiker.  This does not include the trail head/end. |
