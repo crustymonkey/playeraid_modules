@@ -46,6 +46,7 @@ sections:
           the *end* of their turn, they must discard down to 12.
       sections:
           - name: Start of the Season
+            id: season_start
             text: |
                 * Flip the top card of the season deck and place it on top of
                   the deck.
@@ -85,7 +86,89 @@ sections:
                     * Once filled, the water remains on it until the end of
                       the season and cannot be used until the water is
                       removed.
-                * **Photos and the camera**: When 
+                * **Photos and the camera**: When when choosing the
+                  [photo](/static/img/parks/photo.png) action, spend any 2
+                  tokens to take a photo tile.
+                    * **If you already have the camera, spend only 1 token
+                      instead of 2**.
+                    * After taking the photo, take the camera from whoever
+                      has it.
+                    * Photos are worth 1 point.
+                    * The player with the camera at the end of the season can
+                      spend 1 token to take an additional photo.
+                    * If you have a gear card that allows you to take photos,
+                      **you do not gain the camera**.
+                * **Trail end**: There are 3 different action "locations" at
+                  the trail end you can go to.
+                    * **Reserve a park**: Choose 1 of the 3 available parks,
+                      or draw 1 off the top of the deck, and place it face
+                      up in front of you rotated 90° (until finished).
+                        * If a park was reserved from a board slot, flip a
+                          new card to replace it.
+                        * If you are the 1st player to take this action, also
+                          take the 1st player token. You will be 1st player
+                          in the next season.
+                        * Any number of players may reserve a park.
+                    * **Buy gear**: You may buy 1 gear card from one of the
+                      face up gear cards. Then, flip a replacement from the
+                      deck for the one taken.
+                        * If you're the 1st (or 2nd in a 4+ player game) to
+                          take this action, also take a sun token. This can
+                          be used for the purchase of the gear card.
+                        * Note that some gear have ⚡ *instant* effects that
+                          activate when you purchase it, in addition to the
+                          ongoing effect.
+                        * Any number of players may buy gear.
+                    * **Visit a park**: Choose 1 of the 3 available parks on
+                      the board, or one you have previously reserved, and
+                      spend tokens equal to the cost at the bottom of the card.
+                      Then, if a park was taken from the board, flip a new
+                      card to replace it.
+                        * Place the card *vertically* (to distinguish it from
+                          reserved parks) in front of you.
+                        * You can stack parks such that only the VP and tokens
+                          at the bottom of the card remain showing.
+                        * Any number of players may visit a park.
+          - name: End of a Season
+            id: season_end
+            text: |
+                * When a player's 2 hikers reach the trail end, they are
+                  done taking turns until the season is complete.
+                * When there is only 1 hiker left on the trail, they **must**
+                  move their hiker to the trail end on their next turn.
+                * Once all hikers are on the trail end, the season is over
+                  and the following is done.
+                    1. The player with the camera may spend 1 token to take
+                       a picture.
+                    2. All water tokens are removed from canteens and placed
+                       in the supply.
+                    3. Return all hikers to the trail head.
+                    4. Pick up all the trail sites except for the trail
+                       head/end, add an additional advanced site from the
+                       face down stack, shuffle them all and place the new
+                       trail. The new trail will be 1 space longer.
+                    5. Remove the current season card.
+                    6. Return to the instructions for the
+                       [start of a season](#season_start), then begin the
+                       next season starting with the player who has the
+                       1st player token.
+                * If this was the end of the 4th season, proceed to [game
+                  end](#game_end)
+    - name: Game End
+      id: game_end
+      text: |
+          After the photo opportunity ([step 1](#season_end)) at the end of
+          the 4th season, the game ends. Now score points:
+
+          * Points on **visited** parks, reserved parks do not score.
+          * Points on your year card (personal bonus).
+          * 1 point for each photo.
+          * 1 point for the player with the 1st player token.
+
+          Whoever has the most points wins.  If tied:
+
+          1. The player with the most visited parks wins.
+          2. If still tied, the players share the victory.
     - name: Site Actions
       id: actions
       text: |
@@ -103,3 +186,43 @@ sections:
           | [exchange](/static/img/parks/1for1.png) | Exchange 1 token for another token.  This can be done 2 times. |
           | [parks](/static/img/parks/parks.png) | Reserve or visit a park **OR** [gear](/static/img/parks/gear.png) buy a gear card |
           | [water action](/static/img/parks/water_action.png) | Spend 1 water to copy the action from another site occupied by a hiker.  This does not include the trail head/end. |
+    - name: FAQ
+      text: |
+          * **Can I visit a site without taking its action?**: No, you **must**
+            be able to take the site action to visit a site.
+          * **Can I use a token provided by the weather towards a trail site's
+            action?**:  Yes.  These are collected *before* taking the site
+            action.
+          * **What happens if we run out of tokens?**: Tokens are limited. If
+            a site would grant/make use of a token that is not available, the
+            site cannot be visited.
+          * **When can I fill a canteen?**: They can only be filled by a water
+            acquired on a turn. You cannot use previously collected water for
+            a canteen. If you can a canteen *and* a water on the same turn,
+            the water can be used to activate that canteen.
+          * **Does the [1for1](/static/img/parks/1for1.png) effect count
+            toward season effects?**: Yes. If you trade a token for another
+            token that has a season effect, it activates it. Note that **you
+            can only use the season effect once per turn**.
+          * **Do actions on canteens count toward season effects?**: Yes.
+          * **Can visiting the [water
+            action](/static/img/parks/water_action.png) activate gear that
+            specifies a site?**: No. You may copy the effect of another site,
+            but it doesn't count as visiting the copied site. However, tokens
+            gained this way can be used for season effects.
+          * **Can multiple gear cards like maps, compasses, and journals be
+            used together?**: Yes.  The effects on these cards are cumulative.
+            However, you can never reduce a cost below zero.
+          * **How do sunscreen or rain gear work?**: These allow you to visit
+            a park using a different type of token in place of another. This
+            ability applies to the token symbols on the park card (and not
+            to the discounts from other gear).
+          * **How does filling a canteen for free work with the water
+            bottle?**: You may take a water from the supply for free and place
+            it on the canteen to activate it.
+          * **How does season of rain and splendor work?**: One water or sun,
+            depending on the season, is added on top of each of the 3
+            available parks at the start of the season.  If a player visits
+            or reserves that park, they get the token. The token gained can
+            be used to pay the cost of the park. **Do not add tokens to
+            parks that come out later in that season**.
