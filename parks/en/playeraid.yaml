@@ -2,11 +2,13 @@ name: "Parks"
 description: "Explore the national parks"
 text_type: markdown
 credits: "Jay Deiman"
-enabled: false
+enabled: true
 bgg_id: 266524
-expansions:
+expansions: 
+    - Nightfall
 sections:
     - name: Setup
+      id: setup
       text: |
           * Place the board and the 2 token trays on either side.
           * Shuffle all the park cards and place them face down on the board
@@ -16,9 +18,15 @@ sections:
           * Shuffle the canteen cards and place them face down on the board
             and deal 1 canteen face up to each player.
           * Shuffle the year deck and deal 2 cards to each player.
+              * **If playing with Nightfall**, instead use the year deck from
+                Nightfall and return the base game year cards to the box.
               * Each player chooses 1 of the 2 cards as their secret personal
-                bonus. Discard the other card face down.
-              * Return any unused year cards to the box.
+                bonus. Discard the other card face down to the bottom of the
+                deck..
+              * **If playing with Nightfall**, place the deck on the campsite
+                board.
+              * If **not** playing with Nightfall, return any unused year
+                cards to the box.
           * Shuffle the season deck, place it on the board.
           * Create the trail:
               * Place the trail head on the far left.
@@ -39,6 +47,17 @@ sections:
           * Give the first player token to the player who most recently took
             a hike or choose someone at random.
           * Give the camera tile to the player to the right of the first player.
+          * **If playing with the Nightfall expansion**:
+              * Shuffle the Nightfall parks cards into the existing parks deck.
+              * Give each player 1 wildlife token to start.
+              * Place the campsite board under the
+                trail head on the correct side based on number of players.
+              * If playing with 5 players, find the campsite tile with the
+                "5+" in the bottom right and place it next to the campsite
+                board. Otherwise return it to the box.
+              * Shuffle the rest of the campsite tiles and add 3 to the
+                campsite area.  Make sure all campsites are flipped to their
+                season 1 side.  Return the rest to the box.
     - name: Gameplay
       text: |
           The game is played over the course of 4 seasons. **Each player has 
@@ -55,6 +74,15 @@ sections:
                   place tokens on the cards matching the pattern, repeating
                   until there are tokens on the remaining trail sites, but
                   **not** the trail end.
+                * **If playing with Nightfall**: Once the weather is setup,
+                  place the tents.
+                    * Starting with the site to left of the trail end and going
+                      to the left, place **3** of the tents, 1 on every other
+                      site.
+                        * If playing with less than 4 players, only 3 tents will
+                          be used and the last tent is returned to the box.
+                        * If playing with 4+ players, place the last tent in
+                          between the 2 tents closest to the trail head.
           - name: Taking Turns
             text: |
                 Starting with the 1st player, each player takes a turn by
@@ -68,6 +96,14 @@ sections:
                       site, you must flip your campfire tile to the extinguished
                       side.  **If it's already on the extinguished side, you
                       cannot move to a site with another hiker!**
+                * **If playing with Nightfall** and you land on a site with
+                  a tent, you may take the tent and place it on an *available*
+                  campsite to take that action **instead of** the normal site
+                  action.
+                    * You do not get the weather token if you take a campsite
+                      action.
+                    * See the [actions reference](#actions) for more info
+                      on individual campsite actions.
                 * Once you've moved to the site, you take any tokens on the
                   site, then perform the [action on the site](#actions).
           - name: Action Details
@@ -77,7 +113,7 @@ sections:
 
                 * **Canteens**: When you draw a canteen card, place it face
                   up with the
-                  [empty canteen](/static/img/parks/canteen_empty.png) showing.
+                  ![empty canteen](/static/img/parks/canteen_empty.png) showing.
                     * To fill the canteen, place a **gained** water token on
                       the card and perform the action.
                     * **Canteens cannot be filled with water that was not
@@ -87,7 +123,7 @@ sections:
                       the season and cannot be used until the water is
                       removed.
                 * **Photos and the camera**: When when choosing the
-                  [photo](/static/img/parks/photo.png) action, spend any 2
+                  ![photo](/static/img/parks/photo.png) action, spend any 2
                   tokens to take a photo tile.
                     * **If you already have the camera, spend only 1 token
                       instead of 2**.
@@ -129,6 +165,36 @@ sections:
                         * You can stack parks such that only the VP and tokens
                           at the bottom of the card remain showing.
                         * Any number of players may visit a park.
+                        * **If playing with Nightfall**, if the card has an
+                          ⚡ action, this can be taken **after** paying the
+                          card cost.  The instant action is optional.
+                        * If a card shows a
+                          ![brown token](/static/img/parks/any_token.png)
+                          symbol, any tokens may be used to pay the cost as
+                          long as it's the correct number of tokens.
+                            * Gear that provides a discount when visiting parks
+                              only applies to the **specific tokens** shown
+                              on the park, not the
+                              ![brown token](/static/img/parks/any_token.png)
+                              symbol.
+                * **Campsites Actions** (Nightfall): If you stop at a site
+                  with a tent token, you can optionally take the campsite
+                  action instead of the normal action.  See [site
+                  actions](#actions) for more info.
+                    * **Camera**: If the player has the camera and visits a
+                      campsite or a park that allows them to take a photo,
+                      they may use *any* token to pay instead of the 1
+                      depicted.
+                    * **Campfires**: When visiting a site with a tent, the
+                      player may choose either the campsite action or the
+                      normal site action + weather token (if still available).
+                    * **Gear and camping**: Gear cards that reference a
+                      specific trail site still activate when a player chooses
+                      to use them to camp at that site.
+                    * **Wild love** (variant): 1 wildlife token counts for
+                      **2** of the brown "any" tokens.  You may also turn in
+                      1 wildlife token instead of any 2 tokens to take a
+                      photo.
           - name: End of a Season
             id: season_end
             text: |
@@ -152,6 +218,12 @@ sections:
                        [start of a season](#season_start), then begin the
                        next season starting with the player who has the
                        1st player token.
+                * **If playing with Nightfall**:
+                    * Remove all tent tokens from campsites and the trail.
+                    * Flip any campsites so the number on the bottom left
+                      corresponds to the next season.
+                    * Follow the instructions for tent setup for the [start
+                      of a season](#season_start).
                 * If this was the end of the 4th season, proceed to [game
                   end](#game_end)
     - name: Game End
@@ -164,6 +236,11 @@ sections:
           * Points on your year card (personal bonus).
           * 1 point for each photo.
           * 1 point for the player with the 1st player token.
+          * **If playing with Nightfall**:
+              * Each year card will score, but if a player has multiple
+                copies of the same year card, it only scores **once**.
+              * Note that for year goals, only the symbols to the left of
+                the ⚡ on the parks count.
 
           Whoever has the most points wins.  If tied:
 
@@ -174,18 +251,62 @@ sections:
       text: |
           | Symbol | Description |
           | ------ | ----------- |
-          | [basic](/static/img/parks/basic_site.png) | Basic sites |
-          | [forest](/static/img/parks/forest.png) | Gain a forest token |
-          | [mountain](/static/img/parks/mount.png) | Gain a mountain token |
-          | [sun](/static/img/parks/sun.png) | Gain 2 sun tokens |
-          | [water](/static/img/parks/water.png) | Gain 2 water tokens |
-          | [canteen](/static/img/parks/canteen.png) | Draw a canteen **OR** [photo](/static/img/parks/photo.png) turn in 2 tokens to take a photo and gain the camera |
-          | [water+sun](/static/img/parks/water_sun.png) | Gain 1 sun and 1 water token |
-          | [advanced](/static/img/parks/adv.png) | Advanced sites |
-          | [wildlife](/static/img/parks/wildlife.png) | Turn in any token to gain a wildlife token |
-          | [exchange](/static/img/parks/1for1.png) | Exchange 1 token for another token.  This can be done 2 times. |
-          | [parks](/static/img/parks/parks.png) | Reserve or visit a park **OR** [gear](/static/img/parks/gear.png) buy a gear card |
-          | [water action](/static/img/parks/water_action.png) | Spend 1 water to copy the action from another site occupied by a hiker.  This does not include the trail head/end. |
+          | ![basic](/static/img/parks/basic_site.png) | Basic sites |
+          | ![forest](/static/img/parks/forest.png) | Gain a forest token |
+          | ![mountain](/static/img/parks/mount.png) | Gain a mountain token |
+          | ![sun](/static/img/parks/sun.png) | Gain 2 sun tokens |
+          | ![water](/static/img/parks/water.png) | Gain 2 water tokens |
+          | ![canteen](/static/img/parks/canteen.png) | Draw a canteen **OR** [photo](/static/img/parks/photo.png) turn in 2 tokens to take a photo and gain the camera |
+          | ![water+sun](/static/img/parks/water_sun.png) | Gain 1 sun and 1 water token |
+          | ![advanced](/static/img/parks/adv.png) | Advanced sites |
+          | ![wildlife](/static/img/parks/wildlife.png) | Turn in any token to gain a wildlife token |
+          | ![exchange](/static/img/parks/1for1.png) | Exchange 1 token for another token.  This can be done 2 times. |
+          | ![parks](/static/img/parks/parks.png) | Reserve or visit a park **OR** [gear](/static/img/parks/gear.png) buy a gear card |
+          | ![water action](/static/img/parks/water_action.png) | Spend 1 water to copy the action from another site occupied by a hiker.  This does not include the trail head/end. |
+          | ![3 sun year](/static/img/parks/3sun_year.png) | (Nightfall) Turn in 3 sun tokens to draw 2 year cards from the deck.  Discard 1 year card **from your hand** to the bottom of the deck. |
+          | ![mountain sun](/static/img/parks/mount_sun.png) | (Nightfall) Turn in a mountain to gain 5 sun |
+          | ![forest water](/static/img/parks/forest_water.png) | (Nightfall) Turn in a forest to gain 5 water |
+          | ![forest pic](/static/img/parks/forest_photo.png) | (Nightfall) Turn in a forest to take a photo |
+          | ![mountain pic](/static/img/parks/mount_photo.png) | (Nightfall) Turn in a mountain to take a photo |
+          | ![water wildlife](/static/img/parks/water_wild.png) | (Nightfall) Turn in a water to gain a wildlife token |
+          | ![sun wildlife](/static/img/parks/sun_wild.png) | (Nightfall) Turn in a sun to gain a wildlife token |
+          | ![canteen water](/static/img/parks/canteen_water.png) | (Nightfall) Gain a canteen and a water |
+          | ![water to supply](/static/img/parks/water_supply.png) | (Nightfall) Move all water from you filled canteens back to your supply (these cannot be used to refill canteens), then gain a water |
+          | ![discard year](/static/img/parks/disc_year.png) | (Nightfall) Discard 1 of your gear or year cards to the bottom of its deck.  Then, you can take the top card of either the year or gear deck, or any available gear card (the type obtained can be different than the type discarded) |
+          | ![sun gear](/static/img/parks/disc_sun.png) | (Nightfall) Spend 2 sun to discard the 3 available gear cards to the bottom of the deck, then draw 3 new gear cards. After that, the player may take 1 available gear card, or the top card of the gear deck, for free |
+          | ![water campfire](/static/img/parks/water_camp.png) | (Nightfall) Gain a water, reserve a park, and relight your campfire |
+          | ![sun campfire](/static/img/parks/sun_camp.png) | (Nightfall) Gain a sun, reserve a park, and relight your campfire (only in 5 player games) |
+    - name: Nightfall Year Cards
+      text: |
+          Note that for year goals, only the symbols to the left of
+          the ⚡ on the park cards count toward these goals.
+
+          * **Canoer** (1): 1 point for every 3 water across your visited parks.
+          * **Climber** (1): 1 point for every 2 mountains across your visited
+            parks.
+          * **Collector** (2): 2 points for every set of 2, 3, and 4 point parks
+            you visited.
+          * **Conserver** (1): 1 point for every 2 forests across your visited
+            parks.
+          * **Forester** (2): 2 points for every 3 parks you have visited with
+            a forest.
+          * **Gatherer** (2): 2 points for every 3 tokens in your supply at the
+            end of the game.
+          * **Kayaker** (2): 2 points for every 3 visited parks with a water.
+          * **Mountaineer** (2): 2 points for every 3 visited parks with a
+            mountain.
+          * **Photographer** (2): 1 point for every 4 photos you have taken.
+          * **Planner** (2): 1 point for every 2 suns across your gear card
+            costs.
+          * **Preserver** (2): 1 point for each wildlife in your supply at the
+            end of the game.
+          * **Stargazer** (1): 1 point for every 3 suns across your visited
+            parks.
+          * **Traveler** (2): 1 point for each set of a forest, mountain, sun,
+            and water across your visited parks.
+          * **Trekker** (2): 2 points for every 3 visited parks with a sun.
+          * **Voyager** (2): 1 point for each of your visited parks with an
+            instant action.
     - name: FAQ
       text: |
           * **Can I visit a site without taking its action?**: No, you **must**
@@ -200,12 +321,12 @@ sections:
             acquired on a turn. You cannot use previously collected water for
             a canteen. If you can a canteen *and* a water on the same turn,
             the water can be used to activate that canteen.
-          * **Does the [1for1](/static/img/parks/1for1.png) effect count
+          * **Does the ![1for1](/static/img/parks/1for1.png) effect count
             toward season effects?**: Yes. If you trade a token for another
             token that has a season effect, it activates it. Note that **you
             can only use the season effect once per turn**.
           * **Do actions on canteens count toward season effects?**: Yes.
-          * **Can visiting the [water
+          * **Can visiting the ![water
             action](/static/img/parks/water_action.png) activate gear that
             specifies a site?**: No. You may copy the effect of another site,
             but it doesn't count as visiting the copied site. However, tokens
