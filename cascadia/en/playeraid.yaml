@@ -1,0 +1,174 @@
+name: "Cascadia"
+description: "Build out the PNW"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+bgg_id: 295947
+expansions:
+sections:
+    - name: Setup
+      text: |
+          * Place all the wildlife tokens in the bag.
+          * Randomly select habitat tiles based on player count, then place
+            them in stacks face down:
+              * 2 players: 43 (remove 42)
+              * 3 players: 63 (remove 22)
+              * 4 players: 83 (remove 2)
+          * Randomly choose 1 wildlife scoring card for each of the 5 wildlife
+            and place these in the play area.
+          * Randomly distribute 1 starter habitat tile to each player.
+          * Reveal 4 habitat tiles and place them in the center play area.
+          * Draw 4 wildlife tokens and pair them with the 4 habitat tiles.
+          * Place the nature tokens in the center play area.
+          * Choose a start player.
+    - name: Gameplay
+      text: |
+          1. Check to see if there are too many matching wildlife tokens:
+              * If all 4 tokens are the same, they are set aside and 4 new
+                tokens are drawn and paired in order. Repeat this as necessary.
+              * If 3 tokens are the same, the active player *may* set aside
+                those 3 tokens and replace them. This may only be done once
+                per turn.
+              * **When finished**, add all set aside tokens back to the bag.
+          2. Select a pairing of habitat tile and wildlife token. You may
+             optionally spend a nature token to do one of the following
+             instead:
+              * Take **any** 1 of the 4 habitat tiles and **any** 1 of the
+                4 wildlife tokens.
+              * Wipe any number of wildlife tokens and replace them. (see
+                step #1 above)
+          3. Place the tile and token into your environment.
+              * The habitat tile must be placed adjacent to any previously
+                placed tile.
+              * You cannot place a habitat tile on top of another tile.
+              * The wildlife token may be placed onto a habitat tile:
+                  * The tile you are placing it on cannot already have a token
+                    on it.
+                  * The tile must show the matching wildlife.
+                  * If you cannot legally place the wildlife token, or you
+                    choose not to, return the token to the bag.
+                  * You may place the token on the tile you just placed.
+                  * If you place the token on a keystone tile, take a nature
+                    token.
+          4. Put out a replacement habitat tile from a face down stack
+             and a wildlife token from the bag.
+    - name: Game End
+      id: game_end
+      text: |
+          If there are no face down habitat tiles to replace the one taken at
+          the end of a player's turn, the game ends (each player should have
+          20 turns).
+
+          Using the score pad, score the following:
+
+          1. Wildlife scoring cards:
+              * Score each wildlife based on the wildlife scoring cards.
+          2. Nature tokens:
+              * Score 1 point per unused nature token.
+          3. Habitat tiles:
+              * Score 1 point per habitat tile in your largest contiguous
+                habitat group for each of the 5 habitats.
+          4. Habitat tile majorities:
+              * Points are awarded for majorities in the 5 habitats based on
+                player count:
+                  * **3-4 players**: 3 points for the most and 1 point for 2nd
+                      * If 2 players tie for largest habitat, score 2 points
+                        for each of them.
+                      * If 3-4 players tie, 1 point each.
+                  * **2 players**: 2 points for the most and 0 points for 2nd
+                      * All ties are 1 point each.
+
+          Whoever has the most points wins.  If there is a tie, the player
+          with the most unused nature tokens wins. If there is still a tie,
+          the players share the victory.
+    - name: Wildlife Scoring Cards
+      sections:
+        - name: Bear
+          text: |
+              * **Bear scoring card (A)**: Score points for the number of
+                bear pairs. This must be **exactly** 2 bears next to each
+                other with no other adjacent bears.
+              * **Bear scoring card (B)**: Score 10 points per group of 3
+                bears.  Each group must be **exactly** 3 bears next to each
+                other with no other adjacent bears.
+              * **Bear scoring card (C)**: Score points for each group of 1,
+                2, or 3 bears, depending on the size of the group. Score 3
+                bonus points if you have at least 1 of each of the 3 sizes.
+        - name: Fox
+          text: |
+              * **Fox scoring card (A)**: Score points for each fox based on the
+                number of unique wildlife types adjacent to it. Other adjacent
+                foxes may be scored.
+              * **Fox scoring card (B)**: Score points for each fox based on the
+                number of unique pairs of other wildlife types adjacent to it.
+                Other adjacent fox pairs to **not** score. Each *pair* must be
+                unique (4 of a type does not score twice).
+              * **Fox scoring card (C)**: Score points for each fox depending on
+                the number of a **single wildlife** type adjacent to it. Other
+                adjacent foxes may **not** be scored.
+        - name: Elk
+          text: |
+              * **Elk scoring card (A)**: Score points shown for each straight
+                line of adjacent elk, depending on the length of the line. 2
+                lines of elk may be adjacent to each other, but **each elk
+                may only count for a single line**. Lines do not need to be
+                horizontal.
+              * **Elk scoring card (B)**: Score points shown for each contiguous
+                group of adjacent elk in any shape, depending on the size of the
+                group.
+              * **Elk scoring card (C)**: Score points shown for each group of
+                elk in each exact shape shown. 2 groups of elk may be adjacent
+                to each other, but **each elk can only count for 1 group**.
+                Groups may be rotated.
+        - name: Hawk
+          text: |
+              * **Hawk scoring card (A)**: Score points for total number of
+                hawks that are not adjacent to any other hawk.
+              * **Hawk scoring card (B)**: Score points for each hawk based on
+                its line of sight to any other hawks that are **not** directly
+                adjacent. Line of sight is not interrupted by a gap in habitat
+                tiles or by other wildlife.
+              * **Hawk scoring card (C)**: Score 3 points for each pair of hawks
+                that share a direct line of sight between them. Each hawk may be
+                counted as part of multiple pairs. Line of sight is not
+                interrupted by a gap in habitat tiles or by other wildlife.
+        - name: Salmon
+          text: |
+              * **Salmon scoring card (A)**: Score points for each run of
+                salmon, depending on the length of the run. A run is a group
+                of adjacent salmon where each salmon is adjacent to no more
+                than 2 other salmon. A group of 3 salmon in a "triangle" may
+                count as a run, but no more salmon can legally be added to
+                this run. Each run cannot have any other salmon adjacent to it.
+              * **Salmon scoring card (B)**: Score points for each run of
+                salmon, depending on the length of the run. A run is a group
+                of adjacent salmon where each salmon is adjacent to no more
+                than 2 other salmon. A group of 3 salmon in a "triangle" may
+                count as a run, but no more salmon can legally be added to
+                this run. Each run cannot have any other salmon adjacent to it.
+              * **Salmon scoring card (C)**: Score points for each run of
+                salmon, depending on the length of the run. A run is a group
+                of adjacent salmon where each salmon is adjacent to no more
+                than 2 other salmon. A group of 3 salmon in a "triangle" may
+                count as a run, but no more salmon can legally be added to
+                this run. Each run cannot have any other salmon adjacent to it.
+    - name: Variants
+      sections:
+        - name: Family Variant
+          text: |
+              * **Setup**: Everything is the same except that you use
+                **only** the family variant wildlife scoring card.
+              * **Turn summary**: No changes.
+              * **End game & scoring**: The game ends the same way as the
+                standard game. Only score [steps 1-3 in the scoring](#game_end).
+                (no habitat tile majorities)
+              * **Family variant scoring card**: Score points show for each
+                group of the same wildlife, depending on the size of the group.
+                Groups may be any shape. **A group of 4 or more of the same
+                wildlife will score zero points!**
+        - name: Intermediate Variant
+          text: |
+              * **Setup**: Everything is the same except that you use
+                **only** the intermediate variant wildlife scoring card.
+              * **Turn summary**: No changes.
+              * **End game & scoring**: No changes.
