@@ -1,0 +1,173 @@
+name: "Wingspan"
+description: "Bring all the birds to your habitat"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+bgg_id: 266192
+expansions:
+sections:
+    - name: Setup
+      text: |
+          * Shuffle the bird cards and place the deck face down next to the
+            bird tray and draw 3 face up on the bird tray cover.
+          * Create a supply with all the food and eggs.
+          * Drop the food dice into the bird feeder tower.
+          * Choose a side of the goal board and place it in the play area.
+          * Shuffle the goal tiles and randomly place 1 goal tile on each of
+            the 4 spaces on the goal board.
+          * Shuffle the bonus cards and place it as a face down deck.
+          * Player setup:
+              * Each player gets:
+                  * 1 player mat
+                  * 8 action cubes in their color
+                  * 2 random bonus cards
+                  * 5 random bird cards
+                  * 5 food tokens (1 of each type)
+              * Keep a combination of 5 items between the bird cards and food.
+                e.g. 3 bird cards and 2 food tokens.
+              * Choose 1 bonus card to keep and discard the other.
+          * Randomly choose a start player and give them the 1st player token.
+    - name: Gameplay
+      text: |
+          The game is played over 4 rounds, with players taking turns in
+          clockwise order until all their action cubes are used (a round).
+
+          On a turn, you have 4 options for the actions you can take.
+      sections:
+        - name: Play a Bird
+          text: |
+              1. Select a bird in hand to play and place an action cube at the
+                 top of the column where you will play the bird.
+              2. Pay any egg cost for that column by discarding the
+                 designated number of eggs from any bird on your player
+                 mat.
+              3. Pay the food cost for the bird as is listed in top left by
+                 returning these tokens to the supply.
+                  * If there is a "⦸" symbol, there is no food cost.
+                  * If there is a ![wild](/static/img/wingspan/wild.png)
+                    symbol, any food token can be used.
+                  * If there is a "/" separating multiple food tokens,
+                    any of the specified tokens can be used.
+              4. Place the bird on the leftmost exposed (no bird there) slot
+                 in the corresponding habitat shown in the top left of the
+                 card, then move your action cube to the left side of the
+                 "play a bird" row.
+                  * If multiple habitats are shown, you can choose which
+                    habitat, of those shown, to place the bird in.
+              5. If a bird has a "when played" power, you may use that power
+                 now.  Other powers are activated at other times.
+        - name: Gain Food
+          text: |
+              1. Place an action cube in the leftmost exposed (no bird) slot
+                 in the "gain food" row and gain the amount of food shown
+                 from dice you select in the bird feeder.
+                  * Remove the die from the bird feeder when selecting that
+                    food.
+                  * If the die shows ![food](/static/img/wingspan/food_die.png)
+                    on it, you may take **1** of the pictured items, **not
+                    both**.
+                  * If the bird feeder is ever empty while choosing food,
+                    throw all 5 dice back in the bird feeder.
+                  * If all the remaining dice in the feeder show the same
+                    face (even if it's 1 die) and you are about to gain food
+                    **for any reason**, you *may* 1st throw all 5 dice back
+                    in the feeder.
+                      * Note that the ![food](/static/img/wingspan/food_die.png)
+                        die face is unique!
+                  * **There is no limit to the number of food tokens you can
+                    have or in the supply.**
+              2. If the slot your cube is on allows you to trade in a card for
+                 food, you *may* discard a card to take an additional food die.
+              3. From right to left, you may now activate [brown]!brown! bird
+                 powers in the forest. All powers are **optional**.
+                 To better track your activations, move the cube to each
+                 card you are activating until you are done and the cube is
+                 placed on the left side of the "gain food" row.
+        - name: Lay Eggs
+          text: |
+              1. Place an action cube in the leftmost exposed (no bird) slot
+                 in the "lay eggs" row and lay that amount of eggs.
+                  * For each egg to be layed, take an egg from the supply
+                    (color doesn't matter) and place it on any bird that is
+                    not at its egg limit.
+                  * Any excess eggs (all birds are full) are discarded.
+              2. If the slot allows you to trade a food token
+                 (![wild](/static/img/wingspan/wild.png) symbol) for an egg,
+                 you *may* pay 1 food token to place 1 additional egg.
+              3. From right to left, you may now activate [brown]!brown! bird
+                 powers in the grassland. All powers are **optional**.
+                 To better track your activations, move the cube to each
+                 card you are activating until you are done and the cube is
+                 placed on the left side of the "lay eggs" row.
+        - name: Draw Bird Cards
+          text: |
+              1. Place an action cube in the leftmost exposed (no bird) slot
+                 in the "draw cards" row and draw the number of cards shown
+                 from either the face up cards on the tray or from the top
+                 of the deck.
+                  * There is no hand limit.
+                  * Face up cards are **not** immediately replaced. This is
+                    done at the end of the turn.
+              2. If the slot allows you to trade an egg for a card, you *may*
+                 discard 1 egg from any bird and draw an additional card.
+              3. From right to left, you may now activate [brown]!brown! bird
+                 powers in the wetlands. All powers are **optional**.
+                 To better track your activations, move the cube to each
+                 card you are activating until you are done and the cube is
+                 placed on the left side of the "draw cards" row.
+              4. Replace any taken face up cards in the tray from the top of
+                 the deck.
+    - name: End of Round
+      text: |
+          When all action cubes have been placed by all players, the round
+          ends. Do the following, in order:
+
+          1. Remove all action cubes from your player mat.
+          2. Score the end of round goal for the round just completed.
+              * Use 1 of your action cubes to mark your score on the goal
+                card, even if it's zero points. **Note that this means
+                everyone will have 1 fewer action cube for the next round**.
+              * **Green** side: Place cubes in order of who had the highest
+                quantity of the targeted item.
+                  * If players tie, place both cubes on the tied position
+                    and do not reward the next place. See [End of
+                    Game](#end_game) for how these score.
+              * **Blue** side: Place cubes corresponding to the quantity
+                of the targeted item that each player achieved, up to the
+                max of 5.
+                  * **Remember to still place a cube on zero if no
+                    targeted items were achieved**.
+          3. Discard all face up bird cards on the bird tray and refill
+             the tray from the deck.
+          4. Give the 1st player token to the next person in clockwise order.
+    - name: End of Game
+      id: end_game
+      text: |
+          After 4 rounds have been completed, score the following points.
+
+          * Points printed on each face up bird on your player mat.
+          * Points for each bonus card as is printed on the card.
+          * Points for the end of round goals (on the goal board).
+              * If players are tied on a space, add the points for the space
+                + the next space and divide by the number of players 
+                (rounded down) and all tied players receive that many points.
+          * 1 point each for:
+              * egg on a bird card
+              * food token cached on a bird card
+              * card tucked under a bird card
+
+          The player with the most points wins. If there is a tie, the player
+          with the most unused food tokens wins. If still tied, the players
+          share the victory.
+    - name: Bird Powers
+      text: |
+          * **When Activated (Brown)**: These are the powers that are activated
+            when using the corresponding habitat.
+              * **Cache**: This means you put a food token on the bird. You
+                **cannot** spend that food token! It is worth 1 VP at the end
+                of the game.
+          * **Once Between Turns (Pink)**: These powers may be triggered on
+            opponents' turns. You can only use a pink power **once** between
+            each of your own turns.
+          * **When Played (White)**: These powers may only be activated when
+            the bird is played into your habitat and never again.
