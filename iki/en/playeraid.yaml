@@ -1,0 +1,67 @@
+name: "Iki"
+description: "Fight fires and make Edo prosperous"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+bgg_id: 177478
+expansions:
+sections:
+    - name: Setup
+      text: |
+          * Place the board on the correct side based on player count.
+          * Place the calendar token on 1st space of the calendar.
+          * Place a number of 30/60 iki tokens equal to the number of players
+            at the end of the iki track.
+          * Shuffle the 4 fire tiles and place them in their space in a face
+            down stack.
+          * Sort the fish, pipe, and tobacco pouches by their season.
+              * Place all the spring tokens face up in their corresponding
+                spaces.
+              * Place the summer, autumn, and winter tiles face down on their
+                spaces on the calendar.
+          * Pick 6 building cards (from the 10) at random and place them near
+            the game area.
+          * Place the mons, snadals, rice, wood, kobans, and other tokens
+            near the play area.
+          * Sort the character cards by their season to form 4 decks and
+            place those face down next to the board.
+          * Choose a start player.
+          * Player setup:
+              * Each player takes:
+                  * 1 player board (place on the correct side for player count)
+                  * 1 Ikizama meeple (placed on it's spot on your player board)
+                  * 1 Oyakata meeple
+                  * 4 Kobun meeples (placed on their spots on your player board)
+                  * 2 markers (scoring and firefighting)
+                  * 1 sandal token (placed on it's spot on your player board)
+                  * 1 rice token
+                  * 8 mons
+              * Place your firefighting marker on space 0 of the firefighting
+                track.
+                  * The 1st player's marker should be on top and then each
+                    other players marker under it in clock-wise play order.
+              * Place your scoring marker on space 0 of the iki track.
+          * Place the 4 starting character cards (yellow back) face up near
+            the board.
+              * In *counter-clockwise* order, starting with the last
+                player, each player selects a card and places it in the
+                **outer** space of the Nagaya of their choice.
+                  * The player places a kobun on the 1st experience slot at
+                    the botton of the card.
+              * If playing with less then 4 players, return the unchosen
+                cards to the box.
+    - name: Gameplay
+      text: |
+          The game is played over 13 rounds, with the 1st 12 corresponding
+          to months of the year and the last round being "New Year's Day",
+          which will be played differently.  Each month comprises 3 phases and
+          a card setup phase.
+      sections:
+        - name: Card Setup
+          text: |
+              * Reveal the 1st 4 character cards from the deck of the current
+                season and place them next to the main board.
+                  * These are placed **in addition** to leftover character
+                    cards for the current season.
+        - name: Phase A
+          text: |
