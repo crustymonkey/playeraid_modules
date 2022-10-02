@@ -285,7 +285,8 @@ sections:
                 ## Vagrant Humanity
                 If a vagrant's humanity reaches zero:
 
-                * The vagrant suffers a wound and either:
+                * The vagrant suffers a wound, returns their humanity back to
+                  their max and either:
                     * Flips a skill card to the wounded side **OR**
                     * Flips a junk card to its broken side.
 
