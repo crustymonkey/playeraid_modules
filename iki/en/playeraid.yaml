@@ -62,6 +62,131 @@ sections:
               * Reveal the 1st 4 character cards from the deck of the current
                 season and place them next to the main board.
                   * These are placed **in addition** to leftover character
-                    cards for the current season.
+                    cards from previous months for the current season.
         - name: Phase A
+          id: ph_a
           text: |
+              Decide how far your Oyakata will move on the main board.
+
+              * In the order determined by the firefighting track (reminder:
+                if there's a stack of discs, the order is top to bottom),
+                players place their Ikizama on an open space on the Ikizama
+                track.
+                  * The number (or range) determines how far your Oyakata will
+                    move, **exactly**.
+              * Once everyone has placed their Izikama, move on to
+                [Phase B](#ph_b)
+        - name: Phase B
+          id: ph_b
+          text: |
+              Starting with the rightmost space (1-4 movement) of the Izikama
+              track, players take turns taking income/hiring and then
+              moving their Oyakata and doing business.
+
+              1. Income/hiring: each player has the choice of either taking
+                 income **or** hiring a character.
+                  * **The player on the 1-4 space does not receive income or
+                    hire people**, but instead takes 1 mon.
+                  * If you take income, take 4 mons.
+                  * If you take hiring, choose an available character and pay
+                    the cost in the top-left part of the card.
+                      * **If you do not have a free Kobun, you must take income
+                        instead**.
+                      * Place the character in an open space on the main board
+                        and place 1 of your Kobuns at the bottom of its
+                        experience track.
+                      * **Remember to the pay the extra cost of the space**
+                        (1 or 2 mons), if any.
+                      * If there are mons on the character card, you may use
+                        those to pay for the card itself.
+              2. Moving your Oyakata and doing business:
+                  * Moving:
+                      * Move your Oyakata the **exact** number of spaces
+                        indicated by your Izikama meeple.
+                      * You may *increase* your movement by spending sandals
+                        such that each sandal token spent allows you to move
+                        1 more space.
+                          * You may **not** decrease your movement with sandals.
+                      * You can end your movement on a space with any number of
+                        Oyakatas.
+                      * If your Oyakata passes the
+                        ![exp up](/static/img/iki/exp_up.png) space, increase
+                        the experience of **all** of your characters by
+                        moving all your Kobuns up 1 space.
+                          * If your Kobun reaches the top (circle) spot, [retire
+                            that character](#retire).
+                          * This is done **before** doing business.
+                  * Doing business: you may do business with the shop you
+                    stopped at **and/or** with 1 of the 2 characters (if any)
+                    in the stalls.
+                      * You can do business with the shop/charcter in any order.
+                      * If you do business with another player's character,
+                        the character increases their experience (move the
+                        Kobun up) after doing business. If the Kobun has
+                        reached the top slot, [retire that character](#retire).
+                      * If you do business with 1 of *your* characters, that
+                        character does **not** gain experience.
+              3. Return your Izikama meeple to your player board.
+        - name: Phase C
+          id: ph_c
+          text: |
+              1. If there is an event, resolve it.
+              2. Place 1 mon on each remaining character card next to the
+                 board (except for payday months).
+              3. If this is a "payday" (end of month 3, 6, 9, 12), do the
+                 following:
+                  1. Remove all the remaining fish, pipe, and tobacco pouch
+                     tokens from the board and replace them with the ones
+                     for the next season (unless at the end of month 12, see
+                     below).
+                  2. Remove all unhired characters from the current season and
+                     return them to the box.
+                  3. **If it is the end of month 12**:
+                      * Return all winter cards to the box.
+                      * All the winter fish, pipe, and tobacco pouch cards
+                        **remain** on the board.
+                      * Each player takes back their Oyakata and places it
+                        next to their player board.
+                  4. Players collect salary from each of their character cards
+                     on the main board or that are retired.
+                      * The income is what is depicted in the slot above your
+                        Kobun, or the top slot if retired.
+                  5. Nagaya harmony bonus:
+                      * For each grouping (4 Nagayas + the 4 inner corners)
+                        that has at least 2 characters of the same type (color),
+                        each player with Kobuns in that color group scores: 
+                        Number of Their Kobuns x The Number of That Card Type.
+                          * e.g. if Player 1 had 2 Kobuns on brown characters in
+                            a Nagaya with a total of 3 brown characters, they
+                            would score 6 points.
+                          * Note that characters in the corner spaces (making
+                            up the 5th Nagaya) may score twice.
+                  6. Food payment: each player must spend 1 rice for each
+                     of their characters on the main board.
+                      * **You do not have to pay rice for retired characters**.
+                      * Characters **must** be fed, if possible. If a player
+                        does not have enough rice, they remove a number of
+                        characters from the main board equal to the number of
+                        unfed characters.
+                          * The player may choose which characters are
+                            removed.
+                          * Removed characters are returned to the box.
+                          * The player returns the Kobun on this character to
+                            their player board.
+                          * **If a character with a firefighting power hiring
+                            bonus leaves the game, its player's remains
+                            where it is**.
+
+
+    - name: Various Rules
+      sections:
+        - name: Retirement
+          id: retire
+          text: |
+              When a Kobun reaches the top slot of a character card, retirement
+              occurs and the following happens.
+
+              1. Remove the character from the board.
+                  * Place it in the corresponding (color) column of your player
+                    board.
+              2. Return the Kobun back to your player board's supply.
