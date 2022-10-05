@@ -1,0 +1,50 @@
+name: "Dune Imperium"
+description: "Who will control Arakis?"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+bgg_id: 316554
+expansions:
+sections:
+    - name: Setup
+      text: |
+          * Place the board on the table.
+          * Place the Mentat in the Mentat space.
+          * Place the 4 alliance tokens on the marked areas of their
+            faction's influence tracks.
+          * Create the conflict deck:
+              * Separate the conflict cards by their backs (I, II, III).
+              * Shuffle the 4 conflict III cards and place **all** of them face
+                down in the marked area of the board.
+              * Shuffle the 10 conflict II cards and place **5** of them
+                face down on top of the conflict III cards.
+              * Shuffle the 4 conflict I cards and deal **1** face down on
+                top of the conflict II cards.
+              * Return the unused conflict cards to the box.
+          * Shuffle the intrigue deck and place it next to the board face down.
+          * Shuffle the imperium deck and place it face down near the board.
+            Then, deal 5 face up cards next to it.
+          * Place the reserve cards (*Arrakis Liaison*, *The Spice Must Flow*,
+            and *Foldspace*) in the imperium row
+          * Each player:
+              * Takes a leader (select or deal randomly)
+              * Takes a 10 card starting deck, shuffles it, and places it
+                face down
+              * Takes 1 water
+              * Picks a color:
+                  * Place 2 of your agents on your leader.  Place the 3rd near
+                    the board.
+                  * Place 1 of your 2 discs on the score track. Place it on the
+                    1 space with 4 players, otherwise 0.
+                  * Place your combat marker on the 0 space of the combat
+                    track.
+                  * Place 4 cubes, 1 each, on the bottom spaces of the
+                    influence tracks of the 4 factions.
+                  * Place 3 cubes in 1 of the 4 garrison spaces (the 1 closest
+                    to you) on the board
+                  * Create a personal supply with the rest of the components.
+          * Create a supply near the board for Solari, spice, and water tokens.
+              * These are **not** limited.
+          * Randomly determine a 1st player and give them the 1st player marker.
+
+
