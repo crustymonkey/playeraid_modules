@@ -2,13 +2,14 @@ name: "Iki"
 description: "Fight fires and make Edo prosperous"
 text_type: markdown
 credits: "Jay Deiman"
-enabled: false
+enabled: true
 bgg_id: 177478
 expansions:
 sections:
     - name: Setup
       text: |
           * Place the board on the correct side based on player count.
+              * **If playing with 2 players**, use the 2-player side.
           * Place the calendar token on 1st space of the calendar.
           * Place a number of 30/60 iki tokens equal to the number of players
             at the end of the iki track.
@@ -25,7 +26,14 @@ sections:
             near the play area.
           * Sort the character cards by their season to form 4 decks and
             place those face down next to the board.
+          * **If playing with 2 players**
+              * Shuffle the 12 blocking tiles to create a face down stack and
+                place it next to the board.
+              * Randomly distribute the sun token to a player and the moon
+                token to the other player.
           * Choose a start player.
+              * **If playing with 2 players**, the player with the sun token
+                goes 1st.
           * Player setup:
               * Each player takes:
                   * 1 player board (place on the correct side for player count)
@@ -56,9 +64,20 @@ sections:
           to months of the year and the last round being "New Year's Day",
           which will be played differently.  Each month comprises 3 phases and
           a card setup phase.
+
+          **2 player differences**:
+          
+          * There are 3 stalls in each Nagaya instead of 4.
+              * The center stall can be activated from either of the adjacent
+                shops.
+          * The strength of the fires are reduced by 1 compared to a 3-4 player
+            game.
       sections:
         - name: Card Setup
           text: |
+              * **If playing with 2 players**, reveal a blocking tile and place
+                it on the corresponding space of the Izikama track. Izikama
+                cannot be placed on that space this month.
               * Reveal the 1st 4 character cards from the deck of the current
                 season and place them next to the main board.
                   * These are placed **in addition** to leftover character
@@ -133,6 +152,22 @@ sections:
               1. If there is an event, resolve it.
               2. Place 1 mon on each remaining character card next to the
                  board (except for payday months).
+              3. **If playing with 2 players**
+                  * Remove the blocking tile from the Izikama track.
+                  * Either the sun or moon player, as indicated on the
+                    calendar, places a character from the card row on an
+                    available space of the board.
+                      * If there is no space available, remove the character
+                        from the game instead.
+                      * Return any mons on that character to the bank.
+                      * **This character does not belong to a player** so
+                        no Kobun is placed on it.
+                      * A neutral character is automatically killed by fires
+                        that reach their space.
+                      * Players may do business with neutral characters, but
+                        **the character is discarded after this**.
+                      * Neutral characters count towards the Nagaya harmony
+                        bonus (below).
               3. If this is a "payday" (end of month 3, 6, 9, 12), do the
                  following:
                   1. Remove all the remaining fish, pipe, and tobacco pouch
@@ -156,6 +191,8 @@ sections:
                         that has at least 2 characters of the same type (color),
                         each player with Kobuns in that color group scores: 
                         Number of Their Kobuns x The Number of That Card Type.
+                          * **If playing with 2 players**, there is no 5th
+                            Nagaya (the 4 corners).
                           * e.g. if Player 1 had 2 Kobuns on brown characters in
                             a Nagaya with a total of 3 brown characters, they
                             would score 6 points.
@@ -164,6 +201,7 @@ sections:
                   6. Food payment: each player must spend 1 rice for each
                      of their characters on the main board.
                       * **You do not have to pay rice for retired characters**.
+                      * **You do not have to pay rice for buildings**.
                       * Characters **must** be fed, if possible. If a player
                         does not have enough rice, they remove a number of
                         characters from the main board equal to the number of
@@ -176,8 +214,69 @@ sections:
                           * **If a character with a firefighting power hiring
                             bonus leaves the game, its player's remains
                             where it is**.
+              4. Fire: in months 5, 8, and 11, a fire breaks out.
+                  * The strength of the fire is indicated on the calendar.
+                  * The player with the highest firefighting skill randomly
+                    selects a fire tile to determine the Nagaya that is
+                    affected.
+                  * Fires always start on the edge of the board and progress
+                    towards the middle.
+                  * If a fire breaks out a in an empty stall, it spreads to
+                    the next stall, reducing its strength by 1.
+                  * If there is a character in the stall:
+                      * If the owner of the character card has enough
+                        firefighting power (>= to fire strength), the fire is
+                        stopped.
+                      * Otherwise, the character is killed and put back in the
+                        game box, and the Kobun is returned to the player's
+                        board. The fire continues to the next stall, reducing
+                        its strength by 1.
+                  * If the fire would move from  the last stall in the Nagaya,
+                    it stops spreading automatically and the phase is over.
+                  * After the fire is resolved, shuffle all the fire tiles.
+              5. Move the calendar marker to the next month.
+        - name: 13th Round (New Year's Day)
+          text: |
+              1. All players take back their Oyakata.
+              2. Players take turns in descending firefighting order (highest
+                 skill 1st) by directly placing their Oyakata on *any* space
+                 and doing business as usual there.
+              3. When the last player has taken their turn, the game ends.
+                 Proceed to [end game and scoring](#end_game).
+    - name: End Game and Scoring
+      text: |
+          * First, players take back their character cards from the main board
+            and place them in their matching columns.
+          * Use the score pad to tally scores for the following:
+              * Iki on the iki track
+              * Score based on the number of *different* character types you
+                have.
+                  * 1 type: 1 iki
+                  * 2 types: 4 iki
+                  * 3 types: 9 iki
+                  * 4 types: 16 iki
+                  * 5 types: 25 iki
+                  * Buildings are **not** a character type.
+                  * The [Puppeteer]!purple! may be a type of your choice.
+              * Score based on the number of *different* fish you have (from the
+                different seasons).
+                  * 1 fish: 3 iki
+                  * 2 fish: 6 iki
+                  * 3 fish: 10 iki
+                  * 4 fish: 15 iki
+                  * If you bought the most expensive fish of a given season, add
+                    their value to your total.
+                  * Score your tobacco pouches as indicated on the tokens. If
+                    you own at least 1 pipe, iki from your tobacco is
+                    **doubled**.
+              * Score your buildings.
+              * Leftover resources:
+                  * Koban: 3 iki
+                  * Wood: 1 iki
+                  * 4 mons: 1 iki
 
-
+          The player with the most iki wins. If there is a tie, the player with
+          the highest firefighting skill wins (placement in the stack if tied).
     - name: Various Rules
       sections:
         - name: Retirement
@@ -190,3 +289,15 @@ sections:
                   * Place it in the corresponding (color) column of your player
                     board.
               2. Return the Kobun back to your player board's supply.
+        - name: Buildings
+          text: |
+              * Buildings are placed in a Nagaya slot when they are built.
+                  * If you choose a corner spot, you must pay the 2 additional
+                    mons as usual.
+              * You must place a Kobun on the building. This Kobun will stay
+                here until the end of the game or if the building is destroyed.
+              * Buildings cannot be activated by Oyakata.
+              * Buildings are worth iki at the end of the game.
+              * Some buildings (farmhouse, fire watchtower, imperial villa)
+                grant their owner an ongoing ability.
+              * Kobun on buildings do **not** have to be fed during payday.
