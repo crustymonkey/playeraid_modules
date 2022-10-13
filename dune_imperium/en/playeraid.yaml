@@ -2,7 +2,7 @@ name: "Dune Imperium"
 description: "Who will control Arakis?"
 text_type: markdown
 credits: "Jay Deiman"
-enabled: false
+enabled: true
 bgg_id: 316554
 expansions:
 sections:
@@ -46,5 +46,240 @@ sections:
           * Create a supply near the board for Solari, spice, and water tokens.
               * These are **not** limited.
           * Randomly determine a 1st player and give them the 1st player marker.
+    - name: Gameplay
+      text: |
+          Reach 10 points at the end of a round to defeat your competitors.
+      sections:
+        - name: "Phase 1: Round Start"
+          id: phase_1
+          text: |
+              * Reveal a new conflict card from the conflict deck and place it
+                face up in its space next to the deck.
+              * Each player draws 5 cards from their own deck.
+        - name: "Phase 2: Player Turns"
+          text: |
+              Each turn consists of a choice between an Agent turn or a Reveal
+              turn.
 
+              * Begin the round with the player who has the 1st player marker
+                and continue clockwise.
+              * Plot intrigue cards may be played on any of your turns during
+                this phase.
+          sections:
+            - name: Agent Turn
+              text: |
+                  * Play 1 card face up in front of you to send an agent to
+                    an **unoccupied** space with a matching symbol from the
+                    left hand side of the card.
+                      * You **cannot** send multiple agents on a turn even
+                        if your card shows multiple symbols.
+                      * You must pay any costs/meet requirements of the chosen
+                        board space. The board space cost must be paid
+                        **immediately** (before getting any space/card
+                        benefits).
+                      * Gain the effect of the board space.
+                      * If there is an effect in the Agent box ("gray" area"),
+                        you can activate that (this and the board space effect
+                        can be done in any order).
+                      * If you placed your agent on a faction space, move your
+                        faction cube up 1 space.
+                      * ⇨ symbols indicate a cost, either on cards or board
+                        spaces.
+                          * You never *have to* pay this cost (but you won't
+                            get the benefit if you don't, of course).
+            - name: Reveal Turn
+              text: |
+                  When a player is out of agents, or just chooses to do this
+                  turn early, the player takes a Reveal turn.
 
+                  * Reveal all cards remaining in your hand and place them
+                    face up in front of you, but separate from previously
+                    played cards.
+                  * You may now gain the reveal effect (blue box at the bottom
+                    of the card) from the revealed cards.
+                  * You may use Persuasion ([blue ◇]!blue! symbols) to
+                    aquire new cards at any point during your reveal turn.
+                      * You can aquire any of the 5 cards in the imperium row
+                        and, additionally, *Arrakis Liaison* or *The Spice
+                        Must Flow*.
+                      * You may buy more than 1 card.
+                      * Acquired cards are placed in your discard pile.
+                      * Any unused Persuasion is lost at the end of your turn.
+                      * **Cards in the imperium row are immediately replaced**.
+                  * Set your strength: Set your total strength on the combat
+                    track for this round.
+                      * Each troop (cube) in **the conflict** (not in your
+                        garrison) counts for 2 strength.
+                      * Each sword symbol is worth 1 strength.
+                      * **You must have at least 1 troop in the conflict to
+                        have any strength**.
+                      * Set your marker to the total strength.  If >20, flip
+                        the token to the +20 side.
+                  * At the end of this turn, put all your played cards in your
+                    discard pile.
+        - name: "Phase 3: Combat"
+          text: |
+              See [Other Rules](#other_rules) for more information on managing
+              your troops.
+
+              1. Beginning with the player with the 1st player marker, each
+                 player **with at least 1 troop in the conflict** may play
+                 any number of combat intrigue cards or pass.
+                  * You are **not** required to pass if you have previously
+                    passed.
+                  * All players must pass *consecutively* to end this phase.
+                  * If a card changes the number of troops a player has in
+                    the conflict, they must adjust their combat marker
+                    accordingly.
+                      * If a player ends up with 0 troops in the conflict,
+                        **their strength is set to 0**.
+                  * If you have a combat intrigue card with "when you win a
+                    conflict", don't play these now.
+              2. Resolve the combat by giving the rewards from the current
+                 conflict card based on player strength (highest wins).
+                  * The 3rd place reward is only given in a 4 player game.
+                  * A player with 0 strength (no troops in the conflict) does
+                    **not** receive a reward.
+                  * Ties:
+                      * If the tie is for 1st place, the tied players receive
+                        the 2nd reward. In a 4 player game, the other 2 players
+                        compete for the 3rd place reward.
+                      * When players tie for 2nd place, they both receive the
+                        3rd reward.
+                      * Players tying for 3rd place receive nothing.
+                  * All players return the troops in the conflict to their
+                    supply, **not their garrison**.
+                  * Reset combat markers to 0 on the combat track.
+        - name: "Phase 4: Makers"
+          id: phase_4
+          text: |
+              * All spaces with a Maker icon (*The Great Flat*, *Hagga Basin*,
+                and *Imperial Basin*) that do not have an agent on them receive
+                1 spice on designated space.
+                  * This is in addition to any previously placed spice.
+        - name: "Phase 5: Recall"
+          id: recall
+          text: |
+              If any player has reached 10 points **or** if the conflict deck
+              is empty, the [end game](#game_end) is triggered.
+
+              If not:
+
+              * Return the Mentat to its space in the Landsraad.
+              * Players recall their agents from the board.
+              * Pass the 1st player marker clockwise.
+              * Start the next round with [Phase 1](#phase_1)
+    - name: Game End
+      id: game_end
+      text: |
+          If a player has reached 10 points or the conflict deck is empty at
+          the [end of a round](#recall), the game ends.
+
+          The player with the most points wins, but if there are ties, the
+          tie breakers are:
+
+          1. The player with the most leftover spice.
+          2. The player with the most leftover Solari.
+          3. The player with the most leftover water.
+          4. The player with the most garrisoned troops.
+    - name: Other Rules
+      id: other_rules
+      text: |
+          ## Deploying troops to the conflict.
+
+          * Whenever the cube icon is gained (card or on the board), you take
+            1 troop from your supply and place it in your garrison (not in
+            the conflict).
+              * The troops in your supply are limited.
+          * When you send an agent to a combat board space (⚔ icon), you
+            may deploy troops from your garrison to the conflict.
+              * You may deploy any/all troops recruited during your current
+                turn plus **up to 2 more troops from your garrison**.
+
+          ## Control Bonuses
+
+          * Some conflict cards reward a player with control over 1 of 3
+            spaces on the board (*Arrakeen*, *Carthag*, or *Imperial Basin*),
+            based on the card's title.
+              * If you win such a conflict, place 1 of your control markers
+                on the designated space on the board.
+              * While your marker is on the this space, you receive the bonus
+                shown any time an agent is sent to that space (including yours).
+              * When a conflict card is revealed for a space you already
+                control, you receive a bonus: You may deploy 1 troop from your
+                **supply** to the conflict.
+
+          ## Leaders
+
+          * Each leader has 2 abilities.
+              * The one on the left is used as described.
+              * The one marked with the signet ring is activated when you
+                play your signet ring card on an agent turn.
+
+          ## Factions
+
+          * Faction cubes begin at the bottom of their respective tracks, but
+            will move up as a player gains influence with that faction.
+          * When you reach the 2nd space on an influence track, gain a victory
+            point.
+              * **If you drop below the 2nd space, you lose that victory
+                point!**
+          * When you reach the 4th space on an influence track, take the bonus
+            shown on that space.
+              * If you drop below the 4th space, you do *not* return this bonus.
+          * The **1st** player to reach 4 influence with a faction earns the
+            alliance token for that faction and 1 victory point.
+              * If they are ever **passed** on that track (a player moves to a
+                **higher** space), the alliance token
+                is given to the player that passed them. They also lose the
+                victory point associated with the token.
+
+          ## Intrigue Cards
+
+          There are 3 types of intrigue cards:
+
+          * You may play a Plot card any time during 1 of your agent or reveal
+            turns.
+          * You may play a Combat card only during combat.
+          * You may play an Endgame card only at the end of the game.
+    - name: Clarifications
+      text: |
+          * **Baron Vladimir Harkonnen**: To use the Masterstroke ability,
+            choose 2 of the 4 Baron tokens and place them on your leader with
+            the Faction side face down.
+              * The other 2 tokens are returned to the box.
+              * Later, reveal your tokens for their rewards.
+          * **Bindu Suspension**: You must play this intrigue card at the
+            start of your agent turn, **before doing anything else**. When you
+            do, draw a card and immediately end your turn.
+          * **Calculated Hire**: This intrigue card can only take the Mentat
+            from its starting position in the Landsraad.
+          * **Demand Respect**: If you win a conflict that rewards you with
+            spice, you may take that 1st and use it to play this card.
+          * **Kwisatz Haderach**: You may play this to take an agent turn even
+            if you have no agents left in your supply.
+              * As this lets you send an agent already on the board, you may
+                send an agent to the same space it's already on.
+              * If a board space can only be used once per game (*High
+                Council* or *Swordmaster*), you **cannot** use this to send
+                an agent there more than once.
+              * You can't overcome *The Voice* and send an agent to a board
+                space where you can't send an agent.
+              * If this vacates a space with a Maker icon and no one else
+                occupies this space, it *will* get bonus spice during [Phase
+                4](#phase_4)
+          * **Paul Atreides / Poison Snooper**: You can't look at the top
+            card of your deck if it's empty. This does **not** allow you
+            to reshuffle your discard to form a new deck.
+          * **Test of Humanity**: Opponents make choices starting on your
+            left and proceeding clockwise. Each opponent must choose something
+            they can actually do.
+              * They cannot choose to discard a card if their hand is empty.
+              * They cannot lose a deployed troop if they have none.
+              * If they choose to discard a card, they get to the choose the
+                card (not random).
+          * **The Voice**: Use 1 of your available control markers to mark the
+            board space you choose. **Remove it on your next turn** as it
+            only blocks the space for 1 turn.
+              * This does prevent the *Kwisatz Haderach* from sending an agent
+                to this board space.
