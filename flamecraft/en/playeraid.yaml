@@ -1,0 +1,222 @@
+name: "Flamecraft"
+description: "Aid the dragons and shopkeepers to increase your reputation."
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+bgg_id: 336986
+expansions:
+sections:
+    - name: Setup
+      text: |
+          * Roll out the town mat.
+          * Place the 6 starter shops face up in any shop spaces.
+          * Place each starter Artisan dragon face up on the shop with
+            the matching icon in the top left covering the 1st slot in the
+            bottom of the shop.
+          * Place the goods tokens near the board.
+          * Place the coin tokens on the fountain.
+          * Sort the shop cards into 7 piles based on the the icons in the
+            top left corner with the 6 standard goods being 6 of the piles
+            and all the rest in a separate pile.
+              * Shuffle each pile face down.
+              * Take 1 card from each of the 6 standard goods piles and
+                4 cards from the 7th pile (everything else).  Shuffle these
+                10 cards and place this (the Shop deck) to the side of the
+                mat.
+                  * If you're familiar with the game, you can build this
+                    deck any way you like.
+          * Artisan Dragons:
+              * If playing with 2 players, remove 12 dragons -- 2 of each
+                goods type.
+              * If playing with 3 players, remove 6 dragons -- 1 of each goods
+                type.
+              * Shuffle the remaining cards and place the deck face down on its
+                space near the fountain.
+              * Reveal the top 5 cards and place them in the Park next to the
+                deck.
+          * Shuffle the Fancy Dragon cards and place the deck face down on its
+            space near the fountain.
+          * Choose either the [purple]!purple! or [gold]!gold! enchantment
+            deck ([purple]!purple! is recommended for your 1st game).
+              * Shuffle the deck and place it on its space inside the
+                reputation track.
+              * Reveal the top 5 cards and place them in a face up row next
+                to the deck.
+          * Randomly choose a start player.
+          * Each player:
+              * Take a player token (dragon) and take the matching reputation
+                marker (heart) and player aid card.
+              * Take 3 Artisan dragons to start your hand.
+              * Take 2 Fancy dragons: Choose 1 to keep and return the other
+                to the bottom of the Fancy deck.
+              * **If playing with 4+ players**: The 4th and 5th players each
+                take a goods token of their choice.
+          * **If playing with [Companions](#companions)**, randomly deal
+            1 companion to each player.
+          * Place all reputation markers near the start of the reputation track.
+    - name: Gameplay
+      text: |
+          The goal of the game is to have the most reputation (victory points)
+          at the end of the game. Play will continue until either the Artisan
+          deck or the Enchantment deck runs out. Proceed to
+          [game end](#game_end) when this happens.
+
+          On a turn, you have 2 choices: visit a shop and either
+          *[gather](#gather)* or *[enchant](#enchant)*.
+
+          **Note**: All goods/coins are considered to be unlimited.
+
+          * 1st, move your player token onto the shop you wish to visit.
+              * You **must** move to a new shop.  You cannot stay on the same
+                shop for multiple consecutive turns.
+              * **If there are other players already there**, you must give
+                each of them 1 good of your choice (or 1 coin). If you cannot
+                pay the other players, you **cannot** visit that shop.
+          * After performing your action, perform the [end your turn](#end_turn)
+            steps.
+      sections:
+        - name: Gathering
+          id: gather
+          text: |
+              Perform the following steps in order.
+
+              1. Gain the goods, coins, and dragons from the shop. These are
+                 the symbols in the upper left of the cards/shop.
+                  * Goods/coins are added to your personal supply.
+                  * Dragons are added to your hand.
+              2. You may place 1 artisan dragon from your hand in an empty
+                 dragon slot at your shop and gain the reward.
+                  * The dragon's icon in the top left **must** match of the
+                    icons on the empty slot where you will place the dragon.
+                  * Slots in the shop can be filled in any order.
+                  * Gain the printed [reward](#rewards) on the slot for
+                    adding a dragon to the shop.
+                  * **If you have filled a shop** (all slots have dragons),
+                    draw a new shop and place it in an empty town slot **face
+                    down** (do not look at the new shop).
+              3. You may fire up (use the ability of) **1** dragon in your
+                 shop.
+                  * This can be a dragon you placed or 1 that was already
+                    there.
+              4. Some shops have abilities listed in a strip above the dragon
+                 slots. You may now use the shop's ability.
+        - name: Enchanting
+          id: enchant
+          text: |
+              Perform the following steps in order.
+
+              1. Choose an enchantment from the faceup row, or 1 you have
+                 [reserved](#other), pay its goods cost and tuck it behind
+                 the shop to gain the rewards listed on it.
+                  * Shops with a ![artisan](/static/img/flamecraft/artisan.png)
+                    or ![coin](/static/img/flamecraft/coin.png) icon **cannot**
+                    be enchanted.
+                  * If an enchantment has a 
+                    ![no coin](/static/img/flamecraft/no_coin.png) symbol,
+                    you **cannot** use coins to pay for the goods on the
+                    enchantment.
+                  * The enchantment's icon **must** match the shop's icon
+                    (upper left).
+                  * If a shop has a wild icon, any enchantment can be cast
+                  * **A shop cannot have more than 3 enchantments**.
+                  * You may use coins in place of any good(s).
+                  * Gain the [reward](#rewards) shown at the bottom of the
+                    card.
+                      * Some cards have variable rewards depending on how
+                        many sets of goods were paid for it.
+                  * Tuck the enchantment behind the shop.
+                    there.
+              2. You may fire up (use the ability of) **all** dragons at
+                 the shop.
+                  * If firing up a dragon lets you add a dragon to your
+                    current shop, you may also fire up that dragon.
+        - name: End Your Turn
+          id: end_turn
+          text: |
+              1. Flip any new (face down) shops face up.
+              2. Discard goods/dragons down to your limits.
+                  * You have a limit of **6** Artisan dragons.
+                  * You have a limit of **7 goods of each type**.
+              3. Draw new face up Artisan dragons and enchantments until
+                 the face up supplies are refilled on the board.
+                  * **If the Artisan or Enchantment deck runs out**, this
+                    triggers the [end of the game](#game_end)
+    - name: Game End
+      id: game_end
+      text: |
+          When the last card of the Artisan or Enchantment deck is
+          drawn/revealed, the game end is triggered. Each player, including
+          the player that triggered the game end, gets **1 final turn**.
+
+          Once everyone has played their final turn, add the following to
+          your current reputation to calculate your final score.
+
+          * Gain 1 reputation per leftover coin.
+          * Score any points on Fancy dragons with a ☾ symbol.
+
+          The player with the highest reputation wins.  If tied:
+
+          1. The player with the most Artisan dragons in their hand wins.
+          2. The player with the leftover goods wins.
+          3. The players share the victory.
+    - name: Rewards
+      id: rewards
+      text: |
+          Below are the rewards that can be gained from adding dragons to
+          shops.
+
+          | Symbol | Reward |
+          | ------ | ------ |
+          | ![reputation](/static/img/flamecraft/rep.png) | Score this much reputation on the track. |
+          | ![fancy](/static/img/flamecraft/fancy.png) | Draw a new fancy dragon from the deck. |
+          | ![artisan](/static/img/flamecraft/artisan.png) | Draw a new artisan dragon from either the Park or the top of the deck. |
+          | ![coin](/static/img/flamecraft/coin.png) | Gain this many coins. Coins can be used as **any** good (wild). |
+    - name: Other Rules
+      id: other
+      text: |
+          ## Giving Gifts
+
+          Some abilities allow you to gift goods, coins, cards, etc. to other
+          players for rewards.
+
+          * Gifts are given from your personal supply/hand.
+          * You may use coins in place of specific goods.
+          * If you get a reward, other than reputation, take the reward from
+            the general supply (not your opponent).
+
+          ## Reserving Enchantments
+
+          Some abilities will let you reserve an enchantment.
+
+          * When enchanting, you can use your reserved enchantment instead of
+            using 1 from the face up row.
+          * You are limited to **1 reserved enchantment**.
+              * If you have an enchantment reserved and would be able reserve
+                another, you **cannot do so**.
+
+          ## Fancy Dragons
+
+          There are 2 types of Fancy dragons.
+
+          * **☀ (sun) Dragons**: These dragons are scored during the game when
+            their goal has been fulfilled.
+              * They can be fulfilled any time during your turn.
+              * If you must spend goods, return these to the general supply.
+          * **☾ (moon) Dragons**: These are only scored at the game end if
+            their goals were fulfilled.
+
+          There is **no limit** to the number of Fancy dragons you can have.
+
+    - name: Companions
+      id: companions
+      text: |
+          Companions are optional, but will provide a 1-time ability during
+          the game.
+
+          * Setup: Randomly deal 1 companion to each player. Players place the
+            companion face up in front of themselves.
+              * If there is a "START" text on the card, the player starts the
+                game with that bonus.
+          * The abilities can be used **once per game**.
+              * When the ability is used, flip the companion over to show it
+                has been used.
