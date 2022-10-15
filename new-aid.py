@@ -104,7 +104,7 @@ def select_item(bgg_res):
             selected = None
             continue
 
-        if selected < 1 or selected >= num_res:
+        if selected < 1 or selected > num_res:
             print(f'Invalid selection ({selected}), select a valid number\n')
             selected = None
             continue
