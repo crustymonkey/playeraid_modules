@@ -1,0 +1,177 @@
+name: "Ready Set Bet"
+description: "Get your bets down on those horses!"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+bgg_id: 351040
+expansions:
+sections:
+    - name: Setup
+      id: setup
+      text: |
+          * Place the bet board in the middle of the table.
+          * Shuffle the prop bet cards and place the deck face down on its
+            space at the top of the board. Draw the top 5 cards from the deck
+            to fill the spaces to the right.
+          * Shuffle the exotic finish cards and place the deck face down
+            on its space at the bottom of the board. Draw the top card and
+            place it in the 1st slot.
+          * Shuffle the VIP cards and place the deck face down on its space
+            at the bottom of the board.
+          * Place the money chips in a supply near the board.
+          * Place the black and white bonus bet tokens near the board.
+          * Select someone to run the race or use the app.
+              * Place the Race board near them.
+              * This person does not compete in the game unless using
+                one of the [House variants](#house_variants).
+              * Give the house player the 2 dice and 9 horse meeples.
+                  * The horses are placed on the green starting gate in
+                    their associated rows.
+              * The app is available:
+                  * In the [Google Play store](https://play.google.com/store/apps/details?id=com.nomadgames.readysetbet)
+                  * In the [Apple App store](https://apps.apple.com/us/app/ready-set-bet-companion-app/id1632918205)
+                  * In a [standard web browser](https://nomadgames.co.uk/readysetbet)
+          * Each (non-House) player takes a set of 5 player bet tokens in a
+            color.
+              * **If there are 7 or 8 (non-House) players**, each player
+                returns 1 of their number 3 tokens to the box.
+          * Place the 6 win/place/show tokens near the bet board.
+    - name: Gameplay
+      text: |
+          The game is played over 4 races with the winner being the player
+          with the most money at the end of those races.
+      sections:
+        - name: Running a Race (The House player)
+          id: running
+          text: |
+              The House player will simply facilitate the race unless you have
+              chosen to use one of the [House variants](#house_variants). There
+              is also an app available to run the race for you. See
+              [Setup](#setup) for links for various platforms.
+
+              * Roll the 2 dice, announce the result, and move the horse
+                associated with the die roll 1 space forward on the horse track.
+              * **If the same number is rolled twice in a row**, move the horse
+                a number of **additional** spaces as indicated in the row on
+                the board. (note that 7 has no bonus)
+                  * The bonus **is** triggered for 2/3 no matter which number
+                    is rolled, and similarly for 11/12.  e.g. if a 2 is rolled
+                    followed by a 3, the bonus is triggered for the 2/3 horse.
+                  * The bonus is **NOT** triggered on a 3rd consecutive roll,
+                    but it *would* be triggered again on a 4th consecutive
+                    roll.
+              * When the 3rd horse crosses the [red bet line]!red!, the House
+                player announces "No more bets". The House player continues
+                to roll dice as usual until **1** horse gets to the finish
+                at which time the race immediately ends.
+              * The House marks the win/place/show tokens on the bet board.
+                  * The tokens are placed on the bet board pointing at the
+                    appropriate horse for 1st, 2nd, and 3rd.
+                  * If 2 or more horses tie for 2nd, they essentially take
+                    2nd and 3rd place so **no horses behind them will be
+                    considered as "showing"**.
+        - name: Betting (and Resolving Bets)
+          text: |
+              ## Betting
+
+              Players can place their bets at any time during the race until
+              "No more bets" is called when 3 horses have crossed the [red bet
+              line]!red! (see [Running a Race](#running)).
+
+              * Players may not place a bet token on a space that already has
+                a bet token.
+              * Once a bet token is placed, it **cannot be moved/removed**.
+              * Only 1 token can be place on the Prop bets (like other spaces).
+              * Note that the Exotic Finish cards have 3 bet spots.
+                  * A player **cannot** place more than 1 of their bet tokens
+                    on the same card.
+                  * For the "Photo Finish" card, remember that if horses are
+                    tied for 2nd, they are *also* tied for 3rd.
+
+              ## Resolving Bets
+
+              After the race, bets are paid out.
+
+              * Win/place/show:
+                  * All bets for win/place/show are paid for the winning horse.
+                  * All bets for place/show are paid for the 2nd place horse(s).
+                  * All bets for show are paid for the 3rd place (if there is
+                    one, see [Running a Race](#running)).
+              * The amount paid to the player is the number on their bet token
+                times the multiplier for the space.
+              * For losing bets, if there is a [red circle]!red! with a number
+                on the space, the player must **pay** that amount to the
+                supply.
+                  * If a player has no money to pay, they pay nothing.
+                  * The value of the bet token means nothing for a losing bet.
+              * **Bonus Bet Tokens** (black and white bet tokens):
+                  * These are resolved just like other bet tokens for winning
+                    bets.
+                  * If the token has a [red circle]!red! with a number on the
+                    space, the player must pay this amount **in addition to
+                    anything printed on the board** for losing bets.
+                  * If the token has a
+                    ![no pay](/static/img/ready_set_bet/no_pay.png) symbol on
+                    it, this means that the negative value printed on the
+                    board space for a losing bet where this was placed is
+                    **negated** (pay nothing).
+        - name: End of Race Cleanup
+          text: |
+              After each of the first 3 races:
+
+              * Replace the 5 Prop bet cards.
+              * Reveal an additional Exotic Finish card.
+              * Deal 2 VIP cards to each player. Each player chooses 1 to keep
+                and discards the other.
+                  * VIP cards are placed face up in front the player and the
+                    player gains the benefit for the rest of the game.
+                  * If the deck runs out, shuffle the discard to create a new
+                    deck.
+                  * Some cards have a 1-time effect, but the card should
+                    remain in front of the player and **not** be discarded.
+              * Reset the horses on the horse board.
+              * If using a [House variant](#house_variants), follow additional
+                end of race instructions there.
+    - name: End of Game
+      text: |
+          The game ends after the 4th race. Whoever has the most money, wins.
+          If there is a tie, the tied players share the victory.
+    - name: House Variants
+      id: house_variants
+      sections:
+        - name: House Bets Variant (2-9 players)
+          id: house_bets
+          text: |
+              * Before each race, the House player takes the 6 house bet tokens
+                and places them in the upper left corner of 6 different bet
+                spots of their choice.
+                  * The House player starts the game with $18 and does not
+                    draw any VIP cards.
+                  * This includes Prop bet and Exotic finish betting spots.
+                  * These bet spots are considered open for other players to
+                    use.
+                  * At the end of each race, the house bet tokens are resolved
+                    in the same way as the player bet tokens.
+        - name: House Rotation Variant (2-8 players)
+          text: |
+              * Randomly pick a House player for the 1st race.
+              * The House player uses the 6 House bet tokens as described in
+                the [House Bets variant](#house_bets).
+              * After each race the House player may choose to remain the
+                House player for the next race.
+                  * If they choose not to be: Beginning with the player to
+                    the House player's left, and continuing clockwise, each
+                    player has the option to become the House player.
+                  * If no one chooses to be the House player, the player to
+                    the left of the House player **must** become the new
+                    House player.
+              * The House player may not use VIP cards for the round they
+                are the House player.
+                  * At the end of the round, the House player still draws and
+                    selects a VIP card along with the other players.
+                  * As compensation for not being able to use VIP cards, the
+                    House player gains money from the supply (before the start
+                    of the race in the noted rounds):
+                      * $3 in round 2
+                      * $6 in round 3
+                      * $9 in round 4
