@@ -1,0 +1,460 @@
+name: "MIND MGMT"
+description: "Beware the rogue agents!"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+bgg_id: 284653
+expansions:
+sections:
+    - name: Setup
+      id: setup
+      text: |
+          All the rules here cover the full game, *not* the Training mission.
+
+          * Someone should volunteer to be the recruiter; all other players
+            will be rogue agents.
+          * Place the board on the table with the recruiter's side closest
+            to the recruiter.
+          * Place the 5 mayhem tokens, starting with the recruiter and
+            proceeding clockwise until each player has placed 1 token.
+          * Place the time token next to the "01:00-05:00" spot on the
+            time track.
+          * Place each of the rogue agents' action cards under the matching
+            labels on the rogue agents' side of the board.
+          * Place each of the mind mgmt cards under the matching
+            labels on the recruiter's side of the board.
+          * Place the mental note, step, and recruit tokens in a supply near
+            the board.
+              * There should be 12 recruits in the supply.
+
+          ## Recruiter Setup
+
+          * Take the secret map, mental screen, and a dry erase marker.
+              * Place the map behind their screen oriented to match the board.
+          * Mark all the locations of the mayhem tokens on the secret map.
+              * The recruiter cannot pass through mayhem tokens on their turns.
+          * Take 1 mind slip token and and place it in front of the mental
+            screen, visible to everyone.
+          * Choose 1 recruiter card (or take 1 randomly) and place it behind
+            the mental screen so that the rogue agents can't see it.
+              * Return the unselected card to the box.
+          * Choose a starting location by writing a "1" on any location on
+            the secret map. This is **not** revealed to the rogue agents.
+          * Shuffle the feature cards and draw 3 at random. Place them face
+            up behind the screen.
+              * These are not shown to/shared with the rogue agents.
+              * Circle every feature on the secret map that matches any of
+                the 3 cards.
+          * Perform 4 ["step"](#steps) (movement) actions by writing "2",
+            "3", "4", and "5" on the secret map.
+              * You cannot visit the same location twice.
+              * Collect recruits by visiting locations with circled features.
+              * Place the number of recruits collected next to the
+                "01:00-05:00" spot on the time track and put the time token on
+                the "01:00-05:00" spot.
+          * Place 4 immortal figures on the board with the following
+            restrictions:
+              * Each immortal must be placed in a different location.
+              * Immortals cannot be placed on the outside edges of the
+                board.
+
+          ## Rogue Agents Setup
+
+          * Take 1 dry-erase marker to share.
+          * Distribute the 4 agent cards as evenly as possible between players.
+              * This can be done randomly or players can be choose.
+          * Each rogue agent does the following:
+              * Place their agent card with the ability text face up.
+              * Take the matching agent figure and place them on any location
+                on the outside edge of the board.
+          * Place both potential recruiter cards under the POTENTIAL label on
+            the rogue agents' side of the board. (This lets the rogue agents
+            know which special ability the recruiter might have).
+          * Place any ally cards the agents have access to face up under the
+            ALLIES label.
+          * Place the 2nd mind slip token on a location on the board that is
+            adjacent (orthogonally or diagonally) to 1 of the Temples.
+          * The recruiter then draws an additional 2 feature cards and places
+            them face up under the IMMORTAL RECRUITING label on their side.
+
+          The recruiter starts the game with their 1st turn.
+    - name: Gameplay
+      text: |
+          The game is played over a number of rounds and can end in a
+          number of different ways.
+
+          * The recruiter recruits 12 recruits -- the recruiter wins
+            immediately.
+          * The recruiter reaches 16:00 on the time track without being
+            caught -- the recruiter wins.
+              * **IMPORTANT**: The rogue agents do **not** get to take a turn
+                after the time token reaches 16:00
+          * An agent performs the [capture action](#a_capture)  while they
+            are on the same space as the recruiter -- the rogue agents win
+            immediately.
+
+          A round consists of:
+
+          1. Recruiter 1st turn: The recruiter takes 1 action and advances the
+             time token.
+          2. Rogue agents' 1st turn: The rogue agents activate any 2 of their
+             agents.
+          3. Recruiter 2nd turn: The recruiter takes 1 action, advances the
+             time token, and resolves an Alert icon.
+          4. Rogue agents' 2nd turn: The rogue agents activate their
+             **remaining** 2 agents.
+          5. Round end: Stand up each of the agent figures on the board and
+             begin the next round.
+      sections:
+        - name: Recruiter's turn
+          id: recr_turn
+          text: |
+              The recruiter must do the following in any order:
+
+              * [Take 1 action](#recr_action)
+              * [Move 1 immortal](#imm_move)
+              * (optional) [Place 1 step token to move 1 immortal
+                again](#extra_imm).
+
+              The end of the turn consists of, in order:
+
+              1. [Draw new immortal feature cards](#new_feat)
+              2. [Advance the time token](#time_token)
+          sections:
+            - name: Recruiter Action
+              id: recr_action
+              text: |
+                  There are 2 options for actions, *step* or *step using your
+                  mind slip*.
+
+                  * If you visit the location on the board with the 2nd mind
+                    slip token that was placed during [setup](#setup), you
+                    may "acquire" it for a 2nd mind slip action during the
+                    game.
+                      * **Do not remove the token from the board or tell the
+                        agents you have visited the space with the 2nd
+                        token!**
+                      * On any subsequent turn, you may use it by discarding
+                        it next to the current space on the time track (see
+                        the [mind slip action](#mind_slip) below).
+
+              sections:
+                - name: Step Action
+                  id: steps
+                  text: |
+                      * Move to an orthogonally adjacent location on your secret
+                        map and write down the next highest number there.
+                        e.g. "7" if the last location was "6" (this will
+                        always match the time token).
+                          * You may **not** move diagonally, unless you are
+                            moving to/from a Temple.
+                          * You may **not** move to a location you've already
+                            visited (a location with a number written on it).
+                          * You **may** move to a location occupied by an agent.
+                            Do **not** reveal that you have done so.
+                          * You may **not** move through mayhem. In fact,
+                            **no one can move through mayhem (recruiter,
+                            agents, or immortals)**.
+                      * If you become boxed in such that you have no legal move,
+                        the rogue agents win immediately.
+                      * If you visit a location with 1+ circled features
+                        (matching the features behind your screen), contact 1
+                        recruit for **each** feature.
+                      * Temples allow for both orthogonal *and* diagonal
+                        movement both to/from them.
+                - name:  Mind Slip Action
+                  id: mind_slip
+                  text: |
+                      * **Instead of a normal step action**, you can discard
+                        your mind slip token to use the mind slip action.
+                        The action details will be on your recruiter card.
+                      * When you use the mind slip action:
+                          1. Write the next number on your new location, but do
+                             **not** write any numbers on the locations
+                             *between* your old and new locations.
+                              * You cannot contact recruits in any locations
+                                *between* your old and new locations.
+                          2. After you advance the time token, place your
+                             discarded mind slip token next to the time track.
+                      * You may **not** pretend to use your mind slip or just
+                        use part of the ability. It must be used to its full
+                        extent.
+            - name: Immortals
+              text: |
+                  The recruiter controls all 4 immortals, which can be used
+                  to contact recruits and disrupt agents.
+
+                  Immortals have the following effects:
+
+                  * It prevents the agent in the same location from using
+                    *ask*, *reveal*, or *capture* actions (see [agents'
+                    turn](#agent_turn)).
+                  * The agent may not *ask* about **any** features in a
+                    location with any immortal anywhere on the board.
+                  * They can contact recruits by visiting the features
+                    shown on the immortal recruiting cards.
+                      * However, **they must visit a location with at least
+                        2 matching features** at the same time (see
+                        [immortal recruiting](#imm_recruiting) for more info).
+              sections:
+                - name: Immortal Move
+                  id: imm_move
+                  text: |
+                      Before or after taking an action on your turn, you may
+                      move 1 immortal of your choice.
+
+                      An immortal:
+
+                      * May move to an orthogonally **or** diagonally
+                        adjacent location.
+                      * May move to a location the recruiter has visited.
+                      * May move to a location occupied by an agent.
+                      * May **not** move to a location with another immortal.
+                      * May **not** move through a mayhem token.
+                - name: Immortal Recruiting
+                  id: imm_recruiting
+                  text: |
+                      * In order for immortals to contact a recruit, they
+                        must occupy 2 different locations (at the **same**
+                        time) that **both** have a feature shown on 1 of
+                        the feature cards under IMMORTAL RECRUITING.
+                          * If this is satisfied, immediately place 1 recruit
+                            from the supply on the matching feature icon in
+                            the top right part of the board.
+                          * Then, discard that feature card from the immortal
+                            recruiting area, but leave it face up.
+                          * This recruit is counted towards the 12 recruits
+                            needed for the recruiter to win.
+                              * **If this is the 12th recruit, the recruiter
+                                wins immediately**.
+                          * Immortals may not contact recruits at this feature
+                            again.
+                      * The recruiter may use their immortals to contact a
+                        recruit at any time during their turn.
+                          * This means that the recruiter could use immortals
+                            to contact recruits **twice** on their turn.
+                      * Immortals cannot use the recruiter's feature cards.
+                - name: Extra Immortal Move
+                  id: extra_imm
+                  text: |
+                      After you move an immortal for the 1st time, you may
+                      make a 2nd move with an immortal of your choice by
+                      revealing a location you've visited.
+
+                      1. Place 1 Step token on any location you have visited
+                         that does not already have a step token or confirmed
+                         mental note.
+                      2. Move 1 immortal of your choice (see [immortal
+                         movement](#imm_move) for restrictions).
+
+                      **This may only be done once per turn!**
+            - name: Draw New Immortal Feature Cards
+              id: new_feat
+              text: |
+                  * If you <2 feature cards under immortal recruiting, draw
+                    and place (face up) back up to 2 cards.
+                  * If there are no feature cards left in the deck, you may not
+                    draw new cards.
+            - name: Advance the Time Token
+              id: time_token
+              text: |
+                  * Move the time token 1 space forward -- this should match
+                    the number you wrote for your movement this turn.
+                  * **If it is a white space**, your turn is now over.
+                  * **If it is a [red]!red! space**, count all the recruits
+                    contacted on this **and the previous** (white) turn and
+                    place that many recruits next to the time token.
+                      * Do **not** specify when the recruits were recruited!
+                  * If you have revealed your 12th recruit, the recruiter
+                    wins immediately.
+        - name: Rogue Agents' Turn
+          text: |
+              Each agent activated may do the following in any order:
+
+              * [Move up to 2 spaces](#agent_move).
+              * [Take 1 action](#a_actions).
+              * (optional) [Use a free action (if the agent has
+                one)](#a_abilities).
+              * (optional) [Use and discard an Ally card](#a_ally).
+
+              Once the agent has been activated, lay it on its side to show
+              it has been used this round.
+          sections:
+            - name: Agent Movement
+              id: agent_move
+              text: |
+                  Your agent may move up to 2 spaces.
+
+                  * Each move must be orthogonal, unless moving to/from a
+                    Temple, which allows for diagonal movement.
+                  * You may change direction during movement.
+                  * You may move to a location occupied by another agent.
+                  * You may **not** interrupt your movement with your action.
+                    e.g. You cannot move 1 space, take your action, and then
+                    move an additional space.  Once you take your action, your
+                    movement ends.
+                  * You may move onto or through a location with an immortal.
+                  * You cannot move through a mayhem token.
+            - name: Agent Actions
+              id: a_actions
+              text: |
+                  There are 4 different actions an agent can take:
+
+                  * [Ask](#a_ask)
+                  * [Reveal](#a_reveal)
+                  * [Shakedown](#a_shake)
+                  * [Capture](#a_capture)
+              sections:
+                - name: Ask Action
+                  id: a_ask
+                  text: |
+                      Choose 1 of the features in your location and ask if
+                      the recruiter has visited any location with that feature.
+
+                      * **If you are at a location with an immortal, you cannot
+                        use the ask action**.
+                      * **You may not ask about any feature in any location
+                        with an immortal in it**. e.g. if an immortal, anywhere
+                        on the board, is on a location with a *billboard* and
+                        a *coffee shop*, you cannot ask about either.
+
+                      The recruiter checks their secret map and locations with
+                      the feature:
+
+                      * If the recruiter has visited a location with that
+                        feature, they must place a step token on 1 of the
+                        locations they've visited with that feature.
+                          * The location cannot already have a step token.
+                          * The location cannot have a [green]!green! confirmed
+                            mental note on it.
+                      * If the recruiter has not visited a location with
+                        the feature, or if all locations already have
+                        step/confirmed tokens on them, the recruiter says
+                        they cannot place a token, but **not why**.
+                      * A Temple is **not** a feature.
+                - name: Reveal Action
+                  id: a_reveal
+                  text: |
+                      If the agent is on a space with a step token, you may
+                      discard the step token to ask the recruiter *when* they
+                      were in that location.
+
+                      * **You cannot use the reveal action if you share a
+                        space with an immortal**.
+                      * The recruiter then places a [confirmed mental
+                        note]!green! on that location with the time they
+                        visited it.
+                - name: Shakedown Action
+                  id: a_shakedown
+                  text: |
+                      An agent must be at a space with an immortal to use
+                      the shakedown action.
+
+                      Follow these steps for a shakedown:
+
+                      1. Chose any feature on the board and ask if it matches
+                         any of the 3 feature cards the recruiter has behind
+                         their screen.
+                          * This does **not** have to be a feature at your
+                            current location, it can be any feature.
+                      2. If a card is correctly identified, the recruiter
+                         reveals it and places it face up next to the board.
+                          * **The recruiter may no longer use this feature
+                            to contact recruits**.
+                          * The recruiter should draw an "X" through each
+                            circled feature on their secret map that they have
+                            not yet visited.
+                      3. You may push the immortal from your location in
+                         any orthogonal direction.
+                          * All [immortal movement rules](#imm_move) must be
+                            followed.
+                              * You may not push an immortal through mayhem.
+                              * You may not push an immortal into a space with
+                                another immortal
+                          * This action can be taken **whether or not the card
+                            was correctly identified**.
+                - name: Capture Action
+                  id: a_capture
+                  text: |
+                      You may use this action at your location to attempt to
+                      capture the recruiter.
+
+                      * **You cannot use this action if you share a space with
+                        an immortal**.
+                      * If the recruiter is at this location, they are captured
+                        and the rogue agents immediately win the game.
+                      * If the recruiter is not at this location, they declare
+                        it a *miss* and play continues.
+                          * (tip) Use mental notes to mark missed captures.
+            - name: Agent Abilities
+              id: a_abilities
+              text: |
+                  Some abilites act as actions, free or as the main action,
+                  that can be used once per agent activation.
+
+                  * Free actions can be used before **or** after the agent
+                    moves or takes their main action.
+                  * You cannot use a free action **during** your movement,
+                    similar to the [rules for the main action and
+                    movement](#agent_move).
+
+                  Agents:
+
+                  * **Meru: As an action**
+                      * Ask the recruiter if they are within 2 spaces of you,
+                        including your current location, in straight lines
+                        from you.
+                          * **This action cannot be used if you share
+                            a location with an immortal**.
+                          * The recruiter responds with a "yes" or "no".
+                          * The recruiter does **not** place a step token.
+                  * **Henry Lyme: Passive**
+                      * Immortals may not contact recruits in your location
+                        or any location orthogonally adjacent to you.
+                  * **Bill Falls: Free action**
+                      * Before or after your move, you may move 1 immortal
+                        that is orthogonally adjacent to you 1 space in any
+                        orthogonal direction.
+                          * This must follow [immortal movement
+                            rules](#imm_move).
+                          * You may **not** move an immortal that is in your
+                            location.
+                  * **Dusty: Free action**
+                      * You may move any 1 agent 1 space plus 1 additional space
+                        for each of the recruiter's feature cards that have
+                        been exposed.
+            - name: Ally Abilities
+              id: a_ally
+              text: |
+                  During their activation, any agent may use an ally card
+                  ability.
+
+                  * After using an ally, it is removed from the game.
+                  * **Black Ops Dolphin**
+                      * When taking an [ask action](#a_ask), but before the
+                        recruiter answers, activate this ally to force the
+                        recruiter to place a step token on **all** locations
+                        they have visited with the specified feature.
+        - name: End of the Round
+          text: |
+              * Stand all agents upright and begin the next round with the
+                [recruiter's turn](#recr_turn).
+    - name: Other Rules and Strategies
+      sections:
+        - name: Mental Notes
+          text: |
+              * Mental notes are white while confirmed notes are [green]!green!.
+              * Rogue agents should use the mental notes to record information
+              * Rogue agents may **not** take other notes beyond what they
+                record via mental notes.
+              * Mental notes **are limited**.
+        - name: No New Step Token
+          text: |
+              If the recruiter cannot place a step token in response to an
+              [ask action](#a_ask), this does provide information that can
+              be recorded.
+
+              * Place a mental note with the time range and an "X" on the
+                features on the board.
+                  * If a step token is later placed on this location, you
+                    will know they went here *after* the times listed.
