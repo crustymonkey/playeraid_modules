@@ -3,7 +3,7 @@ description: "Aid the dragons and shopkeepers to increase your reputation."
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.0
+version: 1.1
 bgg_id: 336986
 expansions:
 sections:
@@ -160,6 +160,16 @@ sections:
           1. The player with the most Artisan dragons in their hand wins.
           2. The player with the leftover goods wins.
           3. The players share the victory.
+    - name: Artisan Dragons
+      text: |
+          | Ability | Clarifications |
+          | ------- | -------------- |
+          | Gain 2 of 1 good from this shop or an Artisan Dragon | The 2 goods you take **must** be the same. If it is a wild shop, you can take 2 of any 1 good. You cannot use this to gain coins or dragons. If an ability allows you to fire up this dragon in a location other than a shop, you may gain goods from any dragon at that location. |
+          | Place an Artisan dragon in town | You may place your dragon in any empty slot in town with the matching icon (including the shop you are visiting). You gain the printed reward in the slot. |
+          | Draw 1 Artisan dragon | You may take any faceup dragon from the park or draw the top card from the deck. |
+          | Gain any 3 different goods | You may choose any 3 different goods. |
+          | Swap this with another Artisan dragon in town and fire up the new dragon | Ignore the icons on the shop slots involved. This does not count as placing a dragon and does not earn the slot reward for either location. |
+          | Gift a good to another player to gain 2 reputation | Gift any 1 good from your personal supply to another player of your choice and gain 2 reputation. See Giving Gifts under [Other Rules](#other) for more info. |
     - name: Rewards
       id: rewards
       text: |
