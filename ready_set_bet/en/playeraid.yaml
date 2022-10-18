@@ -3,6 +3,7 @@ description: "Get your bets down on those horses!"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
+version: 1.0
 bgg_id: 351040
 expansions:
 sections:

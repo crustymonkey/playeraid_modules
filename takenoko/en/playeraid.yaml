@@ -2,6 +2,7 @@ name: Takenoko
 description: Cultivate land, grow bamboo, and feed a hungry panda!
 credits: Keith Rudolph
 enabled: true
+version: 1.0
 bgg_id: 70919
 text_type: markdown
 expansions:

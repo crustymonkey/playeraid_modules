@@ -3,6 +3,7 @@ description: "Ride the wind and collect some booty. Also check out the [voyage r
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
+version: 1.0
 bgg_id: 356033
 expansions:
 sections:

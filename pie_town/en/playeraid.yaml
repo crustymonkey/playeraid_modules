@@ -3,6 +3,7 @@ description: Make some pies!
 text_type: markdown
 credits: Jay Deiman
 enabled: true
+version: 1.0
 bgg_id: 233976
 expansions:
 sections:

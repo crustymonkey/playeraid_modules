@@ -2,6 +2,7 @@ name: Amerigo
 description: Help Amerigo Vespucci on his journey to discover new land.
 credits: Keith Rudolph
 enabled: true
+version: 1.0
 bgg_id: 137408
 text_type: markdown
 expansions:

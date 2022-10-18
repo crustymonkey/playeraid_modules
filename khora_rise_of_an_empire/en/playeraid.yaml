@@ -3,6 +3,7 @@ description: "Build your own empire in this lighter civ game"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
+version: 1.0
 bgg_id: 299684
 expansions:
 sections:

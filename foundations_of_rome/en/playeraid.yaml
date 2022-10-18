@@ -3,6 +3,7 @@ description: "Build your own Rome"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
+version: 1.0
 bgg_id: 284189
 expansions:
     - Monuments

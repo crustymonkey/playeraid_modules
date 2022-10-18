@@ -6,6 +6,7 @@ description: |
   for improvement.
 credits: "[Cory Osborn](https://boardgamegeek.com/user/GamePimp)"
 enabled: true
+version: 1.0
 bgg_id: 233676
 text_type: markdown
 expansions:

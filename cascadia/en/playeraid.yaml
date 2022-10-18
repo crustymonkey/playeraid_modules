@@ -3,6 +3,7 @@ description: "Build out the PNW"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
+version: 1.0
 bgg_id: 295947
 expansions:
 sections:

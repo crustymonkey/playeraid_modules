@@ -2,6 +2,7 @@ name: "Trickerion with Expansions"
 description: In a Victorian steampunk world, magicians perform dazzling tricks for money and fame.
 credits: Keith Rudolph
 enabled: true
+version: 1.0
 bgg_id: 163068
 text_type: markdown
 expansions:

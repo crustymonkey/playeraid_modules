@@ -3,6 +3,7 @@ description: "Gather resources and build your empire in this Euro/American cross
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
+version: 1.0
 bgg_id: 169786
 expansions:
     - Invaders from Afar

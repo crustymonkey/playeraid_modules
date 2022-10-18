@@ -2,6 +2,7 @@ name: "Trismegistus: The Ultimate Formula"
 description: Discover the formula to the Philosopher's Stone as you become the greatest alchemist!
 credits: Keith Rudolph
 enabled: true
+version: 1.0
 bgg_id: 281442
 text_type: markdown
 expansions:

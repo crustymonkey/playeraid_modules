@@ -3,6 +3,7 @@ description: "Battle with your Pheonixborn (Rules version 1.5)"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
+version: 1.0
 bgg_id: 167400
 expansions:
 sections:

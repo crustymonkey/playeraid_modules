@@ -3,6 +3,7 @@ description: "Create your own stories as a wizard's familiar"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
+version: 1.0
 bgg_id: 350948
 expansions:
 sections:

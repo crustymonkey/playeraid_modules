@@ -2,6 +2,7 @@ name: "Nemo's War (Second Edition)"
 description: Sail the Seven Seas as the hardened captain Nemo, fighting the Imperialist powers.
 credits: Keith Rudolph
 enabled: true
+version: 1.0
 bgg_id: 187617
 text_type: markdown
 expansions:

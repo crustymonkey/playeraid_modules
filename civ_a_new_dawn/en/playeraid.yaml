@@ -2,6 +2,7 @@ name: "Civilization: A New Dawn"
 description: Streamlined civilization game.  See it on
 credits: Jay Deiman
 enabled: true
+version: 1.0
 bgg_id: 233247
 expansions:
 sections:

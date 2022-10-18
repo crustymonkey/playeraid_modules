@@ -2,6 +2,7 @@ name: Lifeboats
 description: Flee the wreckage of the Santa Timea in leaky lifeboats and do anything necessary to ensure your sailors get to dry land.
 credits: Keith Rudolph
 enabled: true
+version: 1.0
 bgg_id: 249
 expansions:
 text_type: markdown

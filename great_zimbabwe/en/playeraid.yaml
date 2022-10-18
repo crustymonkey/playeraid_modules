@@ -2,6 +2,7 @@ name: The Great Zimbabwe
 description: The Great Zimbabwe is a game about building a trade based civilization in ancient Africa.
 credits: Sean Owens
 enabled: true
+version: 1.0
 bgg_id: 111341
 text_type: markdown
 expansions:

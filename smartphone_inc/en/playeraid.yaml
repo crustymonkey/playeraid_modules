@@ -3,6 +3,7 @@ description: "Build your smartphone empire"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
+version: 1.0
 bgg_id: 246684
 expansions:
 sections:

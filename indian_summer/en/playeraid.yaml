@@ -3,6 +3,7 @@ description: "Go on a hike and score some forest treasures"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
+version: 1.0
 bgg_id: 233678
 expansions:
 sections:

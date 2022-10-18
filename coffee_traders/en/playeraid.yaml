@@ -2,6 +2,7 @@ name: "Coffee Traders"
 description: Develop coffee regions around the world while building your coffee trading network.
 credits: Keith Rudolph
 enabled: true
+version: 1.0
 bgg_id: 325022
 text_type: markdown
 expansions:

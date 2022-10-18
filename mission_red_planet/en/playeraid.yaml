@@ -2,6 +2,7 @@ name: Mission Red Planet
 description: Fight for control over the regions of Mars to gain more money than everyone else.
 credits: Keith Rudolph
 enabled: true
+version: 1.0
 bgg_id: 176920
 text_type: markdown
 expansions:

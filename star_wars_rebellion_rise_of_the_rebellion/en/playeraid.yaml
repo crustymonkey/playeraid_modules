@@ -2,6 +2,7 @@ name: Star Wars - Rebellion - Rise of the Rebellion
 description: The epic conflict between the Galactic Empire and the Rebel Alliance.
 credits: Keith Rudolph
 enabled: true
+version: 1.0
 bgg_id: 187645
 text_type: markdown
 expansions:

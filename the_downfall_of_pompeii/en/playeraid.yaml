@@ -2,6 +2,7 @@ name: The Downfall of Pompeii
 description: Vesuvius is erupting, run for your lives!
 credits: Keith Rudolph
 enabled: true
+version: 1.0
 bgg_id: 13004
 text_type: markdown
 expansions:

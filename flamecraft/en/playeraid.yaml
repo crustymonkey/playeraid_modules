@@ -3,6 +3,7 @@ description: "Aid the dragons and shopkeepers to increase your reputation."
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
+version: 1.0
 bgg_id: 336986
 expansions:
 sections:

@@ -2,6 +2,7 @@ name: "Barrage with The Leeghwater Project"
 description: Nations vie for hydroelectric dominance in a dystopia where water is power.
 credits: Keith Rudolph
 enabled: true
+version: 1.0
 bgg_id: 251247
 text_type: markdown
 expansions:

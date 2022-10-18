@@ -2,6 +2,7 @@ name: Dinosaur Island
 description: Build your own dinosaur park!
 credits: Jay Deiman
 enabled: true
+version: 1.0
 bgg_id: 221194
 expansions:
 sections:

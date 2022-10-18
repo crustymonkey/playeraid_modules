@@ -2,6 +2,7 @@ name: Gaia Project
 description: Gaia Project is Terra Mystica in space! Research technologies and exploit your faction powers at the right times to build planetary structures to advance your economy, create federations to build influence, and advance your civilization to score victory points and win.  This game is quite complex and includes several rules appendices - these reference sections are outlined here.
 credits: Sean Owens
 enabled: true
+version: 1.0
 bgg_id: 220308
 text_type: markdown
 expansions:

@@ -14,6 +14,7 @@ YAML_TPL = dedent('''
     text_type: {text_type}
     credits: "{credits}"
     enabled: false
+    version: 1.0
     bgg_id: {bgg_id}
     expansions:
     sections:

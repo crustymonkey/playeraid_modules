@@ -3,6 +3,7 @@ description: "The 3rd game in the Ryan Laukat trilogy"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
+version: 1.0
 bgg_id: 314745
 expansions:
 sections:

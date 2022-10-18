@@ -3,6 +3,7 @@ description: "Build your very own bear park"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
+version: 1.0
 bgg_id: 219513
 expansions:
 sections:

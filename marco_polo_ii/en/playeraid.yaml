@@ -2,6 +2,7 @@ name: "Marco Polo II: In the Service of the Khan"
 description: Travel to cities along the silk road, trading silk, spice, gold & jade along the way.
 credits: Keith Rudolph
 enabled: true
+version: 1.0
 bgg_id: 283948
 text_type: markdown
 expansions:

@@ -2,6 +2,7 @@ name: John Company
 description: John Company recreates the success of the East India Company while each leading family also attempts to grow its own fame and wealth.
 credits: Sean Owens
 enabled: true
+version: 1.0
 bgg_id: 211716
 text_type: markdown
 expansions:

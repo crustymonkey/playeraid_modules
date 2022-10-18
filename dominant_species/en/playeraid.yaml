@@ -2,6 +2,7 @@ name: Dominant Species
 description: Six species of animals battle to be the dominant species on Earth.
 credits: Keith Rudolph
 enabled: true
+version: 1.0
 bgg_id: 62219
 text_type: markdown
 expansions:

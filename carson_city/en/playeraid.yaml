@@ -2,6 +2,7 @@ name: Carson City
 description: Compete to become the richest person while building up Carson City, Nevada.
 credits: Keith Rudolph
 enabled: true
+version: 1.0
 bgg_id: 39938
 text_type: markdown
 expansions:

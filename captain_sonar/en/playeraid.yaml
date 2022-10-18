@@ -2,6 +2,7 @@ name: Captain Sonar
 description: Hunt the enemy submarine, a two team 4+4 player submarine duel.
 credits: Per Glode
 enabled: true
+version: 1.0
 bgg_id: 171131
 expansions:
 sections:

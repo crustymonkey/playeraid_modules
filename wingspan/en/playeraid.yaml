@@ -3,6 +3,7 @@ description: "Bring all the birds to your habitat"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
+version: 1.0
 bgg_id: 266192
 expansions:
 sections:

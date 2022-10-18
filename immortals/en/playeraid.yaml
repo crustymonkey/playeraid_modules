@@ -5,6 +5,7 @@ description: >
   It is each player's aim to control and make efficient use of the different areas and their resources (inhabitants, gold, energy) in both realms. The player who most successfully implements their ambitions will be the winner of the game.
 credits: Cory Osborn (https://boardgamegeek.com/user/GamePimp)
 enabled: true
+version: 1.0
 bgg_id: 226562
 text_type: markdown
 expansions:

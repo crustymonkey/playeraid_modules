@@ -2,6 +2,7 @@ name: "Tekhenu: Obelisk of the Sun"
 description: As the Obelisk's shadow moves, use dice to build Ipet-Isut and the temple of Amun-Ra.
 credits: Keith Rudolph
 enabled: true
+version: 1.0
 bgg_id: 297030
 text_type: markdown
 expansions:

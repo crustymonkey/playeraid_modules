@@ -2,6 +2,7 @@ name: Bruxelles 1893
 description: Build buidlings in the Art Nouveau style in the city of Brussels.
 credits: Keith Rudolph
 enabled: true
+version: 1.0
 bgg_id: 144592
 text_type: markdown
 expansions:

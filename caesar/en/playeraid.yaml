@@ -3,6 +3,7 @@ description: "Rome vs. Pompey, fight!"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
+version: 1.0
 bgg_id: 338957
 expansions:
 sections:

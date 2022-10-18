@@ -3,6 +3,7 @@ description: "Explore the national parks"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
+version: 1.0
 bgg_id: 266524
 expansions: 
     - Nightfall

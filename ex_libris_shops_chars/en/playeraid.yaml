@@ -2,6 +2,7 @@ name: Ex Libris (Shops and Characters)
 description: A game of fantasy librarians.
 credits: Jay Deiman
 enabled: false
+version: 1.0
 bgg_id: 201825
 expansions:
 sections:

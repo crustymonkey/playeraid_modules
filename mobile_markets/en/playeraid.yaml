@@ -3,6 +3,7 @@ description: "Develop and sell your smartphones to customers"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
+version: 1.0
 bgg_id: 344768
 expansions:
 sections:

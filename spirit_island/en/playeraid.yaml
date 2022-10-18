@@ -2,6 +2,7 @@ name: "Spirit Island with Expansions"
 description: Island Spirits join forces using elemental powers to defend their home from invaders.
 credits: Keith Rudolph
 enabled: true
+version: 1.0
 bgg_id: 162886
 text_type: markdown
 expansions:

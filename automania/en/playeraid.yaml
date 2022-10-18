@@ -2,6 +2,7 @@ name: Automania
 description: Run your own car factory to try and produce the most popular cars on the market.
 credits: Keith Rudolph
 enabled: true
+version: 1.0
 bgg_id: 176544
 text_type: markdown
 expansions:

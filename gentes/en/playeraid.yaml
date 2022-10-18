@@ -2,6 +2,7 @@ name: "Gentes"
 description: Develop your civilization through balancing between time and wealth consumption.
 credits: Keith Rudolph
 enabled: true
+version: 1.0
 bgg_id: 217780
 text_type: markdown
 expansions:

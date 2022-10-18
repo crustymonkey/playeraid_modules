@@ -2,6 +2,7 @@ name: "Praga Caput Regni"
 description: Wealthy citizens of medieval Prague organize building projects to gain king's favor.
 credits: Keith Rudolph
 enabled: true
+version: 1.0
 bgg_id: 308765
 text_type: markdown
 expansions:

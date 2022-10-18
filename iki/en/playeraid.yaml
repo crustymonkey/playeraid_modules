@@ -3,6 +3,7 @@ description: "Fight fires and make Edo prosperous"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
+version: 1.0
 bgg_id: 177478
 expansions:
 sections:

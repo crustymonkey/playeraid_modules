@@ -2,6 +2,7 @@ name: Nippon
 description: Develop your Zaibatsu's influence and power to usher in Japan's industrial era.
 credits: Keith Rudolph
 enabled: true
+version: 1.0
 bgg_id: 154809
 text_type: markdown
 expansions:

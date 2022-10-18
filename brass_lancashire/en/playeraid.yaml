@@ -2,6 +2,7 @@ name: "Brass: Lancashire"
 description: Test your economic mettle as you build and network in the industrial revolution.
 credits: Keith Rudolph
 enabled: true
+version: 1.0
 bgg_id: 28720
 text_type: markdown
 expansions:

@@ -12,6 +12,7 @@ description: The Game is a cooperative game for 3-5 players.
              the development cards and implement them in a proper order.
 credits: Per Glode
 enabled: true
+version: 1.0
 bgg_id: 238760
 expansions:
 sections:

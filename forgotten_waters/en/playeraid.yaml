@@ -3,6 +3,7 @@ description: "Explore the seas! You can also access the [pirate name generator](
 text_type: markdown
 credits: Jay Deiman
 enabled: true
+version: 1.0
 bgg_id: 302723
 expansions:
 sections:

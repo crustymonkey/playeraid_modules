@@ -49,6 +49,7 @@ This will have the following 7 mapping items (some optional):
 * **expansions** (optional): This is YAML list of expansions included in the player aid.
 * **credits** (optional):  If you are copying this player aid from an existing aid and wish to credit the original creator, you can specify them here.  You can also add your own name if you put this aid together.
 * **enabled** (optional): This is either *true* or *false* for whether it is enabled.  You must set this to *true* to enable your player aid.  The default is *false*
+* **version** (optional): This is the version of the playeraid as a decimal number.  If not supplied, the default is 1.0.  Note that if it is *not* a valid number, your aid will end up throwing an error.
 * **text_type** (optional): This is either *html* or *markdown*. If not specified, the default is *html*.
 
 ## Sections

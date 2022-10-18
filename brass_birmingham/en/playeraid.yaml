@@ -2,6 +2,7 @@ name: "Brass: Birmingham"
 description: Build networks, grow industries, and navigate the world of the Industrial Revolution.
 credits: Keith Rudolph
 enabled: true
+version: 1.0
 bgg_id: 224517
 text_type: markdown
 expansions:

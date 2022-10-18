@@ -3,6 +3,7 @@ description: "Explore the ocean depths."
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
+version: 1.0
 bgg_id: 283393
 expansions:
     - Cold Waters

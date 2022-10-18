@@ -3,6 +3,7 @@ description: "A 2 player trick taking game (that works!)"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
+version: 1.0
 bgg_id: 221965
 expansions:
 sections:

@@ -2,6 +2,7 @@ name: Ex Libris
 description: A game of fantasy librarians.
 credits: Jay Deiman
 enabled: true
+version: 1.0
 bgg_id: 201825
 expansions:
 sections:

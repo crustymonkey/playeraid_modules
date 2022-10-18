@@ -2,6 +2,7 @@ name: Yokohama
 description: Merchants compete to gain fame from successful businesses.
 credits: Keith Rudolph
 enabled: true
+version: 1.0
 bgg_id: 196340
 text_type: markdown
 expansions:

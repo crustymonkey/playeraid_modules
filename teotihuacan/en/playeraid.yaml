@@ -2,6 +2,7 @@ name: "Teotihuacan"
 description: Use your worker dice to raise the legendary and breathtaking Pyramid of the Sun.
 credits: Keith Rudolph
 enabled: true
+version: 1.0
 bgg_id: 229853
 text_type: markdown
 expansions:
