@@ -1,0 +1,133 @@
+name: "Turing Machine"
+description: "Crack the code! See [turingmachine.info](https://www.turingmachine.info/) for more problems to solve."
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+version: 1.0
+bgg_id: 356123
+expansions:
+sections:
+    - name: Setup
+      text: |
+          * Place the machine tile in the center of the table.
+          * Arrange the punch cards in the caddy (1s in front, 2s next, etc.)
+          * Choose a problem to solve. You can use 1 from the rule book or
+            go to [turingmachine.info](https://www.turingmachine.info/)
+            for more problems to solve.
+          * Place the criteria cards in front of their matching letter on
+            the machine tile. e.g. "A" with "A".
+          * Place the verification cards face down next to their criteria
+            cards and mark the associated letter matching the machine tile.
+              * Note that each verification card can be used for 4 different
+                numbers and 4 different colors!
+          * Give a player aid/screen and a note sheet to each player. If
+            playing a game from [the website](https://www.turingmachine.info/),
+            be sure to write down the game number.
+          * Each player should draw a line through any unused columns on their
+            sheet.  e.g. In problem "01", you would cross off columns "E" and
+            "F".
+    - name: Gameplay
+      text: |
+          The game takes place over a number of rounds (it's a race) until
+          1 or more players have found the code (see [game end](#game_end) for
+          more info).
+
+          The following steps, except #4, are done simultaneously in a round:
+
+          1. [Compose](#compose)
+          2. [Question](#question)
+          3. [Deduce](#deduce)
+          4. [End of round](#end_round) (when everyone has completed steps 1-3)
+      sections:
+        - name: Compose
+          id: compose
+          text: |
+              * Compose your 3 digit proposal by overlaying 3 different
+                colored cards.
+                  * If the card you are using is in use, simply wait until
+                    it's available.
+        - name: Question
+          id: question
+          text: |
+              * You may question up to **3** verifiers during a round **without
+                changing your proposal**. e.g. You can ask up to 3 verifiers,
+                but you **cannot** change your number you are verifying
+                during the round.
+              * Place the verifier's verification card under your proposal,
+                making sure it is properly lined up with the punch cards using
+                the "target" symbols in the corners.
+                  * Each verifier will tell you a pass ([✓]!green!) or
+                    ([X]!red!) fail.
+                  * Mark an "X" or "✓" in the corresponding space on your
+                    note sheet.
+              * **Note**: Your proposal and the verifiers you question are
+                **open** information, but your answers and notes are
+                **secret**.
+        - name: Deduce
+          id: deduce
+          text: |
+              * Put your punch cards back in the caddy and analyze your
+                answers.
+              * Make notes/deductions on your note sheet and determine if
+                you have found the code.
+        - name: End of Round
+          id: end_round
+          text: |
+              1. **After all players have finished steps 1-3**, proceed.
+              2. Everyone extends a closed fist.
+              3. On the count of 3, everyone either points upward or downward.
+                  * Pointing upward indicates that (you think) you have found
+                    the code.  Proceed to [the game end
+                    instructions](#game_end) to verify.
+                  * Pointing downward indicates you have not yet found the code.
+              4. If no one has found the code, proceed to the next round.
+    - name: Game End
+      id: game_end
+      text: |
+          * If 1 or more players have found the code during a round, they
+            should secretly write it on their note sheet.
+          * Those that put a thumb up during the [end of round
+            phase](#end_round) will check their answers.
+              * If someone has the correct code, they win!
+              * If more than one person has the correct code:
+                  * The person that asked the **fewest** number of questions
+                    wins (count the number of "X" and "✓" marks on the note
+                    sheet).
+                  * If still tied, the players share the victory.
+              * If no one has the correct code, all incorrect players are
+                eliminated from the game. If any players remain, the game
+                continues.
+          * **Cleanup reminder**: Don't forget to remove the ✓ from the
+            verification cards!
+    - name: Criteria Cards
+      text: |
+          | Symbol | Clarification |
+          | ------ | ------------- |
+          | ![c1](/static/img/turing_machine/c1.png) | (Card 1) To pass, you must find if the △ number is >= 1. **Watch out**: If your △ proposal is 3 and the answer is [✓]!green!, it does **not** mean the answer is, just that the number is > 1 (not equal to it). |
+          | ![c2-4](/static/img/turing_machine/c2-4.png) | (Card 2-4) Similar to card #1, but there are 3 possibilities.  The △ number can be <, =, or > the number indicated. **Watch out**: If the △ proposal is "2" and you get [✓]!green!, this does **not** mean the number is 2, it only means it must be < 3. |
+          | ![c5-7](/static/img/turing_machine/c5-7.png) | (Card 5-7) Find if the △ number has to be even or odd. |
+          | ![c8-10](/static/img/turing_machine/c8-10.png) | (Card 8-10) The verifier verifies that there is a precise number (that they now) of 1s in your proposal. e.g. they can verify that there are 2 (no more, no less). The code could then be 113, 151, 411, etc. |
+          | ![c11-13](/static/img/turing_machine/c11-13.png) | (Card 11-13) These work similarly to Cards 2-4, but instead of comparing with a specific number, you are comparing against another number in your proposal e.g. △ with □ |
+          | ![c14-15](/static/img/turing_machine/c14-15.png) | (Card 14-15) The verifier verifies that the number of a particular color (that they know) is smaller than all the other numbers. |
+          | ![c16](/static/img/turing_machine/c16.png) | (Card 16) This verifies that there are more of either even or odd numbers in the code. |
+          | ![c17](/static/img/turing_machine/c17.png) | (Card 17) This verifies that there is a precise number (that they know) of even numbers in the code (0, 1, 2, or 3). |
+          | ![c18](/static/img/turing_machine/c18.png) | (Card 18) This verifies that the sum of all the numbers in the code is either even or odd. |
+          | ![c19](/static/img/turing_machine/c19.png) | (Card 19) This works like cards 2-4, but this compares the sum of the △ and □ numbers to 6. The sum can be <, =, or >. |
+          | ![c20](/static/img/turing_machine/c20.png) | (Card 20) This verifies if a number repeats itself, and if so, how many times. There may be no repetition (e.g. 125), 1 number repeats (e.g. 121), or a number repeats itself twice (e.g. 222). If a number repeats itself, the verifier doesn't know anything about it. It doesn't know the color or its number. |
+          | ![c21](/static/img/turing_machine/c21.png) | (Card 21) This verifies that there is either 1 pair of identical numbers or no pairs of identical numbers (e.g. 231 or 333 - which is not a pair). If there is a pair, the verifier does not know anything about it, as in the color or number. |
+          | ![c22](/static/img/turing_machine/c22.png) | (Card 22) This verifies the 3 number are in either ascending order, descending order, or neither. e.g. 223 is not ascending. |
+          | ![c23](/static/img/turing_machine/c23.png) | (Card 23) This card works in the same way as Card 19, but the verifier compares the subm of all the numbers with 6. |
+          | ![c24](/static/img/turing_machine/c24.png) | (Card 24) This verifies that in the code there are *consecutive* increasing values in either a 2 digit (e.g. 312), 3 digit sequence (e.g. 345), or none at all (e.g. 132). |
+          | ![c25](/static/img/turing_machine/c25.png) | (Card 25) This verifies that there are either increasing or decreasing values in a 2-digit consecutive sequence (e.g. 312 or 254), a 3 digit consecutive sequence (e.g. 345 or 321), or none at all (e.g. 135 or 531). The verifier does not know if the sequence is increasing or decreasing. |
+          | ![c26-27](/static/img/turing_machine/c26-27.png) | (Card 26-27) This verifies that the number of a particular color (that they know) is < 3 (e.g. the □ number is < 3). **Watch out**: If the criteria is "the □ < 3"; the other colors' numbers can also be < 3...the verifier is just not verifying that. |
+          | ![c28-30](/static/img/turing_machine/c28-30.png) | (Card 28-30) This verifies that the number of a particular color (that they know) is 1 (e.g. △ is a 1). **Watch out**: The other colors' numbers can also be 1...the verifier is just not verifying that. |
+          | ![c31-32](/static/img/turing_machine/c31-32.png) | (Card 31-32) This verifies that the number of a particular color (that they know) is > 1. **Watch out**: The other colors' numbers can also be > 1...the verifier is just not verifying that. |
+          | ![c33](/static/img/turing_machine/c33.png) | (Card 33) This verifies that the number of a particular color (that they know) is odd or even (e.g. the △ is even). **Watch out**: The other numbers can also be even (or odd, depending). |
+          | ![c34-35](/static/img/turing_machine/c34-35.png) | (Card 34-35) This verifies that the number of a particular color is <= to all other numbers (e.g. they verify that no other color is < □). |
+          | ![c36](/static/img/turing_machine/c36.png) | (Card 36) This verifies that the sum of all the numbers in the code is a multiple of 3, 4, or 5. |
+          | ![c37-38](/static/img/turing_machine/c37-38.png) | (Card 37-38) This verifies that the sum of 2 particular numbers (that they know) is 4. |
+          | ![c39-41](/static/img/turing_machine/c39-41.png) | (Card 39-41) This verifies that the number of a particular color (that they know) is <, =, or > 1. |
+          | ![c42](/static/img/turing_machine/c42.png) | (Card 42) This verifies that the number of a particular color (that they know) is either < or > either of the others (e.g. The □ > the others). |
+          | ![c43-44](/static/img/turing_machine/c43-44.png) | (Card 43-44) This verifies that the △ is <, =, or > another particular number (that they know). |
+          | ![c45-47](/static/img/turing_machine/c45-47.png) | (Card 45-47) This verifies that the number of 1s or 3s in the code = a particular number. |
+          | ![c48](/static/img/turing_machine/c48.png) | (Card 48) This verifies that the number of a particular color (that they know) is either <, =, > that of another particular color (that they know) (e.g. the □ number > the ○ number). |
