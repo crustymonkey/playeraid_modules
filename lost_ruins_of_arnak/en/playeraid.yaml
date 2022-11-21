@@ -1,0 +1,255 @@
+name: "Lost Ruins of Arnak"
+description: "Explore the lost ruins, battle guardians, and research"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+version: 1.0
+bgg_id: 312484
+expansions:
+sections:
+    - name: Setup
+      text: |
+          * Shuffle the artifacts deck and place it face down on its space.
+          * Place the fear cards on their space.
+          * Shuffle the item deck and place it face down on its space.
+          * Place the moon staff in the card row under the "I" (1st round)
+            indicator.
+          * Deal 1 artifact to the card row on the left-most space (left of the
+            moon staff).
+          * Deal 5 items to the remaining spaces in the card row (right of the
+            moon staff).
+          * Shuffle the idol tiles and randomly assign 1 to each level 1 region.
+              * Assign 1 face up and 1 face down idol to the level 2 regions.
+          * Place blocking tiles depending on player count. Any unused tiles
+            can be returned to the box.
+              * **4 players** -- no blocking tiles are placed.
+              * **3 players** -- block 3 "double boot" spaces.  Mix up the
+                blocking tiles face down and flip over 3 at random. Cover
+                (face down) the matching double boot space on those that were
+                flipped up.
+              * **2 players** -- block all 5 double boot spaces.
+          * Make stacks of temple tiles on the temple at the top of the
+            research part of the board. Each stack should have 1 tile per
+            player. Any unused tiles can be returned to the box.
+          * Shuffle the research bonus tiles face down and place 1 face up
+            on each space, but not that some spaces are only used in 3 or 4
+            player games (all for a 4 player game).
+          * Place a stack, equal to the number of players, face down at the top
+            of the research track.
+          * Place all resource tokens in their spaces at the bottom of the
+            board.
+          * Shuffle the level 1 sites and place them in a face down stack
+            at the bottom of the board.
+          * Shuffle the level 2 sites and place them in a face down stack
+            at the bottom of the board.
+          * Shuffle the guardian tiles and place them in a face down stack
+            at the bottom of the board.
+          * Shuffle all the assistant tiles and place them silver side up
+            in 3 stacks of 4 assistants each.
+          * Player setup:
+              * Take a player board, archaeologists, and research tokens in
+                1 color.
+              * Place your research tokens in a stack at the bottom of the
+                research track.
+              * Take a starting deck consisting of:
+                  * 2 Funding cards
+                  * 2 Exploration cards
+                  * 2 Fear cards
+              * Shuffle your starting deck and place it face down in its spot
+                on your player board.
+          * Choose a starting player and give them the start player marker.
+          * Give each player their starting resources based on player order:
+              * **Player 1**: 2 gold
+              * **Player 2**: 1 gold, 1 exploration token
+              * **Player 3**: 2 gold, 1 exploration token
+              * **Player 4**: 1 gold, 2 exploration token
+    - name: Gameplay
+      text: |
+          The game is played over 5 rounds, in which players take turns until
+          all players have passed. Each round consists of:
+
+          1. All players draw cards from their deck up to a hand of 5 cards.
+          2. Players take turns, starting with the player with the start
+             player marker, in clockwise order.  Each turn consists of 1
+             main action and an unlimited number of free actions.
+          3. You may pass on your turn, at which point you are done playing
+             for the remainder of the round.
+          4. Setup is done for the next round.
+          5. The moon staff is moved one slot to the right.
+      sections:
+        - name: Player Turns
+          sections:
+            - name: Main Actions
+              text: |
+                  * **Dig at a site** -- Move 1 of your archaeologists to an
+                    unoccupied site, pay the cost printed on the space, and
+                    resolve the effect shown.
+                      * To pay the cost, spend card(s), rewards, or tap
+                        assistants to cover the depicted travel cost for the
+                        space (boat, car, plane).
+                      * You may always spend 2 coins in place of 1 travel
+                        symbol.
+                      * You can always use a greater travel to pay for a lesser
+                        travel icon.  e.g. A plane can be used in place of
+                        anything else and a boat or car can be used in place
+                        of a boot.
+                      * You may go to discovered sites, even those with a
+                        guardian.
+                  * **Discover a new site** -- Follow these steps to discover a
+                    new site.
+                      1. Spend exploration tokens equal to the cost for the site
+                         level you are going to. 3 exploration tokens for a
+                         level 1 site and 6 exploration tokens for a level
+                         2 site.
+                      2. Take the idol(s) and immediately resolve any face up
+                         effects on it (note that you will only resolve 1 of the
+                         2 idols on a level 2 site). Then, place the idol(s) on
+                         your player board face down (points only side up).
+                      3. Take the top tile from the appropriate site stack
+                         (level 1 or 2) and place it on the board face up.
+                         Immediately resolve the effect shown on it.
+                      4. Draw the top tile from the guardian stack and place it
+                         face up on top of the site.
+                  * **Overcome a guardian** -- Pay the cost shown at the
+                    bottom of the guardian tile, remove it from the board,
+                    and place it in your play area.  The guardian provides
+                    a 1-time boon (upper left of the guardian).
+                  * **Buy a card** -- You may buy either an artifact or item
+                    from the card row.
+                      * Buying an item: Pay the coin cost shown in the bottom
+                        left of the card and place it on the **bottom** of
+                        your deck.  Then slide item cards to the right of
+                        it to fill the gap and draw a new card and place
+                        it in the right-most spot.
+                      * Buying an artifact: Pay the cost in exploration tokens
+                        shown in the bottom left of the card. Then, place
+                        the card in your play area and resolve its effect.
+                        Slide any cards to the left of the one purchased to
+                        fill the gap, and then draw a new card and place it
+                        in left-most slot.
+                  * **Play a card** -- Play a card from your hand to your play
+                    area and resolve its effects.
+                      * If it has a ⚡ symbol, it is a [free
+                        action](#free_actions).
+                        and does not constitute your main action.
+                      * Other items and all artifacts will be a main action.
+                      * To play an artifact, you must pay the tablet cost shown
+                        on the card.
+                      * If a card says to "exile" it, place it in the
+                        appropriate discard spot on the main board. Fear
+                        cards are just added to the fear stack. Cards may
+                        be exiled from your hand or play area.
+                  * **Research** -- Move either your notebook or magnifying
+                    glass per the following.
+                      1. Move your research token into a space connected to your
+                         current location on the track.
+                          * **Your notebook can never move past your magnifying
+                            glass**.
+                          * The start space at the bottom of the track is
+                            connected to all the spaces above it.
+                          * Multiple tokens can share the same space.
+                          * If you reach the top, aka The Lost Temple, place
+                            your mag. glass in the left-most slot
+                          * If you are already at the top of the track, you can
+                            buy temple temple tiles by paying the (possibly)
+                            combined costs for the tile you wish to purchase.
+                              * You will have to pay the 2 costs shown below a 6
+                                point tile.
+                              * You will have to pay all 3 costs for an 11 point
+                                tile.
+                      2. Pay the cost shown in the space between the space you
+                         were in and the 1 you moved to.
+                      3. Take a bonus tile, if available, resolve its effects,x
+                         and return it to the box.
+                      4. Take the reward depicted for the row, based on the
+                         token moved.  Points will be resolved at the game end
+                         (non-cumulative).
+                  * **Passing** -- You may choose to pass at any point during a
+                    round.
+                      * You **must** pass if you cannot take a main action. It
+                        is not legal to take a turn of only free actions.
+                      * Once you have passed, you can take no more actions until
+                        the next round.
+                      * If you are the only player that has *not* passed, you
+                        may continue taking turns until you pass.
+                      * The [round ends](#round_end) when all players have
+                        passed.
+            - name: Free Actions
+              id: free_actions
+              text: |
+                  There are a variety of free actions that can be taken on your
+                  turn. You can take as many free actions as you would like,
+                  either before your main action or after.
+
+                  * **Cards**: Cards depicting a ⚡ symbol can be played as a
+                    free action.  Note that some cards give you an option
+                    for a free action or main/passing action.
+                  * **Guardian boons**: The boon is depicting in the top right
+                    corner of the guardian.  You may use any boon with a ⚡
+                    symbol as a free action. Flip the guardian face down to
+                    show it is used.
+                      * Guardians are worth 5 points at the end of the game,
+                        regardless of whether or not their boon has been
+                        used.
+                  * **Idols**: You may use an acquired idol to obtain 1 of
+                    the depicted idol free actions by moving the idol to
+                    cover the left most open slot on your player board.
+                      * Note that using an idol will cover up the victory
+                        points shown on your player board.
+                      * If you have covered all 4 slots, you may not take
+                        any more of these free actions.
+                      * Idols are worth 3 points at the end of the game,
+                        whether or not they've been used for free actions.
+                  * **Assistants**: Any assistant with a ⚡ symbol can be used
+                    as a free action.  Rotate the assistant 90° to show it
+                    has been used.
+                      * When an assistant is upgraded, flip it to its gold
+                        side and **refresh it** if it has been used this round.
+                      * Assistants are always recruited on their silver side.
+                      * You may only have 2 assistants during a game (as
+                        depicted on your player board).
+        - name: End of Round
+          id: round_end
+          text: |
+              * Return both of your archaeologists to your player board.
+                  * **If you return an archaeologist from a site, also
+                    take 1 fear card fromt he supply and add it to your
+                    play area**.
+              * Any cards left in your hand can be discarded to your play
+                area or kept for the next round.
+              * Shuffle all the cards in your play area and place them
+                face down at the bottom of your deck.
+              * Refresh your assistants.
+              * Exile the 2 cards on either side of the moon staff (1
+                artifact and 1 item).
+              * Move the moon staff to the next round marker to the right.
+              * Slide artifact cards to the right and add a new artifact
+                card in the left most slot.
+              * Pass the starting player token one player to the left.
+              * Everyone draws back up to a hand of 5 cards.
+              * If this was the end of round 5, proceed to [final
+                scoring](#scoring).
+    - name: Final Scoring
+      id: scoring
+      text: |
+          * Each of your research tokens scores the matching points depicted
+            in their row.  Note that points are **not** cumulative from
+            previous rows.
+              * If your mag. glass is at The Lost Temple, score the points
+                depicted on its space.  Note that you get more points by
+                reaching this space earlier.
+          * Score the points depicted on any temple tiles.
+          * Each idol scores 3 points, whether or not it was used for a free
+            action.
+          * Add up all the points shown in empty idol slots on your player
+            board.
+          * Each guardian you overcame is worth 5 points, whether or not it
+            was used for its boon.
+          * Each item/artifact card you have scores the points shown in the
+            lower right corner.
+          * Each fear card you have **scores -1 points**.
+
+          Whoever has the most points wins.  If there is a tie, break the tie
+          based on whoever reached The Lost Temple 1st. If no one reached The
+          Lost Temple, the player with the highest research score wins. If
+          still tied, the players share the victory.
