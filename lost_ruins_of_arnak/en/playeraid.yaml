@@ -2,7 +2,7 @@ name: "Lost Ruins of Arnak"
 description: "Explore the lost ruins, battle guardians, and research"
 text_type: markdown
 credits: "Jay Deiman"
-enabled: false
+enabled: true
 version: 1.0
 bgg_id: 312484
 expansions:
