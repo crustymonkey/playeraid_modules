@@ -1,9 +1,9 @@
 name: "Lost Ruins of Arnak"
-description: "Explore the lost ruins, battle guardians, and research"
+description: "Explore the lost ruins, battle guardians, and perform research"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 2.0
+version: 2.1
 bgg_id: 312484
 expansions:
     - Expedition Leaders
@@ -79,9 +79,9 @@ sections:
           * Choose a starting player and give them the start player marker.
           * Give each player their starting resources based on player order:
               * **Player 1**: 2 gold
-              * **Player 2**: 1 gold, 1 exploration token
-              * **Player 3**: 2 gold, 1 exploration token
-              * **Player 4**: 1 gold, 2 exploration token
+              * **Player 2**: 1 gold, 1 compass
+              * **Player 3**: 2 gold, 1 compass
+              * **Player 4**: 1 gold, 2 compass
     - name: Gameplay
       text: |
           The game is played over 5 rounds, in which players take turns until
@@ -116,9 +116,9 @@ sections:
                         guardian.
                   * **Discover a new site** -- Follow these steps to discover a
                     new site.
-                      1. Spend exploration tokens equal to the cost for the site
-                         level you are going to. 3 exploration tokens for a
-                         level 1 site and 6 exploration tokens for a level
+                      1. Spend compasses equal to the cost for the site
+                         level you are going to. 3 compasses for a
+                         level 1 site and 6 compasses for a level
                          2 site.
                       2. Take the idol(s) and immediately resolve any face up
                          effects on it (note that you will only resolve 1 of the
@@ -140,7 +140,7 @@ sections:
                         your deck.  Then slide item cards to the right of
                         it to fill the gap and draw a new card and place
                         it in the right-most spot.
-                      * Buying an artifact: Pay the cost in exploration tokens
+                      * Buying an artifact: Pay the cost in compasses
                         shown in the bottom left of the card. Then, place
                         the card in your play area and resolve its effect.
                         Slide any cards to the left of the one purchased to
@@ -321,7 +321,7 @@ sections:
                   * This is the same way that the bonus tiles worked in the top
                     row of the temple track in the base game.
               * *The Artifact*: This space needs a face up artifact that costs
-                exactly 3 exploration tokens.  Choose 1 randomly.
+                exactly 3 compasses.  Choose 1 randomly.
                   * When reaching this row, your mag. glass must **move**
                     through the left space and your notebook **must** move
                     through the space on the right.
