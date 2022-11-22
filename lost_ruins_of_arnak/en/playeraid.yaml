@@ -3,23 +3,32 @@ description: "Explore the lost ruins, battle guardians, and research"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.0
+version: 2.0
 bgg_id: 312484
 expansions:
+    - Expedition Leaders
 sections:
     - name: Setup
       text: |
+          * Choose a board side (temple) to play on.
+              * If playing with Expedition Leaders, optionally choose a
+                research track board. See the section on [research
+                tracks](#research) for more info on setup for alternate
+                temples.
           * Shuffle the artifacts deck and place it face down on its space.
           * Place the fear cards on their space.
           * Shuffle the item deck and place it face down on its space.
           * Place the moon staff in the card row under the "I" (1st round)
             indicator.
+              * If you have Expedition Leaders, you can use the [red moon
+                staff](#red_staff) variant.
           * Deal 1 artifact to the card row on the left-most space (left of the
             moon staff).
           * Deal 5 items to the remaining spaces in the card row (right of the
             moon staff).
           * Shuffle the idol tiles and randomly assign 1 to each level 1 region.
               * Assign 1 face up and 1 face down idol to the level 2 regions.
+              * Return any unused idols to the box.
           * Place blocking tiles depending on player count. Any unused tiles
             can be returned to the box.
               * **4 players** -- no blocking tiles are placed.
@@ -49,14 +58,24 @@ sections:
           * Player setup:
               * Take a player board, archaeologists, and research tokens in
                 1 color.
+                  * If playing with Expedition Leaders, choose a character
+                    and take their board, cheat sheet, and any additional
+                    tiles.
               * Place your research tokens in a stack at the bottom of the
                 research track.
               * Take a starting deck consisting of:
-                  * 2 Funding cards
-                  * 2 Exploration cards
-                  * 2 Fear cards
+                  * **If playing with Expedition Leaders, take your character's
+                    starting cards + 2 fear cards**.  You will not use the
+                    standard starting cards with Expedition Leaders.
+                    Otherwise, take:
+                      * 2 Funding cards
+                      * 2 Exploration cards
+                      * 2 Fear cards
               * Shuffle your starting deck and place it face down in its spot
                 on your player board.
+              * If playing with Expedition Leaders take a tent token matching
+                the color of your archaeologists, etc. Place it on your board
+                on the "day" side (flip to the night side when you pass).
           * Choose a starting player and give them the start player marker.
           * Give each player their starting resources based on player order:
               * **Player 1**: 2 gold
@@ -174,6 +193,8 @@ sections:
                         may continue taking turns until you pass.
                       * The [round ends](#round_end) when all players have
                         passed.
+                      * If playing with Expedition Leaders, flip your tent
+                        token to the "hight" side to show you have passed.
             - name: Free Actions
               id: free_actions
               text: |
@@ -222,9 +243,15 @@ sections:
               * Refresh your assistants.
               * Exile the 2 cards on either side of the moon staff (1
                 artifact and 1 item).
+                  * If playing with the [red staff variant](#red_staff),
+                    instead exile **2** cards on either side of the staff.
+                    i.e. 2 items and 2 artifacts (if possible)
               * Move the moon staff to the next round marker to the right.
               * Slide artifact cards to the right and add a new artifact
                 card in the left most slot.
+              * If you are playing with the [Lizard Temple](#research) from
+                the Expedition Leaders expansion, take 1 fear for every
+                research token on the undefeated guardian on the temple track.
               * Pass the starting player token one player to the left.
               * Everyone draws back up to a hand of 5 cards.
               * If this was the end of round 5, proceed to [final
@@ -253,3 +280,90 @@ sections:
           based on whoever reached The Lost Temple 1st. If no one reached The
           Lost Temple, the player with the highest research score wins. If
           still tied, the players share the victory.
+    - name: Variants
+      text: |
+          If you are playing with the Expedition Leaders expansion, there are
+          some variants that you can use in your game.
+      sections:
+        - name: Red Moon Staff
+          id: red_staff
+          text: |
+              You can play with this variant if you want to see more
+              items/artifacts come out during the game.
+
+              * During the end of the round, exile **2 items and 2 artifacts**
+                instead of the usual 1 of each.
+        - name: Research Tracks (Expedition Leaders)
+          id: research
+          text: |
+              * If your mag. glass is 2 rows below the top of the reach the
+                top of the track, you can still buy a 2 point temple tile
+                (instead of advancing on the track).
+              * If your mag. glass is 1 row below the top of the reach the
+                top of the track, you can still buy a 6 point or a
+                2 point temple tile (instead of advancing on the track).
+              * The 11 point gold tiles are *only* available from the top row.
+              * Some advances on the research tracks also have "travel" costs
+                that must be played.
+
+              # Monkey Temple
+
+              * **Setup**:
+                  * Place the bonus tiles in face down stacks, 1 per player,
+                    on the places shown on the track in the same manner as
+                    the top row of the temple tracks in the base game.
+              * All **bonus tiles are secret**. A player reaching a bonus tile
+                space looks through the available tiles, chooses 1 and returns
+                the rest face down.
+                  * Note that it is possible to get a 2nd bonus tile from a
+                    space (with your notebook) if there are still tiles
+                    available.
+                  * This is the same way that the bonus tiles worked in the top
+                    row of the temple track in the base game.
+              * *The Artifact*: This space needs a face up artifact that costs
+                exactly 3 exploration tokens.  Choose 1 randomly.
+                  * When reaching this row, your mag. glass must **move**
+                    through the left space and your notebook **must** move
+                    through the space on the right.
+                  * When reaching the artifact space, you may activate the
+                    artifact as if you first bought it (without paying the
+                    tablet cost).
+                  * No player may take this artifact.  It always remains on
+                    the board.
+
+              | Symbol | Description |
+              | ------ | ----------- |
+              | ![m1](/static/img/lost_ruins_of_arnak/monkey_1.png) | You may use the silver side of 1 assistant available in the supply. Move the used assistant to the bottom of its stack. |
+              | ![m2](/static/img/lost_ruins_of_arnak/monkey_2.png) | Either take a new silver assistant or upgrade an assistant to its gold side. **Note that you can only have 2 assistants**. |
+              | ![m3](/static/img/lost_ruins_of_arnak/monkey_3.png) | Activate any discovered level 1 site (occupied or not). |
+              | ![m4](/static/img/lost_ruins_of_arnak/monkey_4.png) | Refresh 2 assistants. You **cannot** refresh the same assistant twice. |
+
+              # Lizard Temple
+
+              * **Setup**:
+                  * After setting out the idols, shuffle the 4 remaining idols
+                    into a face down stack and place them near the 3rd row
+                    from the top of the temple track.
+                  * After shuffling the guardian tiles, secretly place 1
+                    guardian face down on the matching space.
+              * *The Guardian*:
+                  * The guardian is revealed when any player reaches that row.
+                  * **No one may advance past the guardian until someone
+                    overcomes it**.
+                  * The guardian is overcome in the same manner as other
+                    guardians. i.e. it is a main action where you pay the
+                    cost for it (or use a card ability).
+                  * You may **not** use effects that move a guardian on this
+                    guardian.
+                  * If you overcome the guardian, claim it as you would
+                    another guardian.
+                  * At the end of the round, **if the guardian has not been
+                    overcome, you receive 1 fear for each research token on
+                    the space**.
+
+              | Symbol | Description |
+              | ------ | ----------- |
+              | ![l1](/static/img/lost_ruins_of_arnak/lizard_1.png) | Activate any **unoccupied** level 1 site.  Then, return the site tile and guardian (if there is 1) to the box.  Turn over the top tile of the leftover idols and place it face up where the site was. |
+              | ![l2](/static/img/lost_ruins_of_arnak/lizard_2.png) | Immediately gain 2 fear cards to your play area. |
+              | ![l3](/static/img/lost_ruins_of_arnak/lizard_3.png) | Choose either a coin or a compass. |
+              | ![l4](/static/img/lost_ruins_of_arnak/lizard_4.png) | Pay the idol cost with 1 of your idols that is **not in a slot** on your player board. Return it to the box. |
