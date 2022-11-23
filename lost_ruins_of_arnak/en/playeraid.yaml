@@ -3,7 +3,7 @@ description: "Explore the lost ruins, battle guardians, and perform research"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 2.1
+version: 2.2
 bgg_id: 312484
 expansions:
     - Expedition Leaders
@@ -280,6 +280,180 @@ sections:
           based on whoever reached The Lost Temple 1st. If no one reached The
           Lost Temple, the player with the highest research score wins. If
           still tied, the players share the victory.
+    - name: Expedition Leaders
+      text: |
+          When playing with this expansion, you should choose a specific
+          character and take their components.
+      sections:
+        - name: The Captain
+          text: |
+              * You have 3 archaeologists -- take the gray meeple and use it
+                as you would one of your others.
+              * *Transmission* card: The card provides 1 of 3 free actions
+                when played.
+                  * If you have placed zero archaeologists, the card **cannot**
+                    be played for its effect.
+                  * If you have placed 1 archaeologist, take a coin.
+                  * If you have placed 2 archaeologists, take a coin or
+                    compass.
+                  * If you have placed 3 archaeologists, take any of the 3
+                    options.
+              * As your turn's main action, you can place a meeple on your
+                player board to activate the silver effect of an assistant
+                on the main board.
+                  * This can only be used **once** per round.
+                  * The archaeologist remains on the space for the remainder
+                    of the round.
+                  * This does **not** count as a placed archaeologist.
+                  * This archaeologist **cannot** be moved by any action or
+                    effect.
+                  * This archaeologist comes back to your free pool at the
+                    end of the round like normal.
+              * *Hidden Fear* card: If you exile this card, you gain a
+                standard fear card and a compass.
+        - name: The Falconer
+          text: |
+              * Take the eagle token and place it on the starting space on
+                your player board.
+                  * This will move 1 space at the beginning of the 1st round.
+              * *Animal Bond* card: You gain items based on the number of
+                guardians you have overcome.
+                  * 1 guardian overcome, take a coin.
+                  * 2 guardians overcome, take a coin or exile a card.
+                  * 3 guardians overcome, choose any option.
+              * *Your Eagle* can be advanced along its track in a number
+                of ways.
+                  * When you receive an eagle symbol as a reward, you may
+                    advance it 1 space on its track.
+                  * Note that if the eagle is on the last space, it
+                    cannot move any further.
+                  * The eagle advances 1 space at the beginning of every round,
+                    including the 1st round.
+                  * You may return the eagle to its starting space to use
+                    the effect of the space it had progressed to or any
+                    previous space.
+                      * The 1st 2 spaces are free actions.
+                      * The 3rd and 4th spaces are main actions.
+                          * These spaces allow you to activate any level 1
+                            or 2 site (respectively), occupied or not.
+              * *Tracking* card: When you draw 2, the guardian you did not
+                choose goes to the bottom of the stack.
+        - name: The Baroness
+          text: |
+              * **Setup**: Place a coin above rounds 2-5 above the card row as
+                depicted on your player board.
+              * Start the game with *Special Delivery* in your hand.  Shuffle
+                your deck and draw **4** more cards (up to 5 total).
+              * At the beginning of rounds 2-5, gain the coin for the round
+                from your player board.
+              * *Resourcefullness* card: Your options on the card depend on
+                how many item cards are currently in your play area.
+                  * If you have zero cards in your play area, gain a coin.
+                  * If you have 1 card in your play area, gain a coin or
+                    compass.
+                  * If you have 3+ cards in your play area, gain any of the
+                    3 options.
+              * *Special Delivery* card: This card is never in your deck.  It
+                is always returned to your hand every round, **even if
+                exiled**.
+                  * This card can be played when you buy/gain an item and
+                    instead of going to the bottom of your deck, it instead
+                    goes directly to your hand.
+              * Note: 2 of your cards have airplane travel symbols.
+        - name: The Professor
+          text: |
+              * **Setup**:
+                  * Keep the suitcase token near your player board.
+                  * Draw the top 3 artifacts from the deck and place them
+                    face up near your player board as your *archive*.
+                  * Place tokens for rounds 2-5 above the card row as
+                    depicted on your player board.
+              * *The Suitcase*: The suitcase icon with a token means that you
+                should place these items in your suitcase instead of your
+                general personal supply (like the setup for rounds 2-5 as
+                described under Setup above).
+                  * Tokens in your suitcase can **only** be used to buy
+                    artifacts. Compasses for the initial purchase, and tablets
+                    to pay the cost when playing an artifact later.
+                  * At the beginning of rounds 2-5, you should take the token
+                    from above the card row for the current round and add it
+                    to your suitcase.
+              * *Linguistics* card: Your options for this card depend on how
+                many artifacts are in your play area.
+                  * If you have zero, gain a coin.
+                  * If you have 1, gain a coin or add a compass to your
+                    suitcase.
+                  * If you 2+, choose any option.
+                  * Any artifact in your play area counts, including 1 you
+                    purchased this round or 1 spent for its travel value.
+                      * Artifacts in your *archive* do **not** count.
+              * *Archive*: When you buy an artifact, you may buy from the card
+                row *or* your archive.
+                  * The **1st time** your archive is empty, add a compass to
+                    your suitcase and refill your archive with 3 new cards
+                    from the top of the deck. **This can only be done once
+                    per game**.
+        - name: The Explorer
+          text: |
+              * **Setup**:
+                  * Use only 1 archaeologist. Return the other to the box.
+                  * Take the 3 snack tokens, place 2 on your board, and place
+                    the one with the compass above the card row at round 3
+                    as depicted on your player board.
+              * *Hike* and *Cartography* cards: These cards allow you to
+                pay for actions with a snack token.
+                  * If you use a snack token for these cards, place it on
+                    the card in your play area. **This snack token cannot
+                    be used to reuse your archaeologist** this round.
+                      * The token remains in your play area for the rest of
+                        the round, even if the card is exiled.
+              * *Scouting* card: When you draw 2, the site tile you did not
+                choose goes to the bottom of its stack.
+              * Reusing your archaeologist: You have 1 archaeologist, but it
+                can be used multiple times in a round
+                  the card in your play area. **This snack token cannot
+                  be used to reuse your archaeologist** this round.
+                    * The token remains in your play area for the rest of
+                      the round, even if the card is exiled.
+                  * The snack tokens are returned to your player board at the
+                    end of the round.
+              * Reusing your archaeologist: You have 1 archaeologist, but it
+                can be used multiple times in a round.
+                  * To reuse an archaeologist, take a snack token from your
+                    player board, pay the cost shown on it (if any), flip it
+                    over and place it on the site you are leaving.
+                  * **You can never move your archaeologist to a site with a
+                    snack token on it** (previously visited during that round).
+                    This also applies to spaces for 2 archaeologists.
+                      * Other players ignore your snack tokens (non-blocking
+                        for them).
+              * Take your 3rd snack token at the start of round 3.
+              * The snack tokens are returned to your player board at the
+                end of the round.
+              * You don't use a snack token for effects that return or relocate
+                your archaeologist.
+        - name: The Mystic
+          text: |
+              * Whenever you exile a fear card (by any means), you place it
+                in a special ritual pile on your player board.
+                  * **These will not give you negative points at the end of
+                    the game**, and they can be used for rituals.
+              * Rituals: Each of your starting cards can be exiled to perform
+                a ritual.
+                  * **Rituals count as your main action**.
+                  * Return 2 fear to gain a coin and a compass.
+                  * Return 3 fear to buy an artifact with a 3 compass discount.
+                  * Return 4 fear to overcome a guardian at a site you occupy.
+              * You have 5 idol slots.
+                  * If you use an idol slot showing a fear card, gain a fear
+                    to your play area.
+                      * If you use an idol effect to exile a card, you may
+                        exile this fear card.
+                  * As a reminder, you do **not** have to use your idol slots
+                    in any particular order.
+              * After you draw up to a full hand, **including at the start of
+                the game**, add a fear card from the fear deck to your hand.
+                  * If the fear deck is empty, ignore this.
     - name: Variants
       text: |
           If you are playing with the Expedition Leaders expansion, there are
