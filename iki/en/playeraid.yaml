@@ -67,7 +67,7 @@ sections:
           a card setup phase.
 
           **2 player differences**:
-          
+
           * There are 3 stalls in each Nagaya instead of 4.
               * The center stall can be activated from either of the adjacent
                 shops.
@@ -99,9 +99,10 @@ sections:
         - name: Phase B
           id: ph_b
           text: |
-              Starting with the rightmost space (1-4 movement) of the Izikama
-              track, players take turns taking income/hiring and then
-              moving their Oyakata and doing business.
+              Starting with the leftmost (*side note:  The first printing rules
+              stated "leftmost", but this was a typo*) space (1-4 movement)
+              of the Izikama track, players take turns taking income/hiring
+              and then moving their Oyakata and doing business.
 
               1. Income/hiring: each player has the choice of either taking
                  income **or** hiring a character.
