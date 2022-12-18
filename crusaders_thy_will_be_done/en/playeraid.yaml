@@ -1,0 +1,278 @@
+name: "Crusaders: Thy Will be Done"
+description: "Crusade and conquer"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+version: 1.0
+bgg_id: 170624
+expansions:
+sections:
+    - name: Setup
+      text: |
+          * Player setup: each player takes the following in their player
+            color.
+              * 1 player board
+              * 6 action wedges
+                  * 1 player randomly arranges their action wedges (starting
+                    side up) on their player board, and then all other players
+                    match that arrangement on their own player boards.
+              * 3 knight tokens
+                  * Place 2 of them in their slots on your player board.
+                  * The 3rd knight will be placed on the main board later.
+              * 16 building tokens
+                  * Place them on their corresponding spots on your player
+                    board.
+              * 12 action tokens
+                  * Place 2 action tokens on each wedge of your action wheel.
+                  * Note that your knight (below) may alter this.
+              * 5 troop tokens
+                  * Place these in the slots at the top of your board in
+                    ascending order (left to right).
+              * 2 random knight order tiles
+                  * Choose 1 place it in its slot at the top of your board.
+                  * Return the unchosen knight order to the box.
+                  * **Note**: The chosen knight may affect your player setup.
+          * General setup
+              * Place the game board on the table on the correct side for the
+                player count (3-4 or 2 players).
+              * Place 1 Prussian and 1 Slav token on the top spaces of their
+                matching strength tracks.
+                  * Shuffle the remaining tokens together and then randomly
+                    place them on all the spaces with flag icons.
+                  * Saracen tokens should be placed so that the building or
+                    troop icon on the token is face up.
+                  * Note that not all the enemy tokens will be used. Return
+                    any leftovers to the box.
+              * Shuffle the building bonus tiles face down and then randomly
+                place them face up on the empty spaces on the board matching
+                their shape.
+              * Randomly choose a start player.
+              * In **reverse turn order**, each player places their 3rd knight
+                onto 1 of the starting regions (knight icon) on the board.
+                  * **Only 1 player can be in each starting region**.
+              * Stack the enemy award tiles into 3 piles so that the 1st place
+                award for each enemy is on top of the stack.
+              * Place 20 influence worth of tokens plus 60 more per player in
+                a supply near the board.
+                  * Set the remaining influence tokens aside as they may be
+                    used at the end of the game.
+                  * **2 players**: 140 influence
+                  * **3 players**: 200 influence
+                  * **4 players**: 260 influence
+    - name: Gameplay
+      text: |
+          The game takes place over a series of rounds and ends when the last
+          influence token is taken, finishing the round such that everyone has
+          had an equal number of turns.
+
+          On your turn, you have a choice of 1 of 2 actions:
+
+          * [Resolve an Action](#resolve_action) **OR**
+          * [Upgrade a Wedge](#upgrade_wedge) **OR**
+          * [Skip Your Turn](#skip_turn)
+
+          After your turn, play proceeds to the left.
+      sections:
+        - name: Resolve an Action
+          id: resolve_action
+          text: |
+              1. Choose an action(s) on a wedge to resolve.  The number of
+                 tokens on the wedge determines the strength of the action.
+                  * **Note that other things on your player board can boost the
+                    strength of your actions**.
+              2. If you have upgraded the action wedge and it now displays 2
+                 actions, you split your tokens (strength) between the 2
+                 different actions.
+                  * You may assign all tokens to 1 action.
+                  * **You must assign at least 1 token to an action to resolve
+                    it**.
+                  * The 2 actions may be resolved in any order, but 1 must be
+                    fully complete before resolving the 2nd action.
+              3. After resolving the action(s), collect all the tokens from
+                 that wedge and distribute them, 1 at a time, clockwise around
+                 your wheel starting with the wedge directly after the 1 you
+                 are resolving.
+          sections:
+            - name: Travel Action
+              text: |
+                  This allows you to move your knights on the main board.
+
+                  1. Distribute your action points (from tokens and player
+                     bonuses) between your knights.
+                  2. Move your knights according to the following rules:
+                      * Leaving a region costs 1 movement point.
+                      * Leaving a region **with an enemy token**
+                        (Saracen/Prussian/Slav) costs 2 movement points.
+            - name: Muster Action
+              text: |
+                  This allows you to flip the troop tokens on the top right
+                  of your board. This will make your
+                  [crusade actions](#crusade) mroe powerful and gain you
+                  influence.
+
+                  1. Check the cost of the lowest level face down troop token.
+                     This is how many action tokens (plus bonuses) are
+                     necessary to muster this troop.
+                  2. Collect influence tokens equal to the troop's level.
+                  3. Flip the troop token to its mustered side.
+            - name: Crusade
+              text: |
+                  1. Choose 1 region containing 1 of your knights and an enemy
+                     token and determine the enemy's strength (see the
+                     enemy's strength track).
+                  2. You must spend action tokens + crusade bonuses >= the
+                     enemy's strength.
+                  3. When you defeat the Prussians or Slavs, collect influence
+                     tokens equal to their strength and advance the marker on
+                     the enemy's track 1 space. Take the token from the board
+                     and keep it for end game scoring.
+                  4. If you defeat a Saracen (always strength 6), note the
+                     building pictured on the token. You may then build a
+                     building of that type in the defeated Saracen's region or
+                     flip your next troop tile (as appropriate).
+                     If you do, collect influence based on the level of the
+                     building or troop (otherwise, collect 3 influence). Keep
+                     the enemy token in your play area for end game scoring.
+            - name: Influence
+              text: |
+                  Collect influence equal to the strength of the action + any
+                  influence bonuses.
+            - name: Build
+              text: |
+                  **Important**:
+
+                  * You cannot build in a region with an enemy token.
+                  * Each region can only contain 1 building.
+
+                  ---
+
+                  1. Choose a building and then pay action tokens + build
+                     bonuses to pay for the build action for that building.
+                     Note that some regions and building bonus tiles on the
+                     board show a build discount.
+                  2. Place the building on the square in a region occupied by
+                     1 of your knights.
+                  3. Collect influence equal to the level of the building
+                     you built. Note that some bonuses grant additional
+                     influence.
+
+                  Note that uncovered action bonuses on your board **are
+                  cumulative**.
+
+                  Unlocked knights are placed onto the same region as the
+                  castle that unlocked them.
+        - name: Upgrade a Wedge
+          id: upgrade_wedge
+          text: |
+              1. Set aside any tokens that are on the wedge you want to
+                 upgrade.
+              2. Flip the wedge to its upgraded side.
+              3. Return the tokens you set aside to the wedge.
+              4. (optional) You may choose to distribute the action tokens of
+                 any wedge like you normally would. Note that it does **not**
+                 have to be from the wedge you upgraded (do not take the
+                 action though).
+        - name: Skip Your Turn
+          id: skip_turn
+          text: |
+              If all of your wedges are upgraded and you don't have any useful
+              actions, you can just distribute the tokens from a wedge.
+    - name: End of Game and Scoring
+      text: |
+          When the last influence token is taken from the supply, finish
+          the round (equal turns) and the game ends. **Players may still
+          collect influence tokens after the supply is empty**. Use the tokens
+          set aside at the beginning of the game.
+
+          ## Scoring
+          * For each enemy, award 5 influence to the player that has the most
+            of that enemy's token. Award 2 influence to the player with
+            the 2nd most. **You must have at least 1 enemy token to qualify
+            for this**.
+              * If there is a tie, split the points between tied players
+                according to the back side of that enemy's majority tile.
+              * If there is a tie for 1st place, 2nd place is **not**
+                awarded.
+          * Count the end game influence for level 4 buildings.
+              * **Castle**: 4 influence for each set of different enemy tokens
+              * **Church**: 6 influence
+              * **Farm**: 1 influence for each of your knights on the game
+                board and each mustered troop at the top of your board.
+              * **Bank**: 4 influence for each of your level 4 buildings
+                on the game board **including this one**.
+
+          Whoever has the most influence wins.
+    - name: Variants
+      sections:
+        - name: Learning Game
+          text: |
+              During setup, instead of randomizing the order of the wedges,
+              ensure that all players setup their wedges accorging to the
+              diagram below. Players also do **not** sue the "Upgrade a
+              Wedge" action.
+
+              ![learning game](/static/img/crusaders_thy_will_be_done/learning_game.png)
+        - name: First Standard Game
+          text: |
+              During setup, instead of randomizing the order of the wedges,
+              ensure that all players setup their wedges accorging to the
+              diagram:
+
+              ![first game](/static/img/crusaders_thy_will_be_done/first_game.png)
+        - name: Unpredictable
+          text: |
+              During setup, each player randomizes the order of their own
+              action wheel.
+
+              Do note that this can result in slight imbalances between the
+              players. This can be played with or without knight order tiles.
+        - name: Knight's Tournament
+          text: |
+              Prior to setup, each player selects the knight order of their
+              choice, as well as the order of the action wedges. For this
+              variant, multiple players can use the same knight order tile.
+    - name: Knight Tiles
+      text: |
+          * **The Order of Alcántara**:
+              * (during setup) Place your 13th action token onto the wedge
+                of your choice.
+              * Upgrade 1 wedge of your choice.
+          * **The Order of Aviz**:
+              * (during setup) Place your 13th action token onto the wedge
+                of your choice.
+              * (during gameplay) When distributing action tokens, you may
+                start with the original wedge instead of the next wedge.
+          * **The Knights of Calatrava**:
+              * (during setup) Take only 6 action tokens, placing 1 on each
+                wedge.
+              * (during gameplay) add a +1 bonus when resolving any type of
+                action.
+          * **The Knights of Holy Sepulchre**:
+              * (during setup) Place 1 additional action token in each of your
+                travel wedges.
+              * (during gameplay) The value of your travel actions is
+                reduced by 1.
+          * **The Knights Hospitaller**:
+              * (during setup) Use only 11 action tokens.
+              * (during gameplay) You may skip 1 action wedge when distributing
+                action tokens each turn.
+          * **The Order of Montesa**:
+              * (during setup) In addition to your 1st knight, place the black
+                knight in your starting space.
+              * (during gameplay) Add a +1 bonus when resolving travel actions.
+          * **The Order of Santiago**:
+              * (during setup) Upgrade 1 action wedge of your choice.
+              * (during gameplay) When distributing action tokens, you may
+                begin with the original wedge instead of the next wedge.
+          * **The Knights of St. Lazarus**:
+              * (during setup) Use only 11 action tokens, but upgrade 3 wedges
+                of your choice.
+          * **The Knights Templar**:
+              * (during setup) Use only 10 action tokens.  Choose 2 wedges
+                to begin with only 1 action token (the rest have 2).
+              * (during gameplay) Once per turn, you may place 2 action tokens
+                onto the same action wedge when distributing tokens.
+          * **The Knights Teutonic**:
+              * (during gameplay) You may choose to distribute action tokens
+                either clockwise (normal) or counterclockwise each turn.
+                The entire distribution must go in 1 of the 2 directions.
