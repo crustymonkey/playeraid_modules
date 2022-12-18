@@ -2,7 +2,7 @@ name: "Crusaders: Thy Will be Done"
 description: "Crusade and conquer"
 text_type: markdown
 credits: "Jay Deiman"
-enabled: false
+enabled: true
 version: 1.0
 bgg_id: 170624
 expansions:
