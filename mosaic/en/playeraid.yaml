@@ -1,0 +1,438 @@
+name: "Mosaic"
+description: "Build your Mediterranean civilization"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+version: 1.0
+bgg_id: 329551
+expansions:
+sections:
+    - name: Setup
+      text: |
+          * **If playing with 2-3 players**:
+              * If playing with 3 players, Hispania will not be in play.
+              * If playing with 2 players, Hispania  and Gaul will not be
+                in play.
+              * Regions that are not in play do not have trade goods or
+                cache tokens on them.
+                  * Nothing may be built in these regions.
+                  * Military units cannot move into these regions.
+                  * They are not scored during empire scoring.
+          * Give each player a player board.
+          * Each player starts with 5 population.
+          * Place the main board on the table.
+          * Place the 10 "fish" tiles face up, 1 on each port hex (hexes
+            with boats on them).
+          * Randomize the cache tiles face down and then place 1 on each
+            hex with the maching symbol on the back of the tiles.
+          * Randomize the trade goods tiles face down and then place 1 on
+            each open hex on the board.
+              * After placing them, turn them all face up.
+              * Remove any "**X**" tiles from the game.
+          * Technologies:
+              * Separate the starting tech cards ("**S**" in the upper left
+                corner), shuffle them, and deal 5 to each player.
+              * Shuffle the remaining starting tech cards in with the
+                rest of the technologies deck.
+              * Split the deck into 3 equal-ish parts and shuffle the
+                scoring card for the deck into:
+                  * (4-6 players) the bottom 3rd of the deck
+                  * (2-3 players) the middle 3rd of the deck
+              * Draw the top 5 cards from the deck and place them in the
+                designated spaces.
+          * Shuffle the build deck and split it in half. Shuffle the scoring
+            card into the bottom half of the deck. Draw the top 5 cards
+            from the deck and place them in their designated spaces.
+          * Shuffle all of the population cards (except the scoring card)
+            and create a deck based on player count. Cut the newly sized
+            deck in half and shuffle the scoring card in theo the bottom
+            half. Draw the top 2 cards from the deck and place them in their
+            designated spaces.
+              * (2-3 players): 10 cards
+              * (4-5 players): 12 cards
+              * (6 players): 14 cards
+          * Shuffle all the tax & tariff cards (except the scoring card) and
+            create a deck based on player count. Cut the newly sized
+            deck in half and shuffle the scoring card in theo the bottom
+            half. Draw the top 2 cards from the deck and place them in their
+            designated spaces.
+              * (2-3 players): 10 cards
+              * (4-5 players): 12 cards
+              * (6 players): 14 cards
+          * Place the 9 wonder tiles, with their matching hex tokens, near
+            the board.
+          * Place the 9 golden age tiles near the board.
+          * Place the 6 government tiles on their space on the board.
+          * Shuffle the civilization achievement tiles and randomly select 9
+            of them, placing them near the game board.  The remaining are
+            returned to the box.
+          * Select a starting player and give them the starting player token.
+          * Starting with the player to the right of the starting player,
+            select 1 of the available leaders, then pass them to the right
+            until everyone has selected a leader.
+          * Draft the starting technology cards by selecting 1 card from the
+            5 dealt, then passing the rest to the left. Continue doing this
+            until all 5 cards have been drafted.
+          * Beginning with the start player and proceeding clockwise, each
+            player places 1 of their cities on a hex on the board.
+              * If there is a cache tile on that space, they receive
+                the benefit on the tile.
+              * If there is a trade good on the space, they add that to
+                their player board in the trade goods area.
+          * All players take the starting benefits for your selected leader.
+          * All players take the benefits from any starting tech cards they
+            are able to play.
+    - name: Gameplay
+      text: |
+          The game takes place over a number of rounds with each person
+          taking 1 of the actions outlined below until 1 of the following
+          2 things occur:
+
+          * The 3rd Empire Scoring Card is revealed **OR**
+          * 2 of 3 of the following tiles have all been taken by the players:
+              * Wonders
+              * Civilization Achievements
+              * Golden Ages
+
+          When either of these happens, perform [Empire
+          Scoring](#empire_score) and finish the round (equal turns). Then
+          play 1 final round.
+
+          **Important**: Money can be used in place of any currency (food,
+          ideas, or stone) at a 2:1 rate (e.g. 2 money instead of 1 stone).
+      sections:
+        - name: Work
+          text: |
+              * Produce 1 of the 3 non-money currencies in the game (ideas,
+                food, or stone).
+                  * Add your population to your production of that currency
+                    shown on your player board to determine the number of
+                    resources to take.
+        - name: Population
+          text: |
+              * Select 1 of the 2 population cards available and pay the
+                number of food shown on the card. Increase your population
+                on your player board by the amount shown on the card.
+              * Place the used population card out of play and draw a new
+                card to replace it.
+              * When all cards have been used up, all future population actions
+                gain 2 population costing 15 food.
+        - name: Build
+          text: |
+              * Select 1 of the 5 build cards, pay the cost, place the
+                card in front of you, and gain the benefits shown.
+                  * If this is a farm or manufactory town, there is no cost.
+                  * Note that the [pillars of civilization](#pillars) shown
+                    on the card are now usable.
+              * Replace the card with a new one from the deck.
+              * **Building a city**:
+                  * Cost: 4 stone and 2 population
+                  * Place a city on any available hex anywhere on the board.
+                      * Gain any trade good or cache on that space.
+                  * **Place 5 money from the supply into the holding area
+                    on the board**.
+              * **Building a port city**:
+                  * Cost: 4 stone and 2 population
+                  * Gain 10 money
+                  * Place a port on any available port hex (with a ship on it).
+                      * Take the fish tile and add 3 to your food production.
+                  * Regular cities/towns may **not** be built in port spaces.
+                  * These act just like any other city for scoring purposes.
+                  * **Place 10 money from the supply into the holding area
+                    on the board**.
+              * **Building a town**:
+                  * There are 2 kinds of towns: farm towns and manufactory
+                    towns.
+                  * Cost: none
+                  * Place the matching type of town on any available hex
+                    **next to 1 of your cities**.
+                      * Gain any trade good or cache on that space.
+                  * Gain the benefit shown on the town card.
+                  * You will score 5 points for each manufactory town if you
+                    have all the indicated trade goods on it.
+              * **Build project**:
+                  * Cost: 5 stone and 5 ideas
+                  * Score points at the end of the game based on what is shown
+                    on the card.
+
+              # Cache Tiles
+              Immediately take the benefit shown on the tile and return the
+              tile to the box.
+
+              # Trade Goods Tiles
+              Place your trade goods tile on your player board.  If you
+              end up with a duplicate, place it on top of the matching tile.
+
+              * When playing a tariff card, part of the calculation for money
+                earned is the number of unique trade goods you have.
+              * Stone and grain tiles have a "+2" on them.  Add +2 to your
+                production of stone or food when taken.
+              * Fish tiles have a "+3" on them.  Add +3 to your food production
+                when you take this tile.
+        - name: Wonder
+          text: |
+              * Cost: 20 stone and 5 food
+                  * The cost for every wonder after the first is increased
+                    by 5 stone and 5 food.  e.g. your 3rd wonder would cost
+                    30 stone and 15 food.
+              * Select 1 of the available wonder tiles and its matching hex
+                tile.
+              * Pay the cost and place the wonder tile in front of you --
+                there will be points for this at the end of the game.
+              * Place the hex token on any available hex in a region in
+                which you have at least 1 city.
+              * **Note that some wonders have placement restrictions**.  See
+                the wonders section of the [quick reference](#quick) for
+                details.
+                  * If those restrictions cannot be met, the wonder cannot
+                    be built.
+        - name: Technology
+          text: |
+              * Cost: 5 ideas
+              * Take 1 of the 5 available tech cards from the board and place
+                it in front of you.
+                  * If you already have the required [pillars of
+                    civilization](#pillars), you may place it face up
+                    and gain the benefits.
+                  * If you do not own the required prerequisites, you place
+                    the card face down in front of you.
+              * For any face down tech card in front of you:
+                  * This can be played (flipped over) on any of your turns.
+                    This does **not** count as your turn action.
+                  * You must have all the required [pillars of
+                    civilization](#pillars) to play the card.
+                  * "1x" means that this event occurs 1 time, when the card is
+                    played.
+                  * You are not able to use the [pillars of
+                    civilization](#pillars) on the card until the card
+                    is played.
+                  * Once played, the card remains face up.
+        - name: "Tax & Tariff"
+          text: |
+              * Select 1 of the 2 tax & tariff cards available and place it
+                in front of you.
+              * Gain the amount of money shown on the card + the money in the
+                holding area from city builds.
+              * These cards will increase unrest. Unrest will result in
+                negative points at the end of the game.
+                  * Unrest can be negated by abilities from wonders, leaders,
+                    and some tech cards.
+              * When all the cards from the deck have been used:
+                  * All future tax actions generate 2 money/population +
+                    government symbol + your tax production.
+                  * All future tariff actions generate 2 money/unique trade
+                    good + your cities + your tariff production.
+              * **Money can be used in place of any currency (food, stone,
+                ideas) at a 2:1 rate**.  e.g. you can spend 2 money instead of
+                1 stone.
+        - name: Military
+          text: |
+              A military action consists of recruiting new units and/or moving
+              units on the board.
+
+              * You can recruit new units by paying 5 money for each unit.
+                  * The units you recruit can be placed in any region
+                    containing 1 of your cities.
+                  * You may recruit **up to 2 new units in 1 turn**.
+              * You can move military units from 1 region to an adjacent
+                region at a cost of 1 money for each unit.
+                  * You can move any number of military units once per turn.
+              * Regions that are adjacent:
+                  * Italy and Numidia
+                  * Italy and Greece
+                  * Hispania and Numidia
+                  * Numidia and Egypt
+                  * **Greece is not adjacent to Egypt**
+              * Military units do not occupy hexes. They exist in a region,
+                but block nothing in that region.
+              * Each military unit counts as 1 influence during [empire
+                scoring](#empire_score).
+        - name: Government
+          text: |
+              * Select 1 of the available government tiles, pay the cost,
+                and place the tile in front of you.
+              * You must meet the requirements ([pillars of
+                civilization](#pillars)) for the government and spend ideas.
+                See the [quick reference](#quick) for more information on
+                the different governments including costs and requirements.
+              * You may only have 1 government at a time. If you purchase a
+                new government, return the previous tile to the board.
+              * If you own a governement, you may flip it from the "arrow
+                side" (upper right of the tile) to clear one set of offer
+                cards (Build, Population, Technology, or Tax & Tariff) and
+                replace them from the appropriate deck.
+                  * The cleared cards are placed at the bottom of their
+                    respective deck
+                  * This can be used once per game per government tile.
+    - name: "Golden Age & Civ Achievements"
+      text: |
+          On your turn, if you meet the requirements for one of these tiles,
+          you may claim the tile and place it in front of you.
+
+          * This does **not** count as your action for your turn.
+          * You may claim any number of Golden Age and/or Civ. Achievements
+            that you qualify for on your turn.
+    - name: Empire Scoring
+      id: empire_score
+      text: |
+          When an Empire Scoring Card is revealed from 1 of the decks, the
+          player who revealed it finishes their action, then scoring takes
+          place.
+
+          1. Count the influence in each region:
+              * Each wonder or city you own: 2 influence.
+              * Each town and military unit you own: 1 influence.
+              * Note any bonuses from technologies that can change this.
+          2. The player with most influence in the region scores:
+              * 3 points **+**
+              * 1 point per city and wonder in the region, **regardless of who
+                owns them**
+              * *In case of a tie*, all tied players score the above points.
+          3. The player with the 2nd most influence in the region scores 2
+             points.
+              * *In case of a tie*, the tied players score zero points.
+    - name: Pillars of Civilization
+      id: pillars
+      text: |
+          | Symbol | Pillar |
+          | ------ | ------ |
+          | ![science](/static/img/mosaic/science.png) | Science |
+          | ![economy](/static/img/mosaic/economy.png) | Economy |
+          | ![food](/static/img/mosaic/food.png) | Food Production |
+          | ![pop](/static/img/mosaic/population.png) | Population / Health |
+          | ![building](/static/img/mosaic/building.png) | Building |
+          | ![culture](/static/img/mosaic/culture.png) | Culture |
+          | ![govt](/static/img/mosaic/govt.png) | Government |
+          | ![military](/static/img/mosaic/military.png) | Military / Empire |
+          | ![urban](/static/img/mosaic/urban.png) | Urbanization |
+    - name: Game End and Scoring
+      text: |
+          The game takes place over a number of rounds until 1 of the following
+          2 things occur:
+
+          * The 3rd Empire Scoring Card is revealed **OR**
+          * 2 of 3 of the following tiles have all been taken by the players:
+              * Wonders
+              * Civilization Achievements
+              * Golden Ages
+
+          When either of these happens, perform [Empire
+          Scoring](#empire_score) and finish the round (equal turns). Then
+          play 1 final round.
+
+          ## Scoring
+          Total up the following.
+
+          * All victory points accumulated during the game.
+          * Every city you have on the board: 2 VP
+          * Every town you have on the board: 1 VP
+          * VP shown on wonder tiles
+          * VP shown on golden age tiles
+          * VP shown on civilization achievement tiles
+          * VP equal to the number of [pillars of civilization](#pillars)
+            symbols that you own of the type show on each project card
+          * VP as shown on the technology cards you have played with
+            the ![qvp](/static/img/mosaic/qvp.png) icon on the bottom left
+          * Each manufactory town card has 3 trade goods shown on the bottom
+            of the card. If you have all 3 of those trade goods on your
+            player board, score 5 VP.
+              * If you have 2 identical manufactory towns, **they will both
+                score**.
+          * Unrest: **[Subtract]!red!** the number of net unrest from your
+            score
+              * This is generally gained from tax and tariff cards.
+              * Some wonders, leaders, and tech cards will cancel out unrest.
+
+          The player with the most points wins. If there is a tie, the tied
+          player with the most wonders wins. If there is still a tie, the
+          player with the most money is the winner.
+    - name: Quick Reference
+      id: quick
+      text: |
+          This is all of the information found on the included reference card.
+
+          ## Costs
+
+          | Action | Cost |
+          | ------ | ---- |
+          | **Gain population** | Food as shown on the population card |
+          | **Build city / port city** | 4 stone + 2 population |
+          | **Build farm / manuctory town** | Free |
+          | **Build project** | 5 stone + 5 ideas |
+          | **Wonder** | 20 stone + 5 food -- Each increases by 5 for each additional wonder (i.e. your 3rd wonder would cost 30 stone and 15 food) |
+          | **Technology** | 5 ideas |
+          | **Military unit** | 5 money |
+          | **Move military unit** | 1 money/unit |
+          | **Government** | As shown on the gov't tile |
+
+          ## Civilization Achievements
+
+          | Achievement | Benefit | End game VP |
+          | ----------- | ------- | ----------- |
+          | **Populous** | 12 population | 6 VP |
+          | **Great Builder** | 5 projects and/or wonders total | 6 VP |
+          | **Seafaring** | 3 port cities | 6 VP |
+          | **Imperial** | (2-3 players) control 4 regions; (4+ players) control 3 regions | 6 VP |
+          | **Scholarly** | 15 idea production | 6 VP |
+          | **Urban** | 5 cities | 6 VP |
+          | **Militaristic** | 6 military units | 6 VP |
+          | **Well-governed** | 12 tax production | 6 VP |
+          | **Merchant** | 7 unique trade goods | 6 VP |
+          | **Wealthy** | 60 money | 6 VP |
+          | **Diverse** | All 9 unique pillar symbols | 6 VP |
+          | **Farming** | 15 food production | 6 VP |
+          | **Masonic** | 15 stone production | 6 VP |
+          | **Trading** | 12 tariff production | 6 VP |
+          | **Scientific** | 15 tech cards | 6 VP |
+
+          ## Golden Ages
+
+          | Golden age | Requirement | Benefit |
+          | ---------- | ----------- | ------- |
+          | **Medicine** | ![pop](/static/img/mosaic/population.png)x6 Population | Gain 2 production & 6 VP |
+          | **Architechture** | ![building](/static/img/mosaic/building.png)x6 Build | +3 stone production & 6 VP |
+          | **Art** | ![culture](/static/img/mosaic/culture.png)x6 Culture | Gain 10 of any currency & 6 VP |
+          | **Kings** | ![govt](/static/img/mosaic/govt.png)x6 Government | +3 tax production & 6 VP |
+          | **Public Games** | ![food](/static/img/mosaic/food.png)x6 Food | +3 food production & 6 VP |
+          | **City States** | ![urban](/static/img/mosaic/urban.png)x6 Urbanization | 1 free city & 6 VP |
+          | **Science** | ![science](/static/img/mosaic/science.png)x6 Science | +3 idea production & 6 VP |
+          | **Trade** | ![economy](/static/img/mosaic/economy.png)x6 Economic | +3 tariff production & 6 VP |
+          | **Heroes** | ![military](/static/img/mosaic/military.png)x6 Military | Gain 2 military units (inf or cav) & 6 VP |
+
+          ## Wonders
+
+          | Wonder | Benefit | Other notes |
+          | ------ | ------- | ----------- |
+          | **Colosseum of Rome** | 4 VP/region where you have a majority of influence | [-4 Unrest]!red! |
+          | **Hanging Gardens** | 3 VP/adjacent city | [-3 Unrest]!red! |
+          | **Stonehenge** | 1 VP/2 population | |
+          | **Colossus of Rhodes** | 2 VP/city in that region | Must be built in a port hex |
+          | **Great Library** | 5 VP | Gain 2 identical [pillars of civilization](#pillars) symbols of your choice |
+          | **Lighthouse of Alexandria** | 1 VP/unique trade good tile | Must be built in a port hex |
+          | **Temple of Artemis** | 1 VP/military unit in that region | All players' military units |
+          | **Great Pyramid** | 12 VP | May only be built in a region with 3 or more cities |
+          | **Sphinx** | 4 VP/wonder in that region | |
+
+          ## Governments
+
+          | Government Type | Required | Cost | Benefit |
+          | --------------- | -------- | ---- | ------- |
+          | City State | ![govt](/static/img/mosaic/govt.png)x2 + ![urban](/static/img/mosaic/urban.png) | 15 ideas | During [empire scoring](#empire_score), you will score 1 VP/city that you own in a single region of your choice |
+          | Monarchy | ![govt](/static/img/mosaic/govt.png)x2 + ![food](/static/img/mosaic/food.png) | 15 ideas | As long as you are a monarchy, you gain +5 food and stone production. During [empire scoring](#empire_score), score 3 VP/wonder that you own |
+          | Oligarchy | ![govt](/static/img/mosaic/govt.png)x2 + ![economy](/static/img/mosaic/economy.png) | 15 ideas | As long as you are an oligarchy, you gain +5 tax and tariff production. During [empire scoring](#empire_score), score (2-3 players) 1 VP/golden age and civ. achievement tile; (4+ players) 2 VP/golden age and civ. achievement tile |
+          | Republic | ![govt](/static/img/mosaic/govt.png)x3 + ![culture](/static/img/mosaic/culture.png) | 20 ideas | Look at the top card in any deck before taking your action. During [empire scoring](#empire_score), 1 VP/2 population |
+          | Theocracy | ![govt](/static/img/mosaic/govt.png)x2 + ![military](/static/img/mosaic/military.png) | 15 ideas | During [empire scoring](#empire_score), 2 VP for each region that contains at least one of your cities |
+          | Tyranny | ![military](/static/img/mosaic/military.png)x2 | 5 ideas | During [empire scoring](#empire_score), (2-3 players) 2 VP/region you control; (4+ players) 3 VP/region you control |
+
+          ## Leaders
+          | Leader | Benefit | Starting Bonuses |
+          | ------ | ------- | ---------------- |
+          | **Magistrate** | +2 food, stone, and tax production; convert 1 population into 20 of any currency (on your turn)(1x) | Start: 5 food, 10 stone, +1 population |
+          | **Engineer** | +5 stone production, +3 idea production; gain +1 stone production each time you build a city, port, or manufactory town | Start: 10 stone, 10 money |
+          | **General** | +10 tax production; may recruit up to 3 military units rather than 2; eliminate 1 military unit in a single region containing your infantry or cavalry before each empire scoring | Start: 20 money, 1 infantry unit, +1 population |
+          | **Scribe** | +5 to any single production bonus; 1 extra action on your 1st turn and 2 extra actions at the end of the game | Start: 10 food, 5 ideas |
+          | **Artist** | +5 idea production; -3 unrest; +10 money whenever a wonder is built by **any** player; gain +1 VP/![culture](/static/img/mosaic/culture.png) at the end of the game | Start: 15 money, 5 ideas |
+          | **Priestess** | +6 tax production & +3 food production; -3 unrest; may change ownership of a city owned by an opponent who has 4 or more cities (on your turn)(1x) | Start: 15 money, 5 food |
+          | **Philosopher** | 8 idea production; +3 any other single production | Start: 1 free random tech card from the deck, 10 ideas, 10 money |
+          | **Farmer** | +5 food production; add 1 population to each population card you take | Start: 10 food, 10 money, 1 farm town |
+          | **Merchant** | +5 tariff production; gain 2 money/unique trade good tile when playing a tax card | Start: 30 money, 1 manufactory town |
