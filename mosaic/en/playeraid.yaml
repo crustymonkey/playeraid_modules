@@ -3,7 +3,7 @@ description: "Build your Mediterranean civilization"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.0
+version: 1.1
 bgg_id: 329551
 expansions:
 sections:
@@ -247,6 +247,8 @@ sections:
                 but block nothing in that region.
               * Each military unit counts as 1 influence during [empire
                 scoring](#empire_score).
+
+              [![map](/static/img/mosaic/map.png)](/static/img/mosaic/map_lg.png)
         - name: Government
           text: |
               * Select 1 of the available government tiles, pay the cost,
