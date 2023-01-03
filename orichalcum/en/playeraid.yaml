@@ -1,0 +1,248 @@
+name: "Orichalcum"
+description: "Exploit your island"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+version: 1.0
+bgg_id: 355888
+expansions:
+sections:
+    - name: Setup
+      text: |
+          * Each player:
+              * Takes a random island board. They can place it on the
+                side of their choice. Not that the 2 "*" side will be
+                more difficult than the 1 "*" side.
+              * Takes a metropolis tile.
+              * Takes 1 orichalcum and 1 hoplite.
+          * Place the actions board in the center of the table.
+          * Shuffle the terrain tiles by their size and make piles near the
+            central board.
+          * Shuffle the action cards into a face down pile near the board.
+          * Reveal cards from the action deck to fill the the slots
+            on the action board based on player count (5 with 2-3 players, 6
+            with 4 players).
+              * Place a matching sized terrain tile on each action card.
+                  * For each volcano symbol, draw a creature from the bag and
+                    place it on the volcano.
+          * Place the construction board near the action board.
+              * Randomly select 4 buildings from the building bag to fill
+                the slots on the construction board.
+                  * Put 1 orichalcum on each mine.
+                  * Put 1 hoplite on each training camp.
+              * Place the victory tokens and temple tiles in their slots on
+                the board.
+          * Display the 4 titan tiles, active side up, near the action board.
+          * Create a supply of hoplites and orichalcum near the board.
+          * Randomly choose a 1st player and give them the initiative pawn --
+            the player to their right takes 1 hoplite.
+    - name: Gameplay
+      text: |
+          The game is played over a number of rounds and ends when a player
+          has 5 victory points **and** their island is clear of any creatures.
+
+          Turns are divided into 5 steps, taken in order.
+
+          **At the start of your 1st turn**: Place your metropolis tile on
+          1 of the ports on your island board, taking the rewards you are
+          covering up.
+      sections:
+        - name: "1. Select an Action Card (mandatory)"
+          text: |
+              * Choose 1 available action card from the board, taking the
+                card, terrain tile, and any creature on it.
+                  * If a card is taken from 1 of the 4 right-most slots,
+                    pay the additional cost in hoplite(s) above the card.
+              * Slide all remaining cards to left to fill the open slot, if
+                necessary.
+        - name: "2. Place the Terrain Tile (mandatory)"
+          text: |
+              * Place your newly acquired terrain tile onto your island
+                following these rules:
+                  * The terrain tile must fit entirely into the island
+                    (can't be "hanging off").
+                  * It cannot be laid on top of any already occupied circle.
+                  * It must be adjacent to at least 1 other terrain tile (or
+                    your metropolis).
+                  * If the tile cannot be placed according to the above
+                    rules, the tile is placed back on the bottom of the
+                    appropriate tile stack.
+              * If there was a creature on a volcano space on the tile,
+                the creature is placed with the tile such that it is still
+                on the volcano space.
+              * If a port space is covered by the terrain tile, take the
+                depicted reward.
+              * **Taking a Titan**: If you have created a connected area of
+                3 circles of the same type, take the matching Titan tile,
+                flip it to its active side if necessary, and place it in the
+                left-most VP slot in their island board. (This is 1 VP)
+                  * If another player has the titan, take it from them.
+                  * If a player creates a 3 size area or simply expands an
+                    existing area, they take the titan tile (if they don't
+                    already have it).
+                      * **IMPORTANT**: The Titan does **not** stay with
+                        the player with the largest area.
+                  * Each Titan has an ability that can be used once, at
+                    which point the tile should be flipped to its inactive
+                    side.
+                      * The Titan is still worth 1 VP when inactive.
+                  * **A player can only have 1 Titan tile at any time** (by
+                    default).
+                      * If a player gets a new Titan, them **must** replace
+                        the previous Titan tile with the new one. The
+                        previous Titan is placed in the Titan area face up.
+        - name: "3. Resolve the Action Card (optional)"
+          text: |
+              The player may perform the action on the action card.
+          sections:
+            - name: Produce Orichalcum
+              id: prod_orich
+              text: |
+                  * The player produces 1 orichalcum for each mine on their
+                    island.
+                  * Note that the Titan Hyperion can be used to double the
+                    income.
+            - name: Recruit Hoplites
+              id: recruit
+              text: |
+                  * The player recruits 1 hoplite for each of the training
+                    camps on their island.
+                  * Note that the Titan Themis can be used to double the
+                    income.
+            - name: Capture Creatures
+              id: capture
+              text: |
+                  * You can fight creatures, 1 after another, in the order
+                    of your choosing. Follow these steps for each creature:
+                      1. Target a creature.
+                      2. Choose how many hoplites to add to the attack (0-3 can
+                         be used in each fight).
+                          * You cannot exceed 3 hoplites for any battle.
+                            e.g. if there were 2 hoplites already on the
+                            creature, you could only add 1 more.
+                      3. Take 1 combat die + 1 additional die for each hoplite
+                         in the battle. (max of 4)
+                      4. Roll the combat dice.
+                          * If the die total >= the creature strength **OR**
+                            a skull was rolled, you defeat the creature.
+                              * Return all hoplites used in the battle to the
+                                general supply.
+                              * Place the defeated creature in your supply
+                                and take the reward shown on the creature.
+                              * You may now battle an additional creature if
+                                you so choose.
+                          * If you failed to defeat the creature, leave the
+                            hoplites there for when you fight the creature
+                            again.
+                              * Your creature action ends. You may **not**
+                                battle another creature this turn.
+                  * Note that the Titan Chronos can be used to automatically
+                    win 1 fight.
+            - name: Construct
+              id: construct
+              text: |
+                  You may construct 1 item of your choice from 3 available
+                  options.
+
+                  General rules:
+
+                  * **You cannot construct anything on a tile adjacent to
+                    a creature on your island**.
+                  * When you cover a terrain, it no longer counts toward
+                    the requirements for a titan, but you do not lose any
+                    titan you currently have.
+                  * Buildings must be constructed over existing terrain.
+                    They cannot be constructed on unfilled portions of the
+                    map.
+                  * Only 1 building can be constructed over a terrain. i.e.
+                    you cannot stack buildings.
+                  * Note that the Titan Theia allows you to perform 1
+                    additional construction of your choice.
+
+                  ## Building
+                  * The player picks 1 of the buildings available on the
+                    construction board and constructs on their island.
+                      * The building **must** be placed on the matching
+                        terrain.
+                      * Volcanos are wild, so any building can be placed on
+                        them.
+                  * If you construct a mine or training camp, take the
+                    orichalcum/hoplite on the tile.
+
+                  ## Temple
+                  * A temple is constructed on 4 adjacent **different**
+                    terrains.
+                      * Volcanos are wild, so they can be used as anything
+                        in fulfilling the 4 different terrain requirement.
+                  * After constructing a temple, take a victory point tile,
+                    flip it to its temple side and place it in the left-most
+                    available slot at the top of your island board.
+
+                  ## Orichalcum Medallion
+                  * You may spend 5 orichalcum to "build" a VP. Take a VP
+                    tile and place it in the left-most available slot at
+                    the top of your island board.
+        - name: "4. Perform an Additional Action (optional)"
+          text: |
+              You may purchase 1, **and only 1**, additional action. The
+              costs and available actions are depicted on your island board.
+
+              * You may perform the same action you took in phase 3.
+              * You may even take the action you chose not to take in phase 3.
+
+              Your choices:
+
+              * Spend 2 hoplites to do 1 of the following:
+                  * [Capture Creatures](#capture)
+                  * [Construct](#construct)
+                  * [Produce Orichalcum](#prod_orich)
+              * Spend 2 orichalcum to do 1 of the following:
+                  * [Capture Creatures](#capture)
+                  * [Construct](#construct)
+                  * [Recruit Hoplites](#recruit)
+              * Spend 2 creatures (return them to the creature bag) to do
+                1 of the following:
+                  * [Capture Creatures](#capture)
+                  * [Construct](#construct)
+                  * [Produce Orichalcum](#prod_orich)
+                  * [Recruit Hoplites](#recruit)
+        - name: "5. Discard an Action Card (2 players only)"
+          text: |
+              **Only do this in a 2 player game!**
+
+              * The active player must choose 1 card from the action board to
+                discard.
+                  * The terrain tile is placed back on the bottom of its
+                    matching stack.
+                  * Any creature is put back in the creature bag.
+        - name: End of Round
+          text: |
+              Once each player has taken a turn, the round ends.  Do the
+              following:
+
+              1. Replenish the action board by placing an action card on any
+                 open spaces to refill the board (based on player count).
+                  * If the draw pile is empty, shuffle the discard pile to
+                    make a new draw pile.
+                  * Add the matching terrain tiles to each card.
+                  * Place a random creature from the bag on each volcano.
+              2. Replenish the construction board, replacing any buildings
+                 that were constructed with a new building from the
+                 building bag.
+                  * Remember to place 1 orichalcum on mines and 1 hoplite
+                    on training camps.
+              3. Assign the initiative token to the player with the most
+                 hoplites. They will go 1st next round.
+                  * If players are tied, the player that currently has
+                    the initiative token decides who receives it for next
+                    round.
+                  * The player to the right of the player with the initiative
+                    token takes 1 hoplite.
+              4. Start a new round.
+    - name: End of Game
+      text: |
+          The game ends immediately when a player meets the following 2
+          requirements:
+
+          * They have at least 5 victory points.
+          * There is no creature left on their island.
