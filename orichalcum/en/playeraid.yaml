@@ -3,7 +3,7 @@ description: "Exploit your island"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.0
+version: 1.1
 bgg_id: 355888
 expansions:
 sections:
@@ -183,6 +183,7 @@ sections:
                     tile and place it in the left-most available slot at
                     the top of your island board.
         - name: "4. Perform an Additional Action (optional)"
+          id: extra_action
           text: |
               You may purchase 1, **and only 1**, additional action. The
               costs and available actions are depicted on your island board.
@@ -246,3 +247,51 @@ sections:
 
           * They have at least 5 victory points.
           * There is no creature left on their island.
+    - name: Reference
+      sections:
+        - name: Buildings
+          text: |
+              | Building | Description |
+              | -------- | ----------- |
+              | ![camp](/static/img/orichalcum/camp.png) | **Training Camp**: Each 1 comes with a hoplite and allows for recruiting 1 hoplite during the recruit hoplite action. |
+              | ![mine](/static/img/orichalcum/mine.png) | **Mine**: Each 1 comes with an orichalcum and allows for producing 1 orichalcum during the produce orichalcum action. |
+              | ![hospital](/static/img/orichalcum/hospital.png) | **Hospital**: Whenever you capture a creature, 1 hoplite can be placed on the hospital. At the end of the capture action (all creatures fought), you can take back all hoplites on the hospital. |
+              | ![oratory](/static/img/orichalcum/oratory.png) | **Oratory**: Each Oratory allows your to keep 1 additional Titan. |
+              | ![siege](/static/img/orichalcum/siege.png) | **Siege Engines**: Whenever you fight a creature, you treat the depicted die value as a skull. |
+              | ![arch](/static/img/orichalcum/arch.png) | **Arch**: Whenever you capture a creature, also take 1 orichalcum in addition to the creature's loot. |
+              | ![protection](/static/img/orichalcum/protection.png) | **Protection Crystal**: The owner of this building can construct buildings or temples adjacent to creatures. However, this building cannot be constructed adjacent to a creature. |
+              | ![architect](/static/img/orichalcum/architect.png) | **Architect practice**: You can have 2 identical terrains among the 4 upon which you are constructing a temple. Volcanoes are still wild. |
+              | ![forge](/static/img/orichalcum/forge.png) | **Forge**: At the end of their turn, the forge owner is allowed to perform a 2nd [extra action](#extra_action), but they still must pay the cost. |
+              | ![statue](/static/img/orichalcum/statues.png) | **Statues**: The cost for purchasing an [additional action](#extra_action) is reduced by 1 when spending the depicted resource. |
+        - name: Creatures
+          text: |
+              | Creature | Description |
+              | -------- | ----------- |
+              | ![hellhound](/static/img/orichalcum/hellhound.png) | **Hellhound**: The player capturing this creature earns 1 orichalcum. |
+              | ![minotaur](/static/img/orichalcum/minotaur.png) | **Minotaur**: Randomly draw 1 building from the bag and construct it on any free terrain of your choice. It cannot be constructed next to a creature.  If a mine/training camp is constructed, immediately take an orichalcum/hoplite. If you decide not to construct the building, put it back in the bag. |
+              | ![gorgon](/static/img/orichalcum/gorgon.png) | **Gorgon**: Immediately earn 2 orichalcum. |
+              | ![cyclops](/static/img/orichalcum/cyclops.png) | **Cyclops**: Immediately earn 3 orichalcum. |
+              | ![hydra](/static/img/orichalcum/hydra.png) | **Hydra**: Immediately take the depicted Titan no matter where it is. It should be placed in the left-most slot on its active side. |
+        - name: Other Icons
+          text: |
+              | Icon | Description |
+              | -------- | ----------- |
+              | ![hoplite](/static/img/orichalcum/hoplite.png) | 1 hoplite |
+              | ![disc_hoplite](/static/img/orichalcum/disc_hop.png) | Discard 1 hoplite |
+              | ![heal_hoplite](/static/img/orichalcum/heal_hop.png) | Heal 1 hoplite |
+              | ![recruit_hoplite](/static/img/orichalcum/recruit_hop.png) | Recruit 1 hoplite |
+              | ![orichalcum](/static/img/orichalcum/orich.png) | 1 orichalcum |
+              | ![disc_orichalcum](/static/img/orichalcum/disc_orich.png) | Discard 1 orichalcum |
+              | ![prod_orichalcum](/static/img/orichalcum/prod_orich.png) | Produce 1 orichalcum |
+              | ![creature](/static/img/orichalcum/creature.png) | A creature |
+              | ![cap_creature](/static/img/orichalcum/cap_creat.png) | Automatically capture a creature |
+              | ![captured](/static/img/orichalcum/captured.png) | A captured creature |
+              | ![disc_cap](/static/img/orichalcum/disc_cap.png) | Discard 1 captured creature |
+              | ![add_titan](/static/img/orichalcum/add_titan.png) | 1 additional Titan |
+              | ![titan](/static/img/orichalcum/titan.png) | That Titan |
+              | ![building](/static/img/orichalcum/building.png) | A building |
+              | ![act_cap](/static/img/orichalcum/action_cap.png) | Action: Capture creatures |
+              | ![act_construct](/static/img/orichalcum/action_cons.png) | Action: Construct |
+              | ![act_prod_orich](/static/img/orichalcum/action_prod_orich.png) | Action: Produce orichalcum |
+              | ![act_recruit](/static/img/orichalcum/action_recruit.png) | Action: Recruit hoplites |
+              | ![add_action](/static/img/orichalcum/add_action.png) | Perform an additional action |
