@@ -1,0 +1,492 @@
+name: "Woodcraft"
+description: "Craft things out of wood"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+version: 1.0
+bgg_id: 355093
+expansions:
+sections:
+    - name: Setup
+      text: |
+          * Place the action wheel board on the table.
+          * Place the 7 action tiles in one quadrant of the wheel board.
+          * Lay the arc tile over the rewards icons in the starting quadrant
+            of the wheel board.
+          * Set the circular saw so that the arrow points to the far end of
+            the next quadrant of the wheel board..
+          * Take 2 dice of each color, roll them, and place them on the 6
+            spaces of the wheel board.
+          * Place the income board beside the action wheel board, placing it
+            on the correct side based on player count.
+          * Place the round counter on space 1 of the track at the top of
+            the income board.
+          * Each player places 1 counter on the hazelnut, blueberry, and
+            reputation tracks.
+          * Place 1 reputation track tile on the 2 paler spaces of the
+            reputation track.
+              * Note that there are different sides based on player count.
+          * Create a supply of blueberry tokens, dice, scrapwood, glue,
+            saw blades, lanterns, tools, and tile-reuse tokens near the
+            board.
+              * Items in the supply are **not** meant to be limited.
+          * Place the scoreboard near the action wheel board.
+          * Each player places their scoring counter (round 1) on the
+            starting space of the scoring board.
+          * Shuffle the following decks:
+              * **Early game orders**: Deal 4 face up along the top of the
+                score board and place the deck at the end of the row.
+              * **Late game orders**: Place this deck next to the early game
+                orders for later use.
+              * **Hazelnut orders**: This is used during player setup (below).
+              * **Early game helpers**: Deal 4 face up along the bottom of
+                the score board and place the deck at the end of the row.
+              * **Late game helpers**: Place the deck near the early game
+                deck.
+              * **Public contracts**: Deal these out face up, 1 more than
+                the number of players and return the rest to the box.
+          * Player setup:
+              * Take a player board and counters in your color.
+              * Place 1 counter on the starting space of your board's
+                marketing track.
+              * Take 1 die of each color.
+                  * Set the [brown die]!brown! to 1.
+                  * Set the [yellow die]!#D9A51A! to 2.
+                  * Set the [green die]!green! to 3.
+                  * Place them on 3 of the spaces in the upper left corner
+                    of your board.
+              * Take 1 lantern in a 2-3 player game, and 2 in a 4 player game.
+              * Take 12 blueberries.
+              * Take 1 sawing tile and place it face up in the 1st sawing space.
+              * Take 1 splicing tile
+                ![start_spl_1](/static/img/woodcraft/start_spl_1.png) and
+                place it face up in the top splicing space on the right side
+                of your workshop.
+              * You also take and place them near your player board:
+                  * 1 yellow pot
+                  * 1 brown pot
+                  * 2 more sawing tiles
+                  * 1 splicing tile with
+                    ![start_spl_2](/static/img/woodcraft/start_spl_2.png)
+                  * 1 splicing tile with
+                    ![start_spl_4](/static/img/woodcraft/start_spl_4.png)
+                  * 1 gluing tile
+              * Draw 3 early game helper cards, keep 1, and discard the others.
+              * Draw 5 early game order cards, keep 2, and discard the rest.
+              * Draw 2 hazelnut order cards and keep both.
+              * From the 4 order cards, choose 1 and place it beside your board.
+                  * It should go in the row matching the icon in the card's
+                    upper left corner.
+          * Choose a starting player and give them the starting player card.
+    - name: Gameplay
+      text: |
+          The game is played in a number of rounds, with each turn consisting
+          of the following:
+
+          1. Grow your trees (if you have any). Note that you won't do this
+             on your 1st turn.
+          2. Choose an action from the action wheel and execute it. You can
+             also buy a bonus action and perform free actions.  **These can
+             be done in any order**.
+          3. You can buy points.
+
+          **You have the option to buy 1 bonus action on your turn**. Pay 3
+          lanterns and choose an action tile to perform the action, **but
+          do not move the tile** and do not collect any bonuses for it
+          (outer edge or central saw blade).
+      sections:
+        - name: The Action Wheel
+          text: |
+              * **You will always choose and move 1 action tile, regardless
+                of whether you use the action printed on it**.
+              * **Note that any tile on the board can be chosen** unless it
+                cannot be advanced (see the "lap" rule below).
+              * On each turn, you choose 1 action tile and move it to from
+                its current quadrant to the 1st open space (counter-clockwise
+                order) in the next quadrant (in clockwise order).
+                  * **NOTE**: If there is a "gap" in the action tiles in the
+                    next quadrant, do **not** fill that in. Always place your
+                    action tile counter-clockwise to the action tile furthest
+                    counter-clockwise in that quadrant.
+              * If you choose an action tile with a bonus beneath it, gain that
+                bonus.
+                  * Note that the bonuses in the starting quadrant are covered
+                    by the arc tile. **Once all action tiles have "left" the
+                    starting quadrant, remove the arc tile**.
+              * If you choose a tile in a quadrant showing a bonus(es) in the
+                central saw blade, take that bonus.
+              * If you move an action tile past the black arrow, rotate the
+                saw blade 1 quadrant clockwise.
+              * **Action tiles are not allowed to enter a quadrant that is 1
+                lap ahead**.
+                  * Another way of putting this:  The action tile cannot cross
+                    the black arrow into a quadrant that is not empty.
+              * Instead of taking the action printed on the tile, you may:
+                  * Gain 3 blueberries
+                  * Pay 1 lantern to perform the action on any other tile
+                    (instead of the chosen tile).
+        - name: Actions
+          text: |
+              The following are all the available actions on the action
+              wheel.
+          sections:
+            - name: "Buy Lumber"
+              id: buy_lumber
+              text: |
+                  ![buy_lumber](/static/img/woodcraft/a_buy_lumber.png)
+
+                  * You may buy 1 or 2 dice from the corner of the action wheel
+                    board.
+                  * The cost for the die depends on the value and color of the
+                    die, so it is the number on the die plus the following
+                    additional costs:
+                      * [Green die]!green!: +0 blueberries
+                      * [Yellow die]!#D9A51A!: +1 blueberry
+                      * [Brown die]!brown!: +2 blueberries
+                  * After taking dice, roll new dice to replace the one(s) you
+                    took. Place them on the matching spaces on the board.
+                  * Acquired dice are placed on the lumber spaces on your board.
+                      * If you exceed the number of spaces on your board, you
+                        must use them during your turn or lose them at the
+                        end of your turn.
+            - name: "Exchange Dice"
+              id: a_exch_dice
+              text: |
+                  ![exch_dice](/static/img/woodcraft/a_exch_dice.png)
+
+                  1. You may sell a die and collect **2x** its value in
+                     blueberries + the additional value shown on the price list.
+                  2. You may also buy 6 value die, but **it must be a different
+                     color** than the die you sold in step #1 (if you sold a
+                     die).
+                      * The die is taken from the supply, **not** the action
+                        wheel board.
+            - name: "Buy Materials"
+              text: |
+                  ![buy_materials](/static/img/woodcraft/a_buy_mat.png)
+
+                  * You may make 1 or 2 buys of glue, saw blades, or scrapwood
+                    based on the chart on the action board.
+                      * **2 saw blades**: 2 blueberries
+                      * **2 glue**: 1 blueberry
+                      * **3 glue**: 3 blueberries
+                      * **2 scrapwood**: 1 blueberry
+                      * **3 scrapwood**: 3 blueberries
+                  * If you make 2 buys, the materials **must be different**.
+            - name: "Choose Orders"
+              text: |
+                  ![choose_orders](/static/img/woodcraft/a_ch_orders.png)
+
+                  * You may choose 1 or 2 orders.
+                      1. After choosing 1 order, slide the remaining cards in
+                         the order of the arrows to fill any gap.
+                      2. Draw a new card to place at the end of the row.
+                      3. If you choose to take a 2nd card, **pay 3 blueberries**
+                         and repeat steps #1 and #2.
+                  * Orders you take must be placed next to your player board
+                    with the icon in upper left matching the icon on your board.
+                  * Orders near your board can be completed as a [free
+                    action](#f_comp_order).
+                  * Orders in your hand cannot be placed or completed as part of
+                    this action.
+            - name: "Choose a Helper"
+              text: |
+                  ![choose_helper](/static/img/woodcraft/a_ch_helper.png)
+
+                  * You may take 1 of the available helpers next to the
+                    scoreboard.
+                  * If you take 1:
+                      * Slide the remaining helpers in the direction of the
+                        arrows.
+                      * Fill the empty space with a new helper.
+                  * Immediately pay for your helper given its cost (upper
+                    left).
+                  * Place the new helper in a space adjacent to an already
+                    placed helper.
+                  * Advance your counter on the blueberry or hazelnut track
+                    based on the icon (upper right) in the space that was
+                    covered.
+                  * If you cover a space with a
+                    ![gear](/static/img/woodcraft/gear.png) icon, you
+                    immediately take the specified production bonuses.
+
+                  ## Abilities
+
+                  | Symbol | Description |
+                  | ------ | ----------- |
+                  | ![instant](/static/img/woodcraft/instant.png) | Immediate abilities are used as soon as the helper is placed. They are used once per game |
+                  | ![once_turn](/static/img/woodcraft/f_use_helper.png) | This is a once per turn ability, including the turn it was acquired. This is a free action |
+                  | ![permanent](/static/img/woodcraft/inf.png) | These are permanent abilities that are triggered every time you use the depicted action. |
+            - name: "Produce / Plant a Tree"
+              id: a_plant
+              text: |
+                  ![plant](/static/img/woodcraft/a_plant.png)
+
+                  * You have a 2 choices:
+                      * Produce with 2 different helpers.
+                      * Produce with 1 helper and plant a tree.
+                  * To plant a tree, you can move a 1 or 2 pip die into its
+                    matching colored pot.
+                  * You may split a die **for free** when doing so to plant.
+                    This is like a free version of the [sawing lumber
+                    action](#sawing)
+                  * You will grow each of your trees by a value of 2 at the
+                    start of each turn.
+                  * You may move a die from a pot to your lumber pile (free
+                    action) at any time during your turn.
+                  * **If a die reaches 6, it *must* be moved to your lumber
+                    pile**.
+            - name: "Improve Workshop"
+              text: |
+                  ![imp_wshop](/static/img/woodcraft/a_imp_wshop.png)
+
+                  You have the following choices for workshop improvements
+                  from the items set next to your player board during setup:
+
+                  ## Pots
+
+                  * You can add a pot by paying the blueberry cost and placing
+                    the pot.
+                  * Take the instant benefits depicted:
+                      * Take a 1 value die of the pot's matching color and place
+                        it in the pot.
+                      * Move up 1 space on the hazelnut income track.
+                  * **You must place the yellow pot before the brown pot**.
+                  * Once you have placed the brown pot, you can now plant 2
+                    trees when taking the [plant action](#a_plant)
+
+                  ## Sawing Tiles
+
+                  * Add a saw tile in the next available open slot (right to
+                    left) by paying the blueberry cost.
+                  * The 1st slot unlocks the an ability: Whenever you buy
+                    a 6 die from either the lumber yard *or* the [exchange
+                    dice](#a_exch_dice) action, you have a discount of 2
+                    blueberries.
+
+                  ## Splicing Tiles
+
+                  * Pay the blueberry cost to place the next splicing tile.
+                  * Move up on the income track(s) that are covered.
+                  * You **must** place the value 2 splicing tile **before**
+                    the value 4 splicing tile (top to bottom).
+
+                  ## Gluing Tile
+
+                  * Play the blueberry cost to place the gluing tile.
+                  * Move up on the income track(s) that are covered.
+        - name: Free Actions
+          text: |
+              These actions are always available for use. Note that you must
+              have the appropriate workshop upgrades for some of these actions.
+          sections:
+            - name: Helper Abilities
+              text: |
+                  Helpers with the
+                  ![use_helper](/static/img/woodcraft/f_use_helper.png) icon
+                  can be used once per turn.
+            - name: Sawing Lumber
+              id: sawing
+              text: |
+                  1. Choose 1 of your workshop's available sawing tiles and
+                     flip it to the ❌ side. **It is now unavailable until the
+                     next [income phase](#income)**.
+                  2. Chooese one of your dice that is not a 1.
+                  3. You may make 1 free cut and take a die from the supply
+                     and set the values to a sum equaling the original die.
+                     e.g. if you have 5 die, you can change it to a 1 and take
+                     a 4 die of the same color from the supply.
+                      * You may use saw blade tokens for additional cuts, 1
+                        saw token for each additional cut. e.g. If you have
+                        a 5 die, you could spend 2 saw blade tokens to
+                        split it to a 1, 1, 1, and 2 of the same color.
+            - name: Splicing Scrapwood
+              text: |
+                  1. Return a scrapwood token to the supply.
+                  2. Flip one of your splicing tiles to the ❌ side. **It is
+                     now unavailable until the next [income phase](#income)**.
+                  3. Choose 1 of your dice and increase it by the amount of
+                     pips shown on the tile.
+            - name: Gluing Lumber
+              text: |
+                  1. Return a glue token to the supply.
+                  2. Choose 2 of your dice that add up to 6 or less.
+                  3. Set 1 die to the sum of the 2 values and return the
+                     other to the bank. If they are different colors, you
+                     choose the color to keep.
+                  4. If the dice were different color, **score 4 points**.
+                  5. Flip the gluing tile the ❌ side. **It is
+                     now unavailable until the next [income phase](#income)**.
+            - name: Harvesting a Tree
+              text: |
+                  * You can move a die from your pot to your lumber yard.
+                  * If a die in a pot reaches 6, it **must** be moved to your
+                    lumber yard.
+                  * Note that you can not use any abilities to change the value
+                    of dice in your pots.
+                  * Each tree grows by a value of 2 at the beginning of each
+                    of your turns.
+            - name: Completing Orders
+              id: f_comp_order
+              text: |
+                  General notes:
+
+                  * You have 1 order at the start of the game.
+                  * You will place orders from your hand next to your board
+                    during [income phases](#income).
+                  * You can have multiple orders in the same row.
+                  * If an order ever "drops off" the bottom row (or is not
+                    completed at the end of the game), you discard the order
+                    and move back 2 spaces on the reputation track.
+
+                  To complete an order:
+
+                  1. Return the required dice and tokens to the supply.
+                      * **Dice must match colors and values exactly**.
+                  2. Gain the reward shown on the left hand side of the order.
+                  3. Gain the reward *or pay the penalty* shown on your board
+                     for the current row.
+                  4. Place the order face down near your board for end of game
+                     scoring.
+
+                  ## Hazelnut Orders and Public Contracts
+
+                  * When a hazelnut order is completed, you have a choice of
+                    claiming a public contract *or* the depicted instant
+                    reward.
+                  * If you claim a public contract, place 1 of your counters
+                    on it.
+                      * Other players can also claim the same contract
+                        **during the same round**. The contract can no longer
+                        be claimed by anyone after the completion of the
+                        round it was claimed in.
+                      * Remove the claimed contract from the row of available
+                        contracts at the end of the round.
+            - name: Tools in the Attic
+              text: |
+                  * Whenever you get a tool, immediately place it in your
+                    attic on an empty space.
+                  * You can only place them in your bottom row until you
+                    can "support" the tool in the next row above it (2
+                    adjacent tools in a row can support a tool in the row
+                    above it).
+                      * The 2 end spaces on the top row break this rule. You
+                        can place in these spaces once the adjacent
+                        tile has been placed.
+                  * When you place a tool, you collect the reward between it
+                    and any adjacent tools **as long as the tools are
+                    different**.
+        - name: End of Turn
+          text: |
+              * You may "buy" points by moving up to the next space on the
+                marketing track, paying the cost in blueberries, and receiving
+                the depicted points.
+                  * This is **not** required.
+                  * If you reach the final space, you can still advance by
+                    paying 12 blueberries to get 11 points (as depicted on
+                    the final space).
+              * You may only keep 6 dice in your lumber pile. You **must**
+                discard down to 6 dice if you have more than that.
+                  * Reminder: If you have a 6 value die in a pot, it **must**
+                    be moved to your lumber pile.
+        - name: End of Round
+          text: |
+              The round ends after everyone has taken 1 turn.
+
+              * Move the round marker to the next space. Note that there may
+                be an [income phase](#income) between rounds.
+        - name: Income Phase
+          id: income
+          text: |
+              Perform the following, in order:
+
+              1. Players move orders down 1 row. If an order moves off the
+                 board, move back 2 spaces on the reputation track.
+              2. Each player **must** play an order from the their hand. Note
+                 that your hand will be empty in the 4th income phase.
+              3. Each player gains blueberries and points based on their
+                 levels on the blueberry and hazelnut tracks (respectively).
+              4. Players reset their splicing, gluing, and saw tiles.
+              5. After rounds 4 and 12, discard the helper and order from the
+                 slot marked with an "X", slide the cards and draw a new card
+                 for each.
+              6. After round 8, replace the helper and order decks with their
+                 late game versions.
+    - name: End of Game
+      text: |
+          The game ends after the final income phase.
+
+          ## Final Scoring
+          In addition to the points scored during the game:
+
+          * Score points as depicted on any public contracts you claimed.
+          * Score points for "leftovers": Sum the value of the following
+            items and divide by 10 (rounded down) and score that many
+            points:
+              * Values of unused dice (sum them)
+              * Remaining blueberries
+              * Remaining scrapwood
+              * Glue
+              * Saw blade tokens
+          * For each uncompleted order, move **back** 2 spaces on the
+            reputation track.
+          * For each completed order, score points based on how far you
+            have progressed on the reputation track.
+
+          The player with the most points wins. If there is a tie, the player
+          who played later in every round wins.
+    - name: Other Rules
+      text: |
+          ## Tracks
+
+          * Note that there are rewards (a tool and points) on the hazelnut
+            and blueberry tracks that are taken when you advance past them
+            on either/both tracks.
+          * The reputation track has 2 reward tiles that can be claimed when
+            you move to their slots.
+              * **4 players**: The 1st player here gets the top reward, the
+                2nd gets the middle reward, and the 3rd gets the bottom
+                reward.
+              * **2 players**: The 1st player to reach tile takes the middle
+                reward.
+              * **If 2 players reach the tile during the same round, they
+                both receive the same reward**.
+                  * For example, in a 4 player game, if 2 players reach the
+                    tile (1st and 2nd) in the same round, they both get
+                    the top reward. The next player to reach that tile
+                    gets the bottom reward.
+
+          ## End of the Track
+
+          * If you advance past the end of the hazelnut or blueberry income
+            tracks, leave your counter on 10 and add another counter on the
+            1 space (or as far as you should advance) as well.
+          * If you would go past the end of the reputation track, score 2
+            points for each space beyond it you would advance.
+    - name: Icons
+      text: |
+          | Icon | Description |
+          | ---- | ----------- |
+          | ![3blue](/static/img/woodcraft/i_3blue.png) | Gain 3 blueberries |
+          | ![2blue](/static/img/woodcraft/i_2blue_cost.png) | A cost of 2 blueberries |
+          | ![1blue](/static/img/woodcraft/i_1blue_disc.png) | A discount of 1 blueberry |
+          | ![2blue_inc](/static/img/woodcraft/i_2blue_inc.png) | Advance 2 spaces on the blueberry income track |
+          | ![2points](/static/img/woodcraft/i_2points.png) | Score 2 points |
+          | ![lose_pnt](/static/img/woodcraft/i_1lose_pnt.png) | Lose 1 point (can't go below zero) |
+          | ![2haz_inc](/static/img/woodcraft/i_2haz_inc.png) | Advance 2 spaces on the hazelnut income track |
+          | ![1rep](/static/img/woodcraft/i_1rep.png) | Advance 1 space on the reputation track |
+          | ![1saw](/static/img/woodcraft/i_sawbl.png) | 1 saw blade token |
+          | ![1glue](/static/img/woodcraft/i_glue.png) | 1 glue token |
+          | ![1scrap](/static/img/woodcraft/i_scrap.png) | 1 scrapwood token |
+          | ![1lantern](/static/img/woodcraft/i_lantern.png) | 1 lantern token |
+          | ![1die_spec](/static/img/woodcraft/i_die_ptc.png) | A die of a particular value and color |
+          | ![2die_spec](/static/img/woodcraft/i_die_2col.png) | A die of a particular value and either depicted color |
+          | ![1die_val](/static/img/woodcraft/i_die_anycol.png) | A die of a particular value and any color |
+          | ![1die_any](/static/img/woodcraft/i_die_anycolval.png) | A die of any color with any value |
+          | ![1tool](/static/img/woodcraft/i_tool.png) | Gain a tool of the indicated type |
+          | ![1tool_any](/static/img/woodcraft/i_anytool.png) | Gain a tool of any type |
+          | ![reuse](/static/img/woodcraft/i_reuse.png) | Gain a 1 tile-reuse token. It can be spent to reuse a sawing, splicing or gluing tile |
+          | ![prod](/static/img/woodcraft/i_prod.png) | Gain the production from up to 4 different helpers |
+          | ![immed](/static/img/woodcraft/i_immed.png) | Immediate effect |
+          | ![once](/static/img/woodcraft/i_once.png) | Once-per-turn effect |
+          | ![inf](/static/img/woodcraft/i_inf.png) | An effect that triggers every time a condition is met |
