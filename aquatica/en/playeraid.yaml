@@ -65,7 +65,7 @@ sections:
                       the effects.
                 * After playing the character card, put it in your personal
                   discard pile face up.
-          - name: Addtional Actions
+          - name: Additional Actions
             text: |
                 * **Flipping Mantas**: You can use a ready manta to resolve it
                   and flip it to its used side.
@@ -115,7 +115,7 @@ sections:
                     2. Move every location from the bottom row to the top row.
                        If there are more than 4 locations in the bottom row,
                        discard your choice of locations until 4 remain.
-                    3. Re-fill the bottom row with 6 locations.
+                    3. Refill the bottom row with 6 locations.
           - name: Goals
             text: |
                 If a player fulfills a goal on their turn, they can place one

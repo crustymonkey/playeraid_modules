@@ -76,7 +76,7 @@ sections:
             * When the last empty space of an island is covered:
                 * Person that finishes it gets 3 VP and treasure chest if available.
                 * All players get VP based on the number of trading posts they have on the island.
-        - name: Yello Action - Buy Production Tokens
+        - name: Yellow Action - Buy Production Tokens
           text: |
             * Buy production tokens from the storage board by paying indicated AP cost and placing on your sheet.
         - name: White Action - Special Action

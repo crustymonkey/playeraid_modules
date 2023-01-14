@@ -107,7 +107,7 @@ sections:
               text: |
                   This allows you to flip the troop tokens on the top right
                   of your board. This will make your
-                  [crusade actions](#crusade) mroe powerful and gain you
+                  [crusade actions](#crusade) more powerful and gain you
                   influence.
 
                   1. Check the cost of the lowest level face down troop token.
@@ -207,7 +207,7 @@ sections:
         - name: Learning Game
           text: |
               During setup, instead of randomizing the order of the wedges,
-              ensure that all players setup their wedges accorging to the
+              ensure that all players setup their wedges according to the
               diagram below. Players also do **not** sue the "Upgrade a
               Wedge" action.
 
@@ -215,7 +215,7 @@ sections:
         - name: First Standard Game
           text: |
               During setup, instead of randomizing the order of the wedges,
-              ensure that all players setup their wedges accorging to the
+              ensure that all players setup their wedges according to the
               diagram:
 
               ![first game](/static/img/crusaders_thy_will_be_done/first_game.png)

@@ -78,7 +78,7 @@ sections:
             * Choose 1 option:
                 * Gain 1 gold and move your gold mines marker 1 space to the right.
                 * Gain gold equal to your number of gold mines (number to the left of your marker) as well as all production bonuses to the left of your marker.
-        - name: Manage Quaries
+        - name: Manage Quarries
           text: |
             * Choose 1 option:
                 * Gain 1 stone and move your quarries marker 1 space to the right.

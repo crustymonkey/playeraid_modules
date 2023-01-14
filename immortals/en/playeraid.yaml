@@ -44,14 +44,14 @@ sections:
   - name: Card Draft and Army Placement
     text: |
       A card draft will take place to determine where armies are placed, as well as their deck for the remainder of the game.
-      Each round of the draft consists of all players simultantenously selecting a card, acting upon it in player order, then
+      Each round of the draft consists of all players simultanenously selecting a card, acting upon it in player order, then
       passing their hand to the left. On each pass, a new card is drawn from the deck and added to their hand.  This continues
       until each player has placed all their army groups.
     sections:
       - name: Draft Setup
         text: |
-          Each player receives 5 cards from one of the two conflict decks.  The first player recieves 5 from the dark deck,
-          the second player recieves 5 from the light deck. This continues to alternate until each player has 5 cards.
+          Each player receives 5 cards from one of the two conflict decks.  The first player receives 5 from the dark deck,
+          the second player receives 5 from the light deck. This continues to alternate until each player has 5 cards.
       - name: Card Selection
         text: |
            Each player selects one card from their hand.
@@ -137,7 +137,7 @@ sections:
           1. return the card to their deck
 
         * If the player passes, they
-          1. Pick up any remaing cards on their board, returning them to their deck
+          1. Pick up any remaining cards on their board, returning them to their deck
           1. Gain either 1 gold or 1 energy
 
       This continues until all players have passed.  Note that, once a player passes, they continue to receive resources each time play returns to them.
@@ -174,7 +174,7 @@ sections:
         text: |
           Move 3 armies from limbo to the region played.
 
-            * Cost is 2 engery and 1 gold
+            * Cost is 2 energy and 1 gold
             * The player must occupy the region shown on the card
             * The armies must come from dark or light limbo that matches the region on the card.
 
@@ -186,7 +186,7 @@ sections:
             * The player must occupy the region shown on the card
             * **Portals**
               * Gain 1 VP immediately
-              * Grants 1-way adjancy to the corresponding region in the opposite realm.
+              * Grants 1-way adjacency to the corresponding region in the opposite realm.
             * **Shrines**
               * Gain 1 VP immediately
               * Grants 1 VP during scoring to the occupier

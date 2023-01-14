@@ -55,9 +55,9 @@ sections:
           | ----- | ------ |
           | ![tactics](/static/img/caesar/tactics.png) | **Tactics**: Take a new turn after this one. **Note**: If you receive 2 Tactics tokens on the same turn, you only get **1** extra turn (not 2). |
           | ![wealth](/static/img/caesar/wealth.png) | **Wealth**: Increase your influence token hand size by 1. Draw 1 token immediately (in addition to the one at the end of your turn). |
-          | ![might](/static/img/caesar/might.png) | **Might**: Flip an opponent's influence token or control marker on the board face down. Flipped influence markers count for 0 influence. Controlling provicnes adjacent to a flipped control marker to not provide additional control markers on border spaces. |
+          | ![might](/static/img/caesar/might.png) | **Might**: Flip an opponent's influence token or control marker on the board face down. Flipped influence markers count for 0 influence. Controlling provinces adjacent to a flipped control marker to not provide additional control markers on border spaces. |
           | ![senate](/static/img/caesar/senate.png) | **Senate**: Place the token in front of you. If you also won the province providing this token, place a number of your control markers under this senate token equal to your total number of senate tokens. |
-          | ![poison](/static/img/caesar/poison.png) | **Poison**: (Used with the [Poison expansion](#poison)) Return of your opponenents influence tokens to their bag. |
+          | ![poison](/static/img/caesar/poison.png) | **Poison**: (Used with the [Poison expansion](#poison)) Return 1 of your opponent's influence tokens to their bag. |
           | ![centurion](/static/img/caesar/centurion.png) | **Centurion**: (Used with the [Centurions expansion](#centurions)) Instead of drawing from your bag at the end of your turn, select one of your available centurion influence tokens. |
     - name: Expansions
       sections:

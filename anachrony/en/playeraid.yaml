@@ -144,7 +144,7 @@ sections:
                   * Build the Superproject that is in Focus (where your Focus marker is).
                   * Place the Superproject on the leftmost space on your board. Choose which row if tied.
                   * Ignore the costs on the spaces where the Superproject is placed.
-                  * Pay the cost shown on the Superorject. If its cost includes a Worker, it may come from the Active or Tired columns.
+                  * Pay the cost shown on the Superproject. If its cost includes a Worker, it may come from the Active or Tired columns.
           - name: Recruit
             text: |
               * May not be activated by a Scientist.
@@ -237,7 +237,7 @@ sections:
                 * Discard the Anomaly tile.
             - name: Superprojects and Other Buildings
               text: |
-                * May require Workers, be Free Actions, or be passive. See individual Superprojets.
+                * May require Workers, be Free Actions, or be passive. See individual Superprojects.
             - name: Power Upgrade
               text: |
                 * Path of Dominance: Can only be taken by an Engineer.

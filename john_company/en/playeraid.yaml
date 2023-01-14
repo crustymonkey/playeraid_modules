@@ -215,7 +215,7 @@ sections:
             * Country Trade. Pay £1 for each captain on a ship.
             * If Company expenses cannot be met, take enough £5 Emergency Loans to cover the remaining expenses. Add a black disk to the Court of Directors for each £5 taken. Any portion "left over" must be immediately allocated to any Company treasuries. Any new loans do not need to be paid for until next game turn.
         * Dividends must be paid to family treasuries
-            * The Chairman may choose to pay dividends with remaining Company revenue. The cost of paying one dividend is £1 from the bank given to each player per cube they have in the Court of Directors. Update the revenue track to indicate how much revenue remains to be allocated. Multiple dividends may be paid. If more than one dividend is paid, increase the share price one space. If no dividend is paid, the share price falls one space. Dividens may not be paid with money from Emergency Loans
+            * The Chairman may choose to pay dividends with remaining Company revenue. The cost of paying one dividend is £1 from the bank given to each player per cube they have in the Court of Directors. Update the revenue track to indicate how much revenue remains to be allocated. Multiple dividends may be paid. If more than one dividend is paid, increase the share price one space. If no dividend is paid, the share price falls one space. Dividends may not be paid with money from Emergency Loans
             * Angry Shareholders. 
         * After paying expenses and distributing dividends, the Chairman must allocate all remaining revenue to office treasuries. Place money from the bank into treasuries, then update the revenue track to indicate how much revenue remains to be allocated. Money allocated to treasuries may be spent during the next Company Phase.
         * Continue until the revenue track is reduced to 0.
@@ -281,7 +281,7 @@ sections:
                  * Senior Offices - 6
                  * Offices with a black disk - automatically role a 6 and must vacate
              * After all attrition dice have been rolled, each vacating cube may score one prize of that office's rank or be returned to its owner's stock.
-             * Offices that had a black disk are now elimoinated.
+             * Offices that had a black disk are now eliminated.
                  * The officeholder must pay an extra £2 in addition to the cost of the prize.
                  * Return all ships, goods, captains, and money associated with the office or presidency to the appropriate stocks.
                  * Keep the black disk over the officeholder spot to indicate it can no longer be filled.
@@ -290,7 +290,7 @@ sections:
              * Pay the cost indicated on the prize card to the bank and then move the cube from the vacated office to the prize card.
              * The Chairman is treated as an executive office.
              * Some prizes provide players with special benefits.
-             * Eliminated Ofices are no longer available for placement. 
+             * Eliminated Offices are no longer available for placement. 
 
       - name: Local News
         text: |

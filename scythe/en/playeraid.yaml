@@ -61,7 +61,7 @@ sections:
                     triumph track. This applies to all players for this game.
     - name: Gameplay
       text: |
-          The game is played in a continous fashion until a player places
+          The game is played in a continuous fashion until a player places
           their 6th star on the board, which will **immediately** end the
           game. Proceed to [final scoring](#scoring).
 
@@ -242,7 +242,7 @@ sections:
                       * The uncovered space on your player mat reveals an
                         ongoing bonus.
                           * For the rest of the game, when **you or the player
-                            to your immmediate right/left** take the bottom
+                            to your immediate right/left** take the bottom
                             row action matching the action the recruit was
                             taken from, you gain the specified bonus.
                           * If more than 1 person would gain one of these
@@ -433,10 +433,10 @@ sections:
                 * **Disarm**: Before combat on a tunnel, your opponent loses
                   2 power. Set this on the power track.  This can only be
                   done once per combat.
-                * **Speed**: Your character and meches may move 1 additional
+                * **Speed**: Your character and mechs may move 1 additional
                   space per move action.
                     * If they move onto a territory containing an opponent's
-                      charater/mech, their movement ends.
+                      character/mech, their movement ends.
                     * Moving through tunnels (including "underpass") counts
                       as 1 space.
                     * Your mech can pick/drop off resources in the middle of
@@ -479,7 +479,7 @@ sections:
                   power to force your opponent to lose 2 power.
                     * This is done on the power track.
                     * You may only do this once per combat.
-                * **Speed**: Your character and meches may move 1 additional
+                * **Speed**: Your character and mechs may move 1 additional
                   space per move action.
                     * If they move onto a territory containing an opponent's
                       charater/mech, their movement ends.
@@ -502,10 +502,10 @@ sections:
                   opponent's combat cards **at random** and add it to your
                   hand.
                     * You may only do this once per combat.
-                * **Speed**: Your character and meches may move 1 additional
+                * **Speed**: Your character and mechs may move 1 additional
                   space per move action.
                     * If they move onto a territory containing an opponent's
-                      charater/mech, their movement ends.
+                      character/mech, their movement ends.
                     * Moving through tunnels counts as 1 space.
                     * Your mech can pick/drop off resources in the middle of
                       a move action.
@@ -531,10 +531,10 @@ sections:
                 * **Camaraderie**: You do not lose popularity when forcing
                   opponent workers to retreat after winning combat **as the
                   attacker**.
-                * **Speed**: Your character and meches may move 1 additional
+                * **Speed**: Your character and mechs may move 1 additional
                   space per move action.
                     * If they move onto a territory containing an opponent's
-                      charater/mech, their movement ends.
+                      character/mech, their movement ends.
                     * Moving through tunnels counts as 1 space.
                     * Your mech can pick/drop off resources in the middle of
                       a move action.
@@ -616,7 +616,7 @@ sections:
                     * If 2 factions have the lake movement ability, it's
                       possible to have a combat on a lake.
                 * **Ronin**: Before combat where you have exactly 1 unit
-                  (0 workers and either 1 charactor or 1 mech), you may
+                  (0 workers and either 1 character or 1 mech), you may
                   gain 2 power on the power track.
                     * Do **not** count airships or workers on airships.
                 * **Shinobi**: Your character/mechs can move to any territory
@@ -750,7 +750,7 @@ sections:
           * Having an airship on a territory does **not** increase the number
             of combat cards that can be played.
           * Airships do not trigger traps.
-          * **Blitzkrieg**: This [agressive ability]!red! allows combat to
+          * **Blitzkrieg**: This [aggressive ability]!red! allows combat to
             happen between airships.
               * The winner gains a star.
               * It is the only time an airship can retreat. Other units on

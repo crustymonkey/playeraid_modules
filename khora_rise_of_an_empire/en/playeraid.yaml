@@ -208,7 +208,7 @@ sections:
                   tied, all tied players apply the effect.
                 * If the effect concerns an element other than military, all
                   players apply the effect.
-          - name: G. Achievment
+          - name: G. Achivement
             text: |
                 **Each Achievement can only be completed once**, and only
                 during this phase of the round.  If more than one player
@@ -217,7 +217,7 @@ sections:
 
                 If you have completed an Achievement, place 1 of your
                 Achievement tokens on the matching space of the central board.
-                Then, recieve:
+                Then, receive:
 
                 * If you are the **only player** to complete the Achievement,
                   move up 1 space on either the tax **or** glory track.

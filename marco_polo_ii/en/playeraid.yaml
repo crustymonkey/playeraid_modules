@@ -91,7 +91,7 @@ sections:
                 * Must have at least 1 trading post in a city with contracts to take this action.
                 * Take 1 or 2 Contracts from any cities you have a trading post in based on your die's value. Place the selected Contracts in active Contract spaces on your board.
                     * If you already have 2 Contracts on your board, you must make room for the new Contracts by discarding them to the bottom of their piles.
-                    * You cannot discard newly-acquired contracts.
+                    * You cannot discard newly acquired contracts.
                 * Take 3 coins.
                 * Refill empty Contract spaces from the deck.
             - name: Special Cities (Baghdad, Balkh, Hormuz)
@@ -119,7 +119,7 @@ sections:
                 * Flip the guild seal over to its red improved side and gain any ! bonus shown.
             - name: Money Bag
               text: |
-                * Place any 1 die onto the money bag to take 3 coins, 2 camles, or 1 jade.
+                * Place any 1 die onto the money bag to take 3 coins, 2 camels, or 1 jade.
                 * Do not need to pay to use this space, regardless of how many dice are here.
                 * More than 1 die of any colour can be on this space.
             - name: Reroll 1 Die

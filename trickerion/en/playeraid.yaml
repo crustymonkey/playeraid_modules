@@ -20,7 +20,7 @@ sections:
         * Place Closed Room tiles over Classroom and Practice Room slots marked A and B.
             * 3P: Cover A only.
         * Place an Open Room token on spaces IV and VI of the Turn Counter track. (3P: place 1 on space V only).
-        * Separate the Practice Room and Classrom tiles by their Fame Threshold to create 6 face down stacks.
+        * Separate the Practice Room and Classroom tiles by their Fame Threshold to create 6 face down stacks.
         * Shuffle the Secret tiles to form a face down stack. Place 2 face up on the indicated spots of the Academy board.
         * 2P: Shuffle the Turn Setup cards and place them in a stack next to the board.
         * Choose a starting player and place turn order markers. 2P: Only first and third positions are used.
@@ -188,7 +188,7 @@ sections:
                     * Each Secret grants your Protégé a new ability.
                     * The second and third Secret added to your Protégé each gives them 1 extra AP.
                     * The first and second Secret added to your Protégé each increase their wage by 1 Coin.
-                - name: Discver New Secrets (1 AP)
+                - name: Discover New Secrets (1 AP)
                   text: |
                     * Draw a Secret from the stack and place it face up on an empty Secret slot in the Academy.
             - name: Theater
@@ -221,7 +221,7 @@ sections:
                 * Bonus on the bottom of the Performance card.
             * All Trick markers are returned to the supply.
             * Performance card remains on the board for use again.
-        - name: Classrom Phase
+        - name: Classroom Phase
           text: |
             * If a Trick in a Classroom still has Trick markers in the Theater and/or Workshop, remove those Trick markers and place them in their owner's personal supply.
             * In player order, each player receives the Yields for their Tricks in the Classrooms. Most Classroom slots modify the Yield of the Tricks on them. Modifiers in the Theater do not affect Classroom Yields.

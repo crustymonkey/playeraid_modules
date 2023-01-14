@@ -107,7 +107,7 @@ sections:
                 **Immediately** add the new park area to your park using
                 the following rules:
 
-                * The new park area must be orthognally adjacent to another
+                * The new park area must be orthogonally adjacent to another
                   park area and the edges must fully align.
                 * All icons in the park area must be in the correct alignment.
                   i.e. right side up.

@@ -52,7 +52,7 @@ sections:
                 * Rest your chin on your Monster Body.
                 * Inhale, then blow. Must inhale while you are on your Monster Body.
                 * You may hold and angle your Monster Body while doing this.
-        - name: Collaterla Damage
+        - name: Collateral Damage
           sections:
             - name: Rumble!
               text: |
@@ -186,7 +186,7 @@ sections:
       sections:
         - name: Catcher
           text: |
-            * Toss a Monster in the same Neighborhood as yours and place it on top of your Monster's Body. Use the opposing Monster as a Vehicle in a Toss a Vehicle action. Breat 1 Tooth from that Monster.
+            * Toss a Monster in the same Neighborhood as yours and place it on top of your Monster's Body. Use the opposing Monster as a Vehicle in a Toss a Vehicle action. Break 1 Tooth from that Monster.
         - name: Earthquake
           text: |
             * Move all the Meeples from each Ruin to an adjacent Neighborhood.
@@ -231,4 +231,4 @@ sections:
             * Draw 3 Power cards and apply their effects this turn. At the end of the turn, discard 3 of your Power cards (not necessarily those which were drawn).
         - name: Who Cut the Cheese?!
           text: |
-            * All opponents must place their Monster's Body upside down on their Paws. During their next turn, they must use 1 action to turntheir Bodies rightside up.
+            * All opponents must place their Monster's Body upside down on their Paws. During their next turn, they must use 1 action to turn their Bodies rightside up.

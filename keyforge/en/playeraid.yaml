@@ -216,7 +216,7 @@ sections:
             id: ability
             text: |
                 An ability is the special game text a card adds to the game.
-                
+
                 Unless an ability explicitly references an out-of-play area
                 (such as the discard), that ability can only interact with
                 cards that are in play.
@@ -235,7 +235,7 @@ sections:
             text: |
                 The active player is the player taking the current turn.  The
                 active player makes all necessary decisions for all card
-                abilties or timing conflicts that need to resolve.
+                abilities or timing conflicts that need to resolve.
           - name: Æmber
             id: ember
             text: |

@@ -52,7 +52,7 @@ sections:
             id: working
             text: |
                 In this phase, players take turns placing action markers and
-                excuting the actions selected.
+                executing the actions selected.
             sections:
                 - name: Gardening
                   id: gardening
@@ -224,7 +224,7 @@ sections:
           ![seed bag](/static/img/genotype/seed_bag.png) **Seed Bag**: Draw
           5 pea plant cards from the deck, keep 2, and discard the rest.
 
-          ![wattering funnel](/static/img/genotype/wat_fnl.png) **Watering
+          ![watering funnel](/static/img/genotype/wat_fnl.png) **Watering
           Funnel**: Validate (cover) any 1 trait. **This must be played
           immediately when received!**
 
@@ -237,7 +237,7 @@ sections:
           This acts as another plot in your garden **until the plant is
           harvested, after which the pot is discarded**.
 
-          ![grafe knife](/static/img/genotype/grft_knife.png) **Graft
+          ![graft knife](/static/img/genotype/grft_knife.png) **Graft
           Knife**: Play when taking a die to immediately take another die.
           Place the additional die on graft knife.
 

@@ -31,7 +31,7 @@ sections:
           * Set current Season cards next to the board.
           * Give each player their Seasonal Income Coins.
           * Return any Hostages, each granting 1 Coin from the common pile.
-      - name: Tea Cermony
+      - name: Tea Ceremony
         text: Negotiate to form new Alliances.  Any allied clans place their alliance markers on the game board.
       - name: Political Phase
         text: |
@@ -165,7 +165,7 @@ sections:
           will be executed, choosing anything they want (IRecruit, Marshal, Train, Harvest, *or* Betray*).
       - name: Moon Clan (Dynasty Invasion Expansion)
         text: |
-          **Brutality** - The Moon Clan is a shady adversary, imbued with a powerful and myseterious force that makes them
+          **Brutality** - The Moon Clan is a shady adversary, imbued with a powerful and mysterious force that makes them
           much stronger than any other Clan.
 
           All figures belonging to the Moon Clan count as 2 Force, at the very least.  If they acquire an Enhancement that

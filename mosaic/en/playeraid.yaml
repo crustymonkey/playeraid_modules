@@ -24,7 +24,7 @@ sections:
           * Place the 10 "fish" tiles face up, 1 on each port hex (hexes
             with boats on them).
           * Randomize the cache tiles face down and then place 1 on each
-            hex with the maching symbol on the back of the tiles.
+            hex with the matching symbol on the back of the tiles.
           * Randomize the trade goods tiles face down and then place 1 on
             each open hex on the board.
               * After placing them, turn them all face up.
@@ -259,7 +259,7 @@ sections:
                 the different governments including costs and requirements.
               * You may only have 1 government at a time. If you purchase a
                 new government, return the previous tile to the board.
-              * If you own a governement, you may flip it from the "arrow
+              * If you own a government, you may flip it from the "arrow
                 side" (upper right of the tile) to clear one set of offer
                 cards (Build, Population, Technology, or Tax & Tariff) and
                 replace them from the appropriate deck.
@@ -359,7 +359,7 @@ sections:
           | ------ | ---- |
           | **Gain population** | Food as shown on the population card |
           | **Build city / port city** | 4 stone + 2 population |
-          | **Build farm / manuctory town** | Free |
+          | **Build farm / manufactory town** | Free |
           | **Build project** | 5 stone + 5 ideas |
           | **Wonder** | 20 stone + 5 food -- Each increases by 5 for each additional wonder (i.e. your 3rd wonder would cost 30 stone and 15 food) |
           | **Technology** | 5 ideas |
@@ -392,7 +392,7 @@ sections:
           | Golden age | Requirement | Benefit |
           | ---------- | ----------- | ------- |
           | **Medicine** | ![pop](/static/img/mosaic/population.png)x6 Population | Gain 2 production & 6 VP |
-          | **Architechture** | ![building](/static/img/mosaic/building.png)x6 Build | +3 stone production & 6 VP |
+          | **Architecture** | ![building](/static/img/mosaic/building.png)x6 Build | +3 stone production & 6 VP |
           | **Art** | ![culture](/static/img/mosaic/culture.png)x6 Culture | Gain 10 of any currency & 6 VP |
           | **Kings** | ![govt](/static/img/mosaic/govt.png)x6 Government | +3 tax production & 6 VP |
           | **Public Games** | ![food](/static/img/mosaic/food.png)x6 Food | +3 food production & 6 VP |

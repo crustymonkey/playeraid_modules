@@ -11,7 +11,7 @@ sections:
           <p><ol><li>Lay out the <b>Town Board</b> and set the <b>Library
           Inspection Form</b> nearby</li>
           <li>Place the <b>Diviner's Hut</b> face up below the <b>Town
-          Board</b>.  Shuffle the other <b>Location Tilse</b> and place
+          Board</b>.  Shuffle the other <b>Location Tiles</b> and place
           them face-down in a stack.</li>
           <li>Give the 1st player token to the player who most recently
           acquired a book.</li>
@@ -112,7 +112,7 @@ sections:
       sections:
           - name: Alphabetical Order Check
             text: >
-                <p>Flip any card face down in each libary that does not
+                <p>Flip any card face down in each library that does not
                 follow alphabetical and numeric order from left to right, top
                 to bottom.</p>
           - name: Categorical Tally
@@ -138,7 +138,7 @@ sections:
                 category with the <u>fewest</u> books (ignoring Banned Books).
           - name: Reveal & Score Focuses
             text: >
-                Each player recieves <b>2 points</b> for every book matching
+                Each player receives <b>2 points</b> for every book matching
                 their library's focus.
           - name: ~Tiebreakers~
             text: >
@@ -180,7 +180,7 @@ sections:
                 already present at the location.
           - name: The Dungeon of Deep Thought
             text: >
-                <b>The Gelatinous Cube:</b> If an opposing assitant visits the
+                <b>The Gelatinous Cube:</b> If an opposing assistant visits the
                 same location as the Gelatinous Cube, <b>prior to activating
                 any effects or abilities</b>, they must either:
                 <ol><li>Give you a random card from their hand <b>-OR-</b></li>
@@ -364,7 +364,7 @@ sections:
                 at the <b>Local Drafthouse</b>. The player whose assistant was
                 placed on the first space takes one of the revealed cards,
                 followed by the player whose assistant was placed on the
-                secnd space, and so on, repeating the process until all the
+                second space, and so on, repeating the process until all the
                 revealed cards have been taken. Any/all of the cards taken
                 may be shelved.</p>
           - name: Mystery Shack (#13)

@@ -199,7 +199,7 @@ sections:
                 - name: Purchase DNA
                   text: >
                       Pay the amount ($2 - $5) and gain the corresponding DNA.
-                      Then, <b>dicard any 1 item</b> from the market row that
+                      Then, <b>discard any 1 item</b> from the market row that
                       you bought DNA in.  Note, this <b>does not include</b>
                       special lab upgrade tiles.
                 - name: Pass
@@ -212,7 +212,7 @@ sections:
                 in any order the player wishes.</p>
                 <p><b>Each worker slot can be activated only once per round,
                 unless it is labeled as <i>unlimited</i></b>.</p>
-                <p>Note that some lab upgrads (with a green background)
+                <p>Note that some lab upgrades (with a green background)
                 are activated once, at purchase time, only.</p>
             sections:
                 - name: Refining DNA
@@ -233,12 +233,12 @@ sections:
                   text: >
                       <p>Certain lab upgrades will allow you to increase your
                       security level by <b>1</b>.  Pay the corresponding cost
-                      in the secuirity level section you are <b>moving to</b>.
+                      in the security level section you are <b>moving to</b>.
                       If your security level reaches 11, take a hexagonal
                       "+10" modifier token.</p>
                 - name: Upgrading Paddock Capacity
                   text: >
-                      When upgrading paddock capacity, change the capicity of
+                      When upgrading paddock capacity, change the capacity of
                       one paddock tile to the <b>next level up</b>.  You must
                       pay the cost, which is the new paddock capacity.
           - name: 4. Park Phase
@@ -259,7 +259,7 @@ sections:
                       <p>Place all visitors at available attractions and
                       dinosaur exhibits.  <i>Each dino exhibit has space for
                       visitors equal to the number of dinosaurs in the
-                      exhibit</i>. <b>All hooigans must be placed first!</b>
+                      exhibit</i>. <b>All hooligans must be placed first!</b>
                       Any visitors left over are left at the entrance.</p>
                 - name: 3. Dinosaurs on the Loose! (simultaneous)
                   text: >

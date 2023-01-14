@@ -187,7 +187,7 @@ sections:
                   only need to meet 1 of the 2 requirements. You decide.
                 * If a requirement has left/right "arrows" (<>), the card
                   must be played in a column where the requirement is met
-                  in an adjactent column.
+                  in an adjacent column.
                     * If this requirement is accompanied by another requirement
                       without arrows, you can then choose where to place it.
                       Either fulfilling the adjacency **or** putting it on

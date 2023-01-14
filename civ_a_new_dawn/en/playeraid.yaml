@@ -383,7 +383,7 @@ sections:
                         text: >
                             The attacker replaces the token with 1 of their
                             unused control tokens on its unreinforced side.
-                            If the token is on a natual wonder space, the
+                            If the token is on a natural wonder space, the
                             attacker takes the natural wonder token.
                       - name: Non-Capital City
                         text: >
@@ -401,7 +401,7 @@ sections:
                         text: >
                             The attacker takes up to 2 trade tokens from the
                             defending player's focus cards and places them
-                            on their own focus cards, whereever they would
+                            on their own focus cards, wherever they would
                             like.
     - name: Winning the Game
       text: >

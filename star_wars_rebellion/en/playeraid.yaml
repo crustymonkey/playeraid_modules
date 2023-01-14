@@ -93,12 +93,12 @@ sections:
                 * Players may not discard their starting mission cards.
             * Launch Probe Droids - the Imperial player draws 2 Probe Droid cards.
             * Draw Objective - the Rebel player draws 1 Objective card.
-            * Advance Time Marker - Advance the time marker 1 space, then reruit and/or build units based on the icons in the time marker's space.
+            * Advance Time Marker - Advance the time marker 1 space, then recruit and/or build units based on the icons in the time marker's space.
                 * If the time marker is on the same space as the Rebel marker, the game immediately ends.
                 * Recruit icon - each player draws 2 cards from their action deck, chooses 1 to keep, and recruits 1 of the leaders from that card.
                 * Build icon - each player places units on the build queue for each of his loyal and subjugated systems.
                     * The icons indicate which type of unit will be placed in the build queue; if multiple units match this icon, choose 1.
-                    * The sytems's number indicates which space of the build queue the unit should be placed on.
+                    * The systems's number indicates which space of the build queue the unit should be placed on.
                     * If the system is subjugated, the Imperial player only builds the first icon.
         - name: Deploy Units
           text: |

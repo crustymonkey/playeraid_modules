@@ -241,7 +241,7 @@ sections:
                       immediately equipped or stashed**.
                 - name: Craft
                   text: |
-                      Aquire a card from the crafting row by paying its
+                      Acquire a card from the crafting row by paying its
                       resource cost and equipping it or adding it to your
                       familiar's stash.  Draw a new card from the deck to
                       replace it.  If the deck is empty, shuffle the discard
