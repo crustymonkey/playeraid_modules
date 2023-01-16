@@ -1,0 +1,369 @@
+name: "Merlin"
+description: "Merlin and knights going in circles"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+version: 1.0
+bgg_id: 230933
+expansions:
+sections:
+    - name: Setup
+      text: |
+          * Place the game board.
+          * Put the round marker on the 1st space of the round track.
+          * Place Merlin on the Dragon's Principality space (black) on the
+            rondel.
+          * Place the grail and Excalibur on the their spots on the rondel.
+          * Place the flags, construction materials, and shields on their
+            corresponding spaces.
+          * Place the apples on their space.
+          * Shuffle the mission cards and place them face down on
+            the board. Flip the top 3 cards and place them face up next
+            to the board.
+          * Mix the traitor tiles face-down and place them on the matching
+            spaces in 3 face-down stacks.
+          * Construct the environs:
+              1. Mix all the terrain tiles face-down.
+                  * **If playing with 2-3 players**, remove 1 tile each of
+                    mountain, wood, and lake, both with and without tower.
+                    Return them to the box.
+              2. Arrange the terrain tiles in rows of 6 face-up tiles each,
+                 enclosed by the 2 terrain frames.
+          * Each player takes (in their color):
+              * 1 castle board
+              * 1 knight
+              * 4 henchmen
+              * 6 influence counters
+              * 3 Merlin's staffs
+              * 7 manors
+              * 1 scoring marker
+              * 1 100 point marker
+              * 3 personal dice
+              * 1 apple
+              * 1 Merlin die
+          * Shuffle the starting tiles and deal 1 to each player.
+              * Each player places their knight on the shown principality.
+              * Each player takes the flag, shield, and construction
+                material shown on the tile.
+              * Each player places 1 of their influence markers on the
+                depicted space.
+              * After everyone is complete, return the starting tiles to the
+                box.
+          * Each player then:
+              * Places their score marker on the 0/100 space of the
+                score track
+              * Stacks their manors next to the environs
+              * Places their 100 point marker near the score track
+              * Places the rest of their components on the matching spaces on
+                their castle board.
+              * Takes 3 traitors, attaching them to the assigned spaces of
+                their castle board.
+                  * Traitors with identical shields are placed on top of each
+                    other.
+              * Draws a hand of 4 mission cards from the deck.
+              * Rolls their 4 dice and place them on their castle board.
+                  * If a triplet or quadruplet is rolled, the player **must
+                    reroll all their dice**. Repeat until there is no longer
+                    3 or 4 of a kind.
+          * Pick a start player and give them the start player marker.
+    - name: Gameplay
+      text: |
+          The game is played over the course of 6 rounds with players using
+          their dice to move their knight or Merlin and performing the
+          action in the space they move to.  The round ends when all players
+          have taken 4 turns (used all their dice).
+      sections:
+        - name: Player Turn
+          text: |
+              * Choose 1 of your dice and place it in the center area of the
+                board.
+                  * **Note**: There can be any number of figures (knights
+                    and/or Merlin) on a space.
+                  * You may spend an apple to change the facing of your die
+                    to any side before placing the die and moving a figure.
+                  * If it's a white (Merlin) die, move Merlin a number of
+                    spaces equaling the die value in **either** direction.
+                  * If it's a die in your player color, move your knight
+                    a number of spaces equaling the die value in the
+                    **clockwise** direction.
+              * After moving a figure (your knight or Merlin), take the
+                action of the space where the figure landed.
+                  * If you used Merlin, you may spend one of your Merlin
+                    staffs to immediately repeat the action taken.
+                  * Note that each Merlin staff is usable once per game.
+              * You may also complete 1 (and only 1) of your mission cards.
+              * When all players are out of dice, proceed to the [end of
+                round](#end_round) instructions.
+        - name: Actions
+          sections:
+            - name: Principality Spaces
+              id: prnc_spaces
+              text: |
+                  ![a_princ](/static/img/merlin/a_princ.png)
+
+                  * Choose a henchman from their board or from another
+                    principality and place them on the corresponding
+                    space in the principality of the space you stopped at.
+                      * If the space is already occupied by another player's
+                        henchman, the other player returns the henchman to
+                        their player board.
+
+                  ## The Builder
+                  * Claim 1 piece of construction material from that
+                    principality (if available) and store it on your board.
+
+                  ## The Shield-bearer
+                  * Claim 1 shield (if available) from the principality
+                    and store it on your board.
+
+                  ## The Flag-bearer
+                  * Claim 1 flag (if available) from that principality and
+                    attach it to the matching spot next to your player board.
+
+                  ## The Lady-in-waiting
+                  * Take 1 of your counters from your player board (if
+                    available) and place it on the principality, adding it
+                    to any existing counters already there.
+            - name: Victory Point Spaces
+              text: |
+                  ![a_vp](/static/img/merlin/a_vp.png)
+
+                  ## Shield, Flag, Construction Material
+                  * Take 1 VP for each shield, flag, or construction material
+                    on your castle board, depending on the space.
+
+                  ## Influence Counter
+                  * Gain 1 VP for each of your influence counters that have
+                    been placed in the principalities.
+            - name: Influence Spaces
+              text: |
+                  ![a_inf](/static/img/merlin/a_inf.png)
+
+                  ## Flag, Construction Material, Shield
+                  * Claim 1 shield, flag, or construction material from **any**
+                    1 principality where you have at least 1 influence counter
+                    and store it on your board.
+
+                  ## Henchmen
+                  * Choose a principality in which you have at least 1
+                    influence counter and send 1 of your henchmen there.
+                      * See the [principality spaces](#prnc_spaces) for info
+                        on what the henchmen do.
+                      * The henchman can come from your board or another
+                        principality.
+
+                  ## Excalibur
+                  * Claim Excalibur from the board or from another player and
+                    chose and remove 1 of the traitors attached to your
+                    castle board and discard it.
+
+                  ## The Grail
+                  * Claim the grail from the board or from another player and
+                    take 1 apple from the supply and store it on your board.
+            - name: Relocate 1 Henchman Space
+              text: |
+                  ![a_reloc_hen](/static/img/merlin/a_reloc_hen.png)
+
+                  * Choose 1 of your henchmen from any principality and
+                    move it to the next principality in **either** direction
+                    and perform their duty.
+                      * See the [principality spaces](#prnc_spaces) for info
+                        on what the henchmen do.
+            - name: Exchange Spaces
+              text: |
+                  ![a_exch](/static/img/merlin/a_exch.png)
+
+                  * You may exchange 1 shield, flag, or construction material
+                    you have and take 1 shield, flag, or construction material
+                    from any principality.
+                      * Note the items exchanged do **not** have to be the
+                        same type.  e.g. You can exchange a shield for a flag.
+            - name: Mission Spaces
+              text: |
+                  ![a_mission](/static/img/merlin/a_mission.png)
+
+                  * You may discard up to 2 of your mission cards and draw
+                    the same number of cards from the display and/or draw
+                    pile.
+                      * When a card is taken from the display, replace it
+                        **immediately**.
+                      * If the draw pile is empty, shuffle the discard to
+                        make a new draw pile.
+            - name: Build a Manor Spaces
+              text: |
+                  ![a_manor](/static/img/merlin/a_manor.png)
+
+                  * You may build 1 manor in the environs.
+                      * It can be built on any terrain tile not already
+                        occupied by a manor.
+                      * To pay for the build, spend one of the construction
+                        materials that line up with the space in which you
+                        want to build. Only spend 1 material, not 1 of each.
+                          * Draw a (virtual) line from the space to all of the
+                            frame spots showing a construction material that
+                            line up with the desired space.
+                      * If the tile shows a tower, you may claim 1 shield
+                        or flag from any principality **or** you may place
+                        1 of your influence counters on any principality.
+                  * **You may not build more than 7 manors in the environ**.
+        - name: Mission Cards
+          text: |
+              * You may resolve 1 (and only 1) of your mission cards at any
+                time during your turn.
+              * If you meet the requirements (upper-left part of the card),
+                gain the points shown in the shield and discard the card.
+                  * **Note that you do NOT spend the items required, you must
+                    simply *have* them**.
+              * After you resolve a mission card, draw a new one **at the
+                end of your turn**.
+                  * You can draw from the display or from the top of the
+                    deck.
+                  * If you draw from the display, replace the it from the deck.
+                  * If the draw pile is empty, shuffle the discard to form
+                    a new draw pile.
+        - name: End of Round
+          id: end_round
+          text: |
+              # After the 1st, 3rd, and 5th Round
+              * Everyone picks up and rolls their 3 personal dice and a Merlin
+                die.
+                  * If 3 or 4 of a kind are rolled, reroll until you do not
+                    have 3 or 4 of a kind.
+                  * Place your dice on your castle board.
+              * Pass the 1st player marker to the next player to the left.
+              * Move the game round marker to the next space.
+
+              # Scoring After the 2nd, 4th, and 6th Rounds
+              * After the scoring in the 2nd and 4th rounds, perform the
+                same steps as for the 1st, 3rd, and 5th rounds above.
+              * After the 6th round, proceed to the [end of game](#end_game)
+                steps.
+
+              ## Scoring Traitors
+              1. You must repel the traitors you have by spending the shield
+                 associated with the traitor. If you spend the shield, discard
+                 the traitor back to its matching principality.
+                  * If you hold Excalibur and repelled all your traitors,
+                    gain 3 points.
+                  * If you have multiple traitors showing the same shield,
+                    you must spend 1 shield **per traitor**.
+              2. Lose 3 points for each traitor you did not repel. Then discard
+                 all your traitors back to their matching principality.
+              3. Draw 3 new traitors from the stacks and attach them to your
+                 player board.
+                  * If the stacks are empty, shuffle the discarded traitors
+                    to form 3 new stacks.
+
+              ## Environs
+              * For each group of connected terrain of the same type, VP are
+                awarded for the most manors in that area.
+                  * 1 VP per hex in the grouping.
+                  * If there is a tie, divide the number of points between the
+                    tied players, rounded down.
+
+              ## Influence
+              * For each principality, the player with the most influence
+                scores VP.
+                  * Start with the black principality and continue clockwise
+                    in the scoring.
+                  * The number of points is equal to the total number of
+                    influence counters in that principality.
+                  * If there is a tie, divide the number of points between the
+                    tied players, rounded down.
+              * After scoring a principality, all counters, down to 1 per
+                player, are returned to the players' supplies. i.e. there
+                should be a max of 1 counter per player after this step.
+              * **Once per scoring**, the player with the Grail may place the
+                grail in a principality where they are tied with another
+                player to take all the points (tie-breaker).
+                  * After the scoring of all principalities are complete,
+                    the grail is returned to the player that had it.
+
+              ## Henchmen
+              * Each player gains 1 VP for each of their henchmen in a
+                principality (no points for henchmen on player boards).
+    - name: End of Game
+      id: end_game
+      text: |
+          The game ends after the scoring phase after the 6th round.
+
+          Gain additional points for:
+
+          * Each apple is 1 VP
+          * Each unused staff of Merlin is 2 VP
+          * Count the number of unused materials (shields, flags, and
+            construction materials) and divide by 3 (rounded down) and
+            score that many points.
+
+          The player with the most points wins. If there is a tie, the players
+          share the victory.
+    - name: King's Favor Module
+      text: |
+          This module will give players a choice when resolving a mission
+          card. Players will have the option to forgo points in favor of
+          a special ability.
+      sections:
+        - name: Setup Changes
+          text: |
+              * Each player takes a module board and 4 seals in their color.
+        - name: Gameplay
+          text: |
+              * The henchmen in the lower left corner of the mission card
+                indicates the section of the board that will be activated.
+              * A 1 point card has access to the top row ability, a 2 point
+                card can choose the top or 2nd row ability. A 3 point card
+                can choose any of the 3 rows.
+                  * After choosing a row, place a seal over the chosen row.
+              * Only 4 abilities can be activated on their module board
+                (hence the 4 seals). You may **not** move already placed
+                seals.
+              * Abilities in the 3rd row are permanent, but **can only be used
+                3 times per game** (once per scoring). Once the ability has
+                been used, flip the seal over. Flip it back to face up after
+                the next scoring phase.
+
+              | Icon | Ability |
+              | ---- | ------- |
+              | ![extra_vp](/static/img/merlin/extra_vp.png) | Each time you resolve a mission card with this henchman on it, gain 1 extra VP regardless of if you gain VP or acquire a new ability. |
+              | ![deploy](/static/img/merlin/deploy_any.png) | When moving your knight to a principality and choosing a henchman, you may instead send that henchman to any principality. **Note**: this **cannot** be used to keep an already placed henchman in the same principality. |
+              | ![two_manors](/static/img/merlin/2_manors.png) | When moving your knight/Merlin to a space that allows for manor building, you may perform that action twice. You may **not** use a staff of Merlin with this ability. |
+              | ![repel](/static/img/merlin/repel.png) | You may repel 1 traitor attached to your castle board without needing the corresponding shield. You also score 1 VP for this action. |
+              | ![flag_bear](/static/img/merlin/flag_ber.png) | When moving your knight/Merlin to a VP space, you may score an element (influence, shields, flags, construction materials) of your choice **regardless of what icon is shown on the space** you moved to. You also score 1 VP for this action. |
+              | ![liw](/static/img/merlin/liw.png) | When moving your knight/Merlin to an influence space, you may use this ability **instead**. 1 after the other, choose 2 principalities in which you have at least 1 influence and place 1 of your henchman there, performing their action. You may choose the same principality twice. You may **not** use a staff of Merlin with this ability. |
+    - name: Reference
+      text: |
+          ## Flags
+          You may use as many flags as you wish on your turn. After using the
+          flag's ability, **return it to its principality**.
+
+          * [**Repel traitors**]!black! (black): You may repel all traitors
+            attached to your player board showing 1 shield type without
+            having to spend a shield (or even own it).
+          * [**Missions**]!gray!: You may resolve 2 mission cards
+            during your turn.  If you do, gain 2 additional VP. Draw 2 new
+            mission cards at the end of your turn.
+          * [**Backwards**]!blue!: You may advance your in a
+            counter-clockwise direction.
+          * [**Turn 1 die**]!purple!: You may flip 1 die to its
+            opposite side before moving your figure. e.g. a 5 to a 2
+          * [**Different action**]!orange!: After you have moved a
+            figure, you may instead perform the action of any space occupied
+            by another player's knight **instead of** the space where your
+            figure is.
+          * [**Mirroring**]!brown!: After you have moved your knight, you
+            may place your knight on the opposite space of the rondel and
+            perform the action of that space instead.
+              * Your knight remains on the new space and will move from there
+                on your next turn.
+
+          ## Mission Card Requirements
+
+          | Icon | Requirement |
+          | ---- | ----------- |
+          | ![spec_item](/static/img/merlin/m_spec.png) | Specific flags, construction materials, or shields |
+          | ![any_basic](/static/img/merlin/m_any.png) | Any kind of flags, shields, or construction materials |
+          | ![inf_part](/static/img/merlin/m_spec_inf.png) | Influence counter(s) in a particular principality |
+          | ![inf_any](/static/img/merlin/m_any_inf.png) | Influence counter(s) in any principality |
+          | ![spec_hen](/static/img/merlin/m_spec_hen.png) | Specific henchman in a specific principality |
+          | ![two_hen_part](/static/img/merlin/m_any_2_hen_part.png) | Any 2 henchmen in a particular principality |
+          | ![two_hen_any](/static/img/merlin/m_2_spec_hen.png) | 2 specific henchmen in any principality |
