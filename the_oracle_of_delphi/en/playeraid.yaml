@@ -1,0 +1,91 @@
+name: "The Oracle of Delphi"
+description: "Pick up and deliver things for Zeus"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+version: 1.0
+bgg_id: 193558
+expansions:
+sections:
+    - name: Setup
+      text: |
+        * Setup the game board using the 12 board tiles with the 3 pieces
+          with "holes" in their center in the center.
+        * Place the 6 city tiles roughly equidistant around the game
+          board.
+            * **All water spaces must be connected after this step**.
+        * Place the Zeus standee in the central space surrounded by 6 water
+          spaces.  This is both the starting point and the end destination.
+        * Take as many offering cubes of each color as players in the game
+            * Distribute these offerings evenly among the 6 offering island
+              spaces such that **no color occurs twice on any island**.
+        * Place the 6 temples on the 6 temple islands.
+        * Take as many monsters of each color as players in the game.
+            * Place any 2 different monsters on the 3 marked monster islands
+              and distribute the remaining evenly among the remaining 6
+              monster islands such that **no color occurs twice on any
+              island**.
+        * Place the 3 statues of each color on the respective city tiles.
+        * Shuffle the island tiles face down (cloud side up) and place them
+          place them face down on the island spaces with colored borders.
+        * Shuffle the oracle cards and place them face down as a draw pile
+          near the board.
+        * Shuffle the injury cards and place them face down as a draw pile
+          near the board.
+        * Lay out the companion cards as a face up stack.
+        * Shuffle the equipment cards and display 6 of them. Place the
+          remaining cards as a face down draw pile.
+        * Create a pool of favor tokens.
+        * Each player takes the following:
+            * 1 ship in your color
+            * 1 shield
+            * 12 zeus tiles in your color
+            * 1 player board
+            * 6 god tokens (1 of each)
+            * 3 shrines
+            * 3 oracle dice
+            * 1 action overview
+        * Determine a start player and give them 3 favor tokens. In clockwise
+          order each player receives 1 more player token than the previous.
+            * e.g. in a 3 player game, the start player gets 3 tokens, the 2nd
+              player gets 4, and the 3rd player gets 5.
+        * Distribute the ship tiles in 1 of 2 ways:
+            1. Randomly take a ship tile.
+            2. Randomly pick ship tiles such that you have an amount equal
+               to the number of players + 1. Beginning with the last player
+               and going counter-clockwise, each player selects a ship tile.
+               Return the unused tile to the box.
+        * The last player of the round takes the Titan die and places it
+          in the center of their oracle.
+        * Each player:
+            * Roll your 3 oracle dice and place them on their matching symbols.
+            * Place the shrines on their spaces.
+            * Draw 1 injury card and place it face up next to the lower left
+              portion of your board.
+            * Place your 6 gods on the lowest row of the god track.
+                * Advance the god in the color of the injury card you drew
+                  to the row showing number of players.
+            * Place your shield on the 1st space of the shield track.
+            * Place your ship on the starting space (where Zeus was placed
+              earlier).
+            * Sort your Zeus tiles.
+                * 1 player should randomly choose 2 of the colored
+                  offering/monster tiles and flip 2 of them to the monster
+                  side (so that you have 2 offerings and 2 monsters).
+                * All players should copy the player above so that each
+                  player has identical starting zeus tiles.
+                * **First game variant**: Play with only 8 Zeus tiles by
+                  returning 1 of each:
+                    * 1 shrine tile
+                    * 1 statue tile
+                    * 1 colored monster
+                    * 1 colored offering
+                    * **Note that everyone should still have the same
+                      starting tiles left over**.
+            * Place your action overview near your board.
+    - name: Gameplay
+      text: |
+        
+
+
+
