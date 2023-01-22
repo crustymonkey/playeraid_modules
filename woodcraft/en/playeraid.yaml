@@ -3,7 +3,7 @@ description: "Craft things out of wood"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.0
+version: 1.1
 bgg_id: 355093
 expansions:
 sections:
@@ -83,12 +83,13 @@ sections:
           The game is played in a number of rounds, with each turn consisting
           of the following:
 
-          1. Grow your trees (if you have any). Note that you won't do this
-             on your 1st turn.
+          1. Grow your trees by increasing the dice by 2 (if you have any).
+             Note that you won't do this on your 1st turn.
           2. Choose an action from the action wheel and execute it. You can
              also buy a bonus action and perform free actions.  **These can
              be done in any order**.
-          3. You can buy points.
+          3. You can buy points via the track in the upper left of your
+             player board..
 
           **You have the option to buy 1 bonus action on your turn**. Pay 3
           lanterns and choose an action tile to perform the action, **but
