@@ -2,7 +2,7 @@ name: "The Oracle of Delphi"
 description: "Pick up and deliver things for Zeus"
 text_type: markdown
 credits: "Jay Deiman"
-enabled: false
+enabled: true
 version: 1.0
 bgg_id: 193558
 expansions:
@@ -236,10 +236,10 @@ sections:
 
             | Icon | Description |
             | ---- | ----------- |
-            | [shrine](/static/img/the_oracle_of_delphi/shrine.png) | **Shrine**: Build 3 shrines on the depicted islands. Gain 1 god track movement as a reward. |
-            | [statue](/static/img/the_oracle_of_delphi/statue.png) | **Statue**: Load statues on your ship and deliver them to the matching colored statue islands. Take a companion card matching the color of the statue as a reward. |
-            | [offering](/static/img/the_oracle_of_delphi/offering.png) | **Offering**: Load 1 offering of the depicted color on your ship and deliver it to a temple of the matching color. Gain 3 favor tokens as a reward. |
-            | [monster](/static/img/the_oracle_of_delphi/monster.png) | **Monster**: Defeat 1 monster of the depicted color. Take 1 equipment card as a reward. |
+            | ![shrine](/static/img/the_oracle_of_delphi/shrine.png) | **Shrine**: Build 3 shrines on the depicted islands. Gain 1 god track movement as a reward. |
+            | ![statue](/static/img/the_oracle_of_delphi/statue.png) | **Statue**: Load statues on your ship and deliver them to the matching colored statue islands. Take a companion card matching the color of the statue as a reward. |
+            | ![offering](/static/img/the_oracle_of_delphi/offering.png) | **Offering**: Load 1 offering of the depicted color on your ship and deliver it to a temple of the matching color. Gain 3 favor tokens as a reward. |
+            | ![monster](/static/img/the_oracle_of_delphi/monster.png) | **Monster**: Defeat 1 monster of the depicted color. Take 1 equipment card as a reward. |
         - name: The Oracle
           text: |
             * After rolling your dice (consulting the Oracle), place the dice
@@ -255,14 +255,14 @@ sections:
 
             | Tile | Effect |
             | ---- | ------ |
-            | [shield2](/static/img/the_oracle_of_delphi/shield2.png) | At the start of the game, advance your shield 2 spaces. |
-            | [adv_gods](/static/img/the_oracle_of_delphi/adv_gods.png) | Advance all your gods to the row showing the number of players. After using a god power, return the god to this row instead of the black clouds. |
-            | [range2](/static/img/the_oracle_of_delphi/range2.png) | Your ship's range is increased by +2. |
-            | [favor1](/static/img/the_oracle_of_delphi/favor1.png) | Whenever you take favor tokens, take 1 more. This also applies to the starting favor tokens. |
-            | [zeus-1](/static/img/the_oracle_of_delphi/zeus-1.png) | Return a Zeus tile of your choice to the box. You only need to complete 11 tasks. |
-            | [favor-1](/static/img/the_oracle_of_delphi/favor-1.png) | You spend 1 less favor token when re-coloring your dice. |
-            | [equ_orac](/static/img/the_oracle_of_delphi/equip_orac.png) | At the start of the game, take 1 equipment card from the display and 1 Oracle card. |
-            | [orac_cntr](/static/img/the_oracle_of_delphi/orac_cntr.png) | You may also re-color your dice in a counter-clockwise direction (against the arrows). |
+            | ![shield2](/static/img/the_oracle_of_delphi/shield2.png) | At the start of the game, advance your shield 2 spaces. |
+            | ![adv_gods](/static/img/the_oracle_of_delphi/adv_gods.png) | Advance all your gods to the row showing the number of players. After using a god power, return the god to this row instead of the black clouds. |
+            | ![range2](/static/img/the_oracle_of_delphi/range2.png) | Your ship's range is increased by +2. |
+            | ![favor1](/static/img/the_oracle_of_delphi/favor1.png) | Whenever you take favor tokens, take 1 more. This also applies to the starting favor tokens. |
+            | ![zeus-1](/static/img/the_oracle_of_delphi/zeus-1.png) | Return a Zeus tile of your choice to the box. You only need to complete 11 tasks. |
+            | ![favor-1](/static/img/the_oracle_of_delphi/favor-1.png) | You spend 1 less favor token when re-coloring your dice. |
+            | ![equ_orac](/static/img/the_oracle_of_delphi/equip_orac.png) | At the start of the game, take 1 equipment card from the display and 1 Oracle card. |
+            | ![orac_cntr](/static/img/the_oracle_of_delphi/orac_cntr.png) | You may also re-color your dice in a counter-clockwise direction (against the arrows). |
         - name: Shields
           text: |
             * Shields are used for fighting off the Titan at the end of
@@ -314,12 +314,12 @@ sections:
 
             | Icon | Description |
             | ---- | ----------- |
-            | [poseidon](/static/img/the_oracle_of_delphi/poseidon.png) | Place your ship on a water space of your choice. |
-            | [artemis](/static/img/the_oracle_of_delphi/artemis.png) | Uncover a face down island tile and take the reward. |
-            | [ares](/static/img/the_oracle_of_delphi/ares.png) | If your ship is adjacent to a monster, defeat the monster **without rolling the battle die**. Take the reward of the matching Zeus tile. |
-            | [apollon](/static/img/the_oracle_of_delphi/apollon.png) | Draw 1 Oracle card. For this turn, treat your dice and Oracle card as if they were any color. |
-            | [aphrodite](/static/img/the_oracle_of_delphi/aphrodite.png) | Discard all your injury cards. |
-            | [hermes](/static/img/the_oracle_of_delphi/hermes.png) | If your ship is adjacent to a city tile, take a statue from **any** city tile and place it on your ship. |
+            | ![poseidon](/static/img/the_oracle_of_delphi/poseidon.png) | Place your ship on a water space of your choice. |
+            | ![artemis](/static/img/the_oracle_of_delphi/artemis.png) | Uncover a face down island tile and take the reward. |
+            | ![ares](/static/img/the_oracle_of_delphi/ares.png) | If your ship is adjacent to a monster, defeat the monster **without rolling the battle die**. Take the reward of the matching Zeus tile. |
+            | ![apollon](/static/img/the_oracle_of_delphi/apollon.png) | Draw 1 Oracle card. For this turn, treat your dice and Oracle card as if they were any color. |
+            | ![aphrodite](/static/img/the_oracle_of_delphi/aphrodite.png) | Discard all your injury cards. |
+            | ![hermes](/static/img/the_oracle_of_delphi/hermes.png) | If your ship is adjacent to a city tile, take a statue from **any** city tile and place it on your ship. |
         - name: Companion Cards
           text: |
             You receive these cards as a reward for raising statues. There
@@ -346,22 +346,22 @@ sections:
 
             | Icon | Description |
             | ---- | ----------- |
-            | [rangep1](/static/img/the_oracle_of_delphi/rangep1.png) | Your ship's range is increased by 1. |
-            | [godp1](/static/img/the_oracle_of_delphi/godp1.png) | Whenever you receive a reward for an offering, statue, or monster, advance 1 god 1 step. |
-            | [spacep1](/static/img/the_oracle_of_delphi/spacep1.png) | You may fight a monster, explore an island tile, or build a shrine from 1 space away (not adjacent). |
-            | [die_favor](/static/img/the_oracle_of_delphi/die_favor.png) | You may use the depicted color of Oracle die to take 1 Oracle card, 1 favor token, and advance the matching god 1 step. |
-            | [injuryp1](/static/img/the_oracle_of_delphi/injuryp1.png) | When checking injuries, you now need to have 4 of a matching color or 8 total to trigger a recovery turn. |
-            | [match_favor](/static/img/the_oracle_of_delphi/match_favor.png) | When you roll your dice and at least 1 of the dice matches the depicted die color, take 2 favor tokens. |
-            | [adv_god](/static/img/the_oracle_of_delphi/adv_god.png) | **1-time**: Advance 1 of the depicted gods to the top row. |
-            | [island2](/static/img/the_oracle_of_delphi/island2.png) | **1-time**: Look at 2 face-down island tiles, put 1 back, and uncover the other and take the corresponding reward. *If there are less than 2 face-down island tiles, this cannot be used*. |
-            | [shallows](/static/img/the_oracle_of_delphi/shallows.png) | Your ship may cross shallows (holes in the board). Additionally, the shallow does not count as a space. |
-            | [storagep1](/static/img/the_oracle_of_delphi/storagep1.png) | Your ship's storage capacity is increased by 1. **1-time**: Move your shield up 1 space. |
-            | [statuep1](/static/img/the_oracle_of_delphi/statuep1.png) | You may load/place a statue from 1 additional space away (non-adjacent). |
-            | [offeringp1](/static/img/the_oracle_of_delphi/offeringp1.png) | You load/place an offering from 1 additional space away (non-adjacent). |
-            | [turnp1](/static/img/the_oracle_of_delphi/turnp1.png) | **Once per turn**, you may spend 3 favor tokens to perform an action of any color. |
-            | [take_stat](/static/img/the_oracle_of_delphi/take_stat.png) | **1-time**: Take 1 of the depicted statues and store it on your ship. |
-            | [take_offering](/static/img/the_oracle_of_delphi/take_offering.png) | **1-time**: Take 1 of the depicted offerings and store it on your ship. |
-            | [take_favor](/static/img/the_oracle_of_delphi/take_favor.png) | **1-time**: Take 3 favor, 1 Oracle card, and advance a total of 2 spaces on the god track. |
+            | ![rangep1](/static/img/the_oracle_of_delphi/rangep1.png) | Your ship's range is increased by 1. |
+            | ![godp1](/static/img/the_oracle_of_delphi/godp1.png) | Whenever you receive a reward for an offering, statue, or monster, advance 1 god 1 step. |
+            | ![spacep1](/static/img/the_oracle_of_delphi/spacep1.png) | You may fight a monster, explore an island tile, or build a shrine from 1 space away (not adjacent). |
+            | ![die_favor](/static/img/the_oracle_of_delphi/die_favor.png) | You may use the depicted color of Oracle die to take 1 Oracle card, 1 favor token, and advance the matching god 1 step. |
+            | ![injuryp1](/static/img/the_oracle_of_delphi/injuryp1.png) | When checking injuries, you now need to have 4 of a matching color or 8 total to trigger a recovery turn. |
+            | ![match_favor](/static/img/the_oracle_of_delphi/match_favor.png) | When you roll your dice and at least 1 of the dice matches the depicted die color, take 2 favor tokens. |
+            | ![adv_god](/static/img/the_oracle_of_delphi/adv_god.png) | **1-time**: Advance 1 of the depicted gods to the top row. |
+            | ![island2](/static/img/the_oracle_of_delphi/island2.png) | **1-time**: Look at 2 face-down island tiles, put 1 back, and uncover the other and take the corresponding reward. *If there are less than 2 face-down island tiles, this cannot be used*. |
+            | ![shallows](/static/img/the_oracle_of_delphi/shallows.png) | Your ship may cross shallows (holes in the board). Additionally, the shallow does not count as a space. |
+            | ![storagep1](/static/img/the_oracle_of_delphi/storagep1.png) | Your ship's storage capacity is increased by 1. **1-time**: Move your shield up 1 space. |
+            | ![statuep1](/static/img/the_oracle_of_delphi/statuep1.png) | You may load/place a statue from 1 additional space away (non-adjacent). |
+            | ![offeringp1](/static/img/the_oracle_of_delphi/offeringp1.png) | You load/place an offering from 1 additional space away (non-adjacent). |
+            | ![turnp1](/static/img/the_oracle_of_delphi/turnp1.png) | **Once per turn**, you may spend 3 favor tokens to perform an action of any color. |
+            | ![take_stat](/static/img/the_oracle_of_delphi/take_stat.png) | **1-time**: Take 1 of the depicted statues and store it on your ship. |
+            | ![take_offering](/static/img/the_oracle_of_delphi/take_offering.png) | **1-time**: Take 1 of the depicted offerings and store it on your ship. |
+            | ![take_favor](/static/img/the_oracle_of_delphi/take_favor.png) | **1-time**: Take 3 favor, 1 Oracle card, and advance a total of 2 spaces on the god track. |
     - name: Shorter Game Variant
       text: |
         You can return up to 4 of the Zeus tiles to the box so you have fewer
