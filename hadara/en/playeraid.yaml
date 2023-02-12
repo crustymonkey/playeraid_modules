@@ -1,0 +1,52 @@
+name: "Hadara"
+description: "Build out your civ...kind of"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+version: 1.0
+bgg_id: 269144
+expansions:
+sections:
+    - name: Setup
+      text: |
+        * Connect the 5 board segments.
+        * Separate the cards by their epochs (I, II, III).
+            * Separate the epoch I cards by their color, and shuffle each color.
+            * Place 2 cards **per player** on each of the matching colored spots
+              on the board.
+                * The rest of the epoch I cards can be returned to the box.
+        * Separate the colonies by the value shown in the lower left of the
+          tile.
+            * Shuffle the 5 piles separately with the coin side up.
+            * Place 1 tile **per player**, coin side up, in a stack near the
+              board for each of the 5 stacks of tiles.
+                * Any leftover tiles can be returned to the box.
+        * Place the coins and 10 value markers near the board.
+        * For each player:
+            * Take a reference sheet.
+            * Take 8 bonus tiles (2 of each color).
+            * Take 2 gold medals.
+            * Take 4 wooden markers (1 of each color).
+            * Shuffle the setup cards and deal 1 to each player.
+                * Take the coins shown on the setup card.
+                * Set your tracks to match the numbers shown on the card.
+        * The player with the lowest initiative value on their setup card will
+          go 1st in the 1st epoch.  See [gameplay](#gameplay) for more info.
+        * **If playing with 4+ players**, give 1 coin to the 4th and 5th'
+          players.
+        * **If playing with 2 players**, give 1 coin to the player going 2nd
+          in the 1st epoch.
+    - name: Gameplay
+      id: gameplay
+      text: |
+        The game takes place over 3 epochs, each separated into 2 phases,
+        with the player with the most points after the 3 epochs winning the
+        game.
+
+        * The player with the lowest initiative value on their setup card will
+          go 1st in the 1st epoch.
+        * The 2nd lowest value will go 1st in the 2nd epoch.
+        * The 3rd lowest value will go 1st in the 3rd epoch.
+      sections:
+        - name: Phase A
+          text: |
