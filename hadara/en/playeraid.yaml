@@ -2,12 +2,13 @@ name: "Hadara"
 description: "Build out your civ...kind of"
 text_type: markdown
 credits: "Jay Deiman"
-enabled: false
+enabled: true
 version: 1.0
 bgg_id: 269144
 expansions:
 sections:
     - name: Setup
+      id: setup
       text: |
         * Connect the 5 board segments.
         * Separate the cards by their epochs (I, II, III).
@@ -32,8 +33,8 @@ sections:
                 * Set your tracks to match the numbers shown on the card.
         * The player with the lowest initiative value on their setup card will
           go 1st in the 1st epoch.  See [gameplay](#gameplay) for more info.
-        * **If playing with 4+ players**, give 1 coin to the 4th and 5th'
-          players.
+        * **If playing with 4+ players**, give 1 coin to the players with
+          the 4th and 5th highest initiative values.
         * **If playing with 2 players**, give 1 coin to the player going 2nd
           in the 1st epoch.
     - name: Gameplay
@@ -43,10 +44,174 @@ sections:
         with the player with the most points after the 3 epochs winning the
         game.
 
+        ## General notes
+
         * The player with the lowest initiative value on their setup card will
           go 1st in the 1st epoch.
         * The 2nd lowest value will go 1st in the 2nd epoch.
         * The 3rd lowest value will go 1st in the 3rd epoch.
+        * If you reach the end of a track, use a "+10" marker at the end of
+          the track to show that you have a value of more than 10 on that
+          track.
+        * Costs for cards vary by epoch:
+            * **Epoch I**: 1-4 coins
+            * **Epoch II**: 4-7 coins
+            * **Epoch III**: 7-9 coins
       sections:
         - name: Phase A
+          id: phase_a
           text: |
+            There are a number of steps in this phase that are completed
+            in order. There are some steps that are done in player order and
+            some that are done simultaneously
+
+            1. The 1st player for the epoch sets the wheel in the center of
+               the board such that each player icon points to a deck.
+            2. (simultaneous) Each player draws 2 cards from the deck next to
+               their player icon.
+            3. (simultaneous) With the 2 cards, each player chooses 1 to buy
+               or sell, while discarding the other card.
+                * **You must discard 1 of the 2 cards**.
+                    * Place the discarded card face up in the discard pile of
+                      the corresponding color.
+                * **Buy**: Pay the cost of the card ([red]!red! number) with
+                  a discount of 1 coin per card of that color you *already*
+                  have.
+                    * Place the card below your player board under the
+                      corresponding color -- overlap the cards so you
+                      can see the values at the top.
+                    * Move up on the designated track(s) by the amount(s)
+                      shown.
+                    * [purple]!purple! cards may have effects on them. Those
+                      become immediately available after purchase.
+                * **Sell**: Remove the card from the game (**not** discarded)
+                  and gain the coins shown in the [green]!green! number.
+            4. Rotate the wheel 1 position clockwise and then go to #2.
+               Repeat this process until all of the facedown piles on the board
+               are empty.
+            5. Once all the facedown piles are empty, proceed to the
+               [End of Phase A/B](#ab_end)
+        - name: End of Phase A/B
+          id: ab_end
+          text: |
+            Once all the cards have been drafted, the following steps are
+            done, in order.
+
+            1. Each player takes coins equal to the value of their income
+               track.
+            2. (in player order) Each player may take 1 colony if they meet
+               the military requirement for it.
+                * The value of the player's military must be >= the requirement
+                  in the lower left hand part of the colony.
+                * Note that you will never lose a colony you have acquired,
+                  even if your military track decreases below the requirement
+                  for the colony.
+                * **You may only take 1 colony from each of the 5 requirement
+                  levels** (3, 9, 15, 21, 30).
+                    * You may take colonies in any order.
+                * You may only take 1 colony during this step.
+                * Do **not** look at the back of the colony, unless you choose
+                  to *integrate* it.
+                * You may either *plunder* the colony or *integrate* it.
+                    * In either case, the colony is placed to the left of your
+                      player board.
+                    * **Plunder**: Gain the coins specified by the
+                      [green]!green! number.
+                    * **Integrate**: Pay the cost indicated by the [red]!red!
+                      number and flip the colony over and move up on the
+                      indicated tracks. Again, you **cannot look at the
+                      back of the colony before choosing to integrate it**.
+            3. (in player order) Each player may carve a statue if they
+               meet the culture requirement for it.
+                * The value of the player's culture must be >= the requirement
+                  on the statue space they wish to build.
+                * Note that you will never lose a statue you have acquired,
+                  even if your culture track decreases below the requirement
+                  for the statue.
+                * You may only take carve 1 statue during this step.
+                * Each statue may only be carved once.
+                * Statues may be carved in any order.
+                * You cannot flip a bonus tile after it has been placed.
+                * Place 1 of your unused bonus tiles on your player board in
+                  it's space. The tile may be place face up or face down.
+                    * **Face up**: (colored side) Advance 1 space on the
+                      matching colored track.
+                    * **Face down**: At the end of the game, gain the points
+                      next to the bonus tile space in addition to the points
+                      for building the statue.
+        - name: Phase B
+          text: |
+            1. Starting with the 1st player, each player takes 1 face up card
+               from the **top** of a discard pile (wheel position does not
+               matter).
+                * You cannot look through any of the cards in any piles.
+                * You can buy or sell the card as described in
+                  [Phase A](#phase_a).
+            2. Repeat step #1 until there are no cards left on the board.
+            3. Resolve the 3 steps in [End of Phase A/B](#ab_end) again.
+            4. You now must feed your people.
+                * You must count the number of cards you have acquired (not
+                  including your setup card) and:
+                    * **If your food track is >= the number of cards**,
+                      nothing happens.
+                    * **If your food track is < the number of cards**, you
+                      must choose and remove cards (from the game) until
+                      the total number of cards equals your food track.
+                        * When you remove a card, you must **decrease** all the
+                          tracks by the values shown.
+                        * If a card has an effect, you lose that effect.
+                        * Do **not** gain coins for cards, as you would when
+                          selling them.
+                        * If you remove a card with a food value, you must
+                          now meet the new value of the food track. (bad idea)
+            5. Players may now buy gold/silver medals. (see below for costs)
+                * **Silver medals**: Score points (end of game) equal to
+                  half the value (rounded up) of the track matching the
+                  bonus tile used.
+                    * Place 1 of your unused bonus tiles onto an empty
+                      silver medal space on your player board.
+                * **Gold medals**: Score 7 points (end of game) per set of 5
+                  differently colored cards you have.
+                    * Place 1 of your gold medals onto 1 of the empty gold
+                      medal spaces on your player board.
+                * You can buy a max of 2 silver medals and 2 gold medals during
+                  the game.
+                * You may buy any number of silver/gold medals during this
+                  step (up to the max).
+
+            ## Medal Costs
+
+            |    | I | II | III |
+            | -- | - | -- | --- |
+            | Silver | 4 | 9 | 20 |
+            | Gold | 6 | 12 | 30 |
+        - name: End of the Epoch
+          text: |
+            * If it is the end of epoch III, proceed to
+              [final scoring](#scoring).
+            * Repeat the deck setup as described in [setup](#setup) using the
+              deck for the next epoch:
+                * Separate the cards into their separate colors and shuffle
+                  them separately.
+                * Place 2 cards per player face down in their spots on the
+                  board for each color.
+                * Return any leftover cards to the box.
+            * Proceed to [Phase A](#phase_a) for the new epoch.
+    - name: End Game and Scoring
+      id: scoring
+      text: |
+        Score points for all of the following items.
+
+        * Score points for the values on the bottom right of all colonies
+          you've acquired.
+        * Score points for all statues you've carved. Also score the bonus
+          points equal to the amount shown next to face down bonus tiles.
+        * Score points equal to half the track value (rounded up) for
+          the matching bonus tile on silver medal spaces.
+        * Score 7 points per set of 5 differently colored cards per gold medal.
+        * Score points for the values specified on any of your cards.
+        * Score 1 point for every 5 coins remaining.
+
+        The player with the most points wins. If there is a tie, the player
+        with the most leftover coins wins.  If there's still a tie, players
+        share the victory.
