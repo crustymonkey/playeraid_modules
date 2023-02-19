@@ -3,7 +3,7 @@ description: "Build out your civ...kind of"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.0
+version: 1.1
 bgg_id: 269144
 expansions:
 sections:
@@ -215,3 +215,28 @@ sections:
         The player with the most points wins. If there is a tie, the player
         with the most leftover coins wins.  If there's still a tie, players
         share the victory.
+    - name: Purple Card Effects
+      text: |
+        The price range for cards varies by epoch:
+
+        * **Epoch I**: 1-4 coins
+        * **Epoch II**: 4-7 coins
+        * **Epoch III**: 7-9 coins
+
+        | Symbol | Effect |
+        | ------ | ------ |
+        | ![plus_coin](/static/img/hadara/e1b_plus_coin.png) | When you sell a card, gain 1 additional coin. |
+        | ![move_track](/static/img/hadara/e1b_bonus.png) | Place a bonus tile on this card and increase the corresponding track by 2. |
+        | ![inc_track](/static/img/hadara/e1a_inc_color.png) | Immediately increase the corresponding track by 1 for each card of the matching color you have. Further, whenever you buy a card of the matching color, increase the corresponding track by 1. |
+        | ![stat_bonus](/static/img/hadara/e2b_stat_bon.png) | For each statue you have carved, and whenever you carve 1 in the future, increase the track matching the bonus tile by an additional 2. If you place a bonus tile showing points, that statue will score 2 additional points (end of game). |
+        | ![red_medals](/static/img/hadara/e2b_red_med.png) | The costs of silver and gold medals are reduced to the amounts shown. |
+        | ![feed_coin](/static/img/hadara/e2a_feed_coin.png) | When feeding your people, if you would have to remove cards (not enough food), you can instead pay 2 coins per card you would have to remove **up to a max of 6 times** each time you feed your people. |
+        | ![feed_gain](/static/img/hadara/e2a_feed_gain.png) | When feeding your people, if your food track value is higher than your card total, you gain 3 x the difference in coins, **up to a max of 12 coins** per phase.  e.g. If you had 8 cards and your food track was at 10, you would receive 6 coins. |
+        | ![inc_coins](/static/img/hadara/e2a_inc_coins.png) | When you receive income, you gain 2 coins for each other track with a value greater than your income track. |
+        | ![col_coins](/static/img/hadara/e2a_col_coin.png) | Whenever you take a colony, you gain 4 additional coins. |
+        | ![silv_points](/static/img/hadara/e3b_med_trk.png) | 1 of your silver medals is worth points **equal** to the value of its corresponding track, instead of half. |
+        | ![diff_cards](/static/img/hadara/e3b_diff_cards.png) | (final scoring) score 4 points per set of 5 differently colored cards in addition to any points from gold medals. |
+        | ![any_color](/static/img/hadara/e3a_any_color.png) | This card counts as 1 card of any color for 1 set for gold medal scoring only. |
+        | ![two_act](/static/img/hadara/e3a_2_act.png) | During each "take a colony" and "carve a statue" action, you can resolve the action twice **if you fulfill the necessary requirements**. |
+        | ![red_req](/static/img/hadara/e3a_red_req.png) | The requirements to take colonies or carve statues are reduced by 4 for you. |
+        | ![coin_red](/static/img/hadara/e3a_coin_red.png) | You may pay coins to reduce the requirements to take a colony or carve a statue. You reduce the requirement by 1 for every 3 coins spent, up to a **max of 30 coins spent**. |
