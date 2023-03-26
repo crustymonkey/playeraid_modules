@@ -1,0 +1,82 @@
+name: "Final Girl"
+description: "Battle the 100% intellectually distinct baddies that my, coincidentally, resemble the bad guys from 80s and 90s horror movies."
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+version: 1.0
+bgg_id: 277659
+expansions:
+sections:
+    - name: Setup
+      text: |
+        ## Core box
+
+        * Choose a killer and a location from among the feature films. Remove
+          the killer and location boards (box covers) and any associated
+          components.
+        * Choose a final girl to play as.
+        * Take the player board from the core box and place it, choosing a
+          difficulty (different sides). Place your final girl card below the
+          player board.
+        * Set the dice near your player board.
+        * Take the action cards from the core box, setting the 6 zero cost
+          cards aside (your starting hand).
+        * Sort the rest of the action cards by their type and create a market
+          tableau, with each card of a particular type in a stack.
+        * Set the victim/special victim meeples aside along with their holding
+          boards.
+        * Remove the other meeples/tokens from the core box for use.
+
+        ## Feature film
+
+        * Place the chosen killer board above the player board.
+        * Place the chosen location board to the right of the killer board.
+        * Shuffle the killer's finale cards and place 1 face down, matching
+          up the artwork.
+        * Shuffle the killer's dard power cards and place 1 face down below
+          the finale card.
+        * Shuffle the killer's and the location's terror cards together, then
+          take 10 random cards to form the terror deck.  Set the rest aside.
+        * Shuffle the location's item cards and deal out 3 files of 4 face
+          down cards in their places above the location board.
+        * Shuffle the location's setup cards and draw 1.
+            * Setup the board as depicted on the card using the core box
+              components.
+            * Place the card in its place above the location board.
+            * The rest of setup cards can be returned to the box.
+        * Mix the 9 black final health tokens face down (+1 die face up). Then,
+          **without looking at them**:
+            * Place 1 on the circle on the bottom left of the killer board.
+            * Place 1 on the circle on the upper left side of the player
+              board.
+            * Return the rest to the box (also without looking at them).
+        * Place health markers int he space on the left side of the killer
+          and player boards until you have an amount matching the killer's
+          and final girl's health, respectively.
+            * **Important**: the *total* number of health tokens should include
+              the black final health token.  e.g. If the final girl has
+              5 health, they should have 1 black token and 4 heart tokens.
+        * Place the bloodlust marker at the bottom of the bloodlust track
+          on the right side of the killer board.
+        * Place the time marker on the 6 space.
+        * Place the 2nd killer marker on the horror track on the player
+          board. The starting horror is indicated on the killer board.
+        * Shuffle the event cards and place them face down next to the location
+          board.
+            * Draw the top card and follow the instructions on it.
+        * You can now begin the game.
+    - name: Gameplay
+      text: |
+        The game is played in a series of rounds until either the killer or
+        the final girl are dead.
+      sections:
+        - name: "1. The Action Phase"
+          text: |
+        - name: "2. The Planning Phase"
+          text: |
+        - name: "3. The Killer Phase"
+          text: |
+        - name: "4. The Panic Phase"
+          text: |
+        - name: "5. The Upkeep Phase"
+          text: |
