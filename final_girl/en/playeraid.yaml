@@ -3,7 +3,7 @@ description: "Battle the 100% intellectually distinct baddies that may, coincide
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.0
+version: 1.1
 bgg_id: 277659
 expansions:
 sections:
@@ -33,12 +33,13 @@ sections:
         * Place the chosen location board to the right of the killer board.
         * Shuffle the killer's finale cards and place 1 face down, matching
           up the artwork.
-        * Shuffle the killer's dard power cards and place 1 face down below
+        * Shuffle the killer's dark power cards and place 1 face down below
           the finale card.
         * Shuffle the killer's and the location's terror cards together, then
           take 10 random cards to form the terror deck.  Set the rest aside.
-        * Shuffle the location's item cards and deal out 3 files of 4 face
-          down cards in their places above the location board.
+        * Shuffle the location's item cards and deal out 3 piles of 4 face
+          down cards in their places above the location board and flip the
+          top card of each pile
         * Shuffle the location's setup cards and draw 1.
             * Setup the board as depicted on the card using the core box
               components.
@@ -50,7 +51,7 @@ sections:
             * Place 1 on the circle on the upper left side of the player
               board.
             * Return the rest to the box (also without looking at them).
-        * Place health markers int he space on the left side of the killer
+        * Place health markers in the space on the left side of the killer
           and player boards until you have an amount matching the killer's
           and final girl's health, respectively.
             * **Important**: the *total* number of health tokens should include
