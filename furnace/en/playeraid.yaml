@@ -3,13 +3,41 @@ description: "Run your factories for profit"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.0
+version: 2.0
 bgg_id: 318084
 expansions:
+    - Interbellum
 sections:
     - name: Setup
       text: |
+          1. **If playing with Interbellum**, assemble the company deck:
+              1. Sort the company cards from the base game into 12 piles
+                 according to their illustrations and take 2 cards at random
+                 from each pile (24 cards).
+                  * You can also just choose 24 random cards to save time,
+                    but it won't be as balanced.
+              2. Mix those with the 24 company cards in the expansion.
+              3. Return all unused company cards to the box.
+              4. **If playing with 5 players**:
+                  * Determine the 1st player *before* distributing Start-up
+                    and Capitalist cards.
+                  * The player who will be going 5th in the 1st round receives
+                    2 Start-up cards and 2 Capitalist cards, choosing 1 of
+                    each.
           1. Each player gets the following:
+              * **If playing with Interbellum**
+                  * Mix in the expansion Start-up and Capitalist cards.
+                  * Give each player receives a variable capital disc in
+                    addition to the other components.
+                  * Each player receives 1 coal cube (in addition to any
+                    resources from their Start-up card).
+                  * Place Business School cards at the end of the company
+                    card row.
+                      * **1-3 players**: Use 2 Business School cards (return
+                        the last to the box).
+                      * **4-5 players**: Use all 3 Business School cards.
+                  * Shuffle all the Manager tokens and place them next to
+                    the Business School cards.
               * A random Start-up card (not double-sided).
               * A random Capitalist card.
                   * If a player gets the capitalist card that gives them an
@@ -39,6 +67,10 @@ sections:
                           mode](#twoplayer) section for more info.
                     * **3 players**: 7 cards
                     * **4 players**: 8 cards
+                * **If playing with Interbellum**:
+                    * The Business School cards will be at the end of the
+                      company card row.
+                    * Place 1 manager token on each Business School card.
 
                 ### Bidding
                 Players take turns in clockwise order beginning with the
@@ -54,6 +86,39 @@ sections:
 
                 The bidding continues until all discs have been placed.
 
+                ### Interbellum
+
+                * The players also have a variable value player disc.
+                    * The default value is zero.
+                    * The value of the disc can be increased (before placing)
+                      by spending 1 coal to increase its value by 1.
+                        * To indicate a bid of 10+, place the number of coal
+                          cubes on the disc for each number above 9. e.g.
+                          2 cubes should be placed on it to indicate a value
+                          of 11.
+                    * The variable disc is placed according to normal rules.
+                        * It cannot be placed on a card with a disc of the
+                          same value.
+                        * It cannot be placed on a card with another of the
+                          same player's discs.
+                        * Text effects that mention a disc with a specific
+                          value do **not** affect the variable disc, even
+                          if the value matches.
+                    * When retrieving your variable disc, reset the value
+                      to zero.
+                * Business School cards will be the last cards to be resolved.
+                    * The owner of the disc with the highest value takes the
+                      manager token on it (**not the card**).
+                    * There are 2 compensation options on the Business School
+                      cards.  When getting compensation, the comp. can be
+                      divided between the 2 options.  e.g. if you have 3 disc
+                      on it, you could do 1 comp. action for all 3 or split
+                      it up so you do 2 of 1 and 1 of the other.
+                    * If there are no discs on a Business School card, the
+                      manager token is discarded.
+                * **Manager tokens are not resolved during the auction phase**.
+                  They are resolved during the [Production phase](#production).
+
                 ### Resolving the Auction
                 Resolve the cards in the middle of the table from **left to
                 right**.
@@ -61,8 +126,14 @@ sections:
                 * Resolve the cards 1 at a time until completely resolved
                   before moving to the next card.
                 * If there is no disc on the card, remove it from the game.
+                    * **If playing with Interbellum** and the card is a
+                      Business School card, the manager token is discarded
+                      instead.
                 * If there is at least one disc on the card:
                     * The player with the highest bid gets the card.
+                        * **If playing with Interbellum** and the card is a
+                          Business School card, take the manager token instead
+                          of the card.
                     * All **losing** players take the "compensation" shown
                       at the top of the card.
                         * **Compensation**: The compensation that is received
@@ -72,6 +143,9 @@ sections:
                               by the disc value.
                             * Processing: Take the processing action a number
                               of times up to the disc value.
+                            * **If playing with Interbellum** and the card is
+                              a business school card, you may mix and match
+                              between the compensation options (see above).
                     * **Note**: The person who takes the card does **NOT** get
                       compensated.  They only get the card.
                 * When all cards are resolved, players take their discs back.
@@ -80,6 +154,19 @@ sections:
             text: |
                 Players run their engine in this phase to gain or process
                 resources.  This can be done simultaneously.
+
+                * **If playing with Interbellum**:
+                    * At the beginning of the production phase (before the
+                      card resolution below), players can place their manager
+                      tokens on their company or start-up cards (1 per card).
+                    * Placed manager tokens add an **additional** effect to
+                      the card when resolving it.
+                    * The manager effect can be resolved at any time when
+                      resolving the card.
+                    * Manager effects are optional.
+                    * Manager tokens are removed from cards at the end of the
+                      round, but the tokens stay with the player (to be placed
+                      again next round).
 
                 The cards in each player's display are resolved with the
                 following rules:
@@ -110,6 +197,22 @@ sections:
       text: |
           * Take a set of discs in a non-player color and the die to act as
             a "dummy" player for the game.
+          * **If playing with Interbellum**:
+              * Choose 1 agent card.
+              * Set aside their discs, including the variable disc.
+                  * The value of the variable disc is always equal to the
+                    value in the top right of the agent card.
+              * Allocate space on the table for the "dummy" player's cards.
+              * After rolling the die and selecting a card (below), refer
+                to the agent's card to find which disc should be placed.
+              * When resolving the auction, give the agent the company cards
+                and manager tokens where they had the highest bid and money
+                for each compensation transaction they are entitled to (as
+                indicated on the agent card).
+              * In the production phase, give the agent money according to
+                their card.
+              * If the agent has more money than they other players, the agent
+                wins.
           * During the auction phase, **after the 2nd player's bid**, roll the
             die and place the lowest numbered "dummy" player disc on the
             card corresponding to the number (furthest left = 1, furthest
@@ -133,4 +236,17 @@ sections:
                 the same**.
           * In the production phase, the cards in the chain are executed **in
             order** from left to right.
+    - name: Interbellum Individual Module Changes
+      text: |
+        If playing with Interbellum, you may choose individual modules to use
+        instead of adding everything. There are some restrictions when doing
+        so.
 
+        * When playing without the new Company cards, put the 2 manager tokens
+          allowing you to resolve the delivery once more back in the box.
+        * When playing without the manager tokens:
+            * Do not use the Capitalist with the Personal Manager.
+            * *But you are playing with the variable capital discs*, place
+              an additional company card for each auction.
+        * When playing without variable capital discs, do not use the
+          Capitalist with the +2 to the variable disc.
