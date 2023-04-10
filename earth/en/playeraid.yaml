@@ -1,0 +1,62 @@
+name: "Earth"
+description: "Build out your own Earth"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+version: 1.0
+bgg_id: 350184
+expansions:
+sections:
+    - name: Setup
+      text: |
+        * Place the fauna board.
+        * Give a player board to each player, making sure each player is using
+          the front of their board.
+        * Create a supply for sprouts, soil tokens, and trunk/canopy growth
+          tokens.
+        * Shuffle all the Earth cards and place them in a face down draw pile.
+        * Shuffle all the fauna cards and place 1 on each of the 4 fauna
+          spaces on the fauna board with either side face up. Return any
+          remaining fauna cards to the box.
+        * **For an advanced game**, deal out 2 island, 2 climate, and 2
+          ecosystem cards to choose from (1 of each).  Otherwise:
+            * Shuffle the ecosystem cards and place 1 on each of the 2
+              ecosystem spaces on the fauna board with either side face up.
+                * After that, deal 1 ecosystem card to each player.
+                * Remaining ecosystem cards can be returned to the box.
+            * Shuffle the Climate cards and deal 1 to each player. Return the
+              remaining cards to the box.
+            * Shuffle the island cards and deal 1 to each player.  All remaining
+              cards can be returned to the box.
+        * Randomly choose a start player and give them the 1st player token.
+        * Each player now selects a side of their island, climate, and
+          ecosystem cards.
+        * Each player takes 5 leaf tokens of 1 color, placing 4 of them on
+          the central leaf spaces on their player board.  Set the 5th aside to
+          be used for tracking action selection each turn.
+        * Each player draws a number of Earth cards shown on their island card.
+            * Everyone simultaneously selects a number of cards to compost,
+              as shown on their island card.
+        * Each player takes a number of soil tokens equal to what is shown
+          on their island card.
+    - name: Gameplay
+      text: |
+        The game is played over a number of rounds until, at the end of the
+        round, a player has completed their island by placing their 16th
+        card (4x4 grid).
+
+        On your turn, you will choose any 1 of the 4 action spaces at the
+        top of your player board, marking your choice with the leaf token
+        that was set aside.
+
+        * You may choose the same action as another player.
+        * You may perform the same action multiple turns in a row.
+      sections:
+        - name: Planting
+          text: |
+        - name: Composting
+          text: |
+        - name: Watering
+          text: |
+        - name: Growing
+          text: |
