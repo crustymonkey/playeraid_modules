@@ -2,7 +2,7 @@ name: "Earth"
 description: "Build out your own Earth"
 text_type: markdown
 credits: "Jay Deiman"
-enabled: false
+enabled: true
 version: 1.0
 bgg_id: 350184
 expansions:
@@ -40,6 +40,7 @@ sections:
         * Each player takes a number of soil tokens equal to what is shown
           on their island card.
     - name: Gameplay
+      id: gameplay
       text: |
         The game is played over a number of rounds until, at the end of the
         round, a player has completed their island by placing their 16th
@@ -51,12 +52,235 @@ sections:
 
         * You may choose the same action as another player.
         * You may perform the same action multiple turns in a row.
+        * If the Earth deck runs out, shuffle the discard to create a new
+          draw pile.
+            * Do **not** shuffle in compost cards.
+
+        ### Activating Abilities
+
+        * After an action is taken, **all players** may activate any
+          abilities in their tableau that match the color of the action.
+            * This should be done simultaneously.
+            * Each ability can only be activated once per turn.
+            * The tableau must be activated left to right, top to bottom.
+            * You can activate your [Island]!#619B98! **and then** your
+              [Climate]!#D48428! either before or after your tableau's
+              activation.
+                * **Both** must be activated either before or after tableau
+                  activation.  You cannot activate 1 before and 1 after.
+            * Some abilities with a negative number indicate a cost
+              that must be paid to use them.
+            * Any abilities with a numbered resource before a ":" must be
+              paid to get the benefit on the right hand side.
+            * Multicolored abilities that match the current action are also
+              activated.
+            * You are never forced to activate a card ability.
+            * Black abilities are triggered only when played.
+            * Brown abilities have end game scoring possibilities.
       sections:
         - name: Planting
           text: |
+            1. The active player may plant up to 2 cards into their tableau,
+               paying the soil cost.
+                * Your 1st card can be placed anywhere.
+                * All cards after your 1st must be placed adjacent (orthogonal
+                  or diagonal) to an already placed card.
+            2. After planting, the active player draws 4 cards, chooses 1 to
+               keep, and discards the rest.
+            3. All other players may plant 1 card in their tableau, paying its
+               cost.
+            4. All other players may draw 1 card.
+            5. All players activate [green]!#B1C98F! abilities (see
+               [Gameplay](#gameplay)).
         - name: Composting
           text: |
+            1. The active player may gain 5 soil from the supply, placing them
+               in their reserve.
+                * **There is no limit to the amount of a soil a player can
+                  have**.  Soil tokens are also considered to be unlimited.
+            2. The active player takes 2 cards from the draw pile and places
+               them face down in their compost space **without looking at
+               them**.
+            3. All other players gain 2 soil **OR** they may draw 2 cards from
+               the draw pile and place them in their compost space.
+            4. All players activate [red]!#EB8780! abilities (see
+               [Gameplay](#gameplay)).
         - name: Watering
           text: |
+            1. The active player may place up to 6 sprouts on any number of
+               flora cards in their tableau.
+                * The card(s) must have empty sprout spaces.
+                * Sprouts **cannot** be saved in a personal supply.
+                * Sprout tokens are considered to be unlimited.
+                * Players may convert sprouts **in their tableau** to soil.
+                    * You convert at a ratio of 3 sprouts to 2 soil.
+                    * **You cannot convert sprouts to soil during this action**.
+                    * You cannot convert sprouts to soil in the middle of a
+                      card ability.
+                    * Otherwise, you can convert them any other time during
+                      the game.
+                * If a player doesn't have room in their tableau to place all
+                  sprouts, unplaced sprouts are lost.
+            2. The active player gains 2 soil.
+            3. All other players may either place up to 2 sprouts on their
+               available sprout spaces **OR** they may gain 2 soil.
+            4. All players activate [blue]!#C0E7DF! abilities (see
+               [Gameplay](#gameplay)).
         - name: Growing
           text: |
+            1. The active player may draw 4 cards and add them to their hand.
+                * There is no limit to the number of cards a player can have
+                  in hand.
+                * If the deck and discard pile are both empty, players can
+                  no longer draw cards to their hand or compost pile.
+            2. The active player may then place up to 2 growth (total) on
+               their flora that has room to grow.
+                * A growth space is limited by the maximum growth number on
+                  the space.
+                * The last growth placed on a space is a canopy, **not** a
+                  trunk.  The color of the canopy does not matter.
+                * Flora with a maximum growth of 1 will only have a canopy.
+                * Growth **cannot** be placed in a players personal supply.
+                  Any growth that cannot be placed during this turn is lost.
+                * Growth tokens (trunks and canopies) are unlimited.
+            3. All other players may draw 2 cards **OR** them may place up to
+               2 growth on flora with space for it.
+            4. All players activate [yellow]!#FCE484! abilities (see
+               [Gameplay](#gameplay)).
+    - name: Cards
+      sections:
+        - name: Ecosystem Cards
+          text: |
+            These cards give end game scoring bonuses.
+
+            * At the beginning of the game, you should choose the side of
+              the card to use for the game.
+            * There will be 3 ecosystem cards in play during a standard game.
+              2 on the fauna board and 1 on your player board.
+            * When given your card at the beginning of the game, you may
+              choose either side of the card to use.
+            * You may score ecosystem cards multiple times if they meet
+              the requirements multiple times with different cards/components.
+                * Once a card/component has been used to score an ecosystem
+                  card, it cannot be used again for scoring on the **same**
+                  ecosystem card.
+        - name: Fauna Cards
+          text: |
+            These cards give in-game scoring objectives.
+
+            * At the end of a turn in which a player fulfills an objective
+              on 1 or more fauna cards, they claim the highest available VP
+              tier next to the card by placing a leaf token on it.
+            * If 2 or more players fulfill the objective on the same turn,
+              leaf tokens are placed in clockwise turn order, starting with
+              the active player.
+            * Once claimed, a fauna objective cannot be lost, even if the
+              state changes such that you no longer meet the objective.
+            * The points for the fauna objectives are scored at the end of
+              the game.
+        - name: Island Cards
+          text: |
+            These cards give players their starting resources as well as an
+            ability.
+
+            * At the beginning of the game, you should choose the side of
+              the card to use for the game.
+            * Note that of the cards drawn, a number of them will be composted.
+            * These cards can also count for ecosystem/fauna objectives.
+        - name: Climate Cards
+          text: |
+            These cards give players another ability.
+
+            * At the beginning of the game, you should choose the side of
+              the card to use for the game.
+            * These cards can also count for ecosystem/fauna objectives.
+        - name: Earth Cards
+          text: |
+            The majority of the cards in the game are Earth cards:
+
+            * 179 flora cards
+            * 66 terrain cards
+            * 38 event cards
+
+            ### Flora
+
+            Note that all cards are referred to as "cards", but flora cards
+            are specifically referred to as "flora". This is important for
+            ecosystem/fauna objectives.
+
+            Flora is classified by type (equal amount of each):
+
+            | Symbol | Type |
+            | ------ | ---- |
+            | ![tree](/static/img/earth/tree.png) | Tree |
+            | ![herb](/static/img/earth/herb.png) | Herb |
+            | ![mushroom](/static/img/earth/mushroom.png) | Mushroom |
+            | ![bush](/static/img/earth/bush.png) | Bush |
+
+            Habitats are used for scoring objectives. These are listed in the
+            top right of cards.
+
+            | Symbol | Type |
+            | ------ | ---- |
+            | ![sunny](/static/img/earth/sunny.png) | Sunny |
+            | ![wet](/static/img/earth/wet.png) | Wet |
+            | ![rocky](/static/img/earth/rocky.png) | Rocky |
+            | ![cold](/static/img/earth/cold.png) | Cold |
+
+            ### Terrain
+            These cards often do not grant resources, but instead offer
+            in- game effects or end-game scoring.
+
+            ### Events
+            These cards are different from the others in that they can be
+            played at any time
+
+            * These can be played on other players' turns or between the
+              activation of 2 abilities.
+            * They give you an instant benefit and don't directly affect other
+              players.
+            * These do **not** get added to your tableau.
+                * When played they are placed face-up in the event space on
+                  your player board.
+            * These can either may earn **or lose** points at the end of the
+              game.
+            * Once played they cannot be exchanged, activated, or composted.
+    - name: End of the Game
+      text: |
+        The game ends at the end of a round in which a player has completed
+        their 4x4 tableau (16 cards).
+
+        * The player who 1st completes their tableau places a leaf token on
+          the 7 VP bonus space on the fauna board.
+            * If the active player and another player complete their tableaus
+              on the same turn, the active player gets the bonus.
+            * If multiple players, but not the active player, complete their
+              tableau on the same turn, the player sitting closest to the
+              active player, in clockwise order, claims the bonus.
+
+        ### Scoring
+
+        1. Add the base VP from your Island/Climate cards and all the cards
+           in your tableau.
+            * Do **not** include your event cards or cards in your compost
+              pile.
+        2. Add the base VP from cards in your event stack.
+        3. Add 1 VP per card in your compost.
+        4. Add 1 VP per sprout in your tableau.
+        5. Add 1 VP per trunk in your tableau, unless the canopy has been
+           placed, in which case you score the canopy VP **instead of 1
+           VP/trunk**.
+        6. Add VP from any terrain in your tableau with an end-game scoring
+           bonus.
+        7. Add VP from any fulfilled ecosystem objectives.
+        8. Add VP from leaf tokens placed on the fauna board.
+            * Add the 7 VP bonus if you were the 1st player to complete their
+              tableau.
+
+        If there is a tie, resolve the tie in the following order:
+
+        1. Most soil
+        2. Most cards in their hand
+        3. Most growth in their tableau
+        4. Most sprouts
+        5. Most composted cards
