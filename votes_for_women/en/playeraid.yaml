@@ -1,0 +1,11 @@
+name: "Votes for Women"
+description: "You gotta fight, for your right, to voooooote"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+version: 1.0
+bgg_id: 311900
+expansions:
+sections:
+    - name: Setup
+      text: |
