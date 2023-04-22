@@ -2,10 +2,301 @@ name: "Votes for Women"
 description: "You gotta fight, for your right, to voooooote"
 text_type: markdown
 credits: "Jay Deiman"
-enabled: false
+enabled: true
 version: 1.0
 bgg_id: 311900
 expansions:
 sections:
     - name: Setup
       text: |
+        *Note that the game ships with extra components, so you will not use
+        all the components when setting up.*
+
+        * **If playing co-op**: Setup for the oppobot is as
+          follows:
+            * Do not use the opposition (misogynist) deck.
+            * Remove the 2 strategy cards with a ★, which also say "Do not
+              use vs. oppobot".
+            * Create the oppobot deck in the same way as the
+              suffragist/opposition decks as described below, but place
+              the 3 start cards face up near the completed oppobot draw
+              deck.
+
+        * Place the board.
+        * The suffragist player takes:
+            * 2 campaigners each in yellow and purple
+            * All the cubes in purple and yellow
+            * 36 green check marks
+            * The purple suffragist deck
+        * **If playing co-op**:
+            * 1 player takes the purple tokens and the other player takes
+              the yellow tokens.
+        * The misogynist player takes:
+            * 2 red campaigners
+            * All the red cubes
+            * 13 red Xs
+            * The red opposition deck
+        * Each player creates their draw deck (suffragist and opposition) by
+          separating their decks into late, middle, early, and start.
+            * The start cards will go to the players' hands.
+            * Shuffle the late cards and place them on the table.
+            * Shuffle the middle cards and place them on top of the late cards.
+            * Shuffle the early cards and place them on top of the middle cards.
+        * **If playing co-op**:
+            * The purple player takes the start card and the yellow player
+              takes the top card of the suffragist deck.
+        * Shuffle the state deck and place 9 face up near the board.  Return
+          the rest to the box.
+        * Shuffle the strategy deck and place it near the board.  Reveal the
+          top 3 cards of the deck.
+        * Place the suffragist and opposition buttons near the board.
+        * Place the blue, red, and white dice near the board.
+        * Place the 6 congressional markers near the board.
+        * Place the turn marker on turn 1.
+
+    - name: Gameplay
+      text: |
+        The game takes place over the course of up to 6 turns.  If the
+        suffragist player reaches 36 check marks or the opposition player
+        reaches 13 red Xs, the game ends immediately.  If this is not
+        the case after 6 turns, the game goes to [Final Voting](#final).
+
+        Each turn consists of 4 phases.
+
+        *Editor's note: The game's rules use the concept of "turn" and "round"
+        in a backwards fashion.  To alleviate confusion, this aid will be
+        consistent with the rules even though they are wrong.*
+
+        ### General Notes
+
+        * **If playing co-op**:
+            * The suffragist buttons are a pool that either player can use.
+            * If the opposition plays "Anti-Suffrage Riots", each suffragist
+              player discards 1 card at random, then draws a new card.
+        * Buttons can always be spent to reroll dice.  However, if multiple
+          dice were rolled, **all dice** must be rerolled when doing this.
+        * The suffragist cubes can be mixed in a state and count together
+          for green checks and/or state cards.
+        * When adding cubes to a state, if the opposition has cubes there,
+          each cube to be added, instead removes an opposition cube.
+            * Once there are no opposition cubes, you can *add* cubes to the
+              state.
+        * Cubes cannot be added to a state with a green check or red X.
+        * If an event instructs you to remove cubes, you do **not** add any
+          of your cubes.
+        * If a player adds a 4th cube of their side to a state matching
+          an unclaimed state card, the player takes that state card.
+            * The card is placed face up in front of the player.
+            * State cards, unlike strategy cards, are **never replaced**.
+            * The card is not lost even if the number of cubes in the state
+              drops below 4.
+        * If there are ever 6 congressional markers on the board, the
+          following happens:
+            * For each state with a total of 4 or more suffragist cubes (can
+              be mixed color), replace the cubes with a green check mark.
+            * For each state with 4 or more red cubes, replace the cubes
+              with a red X.
+            * After this point, any time there are 4 cubes on a state,
+              the cubes are immediately replaced by the appropriate marker
+              (green check or red X).
+        * If there are ever 36 green check marks on the board, the
+          suffragist player immediately wins.
+        * If there are ever 13 red Xs on the board, the opposition player
+          immediately wins.
+      sections:
+        - name: Planning Phase
+          text: |
+            At the start of the game, you will have the "start" card in your
+            hand. In later turns, you will have 1 leftover card from the
+            previous turn.
+
+            * Each player draws 6 cards (up to a total of 7).
+            * **If playing co-op**:
+                * Each player instead draws 3 cards each to bring their
+                  hand totals to 4 each.
+                * The oppobot skips this phase.
+        - name: Strategy Phase
+          text: |
+            **This phase is skipped during the 1st turn of the game**.
+
+            1. The suffragist player announces how many buttons they will
+               commit to the strategy phase.  They may commit zero.
+                * **If playing co-op**:
+                    * The yellow player makes the final decision on the
+                      number of buttons to commit.
+            2. The opposition player may then do 1 of 3 things:
+                * **If playing co-op**:
+                    * Roll a 4 sided die for the opposition to determine
+                      the number of buttons the opposition is committing.
+                    * Regardless of the following outcomes, the suffragist
+                      buttons are spent.
+                * Commit zero buttons: The suffragist player spends their
+                  committed buttons and takes one of the face up strategy
+                  cards.
+                * Commit the same number of buttons: Both players spend their
+                  buttons and **no one** takes a card.
+                * Commit more buttons than the suffragist: Both players spend
+                  their buttons and the opposition player takes a strategy
+                  card.
+                    * **If playing co-op** and the number on the die is
+                      higher than the suffragist commit, oppobot plays the
+                      strategy card immediately for the oppobot effect.
+            3. If a player takes a strategy card, it is placed face up in
+               front of them and a new strategy card is drawn to replace it.
+        - name: Operations Phase
+          text: |
+            This phase takes place over 6 rounds, with each player playing a
+            card for an effect each round.  The phase will end when both
+            players have 1 card left.
+
+            * Any state or strategy cards may be played either before or after
+              playing a card for one of the below effects.
+                * Only **1** strategy **or** state card may be played per round
+                  (for each hand card played).
+            * **If playing co-op**:
+                * The purple player plays the 1st, 3rd, and 5th card.
+                * The yellow player plays the 2nd, 4th, and 6th card.
+                * The oppobot will play a card as follows:
+                    * During the 1st round of turn 1, 3, and 5, oppobot will
+                      play its face up event card for its event.
+                    * Otherwise, oppobot draws the top card from its draw
+                      deck and plays it for either its event or campaigning
+                      action.
+                    * Some cards have a condition that must be met to be
+                      played for its event.  If the condition is not met,
+                      the card is instead played for a campaigning action.
+                    * If the event on the card would not have any effect for
+                      oppobot, it is instead played for a campaigning action.
+                    * If an oppobot card would play cubes without specifying
+                      a state, roll a 6 sided and 8 sided die to determine
+                      the region and state, respectively.
+                        * If all states in a region have a red X or green
+                          check, then re-roll the 6 sided die to determine
+                          a different region.
+                        * When a 4th red cube is placed in a state, oppobot
+                          claims that card and immediately plays it for its
+                          oppobot effect.
+
+
+            When playing a card, you have 4 different actions you can take:
+
+            1. Play the card as an event: Read and resolve the event text on
+               the card.
+                * Some cards have a prerequisite that must be met in order to
+                  play the card as an event.
+                * Some cards have a cost (usually buttons) that must be paid
+                  to play the card as an event.
+                * Some cards require a successful die roll.  If the die roll
+                  fails, the card is discarded for no effect.
+                * Some cards are persistent, either for the course of the turn,
+                  the rest of the game, or during final voting. If this is
+                  the case, place the card in it's appropriate spot on the
+                  board.
+                * If the card is not persistent, it is discarded after playing.
+                * **If playing co-op**:
+                    * If playing an event that allows either color of cube
+                      to be played, the player may place cubes of either color.
+            2. Play the card for a campaigning action: Roll a 4 sided die for
+               each of your campaigners on the board and assign a die to each
+               campaigner.
+                * **If playing co-op**:
+                    * The player rolls dice equal to the total number of
+                      suffragist campaigners on the board, but each player
+                      allocates the dice to their campaigners.
+                    * When oppobot plays a card for the campaigning action:
+                        * Roll a 6 sided die and move a red campaigner to
+                          that region.
+                        * Roll a 4 sided die to determine the number of cubes
+                          to add.  Cubes are added as follows:
+                            * If there is a state card in that region, the
+                              cubes will be added there.
+                            * If there is more than 1 state card in that
+                              region, randomly pick 1 of those states.
+                            * If there are no state cards in the region,
+                              roll an 8 sided die to determine where the
+                              cubes are placed.
+                            * If placing cubes causes a red X to be placed,
+                              place the remaining cubes in adjacent/close
+                              states.
+                        * If there is a 2nd red campaigner on the board,
+                          repeat the above steps for the 2nd campaigner.
+                * Each campaigner may place a number of cubes matching the
+                  die roll in the region they are in.
+                    * The cubes can be split between however they are desired.
+                * A button may be spent to move the campaigner to any other
+                  region on the board either before or after placing cubes.
+                    * **Cubes cannot be split between regions**.  e.g. You
+                      cannot place 1 cube in a region, spend a button to move
+                      the campaigner, and place more cubes in a different
+                      region.
+                * Discard the card.
+            3. Play a card for an organizing action: The player takes as many
+               buttons as they have campaigners on the board.
+                * **If playing co-op**:
+                    * The player still takes buttons equal to the total number
+                      of suffragist campaigners on the board.
+            4. Play the card for a lobbying action: Roll a number of 6 sided
+               dice equal to the number of your campaigners on the board.
+                * **If playing co-op**:
+                    * The player still rolls a number of dice equal to all
+                      suffragist campaigners on the board.
+                * For each 6 rolled, you may either add or remove a
+                  congressional marker to the board.
+                * Discard the card.
+        - name: Cleanup Phase
+          text: |
+            * **If playing co-op**:
+                * Players may exchange their remaining card left in their hands.
+                * Players may exchange state or strategy cards at this time.
+            * After turns 1-5, any cards in the "rest of the turn" box on the
+              board are discarded.
+                * Advance the turn marker 1 space.
+            * At the end of turn 6, if there were never 6 congressional markers
+              on the board, **the opposition wins**.
+                * If there were 6 congressional markers and no one won (36
+                  check marks or 13 red Xs), proceed to [Final Voting](#final).
+                * Discard any cards in the "rest of the turn" and "rest of
+                  the game" boxes on the board.
+    - name: Final Voting
+      id: final
+      text: |
+        This only happens at the end of the 6th turn if there are not either
+        36 green check marks or 13 red Xs on the states.
+
+        * **Note**: If there are cards in the "final voting" box on the board,
+          they may change final voting rules.
+
+        * **If playing co-op**:
+            * The suffragist players will alternate choosing states (see
+              below), but with the opposition choosing a state after each
+              suffragist choice. e.g. purple, then oppo., then yellow, then
+              oppo, then purple, etc.
+            * The oppobot will always select the state with the most red
+              cubes on it. If there are no more red cubes on the board, they
+              select the state with the least suffragist cubes.
+                * The oppobot rolls the gray 6 sided or 8 sided die during
+                  final voting.
+
+        * Players take turns, starting with the suffragist player, resolving
+          states without a green check or red X.
+            1. The player selects a state.
+            2. Both players roll a 6 sided die.
+            3. Add the number of **your** cubes on the state to the die result.
+            4. Whoever has the highest total wins the state.  If there is a
+               tie, the opposition player wins.
+            5. If there are then 36 green checks, the suffragist player wins.
+            6. If there are 13 red Xs, the opposition player wins.
+    - name: Symbols
+      text: |
+        | Symbol | Meaning |
+        | ------ | ------- |
+        | ![suff_camp](/static/img/votes_for_women/suff_camp.png) | Suffragist campaigner |
+        | ![suff_cube](/static/img/votes_for_women/suff_cube.png) | Suffragist cube |
+        | ![p_y_cube](/static/img/votes_for_women/purp_yell_cube.png) | Purple or yellow cube |
+        | ![gr_check](/static/img/votes_for_women/green_check.png) | Green check mark |
+        | ![cong_mrk](/static/img/votes_for_women/cong_mrk.png) | Congressional marker |
+        | ![opp_camp](/static/img/votes_for_women/opp_camp.png) | Opposition campaigner |
+        | ![opp_cube](/static/img/votes_for_women/opp_cube.png) | Opposition cube |
+        | ![redx](/static/img/votes_for_women/redx.png) | Red X |
+        | ![dice](/static/img/votes_for_women/dice.png) | Dice -- d4, d6, d8 |
+        | ![btn](/static/img/votes_for_women/btn.png) | Button |
