@@ -3,7 +3,7 @@ description: "You gotta fight, for your right, to voooooote"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.0
+version: 1.1
 bgg_id: 311900
 expansions:
 sections:
@@ -14,7 +14,9 @@ sections:
 
         * **If playing co-op**: Setup for the oppobot is as
           follows:
-            * Do not use the opposition (misogynist) deck.
+            * Do not use the opposition (misogynist) deck as it will not be
+              used.
+            * Remove the opposition buttons as they will not be used.
             * Remove the 2 strategy cards with a ★, which also say "Do not
               use vs. oppobot".
             * Create the oppobot deck in the same way as the
@@ -222,7 +224,8 @@ sections:
                           repeat the above steps for the 2nd campaigner.
                 * Each campaigner may place a number of cubes matching the
                   die roll in the region they are in.
-                    * The cubes can be split between however they are desired.
+                    * The cubes can be split between states in any way
+                      you desire.
                 * A button may be spent to move the campaigner to any other
                   region on the board either before or after placing cubes.
                     * **Cubes cannot be split between regions**.  e.g. You
