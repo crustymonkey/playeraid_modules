@@ -1,0 +1,133 @@
+name: "In the Footsteps of Darwin"
+description: "Sail the Beagle and observe some animals"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+version: 1.0
+bgg_id: 376683
+expansions:
+sections:
+    - name: Setup
+      text: |
+        * Place the board, journey side up, and place the Beagle on its
+          starting space.
+        * Give each player a notebook (player board).
+        * Select a start player and give them the Darwin token.
+        * Place the guide, publication, and compass tokens on the dedicated
+          spaces of the journey board.
+        * Take 12 tiles per player + 9 tiles and shuffle them all face down.
+        * Place 9 tiles face up on the journey board.  The rest should
+          remain as a face down supply.
+        * Shuffle the theory tiles face down and deal a tile to each player. 
+          They place it face up in the top most space of their player board.
+        * The rest of the theory tiles should be split into 2 face down piles
+          on the journey board.  Then flip 3 face up.
+        * Each player takes a guide token and places it on 1 of the spaces
+          on their player board.
+    - name: Gameplay
+      text: |
+        The game is played over a number of rounds until each player has
+        placed 12 tiles on their player board.
+
+        Each turn consists of 2 steps:
+
+        1. Take an animal or character tile from the row/column of the current
+           location of the Beagle.
+        2. Move the Beagle and replace the tile.
+      sections:
+        - name: "1. Take a Tile"
+          text: |
+            * At the beginning of your turn, you may use a guide for one of
+              the following actions:
+                * **Sail**: Move the Beagle 1 space forward or backward.
+                * **Probe**: Discard the 3 tiles in the row/column adjacent
+                  to the Beagle, placing them in any order on the bottom of a
+                  draw pile.  Place 3 new tiles in the open spaces.
+            * Choose a tile in the row/column of the current Beagle location.
+                * If it is an animal, place the chosen tile on the space of your
+                  board matching the icon in the upper left.
+                    * Resolve any immediate bonus on the animal (see below).
+                    * If you choose an animal matching an animal already on
+                      your board (symbol in the upper left), you will cover
+                      the current animal with the new tile.  Then, take a
+                      theory tile, either face up or from a draw pile, and
+                      place it on your player board.
+                        * If you took a face up theory tile, replace it.
+                        * You may not have more than 6 theories, but you can
+                          take a 7th one and discard 1 on your board.
+                        * You may cover the same animal a number of times.
+                        * If you cover a chart or VP symbol, that will **not**
+                          score at the end of the game.  However, you do not
+                          return compasses, etc.
+                * If it is a character, place it on an available space on
+                  the left side of your board and gain its bonus (see below).
+                    * You may **not** have more than 3 characters.
+                * If you have covered all 4 spaces of a row or column on your
+                  player board, take a publication token from the journey board
+                  and place it on the space in the top left of your player
+                  board.
+                    * Note that placing an animal on top of another animal in
+                      a completed row/column will **not** trigger this a 2nd
+                      time.
+
+            ### Bonuses
+            | Symbol | Description |
+            | ------ | ----------- |
+            | ![vp](/static/img/in_the_footsteps_of_darwin/vp.png) | These tiles are worth the number of VP shown. |
+            | ![chart](/static/img/in_the_footsteps_of_darwin/chart.png) | These are worth a number of points based on the number of compasses you have (multiplied). |
+            | ![compass](/static/img/in_the_footsteps_of_darwin/compass.png) | Take a compass token and place it on your board.  You may not have more than 5 compasses.  These act as a VP multiplier for charts. |
+            | ![guide](/static/img/in_the_footsteps_of_darwin/guide.png) | Take a guide token and place it on an empty guide space on your player board. You may not have more than 2 of these tokens. |
+            | ![crown](/static/img/in_the_footsteps_of_darwin/crown.png) | Take the Darwin token from whoever controls it. If you already have it, nothing happens. |
+        - name: "2. Move the Beagle"
+          text: |
+            1. Move the Beagle a number of spaces (1, 2, or 3) corresponding
+               with the distance between the Beagle and the tile location.
+               e.g. If you take the tile right next to the Beagle, move it
+               1 space.
+            2. Draw a new tile and place it in the space you took a tile
+               from on the journey board.
+    - name: End of Game
+      text: |
+        When the last tile from the draw pile is placed on the board, the game
+        ends.  Each player will have exactly 12 tiles on their board.
+
+        ### Scoring
+        * Score points for the VP printed on animal tiles
+        * Score points for the number of compasses on your player board
+          times the number of visible chart icons
+        * Each publication is 5 points
+        * Score points for each theory on your board
+        * Score 2 points if you have the Darwin token
+
+        The player with the highest total points wins.  If there is a tie,
+        the player with the most theory VP wins.  If still tied, the players
+        share the victory.
+    - name: Theories
+      text: |
+        | Tile | Scoring |
+        | ---- | ------- |
+        | ![bird](/static/img/in_the_footsteps_of_darwin/bird.png) | 1 VP for each bird, including those that were covered |
+        | ![mammal](/static/img/in_the_footsteps_of_darwin/mammal.png) | 1 VP for each mammal, including those that were covered |
+        | ![reptile](/static/img/in_the_footsteps_of_darwin/reptile.png) | 1 VP for each reptile, including those that were covered |
+        | ![insect](/static/img/in_the_footsteps_of_darwin/insect.png) | 1 VP for each arthropod, including those that were covered |
+        | ![america](/static/img/in_the_footsteps_of_darwin/america.png) | 1 VP for each animal from America, including those that were covered |
+        | ![africa](/static/img/in_the_footsteps_of_darwin/africa.png) | 1 VP for each animal from Africa, including those that were covered |
+        | ![asia](/static/img/in_the_footsteps_of_darwin/asia.png) | 1 VP for each animal from Asia, including those that were covered |
+        | ![oceania](/static/img/in_the_footsteps_of_darwin/oceania.png) | 1 VP for each animal from Oceania, including those that were covered |
+        | ![tl](/static/img/in_the_footsteps_of_darwin/tl.png) | 1 VP for each animal in the top left quadrant, including those that were covered |
+        | ![tr](/static/img/in_the_footsteps_of_darwin/tr.png) | 1 VP for each animal in the top right quadrant, including those that were covered |
+        | ![bl](/static/img/in_the_footsteps_of_darwin/bl.png) | 1 VP for each animal in the bottom left quadrant, including those that were covered |
+        | ![br](/static/img/in_the_footsteps_of_darwin/br.png) | 1 VP for each animal in the bottom right quadrant, including those that were covered |
+        | ![theories](/static/img/in_the_footsteps_of_darwin/theories.png) | 1 VP for each of your theories |
+        | ![guides](/static/img/in_the_footsteps_of_darwin/guides_p.png) | 2 VP for each visible guide icon on your tiles |
+        | ![pubs](/static/img/in_the_footsteps_of_darwin/pubs.png) | 2 VP for each of your publications |
+        | ![crowns_p](/static/img/in_the_footsteps_of_darwin/crowns_p.png) | 1 VP for each visible crown icon on your tiles |
+    - name: Characters
+      text: |
+        | Tile | Effect |
+        | ---- | ------ |
+        | ![darwin](/static/img/in_the_footsteps_of_darwin/darwin.png) | Take 1 theory tile and hire a guide |
+        | ![fitzroy](/static/img/in_the_footsteps_of_darwin/fitzroy.png) | Hire 2 guides |
+        | ![henslow](/static/img/in_the_footsteps_of_darwin/henslow.png) | Take a compass and hire a guide |
+        | ![martens](/static/img/in_the_footsteps_of_darwin/martens.png) | Hire a guide and provides a chart |
+        | ![mccormick](/static/img/in_the_footsteps_of_darwin/mccormick.png) | Score 4 points and hire a guide |
