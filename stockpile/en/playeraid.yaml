@@ -1,11 +1,12 @@
-name: Stockpile with Continuing Corruption expansion
+name: Stockpile
 description: Use your knowledge of the stock market to make more money than everyone else.
 credits: Keith Rudolph
 enabled: true
-version: 1.0
+version: 1.1
 bgg_id: 161614
 text_type: markdown
 expansions:
+    - Continuing Corruption
 sections:
     - name: Setup
       text: |
