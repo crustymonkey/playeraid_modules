@@ -1,0 +1,186 @@
+name: "Heat"
+description: "Burn some rubber"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+version: 1.0
+bgg_id: 157815
+expansions:
+sections:
+    - name: Setup
+      text: |
+        * Place a board of your choosing on the table.
+        * Each player takes:
+            * a car in their color
+            * a player mat in their color
+            * a gear pawn in their color
+            * 12 speed cards in their color
+            * 3 starting upgrade cards
+        * Check the board for how many heat and stress cards to add to each
+          player's deck (usually 6 heat and 3 stress).
+        * Shuffle your speed cards, including the upgrades and stress cards
+          and place this facedown in the draw spot on your player mat (left
+          hand slot).
+        * Place the 6 heat cards faceup on the engine spot in the center
+          slot on your player mat.
+        * Put your gear pawn in 1st gear.
+        * Place the remaining stress cards near the board.
+        * Randomly place the cards on the starting grid to determine player
+          order for the 1st round.
+        * Each player draws 7 cards from their draw deck to form their starting
+          hands.
+    - name: Gameplay
+      text: |
+        The game is played through a number of rounds until a player has
+        crossed the finish line after the final lap.  The number of laps
+        is dependent on the track (printed on the board)
+
+        * Note that the order of player turns is determined by the order of
+          the cars on the track.  The 1st car will play 1st.
+            * **If there are 2 cars next to each other, the car closest to the
+              racing line is considered ahead for all purposes**.
+
+        Each round consists of all players taking their turn, which will
+        consist of:
+
+        1. Adjust their gear
+        2. Play cards
+        3. Move their car
+        4. (other intermediate steps are situational/optional)
+        9. Draw back up to 7 cards
+      sections:
+        - name: '1. Shift Gears (simultaneous)'
+          text: |
+            * You may optionally change gears.
+            * You can gear up 1 or down 1 for free.
+            * You *may* gear up 2 or down 2, but you must pay 1 heat to
+              do so.
+        - name: '2. Play Cards (simultaneous)'
+          text: |
+            * The number of cards you **must** play is determined by your
+              current gear.  e.g. If you are in 3rd gear, you **must**
+              play 3 cards.
+            * Cards are played **face down** into your play area.
+            * If you have so much heat in your hand that you cannot play
+              the required number of non-heat cards for your gear, cover
+              the difference with heat cards **and then**:
+                * Your does not move this turn.
+                * Move your gear to 1st gear.
+                * Place the cards in your play area in your discard pile.
+                * Skip straight to step 9, [replenish](#replenish).
+        - name: '3. Reveal & Move (in order)'
+          id: reveal
+          text: |
+            Each player will take turns, in car order (1st car plays 1st),
+            revealing and moving their cars and optionally/situationally
+            taking actions 4-8.
+
+            * Flip all the cards you played face up.
+                * If you have flipped 1 or more Stress cards, follow this
+                  procedure for each Stress to determine its speed.
+                    * Flip the top card of your draw deck and if it is a
+                      speed card (**must** have the speedometer symbol),
+                      add it to your played cards.
+                    * If the flipped card is not a speed card, put it in
+                      your discard pile and keep flipping cards until you
+                      draw a speed card.
+            * Add the values of all the cards to determine your speed and
+              move your car that many spaces forward on the track.
+                * Cars never prevent you from passing them, even when it
+                  looks like the track is blocked.
+                * If you would end your movement in a space where all the
+                  spots are taken, you are blocked and must put your car in
+                  the 1st open spot behind the blocking cars.
+            * After completing your movement, make sure your car is as close
+              as possible to the racing line.
+                * If there are 2 cars next to each other, the car closest to
+                  the racing line is considered ahead for all purposes.
+        - name: '4. Adrenaline'
+          id: adrenaline
+          text: |
+            **This only applies if you are the last player to move, or 1 of
+            the last 2 cars in a game with 5+ cars**.
+
+            * You may add 1 extra speed (move 1 extra space) before **or**
+              after your boost (see [react](#react)).
+            * You also get 1 cooldown (see [react](#react)).
+        - name: '5. React'
+          id: react
+          text: |
+            Activate any symbols you have access to in any order. You might
+            have access to symbols from your current gear or
+            [adrenaline](#adrenaline).
+
+            ### Cooldown
+            * For each cooldown (number in the symbol), take a heat card
+              from your hand and put it back in your engine (center slot).
+                * Note that you get 3 cooldown in 1st gear and 1 cooldown in
+                  2nd gear.
+
+            ### Boost
+            * You may boost 1x per turn to increase your speed.
+                * Pay 1 heat.
+                * Flip cards from your draw deck until you get a speed card
+                  (speedometer) and move your card the matching number of
+                  spaces. Discard all other cards drawn before the speed
+                  card, similar to Stress cards in the [reveal & move
+                  phase](#reveal).
+        - name: '6. Slipstream'
+          text: |
+            **This only applies if you end your next to, or behind, another
+            car**. This is optional.
+
+            * If you choose to slipstream, you move 2 spaces forward.
+            * **Slipstreaming does NOT increase your speed value for the
+              purposes of the [check corner](#chk_corner) step**.
+        - name: '7. Check Corner'
+          id: chk_corner
+          text: |
+            **This only applies if you crossed through a corner this round**.
+
+            * Check if your total speed for the round is <= to the corner's
+              speed limit.  If so, nothing happens.
+            * If your speed is > the speed limit, you pay heat equal to the
+              difference of your speed to the corner's limit.  e.g. if the
+              speed limit is 3 and you went through the corner with a
+              speed of 5, you would pay 2 heat.
+            * If you go through more than 1 corner on the same turn, you must
+              pay for each of them separately.
+            * If you do not have enough heat to pay for your excess speed,
+              you spin out (see below).
+
+            ### Spin Out
+            1. Move the car back to the 1st available space before the corner.
+            2. Take stress into your hand based on your gear:
+                * 1st or 2nd gear: 1 stress
+                * 3rd or 4th gear: 2 stress
+            3. Move your gear to 1st gear.
+        - name: '8. Discard (optional)'
+          text: |
+            * You may discard cards from your hand if you do not want to
+              use them in a future round.
+            * **You can never discard heat or stress cards!**
+        - name: '9. Replenish Hand (required)'
+          id: replenish
+          text: |
+            1. Put all cards in your play area into your discard pile.
+            2. Draw back up to 7 cards.
+                * At any point where you would need to draw cards and your
+                  draw deck is empty, shuffle your discard pile into a
+                  new deck.
+                    * If this happens mid-turn, do **not** shuffle your play
+                      area into your draw deck!
+            3. The next player resolves steps 3-9.
+    - name: End Game
+      text: |
+        When the 1st player crosses the finish line after the indicated (on
+        the board) number of laps, this will trigger the end game phase.
+
+        * If more than 1 car crosses the finish line, the car that is the
+          furthest ahead wins.
+            * Remember that the car closest to the race line is ahead.
+        * Slipstreaming is **not allowed** if you have crossed the finish
+          line of the last lap.
+            * **You cannot slipstream across the finish line**.
+        * Remove any cars that have finished and place them on the board in
+          their positions and keep playing until every car has finished.
