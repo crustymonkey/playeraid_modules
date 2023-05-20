@@ -3,8 +3,8 @@ description: "Burn some rubber"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.0
-bgg_id: 157815
+version: 2.0
+bgg_id: 366013
 expansions:
 sections:
     - name: Setup
@@ -184,3 +184,125 @@ sections:
             * **You cannot slipstream across the finish line**.
         * Remove any cars that have finished and place them on the board in
           their positions and keep playing until every car has finished.
+    - name: Modules
+      sections:
+        - name: Garage Module
+          id: garage
+          text: |
+            With this module, each player will select custom upgrades **instead
+            of** the 3 starting upgrade cards.
+
+            * There are 2 sets of upgrades, basic and advanced. You can
+              use any combination of upgrades you would like.
+            * Additional setup: After placing your cars on the starting grid,
+              draft the upgrade cards in 3 rounds.
+                * Shuffle the deck before the 1st round.
+                * Each round, deal out 1 card per player +3 cards.
+                    * Rounds 1 and 3: Players choose 1 card based on their
+                      position on the starting grid from last to 1st.
+                      Discard any leftover cards.
+                    * Rounds 2: Players choose 1 card based on their
+                      position on the starting grid from 1st to last.
+                      Discard any leftover cards.
+            * After players have drafted 3 upgrades, they shuffle them into
+              their deck instead of the 3 starting upgrade cards.
+            * Some cards do have a "+" on them that is resolved like a stress
+              card.
+            * Some cards give you a choice of speeds, separated by a "/".
+            * Note that most of the items on the upgrades are optional, but
+              some are not.  Those will have the yellow "!" symbol showing
+              that they are mandatory.
+
+            ### Cards
+            | Name | Description |
+            | ---- | ----------- |
+            | 4 Wheel Drive | These are high speed, but also have a "+" that is resolved like stress cards. |
+            | Body | These cards allow you to discard stress cards. |
+            | Brakes | These cards give you a choice of speeds to use. |
+            | Cooling System | These cards have cooldowns on them. |
+            | Fuel | These are the super fuel "illegal" cards. |
+            | R.P.M. | These will help you slipstream and most effective in corners. |
+            | Tires | These cards allow you to go faster around corners or get a lot of cooldown. |
+            | Turbocharger | These are the highest value cards, but require you to pay heat. |
+            | Wings | These cards help you drive faster in corners, but require heat. |
+
+            ### Symbols
+            | Symbol | Description |
+            | ------ | ----------- |
+            | ![heat](/static/img/heat/heat.png) | Move # heat cards from your engine and place them in your discard pile. If you cannot pay the heat for this, discard the card and play a random speed card instead. |
+            | ![scrap](/static/img/heat/scrap.png) | Take # cards from your draw deck and put them face up in your discard pile. |
+            | ![adj_lim](/static/img/heat/adj_sp_lim.png) | If you cross a corner this turn, your speed is adjusted by #. "+" means you move faster, "-" means you must move slower. |
+            | ![cooldown](/static/img/heat/cooldown.png) | Take up to # heat cards from your hand and return them to your engine. |
+            | ![ss_boost](/static/img/heat/ss_boost.png) | If you choose to slipstream, you may add # to the normal 2 spaces. |
+            | ![red_stress](/static/img/heat/red_stress.png) | You may immediately discard # stress cards from your hand to your discard pile. |
+            | ![refresh](/static/img/heat/refresh.png) | You may place this card back on top of your draw deck at the end of the react step. |
+            | ![salvage](/static/img/heat/salvage.png) | You may look through your discard pile and choose up to # cards to shuffle into your draw deck. |
+            | ![dir_play](/static/img/heat/dir_play.png) | You may play this card from your hand. If you do, it applies as if you played it normally, including speed and mandatory/optional icons. |
+            | ![accel](/static/img/heat/accel.png) | You may increase your speed by 1 for every card flipped this turn (from upgrades, stress, and boost). If you do, you must increase it for **all** the flipped cards. |
+        - name: Legends Module
+          text: |
+            Legends are automated drivers you compete against in either solo
+            mode or as additional opponents.
+
+            * Setup:
+                * Shuffle the 10 legend cards and place them face down on
+                  the legends mat.
+                * Pick as many cars as you wish to add and add them to the
+                  mix when filling the starting grid.
+            * When it is time for the 1st legend to move, flip the top legends
+              card face up -- this will be used for all legend car movements.
+            * Resolve the movement value for the car's color.
+            * If they are coming up to a corner:
+                * If they have are between the corner and the legends line,
+                  move them forward a number of spaces equal to the corner's
+                  speed limit + the number in the diamond above their helmet.
+                * If they have not crossed the legends line, they will
+                  do one of the following:
+                    * If they can move at their top speed **without**
+                      clearing the corner, they will do so.
+                    * If moving at top speed would cause them to clear the
+                      corner, move them directly to space 0-3, corresponding
+                      to the diamond value above their helmet.
+            * Legends never splipstream, use heat, or cooldown.
+            * Legends count when determining adrenaline, even though they
+              do not get a benefit from it.
+            * When the legends deck is empty, shuffle the deck into a new
+              draw deck.
+        - name: Weather and Road Conditions Module
+          text: |
+            You can add weather and road conditions to any track.
+
+            * Setup:
+                * Shuffle the 6 weather tokens and draw 1 for the race.  Place
+                  it on the billboard space.
+                    * Adjust how many heat/stress cards you have for the race
+                      depending on the token's effects.
+                    * Weather tokens always modify the car setup for all
+                      players **before** the race. They may also have an
+                      effect in some sectors of the track if a weather road
+                      condition token is in play.
+                * Shuffle the 12 road condition tokens and draw 1 for each
+                  corner of the race track.
+                    * If the token shows an arrow, it modifies the next the
+                      next sector (all spaces between this and the next
+                      corner). Put it on the tent of that sector next to
+                      the track.
+                    * If it does not, it modifies the corner itself and is
+                      placed on the tent at the corner.
+
+            ### Symbols
+            | Symbol | Description |
+            | ------ | ----------- |
+            | ![adj_sp_lim](/static/img/heat/adj_sp_lim.png) | Adjust the speed limit by the given number, + or -. |
+            | ![overheat](/static/img/heat/overheat.png) | If your speed is higher than the speed limit, you take 1 additional heat. |
+            | ![ss_boost](/static/img/heat/r_ss_boost.png) | If you slipstream, you may add 1 extra space to the usual 2. Your car must be in this sector **before** you slipstream. |
+            | ![heat_con](/static/img/heat/heat_con.png) | Do not pay heat to boost in this sector (still max of 1 boost per turn). Your car must be in this sector when you boost. |
+            | ![weather](/static/img/heat/weather.png) | The weather effect on the weather token applies to this sector. |
+            | ![stress](/static/img/heat/pl1_stress.png) | (setup) Shuffle 1 extra stress card into your deck. If it is a -1, remove 1 stress from your deck. |
+            | ![heat](/static/img/heat/pl1_heat.png) | (setup) Place 1 extra heat into your engine. If it is a -1, remove 1 heat from your engine. |
+            | ![heat_3_deck](/static/img/heat/3_heat_deck.png) | (setup) Shuffle 3 of your heat cards into your draw deck. |
+            | ![heat_3_dis](/static/img/heat/3_heat_dis.png) | (setup) Place 3 of your heat cards into your discard pile. |
+            | ![ss_boost](/static/img/heat/ss_boost.png) | (weather) If you choose to slipstream, you may add 2 extra spaces to the usual 2 spaces. Your car must be located in this sector before you slipstream. |
+            | ![no_ss](/static/img/heat/no_ss.png) | (weather) You cannot start slipstreaming from this sector, but you may slipstream into it. |
+            | ![cool_bon](/static/img/heat/cool_bon.png) | (weather) +1 cooldown in this sector during the react step. |
+            | ![no_cool](/static/img/heat/no_cool.png) | (weather) No cooldown allowed in this sector during the react step. |
