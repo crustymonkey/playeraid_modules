@@ -1,0 +1,11 @@
+name: "The Search for Lost Species"
+description: "Find lost species in this deduction game."
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+version: 1.0
+bgg_id: 358557
+expansions:
+sections:
+    - name: Setup
+      text: |
