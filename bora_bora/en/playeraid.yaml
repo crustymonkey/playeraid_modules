@@ -1,0 +1,170 @@
+name: "Bora Bora"
+description: "Collect points on Point Salad Island"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+version: 1.0
+bgg_id: 127060
+expansions:
+sections:
+    - name: Setup
+      text: |
+        * Place the board.
+        * Place the building mat., shells, and offerings next to the board.
+        * Place action tiles based on player count next to the board:
+            * **Any player count**: Helper, Temple, Build (then add the
+              additional tiles based on player count)
+            * **2 players**: 5 tiles -> Man / Woman, Land / Water Path
+            * **3 players**: 6 tiles -> Man, Woman, Land / Water Path
+            * **4 players**: 7 tiles -> Man, Woman, Land Path, Water Path
+        * Randomly place the 12 fish tiles face up on the matching spaces in
+          each region.
+        * Shuffle the man and woman tiles **separately** and place them
+          in 2 separate piles face down next to the board.
+        * Draw 6 man and 6 woman tiles and place them face up in their
+          locations at the bottom right of the board.
+        * Separate the 7 light green and 53 dark green task tiles and
+          shuffle each pile.
+            1. Give each player 1 random light green tile.
+            2. Give each player 2 random dark green tiles.
+            3. Remove the remaining light green tiles from the game.
+            4. Create a face down supply near the board with the remaining
+               dark green tiles.
+            5. Place a number of dark green tiles face up on the board equal
+               to the number of players **+ 1** (4-6) in the matching spaces.
+        * Shuffle the jewelry tiles and randomly place them face up on the
+          6x4 jewelry tile spaces on the board.
+        * Place 6 of the 10 god tiles in a pile on the matching symbol on the
+          board.
+        * Shuffle the god cards and place them in a face down pile next to
+          the board. Draw and reveal the top 5 cards in a display next to
+          the pile.
+        * Give each player:
+            * 1 player board in their color
+            * 12 huts in their color
+            * 6 building tiles in their color
+            * 1 god tile
+            * 3 dice in their color
+            * 4 priests in their color
+            * 2 god cards drawn from the pile (keep hidden from other players)
+            * 2 offerings
+            * 1 turn order tile, drawn randomly, next to their player board
+            * With < 4 players, return unused items to the box.
+        * Players place their 2 marker discs:
+            * 1st player on the zero point space of the score track, 2nd player
+              on the 1 point space, 3rd on 2, and 4th on 3.
+            * Stack the other discs in player order on the zero space of the
+              status track (1st player on top and last player on the bottom).
+        * In **reverse** turn order, each player:
+            * Places 1 of their huts on an empty building space on 1 of
+              the 4 regions next to a *1-fish* tile on the board.
+            * Receives the resource shown on the region they placed the hut
+              (sand, wood, or stone) **or** an offering tile.
+            * Immediately places the resource on a free, matching ceremony
+              space on their player board, or set the offering tile next to
+              their board.
+            * Ignore the fish tiles in these regions for now.
+    - name: Gameplay
+      text: |
+        The game lasts 6 rounds with each round consisting of 3 phases (A, B,
+        C).
+      sections:
+        - name: "Phase A: Roll and Place Dice + Actions"
+          id: phase_a
+          text: |
+            * Players simultaneously roll all 3 of their dice.
+            * Starting with the 1st player and continuing in player order,
+              each player places 1 of their dice on 1 of the action tiles and
+              carries out the action.
+                * When placing a die on an action tile, you can only place a
+                  **die showing a lower value than the lowest value currently
+                  showing on the tile**.
+                * If you play a blue god, you may ignore this die value
+                  restriction.  See [God Cards](#gods) for more info.
+            * Continue in this order until all players have placed all of their
+              dice.
+          sections:
+            - name: Expand Action
+              id: expand
+              text: |
+                * You expand by placing a hut from your player board (any hut)
+                  and place in on a building space in an adjacent region.
+                    * If there is a hut already in the region, move it off to
+                      the side, but keep it in the region.
+                    * You may expand via a land path (brown arrow) or water path
+                      (blue arrow) based on the action taken (this is only a
+                      separate action with 4 players).
+                    * The number on your die indicates the **highest** value
+                      land/water path you can take.
+                    * You may **not** expand diagonally.
+                    * **You may never have more than 1 of your huts in a
+                      region**.
+                * Take either the matching building material as depicted on the
+                  new region (and add it to your ceremony space) or an offering
+                  tile.
+                * You must decide **now and only now** whether or not to
+                  score the VP for the fish tile adjacent to the new region.
+                    * To score the fish tile, you must play a red god card.
+                      See [God Cards](#gods) for more information on using god
+                      cards.
+                    * Fish tiles can only be scored once per player per region
+                      and **only** during expansion.
+            - name: "Woman / Man Action"
+              id: woman
+              text: |
+                The action is the same for woman or man tiles. "Woman" is
+                used here to represent either.
+
+                * Take 1 woman tile from any position <= to the die value
+                  you used to take the action.
+                * Place the tile onto a free space (no hut or other tile)
+                  on the right hand side of your player board such that
+                  the tile covers the green check mark at the top of the
+                  space, but leaves the bottom symbols visible.
+                    * If you don't have a free space (no hut or other tile),
+                      you cannot take this action.
+            - name: Helper Action
+              id: helper
+              text: |
+                * You may trade for items as depicted in the top left box on
+                  your player board.
+    - name: God Cards and Tiles
+      id: gods
+      text: |
+        * To play a god card, you **must** spend an offering.
+        * Place used god cards in a discard pile next to the draw pile.
+            * If you run out of god cards, shuffle the discard to make a new
+              draw pile.
+        * You may spend 2 matching god cards as any other god card (wild).
+            * You still only spend 1 offering (not 2).
+
+        * **Blue god** ([phase A](#phase_a)): This allows you to add a die to
+          an action tile and ignore the ["lower than" restriction](#phase_a)
+          (you may play any die value to the action space).
+        * **White god** ([phase A](#phase_a)): When you play a white god, the
+          die you place on an action tile is considered to be a 6. However,
+          do **not** change the value of the die.
+        * **Red god** (phase [A](#phase_a) or [B](#phase_b)): When
+          [expanding into a new region[(#expand), you can spend this to
+          score the fish tile.
+            * Score the depicted number of points.
+            * Do not remove the fish tile.
+        * **Green god** ([phase B](#phase_b)): When playing this god, do 1 of
+          the following:
+            * Double the effect of the [man or woman](#woman) type you are
+              currently using.
+                * If you are using multiple identical tiles, double the *total*
+                  amount (after accounting for the effect of multiple tiles).
+            * *OR* Activate a 2nd, different, man or woman type.
+        * **Yellow god** ([phase C](#phase_c)): Place this to replace exactly
+          1 of a task tile's requirements. e.g. if a task requires 3 wood, you
+          could spend this god to make that requirement 2 wood.
+            * If you use a yellow god to score a task tile, **you only score
+              4 points instead of 6**.
+            * At the end of the game, when players are completing their last
+              3 task tiles, 1 yellow god may be used *per tile*.  You must
+              still pay 1 offering for each card used this way.
+        * **God tiles**: These tiles can be used in place of a god card of
+          your choice.
+            * When used, **remove it from the game**.
+            * You do **not** spend an offering when using a god tile.
