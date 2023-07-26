@@ -128,6 +128,141 @@ sections:
               text: |
                 * You may trade for items as depicted in the top left box on
                   your player board.
+                * Your die results dictate how many items you can trade for.
+                    * The trade costs are in the top left of your board:
+                        * 1 die point: tattooing, shell collecting, or
+                          scoring 1 VP
+                        * 2 die points: an offering, god card, building
+                          material, or move a hut
+
+                * **Tattooing**: for each die point, shift 1 (not yet)
+                  tattooed man tile on your player board down so the green
+                  check mark shows.
+                    * Move your status marker 1 space to the right for each
+                      status symbol on the left side of the man tile.
+                        * If you land on an occupied space, place your disc on
+                          top of the stack.
+                * **Collecting shells**: (similar to tattoing) shift the
+                  woman tile down and collect the number of shells showing
+                  on the left side of the tile.
+                * **VP**: for each die point spent, get 1 VP.
+                * **Offerings**: for every 2 die points spent, collect an
+                  offering.
+                * **God cards**: for every 2 die points spent, add 1 god card
+                  to your hand.  If you take a face up card, immediately replace
+                  it.
+                * **Building materials**: for ever 2 die points spent,
+                  take 1 building material of your choice and place it on a
+                  matching ceremony space.
+                * **Move hut**: for every 2 die points spent, move 1 of
+                  your huts to the last (12th) space on your player board.
+                    * Huts already on the main board cannot be moved.
+            - name: Temple Action
+              id: temple
+              text: |
+                * Add 1 of your priests to the temple on the main board.
+                    * The die indicates the highest value space you can
+                      place your priest.
+                    * If there is already a priest there, shift him 1 space
+                      in the direction of the arrows.
+                        * This can cause a chain reaction of shifting priests.
+                        * If a priets shifts off the end, return it to its
+                          owner.
+                * Each newly placed priests gets a 1-time [fire bonus](#fire).
+            - name: Build Action
+              id: build
+              text: |
+                * Build 1 unbuilt building.
+                    * The die value indicates the highest value building you
+                      can build.
+                    * Replace 2 horizontally or vertically adjacent building
+                      materials from your board with a building tile,
+                      returning them to the supply. The building tiles is
+                      placed die side down.
+                    * Score points depending on the round (10, 7, or 4 points).
+                    * Receive the 1 time [fire bonus](#fire).
+                    * Buildings cannot be moved after being placed.
+            - name: Fishing Action
+              id: fishing
+              text: |
+                * Score 2 victory points for any die placed on the fishing
+                  action in the upper left part of the main board.
+                    * You do **not** have to play a die of lesser value for
+                      this space.  e.g. **ANY** die can be placed here.
+        - name: "Phase B: Use man and woman actions"
+          id: phase_b
+          text: |
+            In turn order, players may use 1 of their man tiles **and** 1 of
+            their woman tiles.  The order is up to the player.
+
+            * The action is dependent on the symbols on the right hand side of
+              the tile.
+            * If you multiple, identical man or woman tiles, you can combine
+              them for a more powerful man or woman single action.
+                * The location of the tiles on your player board does not
+                  matter.
+                * Using them does not change them in any way.
+
+            | Picture | Name | Description |
+            | ------- | ---- | ----------- |
+            | ![land](/static/img/bora_bora/land_path.png) | Land path | Expand as if you had a value 2 die via a land path (4/6 with multiples) |
+            | ![water](/static/img/bora_bora/water_path.png) | Water path | Expand as if you had a value 2 die via a water path (4/6 with multiples) |
+            | ![woman](/static/img/bora_bora/woman.png) | Woman | Take 1 woman tile as if you had a value 3 die (value 6 if you have more than 1) |
+            | ![man](/static/img/bora_bora/man.png) | Man | Take 1 man tile as if you had a value 3 die (value 6 if you have more than 1) |
+            | ![build](/static/img/bora_bora/build.png) | Build | Build 1 of your building tiles as if you had placed a value 3 die (value 6 if you have more than 1) |
+            | ![build_mat](/static/img/bora_bora/build_mat.png) | Building materials | Take 1 building material of your choice (2/3 with multiples and can be different types) |
+            | ![mv_hut](/static/img/bora_bora/mv_hut.png) | Move hut | Move 1 of your huts  onto the 12th space of your player board (2/3 with multiples) |
+            | ![vp](/static/img/bora_bora/vp.png) | Victory points | Score 2 VP (4/6 with multiples) |
+            | ![god](/static/img/bora_bora/god.png) | God card | Take a god card (2/3 with multiples) |
+            | ![offering](/static/img/bora_bora/offering.png) | Offering | Take 1 offering (2/3 with multiples) |
+            | ![status](/static/img/bora_bora/status.png) | Status | Move 1 step forward on the status track (2/3 with multiples) |
+            | ![shell](/static/img/bora_bora/shell.png) | Shell | Take 1 shell (2/3 with multiples) |
+        - name: "Phase C: Assess the right half of your board"
+          id: phase_c
+          text: |
+            1. **Status track**: Score the number of VP corresponding to the
+               location of your marker on the status track (number above).
+                * After scoring return all markers to the zero space with the
+                  marker furthest back on the bottom and the furthest along
+                  on top.
+                * Reassign the turn order tiles based on the pile (#1 to the
+                  person at the top of the stack...).
+            2. **Temple**: Players score points for priests in the temple.
+                * Round 1: Each priest is worth 1 point.
+                * Round 2/3: Each priest is worth 2 points.
+                * Round 4/5: Each priest is worth 3 points.
+                * The player with the most priests receives the top god tile,
+                  placing it on their player board.
+                    * If tied, the player with the furthest left priest gets
+                      it.
+                    * If there are no priests in the temple, remove the tile
+                      from the game.
+            3. **Jewelry tiles**: In (new) turn order, players may buy 1 jewelry
+               tile from the current round's column.
+                * Pay the depicted number of shells for the tile and place it
+                  face down on your player board.
+                * Any leftover jewelry tiles are discarded after everyone has
+                  had a chance to buy 1.
+            4. **Task tiles**: In (new) turn order, players may complete 1 of
+               their 3 taks tiles.
+                * Score 6 VP unless a yellow god is used, in which case score
+                  4 VP.
+                * After completing it, it is placed face down on the player's
+                  board (the checkmark space).
+                * If a player cannot complete a task, they **must** choose a
+                  task to remove from the game (no VP scored).
+                * Then, the player chooses a new task tile from the main
+                  board and adds it to their player board.
+            5. **Round end**
+                * The 2 unchosen task tiles are removed from the game.
+                * Remove any remaining man/woman tiles from the main board from
+                  the game.
+                * Add 6 new man tiles.
+                * Add 6 new woman tiles.
+                * Add new task tiles (player count + 2).
+    - name: Game End
+      text: |
+
     - name: God Cards and Tiles
       id: gods
       text: |
@@ -168,3 +303,11 @@ sections:
           your choice.
             * When used, **remove it from the game**.
             * You do **not** spend an offering when using a god tile.
+    - name: Fire Bonus
+      id: fire
+      text: |
+        You receive this bonus when either adding a priest to the temple or
+        placing a building tile.
+
+        * Immediately choose either a god card or an offering **and** either
+          move 1 space on the status track or take 1 shell.
