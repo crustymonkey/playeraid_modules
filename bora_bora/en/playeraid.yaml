@@ -142,7 +142,7 @@ sections:
                       status symbol on the left side of the man tile.
                         * If you land on an occupied space, place your disc on
                           top of the stack.
-                * **Collecting shells**: (similar to tattoing) shift the
+                * **Collecting shells**: (similar to tattooing) shift the
                   woman tile down and collect the number of shells showing
                   on the left side of the tile.
                 * **VP**: for each die point spent, get 1 VP.
@@ -166,7 +166,7 @@ sections:
                     * If there is already a priest there, shift him 1 space
                       in the direction of the arrows.
                         * This can cause a chain reaction of shifting priests.
-                        * If a priets shifts off the end, return it to its
+                        * If a priest shifts off the end, return it to its
                           owner.
                 * Each newly placed priests gets a 1-time [fire bonus](#fire).
             - name: Build Action
@@ -244,7 +244,7 @@ sections:
                 * Any leftover jewelry tiles are discarded after everyone has
                   had a chance to buy 1.
             4. **Task tiles**: In (new) turn order, players may complete 1 of
-               their 3 taks tiles.
+               their 3 task tiles.
                 * Score 6 VP unless a yellow god is used, in which case score
                   4 VP.
                 * After completing it, it is placed face down on the player's
@@ -262,7 +262,30 @@ sections:
                 * Add new task tiles (player count + 2).
     - name: Game End
       text: |
+        The game ends after 6 rounds.
 
+        * Each player completes their 3 task tiles (if possible).
+            * Note that in step 4 of [phase C](#phase_c), players should still
+              take another task tile.
+
+        ## Final Scoring
+
+        Players score the following:
+
+        * 2 VP for every unused god tile
+        * 1-6 VP for each fish tile adjacent to a **building space** containing
+          a hut of their color
+        * 1-9 VP for each of their jewelry tiles
+        * 6 points for each of the following objectives:
+            * 9 completed task tiles
+            * 6 claimed jewelry tiles
+            * all 12 ceremony spaces full (either buildings or building mats.)
+            * all 6 building tiles built
+            * huts added to all 12 regions
+            * all 12 man/woman spaces filled with man/woman tiles
+
+        The player with the most points wins.  If there is a tie, the player
+        who went earlier in the last phase C wins.
     - name: God Cards and Tiles
       id: gods
       text: |
