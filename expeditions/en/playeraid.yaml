@@ -1,0 +1,11 @@
+name: "Expeditions"
+description: "Pick up and deliver in the world of Scythe"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+version: 1.0
+bgg_id: 379078
+expansions:
+sections:
+    - name: Setup
+      text: |
