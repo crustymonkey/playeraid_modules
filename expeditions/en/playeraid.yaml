@@ -9,3 +9,34 @@ expansions:
 sections:
     - name: Setup
       text: |
+        * Each player gets:
+            * A random mech mat at the corresponding mini.
+            * Starting cards: A character card and its matching companion.
+              Place these in your "hand area" next to your player board (left).
+            * Gain the tokens in 1 color:
+                * 4 glory tokens (stars) -- place them on your player board.
+                * An action token (cube) -- place it on the refresh space on
+                  your player board.
+                * 1 silicone base for your mech
+            * Gain power and guile tokens and place these on the zero space of
+              the track on your player board.
+            * 2 player aid cards.
+        * Place the basecamp board with each player's mech next to it.
+        * Separate the location tiles into their 3 locations, (S)outh,
+          (C)entral, and (N)orth.
+            * Shuffle the South tiles and place them as shown on the bacecamp
+              board face up.
+            * Repeat the above with the Central and North tiles, but place
+              these tiles **face down**.
+        * Place 1 map token on each of the face down locations.
+        * Shuffle the meteorite, item, and quest cards into a single deck.
+          Place 1 card from the deck in each of the 5 open spaces in the board
+          (as shown on the basecamp board). Set the deck to the side face down.
+        * Create a supply of workers, coins, and map tokens.
+        * Fill the bag with all corruption tokens **except** the value 20
+          token.
+        * Randomly pick a 1st player.
+    - name: Gameplay
+      text: |
+
+
