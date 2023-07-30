@@ -18,8 +18,8 @@ YAML_TPL = dedent('''
     bgg_id: {bgg_id}
     expansions:
     sections:
-        - name: Setup
-          text: |
+      - name: Setup
+        text: |
 ''').strip()
 
 
