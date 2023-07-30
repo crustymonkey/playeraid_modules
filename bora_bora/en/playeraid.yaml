@@ -285,7 +285,7 @@ sections:
             * all 12 man/woman spaces filled with man/woman tiles
 
         The player with the most points wins.  If there is a tie, the player
-        who went earlier in the last phase C wins.
+        who went earlier in turn order in the last Phase C wins.
     - name: God Cards and Tiles
       id: gods
       text: |
@@ -334,3 +334,34 @@ sections:
 
         * Immediately choose either a god card or an offering **and** either
           move 1 space on the status track or take 1 shell.
+    - name: Tasks
+      id: tasks
+      text: |
+        Not every tile is shown below, but you should be able to extrapolate
+        the others from the symbols below.
+
+        **Important**: For the task tiles, you **never spend (return to the
+        supply) any of the depicted items**, you simply show that you have them.
+
+        | Tile | Description |
+        | ---- | ----------- |
+        | ![manwoman](/static/img/bora_bora/t_man_woman.png) | Have a man and a woman tile on your player board |
+        | ![woman_priest](/static/img/bora_bora/t_woman_priest.png) | Have a woman tile on your player board and a priest in the temple |
+        | ![thr_priests](/static/img/bora_bora/t_3_priests.png) | Have 3 priests in the temple |
+        | ![woman_jewel](/static/img/bora_bora/t_woman_jew.png) | Have a woman tile and a jewelry tile on your player board |
+        | ![man_1st](/static/img/bora_bora/t_man_1st.png) | Have a man tile on your player board and the #1 turn order tile |
+        | ![three_huts](/static/img/bora_bora/t_3_huts.png) | Have a hut in any 3 regions |
+        | ![five_huts](/static/img/bora_bora/t_huts_each_isl.png) | Have at least 1 hut on all 5 islands |
+        | ![thr_god](/static/img/bora_bora/t_3_god_cards.png) | Have 3 of the same god cards. **Note**: You cannot sub the requirements for god cards with 2 other god cards of the same type or a god tile |
+        | ![two_god](/static/img/bora_bora/t_2_gods.png) | Have 2 of the depicted god cards |
+        | ![four_god](/static/img/bora_bora/t_4_god_diff.png) | Have 4 different god cards |
+        | ![thr_diff_man](/static/img/bora_bora/t_3_diff_man.png) | Have 3 different man tiles on your player board.  There are similar tiles for woman and jewelry tiles |
+        | ![four_man](/static/img/bora_bora/t_4_man.png) | Have 4 man tiles on your player board.  There are similar tiles for woman, jewelry, and building tiles |
+        | ![two_jewel](/static/img/bora_bora/t_2_jew.png) | Have 2 of the depicted type of jewelry (necklace here).  There are similar tiles for the other jewelry types as well as god tiles, offerings, and shells. |
+        | ![thr_stone](/static/img/bora_bora/t_3_stone.png) | Have 3 stone. There are similar tiles for wood and sand |
+        | ![five_build](/static/img/bora_bora/t_5_build_mat.png) | Have 5 building materials of any type |
+        | ![hut_mtn](/static/img/bora_bora/t_hut_mtn.png) | Have a hut in each of the mountain spaces. There are similar tiles for the other terrain types and for adjacency to certain types of fish |
+        | ![four_huts_12](/static/img/bora_bora/t_4_huts_12.png) | Have 4 huts on the 12th space of your player board |
+        | ![thr_shift](/static/img/bora_bora/t_3_tiles_down.png) | Have 3 man tiles shifted down.  There are similar tiles for woman tiles or any combination of man/woman tiles |
+        | ![two_shown](/static/img/bora_bora/t_2_shown_tiles.png) | Have 2 of the depicted person tiles (woman and/or man) on your player board |
+
