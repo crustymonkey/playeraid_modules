@@ -7,36 +7,261 @@ version: 1.0
 bgg_id: 379078
 expansions:
 sections:
-    - name: Setup
-      text: |
-        * Each player gets:
-            * A random mech mat at the corresponding mini.
-            * Starting cards: A character card and its matching companion.
-              Place these in your "hand area" next to your player board (left).
-            * Gain the tokens in 1 color:
-                * 4 glory tokens (stars) -- place them on your player board.
-                * An action token (cube) -- place it on the refresh space on
-                  your player board.
-                * 1 silicone base for your mech
-            * Gain power and guile tokens and place these on the zero space of
-              the track on your player board.
-            * 2 player aid cards.
-        * Place the basecamp board with each player's mech next to it.
-        * Separate the location tiles into their 3 locations, (S)outh,
-          (C)entral, and (N)orth.
-            * Shuffle the South tiles and place them as shown on the bacecamp
-              board face up.
-            * Repeat the above with the Central and North tiles, but place
-              these tiles **face down**.
-        * Place 1 map token on each of the face down locations.
-        * Shuffle the meteorite, item, and quest cards into a single deck.
-          Place 1 card from the deck in each of the 5 open spaces in the board
-          (as shown on the basecamp board). Set the deck to the side face down.
-        * Create a supply of workers, coins, and map tokens.
-        * Fill the bag with all corruption tokens **except** the value 20
-          token.
-        * Randomly pick a 1st player.
-    - name: Gameplay
-      text: |
+  - name: Setup
+    text: |
+      * Each player gets:
+          * A random mech mat at the corresponding mini.
+          * Starting cards: A character card and its matching companion.
+            Place these in your "hand area" next to your mat (left).
+          * Gain the tokens in 1 color:
+              * 4 glory tokens (stars) -- place them on your mat.
+              * An action token (cube) -- place it on the refresh space on
+                your mat.
+              * 1 silicone base for your mech
+          * Gain power and guile tokens and place these on the zero space of
+            the track on your mat.
+          * 2 player aid cards.
+      * Place the basecamp board with each player's mech next to it.
+      * Separate the location tiles into their 3 locations, (S)outh,
+        (C)entral, and (N)orth.
+          * Shuffle the South tiles and place them as shown on the bacecamp
+            board face up.
+          * Repeat the above with the Central and North tiles, but place
+            these tiles **face down**.
+      * Place 1 map token on each of the face down locations.
+      * Shuffle the meteorite, item, and quest cards into a single deck.
+        Place 1 card from the deck in each of the 5 open spaces in the board
+        (as shown on the basecamp board). Set the deck to the side face down.
+      * Create a supply of workers, coins, and map tokens.
+      * Fill the bag with all corruption tokens **except** the value 20
+        token.
+      * Randomly pick a 1st player.
+  - name: Gameplay
+    text: |
+      A turn consists of either taking actions or refreshing.
 
+      * You begin your turn by shifting your action token.
+      * If you take actions, you **must perform all exposed actions** (that
+        you are able to).
+      * With the exception of the refresh turn and the 1st turn after a
+        refresh, your action token must stay in the Move/Play/Gather box.
+      * When you start your turn on the refresh action, shift your token to
+        the left and take all 3 actions. On your next turn, you will shift
+        the token to 1 of the Move/Play/Gather spaces and take the 2
+        showing actions.
+      * The game ends when someone plays their 4th star.
+    sections:
+      - name: Move
+        text: |
+          Move your mech to another unoccupied space within range.
 
+          * Basecamp is adjacent to 3 locations for the 1st move of the game.
+              * You cannot move back to basecamp after the 1st move.
+          * Normal range is 1-3 spaces.
+          * You cannot end your movement on a space with another mech.
+          * You may move *through* a space with another mech.
+          * You cannot move to one of the spots with cards (these are not
+            locations).
+          * If you cannot legally move, stay where you are and count it as
+            taking the move action.
+          * If you move onto a face down location, **your movement ends**.
+              * Gain the map token.
+              * Flip the location face up.
+              * Draw corruption tokens from the bag, 1 at a time, until the
+                total value of the tokens is >= to the value shown on the
+                location.
+                  * The tokens are placed in the order drawn, with
+                    the 1st token on the bottom.
+                  * The tokens cover the right hand action space.
+                  * *If the location with the "20" is revealed, instead place
+                    the 20 token on the location*.
+                  * If the corruption bag is empty, just stop drawing tokens
+                    and leave the location as is.
+      - name: Play
+        text: |
+          Take 1 card from your hand area (left of your mat) and
+          place it to your active row (right of your mat).  If you
+          already have cards there, place the new one to the right.
+
+          * In any order, you may:
+              * Gain the card's core value (upper left).
+              * Place a matching worker on the card to activate its ability
+                (bottom).
+
+          ### Gain Core Value
+          * Some cards have conditions based on the number of stars
+            or melded meteorites.
+          * When gaining power/guile, move the appropriate token on
+            the track. **You may never have more than 10 of either**.
+
+          ### Activating Abilities
+          * "Cards you control" may be in either your hand or active row.
+          * Any ability that refers to a token, card, worker, or mech applies
+            only to items in your posession, unless explicitly stated
+            otherwise.
+          * Some abilities have conditions. e.g. a minimum number of melded
+            meteorites.
+          * Each card may only hold 1 worker.
+          * Any reference to a card's color pertains to the color of worker
+            printed on it.
+          * "Previous" refers to the card to the left of the card in the
+            active row.
+          * "Face-up" cards are the cards in the board area. Adjacent face
+            up cards are those adjacent to your mech.
+          * **Items** (instant and ongoing)
+              * Instant benefits are printed above the worker space.
+              * Ongoing benefits are active while the card is in your active
+                row (with a worker on it).
+              * If you trigger a card with an instant and ongoing ability, you
+                can resolve them in any order.
+              * If there is a cost, you must pay the cost 1st.
+          * "Rescue" a card by returning it to your hand from the active row.
+            If it has a worker on it, return it to your mat.
+          * Gained and discarded cards go to the right-most space in your
+            active row.
+              * Gained/discarded cards do not grant any benefit and you cannot
+                play a worker on them.
+              * Cards may only be discarded from your hand.
+          * If the card has an "OR" clause, you may only activate 1 of the
+            2 abilities.
+          * "Trashing" cards returns them to box.
+          * If a card activates another cards ability, do **not** place another
+            worker.
+              * If the activated ability has an ongoing ability, it only
+                applies to the end of the current turn.
+          * "Solve": Your mech must be at a location matching a quest you
+            control (hand or active row).  Pay the cost shown on the right
+            hand side of the card to get the benefit below the red arrow.
+              * The quest is slid under the top of your mat.
+              * You may only solve 4 quests during the game.
+              * You may solve a quest whether or not the location has
+                corruption.
+              * If you gain a map token as a benefit, gain it from the supply.
+          * "Vanquish":  Pay the cost of the top-most corruption token in
+            your mech's location and gain the corruption token.
+              * **You may repeat this to gain more than 1 corruption token
+                for a single vanquish action**.
+              * Removing the final corruption will reveal a new benefit that
+                can be gained during a Gather action.
+              * The values/colors of the corruption and the benefit space
+                underneath are public info.
+              * If the corruption is destroyed by some other means, return it
+                to the bag.
+              * Location 20 has the 20 value corruption token. It requires
+                both 10 guile and 10 power to defeat it.
+      - name: Gather
+        text: |
+          When you take a Gather action, gain the exposed benefits at your
+          mech's location.
+
+          * Each icon is a separate benefit.  If they are separated by a "/"
+            ("or"), you may only choose 1 of the benefits.
+          * *Gain a face up card*: You may gain any of the face up cards. If
+            instead it is gaining an adjacent face up card, take one adjacent
+            to your mech.
+              * Immediately replace any cards taken with a new card from the
+                deck.
+                  * If the deck is ever empty, shuffle the discard to form
+                    a new deck.
+              * When you gain a card, add it to the right of your active row.
+          * *Sweep*: Remove any number of face up cards and place them in
+            the discard pile next to the deck. Replace any of the swept
+            cards with new ones.
+          * *Gain a worker*: Gain the worker from the supply and place it on
+            your mat.
+              * **Workers are limited in supply**.
+              * Workers on your mat are "available".
+          * *Gain a benefit from an adjacent location*: Gain only **1** of the
+            benefits from an adjacent location.
+          * *Activating an adjacent card's ability*: Activate a card adjacent to
+            your mech.  Do **not** place a worker.  If it is an ongoing
+            ability, it's only active until the end of your turn.
+          * *Play a card from your hand*: Follow the standard rules for playing
+            a card.
+          * *Refresh cards and workers*: Return active cards to your hand and
+            return all workers on those cards to your mat. Do **not** move
+            your action token to the refresh space.
+          * *Rescue*: Return a card from your active row to your hand. If there
+            is a worker on it, return it to your mat.
+          * *Map token*: Gain a map token from the supply.
+              * Map tokens are limited.
+          * *Upgrade*: Tuck an item card from your hand or active row under
+            the right side of your mech mat so that the ability is showing,
+            but the worker is covered.
+              * Instant benefits are ignored and only ongoing abilities now
+                matter for the tucked cards.
+              * The ongoing ability is active for the rest of the game.
+              * You are limited to 4 upgraded cards.
+              * If a worker was on the card when upgraded, return it to your
+                mat.
+          * *Meld*: Tuck a meteorite card from your hand or active row under
+            the bottom of your mat so that only the meld bonus is visible.
+              * Immediately gain the meld bonus of **all** melded meteorites,
+                including the newly melded card.
+              * You are limited to 4 melded cards.
+              * If a worker was on the card, return it to your mat.
+              * Having a number of melded meteorites can trigger additional
+                benefits on other cards.
+          * *Boast*: Choose 1 (and only 1) glory category on the basecamp
+            board for which you've met (or exceeded) the goal and you don't
+            have a star on it, and place a star on it.
+              * The number of stars placed can give you additional benefits
+                on other cards you play.
+      - name: Refresh
+        text: |
+          * When you take a refresh turn, return all cards in your active row
+            to your hand and all workers back to your mat.
+          * Put your action token on the Refresh space on your mat.
+              * On your next turn, you will move it to the space to the left
+                of the refresh space and take all 3 actions.
+              * After the above turn, you must move your action token to 1 of
+                the Move/Play/Gather spaces.
+          * If you get a refresh benefit, only return your cards and workers,
+            do **not** move your action token.
+  - name: End of the Game
+    text: |
+      The game end is triggered when a player places their 4th star on the
+      basecamp. Each player takes 1 additional turn **including the player
+      who placed the 4th star**.
+
+      ## Final Scoring
+      * The number of coins you have.
+      * The coin value on each upgraded item (bottom right corner).
+      * Each corruption scores $2, including the "20" token.
+      * **Each glory token** scores an amount equal to the number of quests
+        solved. e.g. each star would be worth $6 if you solved 1 quest.
+
+      | Quests | Value |
+      | ------ | ----- |
+      | 0 | $5 |
+      | 1 | $6 |
+      | 2 | $8 |
+      | 3 | $10 |
+
+      The player with the most money wins. If there is a tie, the player with
+      greater sum of all glory categories wins -- add up the total number of
+      quests, melds, upgrades, etc.  This includes adding up items for
+      categories without stars.  If there is still a tie, the players share
+      the victory.
+  - name: Mech Abilities
+    text: |
+      * **Tatanka**: You may solve, upgrade and meld up to **5** times each.
+      * **Marsh Strider**: Your movement range is 1-4 spaces (instead of 1-3).
+      * **Odin's Wrath**: You may trash a map token to gain either 1 power,
+        1 guile, or $1.  This must be map tokens in your supply.
+      * **Lumberjack**: Whenever you vanquish, reduce the cost of the 1st
+        corruption of each color by 1. For the "20" corruption tile, this
+        reduces it to 18 (9 of each).
+      * **Highlander**: You may gain cards directly to your hand (instead of
+        the active row).
+  - name: Glory Categories
+    text:
+      | Symbol | Description |
+      | ------ | ----------- |
+      | ![quests](/static/img/expeditions/quests.png) | Solve 4 quests |
+      | ![meteor](/static/img/expeditions/meteor.png) | Meld 4 meteorites |
+      | ![upgrade](/static/img/expeditions/upgrade.png) | Upgrade 4 items |
+      | ![twenty](/static/img/expeditions/twenty.png) | Vanquish the corruption from location 20 |
+      | ![seven_corr](/static/img/expeditions/7_corr.png) | Have at least 7 corruption tokens (this doesn't include the value 20 token) |
+      | ![cards](/static/img/expeditions/cards.png) | Have at least 8 cards in your control (this doesn't include upgrades, melds, or solved quests) |
+      | ![workers_map](/static/img/expeditions/workers_map.png) | Have at least 7 workers *or* 5 map tokens (you still can only place 1 star here) |
