@@ -97,7 +97,7 @@ sections:
           ### Activating Abilities
           * "Cards you control" may be in either your hand or active row.
           * Any ability that refers to a token, card, worker, or mech applies
-            only to items in your posession, unless explicitly stated
+            only to items in your possession, unless explicitly stated
             otherwise.
           * Some abilities have conditions. e.g. a minimum number of melded
             meteorites.
@@ -255,7 +255,7 @@ sections:
       * **Highlander**: You may gain cards directly to your hand (instead of
         the active row).
   - name: Glory Categories
-    text:
+    text: |
       | Symbol | Description |
       | ------ | ----------- |
       | ![quests](/static/img/expeditions/quests.png) | Solve 4 quests |
