@@ -1,0 +1,16 @@
+name: "Freelancers"
+description: "Freelancing for fun and profit"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+version: 1.0
+bgg_id: 383206
+expansions:
+sections:
+  - name: Setup
+    text: |
+      The official suggestion is to use the instructions in the web app
+      available at
+      [freelancersgame.com](https://https://www.freelancersgame.com/).
+
+      * 
