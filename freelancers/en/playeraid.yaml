@@ -182,6 +182,25 @@ sections:
     - name: Resolving Other Game Effects
       text: |
         ### HP, Stress, & Wounds ###
+        * When a player gains stress, they take that from the supply and cover
+          an available heart on their character sheet.
+            * A player cannot willingly gain stress if they have no open hearts.
+        * When a player gains a wound, the wound is removed from the wound
+          track and placed over a heart on their character sheet.
+            * If all the player's hearts are covered, add the wound to the
+              time bag instead.
+        * When a player is instructed to heal a HP, the player discards either
+          a wound (back to the wound track) or stress token (back to the
+          supply).
+
+        ### Gaining Skill Points ###
+        * When a player gains a skill point, that player fills in the left-most
+          unfilled box in the skill row on their player sheet and gains any
+          rewards that were on that space (XP or gold).
+            * If all the boxes are already filled for that skill, the player
+              gains nothing.
+
+        ### Gaining XP ###
 
     - name: Roles/Responsibilities
       id: roles
