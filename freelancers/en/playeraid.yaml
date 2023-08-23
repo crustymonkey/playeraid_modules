@@ -13,4 +13,207 @@ sections:
       available at
       [freelancersgame.com](https://https://www.freelancersgame.com/).
 
-      * 
+      * Place the location book with room for it to be opened.
+      * **Do not** shuffle the story card deck!  Place them near the location
+        book.
+      * Shuffle the treasure cards and place them in a stack near the location
+        book.
+      * Shuffle the follower cards and place them face down near the location
+        book.
+      * Place all the luck, stress, lock, and corruption tokens near the
+        location book.
+      * Each player:
+          * Selects a character standee and collects its matching
+            influence marker and species sheet.
+          * Takes a job sheet so they can combine it with their
+            species sheet to create their character sheet.
+          * Should give their character a name, answers the question
+            about their character, and fills out the story blanks section.
+          * Retrieves their starting weapon card and places it in their
+            weapon slot at the bottom of their character sheet. (There is
+            a matching species illustration on the back of the card)
+      * Assign all 7 [roles/responsibilities](#roles) to the players.  If
+        playing with less than 7 players, some players will have multiple.
+    - name: Gameplay
+      text: |
+        The app will direct you to turn to a page in the location book. When
+        you have turned to the page, play will take place over a round
+        consisting of [3 phases](#phases).
+
+        ### Winning and Losing ###
+        There are 3 ways the game can end.
+
+        * **Party too wounded**: If enough wound tokens have been removed from
+          the wound track on the medic board (revealing the game over space),
+          all players lose and enter the code on the medic board.
+        * **Party disbands**: If the threat dial ever reaches the game over
+          space, the party disbands and everyone loses.  Enter the code listed
+          on the lookout board.
+        * **Quest goal reached**: If an entry states that players have
+          completed the quest, the game is over. The more experience each
+          player gained during the game, the better their personal ending
+          will be.  Each player should read their personal ending out loud.
+          The player with the most titles should write their character's name
+          on the pipes.
+
+        ### Saving the Game ###
+        Players will have opportunities during the game to save it.
+
+        * Players need to fill out the saved game information on the back of
+          their species sheet.
+        * A player will have to fill out the saved game information on the
+          back of the map sheet.
+        * When you want to return, open the app and follow the instructions
+          listed there.
+      sections:
+        - name: Phases
+          id: phases
+          text: |
+            ## Planning Phase ##
+            * This is triggered when you turn to a new page in the location
+              book.
+            * The round timer is started immediately.
+            * Players take turns placing their standees on an action space
+              in influence order (highest to lowest).
+            * If the timer runs out before the last player has placed
+              their standee, choose 1 player to gain 1 stress and then
+              continue selecting actions until all players have picked
+              an action.
+                * Note that players should *not* spend time reading the
+                  entire action and should just place based on the
+                  action's symbol.
+
+            ### Actions ###
+
+            | Symbol | Action |
+            | ------ | ------ |
+            | ![unlimited](/static/img/freelancers/unlimited.png) | Any number of players may place their standee on these actions. |
+            | ![limited](/static/img/freelancers/limited.png) | Only 1 player may choose this action. |
+            | ![locked](/static/img/freelancers/locked.png) | Locked actions cannot be chosen. |
+            | ![required](/static/img/freelancers/required.png) | Required actions **must** be chosen by exactly 1 player.  If 1 or more required actions are still available before the last player(s) have chosen an action, those players **must** choose a required action. |
+
+            ## Action Phase ##
+            Each player will resolve their chosen action during this phase.
+
+            * Actions are resolved in numerical order.
+            * If there are multiple people on an action, they are resolved in
+              influence order.
+            * Follow the action's instructions to resolve it.
+            * After resolving the action, the player should take their standee
+              back.
+
+            ## End of Round Phase ##
+            * Enter the number listed under the current page's Round End
+              section in the app and follow the instructions in the app.
+            * When turning to a new page:
+                * Remove all tokens from the current location.
+                * Once you have the new page open, do **not** pause to review
+                  it, but instead immediately start a new Plannning phase
+                  (start the timer and select actions).
+            * If instructed to "begin a new round on this page", immediately
+              go into a new round without removing any tokens.
+        - name: Skill Checks
+          text: |
+            Do the following when prompted to make a skill check.
+
+            1. Take the d20 and the bonus die indicated by your current level
+               (no bonus die if you have no points in that skill) for the
+               skill you are checking.
+            2. Roll the dice and add their values.
+            3. Add any modifiers you have for that skill (usually on treasure,
+               story, and follower cards).
+            4. Check the text for the skill check and resolve the option
+               for your total.
+
+            The following tokens affect your skill checks:
+
+            | Symbol | Description |
+            | ------ | ----------- |
+            | ![corruption](/static/img/freelancers/corruption.png) | **Corruption tokens**: If you have 1 or more corruption tokens, do **not** roll your bonus die when making a skill check.  After resolving that skill check, discard 1 corruption token. |
+            | ![luck](/static/img/freelancers/luck.png) | **Luck tokens**: After rolling a die, or dice, for a skill check, you may discard a luck token to reroll 1 die. This can be done multiple times on a single skill check. |
+            | ![help](/static/img/freelancers/stress.png) | **Help from a friend**: After rolling a die, or dice, for a skill check, you may request aid from other players.  Any other player may gain 1 stress to allow you to reroll 1 die. Players may do this multiple times for the same skill check. |
+        - name: Spending Time
+          id: sp_time
+          text: |
+            When the game instructs you to spend 1 time, the scout must draw
+            a random token from the time bag and resolve it according to the
+            following.
+
+            | Symbol | Description |
+            | ------ | ----------- |
+            | ![risk1](/static/img/freelancers/risk1.png) | Add the token to the risk track. If the matching risk track is full, advance the threat dial and add the token on that space to the bag.  Then return all tokens on both threat tracks to the bag. |
+            | ![risk2](/static/img/freelancers/risk2.png) | Add the token to the risk track, then draw and resolve another token (the ⊕ symbol indicates this).  If the matching risk track is full, advance the threat dial and add the token on that space to the bag.  Then return all tokens on both threat tracks to the bag. |
+            | ![wound](/static/img/freelancers/wound.png) | This is treated as a risk token and added to 1 of the risk tracks. If the matching risk track is full, advance the threat dial and add the token on that space to the bag.  Then return all tokens on both threat tracks to the bag. |
+            | ![follower](/static/img/freelancers/follower.png) | Enter the code on the back of the token into the app. |
+            | ![supplies](/static/img/freelancers/supplies.png) | When supplies are gained, they are added to the bag.  When drawn, they are added back to the supply (not the bag) and no other effect happens. |
+            | ![threat](/static/img/freelancers/threat.png) | Resolve the effect indicated on the token. |
+
+            ### Threat Tokens ###
+
+            | Symbol | Description |
+            | ------ | ----------- |
+            | ![threat1](/static/img/freelancers/threat1.png) | All players lose 1 luck token, then remove this threat token from the bag. |
+            | ![threat2](/static/img/freelancers/threat2.png) | All players gain 1 corruption, then remove this threat token from the bag. |
+            | ![threat3](/static/img/freelancers/threat3.png) | Treat this as a risk token that can be added to either risk track. |
+            | ![threat4](/static/img/freelancers/threat4.png) | Treat this as a risk token as described above. |
+            | ![threat5](/static/img/freelancers/threat5.png) | Treat this as a risk token as described above. |
+
+            When you are instructed to reduce risk, the player may choose a
+            token on either risk track and return it to the bag.
+    - name: Traveling on the Map
+      text: |
+        When instructed to travel on the map, do the following:
+
+        1. Players decide where they will go next by selecting a path that
+           connects their current location to a new location.
+        2. [Spend 1 time](#sp_time).
+        3. The cartographer crosses out the party's current location, draws
+           a line to the next location and circles the new location.
+        4. The game master then taps the location button on the app that
+           matches the new location.  Follow the instructions in the app.
+
+        ### Backtracking ###
+
+        * The party may select a path they've previously traveled to an
+          already visited location.
+        * [Spend 1 time](#sp_time)
+        * Do **not** visit that location again! Instead, the party **must**
+          continue traveling to another space.
+    - name: Resolving Other Game Effects
+      text: |
+        ### HP, Stress, & Wounds ###
+
+    - name: Roles/Responsibilities
+      id: roles
+      text: |
+        * **Game Master**: Controls the app, including entering codes,
+          reading entries, and running the timer.
+            * You should open the app at
+              [freelancersgame.com](https://https://www.freelancersgame.com/).
+        * **Bookkeeper**: Reads out the action resolutions from the location
+          book during the action resolution phase.  Also in charge of turning
+          to a new page in the loaction book when directed.
+            * Be sure to sit near the location book.
+        * **Cartographer**: Keeps track of where the party is on the map. They
+          will also be asked to mark/draw on the map to indicate things
+          the party has gained.
+            * Collect a blank map sheet that matches the chosen quest.
+        * **Medic**: Keeps track of the party's wounds.
+            * Collect the medic board and place a wound on each space of the
+              wound track.
+        * **Scout**: Keeps track of risk and threat.
+            * Collect the scout board and set the threat dial to its starting
+              space.
+            * Take the cloth bag and the risk, threat, follower, and supply
+              tokens.
+                * Place the risk tokens and follower tokens 1-3 (yellow)
+                  in the bag.
+                * Randomly place the 5 threat tokens face down on the threat
+                  dial.
+        * **Lookout**: Keeps track of the location dials that indicate enemy
+          health and other game elements.
+            * Collect the lookout board and set all dials to 0.
+        * **Influencer**: Keeps track of the influence and takes selfies.
+            * Collect the influencer board and each player's influence marker.
+                * Randomly place the influence markers on the influence track.
+
