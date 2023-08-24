@@ -201,6 +201,30 @@ sections:
               gains nothing.
 
         ### Gaining XP ###
+        * When a player gains XP, the player filles in the next star (top to
+          bottom) on their level track.  If the star has a game effect, the
+          player immediately resolves that effect.
+
+        ### Gaining Titles ###
+        * When instructed, the player writes a gained title on their player
+          sheet in the titles section and circles the type of title it is
+          (lawful or chaotic).
+        * When a player gains their 4th or 8th title, they also gain 1 XP.
+
+        ### Gaining/Losing Influence ###
+        * The influence track is adjusted by the influencer to reflect the
+          new influence when players gain/lose influence.
+            * Influence markers never share a space or have empty spaces
+              between them.
+            * If a player at the top of the track gains influence, they may
+              instead discard 1 corruption.
+
+        ### Gaining/Losing Luck ###
+        * When a player gains luck, they take 1 token from the supply.
+        * When a player loses luck, they return 1 token to the supply.
+        * A luck token can be discarded to reroll 1 die.
+
+        ### Gaining/Losing Corruption ###
 
     - name: Roles/Responsibilities
       id: roles
