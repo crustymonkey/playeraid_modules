@@ -108,7 +108,7 @@ sections:
             * When turning to a new page:
                 * Remove all tokens from the current location.
                 * Once you have the new page open, do **not** pause to review
-                  it, but instead immediately start a new Plannning phase
+                  it, but instead immediately start a new Planning phase
                   (start the timer and select actions).
             * If instructed to "begin a new round on this page", immediately
               go into a new round without removing any tokens.
@@ -225,7 +225,88 @@ sections:
         * A luck token can be discarded to reroll 1 die.
 
         ### Gaining/Losing Corruption ###
+        * When a player gains/loses corruption, they take/discard from/to the
+          supply.
+        * When you have a corruption token, you cannot roll the bonus die for
+          skill checks.  After performing a skill check with only the d20,
+          you discard 1 corruption token.
 
+        ### Gaining/Losing Followers ###
+        * When a player gains a follower, they draw a card from the followers
+          deck and slot it into 1 of their follower slots at the bottom of
+          their character sheet.
+            * The scout then adds the matching follower token to the time bag.
+            * If both follower slots are filled, they may discard 1 of their
+              existing followers to gain the new follower. Do **not** remove
+              this discarded follower token from the time bag.
+        * When a player loses a follower, they discard the follower card, but
+          leave the token in the time bag (if it's still in there).
+
+        ### Breaking Ties ###
+        * If there is ever a tie between 2 players, break the tie in influence
+          order.
+        * If there is a group decision and the group can't agree, take the
+          decision to a vote and the player with the highest influence breaks
+          any ties.
+    - name: Treasure Cards
+      text: |
+        * When a player gains a treasure, they draw a card from the deck.
+        * If a player loses a treasure, they discard it.
+        * Some cards have a **Discard** keyword, in which you discard the
+          treasure to activate the effect.
+            * This cannot be activated while resolving another effect (skill
+              check, spending time, gain/spend resources).
+            * The discard effect is only activated when a player chooses to
+              discard the card, not when instructed to discard the card.
+        * If the treasure deck ever runs out of cards, shuffle the discard
+          to make a new deck.
+        * Treasure can be traded between players when they are at a trading
+          post on the map. **Treasure cannot be traded at any other time**.
+            * If an armor card is traded to another player, any stress/wounds
+              stay on the card.
+            * When a weapon is traded, any augments stay attached to that
+              weapon.
+
+        ### Trinkets ###
+        * Each player has 2 trinket slots. When gaining a trinket, they
+          equip it to one of their slots.
+            * If both slots are full, an equipped trinket can be discarded
+              to make room for the new trinket.
+        * Most trinkets grant skill modifiers, which are added to skill checks.
+
+        ### Armor ###
+        * Each player has 1 armor slot. When gaining armor, it is equipped
+          to the armor slot.
+            * If the slot is full, the equipped armor can be discarded
+              to make room for the new armor.
+        * Some armor provides an extra HP slot that can be used for wounds or
+          stress.
+            * If an armor card with a wound/stress on it is discarded, the
+              wound/stress token is returned to its appropriate place.
+
+        ### Weapons ###
+        * Each player has 1 weapon slot. When gaining a weapon, it is equipped
+          to the weapon slot.
+            * If the slot is full, the equipped weapon can be discarded
+              to make room for the new weapon.
+        * Sometimes the game will instruct you to make a weapon check. This
+          is a type of skill check that is resolved with the bonus die
+          specified on the weapon.
+            * If you need to make a weapon check and have no weapon, only roll
+              the d20.
+        * Some weapons have a trait icon below their name. This only has an
+          effect when instructed by the app.
+        * **Weapon Augments**: When a player gains an augment, they may either
+          attach to their weapon or discard it with no effect.
+            * If you gain an augment and have no weapon, you may slot it into
+              your weapons slot. If a weapon is later gained, it is attached
+              to the augment(s) in the slot.
+            * There is no limit to the number of augments you can have.
+            * An augment can be discarded for its discard effect, but when
+              it is attached to a weapon it **cannot** be discarded for its
+              effect.
+            * If you discard a weapon with augments, the augments are also
+              discarded.
     - name: Roles/Responsibilities
       id: roles
       text: |
@@ -235,7 +316,7 @@ sections:
               [freelancersgame.com](https://https://www.freelancersgame.com/).
         * **Bookkeeper**: Reads out the action resolutions from the location
           book during the action resolution phase.  Also in charge of turning
-          to a new page in the loaction book when directed.
+          to a new page in the location book when directed.
             * Be sure to sit near the location book.
         * **Cartographer**: Keeps track of where the party is on the map. They
           will also be asked to mark/draw on the map to indicate things
