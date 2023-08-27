@@ -1,0 +1,78 @@
+name: "Marvel D.A.G.G.E.R."
+description: "Defeat a villain with some of your favorite heroes"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+version: 1.0
+bgg_id: 383242
+expansions:
+sections:
+  - name: Setup
+    text: |
+      * Each player chooses a hero and chooses a side of the sheet to use.
+      * Each player takes:
+          * 1 hero standee
+          * 1 team-up card matching the hero. Place it with the greyed out
+            side up.
+          * 2 support cards that match *both* heroes from the chosen hero
+            sheet. Choose 1 to place face up and place the other face down.
+          * 1 support card with a with a card back that matches only the
+            chosen here, place it face down.
+      * Each player chooses an aspect and takes:
+          * 1 aspect sheet, with the shattered side face down.
+          * 1 boosted (colored border) and 2 standard (grey border) aspect
+            tokens.
+          * 1 aspect stand that matches the color of the chosen aspect sheet.
+      * The players attache their aspect bases to their heroes.
+      * **If playing with 2 players or solo**: Each hero begins the game with
+        1 additional standard aspect token.
+      * Place the board.
+      * Place the threat tracker and the team up tracker on space zero of
+        their respective tracks.
+      * Place the Bifrost token on its slot on the Asgard space.
+      * Choose a nemesis and place the following near the board:
+          * Its nemesis sheet
+          * Matching standee
+          * Nemesis-specific enemy card
+          * the 4 nemesis-specific enemy standees
+      * Take the 3 mission cards matching the nemesis and stack them in
+        ascending order by the roman numerals in the title bar (I on top).
+        Place it next to the nemesis mission slot on the board.
+      * Shuffle the side mission cards and place it in a face down deck next
+        to the board.
+      * Create a supply of progress, damage, combo, suppression, and overrun
+        tokens near the board.
+      * Place the stun token and dice near the game board.
+      * Players choose 1 hero to be the 1st player and they receive the
+        1st player token.
+      * The 1st player chooses a numbered space on the board to place the
+        Iliad token.
+      * Place the nemesis on the space shown in the upper right corner of the
+        nemesis sheet.
+      * Starting with the 1st player, each player places their hero's standee
+        on any of the 5 bases on the board (that does not have a hero).
+          * Bases are New York, Atlantis, Madripoor, Wakanda, and the Iliad.
+      * Shuffle the standard 30 event cards and select 9 at random (return
+        the rest to the box).
+          * Separate these into 3 face down piles of 3 cards.
+          * Shuffle 1 nemesis specific event into each of the piles and
+            shuffle those piles.
+          * Stack all 3 piles into single stack to form the event deck.
+      * Pick a first strike card and place it face up on top of the nemesis
+        mission deck.  Return all of the others to the box.
+      * Resolve the first strike "Setup" from left to right as follows:
+          * Search the enemy cards for the 3 cards that match the enemy pod
+            icon and place those next to the game board.
+          * Place all the matching enemy standees and place them next to the
+            enemy cards that match their rank icon.
+          * For each spawn enemy icon that shows pips <= to the indicated
+            number of heroes, place an enemy of the shown rank on the indicated
+            space.
+          * Draw the top card of the side mission deck and place it next to
+            any empty side mission slot.  If there is a board space indicated,
+            place a mission token on that space (tokens match the color of
+            the slot).
+  - name: Gameplay
+    text: |
+
+
