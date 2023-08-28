@@ -74,4 +74,102 @@ sections:
             the slot).
   - name: Gameplay
     text: |
+      The game is played over a number of rounds, with each round being
+      2 phases
+    sections:
+      - name: Hero Phase
+        text: |
+          * Each hero takes a turn, starting with the 1st player and going
+            clockwise.
+          * Each turn consists of a hero spending an aspect token **1 action**.
+              * The token is placed on an aspect slot on a card or component.
+              * Each slot can only hold 1 token.
+              * Actions with the "**BOOST**" keyword can give you additional
+                benefits if you spend a boosted aspect token.
+          * After the heroes have spent all of their aspect tokens, proceed
+            to the [Nemesis phase](#nemesis).
+
+          ### Aspect Actions ###
+          * **Move**: The hero moves their standee to an adjacent space
+            (connected by dotted lines) a number of times up to their move
+            value.
+          * **Fight**: This allows the hero to attack an enemy in their space.
+              * Roll the number of dice matching the attack value (ATK).
+              * For each success, the enemy suffers 1 damage.
+          * **Defy**: This allows the hero to place progress on a mission (that
+            requires a Defy action).
+              * Roll the number of dice matching the defy value (DFI).
+              * Apply successes as described by the mission.
+          * **Rest**: This action allows a hero to recover damage and charge
+            support cards.
+              * Roll the number of dice matching the tactic value.
+              * Add the number of successes to their automatic successes
+                on their rest action.
+                  * The total successes can be split between recover and
+                    charge effects.
+
+          ### Hero Abilities ###
+          * Some hero abilities require an action token, and some do not. The
+            latter are considered to be always active.
+          * Some abilities have a **PRIMED** or **EMPOWERED** icon and those
+            cannot be resolved without a primed or empowered token.
+
+          ### D.A.G.G.E.R. Actions ###
+          * If a hero is on a base, they can place an aspect token on the
+            base's aspect slot to perform this action.
+          * Resolve that base's D.A.G.G.E.R. effect.
+          * The hero may place their hero mission into their hero mission
+            slot (if not there already).
+          * If there is an overrun token on the base, D.A.G.G.E.R. actions
+            can be performed if called for by a mission, but you **cannot**
+            resolve the D.A.G.G.E.R. effect or place hero missions into play.
+          * **Note**: Asgard is *not* a base and cannot be overrun.
+      - name: Nemesis Phase
+        id: nemesis
+        text: |
+          Perform the following actions to resolve the nemesis phase.
+        sections:
+          - name: "1. Advance Threat"
+            text: |
+              * Threat advances by:
+                  * The threat value on the nemesis sheet.
+                  * 1 for each non-nemesis enemy in play.
+                  * 1 for each overrun base.
+                  * The threat value of any side or hero missions (that have
+                    a threat value).
+          - name: "2. Check Nemesis Mission"
+            text: |
+              * Check the top card of the nemesis mission deck to see if it
+                is completed. It can be completed by either passing or failing.
+                  1. Check the progress, and if there are progress tokens
+                     >= to progress value, the mission is passed.
+                      * Note that some missions have a value that is based on
+                        player count.
+                      * If the completed mission was the 1st strike, remove it
+                        from game and reveal the 1st nemesis mission.
+                      * For any other mission, if passed, flipe the completed
+                        mission and slide it under the top fo the game
+                        board so that only the green checkmark effect is
+                        visible.  Then, resolve the effect.
+                  2. Check the mission's threat value and if >= to the value
+                     on the threat track, the mission has failed.
+                      * If the failed mission was the 1st strike, remove it
+                        from the game and reveal the 1st nemesis mission.
+                      * For any other mission, flip it and slide it under the
+                        board so that the red "X" is showing and resolve that
+                        effect.
+                  3. If any mission was completed (passed or failed), reset
+                     the threat track to zero.
+                      * If the mission was a nemesis mission, also spawn a
+                        new side mission.
+          - name: "3. Resolve Event Cards"
+            text: |
+              If there are no event cards in the event deck, **the players
+              lose the game**. Otherwise, resolve an event card.
+
+
+      - name: End of Round
+        text: |
+          * All players return all their aspect tokens to their supply.
+          * Pass the 1st player marker clockwise.
 
