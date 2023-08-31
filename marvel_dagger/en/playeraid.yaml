@@ -8,6 +8,7 @@ bgg_id: 383242
 expansions:
 sections:
   - name: Setup
+    id: setup
     text: |
       * Each player chooses a hero and chooses a side of the sheet to use.
       * Each player takes:
@@ -22,10 +23,10 @@ sections:
           * 1 aspect sheet, with the shattered side face down.
           * 1 boosted (colored border) and 2 standard (grey border) aspect
             tokens.
+              * **If playing with 2 players or solo**: Each hero begins the
+                game with 1 additional standard aspect token.
           * 1 aspect stand that matches the color of the chosen aspect sheet.
       * The players attache their aspect bases to their heroes.
-      * **If playing with 2 players or solo**: Each hero begins the game with
-        1 additional standard aspect token.
       * Place the board.
       * Place the threat tracker and the team up tracker on space zero of
         their respective tracks.
@@ -75,7 +76,8 @@ sections:
   - name: Gameplay
     text: |
       The game is played over a number of rounds, with each round being
-      2 phases
+      2 phases.  The players win by completing the 3 nemesis missions and
+      then defeating the nemesis in the final showdown.
     sections:
       - name: Hero Phase
         text: |
@@ -162,14 +164,205 @@ sections:
                      the threat track to zero.
                       * If the mission was a nemesis mission, also spawn a
                         new side mission.
+              * **If the final nemesis mission was completed**: Proceed to
+                the [Final Showdown](#final_show).
           - name: "3. Resolve Event Cards"
             text: |
               If there are no event cards in the event deck, **the players
               lose the game**. Otherwise, resolve an event card.
 
-
+              * Resolve the text of the event.
+              * ![miss_eff](/static/img/marvel_dagger/miss_eff.png) Resolve
+                the ongoing mission effects at the bottom of all active
+                missions.
+              * ![side_miss](/static/img/marvel_dagger/side_miss.png) Spawn a
+                new side mission in an empty side mission slot.
+                  * If there is not an empty slot, instead advance threat by
+                    1 + number of heroes.
+              * ![nem_ability](/static/img/marvel_dagger/nem_ability.png)
+                Resolve the ability on the nemesis sheet that matches the icon.
+              * Activate enemies in the show in the bottom left of the card.
+                  * The activation order is in power order (1-4), Elite, then
+                    Nemesis.
+                  * If there are multiple enemies of the same rank, the players
+                    choose the activation order.
+                  * When activating enemies, they resolve the **1st** item
+                    (not all) in this list that they can:
+                      1. Attack a hero in its space
+                          * If there are multiple heroes, players choose which
+                            hero is attacked.
+                          * Suffer damage equal to the enemy's power value.
+                      2. Overrun a base in its space
+                          * Place an overrun token on the base, covering the
+                            text.
+                      3. Move
+                          * The enemy moves 1 space toward the nearest
+                            operational base in its region. If there is a tie,
+                            the 1st player chooses the base it moves towards.
+                          * If there is no operational base in the region,
+                            the enemy moves towards the nearest operational
+                            base.
+              * The nemesis follows the same rules as other enemies (above).
+                  * If the nemesis is stunned, just remove the stun token
+                    and damage, but don't resolve an attack/overrun/move.
+              * Spawn enemies as shown on the bottom of the event card.
+                  * This is done in the same manner as during [setup](#setup).
+                  * If all enemies of the rank shown are already on the board,
+                    advance threat by that enemy's rank instead.
+                      * For nemesis specific enemies, advance it by the nemesis
+                        threat value (on the nemesis sheet).
+              * Discard the event card.
       - name: End of Round
         text: |
           * All players return all their aspect tokens to their supply.
           * Pass the 1st player marker clockwise.
+      - name: Final Showdown
+        id: final_show
+        text: |
+          * Flip the nemesis sheet to its final showdown side and discard all
+            stun and damage tokens that were on it.
+              * All other tokens remain on it.
+          * Follow the directions on the nemesis sheet for the unique
+            showdown rules.
+          * All other missions and enemies remain in play and function as
+            normal during the final showdown.
+          * Players should check completed missions for any effects that start
+            now.
+          * Suppression tokens have an effect based on the final showdown
+            rules.
+          * Note the new rules for nemesis activation during the final
+            showdown.
+      - name: Winning and Losing
+        text: |
+          * If the heroes bring the nemesis health to zero during the final
+            showdown, they win.
+          * If any of the following happens, the heroes lose:
+              * Threat reaches 20
+              * All 5 bases are overrun
+              * An event is unable to be drawn.
+              * If all heroes are defeated while their "shattered" side of
+                their aspect sheets are face up.
+  - name: Additional Rules
+    sections:
+      - name: Nearby and Overrun
+        text: |
+          * Nearby means either the same space or an adjacent space.
+              * Heroes, enemies, or space is not nearby itself.
+          * Bases are overrun when attacked by an enemy.
+              * An overrun token is placed on the base.
+              * While overrun, the D.A.G.G.E.R. effect cannot be used.
+              * While overrun, hero missions cannot be put into play there.
+              * The D.A.G.G.E.R. **can** still be resolved if called for by
+                a mission.
+              * **If all bases are overrun, the heroes lose the game**.
+      - name: Support Cards
+        text: |
+          * Support cards are either face up or exhausted.
+          * A ready support card can be used.
+          * Exhausted support cards can be charged (place a progress token).
+            When it is fully charged, it is readied. Flip it over and discard
+            the progress tokens.
+      - name: Empowered and Primed
+        text: |
+          * When a hero becomes empowered, they place an empowered token on
+            their player sheet.
+              * They cannot gain a 2nd token (if they already have 1).
+              * Empowered tokens can be spent to add 1 success to a die roll
+                (after rolling).
+              * Empowered tokens can be spent to use combo abilities (blue
+                border).
+                  * Some combo abilities require an aspect token to activate,
+                    while some are situational.
+                  * When activating a combo ability, **advance the team-up
+                    track by 1**.
+          * When an enemy is primed, place a primed token near their standee.
+              * To resolve a primed combo ability, a hero must discard a
+                a primed token from each enemy the ability would affect.
+                  * When activating a combo ability, **advance the team-up
+                    track by 1**.
+      - name: Team-up Abilities
+        text: |
+          * Players can spend team-up at any time to ready their team-up
+            cards.
+              * Reduce the track by the cost shown on the card and flip
+                it face up.
+          * When the team-up card is used, it is exhausted (flipped over), but
+            it can be readied again by spending team-up.
+          * Unless otherwise specified, team-up can be spent, and team-up
+            abilities can be used, at any time, **even to interrupt other game
+            effects**.
+      - name: Missions
+        text: |
+          * If a mission has a progress value, that many progress tokens
+            must be placed on it to complete it.
+              * Some progress values are based on the number of heroes.
+          * If the mission's progress value shows an asterisk, the mission
+            is completed based on its described condition.
 
+          ### Side Missions ###
+          * When a side mission is revealed, place the top card of the deck
+            in 1 of the 3 side mission slots (that is open).
+              * If it indicates a board space, place the matching token on
+                that space of the board as a reminder.
+              * **If there is no empty slot**, advance threat equal to 1 +
+                number of heroes.
+          * Some side missions are elite enemies.  Place their standee in the
+            space indicated.
+          * When a side mission has enough progress on it, or the elite enemy
+            is defeated, it is completed.
+              * Advance the team-up track by the number indicated in the
+                upper left, or lower left if it is an elite enemy.
+              * Discard the mission card.
+
+          ### Hero Missions ###
+          * These begin the game in a hero's play area.
+          * When a hero performs a D.A.G.G.E.R. action at a base, they can
+            place the mission face up in the hero mission slot (yellow)
+            if it is empty.
+          * These are completed in the same way as other missions.
+          * When completed:
+              * The mission is discarded.
+              * The hero gains their hero specific support card.
+          * Other heroes can help complete your hero mission.
+
+          ### Nemesis and 1st Strike Missions ###
+          * There are 3 missions that make up the nemesis deck, unique to the
+            nemesis.
+          * Players must complete a 1st strike mission before they can start
+            working on the 1st nemesis mission.
+          * Nemesis missions are **only** completed during the [nemesis
+            phase](#nemesis) and can be failed when threat advances.
+      - name: Damage and Defeat
+        text: |
+          * Enemies or heroes are defeated when they have damage equal to
+            their health.
+          * When a standard enemy is defeated, remove the standee from the
+            board.
+          * When a nemesis is defeated before the [final
+            showdown](#final_show):
+              * Place a stun token on the nemesis sheet.
+              * The active player may choose an adjacent space to move the
+                nemesis to.
+              * A stunned nemesis cannot attack, overrun, or move on its
+                next turn.  Instead the damage and stun tokens are removed.
+          * Note that the nemesis' health is based on the player count during
+            the [final showdown](#final_show).
+          * If the nemesis is defeated during the [final
+            showdown](#final_show), the players win.
+          * When a hero is defeated:
+              1. Advance the threat track by the number of heroes in the game.
+              2. Return the hero's standee, mission card, and hero-specific
+                 support cards to the box.
+                  * Shared support cards remain.
+              3. Remove all tokens from the character sheet.
+              4. Flip the hero's aspect sheet to its shattered side.
+              5. Flip the hero sheet to its other side.
+              6. Ready the new hero's team-up card **for free** (ignoring
+                 the team-up track).
+              7. At the start of the next hero phase, place the new hero
+                 standee on any base.
+          * If a shattered hero is defeated, the player is out of the game.
+              * Per player effects still count the eliminated player.
+              * The remaining heroes have until the end of the next hero
+                phase to begin the final showdown, otherwise **they lose
+                the game**.
