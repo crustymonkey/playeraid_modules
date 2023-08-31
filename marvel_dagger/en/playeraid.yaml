@@ -2,7 +2,7 @@ name: "Marvel D.A.G.G.E.R."
 description: "Defeat a villain with some of your favorite heroes"
 text_type: markdown
 credits: "Jay Deiman"
-enabled: false
+enabled: true
 version: 1.0
 bgg_id: 383242
 expansions:
@@ -181,7 +181,7 @@ sections:
                     1 + number of heroes.
               * ![nem_ability](/static/img/marvel_dagger/nem_ability.png)
                 Resolve the ability on the nemesis sheet that matches the icon.
-              * Activate enemies in the show in the bottom left of the card.
+              * Activate enemies shown in the bottom left of the card.
                   * The activation order is in power order (1-4), Elite, then
                     Nemesis.
                   * If there are multiple enemies of the same rank, the players
@@ -192,7 +192,7 @@ sections:
                           * If there are multiple heroes, players choose which
                             hero is attacked.
                           * Suffer damage equal to the enemy's power value.
-                      2. Overrun a base in its space
+                      2. [Overrun](#overrun) a base in its space
                           * Place an overrun token on the base, covering the
                             text.
                       3. Move
@@ -232,19 +232,23 @@ sections:
             rules.
           * Note the new rules for nemesis activation during the final
             showdown.
-      - name: Winning and Losing
-        text: |
-          * If the heroes bring the nemesis health to zero during the final
-            showdown, they win.
-          * If any of the following happens, the heroes lose:
-              * Threat reaches 20
-              * All 5 bases are overrun
-              * An event is unable to be drawn.
-              * If all heroes are defeated while their "shattered" side of
-                their aspect sheets are face up.
+  - name: Winning and Losing
+    text: |
+      * If the heroes bring the nemesis health to zero during the final
+        showdown, they win.
+      * If any of the following happens, the heroes lose:
+          * Threat reaches 20
+          * All 5 bases are overrun
+          * An event is unable to be drawn.
+          * If all heroes are [defeated](#defeat) while their "shattered"
+            side of their aspect sheets are face up.
+          * If a player is [eliminated](#defeat) and the [final
+            showdown](#final_show) is not started by the end of the next
+            hero phase, the players lose.
   - name: Additional Rules
     sections:
       - name: Nearby and Overrun
+        id: overrun
         text: |
           * Nearby means either the same space or an adjacent space.
               * Heroes, enemies, or space is not nearby itself.
@@ -333,6 +337,7 @@ sections:
           * Nemesis missions are **only** completed during the [nemesis
             phase](#nemesis) and can be failed when threat advances.
       - name: Damage and Defeat
+        id: defeat
         text: |
           * Enemies or heroes are defeated when they have damage equal to
             their health.
