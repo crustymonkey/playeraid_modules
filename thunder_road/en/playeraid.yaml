@@ -1,0 +1,11 @@
+name: "Thunder Road Vendetta"
+description: "Smash and crash, Mad Max style"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+version: 1.0
+bgg_id: 342070
+expansions:
+sections:
+  - name: Setup
+    text: |
