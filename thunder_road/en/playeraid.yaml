@@ -9,3 +9,234 @@ expansions:
 sections:
   - name: Setup
     text: |
+      * Choose a starting road tile (1a or 1b) and place it on the table.
+      * Shuffle the remaining road tiles to make a draw pile.
+      * Draw the top 2 road tiles and add them to the starting road tile (so
+        you have 3 contiguous road tiles.
+      * Shuffle the damage tokens face down and place them near the board.
+      * Place the FX dice near the board.
+      * Each player chooses a color and takes the following (in their color):
+          * 3 dashboards
+          * 3 cars
+          * chopper
+          * command board
+          * 4 movement dice
+      * Each player rolls their movement dice and the player with the lowest
+        total will be the 1st player.
+          * Do **not** reroll these dice for the 1st round usage! This roll
+            will be used for the 1st round.
+          * If there is a tie, the tied players reroll until there are no ties.
+      * The 1st player takes the [road die](#road_die), rolls it, and places
+        it near the board.
+  - name: Gameplay
+    id: gameplay
+    text: |
+      A round will end when each player has used all of their movement dice
+      (taken 3 turns). Each turn consists of 4 steps.
+
+      ### Start of Round
+
+      * All players roll their movement dice (except for the 1st round, where
+        you will use the dice rolled to determine the 1st player).
+      * The 1st player rolls the [road die](#road_die) and places it near
+        the board.
+    sections:
+      - name: "Step 1: Assign"
+        text: |
+          * Assign an unused movement die to an operable car you have not
+            yet moved this round.
+              * If you do not have an available car, assign the die to the
+                [coast](#coast) space of an operable car that you
+                previously moved.
+              * A car may be assigned a [coast](#coast) die 2 times per round.
+              * If you do not have a car you can legally assign a die to,
+                you do not assign the die.
+      - name: "Step 2: Command (once per round)"
+        id: command
+        text: |
+          * Once per round, you may assign a die to a command on your command
+            board and resolve it's effect.
+          * **Your command will activate before your assigned car moves!**
+
+          ### Commands
+          * **Airstrike** (any die): Place your chopper on any empty space
+            on the board (with no obstacles), then [shoot](#shoot).
+              * You **cannot** [shoot](#shoot) in the 1st round.
+              * Other chopper rules:
+                  * Choppers can't be shot, take damage or slam (or be slammed).
+                  * Any car ending its turn in a space with a chopper is
+                    **eliminated**.
+          * **Nitro** (1-3): Increase the number of moves your car makes this
+            turn by the value of the die you've assigned to Nitro.
+              * You **must** move the full amount for your vehicle moves.
+          * **Drift** (3-5): For this turn, your car may pass through the
+            1st space it enters with another vehicle (no [slam](#slam)).
+              * If you end your turn in a space with another vehicle, you
+                still slam it, **even if it's your 1st slam that turn**.
+          * **Repair** (6): Remove 1 damage token from any of your cars and
+            shuffle it face down back into the damage token pile.
+              * If the car was inoperable, it now becomes operable (and may
+                move later this round).
+      - name: "Step 3: Move"
+        text: |
+          * During the 1st round, the 1st movement for each car is to a space
+            on the back edge of the 1st road tile.
+          * Your car moves a number of spaces equal to the movement die value.
+          * A car must always move into 1 of the 3 spaces in its front arc
+            (the 3 spaces in the front, front left, and front right) of
+            your vehicle (unless some effect changes that).
+          * The following rules apply any time a car is moved, whether on your
+            turn, or from a slam or damage token:
+              * A car must move the full amount unless some effect changes this.
+              * A car may move through a space with a chopper.
+              * If a car enters a space with a face down hazard, turn it face
+                up and resolve it.
+              * A car loses its remaining moves when it takes damage.
+              * If a car moves into a space with another car, including wrecks,
+                place the moving vehicle on top of the vehicle in the space
+                and resolve a slam. **This ends the movement of the moving
+                vehicle**.
+      - name: "Step 4: Shoot"
+        id: shoot
+        text: |
+          * **You cannot shoot in the 1st round!**
+          * Cars and choppers shoot in the same manner.
+          * The rules for shooting are:
+              * You can shoot a *road* vehicle (not a chopper) in the
+                front arc (the 3 spaces in the front, front left, and front
+                right) of your vehicle.
+              * If you have more than 1 target, choose 1.
+              * You cannot shoot choppers.
+              * You may shoot wrecks. Like inoperable cars, if they take
+                any damage, remove them from the board.
+              * You may shoot after resolving a slam.
+              * You may shoot your own cars.
+          * To shoot: Roll the shooting die and if the size portion matches
+            the size of the car you are **shooting** (not your car you are
+            shooting *from*), the vehicle is hit and takes damage.
+              * The owner of the damaged car draws and resolves a damage token.
+      - name: End of Turn
+        text: |
+          * Slide the movement die on the car you moved into the "end turn"
+            space.
+          * This car cannot be assigned another movement die this round,
+            except for coasting.
+          * Play proceeds to the left.
+      - name: End of Round
+        text: |
+          * Pass the road die to player on the left of the 1st player and
+            they will be the new 1st player.
+          * Start a [new round](#gameplay).
+  - name: End of Game
+    id: end_game
+    text: |
+      ### Out of the Game
+      * A player is out of the game if all of their cars are eliminated or
+        inoperable.
+      * Remove that player's chopper from the game.
+      * Any inoperable cars are left on the board.
+      * The player takes no more turns.
+
+      ### The Final Tile
+      * **2 players**: If 1 player isn't eliminated beforehand, the 5th tile
+        is the final tile, add the finish line after it.
+      * **3+ players**: When 1 player is out of the game (above), add the
+        finish line to the current end road tile.
+          * If this occurs when moving off the front of the board, place the
+            new lead tile, then the finish line.
+  - name: Damage Tokens
+    text: |
+      | Symbol | Effect |
+      | ------ | ------ |
+      | TODO | TODO |
+  - name: Other Rules
+    sections:
+      - name: Moving Off the Front of the Board
+        id: move_off
+        text: |
+          When a car moves off the front of the lead road tile, 1 of 2 things
+          happen:
+
+          * If the car moved onto the [finish line](#end_game), the game ends
+            and that player wins.
+          * Otherwise, do the following:
+              1. All cars on the rear tile are eliminated.
+              2. All hazard tokens on the rear tile are eliminated.
+              3. All choppers on the rear tile are returned to their owners.
+              4. Remove the rear tile, flip it over, and place it on the
+                 bottom of the road tile stack.
+              5. Slide the middle and lead tiles backward.
+              6. Place a new lead road tile from the stack as the lead tile.
+              7. Place random hazard tokens face down on the new lead tile.
+                  * If you ever run out of hazard tokens, shuffle the discard
+                    to make a new draw pile.
+              8. If playing with [2 players](#end_game) and this was the 5th
+                 tile, add the finish line to the end of it.
+              9. If the car that moved off the board has moves remaining, it
+                 continues its movement.
+      - name: Slamming
+        id: slam
+        text: |
+          * When 2 vehicles are stacked in the same space, a slam is resolved.
+              * This can happen due to movement, hazards, or damage effects.
+              * This ends the movement of the moving vehicle.
+          * Resolve a slam:
+              1. Roll the slam and direction dice.
+              2. If 1 of the 2 vehicles are larger than the other, the owner
+                 of the larger vehicle may request 1 reroll.
+                  * This is true even if the larger vehicle is inoperable.
+                  * This is also true when 1 player owns both vehicles.
+              3. Move the affected vehicle (top or bottom from the slam die)
+                 1 space in the direction indicated on the direction die.
+          * It's possible for the car that was moved 1 space to cause another
+            slam, which should then be resolved (continue until there is only
+            1 car in each space).
+      - name: Road Die
+        id: road_die
+        text: |
+          * This is rolled by the 1st player at the start of each round.
+          * This gives a bonus to cars that start on, and only move on, road
+            spaces for their movement.
+          * The bonus allows the player to move their vehicle an extra
+            number of spaces as indicated on the road die.
+              * The bonus movement does *not* have to on the road.
+              * The bonus movement is optional, but if used, you must move
+                the full amount.
+      - name: Coasting
+        id: coast
+        text: |
+          * If a die is used for coasting, move that car exactly 1 space
+            (disregard the value of the die).
+          * You may **not** use the road die when coasting.
+          * You may shoot if there is a target.
+      - name: Car Damage
+        id: damage
+        text: |
+          * When your car takes damage, choose a random [damage
+            token](#damage_tokens) from the pile, flip it over, and
+            resolve any effect on it.
+          * After resolving any effects on the tile, place it face down
+            in a damage slot for the car.
+          * If a car has 2 damage tokens, it is *inoperable*.
+              * Turn the car to face backwards on the board (showing that it's
+                inoperable).
+              * Flip the car's dashboard over to the inoperable side.
+              * The car can be repaired with a [repair command](#command) and
+                become operable once more.
+              * It cannot take more damage. If damage would be assigned, it is
+                ignored.
+              * It cannot be assigned movement dice or shoot.
+              * It can still be affected by the FX dice, like being
+                [slammed](#slam).
+          * If a car is *eliminated*, it is removed from the game and cannot
+            be repaired.  It's damage tokens should be shuffled back into the
+            damage token pile and its dashboard should be removed from the
+            game.  A car can be eliminated when it:
+              * Enters an impassable space.
+              * Ends a turn in the same space as any chopper (even your own).
+              * Is on a rear road tile when that tile is removed.
+              * Leaves the board from the left, right, or rear edge, usually
+                from damage or being slammed.
+              * Encounters an effect that directly eliminates it.
+          * If **all** of a players cars are either inoperable or eliminated,
+            that player is [out of the game](#end_game).
