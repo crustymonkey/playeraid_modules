@@ -2,7 +2,7 @@ name: "Thunder Road Vendetta"
 description: "Smash and crash, Mad Max style"
 text_type: markdown
 credits: "Jay Deiman"
-enabled: false
+enabled: true
 version: 1.0
 bgg_id: 342070
 expansions:
@@ -63,7 +63,8 @@ sections:
             on the board (with no obstacles), then [shoot](#shoot).
               * You **cannot** [shoot](#shoot) in the 1st round.
               * Other chopper rules:
-                  * Choppers can't be shot, take damage or slam (or be slammed).
+                  * Choppers can't be shot, take damage or [slam](#slam) (or
+                    be slammed).
                   * Any car ending its turn in a space with a chopper is
                     **eliminated**.
           * **Nitro** (1-3): Increase the number of moves your car makes this
@@ -92,10 +93,10 @@ sections:
               * If a car enters a space with a face down hazard, turn it face
                 up and resolve it.
               * A car loses its remaining moves when it takes damage.
-              * If a car moves into a space with another car, including wrecks,
-                place the moving vehicle on top of the vehicle in the space
-                and resolve a slam. **This ends the movement of the moving
-                vehicle**.
+              * If a car moves into a space with another car, including
+                [wrecks](#wrecks), place the moving vehicle on top of the
+                vehicle in the space and resolve a slam. **This ends the
+                movement of the moving vehicle**.
       - name: "Step 4: Shoot"
         id: shoot
         text: |
@@ -107,7 +108,7 @@ sections:
                 right) of your vehicle.
               * If you have more than 1 target, choose 1.
               * You cannot shoot choppers.
-              * You may shoot wrecks. Like inoperable cars, if they take
+              * You may shoot [wrecks](#wrecks). Like inoperable cars, if they take
                 any damage, remove them from the board.
               * You may shoot after resolving a slam.
               * You may shoot your own cars.
@@ -120,7 +121,7 @@ sections:
           * Slide the movement die on the car you moved into the "end turn"
             space.
           * This car cannot be assigned another movement die this round,
-            except for coasting.
+            except for [coasting](#coast).
           * Play proceeds to the left.
       - name: End of Round
         text: |
@@ -145,10 +146,55 @@ sections:
           * If this occurs when moving off the front of the board, place the
             new lead tile, then the finish line.
   - name: Damage Tokens
+    id: damage_tokens
     text: |
-      | Symbol | Effect |
-      | ------ | ------ |
-      | TODO | TODO |
+      | Tile | Effect |
+      | ---- | ------ |
+      | ![dent](/static/img/thunder_road/dent.png) | No effect (other than taking damage). |
+      | ![shrapnel](/static/img/thunder_road/shrapnel.png) | Roll the direction die, and starting with the car that took damage, look in that direction in a straight line until you reach the 1st vehicle. Apply a damage token to that vehicle. Shrapnel passes through any terrain, even impassable.  If there's no vehicle in that direction, nothing happens. |
+      | ![skid](/static/img/thunder_road/skid.png) | Move the damaged car 1 space in the direction shown. |
+      | ![dazed](/static/img/thunder_road/dazed.png) | Roll the stunt die and move your car that many spaces, rolling the direction die for *each* space of movement (to determine direction). You are still affected by any terrain you move into. If you enter a space that causes you car to lose its moves, the dazed effect ends. |
+      | ![blast](/static/img/thunder_road/blast.png) | Roll the direction and stunt dice.  Move that many spaces in the indicated direction. Ignore all spaces in between, but you are still affected by the space you move into. |
+  - name: The Board Spaces
+    text: |
+      ### Terrain
+
+      | Space | Effect |
+      | ----- | ------ |
+      | ![road](/static/img/thunder_road/road.png) | Costs 1 move to enter. May allow the [road die](#road_die) to be used. |
+      | ![off_road](/static/img/thunder_road/off_road.png) | Costs 1 move to enter. |
+      | ![mud](/static/img/thunder_road/mud.png) | Costs 2 moves to enter. You may still enter a mud space if you only have 1 movement left. |
+      | ![impassable](/static/img/thunder_road/impassable.png) | This is an *obstacle* (see below). Impassable spaces are always marked with a double yellow border. |
+      | ![hazard](/static/img/thunder_road/hazard.png) | These spaces show you where to place hazard tiles when a [new road tile is added](#move_off). If there is no tile on the space when entering it, treat it as if there was no symbol. |
+
+      ### Obstacles
+      * Obstacles are road vehicles, choppers, hazard tokens (face up or face
+        down), and impassable spaces. Spaces without obstacles are "empty"
+        spaces.
+      * If a road vehicle enters a space with an obstacle, resolve this as
+        follows:
+          * **Occupied space**: If your car enters a space with another
+            road vehicle, it loses its remaining moves. Stack it on top of the
+            other vehicle and resolve a [slam](#slam).
+          * **Chopper**: You may pass through a space with a chopper, but if
+            a road vehicle ends its movement in a chopper space (during normal
+            movement or as a result of [slam](#slam)/damage), the road
+            vehicle is eliminated.
+          * **Face-down hazard**: If a road vehicle enters a space with a
+            face-down hazard, flip it over and resolve it.
+          * **Face-up hazard**: Immediately resolve the hazard when a road
+            vehicle enters this space.
+          * **Impassable space**: (see above) A road vehicle that enters this
+            space is eliminated.
+
+      ### Hazards
+      | Tile | Effect |
+      | ---- | ------ |
+      | ![wreck](/static/img/thunder_road/wreck.png) | Place a [wreck](#wrecks) in the space and place the moving road vehicle on top of it and resolve a [slam](#slam). Discard the hazard token. |
+      | ![mine](/static/img/thunder_road/mine.png) | The road vehicle takes a damage (and resolves it) and any remaining movement is lost.  Discard the hazard token. |
+      | ![road](/static/img/thunder_road/road_haz.png) | This becomes a road space, leave it on the board. |
+      | ![mud](/static/img/thunder_road/mud_haz.png) | This becomes a mud space, leave it on the board. |
+      | ![oil](/static/img/thunder_road/oil.png) | Roll the direction die and move your road vehicle 1 space in that direction (this does not cost a movement point). The vehicle continues moving (if it has remaining movement). Leave this token on the board. |
   - name: Other Rules
     sections:
       - name: Moving Off the Front of the Board
@@ -236,7 +282,15 @@ sections:
               * Ends a turn in the same space as any chopper (even your own).
               * Is on a rear road tile when that tile is removed.
               * Leaves the board from the left, right, or rear edge, usually
-                from damage or being slammed.
+                from damage or being [slammed](#slam).
               * Encounters an effect that directly eliminates it.
-          * If **all** of a players cars are either inoperable or eliminated,
+          * If **all** of a player's cars are either inoperable or eliminated,
             that player is [out of the game](#end_game).
+      - name: Wrecks
+        id: wrecks
+        text: |
+          * Wrecks are treated as inoperable small cars.
+          * Wrecks are slammed if another car enters its space.
+          * Resolve a hazard if they enter a space with a hazard.
+          * Wrecks are eliminated if they end a turn in the same space as a
+            chopper or take any damage.
