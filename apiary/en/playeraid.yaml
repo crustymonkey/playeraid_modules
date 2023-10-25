@@ -1,0 +1,394 @@
+name: "Apiary"
+description: "Beeeeeeessssss innnnn sssspaaaaaaaaaccccccce"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+version: 1.0
+bgg_id: 400314
+expansions:
+sections:
+  - name: Setup
+    text: |
+      * Place the board face up on the side showing the appropriate
+        player count.
+      * Shuffle the planet tiles and place them in a face down stack near the
+        board.
+      * Randomly place 1 explore token face up on each planet spot in the
+        planet grid.  Return the leftovers to the box.
+      * Place the Queen ship mini on its starting location in the planet grid.
+      * Randomly place 1 dance tile face up on each of the rectangular spots
+        of the Convert action.  Return the leftovers to the box.
+      * Place the dance tokens in a stack on the convert action.
+      * Shuffle the seed cards and place the deck face down on the Research
+        action.
+      * Shuffle the farm tiles and place 1 tile face up on each farm tile
+        slot.  Place the rest in a face down stack on the Advance action.
+      * Shuffle the recruit tiles and place 1 tile face up on each recruit tile
+        slot.  Place the rest in a face down stack on the Advance action.
+      * Shuffle the development tiles and place 1 tile face up on each
+        development tile slot.  Place the rest in a face down stack on
+        the Advance action.
+      * Shuffle the carving tiles and and place 1 face up on each slot on the
+        Carve action.  Return leftovers to the box.
+      * Create a general supply near the board for frames, fiber, pollen,
+        wax, and honey.
+
+      ### Each Player
+      * Choose a color and take the matching docking mat.
+      * Take 1 hive mat at random.
+      * Take 2 random faction tiles, choose 1, and return the other to the box.
+        Place the chosen tile face up on the non-upgraded side on the
+        designated hexes of your hive mat.
+      * Take the 3 player tokens in your color.
+      * Randomly determine a 1st player.
+          * The 1st player places a player token on the zero space of the
+            score, the 2nd player places a player token on the one space, etc.
+      * Each player places a player token on the zero space of the
+        queen's favor track.
+      * Each player places their last player token on their docking mat.
+      * Place 7 hibernation tokens on the designated spot on their docking
+        mat.
+      * Each player checks the number of starting workers listed on their
+        faction tile and places that number of workers in the active pool
+        of their docking mat and sets the values of each to the listed
+        value on their docking mat.
+          * Place remaining worker(s) next to the board near the grow action.
+      * For each resource spot with a green circle on your faction tile,
+        place a resource token matching the highlighted resource on that
+        spot.
+      * Note that the Visah faction will start with some tiles in their
+        reserve (near their mats).
+  - name: Gameplay
+    text: |
+      The game takes place over a number of rounds until all sectors in the
+      [hibernation](#hibernation) comb (dependent on the number of players)
+      are filled with hibernation tokens *OR* when a player places their
+      7th hibernation token.  This triggers the end of the game.
+
+      Turns consist of players either [placing](#placing) workers or
+      [retrieving](#retrieving) all of their workers.
+    sections:
+      - name: Placing Workers
+        id: placing
+        text: |
+          * You can only choose to place a worker if you have a worker
+            in your active pool.
+          * Place a worker from your active pool on an action space, using
+            the leftmost or topmost space if there are 2.
+              * Note that many actions care about the worker strength.
+              * You **must** use all or part of the selected action. i.e. you
+                cannot place a worker and do nothing.
+                  * Some actions have a cost to obtain something, so you must
+                    be able to pay the cost for at least 1 item.
+              * Action spaces are never blocked.  If there is a worker there,
+                you "bump" it (see below) back to its owner.
+                  * Workers can be bumped by any player, including players
+                    bumping their own workers.
+              * The Explore and Advance actions have more than 1 action space.
+                Workers placed on those actions must be placed on an action
+                space with an arrow.
+                  * If there was a worker already in the space, move it to the
+                    right or down 1 space.  If there's already a worker in
+                    the rightmost/bottom space, bump it back to the owner.
+
+          ### Worker Bumping
+          * Workers are bumped off of single action spaces or rightmost/bottom
+            spaces of actions with multiple spaces.
+          * When bumped, the workers are returned to their owners with 1 of
+            2 effects:
+              * **Strength 1-3**: The owner has a choice:
+                  * Increase the worker's strength by 1 and place it in their
+                    active pool. (Place this worker again later).
+                  * Retain the worker's current strength and place it in the
+                    **landing area**. (Collect income with this worker when
+                    doing a retrieve turn).
+              * **Strength 4**: The worker must immediately
+                [hibernate](#hibernation).  Discard the worker to the
+                general supply and place a hibernation token.
+      - name: Retrieving Workers
+        id: retrieving
+        text: |
+          * You must have at least 1 worker to retrieve (on the board or in
+            your landing area) to take a retrieve turn.
+          * You must collect **all** workers (from the board and landing area)
+            when taking a retrieve turn.
+          * For each retrieved worker:
+              * **Strength 1-3**: Collect income from a **different** farm
+                tile for each worker you retrieve, then increase each worker's
+                strength by 1 and return it to your active pool.
+              * **Strength 4**: The worker must immediately
+                [hibernate](#hibernation).
+      - name: Actions
+        sections:
+          - name: Explore
+            text: |
+              1. Sum the total strength of all workers on the explore action
+                 and move the queen ship orthogonally up to 1 space per
+                 worker strength.
+                  * The queen ship **must** end up on a different planet from
+                    where it started.
+              2. If there is an explore token on the destination planet:
+                  1. Gain the token and its benefit.
+                  2. Place the planet tile on the top of the stack onto the
+                     planet (underneath the queen).
+              3. Place 1 basic resource token (pollen, fiber, or water) of
+                 your choice *from the supply* onto 1 empty dotted outline
+                 on the planet (if any). Note that this is done whether or
+                 not the planet is newly explored.
+              4. Gain resources from the supply as depicted on the planet.
+                 This includes printed resources and resource tokens on the
+                 planet. Note that this is done whether or not the planet is
+                 newly explored.
+
+              **Strength 4 benefit**: If you placed a strength 4 worker **and**
+              the queen's destination is a planet with a strength 4 benefit,
+              you may gain that benefit in addition to the resources the
+              planet produces (in any order).
+          - name: Advance
+            text: |
+              Note that this is a single action for 1-3 players, but is
+              treated as 2 separate actions at 4-5 players. See [tile
+              types](#ttypes) for more information on tiles.
+
+              1. Sum the total strength of both workers on the advance action,
+                 adding 1 if the bottom space is empty. This determines which
+                 tiles can be taken as indicated at the top of each column
+                 of exposed tiles.
+                  * In a 4-5 player game, each pair of action spaces is its
+                    own action (for total strength).
+              2. Pay the resource cost shown on the bottom of the tile you
+                 are purchasing.
+              3. Build the tile on an empty hex in your hive adjacent to any
+                 existing tile (including your faction tile).
+                  * If there is a benefit on the hex you covered, take that
+                    benefit.
+                  * Once a tile is built, **it cannot be moved**.
+              4. Gain the tile's benefit if it is a development tile (farm
+                 and recruit tile abilities are gained later).
+                  * Printed victory points are gained at the end of the game.
+              5. Slide all remaining tiles in the row to the left to fill
+                 the gap, then draw a new tile to fill the rightmost space.
+                  * This is always done at the end of your turn unless
+                    specifically stated otherwise.
+
+              **Strength 4 benefit**: If you placed a strength 4 worker, gain
+              3 VP in addition to the tile.
+          - name: Grow
+            text: |
+              Gain a combination of benefits depending on your worker's
+              strength and the resources spent. You may choose either or
+              both actions, and more than once with enough strength. The
+              strength of your worker acts as "points" you can spend, (but
+              do not decrease the strength of the placed worker).
+
+              * Gain a strength-1 worker by spending 1 pollen and 1
+                strength add it to your active pool.
+              * Gain a frame by spending 2 basic resources (pollen, fiber,
+                or water) and 2 strength to add it to your hive.
+                  * The frame can be placed in any orientation, but must
+                    have at least 1 hex adjacent to a hex on your hive mat
+                    or another frame.
+                  * You cannot overlap another tile or hex.
+                  * The 1st 2 frames you place unlock 1 location on your
+                    hive mat to plant 1 seed card via the research action.
+                  * Completing a frame by building 4 tiles on it will give
+                    you 8 VP at the end of the game.
+
+              **Strength 4 benefit**: If you placed a strength 4 worker, you
+              may upgrade your faction tile in addition to the above actions.
+              Flip the faction tile over (showing the upgraded side) and
+              place it back in its starting location.  Transfer any resource
+              tokens to the new side of the tile.
+          - name: Research
+            text: |
+              Draw a number of seed cards equal to your worker's strength,
+              select 1 to keep in hand, and discard the rest.
+
+              **Strength 4 benefit**: If you placed a strength 4 worker, after
+              you draw the 4 seed cards and select 1, you may tuck 1 seed
+              card from your hand under your hive mat in a seed card slot to
+              gain its end game scoring benefit. Do **not** gain the 1-time
+              benefit.
+
+              * Note that slots 3 and 4 are only available after placing your
+                1st and 2nd frames, respectively.
+              * You cannot return tucked seed cards to your hand, cover them
+                with another seed card, or discard them (unless an ability
+                specifically states otherwise).
+              * All end game scoring bonuses on seed cards only count your
+                resources or items in your hive.
+
+              ### Seed Cards
+              * They may be kept public or private.
+              * A seed card may be used on the turn gained.
+              * Before or after your action on any of your turns, you may
+                play any number of seed cards (discard) to do **1** of the
+                following:
+                  * Gain each played card's 1-time benefit (top of the card).
+                  * Gain any 1 basic resource (pollen, fiber, or water) per
+                    card played.
+          - name: Convert
+            text: |
+              Perform a number of the below coversions based on the strength
+              of the placed worker.
+
+              * Discard 1 seed card from your hand (do not gain any benefit)
+                to draw 1 seed card.
+              * Pay 1 basic resource (pollen, fiber, or water) to gain 1
+                basic resource of your choice.
+              * Pay 1 pollen and 1 fiber to gain 1 wax.
+              * Pay 2 pollen and 1 water to gain 1 honey.
+              * Use any dance that was already taught.
+
+              **Strength 4 benefit**: If you placed a strength 4 worker and
+              have not taught a dance this game, you may teach a dance
+              following these steps:
+
+              1. Choose a dance that has not been taught and place your 3rd
+                 player token on the empty square on the far right of one
+                 dance row.
+                  * Every time an *opponent* uses a dance, its teacher gains
+                    1 [queen's favor](#qfavor).
+              2. Select the required number of dance tokens (1 or 2) by
+                 looking through the stack of dance tiles to fill the open
+                 spots.
+              3. Place the tokens in their in their respective spot(s).
+                  * Once taught, dances cannot be modified.
+              4. The dance is immediately available for use as you continue
+                 resolving the core convert action (i.e. you can use this
+                 as 1 of your conversions).
+          - name: Carve
+            text: |
+              * You may only place a strength 4 worker on the carve action.
+              * When you take the action, pay the honey cost on the desired
+                tile and gain that tile.
+                  * Place the gained tile in your hive adjacent to an
+                    existing tile.  If you cover an icon, gain that benefit.
+                  * **Do not replace a carve tile when 1 is gained!**
+  - name: End Game and Scoring
+    text: |
+      The game end is triggered when one of these 2 things happen:
+
+      * All sectors of the hibernation comb (for the player count) are filled
+        with hibernation tokens.
+      * A single player places their 7th hibernation token.
+
+      When the end game is triggered, each player takes 1 additional turn,
+      *including the player who triggered the game end*.
+
+      ### Scoring
+      Add your points gained during the game with the following:
+
+      * Meeting the conditions on any tucked seed cards.
+      * Any farms (1 VP each) plus variable points shown on recruits and
+        development tiles built in your hive.
+      * Meeting the conditions on any carvings you built.
+      * Your position on the [queen's favor](#qfavor) track.
+      * Filling your hive mat: 8 points + 8 points for each filled frame.
+      * Your faction's endgame ability.
+      * Winning hibernation comb sector majorities.
+          * Each sector provides points for most tokens, and sometimes for
+            the 2nd most tokens as well.
+          * If multiple people are tied for 1st, they divide all the points
+            for that sector, rounded down. No 2nd place is awarded.
+          * If multiple people are tied for 2nd, they divide the 2nd place
+            points for that sector, rounded down.
+
+      The player with the most points wins.  If there is a tie, the player
+      with the most active workers (on the board or docking mat) wins. If
+      still tied, the victory is shared.
+  - name: Worker Hibernation
+    id: hibernation
+    text: |
+      When a 4 strength worker would increase its strength (bumped or
+      retrieved), it instead must hibernate.
+
+      1. If the worker was to perform an action, they do that 1st at their
+         strength of 4.
+      2. The worker is returned to the general supply next to the board.
+      3. Place a hibernation token onto an empty spot in the hibernation
+         comb and gain the shown benefit.
+          * Note that each sector of the comb offers an end game scoring
+            benefit for having the most tokens in it.
+          * Some pods allow you to refresh a tile row in the advance action.
+            If taking this, you **must** discard **all** tiles in the
+            indicated row before refilling.
+  - name: Resources
+    text: |
+      * There are 5 resources in the game: fiber, pollen, water, wax, and honey.
+          * **Basic resources**: fiber, pollen, and water.
+          * **Valuable resources**: wax and honey
+      * Resources are always gained and payed to the general supply unless
+        otherwise stated.
+      * Some resource icons show multiple resources.  Pay/gain 1 of the
+        indicated resources.  Do **not** gain multiple resources.
+      * Resource storage capacity is limited by spaces in your hive.
+          * Gained resources are stored at the end of your turn on spaces in
+            your hive (1 resource per space).
+          * Resources can be rearranged in your hive during your turn.
+          * **You must discard any resources that do not fit in your hive at
+            the end of your turn!**  Each resource discarded in this way
+            allows you to gain 1 [queen's favor](#qfavor).
+  - name: Tile Types
+    id: ttypes
+    text: |
+      When building tiles on your hive mat, you must always build adjacent to
+      an existing tile (including your faction and starting tiles).
+
+      | Tile | Description |
+      | ---- | ----------- |
+      | ![faction](/static/img/apiary/t_faction.png) | Your faction tile is composed of 3 hexes.  It does not count as a farm, recruit, development, or carving tile for any purpose unless otherwise stated. |
+      | ![recruit](/static/img/apiary/t_recruit.png) | Recruits provide ongoing abilities. Some trigger when performing an action (double arrow). Others trigger based on situations that arise.  All recruits cost pollen. |
+      | ![dev](/static/img/apiary/t_dev.png) | Developments provide 1-time benefits for you to gain when you build the tile.  All developments cost wax. |
+      | ![carving](/static/img/apiary/t_carve.png) | Carvings provide endgame scoring bonuses. All carvings cost honey. |
+      | ![farm](/static/img/apiary/t_farm.png) | Farms provide additional storage spots for resource tokens. Each farm also has an income benefit that can be gained once per retrieve turn (1 farm's income benefit per retrieved worker).  All farms cost fiber and/or water. |
+  - name: Queen's Favor Track
+    id: qfavor
+    text: |
+      * At the end of your turn, you must discard any resources that do not
+        fit in your hive. Gain 1 queen's favor for each discarded.
+          * You may **not** voluntarily discard resources to gain queen's
+            favor. You may inefficiently arrange resources to discard more
+            resources though.
+          * Any resources in your hive at the end of the game are not discarded
+            and do **not** provide queen's favor.
+      * You may share a space on the track with other players.
+      * There is an endgame scoring bonus based on your final position on the
+        the track.
+  - name: Advanced Variant
+    text: |
+      1. During setup, deal faction tiles and hive mats face up in the center
+         of the table.
+          * Deal a number of faction tiles equal to the number of players + 1.
+          * Deal a number of hive mats equal number of players.
+      2. Starting with the last player in turn order, each player drafts a
+         hive mat or faction tile.
+      3. Repeat step 2, but start with the 1st player (snake draft).
+  - name: Symbols
+    text: |
+      | Symbol | Description |
+      | ------ | ----------- |
+      | ![fiber](/static/img/apiary/fiber.png) | Fiber |
+      | ![water](/static/img/apiary/water.png) | Water |
+      | ![pollen](/static/img/apiary/pollen.png) | Pollen |
+      | ![basic](/static/img/apiary/basic.png) | Any Basic Resource (fiber, water, or pollen) |
+      | ![wax](/static/img/apiary/wax.png) | Wax |
+      | ![honey](/static/img/apiary/honey.png) | Honey |
+      | ![wax_honey](/static/img/apiary/wax_honey.png) | Wax or Honey |
+      | ![pollen_fiber](/static/img/apiary/pollen_fiber.png) | Pollen or Fiber |
+      | ![farm](/static/img/apiary/farm.png) | Farm (increases storage) |
+      | ![recruit](/static/img/apiary/recruit.png) | Recruit (provides ongoing ability) |
+      | ![dev](/static/img/apiary/dev.png) | Development (provides instant benefit) |
+      | ![carving](/static/img/apiary/carving.png) | Carving (offers endgame scoring) |
+      | ![one_str](/static/img/apiary/1-str.png) | 1-Strength Worker |
+      | ![x_str](/static/img/apiary/x-str.png) | X Strength (to determine the level of benefit to receive) |
+      | ![hib_token](/static/img/apiary/hib_token.png) | Hibernation Token |
+      | ![str_sum](/static/img/apiary/sum-str.png) | Strength Sum (of multiple workers) |
+      | ![seed](/static/img/apiary/seed.png) | Draw Seed Card |
+      | ![qfavor](/static/img/apiary/qfavor.png) | Queen's Favor |
+      | ![income](/static/img/apiary/income.png) | Income (gain on your retrieve turns or as instructed) |
+      | ![explore](/static/img/apiary/explore.png) | Explore Token |
+      | ![frame](/static/img/apiary/frame.png) | Hive Frame |
+      | ![plus_1](/static/img/apiary/plus-str.png) | Increase a worker's strength by 1 |
+      | ![hib_comb](/static/img/apiary/hib_comb.png) | Hibernation Comb |
+      | ![whenever](/static/img/apiary/whenever.png) | Whenever You |
