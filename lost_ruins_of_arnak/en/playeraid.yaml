@@ -3,10 +3,11 @@ description: "Explore the lost ruins, battle guardians, and perform research"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 2.2
+version: 3.0
 bgg_id: 312484
 expansions:
     - Expedition Leaders
+    - The Missing Expedition (Leaders and Temples)
 sections:
     - name: Setup
       text: |
@@ -454,6 +455,77 @@ sections:
               * After you draw up to a full hand, **including at the start of
                 the game**, add a fear card from the fear deck to your hand.
                   * If the fear deck is empty, ignore this.
+        - name: The Journalist
+          text: |
+              * **Setup**:
+                  * Place 1 article token below each level 1 and 2 site on the
+                    board.
+                  * Place 2 or 3 article tokens at the top of your player
+                    board, based on player count.
+                  * Randomly select 2 of the 4 newspaper tiles and insert them
+                    with a random side up in their slots in your player board.
+                    Return the other 2 to the box.
+              * *Reporting* card: Take a reward based on the number of articles
+                you have written. You can take a "higher" reward if desired.
+              * *Investigation* card: You can optionally write an article
+                **from the top of your player board** when you play this card.
+              * *Writing Articles*:
+                  * This is a **free** action.
+                  * You must pay **1** of the travel costs (not both if 2)
+                    shown at the site that you have an archaeologist at.
+                      * *Reminder*: You don't lose travel icons until the end
+                        of your turn, so if you use a "double boat" to go to
+                        a site that requires a single boat, you can use the
+                        2nd boat to write the article.
+                  * Once written, put the article on your supply crate until
+                    you decide to publish it.
+              * *Publishing Articles*:
+                  * Written articles in your supply can be spent on actions
+                    shown on your newspaper on your player board.
+                  * If not marked as a free action (⚡), this is your turn's
+                    main action.
+                  * You must fill the newspaper rows from top to bottom on
+                    the left and right halves of your newspaper (note that
+                    you can just fill all the items on *only* the left or
+                    right).
+                  * If you publish all 4 articles for the 1st or 2nd row, it
+                    opens up an additional idol slot for that completed row.
+              * The journalist's notebook is allowed to go 1 level higher than
+                their magnifying glass.
+        - name: The Mechanic
+          text: |
+              * **Setup**:
+                  * Shuffle the 8 gold widgets face down and divide them into
+                    4 pairs.
+                      * Keep 1 pair face down beside your board. This is for
+                        use with your *Teamwork* card.
+                      * Place the other 3 pairs on the I, III, V spaces of
+                        the card row.
+                  * Place the monkey assistant on the III space of the card row
+                    with your gold widget pair there.
+              * *Tinkering* card: Take a reward based on the number of gold
+                widgets in your machine.  You can take a "higher" reward if
+                desired.
+              * *Teamwork* card: This allows you to add 1 of the 2 gold widgets
+                you set next to your board at the beginning of the game.
+              * **After drawing cards at the beginning of rounds I, III, and
+                V**, you take the 2 gold widgets from above the card row, add
+                1 to your machine and return the other to the box.
+              * You gain the monkey assistant at the beginning of round III.
+                You may also gain normal assistants in the usual manner.
+                  * The monkey cannot be replaced, exchanged, or discarded by
+                    any effect.
+
+              ### The Machine
+
+              * The wheel should start with the silver car and gold coin
+                at the top.
+              * See below for rotation effects.
+
+              | Symbol | Description |
+              | ------ | ----------- |
+              | ![silver](/static/img/lost_ruins_of_arnak/silver_gear.png) | Rotate the wheel 90° clockwise, then choose a silver widget effect from 1 of the 2 now on the right side. |
+              | ![gold](/static/img/lost_ruins_of_arnak/gold_gear.png) | Rotate the wheel 90° clockwise, then, if the gold widget space is empty, choose 1 silver effect (same as above). If there is a gold widget, take the effect of the gold widget **or** both of the silver widget effects (in any order). |
     - name: Variants
       text: |
           If you are playing with the Expedition Leaders expansion, there are
@@ -467,7 +539,7 @@ sections:
 
               * During the end of the round, exile **2 items and 2 artifacts**
                 instead of the usual 1 of each.
-        - name: Research Tracks (Expedition Leaders)
+        - name: Research Tracks (Expedition Leaders and The Missing Ex.)
           id: research
           text: |
               * If your mag. glass is 2 rows below the top of the reach the
@@ -541,3 +613,56 @@ sections:
               | ![l2](/static/img/lost_ruins_of_arnak/lizard_2.png) | Immediately gain 2 fear cards to your play area. |
               | ![l3](/static/img/lost_ruins_of_arnak/lizard_3.png) | Choose either a coin or a compass. |
               | ![l4](/static/img/lost_ruins_of_arnak/lizard_4.png) | Pay the idol cost with 1 of your idols that is **not in a slot** on your player board. Return it to the box. |
+
+              # Waterfall Temple
+
+              * **Setup**:
+                  * Place the 2 waterfall tiles on the left of each pair
+                    of matching spaces on the board.
+                      * Covered costs do not apply.
+                      * When the space above the tile is researched, slide
+                        the tile to the left/right to cover the old cost
+                        and reveal the new one.
+                  * Deal level 1 site tiles equal to the number of players
+                    randomly face down to the matching space on the board.
+              * There is a shortcut high on the left side of the board
+                (the 10 point mag. glass space) that can be used to go
+                directly to the temple by paying its cost (arrow, ruby, and
+                an unused idol).
+              * Only your mag. glass may go to the space with the face down
+                level 1 sites.
+                  * When reaching this space, look through all the site tiles,
+                    select 1, and activate it.  Then place it on the bottom
+                    of the matching site stack.
+
+              | Symbol | Description |
+              | ------ | ----------- |
+              | ![draw](/static/img/lost_ruins_of_arnak/w_draw.png) | Draw a card, but from the **bottom** of your deck instead of the top. |
+
+              # Tree Temple
+
+              * **Setup**:
+                  * It is recommended to cover the snake temple side of the
+                    board with this.
+                  * **Before dealing idols to sites**, make 2 face down
+                    stacks of randomly chosen idols (1 per player) and place
+                    the stacks in their spaces in the right hand column of
+                    the board.
+              * When you reach an idol chamber with your mag. glass, you may
+                place 1 of your unused idols in 1 of the slots for that
+                space and gain the depicted reward.
+                  * If you do not have an idol to place (or choose not to), you
+                    gain no reward.
+              * When you reach an idol chamber with your notebook, look through
+                the stack of idols, choose 1 and return the remainder face
+                down. Gain both the reward on the selected idol and the idol
+                itself.
+
+              | Symbol | Description |
+              | ------ | ----------- |
+              | ![res_2p](/static/img/lost_ruins_of_arnak/t_2p.png) | If you have a research token in this row, your research action can be used to gain a 2 point tile instead of advancing. Pay the usual cost. |
+              | ![res_6p](/static/img/lost_ruins_of_arnak/t_6p.png) | If you have a research token in this row, your research action can be used to gain a 2 point or 6 point tile instead of advancing. Pay the usual cost. |
+              | ![exile](/static/img/lost_ruins_of_arnak/t_exile.png) | As part of the cost, you must exile an artifact from either your hand or play area. |
+              | ![refresh](/static/img/lost_ruins_of_arnak/t_refresh_g.png) | You may refresh 1 of your face-down guardians. Flip it face up so you can use its boon again. |
+              | ![use_idol](/static/img/lost_ruins_of_arnak/t_use_idol.png) | You may immediately use the effect on any face-up idol on an undiscovered site. If there are no idols face up, this has no effect. |
+              | ![buy_disc](/static/img/lost_ruins_of_arnak/t_buy_disc.png) | Place an idol here and then you may buy an item with a 2 coin discount. Then you may draw a card from the **bottom** of your deck (you may draw the card you just bought). |
