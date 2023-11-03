@@ -3,7 +3,7 @@ description: "Burn some rubber"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 2.0
+version: 2.1
 bgg_id: 366013
 expansions:
 sections:
@@ -127,8 +127,8 @@ sections:
                   phase](#reveal).
         - name: '6. Slipstream'
           text: |
-            **This only applies if you end your next to, or behind, another
-            car**. This is optional.
+            **This only applies if you end your move next to, or behind,
+            another car**. This is optional.
 
             * If you choose to slipstream, you move 2 spaces forward.
             * **Slipstreaming does NOT increase your speed value for the
@@ -283,7 +283,7 @@ sections:
                       condition token is in play.
                 * Shuffle the 12 road condition tokens and draw 1 for each
                   corner of the race track.
-                    * If the token shows an arrow, it modifies the next the
+                    * If the token shows an arrow, it modifies the
                       next sector (all spaces between this and the next
                       corner). Put it on the tent of that sector next to
                       the track.
