@@ -1,0 +1,11 @@
+name: "Return to Dark Tower"
+description: "Defeat the adversary!"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+version: 1.0
+bgg_id: 256680
+expansions:
+sections:
+  - name: Setup
+    text: |
