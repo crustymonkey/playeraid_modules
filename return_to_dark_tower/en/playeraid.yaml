@@ -2,10 +2,360 @@ name: "Return to Dark Tower"
 description: "Defeat the adversary!"
 text_type: markdown
 credits: "Jay Deiman"
-enabled: false
+enabled: true
 version: 1.0
 bgg_id: 256680
 expansions:
 sections:
   - name: Setup
     text: |
+      * Place the board so that each kingdom faces a player.
+      * Make the 12 seals are on the tower and place it in the center of the
+        board.
+      * Place the buildings in their spaces.
+      * Create a supply of warrior and spirit tokens as well as 24 skulls
+        (note that the game comes with more than 24).
+      * Sort the gear cards into separate stacks of 3 (of the same) each.
+      * Shuffle the treasure cards and place them face down, then draw 3
+        and place them face up to create the market.
+      * Shuffle the potion cards into a face down deck.
+      * Shuffle the corruption cards into a face down deck.
+      * Place the companion cards, quest markers, and haggle die near the
+        board.
+      * Each player selects a hero and:
+          * Takes the matching hero board
+          * Place the 3 matching hero virtue tiles on your board, inactive
+            side up.
+          * Place your figure in your home territory (facing you) on the
+            citadel space.
+          * Place the virtue tile matching your home territory in a slot on
+            your player board.
+          * Collect your starting resources (7 warriors and 1 spirit).
+      * Open the app and follow the instructions in it to setup your game.
+  - name: Gameplay
+    text: |
+      The game is played over a series of "months", with the 1st month
+      consisting of 1 turn for each player, but a variable number of turns
+      in the months after.
+
+      Each month you will get a companion and adversary quest, place the
+      appropriate markers on the board as a reminder of where these quests are.
+
+      * **Winning the game**: Complete the main goal, then defeat the
+        Adversary.
+      * **Losing the game** (press the "game lost" button in the app):
+          * If any player would get a 3rd [corruption](#corruption).
+          * When the 6th month ends.
+          * When you need to take a skull from the supply and there are none.
+    sections:
+      - name: "1. Start of Turn"
+        text: |
+          * You may take your banner action printed on your hero board.
+              * This can **only** be done at the start of your turn.
+          * Resolve any other start of turn effects you may have.
+      - name: "2. Middle of Turn"
+        text: |
+          * You may (optional) take any of the following actions in any order:
+              * Move. This can even be split between other actions.
+              * Heroic Action.
+              * Reinforce Action.
+        sections:
+          - name: Move
+            text: |
+              * Move a number of spaces up to your move value (base value
+                is printed on your board + any modifiers).
+                  * Some virtues or gear can modify your movement value.
+              * You may spend 1 spirit to **double** your move for the turn.
+                  * This must be done **before** you start moving.
+                  * Modifiers are applied *before* doubling.
+              * If your move value changes during your turn, the new value
+                does not go into effect until your *next* turn.
+              * When crossing a river, you cannot move to a space further
+                up or down the river.
+              * Nothing stops or hinders movement. You can move through foes,
+                skulls, etc.
+          - name: Heroic Action
+            id: heroic
+            text: |
+              There are 3 different types of heroic action, but **you may
+              only take 1 of them on your turn**.
+
+              After taking a heroic action, **gain 2 spirit**.
+            sections:
+              - name: Cleanse
+                text: |
+                  * Remove all skulls from a building in your space (back to
+                    the supply).
+                  * You cannot cleanse in a space without skulls.
+              - name: Battle
+                text: |
+                  Battle a foe in your space and remove the foe from the board.
+
+                  * First, tally up the number of [advantages](#advantages)
+                    you have for the battle (matching the foe's type).
+                      * You cannot undo spent advantages.
+                      * The app will tell you how many you have spent.
+                  * For each battle card:
+                      * You can spend these to make the card easier.
+                      * You must resolve the losses or lose as much as
+                        possible and gain 1 corruption.
+                  * When all battle cards resolved the foe is defeated and
+                    removed from the board.
+
+                  ### Other Foe Removing Effects
+                  * Some other effects will let you remove foes from the board.
+                      * Open the foe status screen to remove them.
+                      * This is **not** a heroic action, so you do not gain
+                        2 spirit.
+                      * The Adversary cannot be removed this way.
+
+                  ### Battling the Adversary
+                  * This works like a normal battle.
+                  * You can retreat from the adversary battle.
+                  * You must resolve at least 1 battle card, then you can
+                    retreat or continue.
+                  * Advantages applied to battle cards remain for future
+                    battles.
+              - name: Quest
+                text: |
+                  Complete a quest, including the main goal, or explore
+                  a dungeon.
+
+                  ### Complete a Quest
+                  * You must be in the location or do whatever else the
+                    quest says you must do to complete it.
+                  * Select the quest in the app, then press and hold the
+                    button and the app will tell you what happens.
+                  * After completing the quest, remove the marker from the
+                    board.
+                  * The main goal is a type of quest.  If you complete this
+                    goal, it will cause the Adversary to spawn on the board.
+
+                  ### Explore a Dungeon
+                  * Dungeons will spawn as a part of certain quests.
+                  * The goal is to explore rooms until you reach the target
+                    room.
+                  * Completing a dungeon automatically completes its associated
+                    quest.
+                  * Select the dungeon in the app to begin exploring it.
+                      * Select an unexplored room to continue further into
+                        the dungeon.
+                      * You may spend **1** advantage to improve a room's
+                        results (press the "improve" button).
+                      * Follow the instructions to resolve the room.
+                          * If you cannot lose the what the room requires,
+                            lose as much as possible and gain 1 corruption.
+                      * After clearing a room (paying the costs and possibly
+                        gaining a corruption), you may:
+                          * Continue exploring the dungeon OR
+                          * Leave the dungeon.
+                  * If you leave a dungeon before it is complete, cleared
+                    rooms remain cleared for the next adventurer.
+          - name: Reinforce
+            text: |
+              * Once per turn, you may reinforce at a space with a building.
+              * On the building, you can choose to take the free effect
+                **or** spend the cost for the enhanced effect.
+
+              | Building | Free Effect | Enhanced Effect |
+              | -------- | ----------- | --------------- |
+              | Citadel | Gain 1 potion for free | Spend 5 spirit to gain 1 virtue |
+              | Sanctuary | Gain 1 spirit for free | Spend 5 spirit to remove all your corruption |
+              | Village | Gain 6 warriors for free | Spend 1 spirit to gain 12 warriors |
+              | Bazaar | Gain 1 gear for free | Spend 2 spirit to gain 1 treasure |
+
+              ### The Haggle Die
+              When you reinforce, you may roll the haggle die to affect the
+              reinforce action.
+
+              | Face | Effect |
+              | ---- | ------ |
+              | ![blank](/static/img/return_to_dark_tower/h_blank.png) | Reinforce normally |
+              | ![warriors](/static/img/return_to_dark_tower/h_warrior.png) | After you reinforce, gain 3 warriors |
+              | ![potion](/static/img/return_to_dark_tower/h_potion.png) | After you reinforce, gain 1 potion |
+              | ![gear](/static/img/return_to_dark_tower/h_gear.png) | After you reinforce, gain 1 gear |
+              | ![cancel](/static/img/return_to_dark_tower/h_cancel.png) | The reinforce action is canceled! |
+      - name: "3. End of Turn"
+        text: |
+          At the end of your turn, you **must** take a skull from the supply
+          and drop it in the tower.
+
+          * If there are no available skulls, the players lose immediately.
+          * Different things may happen when dropping a skull.
+              * If a [skull](#skulls) comes out of the tower, place it before
+                resolving any other effects.
+
+          ### Events
+          Events may occur during the end portion of a players turn (after
+          dropping a skull).
+
+          * Resolve the event as shown in the app.
+              * When you are told to remove a seal, remove the 1 indicated
+                by the glowing lights.
+              * If [skulls](#skulls) emerge when a seal is removed or the
+                tower rotates, place the skulls as normal
+          * Event types:
+              * **Foes strike**: Foes will move and/or attack. This is skipped
+                if none of that foe type is on the board.
+              * **Foes spawn**: Foes spawn somewhere on the board.
+              * **Foes grow in power**: Foes change status to become more
+                lethal. This is skipped if none of that foe type is on the
+                board.
+              * **The tower stirs**: The tower rotates or a seal on the tower
+                is removed.
+              * **The tower acts**: The adversary strikes out from within
+                the tower.
+              * **Companion events**: Companions reveal good events.
+              * **New wares**: Players may replace treasures in the market.
+  - name: Game Concepts
+    sections:
+      - name: Advantages
+        id: advantages
+        text: |
+          * There are 6 types of advantages (wild advantages count as any
+            advantage type):
+              1. Beast
+              2. Humanoid
+              3. Undead
+              4. Magic
+              5. Melee
+              6. Stealth
+          * You **only add advantages that match the foes or dungeon** you are
+            encountering.
+          * These are spent to improve battle cards or dungeon rooms.
+          * There are 2 types of advantages:
+              * Automatic (black background).
+              * Conditional (gray background). These have a cost.
+                  * These can be purchased in the middle of a battle or dungeon.
+          * If you gain any automatic advantages in the middle of a battle or
+            dungeon, you can use them immediately.
+              * Conversely, if you lose an item that gave you an advantage,
+                you don't lose that advantage.
+          * You can spend up to 10 advantages in a single [heroic
+            action](#heroic).
+          * Do not remove the item that is providing an advantage when you
+            spend the associate advantage.
+          * Unspent advantages are lost when the heroic action is complete.
+          * Some quests will require advantages to complete.
+      - name: Items
+        text: |
+          * There are 4 types of items and each has a carry limit:
+              1. Potions: unlimited
+              2. Gear: 1 of each
+              3. Treasures: 4
+              4. Quest items: unlimited
+          * You can only use items on your own turn.
+          * When you gain a potion, draw the top card of the deck.
+          * When you gain a gear, choose 1 from 1 of the face up stacks.
+          * When you gain a treasure, gain 1 of the face up cards in the
+            market and immediately replace it with a new card from the deck.
+          * When you gain a quest item, take it from the quest item deck.
+      - name: Trading
+        text: |
+          * You may trade once during your turn any heroes in your space.
+          * You may give/take warriors, spirit, items, and companions.
+          * You may **not** give/take virtues or corruptions.
+      - name: Virtues
+        text: |
+          * Everyone starts with 3 active virtues.
+          * Spend spirit at a citadel to gain a virtue, flipping 1 of your
+            inactive virtues to its active side.
+              * This goes into effect immediately.
+      - name: Spending vs. Losing
+        id: spending
+        text: |
+          * *Spending* resources or items is optional and can be done at any
+            time during your turn.
+          * *Losing* resources or items is mandatory and you must lose as
+            much as possible.
+              * If you cannot lose the specified amount of an item, lose as
+                much as possible and gain 1 corruption. You cannot gain
+                multiple corruptions from a single effect.
+
+          | Resource/Item | When spent or lost, return to... |
+          | ------------- | --------------------- |
+          | Warriors | the supply |
+          | Spirit | the supply |
+          | Potion | bottom of the potion deck |
+          | Gear | the matching gear stack |
+          | Treasure | the bottom of the treasure deck |
+          | Quest item | the game box |
+      - name: Corruption
+        id: corruption
+        text: |
+          * You gain a corruption when 1 of the following happens:
+              * An event, battle card, dungeon room, etc. makes you lose
+                resources/items that you do not have (gain 1 corruption, see
+                also [spending vs. losing](#spending)).
+          * If you would gain a 3rd corruption, the game ends immediately as
+            a loss.
+          * You cannot gain more than 1 corruption per event, battle card,
+            or dungeon room.
+          * Removed corruptions go to the bottom of the corruption deck.
+      - name: Skulls and Buildings
+        id: skulls
+        text: |
+          * Each kingdom has 1 of each of the 4 types of buildings.
+          * When skulls come out of the tower, they must be placed on
+            buildings, but the kingdom's owner decides where to place
+            the skulls.
+              * If skulls drop into a dormant kingdom (no owner), the current
+                player decides where to place the skull(s).
+          * If a 4th skull would be placed on a building:
+              * The building is destroyed and both the building and
+                the 3 skulls on it are removed **from the game**.
+              * The owner of the kingdom gains a corruption.
+              * It it was a dormant kingdom (no owner), no one gains a
+                corruption.
+          * If you ever need to take a skull from the supply and there are
+            none, the players immediately lose the game.
+      - name: Glyphs
+        text: |
+          * When seals on the tower are removed, they may expose glyphs.
+          * Each glyph matches a specific action.
+          * When a revealed glyph is facing your home kingdom, **you must
+            spend 1 spirit to take the depicted action**.
+
+          | Icon | Description |
+          | ---- | ----------- |
+          | ![banner](/static/img/return_to_dark_tower/g_banner.png) | Banner |
+          | ![cleanse](/static/img/return_to_dark_tower/g_cleanse.png) | Cleanse |
+          | ![battle](/static/img/return_to_dark_tower/g_battle.png) | Battle |
+          | ![quest](/static/img/return_to_dark_tower/g_quest.png) | Quest |
+          | ![reinforce](/static/img/return_to_dark_tower/g_reinforce.png) | Reinforce |
+  - name: Icons
+    text: |
+      ### App Icons
+
+      | Icon | Description |
+      | ---- | ----------- |
+      | ![advantage](/static/img/return_to_dark_tower/a_advantage.png) | Advantage |
+      | ![adv_quest](/static/img/return_to_dark_tower/a_adv_quest.png) | Adversary Quest |
+      | ![battle](/static/img/return_to_dark_tower/a_battle.png) | Battle |
+      | ![compl_q](/static/img/return_to_dark_tower/a_compl_quest.png) | Completed Quest |
+      | ![comp_q](/static/img/return_to_dark_tower/a_comp_quest.png) | Companion Quest |
+      | ![dungeon](/static/img/return_to_dark_tower/a_dungeon.png) | Dungeon |
+      | ![event](/static/img/return_to_dark_tower/a_event.png) | Event |
+      | ![fstatus](/static/img/return_to_dark_tower/a_fstatus.png) | Foe Status |
+      | ![lost](/static/img/return_to_dark_tower/a_lost.png) | Game Lost |
+      | ![m_goal](/static/img/return_to_dark_tower/a_main_goal.png) | Main Goal |
+
+      ### Terrain
+
+      | Icon | Terrain |
+      | ---- | ----------- |
+      | ![desert](/static/img/return_to_dark_tower/t_desert.png) | Desert |
+      | ![hills](/static/img/return_to_dark_tower/t_hills.png) | Hills |
+      | ![mountains](/static/img/return_to_dark_tower/t_mount.png) | Mountains |
+      | ![lake](/static/img/return_to_dark_tower/t_lake.png) | Lake |
+      | ![forest](/static/img/return_to_dark_tower/t_forest.png) | Forest |
+      | ![grass](/static/img/return_to_dark_tower/t_grass.png) | Grasslands |
+
+      ### Buildings
+
+      | Mini | Building |
+      | ---- | -------- |
+      | ![citadel](/static/img/return_to_dark_tower/b_citadel.png) | Citadel |
+      | ![sanctuary](/static/img/return_to_dark_tower/b_sanct.png) | Sanctuary |
+      | ![village](/static/img/return_to_dark_tower/b_village.png) | Village |
+      | ![bazaar](/static/img/return_to_dark_tower/b_bazaar.png) | Bazaar |
