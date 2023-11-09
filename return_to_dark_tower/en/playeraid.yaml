@@ -3,9 +3,10 @@ description: "Defeat the adversary!"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.0
+version: 2.0
 bgg_id: 256680
 expansions:
+  - Alliances
 sections:
   - name: Setup
     text: |
@@ -15,15 +16,29 @@ sections:
       * Place the buildings in their spaces.
       * Create a supply of warrior and spirit tokens as well as 24 skulls
         (note that the game comes with more than 24).
+          * *Alliances*: Set aside the [power skulls](#pskulls).  The app
+            will tell you when/if to use them.
       * Sort the gear cards into separate stacks of 3 (of the same) each.
       * Shuffle the treasure cards and place them face down, then draw 3
         and place them face up to create the market.
+        * *Alliances*: Shuffle the extra treasure cards into the treasure deck
+          and deal **4** face up, instead of 3.
       * Shuffle the potion cards into a face down deck.
       * Shuffle the corruption cards into a face down deck.
       * Place the companion cards, quest markers, and haggle die near the
         board.
+      * *Alliances*: Place the [guild](#guilds) boards on your choice of
+        side A (easier) or side B (harder).
+          * Place a guild marker on the rank 1 space of each guild board.
+          * Place the guild flag in its building for each region.
+          * For each guild, shuffle its 3 matching companions and randomly
+            place them face up under the rank 2, 3, and 4 slots.
+          * Add the influence tokens to the general supply, then place 8
+            influence on the influence vessel to create the hero's supply.
       * Each player selects a hero and:
           * Takes the matching hero board
+              * *Alliances*: Take a heroic actions overlay to cover the
+                heroic actions on your player board.
           * Place the 3 matching hero virtue tiles on your board, inactive
             side up.
           * Place your figure in your home territory (facing you) on the
@@ -77,8 +92,8 @@ sections:
           - name: Heroic Action
             id: heroic
             text: |
-              There are 3 different types of heroic action, but **you may
-              only take 1 of them on your turn**.
+              There are 3 different types (4 with *Alliances*) of heroic
+              action, but **you may only take 1 of them on your turn**.
 
               After taking a heroic action, **gain 2 spirit**.
             sections:
@@ -117,6 +132,7 @@ sections:
                   * Advantages applied to battle cards remain for future
                     battles.
               - name: Quest
+                id: quest
                 text: |
                   Complete a quest, including the main goal, or explore
                   a dungeon.
@@ -151,6 +167,21 @@ sections:
                           * Leave the dungeon.
                   * If you leave a dungeon before it is complete, cleared
                     rooms remain cleared for the next adventurer.
+              - name: Influence (Alliances)
+                text: |
+                  * If you are at the guild hall, gain 2 influence to the
+                    influence vessel.
+                  * Influence is considered to be unlimited.
+
+                  ### Influence
+
+                  * This is a pool of resources available to all players, and
+                    when collected, it should be placed in the influence
+                    vessel.  Players will never have individual influence
+                    tokens.
+                  * Influence is gained at the end of the month equal to
+                    the number of buildings without skulls.
+                  * Influence tokens are considered to be unlimited.
           - name: Reinforce
             text: |
               * Once per turn, you may reinforce at a space with a building.
@@ -280,6 +311,7 @@ sections:
           | Gear | the matching gear stack |
           | Treasure | the bottom of the treasure deck |
           | Quest item | the game box |
+          | Influence (*Alliances*) | the supply |
       - name: Corruption
         id: corruption
         text: |
@@ -287,6 +319,8 @@ sections:
               * An event, battle card, dungeon room, etc. makes you lose
                 resources/items that you do not have (gain 1 corruption, see
                 also [spending vs. losing](#spending)).
+              * *Alliances*: Similar to the above, if you cannot fully resolve
+                a power skull effect, gain a corruption.
           * If you would gain a 3rd corruption, the game ends immediately as
             a loss.
           * You cannot gain more than 1 corruption per event, battle card,
@@ -309,6 +343,28 @@ sections:
                 corruption.
           * If you ever need to take a skull from the supply and there are
             none, the players immediately lose the game.
+      - name: Power Skulls (Alliances)
+        id: pskulls
+        text: |
+          * The app will tell you how many power skulls of each type to use.
+          * The supply of power skulls is kept in the bag with standard
+            skulls.
+          * When you enter a space with a power skull by any means, resolve
+            the skull effect (below).
+              * If you cannot fully resolve the skull effect, gain
+                a corruption.
+              * If there are multiple power skulls in the space, resolve
+                each skull's effect, 1 at a time in your choice of order.
+                  * It's possible to gain multiple corruptions in this case.
+          * If a power skull is placed onto a space with a hero, do **not**
+            resolve its effect.
+
+          | Type | Effect |
+          | ---- | ------ |
+          | Blight (green) | Lose 1 item |
+          | Omen (purple) | Lose 1 influence |
+          | Fire (red) | Lose 4 warriors |
+          | Frost (blue) | Lose 1 spirit |
       - name: Glyphs
         text: |
           * When seals on the tower are removed, they may expose glyphs.
@@ -323,6 +379,32 @@ sections:
           | ![battle](/static/img/return_to_dark_tower/g_battle.png) | Battle |
           | ![quest](/static/img/return_to_dark_tower/g_quest.png) | Quest |
           | ![reinforce](/static/img/return_to_dark_tower/g_reinforce.png) | Reinforce |
+      - name: Guilds (Alliances)
+        id: guilds
+        text: |
+          * Each guild has a rank (1-4) represented by the guild marker on it.
+              * You can increase the guild's rank by performing a Reinforce
+                action at the corresponding guild hall.
+                  * Note that you do **not** gain the building's normal
+                    reinforce effect.
+                  * As with a normal reinforce action, you may roll the haggle
+                    die.
+              * If the rank would ever increase beyond 4, it stays at 4, but
+                every hero in the guild's kingdom gains 2 spirit.
+              * If the guild's rank would ever decrease below 1, it stays
+                at 1, but every here in the guild's kingdom loses 2 spirit.
+                  * Gain a corruption if you cannot lose 2 spirit.
+          * If a guild hall is destroyed, discard all remaining companions
+            and set the rank to 1. The rank can never be increased again.
+          * Each guild has an ongoing effect (positive or negative, depending
+            on the rank) that applies to heroes while they are in the
+            guild's kingdom.
+          * If a guild's rank is increased and there is a companion in the
+            slot, recruit them immediately. Update the app via the guild
+            companion button.
+          * There is a monthly guild quest that works like other
+            [quests](#quest), but if not completed, will usually result
+            in a penalty.
   - name: Icons
     text: |
       ### App Icons
