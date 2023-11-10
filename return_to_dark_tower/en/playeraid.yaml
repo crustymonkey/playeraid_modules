@@ -7,6 +7,7 @@ version: 2.0
 bgg_id: 256680
 expansions:
   - Alliances
+  - Covenant
 sections:
   - name: Setup
     text: |
@@ -18,13 +19,21 @@ sections:
         (note that the game comes with more than 24).
           * *Alliances*: Set aside the [power skulls](#pskulls).  The app
             will tell you when/if to use them.
+          * *Covenant*: Keep the [doom skulls](#doom_skulls) in a separate
+            supply from the normal skulls.
       * Sort the gear cards into separate stacks of 3 (of the same) each.
       * Shuffle the treasure cards and place them face down, then draw 3
         and place them face up to create the market.
-        * *Alliances*: Shuffle the extra treasure cards into the treasure deck
-          and deal **4** face up, instead of 3.
+          * *Alliances*: Shuffle the extra treasure cards into the treasure deck
+            and deal **4** face up, instead of 3.
+          * *Covenant*: If you are only using the treasures from the expansion,
+            create the market as normal (3 cards face up).  If you are mixing
+            these into the base game deck, deal **4** face up.
       * Shuffle the potion cards into a face down deck.
       * Shuffle the corruption cards into a face down deck.
+          * *Covenant*: Shuffle in any number of corruption cards to the
+            base deck. Note that the corruptions in this expansion are
+            more challenging than the base game.
       * Place the companion cards, quest markers, and haggle die near the
         board.
       * *Alliances*: Place the [guild](#guilds) boards on your choice of
@@ -35,6 +44,15 @@ sections:
             place them face up under the rank 2, 3, and 4 slots.
           * Add the influence tokens to the general supply, then place 8
             influence on the influence vessel to create the hero's supply.
+      * *Covenant*: Create a supply of blessing cards, wasteland tokens,
+        charge tokens, and offering tokens.
+      * *Covenant*: Follow the instructions in the app for placement of
+        [monuments](#monuments).
+          * For each monument, remove the indicated building (on monument
+            card) from the indicated kingdom (the monument replaces it) and
+            place a foundation tile in that space.
+          * Place the monument and its card (on the uncompleted side) near
+            the matching kingdom.
       * Each player selects a hero and:
           * Takes the matching hero board
               * *Alliances*: Take a heroic actions overlay to cover the
@@ -43,6 +61,9 @@ sections:
             side up.
           * Place your figure in your home territory (facing you) on the
             citadel space.
+              * *Covenant*: If your hero starts in a kingdom with no
+                citadel, place it in the monument space where the citadel
+                would have been.
           * Place the virtue tile matching your home territory in a slot on
             your player board.
           * Collect your starting resources (7 warriors and 1 spirit).
@@ -92,8 +113,9 @@ sections:
           - name: Heroic Action
             id: heroic
             text: |
-              There are 3 different types (4 with *Alliances*) of heroic
-              action, but **you may only take 1 of them on your turn**.
+              There are 3 different types (4 with *Alliances* or *Covenant*)
+              of heroic action, but **you may only take 1 of them on your
+              turn**.
 
               After taking a heroic action, **gain 2 spirit**.
             sections:
@@ -182,6 +204,25 @@ sections:
                   * Influence is gained at the end of the month equal to
                     the number of buildings without skulls.
                   * Influence tokens are considered to be unlimited.
+              - name: Build (Covenant)
+                id: build
+                text: |
+                  * Each [monument](#monuments)'s foundation has a condition
+                    that generates offerings (see its card).
+                      * These conditions can be met by any hero in any
+                        kingdom on anyone's turn.  When met, place an
+                        offering on the foundation
+                      * A foundation can have a max of 3 offerings.
+                  * If a foundation has 3 offerings, a hero in that space
+                    may perform a build action.  When you build, do the
+                    following:
+                      * Update the app with the fact that you've built the
+                        monument.
+                      * Return the offerings to the supply.
+                      * Remove the foundation tile from the game.
+                      * Place the [monument](#monuments) mini in its space.
+                      * Flip the [monument](#monuments)  card to its
+                        completed side.
           - name: Reinforce
             text: |
               * Once per turn, you may reinforce at a space with a building.
@@ -215,6 +256,8 @@ sections:
           * Different things may happen when dropping a skull.
               * If a [skull](#skulls) comes out of the tower, place it before
                 resolving any other effects.
+          * *Covenant*: Lose any unspent blessings.  They cannot be carried
+            over to another turn.
 
           ### Events
           Events may occur during the end portion of a players turn (after
@@ -312,6 +355,7 @@ sections:
           | Treasure | the bottom of the treasure deck |
           | Quest item | the game box |
           | Influence (*Alliances*) | the supply |
+          | Blessings (*Covenant*) | the supply |
       - name: Corruption
         id: corruption
         text: |
@@ -337,7 +381,8 @@ sections:
                 player decides where to place the skull(s).
           * If a 4th skull would be placed on a building:
               * The building is destroyed and both the building and
-                the 3 skulls on it are removed **from the game**.
+                the 3 skulls on it + the 4th that would be placed are
+                removed **from the game**.
               * The owner of the kingdom gains a corruption.
               * It it was a dormant kingdom (no owner), no one gains a
                 corruption.
@@ -405,6 +450,72 @@ sections:
           * There is a monthly guild quest that works like other
             [quests](#quest), but if not completed, will usually result
             in a penalty.
+      - name: Monuments (Covenant)
+        id: monuments
+        text: |
+          * For information on building monuments, see the [build
+            action](#build).
+          * A completed monument counts as the building it replaces.
+          * Each monument can hold up to 3 skulls.
+              * If it would receive a 4th skull, it is destroyed (like a
+                normal building). See [Skulls and Buildings](#skulls) for
+                this process. In addition, note in the app that it was
+                destroyed.
+          * Each completed monument has the free reinforce effect of the
+            building it replaces.
+          * Each completed monument has a new enhanced reinforce effect, which
+            **replaces** the normal enhanced effect. See the monument card
+            for this new effect.
+          * Reinforcing at a monument counts as a normal reinforce action.
+          * Completed monuments will generate beneficial events.
+          * Once a monument has been completed, that kingdom
+            will no longer gain [wasteland](#wasteland) tokens.
+      - name: Wastelands (Covenant)
+        id: wasteland
+        text: |
+          * The app will tell you where and when to place these.
+          * A space with a wasteland token loses its terrain type. They can
+            never gain a terrain type from other effects either.
+          * When a hero enters a space with a wasteland token, they may not
+            leave the space for the remainder of the turn. This includes
+            regular movement, but also special effects.
+          * Wasteland tokens can only be removed by specific effects that
+            expressly remove them.
+          * Once a [monument](#monuments) has been completed, that kingdom
+            will no longer gain wasteland tokens.
+      - name: Doom Skulls (Covenant)
+        id: doom_skulls
+        text: |
+          * These are used in addition to skulls from the base game (not
+            replacing them).
+          * "Creeping Doom" events will instruct you to place doom skulls in
+            the tower.
+          * Place doom skulls in the same fashion that you would place normal
+            skulls when they come out of the tower.
+          * Doom skull may **not** be removed, cleansed, moved, or returned
+            to the supply by any effect.
+              * They are only removed from the game when the [building is
+                destroyed](#skulls).
+          * Doom skulls count as regular skulls for all negative effects.
+      - name: Wands (Covenant)
+        text: |
+          * These are a new type of treasure that uses charge tokens.
+          * Note that an acquired wand will start with a certain number of
+            charge tokens (indicated on the card).
+          * You can spend charge tokens to use a wand.
+          * The card indicates how you can gain additional charges.
+          * There is no limit to the number of charge tokens on a wand.
+          * Charge tokens are considered to be unlimited.
+      - name: Blessings
+        text: |
+          * These are gained from various effects.
+          * You can spend a blessing during a [heroic action](#heroic) to
+            gain a wild advantage.
+          * **At the end of your turn, lose any blessings you have not spent**.
+            You cannot keep them between turns.
+          * Blessings cannot be traded.
+          * When spent/lost, they are returned to the supply.
+          * The supply of blessings is limited.
   - name: Icons
     text: |
       ### App Icons
@@ -441,3 +552,122 @@ sections:
       | ![sanctuary](/static/img/return_to_dark_tower/b_sanct.png) | Sanctuary |
       | ![village](/static/img/return_to_dark_tower/b_village.png) | Village |
       | ![bazaar](/static/img/return_to_dark_tower/b_bazaar.png) | Bazaar |
+  - name: Heroes (Covenant)
+    sections:
+      - name: Undaunted Aegis
+        text: |
+          * Can have up to 3 corruptions.
+          * During setup, you will gain a random corruption from the deck.
+          * The game is a loss if this hero would gain a 4th corruption.
+      - name: Relentless Warden
+        text: |
+          * Take the quarry token (bird) at the start of the game.
+          * As your banner action, you may assign the quarry token to any
+            foe on the board, including the Adversary.
+          * If your quarry token is on a foe during your banner action, you
+            may move that foe up to 2 spaces (instead of placing the token).
+          * You cannot move the quarry token to another foe until the foe is
+            removed from the board and the quarry token is returned to you.
+      - name: Devious Swindler
+        text: |
+          * When rolling the haggle die for your banner action, gain any
+            result shown on the die.  The bazaar closed face has no effect.
+          * The bazaar closed face has no effect when rolling the haggle die
+            during a reinforce action.
+      - name: Reverent Astromancer
+        text: |
+          * Also take 6 spell cards and 4 invocation cards during setup.
+              * Start the game with the spell cards in hand, but not the
+                invocation cards (set them aside).
+          * During setup, also create a supply of protection tokens near your
+            hero board.
+          * Prepare a number of spells at the start of each month equal to
+            the month number (2 spells at the start of month 2).
+              * This is done after the monthly quests are revealed, but before
+                the 1st player takes their turn.
+          * To prepare a spell, place a spell from your hand near your hero
+            board. Set aside any unprepared spells.
+          * You may cast each prepared spell once during the month it was
+            prepared.
+              * Once cast, return the spell to your set aside cards.
+              * Casting a spell is not an action.
+              * If you've unlocked the Zealous virtue, gain a blessing
+                after resolving the spell's effect.
+              * You may not cast a spell if it would have no effect.
+          * If you unlock the Exalted virtue, you can now choose from spells
+            or invocations to prepare. Invocations work the same as spells.
+          * You may not keep prepared spells/invocations from month to month.
+            Uncast spells/invocations are returned to your hand with no
+            effect.
+  - name: Clarifications
+    sections:
+      - name: Spells and Invocations (Covenant)
+        text: |
+          * **Aura of Friendship**: You can use the reinforce effect of any
+            building on the board when you take the reinforce action. Pay
+            any cost as normal.  This effect includes completed
+            [monuments](#monuments).
+          * **Bounty of the Gods**: Shuffle the quest item cards and look at
+            3 at random, choose 1 to gain, and return the other 2 to the deck.
+            At the end of the turn, return the chosen item to the deck
+            if it has not already been returned (and even if another player
+            now has it).
+          * **Ritual of Warding**: Place a protection token on your space.
+            The next time a wasteland or foe would spawn on that space,
+            the protection token blocks it. Remove the protection token after
+            a block occurs (back to the supply). Also indicate in the app if
+            a foe is blocked. It does **not** prevent the Adversary from
+            spawning.
+          * **Smite the Wicked**: Remove a savage or lethal foe from anywhere
+            on the board. Update the app to indicate this foe being removed.
+          * **Soothing Word**: 1 hero on your space puts 1 of their
+            corruption on the bottom of the corruption deck and draws a new
+            1 to replace it.  Note that this does **not** count as gaining
+            a corruption.
+      - name: Monuments (Covenant)
+        text: |
+          * **Arch of the Golden Sun**
+              * **Offering**: Place an offering when you end your turn with 2
+                or more foes on/adjacent to your hero. Foes do not have to
+                be on the same space.
+          * **Argent Oak**
+              * **Offering**: Place an offering when you gain a corruption
+                through a game effect. You cannot just take a corruption
+                to advance this.
+              * **Reinforce**: You may spend any number of items to remove
+                an equal number of corruptions from your hero.
+          * **Cenotaph of the First Prophet**
+              * **Offering**: Place an offering when you defeat a foe in
+                a wasteland space with the Battle action. Removing a foe via
+                some other effect does not trigger this.
+              * **Reinforce**: Choose a virtue tile for any hero not in the
+                game and place it active side up on your player board,
+                replacing 1 of the inactive virtues (remove it from the game).
+          * **Colossus of Björn**
+              * **Offering**: Place an offering when you lose 8 or more
+                warriors in a battle.  You **must** remove at least 8 warriors
+                in total, so if an effect reduces the number, you have not
+                met the condition.
+              * **Reinforce**: You must place yourself and the monument on the
+                same space. Any skulls on the monument move with it.
+          * **Endless Necropolis**
+              * **Offering**: Place an offering when you spend or lose a
+                treasure. This must be spent/lost via a game effect. You
+                cannot simply discard a treasure.
+              * **Reinforce**: Return any number of skulls to the supply.
+                You do **not** gain spirit for this as it is not a cleanse
+                action. You cannot remove doom skulls.
+              * **Special Effect**: This monument can hold any number of
+                skulls, but you cannot cleanse to remove skulls on this
+                monument.
+          * **Moonstone Temple**
+              * **Reinforce**: You may battle and cleanse any number of times
+                on the turn you pay the cost. After each of these [heroic
+                actions](#heroic), gain 2 spirit as normal.
+          * **Nightmare Cage**
+              * **Reinforce**: Remove a foe. Update the app for the foe you
+                removed.
+          * **Tower Shard**
+              * **Offering**: Place an offering when you defeat a foe
+                adjacent to the tower with a battle action. Removing a foe
+                by other means does not trigger this.
