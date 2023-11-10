@@ -3,7 +3,7 @@ description: "Defeat the adversary!"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 2.0
+version: 3.1
 bgg_id: 256680
 expansions:
   - Alliances
@@ -410,6 +410,20 @@ sections:
           | Omen (purple) | Lose 1 influence |
           | Fire (red) | Lose 4 warriors |
           | Frost (blue) | Lose 1 spirit |
+      - name: Doom Skulls (Covenant)
+        id: doom_skulls
+        text: |
+          * These are used in addition to skulls from the base game (not
+            replacing them).
+          * "Creeping Doom" events will instruct you to place doom skulls in
+            the tower.
+          * Place doom skulls in the same fashion that you would place normal
+            skulls when they come out of the tower.
+          * Doom skull may **not** be removed, cleansed, moved, or returned
+            to the supply by any effect.
+              * They are only removed from the game when the [building is
+                destroyed](#skulls).
+          * Doom skulls count as regular skulls for all negative effects.
       - name: Glyphs
         text: |
           * When seals on the tower are removed, they may expose glyphs.
@@ -470,6 +484,7 @@ sections:
           * Completed monuments will generate beneficial events.
           * Once a monument has been completed, that kingdom
             will no longer gain [wasteland](#wasteland) tokens.
+          * Also see the [clarifications for monuments](#mon_clarif).
       - name: Wastelands (Covenant)
         id: wasteland
         text: |
@@ -483,20 +498,6 @@ sections:
             expressly remove them.
           * Once a [monument](#monuments) has been completed, that kingdom
             will no longer gain wasteland tokens.
-      - name: Doom Skulls (Covenant)
-        id: doom_skulls
-        text: |
-          * These are used in addition to skulls from the base game (not
-            replacing them).
-          * "Creeping Doom" events will instruct you to place doom skulls in
-            the tower.
-          * Place doom skulls in the same fashion that you would place normal
-            skulls when they come out of the tower.
-          * Doom skull may **not** be removed, cleansed, moved, or returned
-            to the supply by any effect.
-              * They are only removed from the game when the [building is
-                destroyed](#skulls).
-          * Doom skulls count as regular skulls for all negative effects.
       - name: Wands (Covenant)
         text: |
           * These are a new type of treasure that uses charge tokens.
@@ -625,6 +626,7 @@ sections:
             1 to replace it.  Note that this does **not** count as gaining
             a corruption.
       - name: Monuments (Covenant)
+        id: mon_clarif
         text: |
           * **Arch of the Golden Sun**
               * **Offering**: Place an offering when you end your turn with 2
