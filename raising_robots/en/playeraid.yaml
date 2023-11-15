@@ -3,9 +3,10 @@ description: "From baby robots to adult robots...wait, what?"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.0
+version: 2.0
 bgg_id: 366683
 expansions:
+  - Pets
 sections:
   - name: Setup
     id: setup
@@ -321,6 +322,14 @@ sections:
           | ![immed](/static/img/raising_robots/i_immed.png) | These abilities take effect at the start of the game or immediately when upgraded. |
           | ![rnd_end](/static/img/raising_robots/i_rnd_end.png) | These abilities may be performed during [round end](#rnd_end). |
           | ![gm_end](/static/img/raising_robots/i_gm_end.png) | These abilities are only resolved at [game end](#gameend). |
+      - name: Adjacency (Pets)
+        id: adj
+        text: |
+          When determining adjacency, you may wrap around columns, but not
+          rows.  e.g. A robot in the Design row would be considered adjacent
+          to a robot in recycling (if they're in the same column).
+
+          ![adjacency](/static/img/raising_robots/adj_lg.png)
   - name: Icons
     text: |
       Also see [class cards](#classcards) and [inventor cards](#invent).
@@ -342,4 +351,11 @@ sections:
       | ![gain_vp_rob](/static/img/raising_robots/x_gain_vp_rob.png) | Gain VP based on the total number of assembled robot cards in the matching phase row. |
       | ![req_rob](/static/img/raising_robots/x_req_rob.png) | Requires 4 robot cards in your play area. |
       | ![req_upg](/static/img/raising_robots/x_req_upg.png) | Requires 3 unlocked upgrade tokens. The upgrade tokens do not need to be placed on cards. Note that the 3rd unlocked upgrade token can be used to upgrade this inventor ability. |
-
+      | ![any_row](/static/img/raising_robots/p_any_row.png) | (Pets) These robots can be assembled in any row. When assembled, they then count as part of that phase row for all purposes. |
+      | ![act_adj](/static/img/raising_robots/p_act_adj.png) | (Pets) Activate any orthogonally [adjacent](#adj) robot ignoring total energy requirements. You can use the upgraded action only if there is an upgrade token on it. |
+      | ![act_row_col](/static/img/raising_robots/p_act_row_col.png) | (Pets) Activate any robot card in the same row or column ignoring total energy requirements. You can use the upgraded action only if there is an upgrade token on it. |
+      | ![gain_res](/static/img/raising_robots/p_adj_gain_res.png) | (Pets) For each robot card in your play area that is orthogonally [adjacent](#adj), gain a matching number of resources shown (max of 3). |
+      | ![gain_res_w_res](/static/img/raising_robots/p_adj_w_res.png) | (Pets) For each robot card in your play area that is orthogonally [adjacent](#adj) and has the depicted resources in any column of its assembly cost, gain a matching number of resources shown (max of 3). |
+      | ![gain_w_vp](/static/img/raising_robots/p_adj_w_vp.png) | (Pets) For each robot card in your play area that is orthogonally [adjacent](#adj) and has the depicted number of VP printed on it, gain a matching number of resources shown. |
+      | ![gain_w_en](/static/img/raising_robots/p_adj_w_en.png) | (Pets) For each robot card in your play area that is orthogonally [adjacent](#adj) and has the depicted energy amount in any column of its assembly cost, gain a matching number of resources shown. |
+      | ![ass_robot](/static/img/raising_robots/p_ass_rob.png) | (Pets) Assemble a robot by paying its cheaper assembly cost (the one with the fewest resources). You must also pay any additional resources show to the left of the arrow and any extra resources printed in the slot on your player board. |
