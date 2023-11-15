@@ -1,0 +1,345 @@
+name: "Raising Robots"
+description: "From baby robots to adult robots...wait, what?"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+version: 1.0
+bgg_id: 366683
+expansions:
+sections:
+  - name: Setup
+    id: setup
+    text: |
+      * Place the board.
+      * Place the round marker on the 1st spot of the round tracker.
+      * Create a supply of energy cubes.
+      * Shuffle the robot cards into a facedown deck.
+      * Shuffle the class cards into a facedown deck.
+      * Shuffle the inventor cards into a facedown deck.
+      * For each player:
+          * Take a player board.
+          * Take a meeple in your favorite color and place it in the
+            inventor area in the bottom left corner of your player board.
+          * Take 4 of each type of upgrade token and place them on your
+            player board on the spaces with a matching colored circle border.
+          * Take 3 arrow tokens and set them near your player board.
+          * Take 1 resource marker of each type.
+              * Place the energy and duct tape markers in the "3" slot.
+              * Place the rest of the markers near the inventory spaces.
+          * Take 1 of each phase card (5 in total) and place them in a stack
+            near your player board.
+          * Return the 4 energy cards that do not match the player count to
+            the box.  Shuffle the remaining 8 cards into a face down deck
+            near your player board.
+          * Draw 8 robot cards, keep 5 and discard the rest to a discard pile.
+          * Draw 2 [class cards](#classcards), keep 1 and discard the other
+            to a discard pile.  Place it face up to the left of your player
+            board.
+          * Draw 2 [inventor cards](#invent), keep 1 and discard the
+            other **to the box**.
+          * [Assemble](#assemble) 2 robot cards from your hand **at no
+            assembly cost** into your play area.
+              * If you place multiple robot cards in the same row, the extra
+                resource cost printed on your player board must be paid.
+                  * You may use duct tape or discard a robot card from your
+                    hand to pay the cost at this point.
+          * Unlock 1 [upgrade](#upgrade) token **at no cost**.  This token
+            may be placed before the game begins.
+      * **If playing with 2 players**:
+          1. Take an unused set of 5 phase cards, shuffle it, and deal them
+             in a face down line in the middle of the table.
+          2. Reveal the 1st 2 cards at the start of the line.
+          3. Add 1 energy cube to the 3rd card in the line (1st face down).
+          4. Add 2 energy cubes to the 4th card in the line.
+  - name: Gameplay
+    text: |
+      The game is played over 8 rounds and each round consists of 3 steps.
+      The steps are all performed simultaneously, but all players must
+      finish a step before moving on to the next step.
+    sections:
+      - name: "1. Round Preparation"
+        id: prep
+        text: |
+          1. Draw 2 energy cards from your deck and place them face up
+             near your player board.
+          2. Place energy cubes on each card matching the number of energy
+             cube symbols on each card.
+          3. Secretly assign 2 of your 5 phase cards that you wish to perform
+             and place them face down underneath your chosen energy card.
+              * Each phase is performed at a specific energy amount, which
+                is used to determine the actions you can perform. The energy
+                card will contribute to total energy with which you perform
+                a phase.
+              * All players must assign cards **before moving to the next
+                step**.
+          4. Flip the assigned phase cards face up.
+          5. **If playing with 2 players**, reveal the next unrevealed phase
+             card in the middle of the table and place the energy cube(s) on
+             the matching phase.
+          6. Move all energy cubes onto the matching phase spaces of the
+             main board.
+      - name: "2. Round Phases"
+        id: rphases
+        text: |
+          All players simultaneously complete each phase that they are
+          able to perform.
+
+          ### Phase Rules
+          * You perform a phase only if you assign that phase card during
+            [round preparation(#prep) **or** an energy cube is placed on
+            the relevant space on the main board.
+          * You will perform at least 2 phases, and maybe more depending
+            on where energy cubes are placed.
+          * When performing a phase, always determine [total energy](#tenergy)
+            1st. [Total energy](#tenergy) cannot be modified retroactively.
+          * Phases are always performed in the same order, starting with
+            upgrade and ending with recycle (as printed on the central board).
+              * You should mark the current phase you are working on by
+                moving it into the relevant section of your player board.
+          * Each phase must be fully completed before moving to the next phase.
+              * All actions within a phase are optional.
+          * Players may complete phases independently. e.g. Player 1 could
+            still be working on the upgrade phase while player 2 has moved on
+            to the assemble phase.
+        sections:
+          - name: Upgrade
+            id: upgrade
+            text: |
+              * To unlock an upgrade token:
+                  1. Pay the upgrade cost.  You can choose a combination
+                     of energy and resources as printed on your player
+                     board.
+                      * If performing multiple upgrades, the same
+                        combination can be chosen more than once.
+                  2. Remove an upgrade token from your player board back
+                     to your supply.
+                      * If you remove an upgrade token from the upgrade
+                        section of your player board, immediately gain
+                        [inspiration](#inspire).
+              * You place an upgrade token from your supply onto a robot,
+                class, or inventor card with the matching upgrade type
+                at **any** time during the game to gain special
+                actions/effects.
+                  * Once an upgrade token is placed, it cannot be moved.
+                  * Upgrade tokens are limited.
+          - name: Assemble
+            id: assemble
+            text: |
+              * To assemble a robot:
+                  1. Choose a robot card from your hand and place it on
+                     your player board.
+                      * A robot card must always be placed in the leftmost
+                        available space matching its associated phase.
+                      * You may have a max of 5 robots in in any row. If a
+                        row is full, you may not assemble a robot there.
+                  2. Pay the resource cost.
+                      1. You may choose either column in the top left part of
+                         the robot card as the assembly cost.
+                      2. The extra resource cost to assemble a robot is
+                         printed on some spaces in your play area. You must
+                         be able to pay the extra cost to assemble a robot.
+                      3. Spend the energy and resources.  Any leftover energy
+                         is lost.
+                          * You may split energy to assemble more than 1
+                            robot in a single assemble phase.
+          - name: "Design / Fabricate / Recycle"
+            text: |
+              These phases work the same way and allow you to run the
+              associated phase row.
+
+              * To run a phase row:
+                  1. Do the actions shown on your player board.
+                      * You may do **any/all** actions in the matching
+                        phase that <= your [total energy](#tenergy).
+                      * Actions must be performed 1 at a time, top to bottom
+                        (on the player board).
+                  2. Activate robots.
+                      * You may do **any/all** actions in the matching
+                        phase row that <= your [total energy](#tenergy).
+                      * Actions must be performed 1 at a time, left to right
+                        (on the robot cards in the row).
+                      * You may only use the upgraded action if you have
+                        a matching upgrade token on the robot.
+      - name: "3. Round End"
+        id: rnd_end
+        text: |
+          When all players are finished with the [round phases](#rphases), then
+          all players:
+
+          1. Perform any abilities that trigger during Round End.
+              * If you have multiple, you determine the order.
+          2. Discard your 2 energy cards face up next to your deck of energy
+             cards. These won't be available again until a break period (see
+             below).
+          3. Take back both of your phase cards to your hand (you can use
+             them again next round).
+          4. Return energy cubes on the central board to the supply.
+          5. Move the round marker 1 space.
+              * If the round marker moves off the last space, the [game is
+                over](#gameend).
+              * If the round marker moves onto the 5th round, then immediately
+                complete a break period (below).
+              * Proceed to [round preparation](#prep) for the next round.
+          6. **If playing with 2 players** and 4 of the phase cards in the
+             middle of the table are revealed, do the following (same as
+             during [setup](#setup)):
+              1. Shuffle all 5 phase cards and deal them in a face down line
+                 in the middle of the table.
+              2. Reveal the 1st 2 cards in the line.
+              3. Place 1 energy cube on the 3rd card in the line.
+              3. Place 2 energy cubes on the 4th card in the line.
+
+
+          ### Break Period
+          * All players draw 3 new class cards, keep 1 and discard the other 2.
+          * All players shuffle up all of their energy cards to form a new
+            deck of 8 energy cards.
+  - name: Game End
+    id: gameend
+    text: |
+      The game ends after the completion of the 8th round.
+
+      * Add up VP from the following sources:
+          * VP as printed on robot cards.
+          * VP on [class cards](#classcards) based on the class grade earned
+          * VP as indicated in your inventory.
+          * Each battery + resources (including duct tape) + the number of
+            robot cards in hand divided by 3 (rounded down) VP. e.g. If you have
+            2 batteries, 2 duct tape, 3 gears, and 1 robot card, you would
+            gain 2 VP (8 / 3 rounded down).
+
+      Whoever has the most VP wins. Ties are broken by VP from robot cards in
+      your play area. If still tied, the player with the most VP from class
+      cards wins.  If still tied, players share the victory.
+  - name: Game Concepts
+    sections:
+      - name: Inspiration
+        id: inspire
+        text: |
+          * When gaining inspiration, you may gain 1 of the following benefits:
+              * Draw 3 class cards, keep 1 and discard the rest.
+              * Gain 2 wilds. They do not need to be the same type.
+              * Gain 4 batteries.
+      - name: "Resources & Inventory"
+        text: |
+          ### Resources
+
+          | Symbol | Description |
+          | ------ | ----------- |
+          | ![vp](/static/img/raising_robots/vp.png) | Victory points accumulated during the game. |
+          | ![sgmp](/static/img/raising_robots/sgmp.png) | Sensors, Gears, Microchips, and Programs -- various resources. |
+          | ![duct](/static/img/raising_robots/duct.png) | Duct tape can be used in place of any other resource. **Cannot be spent as a wild**. |
+          | ![battery](/static/img/raising_robots/battery.png) | Batteries can be used to increase your energy when performing phases. |
+          | ![robot](/static/img/raising_robots/robot.png) | Robot cards can be built or used as resource. e.g. When completing upgrades. |
+          | ![wild](/static/img/raising_robots/wild.png) | Wilds represent extra benefits/costs chosen by the player. Each time you gain/spend a wild, you gain/spend a sensor, gear, microchip, program, or robot card. Duct tape **cannot** be spent as a wild. |
+
+          ### Inventory
+          * This track at the top of your player board is used to track
+            the number of resources you have during the game.
+          * If you have zero of a resource, place the token above the board.
+          * If you have more than 10 of a resource, flip the marker to the
+            +10 side.  For VP, move the large VP marker.
+          * Resources are not limited by your board. If you exceed 20, keep
+            track of this in some manner.
+          * Robot cards are not tracked on your board.
+              * There is no limit to the number of robot cards a player can
+                have in hand.
+      - name: Total Energy
+        id: tenergy
+        text: |
+          To determine total energy, add up energy from the following:
+
+          * The energy value of the energy card you assigned to the phase.
+          * Each energy cube on the phase provides 1 energy (it doesn't matter
+            who placed it).
+          * If an energy card has an energy cube multiplier symbol, double
+            the energy acquired from the energy cubes on the phase space.
+            e.g. If there are 2 cubes on the phase, they would be worth 4
+            energy instead of 2.
+          * You may spend batteries to increase the energy value of a phase
+            by 1 for each battery spent.
+              * Batteries do **not** allow you to perform phases that you
+                have not selected or that do not have energy cubes.  See
+                also [phase rules](#rphases).
+              * You must always determine total energy 1st, so
+                you cannot use batteries acquire during a phase retroactively.
+              * You may use batteries acquired during a phase in later phases.
+          * Any upgrades you have unlocked that provide energy bonuses on
+            your player board.
+              * Like batteries, these do **not** allow you to perform
+                phases you have not selected or do not have energy cubes.
+                See also [phase rules](#rphases).
+              * These will increase your energy for the matching phase (when
+                performing it).
+          * You may split your total energy into smaller chunks to perform
+            multiple actions **only** during the upgrade and assemble phases.
+              * You should use an arrow token to track your energy remaining
+                when splitting it up.
+      - name: Class Cards
+        id: classcards
+        text: |
+          * If you gain [inspiration](#inspire), you may obtain a new class
+            card.
+              * You can only have a **max of 3 class cards**.
+              * You may discard **1** of your existing class cards to take
+                1 of the new cards when gaining [inspiration](#inspire).
+          * Each class card to the left of your player board at [game
+            end](#gameeend) will give you VP based on the grade earned.
+              * To determine the grade, count the number of items that meet
+                your class objective and use the table on the card to
+                determine VP.
+                  * Improve your class grade by 1 row if you unlocked extra
+                    credit.
+
+          ### Class Objectives
+          All class objectives are counted at the end of the game.
+
+          | Symbol | Description |
+          | ------ | ----------- |
+          | ![upg_type](/static/img/raising_robots/c_upg_type.png) | The number of unlocked upgrade tokens of the depicted type. The token does not have to be on a card to count. |
+          | ![upg_all](/static/img/raising_robots/c_upg_tot.png) | The total number of unlocked upgrade tokens. The token does not have to be on a card to count. |
+          | ![resource](/static/img/raising_robots/c_num_res.png) | The number of the depicted resource in your inventory at the end of the game. Duct tape does not count. |
+          | ![vp](/static/img/raising_robots/vp.png) | The number of VP in your inventory. |
+          | ![robots](/static/img/raising_robots/robot.png) | The number of robot cards in your hand. |
+          | ![wild](/static/img/raising_robots/wild.png) | The total number of robot cards in your hand, gears, programs, sensors, and microchips you have. |
+          | ![res_set](/static/img/raising_robots/c_res_set.png) | The number of sets of sensors, gears, programs, and microchips you have. Duct tape does not count. |
+          | ![ass_robots](/static/img/raising_robots/c_ass_robot.png) | The number of assembled robots in your play area. |
+          | ![ass_rob_row](/static/img/raising_robots/c_ass_rob_row.png) | The number of assembled robots in the depicted phase row. |
+          | ![ass_rob_res](/static/img/raising_robots/c_ass_rob_res.png) | The number of assembled robots that require the depicted resource in any assembly cost column. |
+          | ![ass_rob_vp](/static/img/raising_robots/c_ass_rob_vp.png) | The number of assembled robots that award the depicted number of vp. |
+          | ![ass_rob_en](/static/img/raising_robots/c_ass_rob_en.png) | The number of assembled robots with an action that requires the depicted amount of energy to activate it. You may only count upgrade actions if they have been upgraded. |
+          | ![ass_rob_en_cost](/static/img/raising_robots/c_ass_rob_en_cost.png) | The number of assembled robots that require the depicted amount of energy in any column of its assembly cost. |
+          | ![filled_cols](/static/img/raising_robots/c_fill_col.png) | The number of columns in your play area that are filled with assembled robots. |
+      - name: Inventor Cards
+        id: invent
+        text: |
+          Inventor abilities are permanent and provide ongoing benefits
+          throughout the game unless noted by the symbols below.
+
+          | Symbol | Description |
+          | ------ | ----------- |
+          | ![immed](/static/img/raising_robots/i_immed.png) | These abilities take effect at the start of the game or immediately when upgraded. |
+          | ![rnd_end](/static/img/raising_robots/i_rnd_end.png) | These abilities may be performed during [round end](#rnd_end). |
+          | ![gm_end](/static/img/raising_robots/i_gm_end.png) | These abilities are only resolved at [game end](#gameend). |
+  - name: Icons
+    text: |
+      Also see [class cards](#classcards) and [inventor cards](#invent).
+
+      | Symbol | Description |
+      | ------ | ----------- |
+      | ![drob](/static/img/raising_robots/x_draw_rob.png) | Draw the indicated number of robot cards from the deck. |
+      | ![class](/static/img/raising_robots/x_draw_cls.png) | Draw 3 [class cards](#classcards), keep 1, add it to the left side of your player board, and discard the rest. |
+      | ![gain_res](/static/img/raising_robots/x_gain_res.png) | Gain the indicated number of resources. |
+      | ![gain_res_or](/static/img/raising_robots/x_gain_res_or.png) | Gain either of the indicated resources. |
+      | ![gain_vp](/static/img/raising_robots/x_gain_vp.png) | Gain the indicated number of VP. Gain 3 in this example. |
+      | ![gain_wild](/static/img/raising_robots/x_gain_wilds.png) | Gain the indicated number of wilds. These are immediately converted to resources or robot cards (do no have to be the same). |
+      | ![pay](/static/img/raising_robots/x_pay.png) | Pay the cost to the left of the arrow to gain the benefit on the right. You can only do this conversion **once**. |
+      | ![disc_rob](/static/img/raising_robots/x_disc_rob.png) | You may discard any number of robot cards from your hand (X) to draw the same number + 1 from the deck. You may discard 0 robot cards to draw 1. |
+      | ![add_en](/static/img/raising_robots/x_add_en.png) | Add the indicated energy to your total energy when you perform the phase associated with this effect. |
+      | ![pay_rob](/static/img/raising_robots/x_pay_rob.png) | Pay the cost to assemble a robot. Don't forget to pay any extra resource cost for the slot. |
+      | ![pay_upg](/static/img/raising_robots/x_pay_upg.png) | Pay the cost to unlock 1 upgrade token. |
+      | ![insp](/static/img/raising_robots/x_gain_insp.png) | Gain [inspiration](#inspire). |
+      | ![gain_vp_rob](/static/img/raising_robots/x_gain_vp_rob.png) | Gain VP based on the total number of assembled robot cards in the matching phase row. |
+      | ![req_rob](/static/img/raising_robots/x_req_rob.png) | Requires 4 robot cards in your play area. |
+      | ![req_upg](/static/img/raising_robots/x_req_upg.png) | Requires 3 unlocked upgrade tokens. The upgrade tokens do not need to be placed on cards. Note that the 3rd unlocked upgrade token can be used to upgrade this inventor ability. |
+
