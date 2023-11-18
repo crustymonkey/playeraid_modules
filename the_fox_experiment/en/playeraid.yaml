@@ -113,7 +113,70 @@ sections:
           | ![studies](/static/img/the_fox_experiment/studies.png) | When you unlock a study upgrade, draw 3 new studies and keep 1, discarding the rest to the bottom of deck. |
           | ![fdice](/static/img/the_fox_experiment/fdice.png) | Each of these upgrades lets you roll 1 more friendly die each time you make a pup. When this is unlocked, take a friendly die and add it to your stash. |
           | ![patrons](/static/img/the_fox_experiment/fdice.png) | Choose 1 of the 4 patrons and place 1 of your fox meeples on the space next to them. Then gain the supplies on their supply tile + 1 science card. |
-      - name: "Phase 2: Breeding"
+      - name: "Phase 2: Breeding (simultaneous)"
         text: |
-
+          1. Reveal the top card from your blank fox deck and place it to the
+             right of your player board (note that parents are to the *left* of
+             your board).
+          2. Gather together your dice:
+              * Take friendly dice to match the number unlocked on your player
+                mat (if you don't already have them).
+              * Gather all trait dice shown on both parent foxes you selected.
+          3. Roll all your dice and sort them by trait. Match up dice to make
+             complete traits.
+              * A single die with 2 halves does not make a trait.
+              * Friendly dice and tokens are used as wilds.
+              * A friendly die with 2 halves can be matched to 2 **different**
+                trait dice.  e.g. purple on 1 side, pink on the other.
+              * If you make a complete trait with only friendly dice/tokens,
+                it counts as any trait.
+              * Any friendly tokens you used to make traits are discarded.
+              * Round trait tokens are rewards only and **cannot** be used
+                during this step.
+          4. Once you are done with step 3, record the results on your blank
+             fox card.
+              * Mark each square matching a trait with an "X".  This will
+                give the player that selects 1 trait die for each marked
+                square.
+              * Mark each circle with a dot.  This will gain trait tokens
+                based on your best row of marked circles for each trait
+                in the research phase. *Do not gain the tokens now*.
+              * Do **not** record any incomplete half symbols.
+              * If you make more than 5 symbols of a single trait type (filling
+                the track), gain 1 point token for each symbol you were not
+                able to mark. Also write the number of point tokens you
+                collected to the right of the track.
+          5. Count the total number of trait symbols your pup has (on all 4
+             tracks) and write the number in box in the top right of the card.
+             This is the pup's friendliness score.
+              * If you filled a track and earned point tokens, include the
+                number of point tokens in this score.
+          6. Give your pup a name and write it on the card.
+      - name: "Phase 3: Research (simultaneous)"
+        text: |
+          1. To complete a study level, you must assign **1** of your pups
+             to a study that meets these requirements:
+              * Use a fox meeple to track your progress on studies.
+              * Each study level shows a minimum number of marked spaces
+                on 2 or more trait tracks.
+                  * Your pup must at least the marked spaces shown.
+              * The pup must be able complete the level **on its own**. 
+                You can't add together multiple pups.
+              * Each pup can only complete 1 level of study.
+                  * You cannot complete multiple levels of a study card with
+                    a single pup.
+                  * You cannot assign a single pup to multiple study cards.
+              * Each study's levels must be complete in order, left
+                to right.
+                  * You cannot skip ahead if your pup qualifies for a level
+                    you haven't reached yet.
+              * Once a study level is complete, you can't complete it again.
+                  * Once you've completed the 3rd level of study, the card
+                    is complete.
+              * Do **not** take point tokens when completing study levels.
+                The fox meeple tracks your points to be scored at the end
+                of the game.
+          2. Collect trait tokens.
+              * If you bred only 1 pup, collect 1 trait token for each marked
+                circle on each of the 4 trait tracks.
 
