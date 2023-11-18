@@ -1,0 +1,119 @@
+name: "The Fox Experiment"
+description: "Breed foxes for fun"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+version: 1.0
+bgg_id: 368432
+expansions:
+sections:
+  - name: Setup
+    text: |
+      * Place the board with the correct side up based on player count.
+      * **If playing with 2 players**, you will setup the board and kennel
+        as if you were playing with 4 players.
+      * Shuffle the science deck and place it face down on its space on the
+        board.
+      * Shuffle the study deck and place it face down on its space on the
+        board.
+      * Shuffle the octagonal supply tiles and place them face down on
+        on the space on the board with the gear icon (without the red X).
+          * Fill the track to the right of the stack with face up supply
+            tiles for your player count, **but leave the 1st space empty**.
+          * Place 1 face up tile on each of the 4 patron spaces on the left
+            side of the board.
+      * Shuffle the deck of patron cards and draw 4 of them.
+          * Place the 1st 2 with side A face up in the top 2 slots on
+            the left side of the board.
+          * Place the other 2 with side B face up in the bottom 2 slots.
+      * Separately shuffle the decks of female parents and male parents.
+          * Deal out a row of face up male parents.
+          * Deal out a row of face up female parents.
+          * Place the respective decks at the end of their rows.
+      * Create a supply of the following near the board:
+          * Trait dice
+          * Friendly dice
+          * Trait tokens
+          * Friendly tokens
+          * Point tokens
+      * Set aside the score card as it will only be used at the end of the
+        game.
+      * Each player chooses a color and takes:
+          * Their player mat
+          * 1 gear token (in their color)
+          * 10 fox meeples (in their color)
+          * 12 blank fox cards (in their color)
+          * 1 green friendly die
+          * 1 dry-erase marker
+          * 1 player aid card.
+      * Determine a 1st player randomly and give them the 1st turn order token.
+          * In clockwise order give each player the next numbered turn token.
+      * Shuffles their blank foxes and places them in a facedown pile
+        to the right of their player mat.
+      * Based on turn order, players receive friendly tokens:
+          * 1st: no token
+          * 2nd/3rd: 1 token
+          * 4th/5th: 2 tokens
+          * 6th: 3 tokens
+      * Deal each player 3 study cards and each player chooses 1 to keep and
+        discards the other 2 to the bottom of the deck.
+          * Place you study card face up near your player mat.
+  - name: Gameplay
+    text: |
+      The game is played over 5 rounds, with each round consisting of 4 phases.
+      You will be trying to breed the friendliest foxes, completing the most
+      studies, and attracting patrons.
+    sections:
+      - name: "Phase 1: Selection"
+        text: |
+          * This consists of 3 rounds in turn order where each player selects
+            **1** of the following items on their turn. Each player **must
+            select 1 of each item across their 3 turns**, but they can
+            be selected in any order.
+              * 1 female fox parent (from available or top of deck)
+              * 1 male fox parent (from available or top of deck)
+              * A supply track position. Note that you *can* use the 1st space
+                of the track here, but it grants no supplies. It will assure
+                that you are 1st in turn order though.
+                  1. Immediately collect all supplies shown on the space (all
+                     icons on the supply tile and any printed on the board).
+                     See the table below for icons.
+                  2. Discard the supply tile.
+                  3. Place your gear token on the space you took the tile from.
+                     *You will keep your current turn order token until
+                     the administration phase*.
+
+          | Icon | Description |
+          | ---- | ----------- |
+          | ![science](/static/img/the_fox_experiment/science.png) | Draw 1 science card from the top of the deck.  Keep it secret until you decide to use it. |
+          | ![friendly](/static/img/the_fox_experiment/friendly.png) | Take 1 friendly token from the supply. |
+          | ![trait](/static/img/the_fox_experiment/traits.png) | Take 1 trait token of type shown from the supply. |
+          | ![wtrait](/static/img/the_fox_experiment/wtrait.png) | Take 1 trait token of your choice from the supply. |
+
+          ### Upgrades
+          * Players are now able to unlock upgrades before moving on to the
+            next phase.
+              * In each of the 4 upgrade tracks, upgrades must be unlocked
+                from left to right.
+              * The circle to the right of the upgrade shows the cost (a
+                number of trait tokens).  The diamond shows what is unlocked.
+              * Upgrades can be unlocked any trait tokens, but they **must
+                match**. e.g. If the cost is 2 tokens, you could use 2 tail
+                tokens, but you could not use 1 tail token and 1 ear token.
+                  * When upgrading place 1 of the tokens used to pay for it
+                    on the circle, showing it is unlocked. Return the rest
+                    to the supply.
+                  * Upgrades cannot be partially unlocked.
+              * You may unlock any number of spaces across any number of
+                tracks (that you can afford).
+
+          | Symbol | Description |
+          | ------ | ----------- |
+          | ![pups](/static/img/the_fox_experiment/pups.png) | Each unlocked pup lets you breed 1 additional pup each round. |
+          | ![studies](/static/img/the_fox_experiment/studies.png) | When you unlock a study upgrade, draw 3 new studies and keep 1, discarding the rest to the bottom of deck. |
+          | ![fdice](/static/img/the_fox_experiment/fdice.png) | Each of these upgrades lets you roll 1 more friendly die each time you make a pup. When this is unlocked, take a friendly die and add it to your stash. |
+          | ![patrons](/static/img/the_fox_experiment/fdice.png) | Choose 1 of the 4 patrons and place 1 of your fox meeples on the space next to them. Then gain the supplies on their supply tile + 1 science card. |
+      - name: "Phase 2: Breeding"
+        text: |
+
+
