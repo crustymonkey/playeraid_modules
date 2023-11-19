@@ -2,7 +2,7 @@ name: "The Fox Experiment"
 description: "Breed foxes for fun"
 text_type: markdown
 credits: "Jay Deiman"
-enabled: false
+enabled: true
 version: 1.0
 bgg_id: 368432
 expansions:
@@ -122,6 +122,8 @@ sections:
               * Take friendly dice to match the number unlocked on your player
                 mat (if you don't already have them).
               * Gather all trait dice shown on both parent foxes you selected.
+                  * For player-made foxes, it is the number of marked squares
+                    on the card. **Marked circles do not give you dice**.
           3. Roll all your dice and sort them by trait. Match up dice to make
              complete traits.
               * A single die with 2 halves does not make a trait.
@@ -152,6 +154,15 @@ sections:
               * If you filled a track and earned point tokens, include the
                 number of point tokens in this score.
           6. Give your pup a name and write it on the card.
+
+          ### Breeding Multiple Pups
+          * When breeding multiple pups, you complete all steps (1-6) for
+            each pup, 1 pup at a time.
+              * Clarification: This means that you will re-roll the same dice
+                pool for each pup individually.
+              * If you used science cards or friendliness tokens, these
+                are discarded **before moving on to the next pup**.  e.g
+                they cannot be used for multiple pups.
       - name: "Phase 3: Research (simultaneous)"
         text: |
           1. To complete a study level, you must assign **1** of your pups
@@ -179,4 +190,173 @@ sections:
           2. Collect trait tokens.
               * If you bred only 1 pup, collect 1 trait token for each marked
                 circle on each of the 4 trait tracks.
+              * If you bred multiple pups, you gain trait tokens from only
+                the fox that that has the most circles marked for each trait.
+              * (Optional) If a player breeds 2 parents in the same player
+                color, they must pay a penalty by discarding 2 trait tokens
+                of their choice after collecting tokens. They must be discarded
+                before the next step.
+          3. Unlock upgrades (same as phase 1).  See below
 
+          ### Upgrades
+          * Players are now able to unlock upgrades before moving on to the
+            next phase.
+              * In each of the 4 upgrade tracks, upgrades must be unlocked
+                from left to right.
+              * The circle to the right of the upgrade shows the cost (a
+                number of trait tokens).  The diamond shows what is unlocked.
+              * Upgrades can be unlocked any trait tokens, but they **must
+                match**. e.g. If the cost is 2 tokens, you could use 2 tail
+                tokens, but you could not use 1 tail token and 1 ear token.
+                  * When upgrading place 1 of the tokens used to pay for it
+                    on the circle, showing it is unlocked. Return the rest
+                    to the supply.
+                  * Upgrades cannot be partially unlocked.
+              * You may unlock any number of spaces across any number of
+                tracks (that you can afford).
+
+          | Symbol | Description |
+          | ------ | ----------- |
+          | ![pups](/static/img/the_fox_experiment/pups.png) | Each unlocked pup lets you breed 1 additional pup each round. |
+          | ![studies](/static/img/the_fox_experiment/studies.png) | When you unlock a study upgrade, draw 3 new studies and keep 1, discarding the rest to the bottom of deck. |
+          | ![fdice](/static/img/the_fox_experiment/fdice.png) | Each of these upgrades lets you roll 1 more friendly die each time you make a pup. When this is unlocked, take a friendly die and add it to your stash. |
+          | ![patrons](/static/img/the_fox_experiment/fdice.png) | Choose 1 of the 4 patrons and place 1 of your fox meeples on the space next to them. Then gain the supplies on their supply tile + 1 science card. |
+      - name: "Phase 4: Administration"
+        text: |
+          1. Discard all foxes from the previous generation and return all
+             trait dice to the supply.
+              * Any unselected foxes are discarded (male and female).
+                  * Foxes from the parent decks are discarded to a pile near
+                    the appropriate deck.
+                  * Foxes made by a player are returned to a **private
+                    discard** pile near that players blank foxes.
+              * Each player discards both foxes they used as parents during
+                the breeding phase.
+              * Return all trait dice, except friendly dice, to the supply.
+          2. All players place all new pups made this round into the kennel
+             area in their appropriate male/female rows.
+          3. Find the fox with the highest friendliness score of all pups
+             made this round and the player who made that fox places 1 of
+             their fox meeples on the next empty space on the friendliness
+             rewards track.
+              * The points indicated will be scored at the end of the game (not
+                now).
+              * If 2 or more players are tied for friendliest, all players
+                place a meeple on the track in the same space (next empty).
+              * If 1 player has multiple tied foxes, they still place only
+                1 meeple.
+          4. Refill the kennel such that there is at least 1 more fox than
+             the number of players in each row.
+              * If a row already meets the minimum, do not draw any additional
+                foxes from the parent deck.
+              * If there are > 8 foxes in 1 row of the kennel, you must discard
+                down to 8, starting with the foxes with the lowest
+                friendliness scores.
+                  * If, due to ties in friendliness scores, you end up under
+                    the minimum, fill to the minimum from the parent deck.
+          5. Redistribute turn order tokens to match the player order on the
+             supply track.
+              * Also discard any unclaimed supply tiles left on the supply
+                track.
+              * Each player takes back their gear token from the supply track.
+          6. Refill the supply track by dealing new face up supply tiles
+             from the stack.
+              * If the supply pile is empty, shuffle the discard to make a new
+                one.
+  - name: Game End
+    text: |
+      The game will end after players earn friendliness rewards at the end of
+      the 5th round (the friendliness track will be full).
+
+      * Score points for:
+          * Score the points for the highest level completed for each study.
+          * Score the points as described on each patron where you have
+            a fox meeple.
+          * Score the points on each upgrade you've unlocked.
+          * Score the points for spaces on the friendliness track where you
+            have your meeples.
+          * Score points for supplies:
+              * 1 pt per point token
+              * 1 pt per science card
+              * 1 pt per 2 trait/friendly tokens (add them all together).
+
+      The player with the most points wins.  If there is a tie, the player
+      closest to the beginning of the supply track wins.
+  - name: 2 Player Rules
+    text: |
+      The 2 player mode incorporates an automated opponent.
+
+      ## Setup
+      * Setup the board and kennel as if you are playing a 4 player game.
+      * Assign an unused player color to the AI. You can leave the player
+        mat in the box though.
+      * Shuffle the AI's selection deck and place it near the board.
+      * Shuffle the AI's study deck and place it near the selection deck.
+          * Reveal the top study and place it face up next to the deck.
+      * Place the AI's gear token and 5 of its fox meeples near the selection
+        deck. Any remaining fox meeples can be returned to the box.
+      * Give the "3rd" turn order token to the AI.
+
+      ## Phase 1: Selection
+      * The AI will take 3 turns, just like a player, during this phase.
+      * Each turn, the AI select **2 items instead of 1**. e.g. 2 male foxes,
+        2 female foxes, 2 positions on the supply track.
+      * At the start of the AI's turn, flip the top card of the selection deck
+        and the AI selects the 2 items shown on the card, once each.
+          * If something on the card was already selected twice, the AI instead
+            selects something it still needs.
+      * To select foxes, use the AI's study card and it's 1st and 2nd preferred
+        traits by following the steps below. Note that the AI does **not**
+        remove the cards, but instead places 1 of its meeples on the card.
+        Players cannot select a fox with an AI meeple on it.
+          1. The fox with the most dice of its study card's #1 preference. If
+             tied, move to step 2.
+          2. The fox with the most dice of its study card's #2 preference. If
+             tied, move to step 3.
+          3. The 1st fox indicated by the arrow showing on the top of the
+             AI selection deck. e.g. for a left pointing arrow, start at the
+             right side and pick the 1st tied fox.
+      * To claim a supply track position, the AI claims either the left most
+        or right most available space on the track, based on the arrow showing
+        on the selection deck.
+          * The AI does not collect supplies. Discard the supply tile (if
+            present).
+          * For the **1st** selection for this track place an AI meeple on
+            the space.
+          * For the **2nd** selection for this track place the AI gear token,
+            which will determine its turn order in the next round.
+
+      ## Phase 2: Breeding
+      * The AI simulates breeding by adding extra trait dice to the foxes
+        it selected, leaving them in the kennel.
+      * For each of the 4 selected foxes:
+          * If it is a fox from the deck, take 1 die of each of the AI's 2
+            priority traits and place them on the fox card.
+          * If it is a player fox, mark the next empty square on each of
+            of the trait track matching the AI's priority traits.
+          * Each fox (from the deck or a player) can have a max of 2 dice
+            of each trait.
+              * If a fox already has 2 dice for a trait matching the AI's
+                priorities, the fox does **not** get another die of that
+                trait.
+          * Do not remove the fox meeples from the AI's foxes.
+
+      ## Phase 3: Research
+      * If any player completes the 3rd level of a study card during this
+        phase, place the AI's study card on the bottom of the deck and
+        reveal a new 1 to replace it.
+
+      ## Phase 4: Administration
+      Follow normal administration with these changes:
+
+      * When clearing foxes from the kennel, do not clear any foxes with an
+        AI meeple on them.  Instead, shift them to the left end of the row.
+      * The AI does not participate in friendliness rewards.
+      * After friendliness rewards are complete, remove the AI meeples from
+        the foxes.
+      * When setting the new turn order the AI gets the token pertaining
+        to where its gear token is (not where it has its meeple). Return
+        both the meeple and gear token to the AI's supply.
+
+      ## Game End
+      The AI does not score points.  All scoring is done as normal.
