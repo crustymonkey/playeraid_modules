@@ -3,7 +3,7 @@ description: "From baby robots to adult robots...wait, what?"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 2.0
+version: 2.1
 bgg_id: 366683
 expansions:
   - Pets
@@ -263,7 +263,7 @@ sections:
                 have not selected or that do not have energy cubes.  See
                 also [phase rules](#rphases).
               * You must always determine total energy 1st, so
-                you cannot use batteries acquire during a phase retroactively.
+                you cannot use batteries acquired during a phase retroactively.
               * You may use batteries acquired during a phase in later phases.
           * Any upgrades you have unlocked that provide energy bonuses on
             your player board.
