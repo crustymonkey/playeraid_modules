@@ -1,0 +1,11 @@
+name: "Archeos Society"
+description: "Totally not Ethnos..."
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+version: 1.0
+bgg_id: 380938
+expansions:
+sections:
+  - name: Setup
+    text: |
