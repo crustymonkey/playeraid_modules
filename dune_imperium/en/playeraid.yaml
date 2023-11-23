@@ -1,9 +1,9 @@
 name: "Dune Imperium"
-description: "Who will control Arakis?"
+description: "The spice must flow"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.0
+version: 1.1
 bgg_id: 316554
 expansions:
 sections:
