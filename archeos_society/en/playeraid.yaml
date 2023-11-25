@@ -2,10 +2,280 @@ name: "Archeos Society"
 description: "Totally not Ethnos..."
 text_type: markdown
 credits: "Jay Deiman"
-enabled: false
+enabled: true
 version: 1.0
 bgg_id: 380938
 expansions:
 sections:
   - name: Setup
     text: |
+      * Shuffle the site boards and randomly choose 1 and place it with the
+        advanced side face up.  Place the rest of the site boards with the
+        compass side face up.
+      * Each player chooses a color and takes the vehicles of that color, then
+        each player:
+          * Places 1 vehicle on the left most space of each site track.
+          * Places their player token on the score track.
+      * Select 6 roles (decks) to use for the game and shuffle them together
+        to form the main deck.
+          * Perform any role/site specific setup:
+              * **Botanists**: Place the botanist frame near the site board.
+              * **Curators**: Each player takes 1 museum board and 6 relic
+                tokens (1 of each color).
+              * **Linguists**: Place the linguist track near the site boards
+                and each player places a vehicle on space 0.
+              * **Professors**: Place the 6 professor tokens (1-6) near the
+                site boards.
+              * **Ta-Sekhet-Ma'at**: Each player places 2 vehicles on the
+                left most space of this site instead of 1.
+  - name: Gameplay
+    text: |
+      The game is played over a number of "seasons" based on player count.
+
+      * 2-3 players: 2 seasons
+      * 4-6 players: 3 seasons
+    sections:
+      - name: Start a New Season
+        id: seasstart
+        text: |
+          1. Shuffle the deck and deal 1 card to each player.
+          2. Deal cards from the deck = to the nuimber of players + 2 face up
+             in the center-ish of the table (order of cards does not matter).
+             This is called the "display".
+          3. Build the deck:
+              1. Split the deck in half-ish.
+              2. Shuffle the 3 monkey cards into 1 half.
+              3. Place the half **without** the monkey cards on top of the
+                 monkey half to form the deck.
+          4. Determine a 1st player:
+              * If it's the first season, pick someone randomly.
+              * Otherwise, the person who drew the last monkey card goes 1st.
+      - name: Playing a Season
+        text: |
+          Each turns consists of 1 of 2 actions.
+
+          **NOTE** that you can **never** have more than 10 cards in your hand.
+
+          * Gain 1 card.
+              * Either take 1 card from the display
+                  * Do **not** replenish the card in the display.
+              * (or) Take cards from the top of the deck.
+                  * If the display is empty, take 2.
+                  * If the display is not empty, take 1.
+                  * If you draw a monkey card, place it face up on the table
+                    near the deck and then draw another card.
+                      * If this is the 3rd monkey card drawn, the [season
+                        ends](#seasonend) immediately.
+          * (or) Play an expedition. An expedition consists of a number of
+            cards from your hand played face up as a set in front of you.
+              * Cards in an expedition must all be the same color or all the
+                same [role](#roles) (character art).
+              * Choose 1 card to be the expedition leader and play it on top
+                of the splayed stack of cards.
+                  * If your expedition size is large enough, you may advance
+                    your vehicle at the site with the matching color. The
+                    size of the expedition (number of cards) must be >= to
+                    the requirement size to cross the next line on the board.
+                      * You can **never advance more than 1 space with a single
+                        expedition**.
+                      * Note that you can play an expedition even if you
+                        can't advance on the track.
+                      * If your leader is a Student, do **not** advance your
+                        vehicle at the site, regardless of expedition size.
+                  * You may use the effect of your leader's [role](#roles).
+              * After resolving the expedition, all other cards not in the
+                expedition are added to the display (you will have zero cards
+                left).
+      - name: Season End
+        id: seasonend
+        text: |
+          The season ends immediately when someone draws the 3rd monkey card.
+
+          1. Return all cards in hands/display to the deck.
+          2. Resolve any season end [role](#roles) effects.
+          3. Player gain the number of points shown in their vehicle's space
+             on each site.
+              * **Important**: Vehicles are **not** reset and remain on their
+                current spaces.
+          4. Remove all Mercenary cards (if in the game) from expeditions.
+          5. Gain points from expeditions based on the expedition size (see
+             the table below. If it is not the last season, return all
+             expedition cards to the deck.
+          6. If this was the last season, proceed to [game end](#gameend),
+             otherwise [start a new season](#seasstart).
+
+          | Exp. Size | Points |
+          | --------- | ------ |
+          | 1 | 0 |
+          | 2 | 1 |
+          | 3 | 3 |
+          | 4 | 5 |
+          | 5 | 8 |
+          | 6+ | 12 |
+  - name: Game End
+    id: gameend
+    text: |
+      After the final season, the player with the most points wins.
+
+      If there is a tie:
+
+      1. The player with the largest expedition in the final season wins.
+      2. If #1 does not resolve the tie, keep comparing expedition sizes
+         until 1 player has a larger expedition.
+  - name: Roles
+    id: roles
+    text: |
+      ## The Botanist
+      ![botanist](/static/img/archeos_society/botanist.png)
+
+      * Compare the size of your expedition with the expedition that
+        currently has the botanist's frame (if any).
+          * If your expedition is >= the current botanist's frame's
+            expedition, gain 2 points and frame your current expedition
+            with the botanist's frame.
+      * **Season end**: The player with the botanist's frame gains 2 points
+        and places it back in the central area.
+
+      ## The Cartographer
+      ![cartog](/static/img/archeos_society/cartog.png)
+
+      * If you advance your vehicle with this expedition, you may
+        immediately play 1 additional expedition from your hand (and
+        resolve it) before returning unplayed cards to the display.
+
+      ## The Curator
+      ![curator](/static/img/archeos_society/curator.png)
+
+      * Place a relic token matching the curator's color on your museum board.
+          * Note that you can only have **1** relic of each color on your
+            museum board.
+      * **Game end**: Score points based on the number of different relics
+        you have on your museum board
+
+      | Relics | Points |
+      | ------ | ------ |
+      | 1 | 1 |
+      | 2 | 3 |
+      | 3 | 5 |
+      | 4 | 10 |
+      | 5 | 15 |
+      | 6 | 20 |
+
+      ## The Guide
+      ![guide](/static/img/archeos_society/guide.png)
+
+      * This expedition is considered to have 1 additional card for the purpose
+        of advancing on the site track.
+
+      ## The Linguist
+      ![linguist](/static/img/archeos_society/linguist.png)
+
+      * Advance your vehicle on the linguist track a number of spaces = to the
+        size of this expedition.
+          * For each space with a linguist artifact that you that you stop
+            in or pass through, advance 1 of your vehicles at any site,
+            regardless of expedition size or threshold level.
+      * **Season End**: The players (1 or tied) furthest on the linguist track
+        gains 2 points.
+
+      ## The Mercenary
+      ![merc](/static/img/archeos_society/merc.png)
+
+      * Mercenaries **cannot** be expedition leaders.
+          * If you ever have 10 mercenaries in your hand at the start of your
+            turn, you just discard all of them to the display and end your
+            turn.
+      * Mercenaries are wild. They can be added to any expedition regardless
+        of color or role.
+      * **Season end**: Before totaling points for expedition sizes, all
+        mercenaries are removed from all expeditions.
+
+      ## The Patron
+      ![patron](/static/img/archeos_society/patron.png)
+
+      * After returning remaining cards to the display, draw a number of cards
+        equal to this expedition's size.
+          * Cards are drawn from the deck, not taken from the display.
+
+      ## The Photographer
+      ![photog](/static/img/archeos_society/photog.png)
+
+      * **Season end**: Score this expedition as if it had 1 additional card.
+
+      ## The Physician
+      ![phys](/static/img/archeos_society/phys.png)
+
+      * Instead of returning your remaining cards to the display, you may keep
+        a number of cards in your hand <= to the size of this expedition.
+        The rest are returned to the display as normal.
+
+      ## The Pilot
+      ![pilot](/static/img/archeos_society/pilot.png)
+
+      * You may advance 1 of your vehicles at any site instead of the site
+        matching the leader's color.
+          * Your expedition size must still meet the requirements to pass
+            the threshold.
+
+      ## The Professor
+      ![prof](/static/img/archeos_society/prof.png)
+
+      * Take 1 professor token <= to this expedition's size.
+      * **Season end**: Total the value of each player's professor tokens:
+          * The player (or tied players) with the highest total advances
+            their vehicle 1 space on 1 site.
+          * The player(s) with the lowest total (including zero) move 1
+            vehicle on 1 site (where they are not on the 1st space) to the
+            left 1 space.
+          * After movement, return all professor tiles to the supply.
+
+      ## The Student
+      ![student](/static/img/archeos_society/student.png)
+
+      * If the student is the leader of this expedition, it **cannot** advance
+        a vehicle on any track.
+      * **Note**: There are twice as many student cards in the deck as there
+        are cards for other roles. This allows you to more easily create
+        larger expeditions for season end points.
+
+  - name: Sites
+    text: |
+      ## Chichén Itzá
+      * **Vehicle advances**: At the end of your turn after advancing on this
+        site, draw up to the number of cards shown next to the threshold
+        number you crossed.
+          * These cards are drawn from the deck, not taken from the display.
+          * Note that you are still limited to 10 cards.
+
+      ## Rapa Nui
+      * **Season end**: The player(s) whose vehicle is farthest along on this
+        track gains 3 points and their vehicle is reset back to the left most
+        space.
+          * Other vehicles remain where they were.
+
+      ## Ta-Sekhet-Ma'at
+      * **Vehicle advances**: Choose **1** of your vehicles to advance.
+      * **Season end**: Gain points shown in the space of your vehicle that
+        is closest to the starting space.
+          * Do **not** gain points for the other vehicle.
+
+      ## Tantallon Castle
+      * **Season end**: If your vehicle is alone on a space, you gain the
+        points equal to the number in the large star, otherwise gain the points
+        in the smaller star.
+
+      ## Uluru
+      * **Vehicle advances**: After advancing your vehicle, you can choose to
+        gain the points for that space.
+          * If you gain the points, reset your vehicle back to the left most
+            space of the track.
+      * **Season end**: Do **not** gain points for the position of your
+        vehicle as you would normally do with locations at season end. Points
+        can only be gained on this track via the above "vehicle advances".
+
+      ## Ur
+      * **Season end**: When the 3rd monkey card is revealed, in turn order,
+        each player may immediately play a single expedition (resolving it
+        as normal).
+          * **Note**: The maximum size of the expedition played depends on
+            your vehicle's position on the Ur track.
