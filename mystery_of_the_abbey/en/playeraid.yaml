@@ -1,0 +1,249 @@
+name: "Mystery of the Abbey"
+description: "Which monk did it?"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+version: 1.0
+bgg_id: 915
+expansions:
+sections:
+  - name: Setup
+    text: |
+      * Place the abbey board.
+      * Each player chooses a color and places their monk in the chapel
+        (Ecclesia).
+      * Each player takes a deduction notebook and a suspect sheet.
+      * Shuffle the library book cards and place them face down on their
+        board location.
+      * Shuffle the scriptorium cards and place them face down on their
+        board location.
+      * Shuffle the event cards and place them face down on their
+        board location.
+      * Place the crypt cards face down in their location on the board.
+      * Shuffle the suspect cards and place 1 face down under the abbey
+        board (the culprit).
+      * Place a number of suspect cards face down on the suspect position
+        of the board:
+          * 3 or 6 players: 5 cards
+          * 4-5 players: 3 cards
+      * Deal all the remaining suspect cards to the players.
+      * Determine a 1st player.
+      * Give the mass bell and the 8 mass cards, stacked in chronological
+        order, to the 1st player.
+          * On the 1st turn, the 1st player will place the bell on the
+            topmost Matins card.
+      * Roll 2 of the monk dice and place 1 die in each of the 2 confessionals.
+          * The 2 die faces must be different and must represent a player
+            in the game. If not, reroll each of them until the conditions
+            are met.
+  - name: Gameplay
+    text: |
+      The game is played over a series of rounds where players try and
+      determine the culprit, gaining points in the process.  The winner will
+      be the player with the most points, usually the player who finds the
+      culprit. The culprit is determined by finding the monk with the correct
+      5 traits.
+
+      ### Monk Traits
+
+      | Characteristic | Variations | Card Counts |
+      | -------------- | ---------- | ----------- |
+      | **Order** | Templar, Franciscan, Benedictine | 8 cards of each |
+      | **Title** | Father, Brother, Novice | 6, 9, 9 cards respectively |
+      | **Hood** | hooded, unhooded | 12 cards of each |
+      | **Facial Hair** | bearded, clean-shaven | 12 cards of each |
+      | **Girth** | fat, thin | 12 cards of each |
+
+      ## Turns
+      Turns are played in clockwise order consisting of the following steps.
+
+      1. (1st player only) Move the mass bell 1 spot to the next number. If
+         the bell is already on "4", move it off the card and call
+         [mass](#mass) and apply the mass card's effect.
+          * If this is the 1st turn of the game, place the bell in the "1"
+            position.
+          * If this is after the completion of [mass](#mass), move the mass
+            card that was just executed to the bottom of the deck, then
+            place the bell in the "1" position.
+          * **If playing with 6 players, the mass bell starts on the "2"
+            space** instead of the "1".  This means there will only be 3
+            turns between each [mass](#mass).
+      2. Move your pawn 1 or 2 (or 3 with 6 players) steps in any direction
+         to another room on the board.
+          * Rooms are delineated by the color the room's floor.
+          * The movement is **mandatory**.
+          * You cannot use a 2 step move to return to your starting room.
+      3. If your pawn ends in a room with another player's pawn, you must
+         ask that player a [question](#question).
+      4. Perform any actions relevant to the room your pawn is now in.
+    sections:
+      - name: Questioning
+        id: question
+        text: |
+          * If your pawn ends its movement in a room with another player,
+            you must ask that player a question.
+          * The person being questioned has 2 choices:
+              1. Make a vow of silence by putting a finger to their mouth and
+                 declining to answer.
+              2. Answer the question, which entitles them to ask the questioner
+                 a question of their own.
+                  * After getting their answer, the original questioner
+                    **must** answer the question they receive.
+          * All questions **must** be answered truthfully.
+          * You may ask any kind of question, as long as it doesn't have to
+            be answered with a suspect's name.
+              * Specific names *can* be part of the question though.
+          * Example questions:
+              * "How many bearded monks do you have in your hand?"
+              * "Do you have the ‘Father Sergio’ card?"
+              * "How many Benedictines have you crossed out from your
+                suspects’ list?"
+              * "Have you eliminated ‘Father Bruno’ from your list of
+                suspects?"
+              * “Are you going to Chapter Hall?” (Obviously, your opponent is
+                then bound by his answer)
+      - name: Mass
+        id: mass
+        text: |
+          Mass takes place at the end of 4 turns (movement of the bell).
+          During mass:
+
+          1. The pawns of all players are placed in the chapel (Ecclesia).
+          2. Each player simultaneously passes the number of suspect cards
+             indicated on the mass card to the player on their left.
+              * If a player does not have enough suspects, they give all they
+                can. They still keep what they receive.
+          3. Draw an event card, read it aloud, and immediately apply its
+             effects.
+              * Some events will have you roll a die to determine a specific
+                player or room.
+          4. The 1st player gives the deck of mass cards and the bell to the
+             player on their right (last player).
+      - name: Revelations
+        id: revelations
+        text: |
+          * This is a declaration that you have discovered **1** characteristic
+            of the guilty monk, made in the Chapter Hall (Capitulum).
+              * This is a **public announcement**.
+              * It must be a single characteristic.
+              * It cannot be a negative declaration. e.g. "the culprit is not
+                a novice" is invalid.
+          * This is written down on a piece of paper and checked at the end
+            of the game.
+              * Correct revelations are worth 2 points.
+              * Incorrect revelations are worth -1 point.
+          * The same revelation cannot be repeated, but a contradictory
+            revelation *can* be made.
+      - name: Accusation
+        id: accusation
+        text: |
+          * No accusation can be made while there are suspect cards to be
+            had from going into the Parlor (Parlatorium).
+          * This is a declaration of the monk you suspect to be the culprit
+            made in the Chapter Hall (Capitulum).
+              * This is a **public announcement**.
+              * If the accused monk is in another player's hand, that player
+                shows the card to everyone.
+                  * The accusing player's pawn is moved to the chapel for
+                    [penance](#penance) and they lose 2 points.
+              * If no player has the accused monk, confirm the accusation with
+                the card under the board.
+                  * The [game ends](#gameend) and the accuser gains 4 points.
+      - name: Penance
+        id: penance
+        text: |
+          * This applies to people who are [caught in a player's cell](#cells)
+            or make a false [accusation](#accusation).
+          * The player in penance **loses their next turn**.
+              * If the player goes to penance just before mass, they skip
+                their 1st turn after mass.
+  - name: Game End and Scoring
+    id: gameend
+    text: |
+      The game ends when someone correctly [accuses](#accusation) the culprit.
+      Then, scoring is as follows:
+
+      * Each correct [revelation](#revelations): 2 points
+      * Each incorrect [revelation](#revelations): -1 point
+      * Discovery of the culprit (correct [accusation](#accusation): 4 points
+      * Each false accusation: -2 points
+
+      If there is a tie, the player who discovered the culprit wins.
+  - name: Rooms in the Monastery
+    sections:
+      - name: The Chapel (Ecclesia)
+        text: |
+          * This is where players start the game.
+          * This is also where players return to for [mass](#mass).
+      - name: Confessional (Confessorium)
+        text: |
+          * Randomly draw a suspect card from the hand of the last player
+            who visited the same confessional (indicated by the color of the
+            die).
+          * After taking a card from the other player, turn the die to match
+            your player color.
+          * **There can only be 1 player in a confessional at a time**.
+          * Note that 1 of the confessionals can only be entered through the
+            Courtyard (Aula), and **not** directly from the chapel.
+      - name: Cells (Cellula)
+        id: cells
+        text: |
+          * You may randomly draw a card from the cell's owner (matching color).
+          * There can be only 1 pawn at a time in each cell.
+              * *Exception*: The owner of the cell may enter their cell even
+                if another player is already in there.
+                  * If this happens, the card taken must be given back to the
+                    cell owner. If they no longer have the original card,
+                    1 is drawn at random.
+                  * After this, the "intruder" (the player that is not the
+                    owner of the cell) is placed in the chapel for
+                    [penance](#penance).
+      - name: Scriptorium
+        text: |
+          * Take a scriptorium card.
+              * If the card has a star on it, save it for later and use it
+                as indicated on the card.
+              * If there is no star, read the card aloud and immediately
+                apply its effects.
+                  * If there is a die on the card, roll the die to determine
+                    which player is affected (re-roll until it matches a player
+                    color in the game).
+      - name: Library (Bibliotheca)
+        text: |
+          * A player may visit the library **once during the game**.
+          * A player can only enter the library if they have the fewest cards
+            in hand.
+              1. No player has fewer cards then you.
+              2. At least 1 player has more cards than you.
+          * Draw a Bibliotheca card, read it aloud, and immediately apply its
+            effects.
+      - name: Parlor (Parlatorium)
+        text: |
+          * If there are still suspects in the suspects draw pile, draw 1 and
+            add it to your hand.
+          * If there are no suspect cards in the draw pile, You may ask the
+            player of your choice to show you a suspect card.
+              * You must specify 1 or 2 (no more) characteristics of the suspect
+                card you want to see. e.g. "Show me a Templar" or "Show me a
+                bearded novice".
+                  * If the player has more than 1 matching card, they only
+                    show 1 card (of their choice).
+                  * If the player has no matching cards, they simply say so.
+      - name: Crypt (Crypta)
+        text: |
+          * Draw a Crypta card.
+              * **Each player may only have 1 Crypta card at any time**.
+              * This can be used during the game to play an extra turn after
+                fulfilling your normal turn.
+      - name: Chapter Hall (Capitulum)
+        text: |
+          * You may make a [revelation](#revelations) or
+            [accusation](#accusation) here.
+      - name: Courtyard (Aula)
+        text: |
+          * No effects.
+      - name: Cloister (Claustrum)
+        text: |
+          * Here, and with other empty rooms, moving through them simply costs
+            a step.
+          * **Note the the cloister is divided into 4 separate spaces**.
