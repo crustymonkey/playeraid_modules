@@ -1,0 +1,297 @@
+name: "Amsterdam"
+description: "Be a merchant in Amsterdam or something...  Let's be real here, it's a euro game, so score points."
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+version: 1.0
+bgg_id: 314582
+expansions:
+sections:
+  - name: Setup
+    text: |
+      * Place the main game board, the resource board, and the game round
+        board on the table.
+      * Put all the commodity tiles in the bag, then draw them randomly and
+        place 1 face up on each building "block".
+      * Put the 12 dock workers in the bag, then randomly put 2 on each of
+        the docks (where there is a crane) with the following restrictions:
+          * The 2 dock workers must be different.
+          * Neither dock worker can match the dock's color.
+      * Sort all cards by the color of their backs, then shuffle each deck
+        and place them on their spaces on the game round board.
+      * Separately shuffle the 16 market tiles in their "A" and "B" stacks.
+        Then place the "B" stack on its space on the game round board, and
+        finally place the "A" stack on top of it.
+      * Put the game round tracker on the 1st space of the round track.
+      * Sort the resources by colorand form a supply on the houses of
+        the same color on the resource board.
+          * Note that there are 2 different sizes of cubes, with the larger
+            cubes equaling 5 of the small cubes.
+      * Place the coins in a supply on the resource board.
+      * Create a supply of action markers on the resource board.
+      * Create a supply of penalty tokens on the resource board.
+      * Create a supply of the "x5" multiplier tokens.
+      * Each player takes, in their color:
+          * 1 "100/200" point tile
+          * 1 player board
+          * 2 summary cards
+          * 1 rondel board
+          * 1 row boat -- place it on the 0 space of the scoring track
+          * 1 barge -- place it on the start pier of the matching color in the
+            harbor
+          * 15 control crests -- place them on the residential house on your
+            player board
+          * 1 disc
+          * 1 money
+      * Set all the dice near the board.
+      * Randomly choose a start player and place each player's disc in
+        a stack in clockwise order from the start player to the last player.
+        The stack will have the 1st player's disc on top and the last player's
+        on the bottom. Place the stack on the start space of the canal.
+      * Draw a number of craftsmen and building cards based on the player
+        count (see the table below) and place them face up near the board.
+          * In reverse player order, starting with the player whose disc is at
+            the bottom of the discs on the canal track, each player takes
+            1 card and places it in a slot on their player board.
+          * All remaining cards are discarded.
+      * In turn order (start with the top of the canal stack), each player
+        takes 1 resource of their choice and places it in the 1 spot of their
+        rondel.
+      * Repeat the previous, but this time each player takes 2 resources and
+        places them in their 2 slot.
+
+      | Card | 2 Players | 3 Players | 4 Players |
+      | ---- | --------- | --------- | --------- |
+      | Craftsmen | 1 | 2 | 3 |
+      | Building | 2 | 2 | 2 |
+  - name: Gameplay
+    text: |
+      The game is played over 12 rounds, with each round consisting of 4
+      phases.  The player with the most points at the end of the game will win.
+
+      * Note that activated cards with a phase designation (I/II/III) can be
+        used in their matching phases.
+          * Phase cards (I/II/III) **can only be used once per round**.
+            Place an action marker on the card when used.
+          * Cards marked with a ∞ symbol are permanent abilities that can
+            be used as triggered.
+          * Cards with a laurel are for end game scoring.
+      * Player order is always determined by the current order of discs on
+        the canal track. If 2+ discs are on the same space, the disc on top
+        is 1st and the disc on the bottom is last (in context of the stack).
+      * Players may look at the cards in the discard at any time.
+      * None of the resources, except cards, are limited.  Use multiplier
+        tokens when needed.
+    sections:
+      - name: "Phase I: Reveal and Select Cards"
+        text: |
+          * Reveal a number of cards based on the table below.
+          * In player order (canal discs), each player selects one of the
+            revealed cards and places it in a slot at the bottom of their
+            board.
+              * If all 5 of a player's slots are filled when they take a
+                new card, they must discard 1 of the 6 cards, and then
+                **take a penalty token**.
+          * Place all remaining cards in the discard.
+
+          | Card | 2 Players | 3 Players | 4 Players |
+          | ---- | --------- | --------- | --------- |
+          | Craftsmen | 1 | 2 (odd rounds); 1 (even rounds) | 2 |
+          | Building | 1 | 1 (odd rounds); 2 (even rounds) | 2 |
+          | Maps | 2 | 2 | 2 |
+      - name: "Phase II: Roll Dice and Take Resources"
+        text: |
+          1. The 1st player rolls all 6 of the dice and places them in their
+             matching spaces on the resource board (below the resources).
+              * **In rounds 8-12**, some die values are changed to 1s.  See
+                the round track for which die values are changed.
+          2. Simultaneously (or in player order), each player chooses 2 dice
+             to gain matching resources.
+              * For each chosen die, take a number of resources matching the
+                number on the die, then place these in the slot on your
+                rondel matching the die.  e.g. If you select an orange "2" die
+                as 1 of your dice, you would take 2 orange resources and place
+                them in the "2" slot of your rondel.
+          3. All players rotate their rondel 1 slot **counter-clockwise**.
+              * Any resources on the arrow space are added to your supply on
+                your player board along with a (possible) saved resource
+                from the previous round.
+              * **If no resources end up in the arrow space, you must take
+                1 penalty token**.
+      - name: "Phase III: Perform Actions"
+        text: |
+          * **Important**: Only 1 resource can be saved at the end of the
+            round (on your house on your player board). All other resources
+            will be discarded at the end of the round.
+          * In player order, players can take any/all of the actions in
+            any combination or sequence.
+        sections:
+          - name: Activate Cards
+            text: |
+              * In order to use the powers on your cards, they must 1st be
+                activated.
+              * To activate a card, pay the resource cost shown at the bottom
+                of the art, then move the card from its slot at the bottom
+                of your board to above the board.
+                  * The number of cards above your board is unlimited.
+          - name: Use Activated Cards
+            text: |
+              * Reminder: You may only use phase cards (I/II/III) **once**
+                per round and only during the round indicated.  Place an
+                action marker on them to show that they've been used.
+              * Cards with a ∞ symbol can be used multiple times, as they are
+                triggered.
+          - name: Take Possession of a Building
+            id: take_build
+            text: |
+              * **This action can only be done once per round**.
+              * Spend the resources indicated near the building, take the
+                commodity token, and place 1 of your control crests on the
+                building.
+                  * Add the commodity to your supply on your player board
+                    (storehouse).
+                      * There is no limit to the number of commodities you
+                        can store on your player board.
+                  * **Instead of adding the commodity to your board**,
+                    you may immediately place it on a matching space in the
+                    black market. Note that there is only room for 1 of each
+                    commodity in the black market. Then gain:
+                      * Any 1 resource from the supply **OR**
+                      * Take 2 money from the supply
+                  * Players can buy buildings anywhere on the board. While
+                    adjacency will get you more points at the [end of the
+                    game](#gameend), it is not required.
+          - name: Load Commodities Onto Your Barge
+            text: |
+              * **You must be at a loading dock to load items onto your
+                barge**.
+                  * Docks are indicated by a crane icon.
+              * You may load 1 or more commodities in your storehouse onto
+                your barge (the barge space on your player board).
+          - name: Move Your Barge and Load/Unload
+            id: mv_barge
+            text: |
+              * Moving your barge to water/dock/storehouse spaces costs 1
+                resource per space.
+              * You may move as many times and as far as you'd like on your
+                turn (paying the cost to do so).
+              * At a dock (crane icon):
+                  * You may take 1 dock worker and place it on your barge on
+                    your player board in 1 of the 2 spaces. Gain 1 money if
+                    you do.
+                      * Your barge can hold a max of 2 dock workers.
+                  * If you have a dock worker on your barge of the matching
+                    color of the dock, place that worker in the highest
+                    numbered spot on the adjacent building and immediately
+                    gain that many points.
+                      * The higher value spaces can only hold 1 dock worker,
+                        but the larger bottom space can hold any number of
+                        dock workers.
+              * At a storehouse location (⚓ icon):
+                  * You may drop off a **matching** commodity (spaces with
+                    a "?" can take any commodity) and place it on the highest
+                    numbered space on the adjacent building. Gain the points
+                    immediately.
+                      * Note that there is only 1 space for a commodity
+                        on the 4 "?" storehouses.
+                  * Check the round tracker for any early delivery bonuses
+                    in rounds 1-7.
+          - name: Move Ahead on the Canal Track
+            text: |
+              * **This can only be done once per round**.
+              * You can move your disc as many spaces as you would like by
+                paying 1 resource for the 1st space, and 2 resources for
+                each space after that. e.g. To move 3 spaces, you would spend
+                5 resources.
+                  * If you end your movement on an occupied space, put your
+                    disc on top.
+                  * If you cross a bridge, gain the points shown on it.
+              * If you arrive at the end of the canal, place your disc on the
+                next open number.  e.g. If you arrive 2nd, you will place it
+                on the "2" space. Also gain 10 points.
+          - name: Buy Prestige (points) at the Market
+            text: |
+              * **This can only be done once per round**.
+              * Pay the cost in money on the left side of the market tile to
+                immediately receive the point(s)/benefit(s) on the right side.
+      - name: "Phase IV: End of the Round"
+        text: |
+          *You may skip this phase at the end of round 12 and go straight
+          to the [game end](#gameend)*.
+
+          1. You may store **1** unused resource on your house on your player
+             board.
+              * **All other resources are returned to the central
+                resource board**.
+          2. Remove all action markers from your cards and return them to the
+             supply or hold onto them for later rounds (on your windmill).
+          3. Advance the round marker 1 space.
+          4. Reveal a new market tile and place it on top of the previous
+             one(s).
+  - name: End of the Game
+    id: gameend
+    text: |
+      After the 12 round, the following occurs.
+
+      * **Players gain 1 penalty token for each card still below their board**
+        (un-activated).
+
+      ## Scoring
+      * Players lose points for penalty tokens based on the table below.
+      * Each player scores points for their end game scoring cards (laurel).
+      * Each player scores points for their largest number of connected
+        buildings:
+          * Number of buildings x 3
+      * Evaluate the district tiles for regional majorities and award points
+        based on the table below.
+          * If there is a tie, add the points for the tied positions, then
+            divide them equally between players, rounding down.
+      * Each player scores points for leftovers:
+          * (Commodities + dock workers + money + resources) / 2 (round down)
+
+      The player with the most points wins. If tied, the player further
+      ahead on the canal track wins.
+
+      ### Penalty Tokens
+      | # Tokens | Point Loss |
+      | -------- | ---------- |
+      | 1 | 3 |
+      | 2 | 8 |
+      | 3 | 15 |
+      | 4 | 22 |
+      | +1 | +7 |
+
+      ### District Tiles
+      | Player Count | 1st | 2nd | 3rd |
+      | ------------ | --- | --- | --- |
+      | 2 | 5 | - | - |
+      | 3 | 5 | 2 | - |
+      | 4 | 8 | 5 | 2 |
+  - name: Icons
+    text: |
+      | Symbol | Description |
+      | ------ | ----------- |
+      | **:** | When you see a colon, the requirement is on the left and what you receive is on the right. |
+      | ![act_card](/static/img/amsterdam/act_card.png) | Activate a card by moving 1 of the cards from below your board to above it. |
+      | ![use_act](/static/img/amsterdam/use_act.png) | Use 1 of the activated cards following normal rules. |
+      | ![discard](/static/img/amsterdam/discard.png) | You must place an **activated** card in the discard. |
+      | ![craftsmen](/static/img/amsterdam/craftsmen.png) | Craftsmen. There are 9 different craftsmen. |
+      | ![buildings](/static/img/amsterdam/building.png) | Buildings. There are 11 different buildings. |
+      | ![maps](/static/img/amsterdam/map.png) | District maps. There are 6 different districts. |
+      | ![phases](/static/img/amsterdam/phases.png) | These cards can only be used once per round and are played only in their designated phases.  Place an action marker on these cards when used. |
+      | ![perm](/static/img/amsterdam/perm.png) | Permanent abilities. These cards can be used whenever they would be triggered. |
+      | ![fin_score](/static/img/amsterdam/fin_score.png) | Cards with this icon are only used during final scoring if the conditions are met. |
+      | ![crests](/static/img/amsterdam/crests.png) | Control crests. The city consists of 6 districts, each with 6 buildings. |
+      | ![take_build](/static/img/amsterdam/take_build.png) | Return the required resources as printed on the board for the building and take control of the building as outlined in [taking possession of a building](#take_build). |
+      | ![gain_res](/static/img/amsterdam/gain_res.png) | Gain the indicated number of resources from the supply. |
+      | ![gain_pts](/static/img/amsterdam/gain_pts.png) | Gain the indicated number of points. |
+      | ![gain_mon](/static/img/amsterdam/gain_mon.png) | Gain the indicated number of money. |
+      | ![pay_mon](/static/img/amsterdam/pay_mon.png) | Pay the amount of money shown. |
+      | ![storehs](/static/img/amsterdam/storehs.png) | This is where you place transported dock workers matching the dock color. |
+      | ![del_com](/static/img/amsterdam/del_com.png) | When arriving at a storehouse, place the matching commodity there and gain the number of points covered. |
+      | ![sell_bm](/static/img/amsterdam/sell_bm.png) | Sell commodities on the black market as outlined in [moving your barge](#mv_barge). |
+      | ![market](/static/img/amsterdam/market.png) | There is always 1 open market tile that can be used once during the round. |
+      | ![canal](/static/img/amsterdam/canal.png) | This is the canal on the main board. Positions here determine player order. |
+      | ![barge](/static/img/amsterdam/barge.png) | This is the piece you move around the harbor that corresponds to the barge storage on your player board. |
+      | ![wh_disc](/static/img/amsterdam/wh_disc.png) | This always means your own playing piece. |
+      | ![multi_disc](/static/img/amsterdam/multi_disc.png) | This means any other players' piece. |
