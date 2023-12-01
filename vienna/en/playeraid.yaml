@@ -1,0 +1,275 @@
+name: "Vienna"
+description: "You're definitely not photographing animals here."
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+version: 1.0
+bgg_id: 368974
+expansions:
+sections:
+  - name: Setup
+    text: |
+      The game can be played as an introductory or advanced game.  The
+      aid is laid out for the introductory game with advanced mode changes
+      generally flagged with "(*Advanced*)".
+
+      * Place the board with Eugene of Savoy face up.
+          * (*Advanced*) Use side with the Prater instead.
+      * Set aside 1 secret information tile of each type.
+      * Fill the bag with the 40 remaining secret info. tiles and all
+        30 flag tiles.
+      * Draw secret information tiles and place them on an empty square space
+        starting at the top left and proceeding to the bottom right.
+      * Draw and place flag tiles in the same manner as the secret info. tiles.
+      * Place the storage board next to the game board with the side showing
+        the ferris wheel symbol face up.
+          * (*Advanced*) Use the side with the Prater face up.
+      * Shuffle the cards and stack them face down in their space on the
+        storage board.
+          * (*Advanced*) Shuffle in the 85 advanced cards (no. 91-175) with
+            the introductory cards.
+          * (*Advanced*) Form **2** draw piles on the storage board of
+            roughly the same size.
+      * Sort the bribes by type and create a supply of them on the storage
+        board.
+      * Place the secret information board near the game board.
+      * Place the 5 secret information tiles on the starting spaces (to the
+        left of the track), matching their color.
+      * Place the investigator on the starting roof space of the secret info.
+        board.
+      * (*Advanced*) Place 5 purchase tiles and 2 payday tiles on the spaces
+        of the roof on the secret info board based on the table below.
+      * Place the investigation tile at the top of the secret info. board.
+      * (*Advanced*) Place the next-door house board next to the storage board.
+      * (*Advanced*) Sort the coins and store them on the next-door house.
+      * (*Advanced*) Sort the 60 mission tiles by letter (A/B/S) and shuffle
+        them separately.
+          * Set aside the "S" tiles.
+          * Place the "A" and "B" mission stacks face down on the storage
+            board.
+          * Place the top 2 tiles of each stack on their matching spaces in
+            the top right of the main board ("A" on the left, "B" on the
+            right).
+      * Each player chooses a color and:
+          * Takes 1 desk and place it in front of themselves.
+          * Takes 7 agents, with 6 placed above their desk and 1 on the
+            zero space of the score track.
+              * (*Advanced*) Place **5** agents above your desk and put 3
+                agents on the next-door house.
+          * Takes 1 bribe token of each type.
+          * (*Advanced*) Takes 1 side table, placed next to the next-door
+            house board.
+          * (*Advanced*) Takes 4 desk tiles, placed on the designated spaces of
+            the next-door house board.
+          * (*Advanced*) Takes 1 coin.
+          * (*Advanced*) Takes 1 random starting mission from the "S" tiles
+            set aside above. Place it on the mission space of the player board.
+              * Return any remaining "S" missions to the box.
+          * Takes a "100" scoring marker and sets it near their desk.
+      * Randomly assign 1 secret information tile to each player. Return
+        any remaining tiles to the box.
+      * Determine a 1st player and give them the city crest.
+
+      | Players | ![purchase](/static/img/vienna/purch.png) | ![payday](/static/img/vienna/payday.png) |
+      | ------- | ---------- | ---------- |
+      | 2 | Spaces B, C, D, G, H | Spaces E, H |
+      | 3 | Spaces B, C, E, I, J | Spaces G, J |
+      | 4 | Spaces B, D, F, J, L | Spaces H, L |
+  - name: Gameplay
+    text: |
+      The game is played over a number of rounds, with each round consisting
+      of 3 phases. The end of the game is triggered when the investigator
+      moves to their final space on the roof track.
+
+      * The supply of bribes is considered to be unlimited.
+    sections:
+      - name: "Phase 1: Cards"
+        id: phase1
+        text: |
+          * Each player draws 3 cards from the draw pile.
+              * If the draw pile is empty, shuffle the discards to make a
+                new draw pile.
+              * (*Advanced*) If you have your telephone, you can draw 4
+                cards instead of 3.
+          * All players simultaneously assign each of their 3 cards face
+            down to each of the 3 action spaces above their desk showing
+            a half card back.
+              * (*Advanced*) If you have the telephone, discard the remaining
+                card.
+      - name: "Phase 2: Actions"
+        text: |
+          Starting with the 1st player (city crest), each player performs
+          all of their actions before moving to the next player.
+
+          ### Action 1: Place 1 card in a drawer
+          * Move the card assigned to action 1 (left most) into any drawer
+            below your desk, leaving the lower half visible.
+              * During rounds 1-3, you must fill the empty slots.
+              * In rounds 4+, you **must** exchange a card in a drawer for the
+                new card, discarding the old one.
+              * **You may never have more than 1 copy of an ability in your
+                drawers**.
+              * Abilities can be used any time they are appropriate.
+
+          ### Action 2: Obtain a bribe
+          * Reveal the card in action slot 2, take the bribe shown in the top
+            left of the card and discard the card.
+
+          ### Action 3: Place 1 agent or take 2 bribes of 1 color
+          * Place 1 agent, either from your supply above your desk or from
+            another location on the board, onto any building on the main board
+            and **pay 2 bribes matching the color of building's background**.
+              * Note that you can move agents even if you have agents in your
+                supply.
+              * You may only have 1 of your agents on any building.
+              * Multiple players may have agents on the same building.
+              * **If you now have agents surrounding a secret info. tile** (1
+                agent on each connected building), immediately collect that
+                tile and place it near your player board.
+                  * Gain the number of points shown on the space (2/3/4).
+                  * It is possible to collect more than 1 secret info. tile
+                    by placing a single agent.
+                  * Surrounding an empty square gains you nothing.
+              * (*Advanced*) You may take **1** mission **or** resolve any/all
+                missions with a flag matching the building where you placed
+                your agent.
+                  * If you accept a mission, take 1 coin for an "A" mission and
+                    2 coins for a "B" mission. Then replace the mission from
+                    the appropriate stack.
+                  * To resolve a mission, you must show that you have all
+                    the displayed requirements, but you **do not spend them**.
+                      * You may resolve multiple missions.
+                      * The same bribe/secret info. token can be used for
+                        multiple missions.
+                      * Gain the reward(s) shown in the upper right of the
+                        mission tile.
+                      * After resolving a mission, remove it from the game.
+                      * *Reminders*:
+                          * If you have the cash box, gain 1 additional coin,
+                            which **must** be placed under the cash box.  If
+                            the cash box already has the max of 12 coins, you
+                            do **not** get this bonus.
+                          * If you have the seal, gain 3 additional points.
+          * (or) Take any 2 identical bribes from the supply.
+              * (*Advanced*) You may take 2 coins instead of 2 bribes.
+
+          ### Action 4: Move 1 Secret Info. Tracking Token
+          * Move the secret info. tracking token on the secret info. board
+            1 space to the right matching the token shown in the upper right
+            of the card in action space 4.
+              * When any tracking token crosses a threshold for the **1st
+                time in a round**, move the investigator 1 space on the roof
+                track and flip the investigation tile to its opposite side.
+                  * (*Advanced*) If the investigator lands on a space with
+                    a purchase/payday tile, place it on the investigator
+                    tile as reminder for [phase 2.5](#phase25).
+          * Gain 1 point for each secret info. token in your supply matching
+            the moved tracking token.
+              * **Important**: You get these points for each space you move
+                a tracking token during your turn (for matching tokens in your
+                supply). This is often due to abilities on cards.
+              * If a tracking token is in the last space of its track, it is
+                not moved any further, but you still score points.
+      - name: "(*Advanced*) Phase 2.5: Purchase or Payday"
+        id: phase25
+        text: |
+          * This phase is done in player order.
+          * The last space has 2 tiles on it. Resolve the purchase tile 1st
+            (2nd to last round) and the payday tile in the final round.
+
+          ### Purchase Tiles
+          During a purchase phase, players can make **exactly 1 purchase**:
+
+          * Hire 1 agent for 1 coin, taking 1 of your agents from the
+            next-door house and adding it to your personal supply.
+          * Buy your telephone fo 2 coins. A player with their telephone
+            draws **4** cards in [phase 1](#phase1). Only 3 cards are played,
+            with the 4th being discarded.
+          * Buy your road map for 2 coins. A player with their road map can
+            use bribes as coins (1 to 1) for purchases and paying agents.
+          * Buy your cash box for 2 coins.
+              * Players can hide coins under the cash box instead of in plain
+                view. **This can only be done when obtaining the money**. You
+                cannot add coins later.
+              * The cash box can hold a **max of 12 coins**.
+              * Players with a cash box receive 1 extra coin when resolving
+                a mission, even if the mission does not reward coins. This
+                coin **must** be placed under the cash box.
+                  * If you have reached the max of 12 coins in your cash box,
+                    you do **not** get this 1 coin bonus.
+              * Money in the cash box cannot be used for purchase/payday.
+              * Each coin in the cash box is worth 2 points at game end.
+              * Bribes **cannot** be put in the cash box.
+          * Buy your seal for 2 coins. A player with a seal gains 3 additional
+            points when resolving a mission, even if the mission does not
+            grant points.
+          * Buy your side table for 3 coins.
+              * Place it on the right side of your desk.
+              * This provides a 4th space for missions.
+              * This also provides a 4th drawer for abilities.
+
+          ### Payday tiles
+          * Players must pay 1 coin for each of their agents on the game board.
+              * If you cannot pay for all agents, remove any unpaid agents
+                from the board.
+              * Players **must** pay for their agents. Money cannot be held
+                back to voluntarily remove agents.
+              * Reminder: A player with a road map may use bribes instead of
+                coins to pay for agents.
+                  * Players are **not** required to use bribes to pay for
+                    agents if they are out of coins.
+      - name: "Phase 3: City Crest"
+        text: |
+          * Flip the investigator tile to the side without an "X" on it (if
+            applicable).
+          * The 1st player passes the city crest to the left.
+          * If the investigator has reached the game end space on the roof
+            track (see table below), play 1 more round and proceed to [final
+            scoring](#scoring).
+              * Otherwise, return to [phase 1](#phase1).
+              * In the very rare case that all tracking tokens have reached
+                the 6th space, **this will also trigger the game end** (play
+                1 more round).
+              * (*Advanced*) Each player removes 1 agent from the main board
+                for each unresolved mission they have.
+
+          | Players | End of Game Space |
+          | ------- | ----------------- |
+          | 2 | space H |
+          | 3 | space J |
+          | 4 | space L |
+  - name: Final Scoring
+    id: scoring
+    text: |
+      * Gain 10 points for each set of different secret info. tokens.
+      * Gain 1-6 points for each secret info. tile based on the position of
+        the matching tile on the secret info tracking board.
+      * (*Advanced*) Gain points based on number of desk tiles (telephone,
+        cash box, road map, seal) you have.
+          * 1 tile: 1 point
+          * 2 tiles: 3 points
+          * 3 tiles: 6 points
+          * 4 tiles: 10 points
+      * (*Advanced*) 2 points for every coin in your cash box. Discard these
+        coins after tallying points.
+      * (*Advanced*) Gain points based on your rank in terms of number of
+        agents you have on the main board, based on player count (see table
+        below). In case of a tie:
+          1. The player with the most coins on their player board.
+          2. The player with the most bribes.
+          3. Add the points of the tied players' ranks and divide them
+             equally (rounded down).
+
+      | Players | 1st | 2nd | 3rd | 4th |
+      | ------- | --- | --- | --- | --- |
+      | 2 | 8 pts. | 0 pts. | - | - |
+      | 3 | 12 pts. | 6 pts. | 0 pts. | - |
+      | 2 | 12 pts. | 8 pts. | 4 pts. | 0 pts. |
+
+      The player with the most points wins.  If there is a tie:
+
+      1. (*Advanced*) The player with the most money on their desk.
+      1. The player with the most bribes wins.
+      2. (Introductory only) The player with the most agents on the main
+         board wins.
+      3. The player later in turn order wins.
