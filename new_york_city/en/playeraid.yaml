@@ -2,7 +2,7 @@ name: "New York City"
 description: "Build up NYC to acquire victory points"
 text_type: markdown
 credits: "Jay Deiman"
-enabled: false
+enabled: true
 version: 1.0
 bgg_id: 346645
 expansions:
@@ -55,4 +55,138 @@ sections:
       * In reverse turn order (press token stack), players select 1 set of
         2 start characters and places them above their board.
           * All leftover start characters can be returned to the box.
+  - name: Gameplay
+    text: |
+      The game is played over 5 rounds, with each round consisting of 4
+      phases.
 
+      ### General Rules
+      * Player order and tie breaks are done via the press track.
+          * If there are multiple tokens on the same space, the one on top is
+            furthest ahead.
+          * If you reach the last space on the track, place your token at the
+            bottom of the stack on that space.
+      * Character cards have either a phase they activate in (I/II/III) or an
+        end game symbol (→|).
+          * To use a character, you must pay 1 dollar, except for characters
+            that score you end game points.
+    sections:
+      - name: "Phase 0: Prepare the Game Round"
+        text: |
+          * Return any dollars placed on characters.
+          * Move the mayor to the next borough in alphabetical order (A -> E).
+              * If this is the 1st round, place him in the "A" borough.
+              * Flip the tile over in the current borough and move him to the
+                next one.
+              * The mayor **never** enters the "X" borough.
+          * Reveal the top 2 prestige tiles and place them on their spots near
+            the stack.
+          * Each player draws 3 cards from the deck.
+          * Deal out a number of pairs of cards face up based on the player
+            count (2 x number of players + 1):
+              * 4 players: 9 pairs
+              * 3 players: 7 pairs
+              * 2 players: 5 pairs
+      - name: "Phase I: Select Cards"
+        text: |
+          * In **reverse** player order (press tokens), each player takes 1
+            pair of cards. Do this a 2nd time so that each player has taken 2
+            pairs.
+      - name: "Phase II: 6 Bidding Rounds"
+        text: |
+          * The 6 rounds pertains to the 6 different types of cards (not
+            counting wilds).
+              * The order and types are shown on your player board.
+          * During this phase, players may exchange 1 of their cards in hand
+            for 1 of the cards in their reserve.
+              * Your reserve will **always** have 2 cards in it.
+              * You cannot play cards from your reserve.
+          * The bidding always proceeds in clockwise order, **not in player
+            order**.
+          * Each auction is once around.
+          * The player furthest ahead starts the 1st bidding round.
+          * In rounds 2-5, the player who won the last bid starts the round.
+          * When bidding:
+              * Play any number of cards matching the round + wild cards.
+              * Wild cards **cannot** be played on their own.
+              * 2 identical cards may be played as any other card. Note that
+                it only counts as **1** card for the purpose of the total.
+              * Your total bid is the number of cards + any abilities on
+                characters.
+          * The highest bid gets the bonus (usually a "+1").
+              * Break ties via the press track.
+          * All players perform the related action in press track order
+            (when relevant).  e.g. Players can always take their
+            dollars simultaneously (round 2), but moving on the press track
+            (round 1) is done in order.
+
+          ## Actions by Round
+          1. In press track order, each player advances a number of spaces
+             equal to their bid.
+              * If you land on another token, place yours on top, unless it
+                is the last space, then it is placed on the bottom.
+              * **Highest bid bonus**: Advance 1 extra space.
+          2. Take a number of dollars equal to your bid.
+              * **Highest bid bonus**: Gain 1 extra dollar.
+          3. Take **1** character from the display with a value <= to their
+             bid value.
+              * **Highest bid bonus**: +1 bidding value for choosing a
+                character.
+          4. Players take a number of their skyscrapers from the supply equal
+             to their bid value.
+              * **Highest bid bonus**: Gain 1 additional skyscraper.
+          5. Gain a number of points equal to your bid value
+              * **Highest bid bonus**: Select 1 of the 2 prestige tiles from
+                the board and place it on 1 of boroughs connected by a matching
+                **vessel**.  Then take that vessel and place 1 skyscraper in
+                that same borough.
+              * **2nd Highest bid bonus**: Select the remaining prestige tile
+                from the board and repeat the process as the highest bidder
+                did.
+              * Players can forfeit their bid bonus (usually because they
+                don't want to increase a borough's value).
+              * Any leftover prestige tiles are removed from the game.
+          6. Place a number of skyscrapers **from your player board** and
+             place them in the borough with the mayor.
+              * If a player has skyscrapers on their board, they **must**
+                build them.
+              * If a player has no skyscrapers on their board, they may move
+                1 skyscraper from another borough to the mayor's borough.
+              * **Highest bid bonus**: Build 1 additional skyscraper.
+          7. The 1st player to have built a skyscraper in all boroughs flips
+             the Statue of Liberty tile and gains 4 points.
+              * If more than 1 player has done this at the end of the same
+                bidding round, all players get the 4 points.
+      - name: "Phase III: Activating Phase III Characters"
+        text: |
+          1. In player order, players may spend 1 dollar (each) to activate
+             each of their phase III characters.
+          2. All leftover cards in a players' hands are discarded.
+  - name: Game End
+    text: |
+      The game ends after the 5th round. Score as follows.
+
+      * Each character scores a number of points equal to the value in the top
+        right of the card.
+      * Calculate characters end game points (with a →| symbol).
+      * Score the 6 boroughs. Players earn points based on their rank (number
+        of skyscrapers) in each borough, with ties broken by the press track.
+          * **Important**: When determining rank, **include** the neutral
+            skyscrapers. e.g. If someone has only 1 skyscraper in a borough,
+            they rank *below* the neutrals.
+          * If you have no skyscrapers in a borough, you do not score any
+            points there.
+          * The total points for a borough is always the base tile plus
+            any prestige tiles in the borough.
+          * 1st: Score the total number points.
+          * 2nd: Half the number of points for 1st, rounded up.
+          * 3rd: Half the number of points for 2nd, rounded up.
+          * 4th: Half the number of points for 3rd, rounded up.
+          * 5th: Half the number of points for 4th, rounded up.
+      * Each player who built skyscrapers in all 6 boroughs earns 3 points.
+      * Each player who reached at least space 5 on the press track scores
+        3 points.
+      * Add dollars + skyscrapers on player boards (not the supply) and divide
+        by 2, rounded up, and score that many points.
+
+      The player with the most points wins. Break ties in press track order.
