@@ -1,0 +1,58 @@
+name: "New York City"
+description: "Build up NYC to acquire victory points"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+version: 1.0
+bgg_id: 346645
+expansions:
+sections:
+  - name: Setup
+    text: |
+      * Place the game board.
+      * Place the elevator display boards next to the main board.
+      * Sort the character tiles into light and dark backs.
+          * Light tiles: Split these between values 1 and 5 and shuffle
+            the 2 stacks face down. Then, reveal pairs of 1 and 5 tiles
+            (5 stacked on 1) equal to the number of players + 1.
+          * Dark tiles: Split these up by their values (1-5) and shuffle them
+            separately into face down stacks placed on the matching elevator
+            value.  Then reveal 4 tiles from each number (to the right of
+            the elevator).
+      * Shuffle the sequence tiles face down and randomly place 1 in each
+        borough, then turn them face up.
+      * Shuffle the base value tiles face down and randomly place 1 in each
+        borough, then turn them face up.
+      * Mix the 10 prestige tiles face down and then stack them in their
+        spot on the board (face down).
+      * Place the Statue of Liberty tile in its place on the board with the
+        "4" side up.
+      * Place the vessels on their matching (color) connections between the
+        districts.
+      * Create a supply of dollars near the board.
+      * Shuffle the cards and place them face down near the board.
+      * Place 2 neutral skyscrapers on each borough.
+      * Place the neutral press token on the press track based on player count:
+          * 2 players: Space 8
+          * 3 players: Space 7
+          * 4 players: Space 6
+      * Place the mayor token near the board.
+      * Each player should choose a color and:
+          * Take a player board.
+          * Take all of their skyscrapers.
+              * Place 1 skyscraper on the borough with the "X" tile.
+              * Place 4 skyscrapers on their player board.
+              * Place the rest of their skyscrapers in a general supply near
+                the board.
+          * Place their score marker on the 0 space of the point track.
+          * Take a press token.
+          * Take 1 dollar.
+          * Take 2 cards from the deck and place them face up below their
+            player board.
+      * Choose a start player and then, in clockwise order, stack each
+        player's press token on the start space with the 1st player's on
+        top and the last players on the bottom.
+      * In reverse turn order (press token stack), players select 1 set of
+        2 start characters and places them above their board.
+          * All leftover start characters can be returned to the box.
+
