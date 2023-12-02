@@ -37,4 +37,54 @@ sections:
                   * If the starting location is the general store or saloon,
                     you may choose any of the 3 adjacent spaces next to the
                     listed location.
+          * Places their wound token on the starting crosshair on their player
+            mat.
+          * Places 1 cube to the left of the 1 space on the LP (points) track.
+          * Places their 2 story discs to the left of the board near where
+            the story decks go.
+      * The most wanted player takes the 1st player token.
+          * If there is a tie or no wanted players, choose a 1st player at
+            random.
+          * It is advised that wanted players sit next to each other to avoid
+            early arrest.
+      * Shuffle the story cards together and split it roughly in half and place
+        the decks face down in their spot on the left side of the board.
+      * Select an unused mini to be the sheriff, snap on the brown ring, and
+        place it in the sheriff's office space in Darkrock.
+      * Select 6 unused minis to be bandits, snap on grey rings, and place
+        1 bandit at each bandit hideout location that does not contain a
+        player's mini.
+      * Shuffle the fight cards and place the deck in its spot in the upper
+        right of the board.
+      * Determine the game length to play and place the end game marker on
+        the matching location on the point track.
+          * Short: 15 points
+          * Average: 20 points
+          * Long: 25 points
+      * **If playing with the goal card variant**, also do:
+          * Use the goal side of the player mat.
+          * Each player takes 4 goal cards corresponding to their character.
+              * Discard 1 at random to the box without looking at it.
+              * Place the remaining goal cards face down in your player
+                area.
+          * Place all legendary tokens face down near the board.
+  - name: Gameplay
+    text: |
+      The game is played over a number of rounds until someone reaches the
+      end game marker on the score track. When this happens, finish the
+      current round, then play 1 more round.
 
+      Turns are comprised of 3 phases.
+    sections:
+      - name: Start of Turn Phase
+        text: |
+          * Check for start of turn effects.
+          * Choose 1:
+              * Gain $20
+              * (or) Draw 2 poker cards
+              * (or) Gain $10 and draw 1 poker card
+          * Choose a weapon and mount for the turn.
+      - name: Action Phase
+        text: |
+      - name: End of Turn Phase
+        text: |
