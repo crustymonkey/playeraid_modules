@@ -1,0 +1,40 @@
+name: "Western Legends"
+description: "Let's play in our old west sandbox."
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+version: 1.0
+bgg_id: 232405
+expansions:
+sections:
+  - name: Setup
+    text: |
+      * Place the board.
+      * Place the money cards in their spot on the boar.d
+      * Place all the item cards in the general store stand near the board.
+      * Shuffle the poker card deck and place it in its spot on the main board.
+      * Place the cattle tokens face down on the ranch spaces of their
+        matching color.
+      * Place the 2 prospecting dice and a gold nugget supply in their area
+        in the lower right of the main board.
+      * Each player:
+          * Takes a player mat in their color.
+              * Use the side without spaces for legendary tokens if playing
+                the standard game.
+          * Takes scoring cubes in their color.
+          * Takes story discs in their color.
+          * Takes a ring in their color.
+          * Draws 2 character cards, chooses 1, and returns the other to the
+            box.
+          * Gains all starting items, money, etc. listed on the back of their
+            character card.
+              * If the character has Marshal or Wanted points, place a cube on
+                the corresponding track.
+          * Selects a mini and snaps on the color base in your player color.
+              * Minis don't have to match your chosen character.
+              * Place the mini in its starting location from the back of
+                the selected character card.
+                  * If the starting location is the general store or saloon,
+                    you may choose any of the 3 adjacent spaces next to the
+                    listed location.
+
