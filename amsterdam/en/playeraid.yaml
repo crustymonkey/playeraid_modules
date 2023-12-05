@@ -3,7 +3,7 @@ description: "Be a merchant in Amsterdam or something...  Let's be real here, it
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.0
+version: 1.1
 bgg_id: 314582
 expansions:
 sections:
@@ -182,8 +182,8 @@ sections:
                       * Your barge can hold a max of 2 dock workers.
                   * If you have a dock worker on your barge of the matching
                     color of the dock, place that worker in the highest
-                    numbered spot on the adjacent building and immediately
-                    gain that many points.
+                    numbered spot on orange building on the lower right
+                    portion of the main board.
                       * The higher value spaces can only hold 1 dock worker,
                         but the larger bottom space can hold any number of
                         dock workers.
