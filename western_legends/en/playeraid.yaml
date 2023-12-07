@@ -75,6 +75,8 @@ sections:
       current round, then play 1 more round.
 
       Turns are comprised of 3 phases.
+
+      * Victory points in the game are referred to as LP (legend points).
     sections:
       - name: Start of Turn Phase
         text: |
@@ -86,5 +88,100 @@ sections:
           * Choose a weapon and mount for the turn.
       - name: Action Phase
         text: |
+          * Choose 3 actions to take during this phase.
+          * The same action may be performed more than once on a turn (unless
+            explicitly stated otherwise).
+        sections:
+          - name: Move
+            text: |
+              * Players without a mount have a movement of 2.
+              * Players *with* a mount have the movement value on the horse
+                **instead** (not in addition to).
+              * Movement can be orthogonal or diagonal.
+              * You cannot move into a space outlined by a red dashed line.
+              * Spaces are considered to be "in town" if they fall within
+                the thick lines surrounding the towns (Darkrock or Red Falls).
+          - name: Use A Card Action
+            text: |
+              * Cards with the word "ACTION" can be used during this phase.
+              * To use an action on a card:
+                  1. Place the card face up on the table and read the text
+                     out loud.
+                  2. Carry out the steps to complete the card's text.
+                  3. If the action is on a poker card, place it in the discard
+                     pile.
+                      * **If instead it is on a character/item card**, follow
+                        the instructions on the card.
+          - name: Fight Another Player
+            text: |
+              **A player can only fight another specific player ONCE per
+              turn!** More than 1 other player can be fought on the same
+              turn though (fight -> move -> fight).
+
+              1. Declaration -- Declare if the fight is an arrest, duel, or
+                 rob "type" of fight.
+                  * **For an "arrest"**, the player **must** have at least 1
+                    marshal point **and** the targeted player **must** have
+                    at least 1 wanted point.
+                  * A player can start a fight with someone in their same
+                    space.
+                  * Play cards:
+                      1. Starting with the active player, players alternate
+                         resolving any "start of fight" effects.
+                      2. The active player plays 1 poker card face down from
+                         their hand.
+                      3. The target player either also plays a poker card face
+                         down **or** declines to play a card and immediately
+                         loses the fight.
+                          * If the card play was declined, skip directly to
+                            step 4 "Reward".
+              2. Reveal -- Both players reveal their cards and resolve any
+                 bonus effects (character abilities, items, etc.).
+              3. Reaction -- Players may now use reaction effects on poker
+                 cards in their hand.
+                  1. The active player has the 1st opportunity to use a
+                     reaction or decline.
+                  2. The target player may play a reaction or decline.
+                  3. Continue steps 1 and 2 until both players decline.
+              4. Reward -- Players receive penalties and rewards.
+                  * The winner is the player with the highest value after
+                    all modifiers are applied.
+                      * Values **cannot** be increased.
+                      * Values can only be reduced to the rank of 2.
+                  * The active player wins all ties.
+                  * If the target player did not play a card in step 1, they
+                    are considered the loser.
+                  * The loser always takes 1 wound and draws 1 poker card.
+                  * Resolve the fight type:
+                      * Arrest (marshal players only)
+                          * If the active player wins, they gain 1 marshal
+                            point.
+                          * The arrested player is placed in the sheriff's
+                            office space with the sheriff
+                          * The wanted player loses all wanted points, all
+                            cattle tokens, and ½ their money and gold
+                            nuggets, rounded up.
+                      * Duel
+                          * If the active player wins, they gain 2 LP.
+                      * Rob
+                          * If the active player wins, they gain 1 wanted
+                            point and may choose to steal either ½ of the
+                            target's money **or** gold nuggets, rounded up.
+                              * The active player may also steal 1 cattle
+                                token (if the target player has 1).
+              5. Place all poker cards played during the fight into the
+                 discard.
+          - name: Take a Location Action
+            text: |
+              * To take a location action, you must be in the space of
+                the location.
+                  * There are multiple space for the general store and saloon.
+              * **General store**
+                  * Purchase or upgrade item cards by spending money.
+                  * A player may only own **1** copy of each item card.
+                  * A player is limited to **3** misc. items.
+                  * When buying a mount/weapon, you may immediately choose
+                    it as your primary mount/weapon.
+
       - name: End of Turn Phase
         text: |
