@@ -76,7 +76,22 @@ sections:
 
       Turns are comprised of 3 phases.
 
+      ### General Rules
       * Victory points in the game are referred to as LP (legend points).
+      * Players can have a **max** of 4 gold nuggets.
+      * Players can have a **max** of $120.
+      * Players can have a **max** of 1 cattle token at a time.
+      * Players can have a **max** of 5 cards - 1 card for each wound. This is
+        only enforced at the [end of your turn](#end_turn).
+      * Marshal players can become wanted players, but not the reverse, unless
+        the wanted player is arrested (and loses all their wanted points).
+      * Bandits are always removed from play after fighting a player,
+        regardless of outcome.
+      * Players can play a **max** of 1 "Reputation" card on their turn.
+      * When the sheriff moves onto a space with a wanted player, that player
+        must discard 1 poker card before initiating a fight.
+      * Wanted players cannot move onto a space with the sheriff.
+      * The "Cheat" poker card can be used by either players or the "dealer".
     sections:
       - name: Start of Turn Phase
         text: |
@@ -113,6 +128,7 @@ sections:
                       * **If instead it is on a character/item card**, follow
                         the instructions on the card.
           - name: Fight Another Player
+            id: fight
             text: |
               **A player can only fight another specific player ONCE per
               turn!** More than 1 other player can be fought on the same
@@ -176,12 +192,187 @@ sections:
               * To take a location action, you must be in the space of
                 the location.
                   * There are multiple space for the general store and saloon.
-              * **General store**
+            sections:
+              - name: General Store
+                text: |
                   * Purchase or upgrade item cards by spending money.
                   * A player may only own **1** copy of each item card.
                   * A player is limited to **3** misc. items.
                   * When buying a mount/weapon, you may immediately choose
                     it as your primary mount/weapon.
+              - name: Play Poker (Saloon)
+                text: |
+                  1. You pay a $10 ante and draw 1 poker card.
+                  2. The saloon adds $50 to the ante.
+                  3. If any other players are in the same town (they
+                     don't have to be at the saloon), they can also
+                     pay a $10 ante and draw a poker card.
+                  4. **If no other players opt to play poker**:
+                      * The player to the right of the active player
+                        sets their poker cards aside and draws 4 poker
+                        cards. This player will play as the "dealer".
+                  5. Flip the top 3 cards of the poker deck as "the flop".
+                  6. Using up to 2 cards in their hand, players make the best
+                     [poker hand](#poker_hands) they can.
+                  7. The player with the best hand takes all the antes.
+                      * The active player wins any ties.
+                      * If the active player wins, they also gain 1 LP.
+                      * If the "dealer" wins, they gain no reward. All money
+                        is returned to the supply.
+                      * If 2 non-active players tie, split the pot, rounded
+                        down, returning excess to the supply.
+                  8. All played poker cards are discarded, including "the flop".
+              - name: Prospect for Gold (Mine)
+                text: |
+                  Roll the 2 prospecting dice and gain the rewards.
 
+                  **Important**: Players can have a max of 4 gold nuggets.
+
+                  | Symbol | Reward |
+                  | ------ | ------ |
+                  | ![nugget](/static/img/western_legends/d_nugget.png) | Gain 1 gold nugget. |
+                  | ![money](/static/img/western_legends/d_money.png) | Gain $10. |
+                  | ![dust](/static/img/western_legends/d_dust.png) | Gain $10 and reroll the die, applying the next result as well. |
+                  | ![x](/static/img/western_legends/d_nothing.png) | Gain nothing. |
+              - name: Deposit Nuggets (Bank)
+                text: |
+                  **Important**: Players can have a max of $120. Additional
+                  money gained would be lost.
+
+                  * Spend an action to sell your gold nuggets for $20 and 1 LP
+                    each.
+              - name: Heist (Bank)
+                text: |
+                  You must 1st fight the bank guard.
+
+                  1. The player to the right of the active player draws 3
+                     fight cards, chooses 1, and plays it face down.
+                  2. The active player chooses 1 poker card and plays it face
+                     down.
+                  3. Reveal both cards.
+                  4. Apply effects from characters, items, etc.
+                  5. The active player can play any number of reactions.
+                  6. The highest value wins.
+                      * **The active player loses ties**.
+                  7. If the active player wins, they gain $80 and 3 wanted
+                     points.
+                  8. If the active player loses, they gain 1 wound, 1 wanted
+                     point, and 1 poker card.
+                  9. Discard all played poker cards and return all fight cards
+                     to the bottom of the fight deck (in random order).
+              - name: Heal (Doctor's Office)
+                text: |
+                  * You may spend $10 to lose all of your wounds.
+                  * Draw 1 poker card for each wound lost.
+              - name: Revel (Cabaret)
+                text: |
+                  * You may spend money to gain LP.
+                      * $30: 1 LP
+                      * $60: 2 LP
+                      * $90: 3 LP
+                      * $120: 4 LP
+              - name: Acquire and Deliver Cattle (Ranch)
+                text: |
+                  * Gain 1 face down cattle token. Place this on your player
+                    mat.
+                      * You may look at the reward on your cattle token at any
+                        time.
+                      * **You can only have 1 cattle token at a time**.
+                  * (Rail Station) -- You may deliver your cattle token to
+                    gain 1 marshal point and the reward listed on the token.
+                      * This does **not** cost an action.
+                      * Shuffle the cattle token into its respective ranch
+                        space.
+                  * (Ranch of opposing color) -- You may deliver your cattle
+                    token to gain 1 wanted point and the reward on the cattle
+                    token.
+                      * This does **not** cost an action.
+                      * Shuffle the cattle token into its respective ranch
+                        space.
+              - name: Work (any location)
+                text: |
+                  Spend an action to gain $10.
       - name: End of Turn Phase
+        id: end_turn
         text: |
+          1. Resolve all story cards with the required number of discs on them.
+          2. Discard down to your max hand size of 5 cards - 1 card for each
+             wound. e.g. You can keep a max of 3 cards if you have 2 wounds.
+          3. If you are wanted, gain LP based on your row on the wanted track.
+          4. If anyone meets or exceeds the amount of LP set for game end,
+             the [end game](#end_game) is triggered.
+              1. Finish the current round.
+              2. Play 1 additional final round.
+          5. The player to the left starts their turn.
+  - name: End of Game
+    id: end_game
+    text: |
+      * Once a player meets or exceeds the LP set for this game at the
+        [end of their turn](#end_turn)
+          * Finish the current round.
+          * Then play 1 final round.
+
+      ### Final Scoring
+      * Gain LP for each upgraded mount/weapon.
+          * Shown in the top left corner of the cards.
+      * Gain 1 LP for every $60 for a max of 2 LP.
+      * Lose 1 LP for each wound.
+      * The most wanted player gains 3 LP.
+          * If there is a tie, each tied player gains 1 LP instead.
+          * Each *other* wanted player gains 1 LP.
+      * Marshal players gain LP based on which row they are in on the Marshal
+        track.
+      * If playing with goals, reveal and gain LP based on the legendary tokens
+        they have.
+
+      The player with the most LP wins. If there is a tie:
+
+      1. The player with the most marshal or wanted points wins.
+      2. The player with the most gold nuggets wins.
+      3. The player with the fewest wounds wins.
+      4. The tied players share the victory.
+  - name: Goal Card Variant
+    text: |
+      ## Setup
+      * Use the goal side of each player mat (it has spaces for legendary
+        tokens).
+      * Each player takes the 4 goals matching their character card and
+        discards 1 at random to the box.
+          * Keep all other goal cards private.
+      * Place all the legendary tokens face down in a supply.
+
+      ## Completing a Goal
+      * When the requirements for a goal are met, reveal the goal card and
+        take a number of legendary tokens from the supply = to the number of
+        completed goals.
+          * **You may only keep a number of legendary tokens = to your number
+            of completed goals**. Shuffle the excess back into the supply.
+      * This does **not** require an action.
+      * More than 1 goal can be completed on a turn.
+
+      ## Distribution
+      * 9 tokens worth 2 LP
+      * 6 tokens worth 1 LP
+      * 3 tokens worth 3 LP
+
+      ## End Game
+      * Gain points for your legendary tokens.
+      * There is no penalty for uncompleted goals.
+  - name: Poker Hands
+    id: poker_hands
+    text: |
+      Poker hands in order from highest to lowest.
+
+      | Name | Description |
+      | ---- | ----------- |
+      | Royal flush | A-10 all of the same suit |
+      | 5 of a kind | 4 cards of the same value + the Cheat card |
+      | Straight flush | 5 cards in a sequence, all the same suit |
+      | 4 of a kind | 4 cards of the same value |
+      | Full house | 3 cards of the same value + 2 other cards of the same value |
+      | Flush | 5 cards of the same suit, but not in a sequence |
+      | Straight | 5 cards in a sequence, but not of the same suit |
+      | 3 of a kind | 3 cards of the same value |
+      | 2 pair | 2 different pairs |
+      | Pair | 2 cards of the same value |
+      | High card | The highest card you've played is your hand |
