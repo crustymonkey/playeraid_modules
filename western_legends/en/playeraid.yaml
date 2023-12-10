@@ -2,7 +2,7 @@ name: "Western Legends"
 description: "Let's play in our old west sandbox."
 text_type: markdown
 credits: "Jay Deiman"
-enabled: false
+enabled: true
 version: 1.0
 bgg_id: 232405
 expansions:
@@ -80,14 +80,17 @@ sections:
       * Victory points in the game are referred to as LP (legend points).
       * Players can have a **max** of 4 gold nuggets.
       * Players can have a **max** of $120.
+      * You may have a **max** of 3 misc. [items](#items).
+      * Players may never own more than 1 copy of any item at a time.
+      * You can have a **max** of 3 [wounds](#wounds).
       * Players can have a **max** of 1 cattle token at a time.
-      * Players can have a **max** of 5 cards - 1 card for each wound. This is
-        only enforced at the [end of your turn](#end_turn).
+      * Players can have a **max** of 5 poker cards - 1 card for each wound.
+        This is only enforced at the [end of your turn](#end_turn).
+      * Players can play a **max** of 1 "Reputation" card on their turn.
       * Marshal players can become wanted players, but not the reverse, unless
         the wanted player is arrested (and loses all their wanted points).
       * Bandits are always removed from play after fighting a player,
         regardless of outcome.
-      * Players can play a **max** of 1 "Reputation" card on their turn.
       * When the sheriff moves onto a space with a wanted player, that player
         must discard 1 poker card before initiating a fight.
       * Wanted players cannot move onto a space with the sheriff.
@@ -194,6 +197,7 @@ sections:
                   * There are multiple space for the general store and saloon.
             sections:
               - name: General Store
+                id: general
                 text: |
                   * Purchase or upgrade item cards by spending money.
                   * A player may only own **1** copy of each item card.
@@ -201,6 +205,7 @@ sections:
                   * When buying a mount/weapon, you may immediately choose
                     it as your primary mount/weapon.
               - name: Play Poker (Saloon)
+                id: poker
                 text: |
                   1. You pay a $10 ante and draw 1 poker card.
                   2. The saloon adds $50 to the ante.
@@ -223,6 +228,7 @@ sections:
                         down, returning excess to the supply.
                   8. All played poker cards are discarded, including "the flop".
               - name: Prospect for Gold (Mine)
+                id: prospect
                 text: |
                   Roll the 2 prospecting dice and gain the rewards.
 
@@ -235,6 +241,7 @@ sections:
                   | ![dust](/static/img/western_legends/d_dust.png) | Gain $10 and reroll the die, applying the next result as well. |
                   | ![x](/static/img/western_legends/d_nothing.png) | Gain nothing. |
               - name: Deposit Nuggets (Bank)
+                id: deposit
                 text: |
                   **Important**: Players can have a max of $120. Additional
                   money gained would be lost.
@@ -242,6 +249,7 @@ sections:
                   * Spend an action to sell your gold nuggets for $20 and 1 LP
                     each.
               - name: Heist (Bank)
+                id: heist
                 text: |
                   You must 1st fight the bank guard.
 
@@ -261,10 +269,12 @@ sections:
                   9. Discard all played poker cards and return all fight cards
                      to the bottom of the fight deck (in random order).
               - name: Heal (Doctor's Office)
+                id: heal
                 text: |
                   * You may spend $10 to lose all of your wounds.
                   * Draw 1 poker card for each wound lost.
               - name: Revel (Cabaret)
+                id: revel
                 text: |
                   * You may spend money to gain LP.
                       * $30: 1 LP
@@ -272,6 +282,7 @@ sections:
                       * $90: 3 LP
                       * $120: 4 LP
               - name: Acquire and Deliver Cattle (Ranch)
+                id: cattle
                 text: |
                   * Gain 1 face down cattle token. Place this on your player
                     mat.
@@ -408,6 +419,79 @@ sections:
       8. Remove the bandit from the board regardless of outcome.
       9. Discard all played poker cards and return the fight cards to the
          bottom of the fight deck (random order).
+
+      ## The Sheriff
+      * The sheriff starts at the sheriff's office in Darkrock.
+      * As long as there is at least 1 wanted player, the sheriff will move
+        when a story card dictates it.
+      * The sheriff can also be moved via the Manhunt poker card (again,
+        as long as there is at least 1 wanted player).
+      * If the sheriff enters a space with a wanted player, the player must
+        immediately discard 1 poker card, if they have any.
+          * If there are 2+ wanted players in the space, the person who
+            moved the sheriff decides who discards.
+
+      ### Arrest Attempt
+      1. The wanted player places 1 poker card face down.
+      2. The player to the right of the wanted player draws 4 fight cards and
+         plays 1 face down.
+      3. Reveal both cards and apply any effects from characters, items, etc.
+      4. The active player may play any number of reactions.
+      5. Apply the effects from the fight card.
+      6. The highest value wins, with the active player **losing** ties.
+      7. Discard the played poker cards and put the fight cards on the bottom
+         of its deck in random order.
+
+      * If the sheriff arrests the wanted player, they are placed at the
+        sheriff's office **with the sheriff** and they:
+          * Gain 1 wound
+          * Draw 1 poker card
+          * Lose all wanted points
+          * Lose all cattle
+          * Lose half their money, rounded up
+          * Lose half their gold nuggets, rounded up
+      * If the wanted player wins, place the sheriff at the sheriff's office.
+  - name: Item Cards
+    id: items
+    text: |
+      * **Players may never own more than 1 copy of any item at a time**.
+
+      ### Mounts
+      * These will provide you with increased movement instead of the default
+        of 2.
+      * You may own more than 1 mount, but only 1 can be "active" during your
+        turn.
+          * You may change your mount at the beginning of your turn.
+      * You can upgrade a mount by paying the cost in the upper left a 2nd
+        time at the general store.
+
+      ### Weapons
+      * You may own more than 1 weapon, but only 1 can be "active" during your
+        turn.
+          * You may change your weapon at the beginning of your turn.
+      * You can upgrade a weapon by paying the cost in the upper left a 2nd
+        time at the general store.
+
+      ### Misc. Items
+      * These provide a variety of effects.
+      * These cannot be upgraded.
+      * You may have a **max** of 3 misc. items
+          * You cannot purchase another misc. item when you already have 3.
+  - name: Wounds
+    id: wounds
+    text: |
+      * Your hand size is reduced by 1 for each wound they have (from
+        the default of 5).
+          * This is only enforced at the [end of your turn](#end_turn).
+      * You lose 1 LP for each wound they have at the [end of the
+        game](#end_game).
+      * You can have a max of 3 wounds.
+          * Any additional wounds that would be gained are ignored.
+      * You can heal wounds by:
+          * Pay $10 at the Dr.'s office to lose all wounds.
+          * Use the bonus ability on the Bulletproof poker card in a fight.
+          * Purchase the whiskey item.
+          * Use the action ability on the provisions item.
   - name: Goal Card Variant
     text: |
       ## Setup
@@ -453,3 +537,16 @@ sections:
       | 2 pair | 2 different pairs |
       | Pair | 2 cards of the same value |
       | High card | The highest card you've played is your hand |
+  - name: Location Icons
+    text: |
+      | Icon | Location |
+      | ---- | -------- |
+      | ![general](/static/img/western_legends/general.png) | [General store](#general) |
+      | ![poker](/static/img/western_legends/poker.png) | [Saloon](#poker) |
+      | ![mine](/static/img/western_legends/prospect.png) | [Mine](#prospect) |
+      | ![deposit](/static/img/western_legends/deposit.png) | [Bank](#deposit) |
+      | ![heal](/static/img/western_legends/heal.png) | [Doctor's office](#heal) |
+      | ![revel](/static/img/western_legends/revel.png) | [Cabaret](#revel) |
+      | ![acquire](/static/img/western_legends/acquire.png) | [Ranch](#cattle) |
+      | ![wrangle](/static/img/western_legends/wrangle.png) | [Ranch](#cattle) |
+      | ![rail](/static/img/western_legends/rail.png) | [Rail station](#cattle) |
