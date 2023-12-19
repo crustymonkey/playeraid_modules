@@ -3,7 +3,7 @@ description: "Breed foxes for fun"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.0
+version: 1.1
 bgg_id: 368432
 expansions:
 sections:
@@ -27,8 +27,10 @@ sections:
             the left side of the board.
           * Place the other 2 with side B face up in the bottom 2 slots.
       * Separately shuffle the decks of female parents and male parents.
-          * Deal out a row of face up male parents.
-          * Deal out a row of face up female parents.
+          * Deal out a row of face up male parents equal to number of players
+            + 1.
+          * Deal out a row of face up female parents equal to number of players
+            + 1.
           * Place the respective decks at the end of their rows.
       * Create a supply of the following near the board:
           * Trait dice
@@ -46,10 +48,10 @@ sections:
           * 1 green friendly die
           * 1 dry-erase marker
           * 1 player aid card.
+      * Each player shuffles their blank foxes and places them in a
+        facedown pile to the right of their player mat.
       * Determine a 1st player randomly and give them the 1st turn order token.
           * In clockwise order give each player the next numbered turn token.
-      * Shuffles their blank foxes and places them in a facedown pile
-        to the right of their player mat.
       * Based on turn order, players receive friendly tokens:
           * 1st: no token
           * 2nd/3rd: 1 token
@@ -57,7 +59,7 @@ sections:
           * 6th: 3 tokens
       * Deal each player 3 study cards and each player chooses 1 to keep and
         discards the other 2 to the bottom of the deck.
-          * Place you study card face up near your player mat.
+          * Place your study card face up near your player mat.
   - name: Gameplay
     text: |
       The game is played over 5 rounds, with each round consisting of 4 phases.
@@ -166,7 +168,8 @@ sections:
       - name: "Phase 3: Research (simultaneous)"
         text: |
           1. To complete a study level, you must assign **1** of your pups
-             to a study that meets these requirements:
+             to a study that meets **all** of the requirements in the next
+             column of a study:
               * Use a fox meeple to track your progress on studies.
               * Each study level shows a minimum number of marked spaces
                 on 2 or more trait tracks.
@@ -245,6 +248,8 @@ sections:
                 place a meeple on the track in the same space (next empty).
               * If 1 player has multiple tied foxes, they still place only
                 1 meeple.
+              * **All other players** receive the friendliness tokens shown
+                below the fox slot for the current round.
           4. Refill the kennel such that there is at least 1 more fox than
              the number of players in each row.
               * If a row already meets the minimum, do not draw any additional
