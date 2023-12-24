@@ -5,9 +5,12 @@ credits: "Jay Deiman"
 enabled: true
 version: 1.0
 yt_videos:
+  - WuknPdmcPCw
+  - FiPDtvXXgRA
+  - 9FX5z64eI_8
 bgg_id: 283393
 expansions:
-    - Cold Waters
+  - Cold Waters
 sections:
     - name: Setup
       text: |
