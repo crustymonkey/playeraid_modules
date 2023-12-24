@@ -3,6 +3,7 @@ description: Compete to become the richest person while building up Carson City,
 credits: Keith Rudolph
 enabled: true
 version: 1.0
+yt_videos:
 bgg_id: 39938
 text_type: markdown
 expansions:

@@ -3,6 +3,7 @@ description: Azul is an abstract game about building tile walls.
 credits: Sean Owens
 enabled: true
 version: 1.0
+yt_videos:
 bgg_id: 230802
 text_type: markdown
 expansions:

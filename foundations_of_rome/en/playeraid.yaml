@@ -4,6 +4,7 @@ text_type: markdown
 credits: "Jay Deiman"
 enabled: true
 version: 1.0
+yt_videos:
 bgg_id: 284189
 expansions:
     - Monuments

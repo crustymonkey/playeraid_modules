@@ -2,6 +2,7 @@ name: Photosynthesis
 description: Grow some trees.
 enabled: true
 version: 1.0
+yt_videos:
 bgg_id: 218603
 text_type: markdown
 expansions:

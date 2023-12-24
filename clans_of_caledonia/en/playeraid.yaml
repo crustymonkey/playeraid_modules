@@ -2,6 +2,7 @@ name: Clans of Caledonia
 description: Whiskey!
 enabled: true
 version: 1.0
+yt_videos:
 bgg_id: 216132
 credits: Jay Deiman
 text_type: markdown

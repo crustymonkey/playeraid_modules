@@ -3,6 +3,7 @@ description: "Roll some dice and get some combos"
 credits: Jay Deiman (BGG user **nyfilmfest** for original translation content)
 enabled: true
 version: 1.0
+yt_videos:
 bgg_id: 244522
 text_type: markdown
 expansions:

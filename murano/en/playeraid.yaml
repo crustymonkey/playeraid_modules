@@ -3,6 +3,7 @@ description: See to become the most glorious merchant on the islands of Murano.
 credits: Keith Rudolph
 enabled: true
 version: 1.0
+yt_videos:
 bgg_id: 163413
 text_type: markdown
 expansions:

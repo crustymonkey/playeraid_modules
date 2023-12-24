@@ -2,6 +2,7 @@ name: "Cthulhu: Death May Die"
 description: Stop the ritual and destroy the old one!
 enabled: true
 version: 1.0
+yt_videos:
 bgg_id: 253344
 text_type: markdown
 credits: Jay Deiman

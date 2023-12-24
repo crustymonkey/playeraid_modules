@@ -3,6 +3,7 @@ description: Use your worker dice to raise the legendary and breathtaking Pyrami
 credits: Keith Rudolph
 enabled: true
 version: 1.0
+yt_videos:
 bgg_id: 229853
 text_type: markdown
 expansions:

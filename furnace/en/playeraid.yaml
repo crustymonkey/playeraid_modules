@@ -4,6 +4,7 @@ text_type: markdown
 credits: "Jay Deiman"
 enabled: true
 version: 2.0
+yt_videos:
 bgg_id: 318084
 expansions:
     - Interbellum

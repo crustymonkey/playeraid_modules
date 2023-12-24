@@ -3,6 +3,7 @@ description: Acquire shares and build up the various airlines in Europe in order
 credits: Keith Rudolph
 enabled: true
 version: 1.0
+yt_videos:
 bgg_id: 90419
 text_type: markdown
 expansions:

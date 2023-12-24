@@ -3,6 +3,7 @@ description: Develop your civilization through balancing between time and wealth
 credits: Keith Rudolph
 enabled: true
 version: 1.0
+yt_videos:
 bgg_id: 217780
 text_type: markdown
 expansions:

@@ -4,6 +4,7 @@ text_type: markdown
 credits: "Jay Deiman"
 enabled: true
 version: 3.0
+yt_videos:
 bgg_id: 312484
 expansions:
     - Expedition Leaders

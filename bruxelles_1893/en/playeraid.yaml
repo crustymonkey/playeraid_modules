@@ -3,6 +3,7 @@ description: Build buidlings in the Art Nouveau style in the city of Brussels.
 credits: Keith Rudolph
 enabled: true
 version: 1.0
+yt_videos:
 bgg_id: 144592
 text_type: markdown
 expansions:

@@ -3,6 +3,7 @@ description: Travel to cities along the silk road, trading silk, spice, gold & j
 credits: Keith Rudolph
 enabled: true
 version: 1.0
+yt_videos:
 bgg_id: 283948
 text_type: markdown
 expansions:

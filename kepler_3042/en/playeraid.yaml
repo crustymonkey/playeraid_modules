@@ -3,6 +3,7 @@ description: Kepler is a game of exploration and colonization.
 credits: Sean Owens
 enabled: true
 version: 1.0
+yt_videos:
 bgg_id: 198190
 text_type: markdown
 expansions:

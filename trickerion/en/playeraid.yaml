@@ -3,6 +3,7 @@ description: In a Victorian steampunk world, magicians perform dazzling tricks f
 credits: Keith Rudolph
 enabled: true
 version: 1.0
+yt_videos:
 bgg_id: 163068
 text_type: markdown
 expansions:

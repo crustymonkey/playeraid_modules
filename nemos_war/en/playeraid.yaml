@@ -3,6 +3,7 @@ description: Sail the Seven Seas as the hardened captain Nemo, fighting the Impe
 credits: Keith Rudolph
 enabled: true
 version: 1.0
+yt_videos:
 bgg_id: 187617
 text_type: markdown
 expansions:

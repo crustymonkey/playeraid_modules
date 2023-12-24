@@ -4,6 +4,7 @@ description: |
 credits: "CMON Rising Sun rules manual and FAQ, transferred to PlayerAid by Cory Osborn (https://boardgamegeek.com/user/GamePimp)"
 enabled: true
 version: 1.0
+yt_videos:
 bgg_id: 205896
 text_type: markdown
 expansions:

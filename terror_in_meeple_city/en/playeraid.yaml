@@ -3,6 +3,7 @@ description: Prove you're the toughest monster in Meeple City by smashing buildi
 credits: Keith Rudolph
 enabled: true
 version: 1.0
+yt_videos:
 bgg_id: 97903
 text_type: markdown
 expansions:

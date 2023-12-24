@@ -3,6 +3,7 @@ description: Coordinate programmer and scientist to gather data from the depths 
 credits: Keith Rudolph
 enabled: true
 version: 1.0
+yt_videos:
 bgg_id: 289223
 text_type: markdown
 expansions:

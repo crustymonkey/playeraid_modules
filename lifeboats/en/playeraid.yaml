@@ -3,6 +3,7 @@ description: Flee the wreckage of the Santa Timea in leaky lifeboats and do anyt
 credits: Keith Rudolph
 enabled: true
 version: 1.0
+yt_videos:
 bgg_id: 249
 expansions:
 text_type: markdown

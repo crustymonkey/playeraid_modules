@@ -3,6 +3,7 @@ description: The epic conflict between the Galactic Empire and the Rebel Allianc
 credits: Keith Rudolph
 enabled: true
 version: 1.0
+yt_videos:
 bgg_id: 187645
 text_type: markdown
 expansions:

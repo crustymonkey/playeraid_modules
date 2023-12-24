@@ -2,6 +2,7 @@ name: The Bloody Inn
 description: Eliminate your guests.
 enabled: true
 version: 1.0
+yt_videos:
 bgg_id: 180593
 text_type: markdown
 credits: Jay Deiman

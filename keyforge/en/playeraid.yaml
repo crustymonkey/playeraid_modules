@@ -3,6 +3,7 @@ description: A "unique" game from Fantasy Flight
 credits: Jay Deiman
 enabled: true
 version: 1.0
+yt_videos:
 bgg_id: 257501
 text_type: markdown
 expansions:

@@ -3,6 +3,7 @@ description: A 2-player worker placement game that works!
 credits: Jay Deiman
 enabled: true
 version: 1.0
+yt_videos:
 bgg_id: 118048
 text_type: markdown
 expansions:
