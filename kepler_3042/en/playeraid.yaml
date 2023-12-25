@@ -4,10 +4,10 @@ credits: Sean Owens
 enabled: true
 version: 1.0
 yt_videos:
+  - https://www.youtube.com/watch?v=GaI0u0yZdYg&pp=ygUYa2VwbGVyIDMwNDIgIGhvdyB0byBwbGF5
 bgg_id: 198190
 text_type: markdown
 expansions:
-
 sections:
  - name: Setup
    text: |

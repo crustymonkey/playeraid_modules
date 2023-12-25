@@ -4,6 +4,10 @@ credits: Jay Deiman
 enabled: true
 version: 1.0
 yt_videos:
+  - https://www.youtube.com/watch?v=yUJTn35nCMA&pp=ygUaa2V5Zm9yZ2UgMzA0MiAgaG93IHRvIHBsYXk%3D
+  - https://www.youtube.com/watch?v=gHrE78HvLmA&pp=ygUaa2V5Zm9yZ2UgMzA0MiAgaG93IHRvIHBsYXk%3D
+  - https://www.youtube.com/watch?v=l08yGnggzoI&pp=ygUaa2V5Zm9yZ2UgMzA0MiAgaG93IHRvIHBsYXk%3D
+  - https://www.youtube.com/watch?v=d5mtpGmXiIg&pp=ygUaa2V5Zm9yZ2UgMzA0MiAgaG93IHRvIHBsYXk%3D
 bgg_id: 257501
 text_type: markdown
 expansions:
@@ -29,7 +33,7 @@ sections:
             text: |
                 If the active player has enough Æmber to forge a key, they
                 **must** do so.
-                
+
                 * **The default cost to forge a key is 6 Æmber**.  Some card
                   abilities may modify this.
                 * No more than 1 key can be forged each turn.

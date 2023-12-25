@@ -3,6 +3,9 @@ description: Grow some trees.
 enabled: true
 version: 1.0
 yt_videos:
+  - https://www.youtube.com/watch?v=a84AJ5ht_ng&pp=ygUacGhvdG9zeW50aGVzaXMgaG93IHRvIHBsYXk%3D
+  - https://www.youtube.com/watch?v=GkwW_vOlmEY&pp=ygUacGhvdG9zeW50aGVzaXMgaG93IHRvIHBsYXk%3D
+  - https://www.youtube.com/watch?v=mbFeRj8XqLk&pp=ygUacGhvdG9zeW50aGVzaXMgaG93IHRvIHBsYXk%3D
 bgg_id: 218603
 text_type: markdown
 expansions:

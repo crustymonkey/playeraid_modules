@@ -5,6 +5,10 @@ credits: "Jay Deiman"
 enabled: true
 version: 3.0
 yt_videos:
+  - https://www.youtube.com/watch?v=f_jPp8EohkQ&pp=ygUfbG9zdCBydWlucyBvZiBhcm5hayBob3cgdG8gcGxheQ%3D%3D
+  - https://www.youtube.com/watch?v=E_uidCuyPB4&pp=ygUfbG9zdCBydWlucyBvZiBhcm5hayBob3cgdG8gcGxheQ%3D%3D
+  - https://www.youtube.com/watch?v=yg8CwM9ixo0&pp=ygUfbG9zdCBydWlucyBvZiBhcm5hayBob3cgdG8gcGxheQ%3D%3D
+  - https://www.youtube.com/watch?v=KcafqtLN2EE&pp=ygUfbG9zdCBydWlucyBvZiBhcm5hayBob3cgdG8gcGxheQ%3D%3D
 bgg_id: 312484
 expansions:
     - Expedition Leaders

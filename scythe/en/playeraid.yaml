@@ -5,6 +5,11 @@ credits: "Jay Deiman"
 enabled: true
 version: 1.0
 yt_videos:
+  - https://www.youtube.com/watch?v=ffMLIL5qGQg&t=1238s&pp=ygUSc2N5dGhlIGhvdyB0byBwbGF5
+  - https://www.youtube.com/watch?v=MrmFWOm6U0g&pp=ygUSc2N5dGhlIGhvdyB0byBwbGF5
+  - https://www.youtube.com/watch?v=Ypavv5xpfVk&pp=ygUSc2N5dGhlIGhvdyB0byBwbGF5
+  - https://www.youtube.com/watch?v=lULYODzkOAg&t=29s&pp=ygUSc2N5dGhlIGhvdyB0byBwbGF5
+  - https://www.youtube.com/watch?v=qA5Q7xCemXc&pp=ygUSc2N5dGhlIGhvdyB0byBwbGF5
 bgg_id: 169786
 expansions:
     - Invaders from Afar

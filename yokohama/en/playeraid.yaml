@@ -4,6 +4,8 @@ credits: Keith Rudolph
 enabled: true
 version: 1.0
 yt_videos:
+  - https://www.youtube.com/watch?v=GwfL12sUGYg&pp=ygUUeW9rb2hhbWEgaG93IHRvIHBsYXk%3D
+  - https://www.youtube.com/watch?v=vJFbymw_0Eo&pp=ygUUeW9rb2hhbWEgaG93IHRvIHBsYXk%3D
 bgg_id: 196340
 text_type: markdown
 expansions:

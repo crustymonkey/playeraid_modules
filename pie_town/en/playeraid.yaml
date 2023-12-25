@@ -5,6 +5,8 @@ credits: Jay Deiman
 enabled: true
 version: 1.0
 yt_videos:
+  - https://www.youtube.com/watch?v=qAlOiBMB-18&pp=ygUUcGllIHRvd24gaG93IHRvIHBsYXk%3D
+  - https://www.youtube.com/watch?v=-ow5ghulsNo&pp=ygUUcGllIHRvd24gaG93IHRvIHBsYXk%3D
 bgg_id: 233976
 expansions:
 sections:
@@ -22,14 +24,14 @@ sections:
           *  1 of each **common ingredient** (1 yellow, green, and red apple)
 
           Each player performs:
-              
+
           *  Place an *apple upgrade marker* on "8" in the storage section
              of the store board
           *  Place a *chef's hat upgrade marker* on "1" for "VPs Per Pie
              Baked" in the Kitchen section
           *  Place the *lock upgrade marker* over the 2nd dashed "Bake" action
              space
-          
+
           *  Assign a start player and give them the start player marker.
           *  Place the score marker at 0 on the score board
           *  Set the round marker on the starting round of the round track
@@ -73,7 +75,7 @@ sections:
                       When placing a worker die in the orchard, players may
                       take ingredients from any of the 3 adjacent spaces **equal
                       to the die level**.
-                      
+
                       **Players may only take ingredients they have the capacity
                       to store**.
                 - name: Bake (+1 to die)
@@ -81,7 +83,7 @@ sections:
                       Players bake pies using the ingredients in storage.  The
                       **maximum number of pies that can be baked is equal to
                       the worker die level**.
-                      
+
                       Pies of the following types can be baked (in addition
                       to the secret recipes below)
 

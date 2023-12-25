@@ -5,6 +5,8 @@ credits: "Jay Deiman"
 enabled: true
 version: 1.0
 yt_videos:
+  - https://www.youtube.com/watch?v=my8_V8Rcryg&pp=ygUgZm91bmRhdGlvbnMgb2Ygcm9tZSAgaG93IHRvIHBsYXk%3D
+  - https://www.youtube.com/watch?v=as1IZZhFBrg&pp=ygUgZm91bmRhdGlvbnMgb2Ygcm9tZSAgaG93IHRvIHBsYXk%3D
 bgg_id: 284189
 expansions:
     - Monuments

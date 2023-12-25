@@ -5,6 +5,9 @@ credits: "Jay Deiman"
 enabled: true
 version: 2.0
 yt_videos:
+  - https://www.youtube.com/watch?v=bUxi_yM8u9w&pp=ygUTZnVybmFjZSBob3cgdG8gcGxheQ%3D%3D
+  - https://www.youtube.com/watch?v=hnLbXgWDeOk&pp=ygUTZnVybmFjZSBob3cgdG8gcGxheQ%3D%3D
+  - https://www.youtube.com/watch?v=Fku1PCj7Nps&pp=ygUTZnVybmFjZSBob3cgdG8gcGxheQ%3D%3D
 bgg_id: 318084
 expansions:
     - Interbellum

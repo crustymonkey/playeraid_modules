@@ -4,10 +4,11 @@ credits: Sean Owens
 enabled: true
 version: 1.0
 yt_videos:
+  - https://www.youtube.com/watch?v=VcEJh47rWMI&pp=ygUYam9obiBjb21wYW55IGhvdyB0byBwbGF5
+  - https://www.youtube.com/watch?v=FBhd1trkaUw&pp=ygUYam9obiBjb21wYW55IGhvdyB0byBwbGF5
 bgg_id: 211716
 text_type: markdown
 expansions:
-
 sections:
  - name: Game Concepts
    text: |

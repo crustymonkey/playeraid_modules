@@ -4,6 +4,8 @@ credits: Jay Deiman
 enabled: true
 version: 1.0
 yt_videos:
+  - https://www.youtube.com/watch?v=3mluOsJ7AMA&pp=ygURdGFyZ2kgaG93IHRvIHBsYXk%3D
+  - https://www.youtube.com/watch?v=mXJVIcoTLoI&pp=ygURdGFyZ2kgaG93IHRvIHBsYXk%3D
 bgg_id: 118048
 text_type: markdown
 expansions:

@@ -4,6 +4,8 @@ credits: Jay Deiman (BGG user **nyfilmfest** for original translation content)
 enabled: true
 version: 1.0
 yt_videos:
+  - https://www.youtube.com/watch?v=23BLVPhtk0o&pp=ygUdZ2FueiBzY2hvbiBjbGV2ZXIgaG93IHRvIHBsYXk%3D
+  - https://www.youtube.com/watch?v=1mGfOaZP2xU&pp=ygUdZ2FueiBzY2hvbiBjbGV2ZXIgaG93IHRvIHBsYXk%3D
 bgg_id: 244522
 text_type: markdown
 expansions:

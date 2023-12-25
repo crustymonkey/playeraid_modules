@@ -5,6 +5,10 @@ credits: "CMON Rising Sun rules manual and FAQ, transferred to PlayerAid by Cory
 enabled: true
 version: 1.0
 yt_videos:
+  - https://www.youtube.com/watch?v=lFtEj1xHSMk&pp=ygUWcmlzaW5nIHN1biBob3cgdG8gcGxheQ%3D%3D
+  - https://www.youtube.com/watch?v=LQ0W7HN5bKQ&pp=ygUWcmlzaW5nIHN1biBob3cgdG8gcGxheQ%3D%3D
+  - https://www.youtube.com/watch?v=Lg5nHFqQues&pp=ygUWcmlzaW5nIHN1biBob3cgdG8gcGxheQ%3D%3D
+  - https://www.youtube.com/watch?v=oFbxL3xebZg&pp=ygUWcmlzaW5nIHN1biBob3cgdG8gcGxheQ%3D%3D
 bgg_id: 205896
 text_type: markdown
 expansions:

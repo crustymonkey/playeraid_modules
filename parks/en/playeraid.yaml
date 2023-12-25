@@ -5,6 +5,11 @@ credits: "Jay Deiman"
 enabled: true
 version: 1.0
 yt_videos:
+  - https://www.youtube.com/watch?v=q6mj3twQf6w&pp=ygURcGFya3MgaG93IHRvIHBsYXk%3D
+  - https://www.youtube.com/watch?v=p3QVcUnI_zA&pp=ygURcGFya3MgaG93IHRvIHBsYXk%3D
+  - https://www.youtube.com/watch?v=n9_CMVSLRmA&pp=ygURcGFya3MgaG93IHRvIHBsYXk%3D
+  - https://www.youtube.com/watch?v=J1GxaEIogsw&pp=ygURcGFya3MgaG93IHRvIHBsYXk%3D
+  - https://www.youtube.com/watch?v=0aB_-CG7dEY&pp=ygURcGFya3MgaG93IHRvIHBsYXk%3D
 bgg_id: 266524
 expansions: 
     - Nightfall

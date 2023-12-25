@@ -5,6 +5,9 @@ credits: "Jay Deiman"
 enabled: true
 version: 1.0
 yt_videos:
+  - https://www.youtube.com/watch?v=H3VkU76a3AI&pp=ygUPaWtpIGhvdyB0byBwbGF5
+  - https://www.youtube.com/watch?v=_wPI6hNBVIc&pp=ygUPaWtpIGhvdyB0byBwbGF5
+  - https://www.youtube.com/watch?v=nSgSvWc_iSw&pp=ygUPaWtpIGhvdyB0byBwbGF5
 bgg_id: 177478
 expansions:
 sections:

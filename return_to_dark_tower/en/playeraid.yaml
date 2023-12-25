@@ -5,6 +5,9 @@ credits: "Jay Deiman"
 enabled: true
 version: 3.1
 yt_videos:
+  - https://www.youtube.com/watch?v=OtJk0qYCmk8&pp=ygUgcmV0dXJuIHRvIGRhcmsgdG93ZXIgaG93IHRvIHBsYXk%3D
+  - https://www.youtube.com/watch?v=mreAz95EnzQ&pp=ygUgcmV0dXJuIHRvIGRhcmsgdG93ZXIgaG93IHRvIHBsYXk%3D
+  - https://www.youtube.com/watch?v=6byMuiGxFQE&pp=ygUgcmV0dXJuIHRvIGRhcmsgdG93ZXIgaG93IHRvIHBsYXk%3D
 bgg_id: 256680
 expansions:
   - Alliances

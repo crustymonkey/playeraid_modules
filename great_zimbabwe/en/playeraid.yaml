@@ -4,6 +4,7 @@ credits: Sean Owens
 enabled: true
 version: 1.0
 yt_videos:
+  - https://www.youtube.com/watch?v=OXxGoukYlFU&pp=ygUedGhlIGdyZWF0IHppbWJhYndlIGhvdyB0byBwbGF5
 bgg_id: 111341
 text_type: markdown
 expansions:
