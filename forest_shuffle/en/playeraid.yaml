@@ -1,0 +1,681 @@
+name: "Forest Shuffle"
+description: "Build your forest with cards, but don't forget the trash pandas."
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+version: 1.0
+bgg_id: 391163
+yt_videos:
+  - https://www.youtube.com/watch?v=JYMnMZNg7mw&pp=ygUaZm9yZXN0IHNodWZmbGUgaG93IHRvIHBsYXk%3D
+  - https://www.youtube.com/watch?v=qV4KAs1cZLE&pp=ygUaZm9yZXN0IHNodWZmbGUgaG93IHRvIHBsYXk%3D
+  - https://www.youtube.com/watch?v=I_PSrmtvu1A&pp=ygUaZm9yZXN0IHNodWZmbGUgaG93IHRvIHBsYXk%3D
+expansions:
+sections:
+  - name: Setup
+    text: |
+      * Place the game board in the center of the play area and optionally
+        place the 14 reference cards next to it.
+      * Each player takes a cave card.
+      * Set aside the 3 winter cards and shuffle the remaining cards and return
+        some cards to the box based on player count:
+          * 2 players: 30
+          * 3 players: 20
+          * 4 players: 10
+          * 5 players: 0 (use all cards)
+      * Divide the remaining cards into 3 face down piles of the same-ish size.
+      * Shuffle 2 winter cards into **1** pile.  Then place the 3rd winter
+        card on top of that same pile.
+      * Stack all the cards into a single deck with the pile containing the
+        winter cards at the bottom of the stack. Place the deck to the left
+        of the board.
+      * Each player draws 6 cards into their hand.
+          * If none of the cards is a tree, you may take a mulligan by
+            removing all 6 cards in your hand **from the game**. Then draw
+            a new hand of 6 cards.
+              * Each player may only mulligan **once**.
+      * Choose a 1st player.
+  - name: Gameplay
+    text: |
+      The game is played over a number of rounds until the 3rd winter card
+      is revealed, which [ends the game immediately](#end_game) (you don't
+      even finish your turn).
+
+      On your turn, you must do one of the following actions:
+
+      * Draw 2 cards
+      * **OR** Play a card and check the clearing
+    sections:
+      - name: Draw 2 Cards
+        text: |
+          * Draw 2 cards, 1 at a time, and add them to your hand.
+              * For each card, you may choose to draw from the deck **or**
+                take a face-up card from the board.
+          * You can have a **max of 10 cards in your hand**.  i.e. if you have
+            9 cards in hand, you can only draw 1 card.
+          * If you draw a winter card, place it face up next to the board and
+            draw a replacement card.
+              * If it is the 3rd winter card, the game ends immediately and
+                you proceed to [end game and final scoring](#end_game).
+      - name: Play a Card and Check the Clearing
+        text: |
+          * Each card has either 1 tree or 2 forest dwellers.
+              * Each tree card features exactly 1 type of tree.
+              * All other cards are split in half, either vertically or
+                horizontally.
+          * To play a card:
+              * Pay the cost in cards (upper left) by placing that many cards
+                face up on the board.
+                  * If playing a split card, only pay for the half you are
+                    going to expose.
+              * Trees are played separate from other trees.
+                  * **Also draw a card from the deck when playing a tree**.
+                      * If you draw a winter card, set it next to the board and
+                        draw another card, unless it is the 3rd winter card,
+                        in which case proceed to [end game](#end_game).
+                  * You may also play any card face down as a tree.
+              * Forest dwellers are "attached" to a tree by sliding 1 half
+                under a tree and leaving the other half exposed.
+                  * Each tree can have only **1 card** on each side (left,
+                    right, top, bottom).
+                  * You may take any bonus or apply any effect after playing
+                    1 of these cards.
+                      * Some cards provide instant effects and some are
+                        permanent, ongoing effects.
+                      * Cards with a
+                        ![binocs](/static/img/forest_shuffle/binocs.png)
+                        symbol in a colored arrow provide a bonus if all cards
+                        used to *pay* for the played card have the same color.
+                          * With split cards as payment, it doesn't matter
+                            which half shows the symbol.
+          * After playing a card, check the board and if there are 10 or more
+            face up cards on it, remove all the face up cards from the game.
+  - name: End Game and Scoring
+    id: end_game
+    text: |
+      The game ends **immediately** when the 3rd winter card is drawn, which
+      means that whoever drew it does **not** finish their turn.
+
+      ## Scoring
+      * Total the points of all visible cards.
+      * Score 1 point for each card under your cave card.
+      * **Reminder**: Cards played face down as trees do not count for any
+        kind of scoring.
+
+      The player with the highest number of points wins.  If there is a tie,
+      the players share the victory.
+  - name: Symbols
+    text: |
+      | Symbol | Description |
+      | ------ | ----------- |
+      | ![amph](/static/img/forest_shuffle/amph.png) | Amphibian |
+      | ![tree](/static/img/forest_shuffle/tree.png) | Tree |
+      | ![bat](/static/img/forest_shuffle/bat.png) | Bat |
+      | ![deer](/static/img/forest_shuffle/deer.png) | Deer |
+      | ![insect](/static/img/forest_shuffle/insect.png) | Insect |
+      | ![hoofed](/static/img/forest_shuffle/hoofed.png) | Cloven-hoofed animal |
+      | ![plant](/static/img/forest_shuffle/plant.png) | Plant |
+      | ![pawed](/static/img/forest_shuffle/pawed.png) | Pawed animal |
+      | ![mushroom](/static/img/forest_shuffle/mushroom.png) | Mushroom |
+      | ![butterfly](/static/img/forest_shuffle/butterfly.png) | Butterfly |
+      | ![bird](/static/img/forest_shuffle/bird.png) | Bird |
+      | ![draw_num](/static/img/forest_shuffle/draw_num.png) | Draw the indicated number of cards **from the top of the deck**. |
+      | ![draw_tab](/static/img/forest_shuffle/draw_tab.png) | Draw a number of cards **from the top of the deck** = to the number of cards in your tableau with the matching symbol. |
+      | ![draw_text](/static/img/forest_shuffle/draw_text.png) | Draw a number of cards **from the top of the deck** = to the number of items in your tableau indicated by the text. |
+      | ![place](/static/img/forest_shuffle/place.png) | Place a creature of the indicated type into your tableau without paying its cost. **You cannot use the effect or bonus on the card**. |
+      | ![turn](/static/img/forest_shuffle/turn.png) | Take another full turn after this one, choosing between drawing cards or playing a card. |
+  - name: Appendix
+    text: |
+      ## Barbastelle Bat
+      (left/right, 3x, cost: 1)
+
+      * **Points**: Each bat in your forest
+        scores 5 points if your forest contains at least 3 different of the
+        4 bat species: Barbastelle Bat, Bechstein’s Bat, Brown Long-Eared Bat,
+        and Greater Horseshoe Bat.  If there are less than 3 bat species
+        in your forest, your bats score no points.
+
+      ## Bechstein's Bat
+      (left/right, 3x, cost: 1)
+
+      * **Points**: Each bat in your forest
+        scores 5 points if your forest contains at least 3 different of the
+        4 bat species: Barbastelle Bat, Bechstein’s Bat, Brown
+        Long-Eared Bat, and Greater Horseshoe Bat.  If there are less than
+        3 bat species in your forest, your bats score no points.
+
+      ## Beech
+      (tree, 10x, cost: 1)
+
+      * **Effect**: Draw a card from the deck.
+      * **Points**: Each Beech in your forest scores 5 points if your forest
+        contains at least 4 Beeches. If there are less than 4 Beeches in your
+        forest, your Beeches score no points. Violet Carpenter Bees at
+        Beeches increase the total of Beeches you have (see Violet Carpenter
+        Bee). The following table shows the possible point totals for Beeches.
+
+      | # Beeches | Points |
+      | --------- | ------ |
+      | 1 | 0 |
+      | 2 | 0 (10 points if you placed at least 2 Violet Carpenter Bees at your beech) |
+      | 3 | 0 (15 points if you placed at least one Violet Carpenter Bee at a Beech) |
+      | 4 | 20 |
+      | 5 | 25 |
+      | 6 | 30 |
+      | 7 | 35 |
+      | 8 | 40 |
+      | 9 | 45 |
+      | 10 | 50 |
+
+      ## Beach Marten
+      (left/right, 5x, cost: 1)
+
+      * **Effect**: Draw a card from the deck.
+      * **Points**: The Beech Marten scores 5 points for each *fully occupied
+        tree* in your forest. If you have more than one Beech Marten, these
+        points are multiplied accordingly. Reminder: a tree is considered fully
+        occupied if there is at least one card on each of its four sides.
+
+      ## Birch
+      (tree, 10x, cost: 0)
+
+      * **Effect**: Draw a card from the deck.
+      * **Points**: Each birch scores 1 point.
+
+      ## Blackberries
+      (bottom, 3x, cost: 0)
+
+      * **Points**: The Blackberries score 2 points for each plant card
+        in your forest, including the Blackberries.  If you have more than
+        one Blackberries in your forest, these points are multiplied
+        accordingly.
+
+      ## Brown Bear
+      (left/right, 3x, cost: 3)
+
+      * **Effect**: Remove all cards from the clearing and place them under
+        your cave card, including the cards with which you paid for the
+        Brown Bear.
+      * **Bonus**: Draw a card from the deck and take another turn after
+        you complete this one, again choosing between drawing or playing
+        cards.
+      * **Points**: The Brown Bear scores no points, but each card under
+        your cave card scores 1 point.
+
+      ## Brown Long-Eared Bat
+      (left/right, 3x, cost: 1)
+
+      * **Points**: Each bat in your forest
+        scores 5 points if your forest contains at least 3 different of the
+        4 bat species: Barbastelle Bat, Bechstein’s Bat, Brown Long-Eared Bat,
+        and Greater Horseshoe Bat.  If there are less than 3 bat species
+        in your forest, your bats score no points.
+
+      ## Bullfinch
+      (top, 4x, cost: 1)
+
+      * **Points**: Each insect card in your forest scores 2 points. If
+        you have more than one Bullfinch, these points are multiplied
+        accordingly.
+
+      ## Camberwell Beauty
+      (top, 4x, cost: 0)
+
+      * **Points**: Butterflies of different species form a set: you score
+        0, 3, 6, 12, or 20 points for having 1, 2, 3, 4, or 5 different
+        butterflies in your forest. Each card can only be part of one set.
+
+      ## Chaffinch
+      (top, 4x, cost: 1)
+
+      * **Points**: Each Chaffinch in your forest atop a Beech scores 5
+        points. Chaffinches atop a different tree species score no points.
+
+      ## Chanterelle
+      (bottom, 2x, cost: 2)
+
+      * **Permanent Effect**: From your next turn on, whenever you play a
+        tree card, you may draw a card from the deck, after you pay for the
+        tree card, but before you carry out its effect and bonus. If you have
+        both Chanterelles, you may draw up to two cards when playing a tree
+        card.
+      * **Points**: The Chanterelle scores no points.
+
+      ## Common Toad
+      (bottom, 6x, cost: 0)
+
+      * **Permanent Effect**: If you play another Common Toad on a later turn,
+        you can place it in the same card slot as this one. At most two Common
+        Toads may share a card slot.
+      * **Points**: Each Common Toad in your forest that shares a card slot with
+        another Common Toad scores 5 points. A single Common Toad in a card
+        slot scores no points.
+
+      ## Douglas Fir
+      (tree, 7x, cost: 2)
+
+      * **Bonus**: Take another turn after you complete this one, again
+        choosing between drawing and playing cards.
+      * **Points**: Each Douglas Fir scores 5 points.
+
+      ## Eurasian Jay
+      (top, 4x, cost: 1)
+
+      * **Effect**: Take another turn after you complete this one, again
+        choosing between drawing) and playing cards.
+      * **Points**: Each Eurasian Jay scroes 3 points.
+
+      ## European Badger
+      (left/right, 4x, cost: 1)
+
+      * **Bonus**: Place a pawed animal card from your hand into your forest
+        at no cost, without using the effect and bonus of that card.
+      * **Points**: Each European Badger scores 2 points.
+
+      ## European Fat Dormouse
+      (left/right, 4x, cost: 1)
+
+      * **Points**: Each European Fat Dormouse in your
+        forest that is at a tree with a bat (in the opposite
+        card slot) scores 15 points. European Fat
+        Dormice at trees without a bat score no points.
+
+      ## European Hare
+      (left/right, 11x, cost: 0)
+
+      * **Permanent Effect**: If you play another European Hare on a later
+        turn, you can place it in the same card slot as this one. Any number
+        of European Hares may share a card slot. (If you play a European Hare
+        via the "place creature" effect, you may place it at a spot already
+        containing one or more European Hares.)
+      * **Points**: Each European Hare in your forest scores a number of
+        points equal to the total number of European Hares in your forest.
+        The following table shows the possible point totals for European Hares.
+
+      | # Hares | Points |
+      | --------- | ------ |
+      | 1 | 1 |
+      | 2 | 4 |
+      | 3 | 9 |
+      | 4 | 16 |
+      | 5 | 25 |
+      | 6 | 36 |
+      | 7 | 49 |
+      | 8 | 64 |
+      | 9 | 81 |
+      | 10 | 100 |
+      | 11 | 121 |
+
+      ## Fallow Deer
+      (left/right, 4x, cost: 2)
+
+      * **Bonus**: Draw 2 cards from the deck.
+      * **Points**: The Fallow Deer scores 3 points for each cloven-hoofed
+        animal card in your forest, including the Fallow Deer. If
+        you have more than one Fallow Deer in your forest, these points are multiplied accordingly.
+
+      ## Fireflies
+      (bottom, 4x, cost: 0)
+
+      * **Points**: All your Fireflies form a set: you score 0, 10, 15, or
+        20 points for having 1, 2, 3, or 4 Fireflies in your forest.
+
+      ## Fire Salamander
+      (bottom, 3x, cost: 1)
+
+      * **Bonus**: Place a pawed animal card from your hand into your forest
+        at no cost, without using the effect and bonus of that card.
+      * **Points**: All your Fire Salamanders form a set: you score 5, 15, or
+        25 points for having 1, 2, or 3 Fire Salamanders in your forest,
+        respectively.
+
+      ## Fly Agaric
+      (bottom, 2x, cost: 2)
+
+      * **Permanent Effect**: From your next turn on, whenever you play a
+        pawed animal card, you may draw a card from
+        the deck, after you pay for the pawed animal
+        card but before you carry out its effect and bonus. If you have
+        both Fly Agarics, you may draw up to two cards when playing a pawed
+        animal card.
+      * **Points**: The Fly Agaric scores no points.
+
+      ## Gnat
+      (left/right, 3x, cost: 0)
+
+      * **Effect**: Place any number of bats from your hand into your forest
+        at no cost.
+      * **Points**: Each bat card in your forest scores 1 point. If you
+        have more than one Gnat, these points are multiplied accordingly.
+
+      ## Goshawk
+      (top, 4x, cost: 2)
+
+      * **Points**: The Goshawk scores 3 points for each bird
+        card in your forest, including the Goshawk. If you
+        have more than one Goshawk, these points are multiplied accordingly.
+
+      ## Greater Horseshoe Bat
+      (left/right, 3x, cost: 1)
+
+      * **Points**: Each bat in your forest scores 5 points if your forest
+        contains at least 3 different of the 4 bat species: Barbastelle Bat,
+        Bechstein’s Bat, Brown Long-Eared Bat, and Greater Horseshoe Bat.
+        If there are less than 3 bat species in your forest, your bats
+        score no points.
+
+      ## Great Spotted Woodpecker
+      (top, 4x, cost: 1)
+
+      * **Effect**: Draw a card from the deck.
+      * **Points**: Each Great Spotted Woodpecker in your forest scores
+        10 points if your forest contains the most trees (or is tied for
+        most), including any tree saplings. Violet Carpenter Bees in your
+        forest increase the total of trees in it (see Violet Carpenter Bee).
+        If any other forest contains more trees than yours, your Great
+        Spotted Woodpeckers score no points.
+
+      ## Hedgehog
+      (bottom, 3x, cost: 1)
+
+      * **Bonus**: Draw a card from the deck.
+      * **Points**: The Hedgehog scores 2 points for each butterfly
+        card in your forest. If you have more than one
+        Hedgehog, these points are multiplied accordingly.
+
+      ## Horse Chestnut
+      (tree, 11x, cost: 1)
+
+      * **Points**: All your Horse Chestnuts form a set: you score 1, 4,
+        9, 16, 25, or 36 points for having exactly 1, 2, 3, 4, 5, or 6
+        Horse Chestnuts; if you have 7 or more Horse Chestnuts, you score
+        49 points.  Violet Carpenter Bees at Horse Chestnuts increase the
+        total of Horse Chestnuts you have (see Violet Carpenter Bee).
+
+      ## Large Toroiseshell
+      (top, 4x, cost: 0)
+
+      * **Points**: Butterflies of different species form a set: you score 0,
+        3, 6, 12, or 20 points for having 1, 2, 3, 4, or 5 different
+        butterflies in your forest. Each card can only be part of one set.
+
+      ## Linden Tree
+      (tree, 9x, cost: 1)
+
+      * **Points**: Each Linden Tree in your forest scores 1 point.
+        If your forest contains the most Linden Trees (or is tied for
+        most), your Linden Trees score 3 points each instead. Violet
+        Carpenter Bees at Linden Trees increase the number of Linden Trees
+        you have (see Violet Carpenter Bee).
+
+      ## Lynx
+      (left/right, 6x, cost: 1)
+
+      * **Points**: Each Lynx in your forest scores 10 points if your forest
+        contains at least 1 Roe Deer. If there is no Roe Deer in your forest,
+        your Lynxes score no points.
+
+      ## Mole
+      (bottom, 2x, cost: 2)
+
+      * **Effect**: After you play the Mole, you may play any number of
+        additional cards from your hand as follows:
+          1. Decide which of your current cards in hand you want to play via
+             the effect of the Mole.
+          2. Pay the combined printed cost of all cards that you want to
+             play and place them in your forest, according to the normal
+             rules. Keep track of which cards you pay with matching tree
+             symbols (for the bonus of those cards).
+          3. Finally, carry out the effects and bonuses of the played cards,
+             in the order they entered play.
+          4. New cards that you get from the effects and bonuses of the
+             played cards are irrelevant for the Mole: you may not play
+             them via the Mole nor may you use them to pay for the played cards.
+          5. If you gain any additional turns from the effects and bonuses
+             of the played cards, keep track of how many you gain and take
+             them one after the other, after you complete this turn.
+      * **Special case**: Even if you play the second Mole via the first,
+        carry out the effects of the second Mole when it is its turn in the
+        order of played cards. Cards played via the second Mole will be
+        carried out before any cards played via the first Mole that are yet
+        to be carried out. When carrying out the second Mole, you can play
+        and use cards drawn from effects of the cards played via the first
+        Mole.  After you finish carrying out the cards played via the
+        second Mole, carry on with the remaining cards played via the first
+        Mole.
+      * **Points**: The Moles scores no points.
+
+      ## Moss
+      (bottom, 3x, cost: 0)
+
+      * **Points**: Each Moss in your forest scores 10 points if your forest
+        contains at least 10 trees, including any tree saplings. Violet
+        Carpenter Bees in your forest increase the total of trees in it
+        (see Violet Carpenter Bee). If there are less than 10 trees in your
+        forest, your Mosses score no points.
+
+      ## Oak
+      (tree, 7x, cost: 2)
+
+      * **Bonus**: Take another turn after you complete this one, again
+        choosing between drawing and playing cards.
+      * **Points**: Each Oak in your forest scores 10 points if your forest
+        contains all 8 tree species: Beech, Birch, Douglas Fir,
+        Horse Chestnut, Linden Tree, Oak, Silver Fir, and Sycamore. If you
+        are missing at least one tree species in your forest, your Oaks score
+        no points.
+
+      ## Parasol Mushroom
+      (bottom, 2x, cost: 2)
+
+      * **Permanent Effect**: From your next turn on, whenever you place a
+        card below a tree, you may draw a card from the deck, after you pay
+        for the played card but before you carry out its effect and bonus.
+        If you have both Parasol Mushrooms, you may draw up to two cards
+        when placing a card below a tree.  (When you play the second Parasol
+        Mushroom, however, you only draw one card—for the first Parasol
+        Mushroom.)
+      * **Points**: The Parasol Mushroom scores no points.
+
+      ## Peacock Butterfly
+      (top, 4x, cost: 0)
+
+      * **Points**: Butterflies of different species form a set: you score 0,
+        3, 6, 12, or 20 points for having 1, 2, 3, 4, or 5 different
+        butterflies in your forest. Each card can only be part of one set.
+
+      ## Penny Bun
+      (bottom, 2x, cost: 2)
+
+      * **Permanent Effect**: From your next turn on, whenever card from the
+        deck, after you pay for the played card but before you carry out
+        its effect and bonus.  If you have both Penny Buns, you may draw up
+        to two cards when placing a card atop a tree.
+      * **Points**: The Penny Bun scores no points.
+
+      ## Pond Turtle
+      (bottom, 2x, cost: 2)
+
+      * **Effect**: Draw a card from the deck.
+      * **Points**: Each Pond Turtle in your forest scores 5 points.
+
+      ## Purple Emperor
+      (top, 4x, cost: 0)
+
+      * **Points**: Butterflies of different species form a set: you score 0,
+        3, 6, 12, or 20 points for having 1, 2, 3, 4, or 5 different
+        butterflies in your forest. Each card can only be part of one set.
+
+      ## Raccon (aka Trash Panda)
+      (left/right, 4x, cost: 1)
+
+      * **Effect**: After you pay for the Raccoon, place any number cave
+        card and draw the according number of cards from the deck. You may
+        opt not to place any cards under the cave.
+      * **Points**: The Raccoon scores no points, but each card under your
+        cave card scores 1 point.
+
+      ## Red Deer
+      (left/right, 5x, cost: 2)
+
+      * **Bonus**: Place a deer card from your hand into your forest at no
+        cost, without using the effect and bonus of that card.
+      * **Points**: The Red Deer scores 1 point for each tree and plant card
+        in your forest. If you have more than one Red Deer, these points
+        are multiplied accordingly. (Note that tree saplings also show the
+        symbol, thus increasing the value of the Red Deer.)
+
+      ## Red Fox
+      (left/right, 5x, cost: 2)
+
+      * **Effect**: Draw a number of cards from the deck equal to the current
+        number of European Hares in your forest. (Observe the hand size limit
+        of 10 cards.)
+      * **Points**: The Red Fox scores 2 points for each European Hare in
+        your forest. If you have more than one Red Fox, these points are
+        multiplied accordingly. (There are 11 European Hares in the game.)
+
+      ## Red Squirrel
+      (top, 4x, cost: 0)
+
+      * **Points**: Each Red Squirrel in your forest atop an Oak scores 5
+        points. Red Squirrels atop a different tree species score no points.
+
+      ## Roe Deer
+      (left/right, 5x, cost: 2)
+
+      * **Bonus**: Draw a card from the deck.
+      * **Points**: The Roe Deer scores 3 points for each card in your forest
+        showing the same tree symbol as the Roe Deer, itself included. Note
+        that each Roe Deer shows a different tree symbol.
+
+      ## Silver Fir
+      (tree, 6x, cost: 2)
+
+      * **Bonus**: Place a pawed animal card from your hand into your forest
+        at no cost, without using the effect and bonus of that card.
+      * **Points**: The Silver Fir scores 2 points for each card in its card
+        slots. Normally, a Silver Fir scores a maximum of 8 points unless
+        there are multiple Common Toads and/or European Hares sharing one of
+        its card slots—these additional cards also increase the value by
+        2 points each.
+
+      ## Silver-Washed Fritillary
+      (top, 4x, cost: 0)
+
+      * **Points**: Butterflies of different species form a set: you score 0,
+        3, 6, 12, or 20 points for having 1, 2, 3, 4, or 5 different
+        butterflies in your forest. Each card can only be part of one set.
+
+      ## Squeaker
+      (left/right, 4x, cost: 0)
+
+      * **Points**: Each Squeaker scores 1 point.
+
+      ## Stag Beetle
+      (bottom, 2x, cost: 2)
+
+      * **Bonus**: Place a bird card from your hand into your forest at no
+        cost, without using the effect and bonus of that card.
+      * **Points**: The Stag Beetle scores 1 point for each pawed animal
+        card in your forest. If you have more than one
+        Stag Beetle, these points are multiplied accordingly.
+
+      ## Sycamore
+      (tree, 6x, cost: 2)
+
+      * **Points**: The Sycamore scores 1 point for each tree card in your
+        forest, including the Sycamore and any tree saplings. If you have
+        more than one Sycamore in your forest, these points are multiplied
+        accordingly.
+
+      ## Tawny Owl
+      (top, 4x, cost: 2)
+
+      * **Effect**: Draw a card from the deck.
+      * **Bonus**: Draw two cards from the deck (in addition to the card from
+        the effect of the Tawny Owl).
+      * **Points**: Each Tawny Owl scores 5 points.
+
+      ## Tree Ferns
+      (bottom, 3x, cost: 1)
+
+      * **Effect**: Draw a card from the deck.
+      * **Points**: The Tree Ferns scores 6 points for each amphibian
+        card in your forest. If you have more than one
+        Tree Ferns in your forest, these points are multiplied accordingly.
+
+      ## Tree Frog
+      (bottom, 3x, cost: 0)
+
+      * **Points**: The Tree Frog scores 5 points for each Gnat in your
+        forest. If you have more than one Tree Frog, these points are
+        multiplied accordingly. (There are 3 Gnats in the game.)
+
+      ## Violet Carpenter Bee
+      (left/right, 4x, cost: 1)
+
+      * **Effect**: Whenever the number of trees of a certain species is
+        required, each Violet Carpenter Bee at a tree of that species
+        increases that number by 1. There are only five cards for which
+        the Violet Carpenter Bee is relevant at all:
+          * **Beech**: Beeches do not score points unless you have at least
+            4 of them. For instance, 3 Beeches and a Violet Carpenter Bee
+            at one of them count as 4 Beeches. Consequently, the 3 Beeches
+            score 5 points each, for a total of 15 points (see Beech). You
+            do not score 5 points for the Violet Carpenter Bee, because it
+            is no Beech.
+          * **Horse Chestnut**: Horse Chestnuts form a set whose value depends
+            on the total number of Horse Chestnuts in your forest; a Violet
+            Carpenter Bee at a Horse Chestnut increases that value. For
+            instance, 2 Horse Chestnuts and a Violet Carpenter Bee at each of
+            them score 16 points (because you count 4 Horse Chestnuts);
+            without the Violet Carpenter Bees, the set would score only 4
+            points (see Horse Chestnut).
+          * **Linden Trees**: Linden Trees score 3 points each (instead of 1
+            point each) if you have the most; Violet Carpenter Bees can
+            help you with that.
+          * **Great Spotted Woodpecker** and **Moss**: The values of these
+            cards depend on the total number of trees in your forest; your
+            Violet Carpenter Bees increase that number.
+          * In all other cases, consider this counter example: You have 3 Oaks
+            and a Violet Carpenter Bee at one of them, and all eight tree
+            species.  When it comes to how many Oaks you have, you would
+            count 4 Oaks; regardless, you score only 3×10=30 points for
+            them (see Oak), because the Violet Carpenter Bee is no Oak.
+      * **Points**: The Violet Carpenter Bee scores no points.
+
+      ## Wild Boar
+      (left/right, 5x, cost: 2)
+
+      * **Points**: Each Wild Boar in your forest scores 10 points if your
+        forest contains at least 1 Squeaker. If there is no Squeaker in your
+        forest, your Wild Boar score no points.
+
+      ## Wild Strawberries
+      (bottom, 3x, cost: 0)
+
+      * **Points**: Each Wild Strawberries in your forest scores 10 points if
+        your forest contains all 8 tree species: Beech, Birch, Douglas Fir,
+        Horse Chestnut, Linden Tree, Oak, Silver Fir, and Sycamore. If you
+        are missing at least one tree species in your forest, your Wild
+        Strawberries score no points.
+
+      ## Wolf
+      (left/right, 4x, cost: 3)
+
+      * **Effect**: Draw a number of cards from the deck equal to the
+        current number of deer cards in your forest. (Observe the hand size
+        limit of 10 cards.)
+      * **Bonus**: Take another turn after you complete this one, again
+        choosing between drawing and playing cards.
+      * **Points**: The Wolf scores 5 points for each deer card in your forest.
+        If you have more than 1 Wolf, these points are multiplied accordingly.
+
+      ## Wood Ant
+      (bottom, 3x, cost: 1)
+
+      * **Points**: The Wood Ant scores 2 points for each card in the bottom
+        card slot of a tree, including the Wood Ant. If you have more than
+        one Wood Ant, these points are multiplied accordingly.
+
+
