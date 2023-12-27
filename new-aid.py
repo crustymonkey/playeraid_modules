@@ -16,6 +16,7 @@ YAML_TPL = dedent('''
     enabled: false
     version: 1.0
     bgg_id: {bgg_id}
+    yt_videos:
     expansions:
     sections:
       - name: Setup
