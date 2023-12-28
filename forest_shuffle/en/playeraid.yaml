@@ -3,7 +3,7 @@ description: "Build your forest with cards, but don't forget the trash pandas."
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.0
+version: 1.1
 bgg_id: 391163
 yt_videos:
   - https://www.youtube.com/watch?v=JYMnMZNg7mw&pp=ygUaZm9yZXN0IHNodWZmbGUgaG93IHRvIHBsYXk%3D
@@ -505,7 +505,7 @@ sections:
         3, 6, 12, or 20 points for having 1, 2, 3, 4, or 5 different
         butterflies in your forest. Each card can only be part of one set.
 
-      ## Raccon (aka Trash Panda)
+      ## Raccoon (aka Trash Panda)
       (left/right, 4x, cost: 1)
 
       * **Effect**: After you pay for the Raccoon, place any number cave
