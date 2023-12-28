@@ -1,0 +1,357 @@
+name: "Wayfarers of the South Tigris"
+description: "Explore to collect victory points"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+version: 1.0
+bgg_id: 350316
+yt_videos:
+expansions:
+sections:
+  - name: Setup
+    text: |
+      * Place the 3 sections of the board in the center of the table. Use
+        either side of the boards.
+      * Shuffle the townsfolk cards and place them in the top left of the
+        board and draw the top 4 cards and place them face up in the slots
+        to the right.
+      * Shuffle the space cards and place them in the top right of the
+        board and draw the top 4 cards and place them face up in the slots
+        to the left.
+      * Shuffle the land cards and place them in the bottom left of the
+        board and draw the top 4 cards and place them face up in the slots
+        to the right.
+      * Shuffle the water cards and place them in the bottom right of the
+        board and draw the top 4 cards and place them face up in the slots
+        to the left.
+      * Shuffle the inspiration cards and place them on the right side of the
+        board and draw the top 4 cards and place them face up in the slots
+        below the deck (the deck should be to the right of the space deck).
+      * Shuffle the journal tiles and and place 1 face up on each of the
+        empty spaces of the journal track.
+      * Place 1 green worker on each space indicated along the middle of the
+        journal track.
+      * Place all 10 pink special upgrade tiles on their spaces on the board.
+      * Place 1/player of each green, black, yellow, and blue upgrade tiles
+        on their spaces on the board.  Return the remaining to the box.
+      * Create a supply near the board for silver and provisions.
+      * Each player:
+          * Takes a random player board
+              * *Note that the cards printed on the board act like any
+                other cards you acquire during the game*.
+          * Takes 5 dice in their preferred color
+              * Place 2 of the dice in a supply near the minarets on the
+                board.
+              * Roll the other 3 dice and place them near your player board.
+          * Takes 15 influence in their color
+          * Takes 1 player marker in their color and places it on the far
+            left end of the main board
+          * Takes 1 yellow and 1 blue worker
+      * Determine a 1st player, then distribute starting resources based on
+        player order:
+          1. 2 provisions, 3 silver, 1 influence in the blue guild
+          2. 2 provisions, 3 silver, 1 influence in the blue and yellow guilds
+          3. 2 provisions, 4 silver, 1 influence in the blue and yellow guilds
+          4. 3 provisions, 4 silver, 1 influence in the blue and yellow guilds
+  - name: Gameplay
+    text: |
+      The game is played over a number of rounds until the [end
+      game](#end_game) is triggered by a player reaching 1 of the 5 final
+      spaces on the journal track.
+
+      On your turn, you will do one of the following actions:
+
+      * Place a die
+      * *Or* place a worker
+      * *Or* rest
+    sections:
+      - name: Place a die
+        text: |
+          * Dice are placed onto your player board or onto die spaces on cards
+            you previously acquired.
+          * Only 1 die may occupy a space.
+          * If the space shows asset requirements, you must have those assets
+            or use abilities to gain them.
+              * You may spend 1 blue influence to temporarily gain a ship
+                asset for a single die placement.
+              * Assets are shown in your caravan's column matching the value
+                of your die (after any die manipulation).
+              * Townsfolk cards will sometimes provide assets.
+              * If the die space is blank, you do not need any assets.
+          * When using die manipulations to change the die value, the die
+            value does **not** wrap (6 to 1 or 1 to 6).
+              * Die manipulations may be chained.
+              * Die manipulations in your caravan do **not** stack.  e.g. if
+                you have 2 "+" icons in a column, you **cannot** use them to
+                add 2 to your die value.  Instead only 1 of the icons may
+                be used.
+          * You can use the [yellow guild](#guilds) to change the value of
+            1 or 2 dice.
+          * Some spaces have requirements in addition to assets. They will be
+            depicted to the left of the arrow.
+          * After placing a die, fulfilling all the requirements, gain the
+            depicted reward (right of the arrow).
+              * If you gain the "refresh 1 die" ability, you remove 1
+                previously placed die from a space, roll it and return it
+                to your supply (you can use it again on a later turn).
+                  * You can even "refresh" the die you just placed that
+                    turn.
+                  * If you haven't played a die or don't wish to remove 1,
+                    you can *instead* reroll 1 of the dice in your pool.
+      - name: Place a Worker
+        text: |
+          * Basic placement rules:
+              * **Only 1 green worker may be placed on each townsfolk card**.
+              * **1 green and 1 yellow worker may be placed on each land card**.
+              * **1 green and 1 blue worker may be placed on each water card**.
+              * **1 green, 1 blue, and 1 yellow worker may be placed on each
+                inspiration card**.
+          * Workers are placed onto 1 of the face up cards around the edges
+            of the main board (except space cards).
+          * The action that is printed on the board below/above the card is
+            what is resolved.
+          * You may only place a worker if you are able to resolve at least
+            part of the action.
+              * You may **not** place a worker on a card and do nothing.
+          * After placing a worker, you may not take any action that would
+            cause you to retrieve that same worker in the same turn.
+      - name: Resting
+        text: |
+          1. Determine whether abilities can be activated:
+              * If you have 0 or 1 die left in your supply, you may activate all
+                your resting abilities.
+              * If you have 2+ dice in your supply, **no abilities may be
+                activated**.
+          2. Remove your dice that were placed, then roll **all** of your dice
+             (including any that remained in your supply).
+          3. If you are eligible, you may resolve all your resting abilities in
+             any order.
+              * You start with 1 resting ability, but others can be gained
+                from townsfolk cards placed under water cards.
+      - name: End of Turn
+        text: |
+          * Refresh face up cards by sliding cards to fill gaps, then flipping
+            new cards face up to fill the rows.
+              * Townsfolk and land cards slide to the right.
+              * Space and water cards slide to the left.
+              * Inspiration cards slide down.
+  - name: Game End
+    id: end_game
+    text: |
+      * The game end is triggered by a player reaching 1 of the 5 final spaces
+        on the journal track.
+          * After that player finishes their turn, all players take 1 last
+            turn, including the player who triggered the game's ending.
+
+      ## Scoring
+      1. Score points based on **primary** (city, vista, harbour, or open
+         water) tags based on the table below.
+          * Remember to count tags in your caravan.
+      2. Score [space cards](#lws_cards) and achieved [inspiration
+         cards](#insp_cards).
+          * Players should determine who has the most [comet tags](#lws_cards).
+          * Remember to count tags in your caravan.
+      3. Score all printed VP values on upgrade tiles in your caravan.
+      4. Score guild majorities: 3 VP to the player with the most influence
+         in each guild.
+          * If there is a tie, no one scores any points.
+
+      The player with the most points wins.  If tied:
+
+      1. The player with the most black influence wins.
+      2. The player with the most yellow influence wins.
+      3. The player with the most blue influence wins.
+      4. The players share the victory.
+
+      ### Tag scoring
+
+      | # tags | Points |
+      | ------ | ------ |
+      | 2= | 2 |
+      | 3= | 3 |
+      | 4= | 5 |
+      | 5= | 8 |
+      | 6= | 12 |
+      | 7= | 16 |
+      | 4≠ | 5 |
+  - name: Appendix
+    text: |
+      This covers some specific rules for different aspects of the game.
+    sections:
+      - name: Guilds
+        id: guilds
+        text: |
+          * Guild abilities (spend 1 influence to activate):
+              * Black: When journaling, move 1 additional space.
+              * Yellow: Increase or decrease dice by a total value of 2.
+                  * This can be 2 different dice by 1 each or 1 die by a
+                    difference of 2.
+              * Blue: When placing a die, act as if it had a ship asset.
+          * Players may only use each guild's ability at most **once per turn**.
+      - name: Land/Water/Space Cards
+        id: lws_cards
+        text: |
+          * *General note*: Your starting player board features cards
+            printed on it. These "cards" act like any of the cards that
+            you acquire during the game, which means that you can tuck
+            other cards above/below them as normal.
+              * The 1 exception to this is the observatory/library space
+                on your player board (with 4 dice placement spots). This
+                is **not** technically a "card" for any game elements that may
+                reference them.
+          * When acquiring a card with a worker(s) on it, add the worker(s)
+            to your supply.
+          * The benefits on cards can **never be activated on the same turn**
+            they were acquired (except immediate 🗲 effects).
+          * Land cards are placed to the left of your player board.
+              * These cards have no inherent cost, but the action being
+                taken to acquire them may have a cost.
+                  * When acquiring 1 of these cards, you can either take
+                    a face up card **or** draw 3 from the deck and keep 1
+                    (return the others to the bottom of the deck).
+                      * You must have an available pidgeon symbol or spend
+                        1 provision to use the "deck" option.
+              * Some land cards have 1-time immediate effects on the left
+                side of the card (blue bar with a 🗲 symbol).
+          * Water cards are placed to the right of your player board.
+              * These cards have no inherent cost, but the action being
+                taken to acquire them may have a cost.
+                  * When acquiring 1 of these cards, you can either take
+                    a face up card **or** draw 3 from the deck and keep 1
+                    (return the others to the bottom of the deck).
+                      * You must have an available pidgeon symbol or spend
+                        1 provision to use the "deck" option.
+              * Water cards provide immediate effects via the connection
+                links on card edges.
+                  * Activate anything where a benefit matches a 🗲 symbol.
+          * Space cards must be placed above land or water cards. These provide
+            victory points.
+              * Space cards cost silver based on which slot they sit above.
+              * They can never have an empty card slot below them.
+              * There is only 1 sun and 1 moon card. They are worth 3 VP on
+                their own or 14 VP if you have both.
+              * There are 5 planet cards, scoring 1 VP + 1 additional VP per
+                planet tag (including its own).
+              * There are 8 comet cards, each worth 1-3 VP.
+                  * At the end of the game, if a player has more comet tags
+                    than anyone else, each comet card is **worth 4 VP each
+                    instead**.
+              * Some space cards have 1-time immediate effects printed on the
+                right side of the card (blue bar with a 🗲 symbol).
+      - name: Inspiration Cards
+        id: insp_cards
+        text: |
+          * Inspiration cards do not have a cost.
+          * Inspiration cards must be tucked above space cards.
+              * Each space card can **only have 1 tucked inspiration
+                card**.
+              * If you can't tuck the card, or don't want to, it can
+                **instead** be discarded for the immediate effect printed
+                on the board in the slot it was removed from.
+                  * Discarded cards should be placed face down at the bottom
+                    of the inspiration card stack.
+          * These cards will provide VP if the condition(s) on the card are
+            met at the end of the game.
+              * Inspiration cards will double the value of the space cards
+                they are placed above (if the condition(s) is met).
+      - name: Townsfolk Cards
+        text: |
+          * Townsfolk cards must be tucked under land or water cards.
+          * When acquiring a card with a worker(s) on it, add the worker(s)
+            to your supply.
+          * The benefits on cards can **never be activated on the same turn**
+            they were acquired (except immediate 🗲 effects).
+          * Townsfolk cards require specific tags in order to be acquired.
+              * The tags are listed to the right of the name on the card.
+              * They may only be tucked under a land/water card featuring
+                at least 1 of the required tags.
+          * These cards enhance the cards they are tucked under or provide
+            various other effects.
+          * Each land/water card can **only have 1 tucked townsfolk card**.
+          * Townsfolk abilities can be resolved before or after the
+            land/water card's ability.
+          * As depicted on your starting star card, each pair of
+            townsfolk card + upgrade tile will score 1 VP at the end of
+            the game.
+      - name: Upgrade Tiles
+        text: |
+          * Upgrade tiles are placed on your caravan to upgrade it.
+          * The costs for land/water/space/basic upgrade tiles are shown on
+            the board near where they are kept.
+          * Special upgrade tiles do not have a cost, but are acquired through
+            other actions (like advancing on the journal track).
+          * When placing upgrade tiles in your caravan:
+              * They must fit completely into the caravan (can't hang off).
+              * Tiles cannot cover other tiles.
+              * Tiles can be flipped.
+              * Tiles can **never be rotated**. All icons must appear
+                un-rotated.
+              * Tiles can never be moved or removed after being placed.
+              * If you cover a space with an icon, gain the effect shown on
+                the board.
+          * Some upgrade tiles have VP printed on them that will score at
+            the end of the game.
+          * Pink upgrade tiles also feature tags, which work the same way
+            as tags printed on cards.
+              * Primary tags (city/vista/harbour/open water) on upgrade tiles
+                also contribute toward tag scoring at the [end of the
+                game](#end_game).
+          * Some tiles show a silver or provision discount icon. When placing
+            a die with these icons, that die's entire action is discounted
+            by whatever is in the matching column.
+          * Some tiles show dice manipulation symbols. These allow the die
+            to be altered before placing it.
+  - name: Icons
+    text: |
+      | Symbol | Description |
+      | ------ | ----------- |
+      | ![city](/static/img/wayfarers/city.png) | City |
+      | ![vista](/static/img/wayfarers/vista.png) | Vista |
+      | ![harbour](/static/img/wayfarers/harbour.png) | Harbour |
+      | ![water](/static/img/wayfarers/water.png) | Open Water |
+      | ![observ](/static/img/wayfarers/observ.png) | Observatory |
+      | ![library](/static/img/wayfarers/library.png) | Library |
+      | ![stars](/static/img/wayfarers/stars.png) | Stars |
+      | ![planet](/static/img/wayfarers/planet.png) | Planet |
+      | ![sun](/static/img/wayfarers/sun.png) | Sun |
+      | ![moon](/static/img/wayfarers/moon.png) | Moon |
+      | ![comet](/static/img/wayfarers/comet.png) | Comet |
+      | ![tag_set](/static/img/wayfarers/tag_set.png) | 3 VP per set of comet, planet, and star tags |
+      | ![land_up](/static/img/wayfarers/u_land.png) | Land Upgrade Tile |
+      | ![water_up](/static/img/wayfarers/u_water.png) | Water Upgrade Tile |
+      | ![space_up](/static/img/wayfarers/u_space.png) | Space Upgrade Tile |
+      | ![basic_up](/static/img/wayfarers/u_basic.png) | Basic Upgrade Tile |
+      | ![spec_up](/static/img/wayfarers/u_spec.png) | Special Upgrade Tile |
+      | ![any_up](/static/img/wayfarers/u_any.png) | Any Upgrade Tile |
+      | ![basic_free](/static/img/wayfarers/basic_free.png) | Acquire a basic upgrade tile for free |
+      | ![land](/static/img/wayfarers/c_land.png) | Land Card |
+      | ![water](/static/img/wayfarers/c_water.png) | Water Card |
+      | ![space](/static/img/wayfarers/c_space.png) | Space Card |
+      | ![towns](/static/img/wayfarers/c_towns.png) | Townsfolk Card |
+      | ![insp](/static/img/wayfarers/c_insp.png) | Inspiration Card |
+      | ![town_free](/static/img/wayfarers/towns_free.png) | Acquire a Townsfolk card for free |
+      | ![draw_3](/static/img/wayfarers/draw_3.png) | Draw 3 of the depicted cards, keep 1, and place the other 2 at the bottom of their deck in any order |
+      | ![card_set](/static/img/wayfarers/card_set.png) | A set of cards = 1 VP |
+      | ![camel](/static/img/wayfarers/camel.png) | Camel |
+      | ![ship](/static/img/wayfarers/ship.png) | Ship |
+      | ![tele](/static/img/wayfarers/telescope.png) | Telescope |
+      | ![pidgeon](/static/img/wayfarers/pidgeon.png) | Pidgeon |
+      | ![i_place](/static/img/wayfarers/i_place.png) | Place an influence in the depicted guild |
+      | ![i_spend](/static/img/wayfarers/i_spend.png) | Spend an influence from the depicted guild |
+      | ![i_pl_any](/static/img/wayfarers/i_pl_any.png) | Place an influence in any guild |
+      | ![i_move](/static/img/wayfarers/i_move.png) | Move an influence in any guild |
+      | ![one_each](/static/img/wayfarers/g_1_in_each.png) | Place 1 influence in each guild |
+      | ![i_card](/static/img/wayfarers/i_card.png) | Place an influence on a face up card |
+      | ![provision](/static/img/wayfarers/provision.png) | Provision |
+      | ![silver](/static/img/wayfarers/silver.png) | Silver |
+      | ![gw](/static/img/wayfarers/w_green.png) | Green Worker |
+      | ![gyw](/static/img/wayfarers/w_gy.png) | Green/Yellow Worker |
+      | ![gbw](/static/img/wayfarers/w_gb.png) | Green/Blue Worker |
+      | ![aw](/static/img/wayfarers/w_any.png) | Any Worker |
+      | ![w_retr](/static/img/wayfarers/w_retrv.png) | Retrieve any worker from a face up card |
+      | ![d_inc_dec](/static/img/wayfarers/d_inc_dec.png) | Increase/Decrease a Die |
+      | ![d_refr](/static/img/wayfarers/d_refresh.png) | Refresh a Die |
+      | ![d_gain](/static/img/wayfarers/d_gain.png) | Gain a new die from the reserve and add it to your supply |
+      | ![journal](/static/img/wayfarers/journal.png) | Journal |
+      | ![journalp](/static/img/wayfarers/journal+.png) | Extra Journal (max once per turn) |
+      | ![negate](/static/img/wayfarers/negate.png) | Negate a depicted cost |
