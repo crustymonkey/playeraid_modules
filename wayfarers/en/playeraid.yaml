@@ -2,7 +2,7 @@ name: "Wayfarers of the South Tigris"
 description: "Explore to collect victory points"
 text_type: markdown
 credits: "Jay Deiman"
-enabled: false
+enabled: true
 version: 1.0
 bgg_id: 350316
 yt_videos:
@@ -202,42 +202,48 @@ sections:
           * When acquiring a card with a worker(s) on it, add the worker(s)
             to your supply.
           * The benefits on cards can **never be activated on the same turn**
-            they were acquired (except immediate 🗲 effects).
+            they were acquired (except immediate ⚡ effects).
+
+          ### Land Cards
           * Land cards are placed to the left of your player board.
-              * These cards have no inherent cost, but the action being
-                taken to acquire them may have a cost.
-                  * When acquiring 1 of these cards, you can either take
-                    a face up card **or** draw 3 from the deck and keep 1
-                    (return the others to the bottom of the deck).
-                      * You must have an available pidgeon symbol or spend
-                        1 provision to use the "deck" option.
-              * Some land cards have 1-time immediate effects on the left
-                side of the card (blue bar with a 🗲 symbol).
+          * These cards have no inherent cost, but the action being
+            taken to acquire them may have a cost.
+              * When acquiring 1 of these cards, you can either take
+                a face up card **or** draw 3 from the deck and keep 1
+                (return the others to the bottom of the deck).
+                  * You must have an available pidgeon symbol or spend
+                    1 provision to use the "deck" option.
+          * Some land cards have 1-time immediate effects on the left
+            side of the card (blue bar with a ⚡ symbol).
+
+          ### Water Cards
           * Water cards are placed to the right of your player board.
-              * These cards have no inherent cost, but the action being
-                taken to acquire them may have a cost.
-                  * When acquiring 1 of these cards, you can either take
-                    a face up card **or** draw 3 from the deck and keep 1
-                    (return the others to the bottom of the deck).
-                      * You must have an available pidgeon symbol or spend
-                        1 provision to use the "deck" option.
-              * Water cards provide immediate effects via the connection
-                links on card edges.
-                  * Activate anything where a benefit matches a 🗲 symbol.
+          * These cards have no inherent cost, but the action being
+            taken to acquire them may have a cost.
+              * When acquiring 1 of these cards, you can either take
+                a face up card **or** draw 3 from the deck and keep 1
+                (return the others to the bottom of the deck).
+                  * You must have an available pidgeon symbol or spend
+                    1 provision to use the "deck" option.
+          * Water cards provide immediate effects via the connection
+            links on card edges.
+              * Activate anything where a benefit matches a ⚡ symbol.
+
+          ### Space Cards
           * Space cards must be placed above land or water cards. These provide
             victory points.
-              * Space cards cost silver based on which slot they sit above.
-              * They can never have an empty card slot below them.
-              * There is only 1 sun and 1 moon card. They are worth 3 VP on
-                their own or 14 VP if you have both.
-              * There are 5 planet cards, scoring 1 VP + 1 additional VP per
-                planet tag (including its own).
-              * There are 8 comet cards, each worth 1-3 VP.
-                  * At the end of the game, if a player has more comet tags
-                    than anyone else, each comet card is **worth 4 VP each
-                    instead**.
-              * Some space cards have 1-time immediate effects printed on the
-                right side of the card (blue bar with a 🗲 symbol).
+          * Space cards cost silver based on which slot they sit above.
+          * They can never have an empty card slot below them.
+          * There is only 1 sun and 1 moon card. They are worth 3 VP on
+            their own or 14 VP if you have both.
+          * There are 5 planet cards, scoring 1 VP + 1 additional VP per
+            planet tag (including its own).
+          * There are 8 comet cards, each worth 1-3 VP.
+              * At the end of the game, if a player has more comet tags
+                than anyone else, each comet card is **worth 4 VP each
+                instead**.
+          * Some space cards have 1-time immediate effects printed on the
+            right side of the card (blue bar with a ⚡ symbol).
       - name: Inspiration Cards
         id: insp_cards
         text: |
@@ -260,7 +266,7 @@ sections:
           * When acquiring a card with a worker(s) on it, add the worker(s)
             to your supply.
           * The benefits on cards can **never be activated on the same turn**
-            they were acquired (except immediate 🗲 effects).
+            they were acquired (except immediate ⚡ effects).
           * Townsfolk cards require specific tags in order to be acquired.
               * The tags are listed to the right of the name on the card.
               * They may only be tucked under a land/water card featuring
