@@ -6,6 +6,8 @@ enabled: true
 version: 1.0
 bgg_id: 350316
 yt_videos:
+  - https://www.youtube.com/watch?v=Xn9yhCtOUI0&pp=ygUpd2F5ZmFyZXJzIG9mIHRoZSBzb3V0aCB0aWdyaXMgaG93IHRvIHBsYXk%3D
+  - https://www.youtube.com/watch?v=yn1Wad8OQ7A&pp=ygUpd2F5ZmFyZXJzIG9mIHRoZSBzb3V0aCB0aWdyaXMgaG93IHRvIHBsYXk%3D
 expansions:
 sections:
   - name: Setup
