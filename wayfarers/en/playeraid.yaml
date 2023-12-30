@@ -3,7 +3,7 @@ description: "Explore to collect victory points"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.1
+version: 1.2
 bgg_id: 350316
 yt_videos:
   - https://www.youtube.com/watch?v=Xn9yhCtOUI0&pp=ygUpd2F5ZmFyZXJzIG9mIHRoZSBzb3V0aCB0aWdyaXMgaG93IHRvIHBsYXk%3D
@@ -379,7 +379,7 @@ sections:
       | ![i_pl_any](/static/img/wayfarers/i_pl_any.png) | Place an influence in any guild |
       | ![i_move](/static/img/wayfarers/i_move.png) | Move an influence in any guild |
       | ![one_each](/static/img/wayfarers/g_1_in_each.png) | Place 1 influence in each guild |
-      | ![i_card](/static/img/wayfarers/i_card.png) | Place an influence on any face up card |
+      | ![i_card](/static/img/wayfarers/i_card.png) | Place an influence on any face up card. You must pay 1 silver or 1 provision to each player with an influence on the card when you interact with it. |
       | ![provision](/static/img/wayfarers/provision.png) | Provision |
       | ![silver](/static/img/wayfarers/silver.png) | Silver |
       | ![gw](/static/img/wayfarers/w_green.png) | Green Worker |
