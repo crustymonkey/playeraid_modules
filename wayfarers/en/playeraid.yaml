@@ -3,7 +3,7 @@ description: "Explore to collect victory points"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.0
+version: 1.1
 bgg_id: 350316
 yt_videos:
   - https://www.youtube.com/watch?v=Xn9yhCtOUI0&pp=ygUpd2F5ZmFyZXJzIG9mIHRoZSBzb3V0aCB0aWdyaXMgaG93IHRvIHBsYXk%3D
@@ -190,6 +190,32 @@ sections:
                     difference of 2.
               * Blue: When placing a die, act as if it had a ship asset.
           * Players may only use each guild's ability at most **once per turn**.
+      - name: Journaling
+        text: |
+          * Any time you get a journal action, you may move 1 space to the
+            right on the journal track.
+              * You must have the indicated tags/items in the ink splotch
+                you wish to progress through.
+              * Some spaces have you spend influence to progress.
+              * The 1st 2 ink splotches have no requirements.
+          * When you move to a new space, collect the reward on the space.
+              * Do **not** remove the journal tile in spaces with a tile.
+          * If you land on a space adjacent to a green worker, also take the
+            green worker.
+          * Any number of players can share the same space on the journal track.
+      - name: Influence
+        text: |
+          * Influence is placed on either cards or in the guilds.
+          * If you want to interact with a card with an influence, you must
+            pay the influence owner 1 silver or 1 provision.
+          * "Interacting" includes:
+              * Acquiring the card
+              * Placing a worker on the card
+              * Retrieving a worker from the card
+          * Influence spent/removed from a card is always returned to its owner.
+          * If you gain an ability that allows you to place influence, but you
+            have none left in your supply, you may instead move an influence
+            from another location.
       - name: Land/Water/Space Cards
         id: lws_cards
         text: |
@@ -210,11 +236,11 @@ sections:
           * Land cards are placed to the left of your player board.
           * These cards have no inherent cost, but the action being
             taken to acquire them may have a cost.
-              * When acquiring 1 of these cards, you can either take
-                a face up card **or** draw 3 from the deck and keep 1
-                (return the others to the bottom of the deck).
-                  * You must have an available pidgeon symbol or spend
-                    1 provision to use the "deck" option.
+          * When acquiring 1 of these cards, you can either take
+            a face up card **or** draw 3 from the deck and keep 1
+            (return the others to the bottom of the deck).
+              * You must have an available pidgeon symbol or spend
+                1 provision to use the "deck" option.
           * Some land cards have 1-time immediate effects on the left
             side of the card (blue bar with a ⚡ symbol).
 
@@ -222,11 +248,11 @@ sections:
           * Water cards are placed to the right of your player board.
           * These cards have no inherent cost, but the action being
             taken to acquire them may have a cost.
-              * When acquiring 1 of these cards, you can either take
-                a face up card **or** draw 3 from the deck and keep 1
-                (return the others to the bottom of the deck).
-                  * You must have an available pidgeon symbol or spend
-                    1 provision to use the "deck" option.
+          * When acquiring 1 of these cards, you can either take
+            a face up card **or** draw 3 from the deck and keep 1
+            (return the others to the bottom of the deck).
+              * You must have an available pidgeon symbol or spend
+                1 provision to use the "deck" option.
           * Water cards provide immediate effects via the connection
             links on card edges.
               * Activate anything where a benefit matches a ⚡ symbol.
@@ -244,6 +270,7 @@ sections:
               * At the end of the game, if a player has more comet tags
                 than anyone else, each comet card is **worth 4 VP each
                 instead**.
+          * There are 21 space cards with stars on them.
           * Some space cards have 1-time immediate effects printed on the
             right side of the card (blue bar with a ⚡ symbol).
       - name: Inspiration Cards
@@ -253,11 +280,11 @@ sections:
           * Inspiration cards must be tucked above space cards.
               * Each space card can **only have 1 tucked inspiration
                 card**.
-              * If you can't tuck the card, or don't want to, it can
-                **instead** be discarded for the immediate effect printed
-                on the board in the slot it was removed from.
-                  * Discarded cards should be placed face down at the bottom
-                    of the inspiration card stack.
+          * If you can't tuck the card, or don't want to, it can
+            **instead** be discarded for the immediate effect printed
+            on the board in the slot it was removed from.
+              * Discarded cards should be placed face down at the bottom
+                of the inspiration card stack.
           * These cards will provide VP if the condition(s) on the card are
             met at the end of the game.
               * Inspiration cards will double the value of the space cards
@@ -265,6 +292,9 @@ sections:
       - name: Townsfolk Cards
         text: |
           * Townsfolk cards must be tucked under land or water cards.
+          * Townsfolk only provide benefits for the cards they are tucked
+            under (except cards with general abilities, like those that
+            activate during a rest action).
           * When acquiring a card with a worker(s) on it, add the worker(s)
             to your supply.
           * The benefits on cards can **never be activated on the same turn**
@@ -349,7 +379,7 @@ sections:
       | ![i_pl_any](/static/img/wayfarers/i_pl_any.png) | Place an influence in any guild |
       | ![i_move](/static/img/wayfarers/i_move.png) | Move an influence in any guild |
       | ![one_each](/static/img/wayfarers/g_1_in_each.png) | Place 1 influence in each guild |
-      | ![i_card](/static/img/wayfarers/i_card.png) | Place an influence on a face up card |
+      | ![i_card](/static/img/wayfarers/i_card.png) | Place an influence on any face up card |
       | ![provision](/static/img/wayfarers/provision.png) | Provision |
       | ![silver](/static/img/wayfarers/silver.png) | Silver |
       | ![gw](/static/img/wayfarers/w_green.png) | Green Worker |
@@ -358,8 +388,9 @@ sections:
       | ![aw](/static/img/wayfarers/w_any.png) | Any Worker |
       | ![w_retr](/static/img/wayfarers/w_retrv.png) | Retrieve any worker from a face up card |
       | ![d_inc_dec](/static/img/wayfarers/d_inc_dec.png) | Increase/Decrease a Die |
-      | ![d_refr](/static/img/wayfarers/d_refresh.png) | Refresh a Die |
+      | ![d_refr](/static/img/wayfarers/d_refresh.png) | Refresh a die. You may reroll a placed/unplaced die to be played on a later turn, even the die that was just placed. |
       | ![d_gain](/static/img/wayfarers/d_gain.png) | Gain a new die from the reserve and add it to your supply |
+      | ![d_2_asset](/static/img/wayfarers/d_2_asset.png) | Your die must have **all** pictured assets to be placed here |
       | ![journal](/static/img/wayfarers/journal.png) | Journal |
       | ![journalp](/static/img/wayfarers/journal+.png) | Extra Journal (max once per turn) |
       | ![negate](/static/img/wayfarers/negate.png) | Negate a depicted cost |
