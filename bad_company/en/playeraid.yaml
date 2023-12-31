@@ -1,0 +1,216 @@
+name: "Bad Company"
+description: "Commit some crimes while getting taller."
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+version: 1.0
+bgg_id: 340677
+yt_videos:
+  - https://www.youtube.com/watch?v=abieuVWACtA&pp=ygUiYmFkIGNvbXBhbnkgYm9hcmQgZ2FtZSBob3cgdG8gcGxheQ%3D%3D
+  - https://www.youtube.com/watch?v=tSrFSwx5wYU&pp=ygUiYmFkIGNvbXBhbnkgYm9hcmQgZ2FtZSBob3cgdG8gcGxheQ%3D%3D
+  - https://www.youtube.com/watch?v=znrUqI6-bYc&pp=ygUiYmFkIGNvbXBhbnkgYm9hcmQgZ2FtZSBob3cgdG8gcGxheQ%3D%3D
+expansions:
+sections:
+  - name: Setup
+    text: |
+      * Place the city board and score board in the middle of the table.
+      * Shuffle the upgrade cards and place them in a face down deck.
+      * Shuffle the loot cards and place them in a face down deck near the
+        city board.
+      * Shuffle the heist cards and place them in a face up deck.
+          * Draw 4 heists and place them face up next to the deck.
+      * Place the police car on its start space based on player count.
+      * Create a supply of necklace tokens, check markers, and coins.
+      * Choose a player to start as the **boss**.
+      * Each player:
+          * Takes a scoring disc in their chosen color and places it on the
+            zero space of the score track.
+          * Takes 1 recruiter in their color and places it on the 1st space
+            of the recruit track on the score board.
+          * Takes 1 player card in their color and places it on the start
+            space on the city board.
+          * Takes 2 random gang board pieces (1 left and 1 right) and places
+            them next to each other in their play area.
+          * Takes 3 heists from the **deck**.
+              * Draw in player order, starting with the 1st player.
+              * Place 2 of the heists above your player board and discard the
+                3rd to the bottom of the heist deck.
+          * Takes $2 from the supply
+  - name: Gameplay
+    text: |
+      The game is played over a series of turns until either a player
+      completes their 6th heist or when any car (player or police) enters
+      the red zone at the end of the road.  After that turn is completed,
+      there is [1 special final turn](#end_game) before [final
+      scoring](#end_game).
+    sections:
+      - name: "Phase 1: Roll the Dice"
+        id: roll
+        text: |
+          1. The boss (1st player) rolls all 5 dice.
+              * If the boss does not like the results, they may $1 to re-roll
+                **any number** of dice. This can be repeated multiple times.
+          2. The boss uses the 4 golden dice to form any 2 pairs. Announce the
+             sum of each pair.
+              * Both pairs may have the same value.
+      - name: "Phase 2: Activate Gang Members"
+        text: |
+          * Loot cards may be discarded at any time (unless otherwise
+            specified) for their 1-time effects.
+              * If the loot deck is ever empty, shuffle the discard to make
+                a new deck.
+          * This phase may be performed simultaneously unless there is a timing
+            conflict, in which case they should be resolved in clockwise order
+            starting with the boss.
+          * The **boss** activates **both** gang members indicated by the
+            sum of each pair of dice
+              * If both pairs are the same value, the boss activates the same
+                gang member **twice**.
+          * All other players activate **1 gang member** from 1 of the 2 pairs
+            of dice.
+          * When activating a gang member, takes all the rewards shown on the
+            gang member.
+              * Note that points in the upper left corner of upgrade cards
+                are only scored at the end of the game.
+              * When you gain a marker, take a marker from the supply and
+                place it on a **matching** symbol on 1 of your heists or
+                tasks.
+              * If the gang member has a necklace, score 1 point.
+        sections:
+          - name: "Special Gang Members (2 and 12)"
+            text: |
+              * The Fixer (2): Choose 1 of the 3 (lock, hand, or mask, but
+                **not** the flashlight) symbols shown and gain markers =
+                to the number of matching reward symbols on **all** your gang
+                members (not including the fixer).
+              * The Chauffeur (12): Move your car 2 spaces on the road.
+          - name: The Car Chase
+            text: |
+              * Whenever your car passes a checkpoint, take the indicated bonus
+                **if the police car has not passed it**.
+              * When moving, you may choose to take a shortcut.
+                  * If you take a shortcut, you do **not** get the checkpoint
+                    bonus you would have otherwise passed.
+          - name: Recruit
+            text: |
+              * Pay the value in coins to advance your recruiter to the next
+                space on the recruit track.
+                  * You may do this multiple times on the same turn.
+              * Each time you advance the recruiter, draw the top 3 upgrade
+                cards from the deck, choose 1 to keep, and discard the other
+                2 to a discard pile.
+                  * Place the the gang member on the matching number space,
+                    but make sure all previous reward symbols are visible.
+                  * If the upgraded gang member has a necklace, place it on
+                    the topmost gang member card.
+              * If the recruit deck is empty, shuffle the discard to make
+                a new deck.
+              * There is no limit to the number of upgrades a gang member can
+                have.
+              * If you reach the end of the recruit track, you can no longer
+                upgrade gang members.
+                  * **Instead**, you may spend $5 to gain 3 points (as many
+                    times as you can afford).
+          - name: Complete Tasks
+            text: |
+              * When you have 2 markers on any of the 4 tasks on your gang
+                board, you may discard the markers to the supply to gain
+                the listed bonus.
+              * You may complete several tasks on the same turn, **even the
+                same task multiple times**.
+
+              | Bonus | Description |
+              | ----- | ----------- |
+              | ![marker](/static/img/bad_company/b_any_mark.png) | Gain and place a marker on *any* symbol, even a task symbol. |
+              | ![dollars](/static/img/bad_company/b_2_dollars.png) | Gain $2. |
+              | ![mv_car](/static/img/bad_company/b_mv_car.png) | Move your car 1 space. |
+              | ![loot](/static/img/bad_company/b_loot.png) | Draw a loot card from the deck, look at it, and place it face down in your play area. |
+          - name: Complete Heists
+            text: |
+              * A heist is complete when all symbol spaces are covered with
+                markers.
+              * When a heist is complete take any immediate bonus shown at
+                the bottom of the card, return the markers to the supply,
+                flip it face down, and tuck it under your player board.
+              * Points for completed heists are scored at the [end of the
+                game](#end_game)
+              * Some heists have abilities (red box) that will be active for
+                the rest of the game once completed.
+              * Some heists have final scoring effects (purple box) that will
+                be counted at the [end of the game](#end_game).
+              * You may complete both active heists on the same turn.
+              * **After all players have finished completing heists**,
+                each player counts the total of their mission symbols
+                on **all** of their **completed** heists.
+                  * The player with the most symbols of a given type gains
+                    the corresponding necklace.
+                      * If there is a tie, the player with highest single
+                        number of the symbol on a completed heist gets the
+                        necklace.
+                  * The necklace is placed on 1 of your gang members.
+                      * Each gang member can only have 1 necklace.
+                  * Gain 1 point when you gain a necklace (from another
+                    player or the supply).
+                  * Each time you activate a gang member with a necklace,
+                    score 1 point.
+      - name: "Phase 3: End of Turn"
+        text: |
+          After all players have completed phase 2, do the following.
+
+          1. The boss moves the police car the number of spaces shown on
+             the police die (black die).
+              * The police car never takes shortcuts.
+          2. In turn order, each player with fewer than 2 active heists takes
+             new heists from the display until they have 2 active.
+              * The heist display is immediately replenished when there are
+                fewer than 5 heists showing (the 5th being the top of the
+                deck).
+              * If there are not enough heists in the display/deck for each
+                player to have 2 active heists, each player that completed
+                heists this turn takes only **1** heist.
+          3. Check for [game end](#end_game) conditions:
+              * 1 player has completed 6 or more heists.
+              * **or** any car (player or police) has entered the red zone at
+                the end of the road.
+              * If the end game is triggered, the next turn is the [final
+                turn as outlined in the end game section](#end_game).
+          4. If the end game is not triggered, pass all the dice to the next
+             player (clockwise) and that player becomes the new boss. Proceed
+             back to [phase 1](#roll).
+  - name: End of the Game and Scoring
+    id: end_game
+    text: |
+      The game ends when either a player completes their 6th heist or when
+      a car (player or police) enters the red zone at the end of the road.
+      Note that the final turn has special rules.
+
+      ### The Final Turn
+      * No dice can be rolled.
+      * Each player uses the 4 golden dice to form 2 pairs, independently of
+        each other.
+      * Each player activates 2 gang members based on the die pairs they've
+        picked.
+      * This final turn ends after phase 2.
+
+      ### Scoring
+      * Points on completed heists.
+      * Points from *final scoring* effects on completed heists.
+      * Points on collected loot cards.
+      * Visible points on upgrade cards.
+      * 2 points for each necklace.
+      * 1 point for every 2 markers on active heists/tasks/storage, rounded
+        down.
+      * **Lose** 3 points if your car is *behind* the police car (no points are
+        lost if you are on the same space as the police car).
+
+      The player with the most points wins. If there is a tie, the player with
+      the highest remaining value in coins wins.  If there is still a tie,
+      the players share the victory.
+  - name: Icons
+    text: |
+      | Icon | Description |
+      | ---- | ----------- |
+      | ![dollars](/static/img/bad_company/2_dollars.png) | Gain $2 |
+      | ![loot](/static/img/bad_company/loot.png) | Draw a loot card from the deck, look at it, and place it face down in your play area.  These can be discarded at any time for the listed effect. |
+      | ![points](/static/img/bad_company/points.png) | Gain the indicated number of points. |
+      | ![gain_mark](/static/img/bad_company/gain_mark.png) | Gain a marker place it over a matching symbol. |
