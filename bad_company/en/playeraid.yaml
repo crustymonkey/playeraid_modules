@@ -3,7 +3,7 @@ description: "Commit some crimes while getting taller."
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.0
+version: 1.1
 bgg_id: 340677
 yt_videos:
   - https://www.youtube.com/watch?v=abieuVWACtA&pp=ygUiYmFkIGNvbXBhbnkgYm9hcmQgZ2FtZSBob3cgdG8gcGxheQ%3D%3D
@@ -147,6 +147,9 @@ sections:
                       * If there is a tie, the player with highest single
                         number of the symbol on a completed heist gets the
                         necklace.
+                      * If there is still a tie, the player with the highest
+                        numbered card with the matching symbol gets the
+                        necklace.
                   * The necklace is placed on 1 of your gang members.
                       * Each gang member can only have 1 necklace.
                   * Gain 1 point when you gain a necklace (from another
@@ -185,7 +188,8 @@ sections:
       Note that the final turn has special rules.
 
       ### The Final Turn
-      * No dice can be rolled.
+      * The boss rolls only the 4 gold dice.
+          * No dice can be rerolled.
       * Each player uses the 4 golden dice to form 2 pairs, independently of
         each other.
       * Each player activates 2 gang members based on the die pairs they've

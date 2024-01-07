@@ -3,7 +3,7 @@ description: "Let's play in our old west sandbox."
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.0
+version: 1.1
 yt_videos:
   - https://www.youtube.com/watch?v=h2EsvbbqLRw&pp=ygUbd2VzdGVybiBsZWdlbmRzIGhvdyB0byBwbGF5
   - https://www.youtube.com/watch?v=yBI2rjeCris&pp=ygUbd2VzdGVybiBsZWdlbmRzIGhvdyB0byBwbGF5
@@ -346,211 +346,218 @@ sections:
       2. The player with the most gold nuggets wins.
       3. The player with the fewest wounds wins.
       4. The tied players share the victory.
-  - name: Story Cards
-    text: |
-      * A player may only add 1 disc to 1 story card on their turn.
-          * This can only be done on your turn.
-          * If a player would fulfill multiple, they must choose 1 for this
-            turn.
-      * When a story card is completed, the player who added the last disc:
-          1. Read the narrative text out loud.
-          2. Resolve the reward for all players that contributed.
-              * Players that contributed more than 1 disc only get 1 reward.
-          3. Spawn bandits in all the indicated bandit hideouts.
-              * They cannot spawn in a space with a player, the sheriff, or
-                another bandit.
-          4. Move the sheriff the indicated number of spaces.
-              * If this triggers an arrest, the remaining movement is lost.
-  - name: Marshal/Wanted Points
-    text: |
-      * Players may never have both marshal and wanted points.
+  - name: Appendix
+    sections:
+      - name: Story Cards
+        text: |
+          * A player may only add 1 disc to 1 story card on their turn.
+              * This can only be done on your turn.
+              * If a player would fulfill multiple, they must choose 1 for this
+                turn.
+          * When a story card is completed, the player who added the last disc:
+              1. Read the narrative text out loud.
+              2. Resolve the reward for all players that contributed.
+                  * Players that contributed more than 1 disc only get 1 reward.
+              3. Spawn bandits in all the indicated bandit hideouts.
+                  * They cannot spawn in a space with a player, the sheriff, or
+                    another bandit.
+              4. Move the sheriff the indicated number of spaces.
+                  * If this triggers an arrest, the remaining movement is lost.
+      - name: Marshal/Wanted Points
+        text: |
+          * Players may never have both marshal and wanted points.
 
-      ### Marshal Points
-      * Marshal points are earned when:
-          * Defeating a bandit: 1 point
-          * Wrangle a cattle: 1 point
-          * Arrest a wanted player: 1 point
-          * Use the action on the "Living Legend" poker card: 1 point
-          * Story card rewards: as stated on the card
-      * When gaining marshal points, you move your cube up on the
-        marshal track.
-          * Gain the reward on the space the cube was moved to.
-          * If you are on the 9th space and would gain a marshal point,
-            gain 1 LP instead.
-      * A marshal can choose to become wanted.
-          * If you gain wanted points, you may move your cube from the
-            marshal track to **beginning** of the wanted track.
-      * Marshals score points at the end of the game based on the row they
-        are in.
+          ### Marshal Points
+          * Marshal points are earned when:
+              * Defeating a bandit: 1 point
+              * Wrangle a cattle: 1 point
+              * Arrest a wanted player: 1 point
+              * Use the action on the "Living Legend" poker card: 1 point
+              * Story card rewards: as stated on the card
+          * When gaining marshal points, you move your cube up on the
+            marshal track.
+              * Gain the reward on the space the cube was moved to.
+              * If you are on the 9th space and would gain a marshal point,
+                gain 1 LP instead.
+          * A marshal can choose to become wanted.
+              * If you gain wanted points, you may move your cube from the
+                marshal track to **beginning** of the wanted track.
+          * Marshals score points at the end of the game based on the row they
+            are in.
 
-      ### Wanted Points
-      * Wanted points are earned when:
-          * Doing a heist: 1 point if unsuccessful, 3 points and $80 if
-            successful.
-          * Rob a player: 1 point
-          * Rustle cattle: 1 point
-          * Use the action on the "Living Legend" poker card: 1 point
-          * Story card rewards: as stated on the card
-      * When gaining wanted points, you move your cube up on the track.
-          * Gain any rewards on the space entered.
-          * If you are on the 9th space and would gain a wanted point,
-            gain 1 LP instead.
-      * At the end of a wanted player's turn, they gain LP based on the row
-        their cube is in.
-      * The most wanted player at the [end of the game](#end_game) will
-        score 3 LP.  Each other wanted player will score 1 LP.
-  - name: Bandits/Sheriff
-    text: |
-      ## Bandits
-      * There are 3 different gangs of bandits, each of which has 2 hideouts.
-      * When bandits spawn, they never spawn in a space with another bandit,
-        a player, or the sheriff.
-      * If a player enters a space with a bandit, their movement immediately
-        ends and a fight is started
+          ### Wanted Points
+          * Wanted points are earned when:
+              * Doing a heist: 1 point if unsuccessful, 3 points and $80 if
+                successful.
+              * Rob a player: 1 point
+              * Rustle cattle: 1 point
+              * Use the action on the "Living Legend" poker card: 1 point
+              * Story card rewards: as stated on the card
+          * When gaining wanted points, you move your cube up on the track.
+              * Gain any rewards on the space entered.
+              * If you are on the 9th space and would gain a wanted point,
+                gain 1 LP instead.
+          * At the end of a wanted player's turn, they gain LP based on the row
+            their cube is in.
+          * The most wanted player at the [end of the game](#end_game) will
+            score 3 LP.  Each other wanted player will score 1 LP.
+      - name: Bandits/Sheriff
+        text: |
+          ## Bandits
+          * There are 3 different gangs of bandits, each of which has 2
+            hideouts.
+          * When bandits spawn, they never spawn in a space with another bandit,
+            a player, or the sheriff.
+          * If a player enters a space with a bandit, their movement immediately
+            ends and a fight is started
 
-      ### Fighing a Bandit
-      1. The active player chooses 1 poker card and plays it face down.
-      2. The player to the right of the active player draws 2 fight cards
-         and chooses 1 to play face down.
-      3. Reveal both cards and then apply effects from characters, items, etc.
-      4. The active player may play any number of reaction cards.
-      5. The effects from the played fight card are resolved.
-      6. The highest value wins the fight with the **active player losing
-         ties**.
-      7. If the bandit is defeated, the player gains either 1 LP **or** 1
-         marshal point.
-          * Wanted players may not choose to gain a marshal point.
-      8. Remove the bandit from the board regardless of outcome.
-      9. Discard all played poker cards and return the fight cards to the
-         bottom of the fight deck (random order).
+          ### Fighing a Bandit
+          1. The active player chooses 1 poker card and plays it face down.
+          2. The player to the right of the active player draws 2 fight cards
+             and chooses 1 to play face down.
+          3. Reveal both cards and then apply effects from characters, items,
+             etc.
+          4. The active player may play any number of reaction cards.
+          5. The effects from the played fight card are resolved.
+          6. The highest value wins the fight with the **active player losing
+             ties**.
+          7. If the bandit is defeated, the player gains either 1 LP **or** 1
+             marshal point.
+              * Wanted players may not choose to gain a marshal point.
+          8. Remove the bandit from the board regardless of outcome.
+          9. Discard all played poker cards and return the fight cards to the
+             bottom of the fight deck (random order).
 
-      ## The Sheriff
-      * The sheriff starts at the sheriff's office in Darkrock.
-      * As long as there is at least 1 wanted player, the sheriff will move
-        when a story card dictates it.
-      * The sheriff can also be moved via the Manhunt poker card (again,
-        as long as there is at least 1 wanted player).
-      * If the sheriff enters a space with a wanted player, the player must
-        immediately discard 1 poker card, if they have any.
-          * If there are 2+ wanted players in the space, the person who
-            moved the sheriff decides who discards.
+          ## The Sheriff
+          * The sheriff starts at the sheriff's office in Darkrock.
+          * As long as there is at least 1 wanted player, the sheriff will move
+            when a story card dictates it.
+          * The sheriff can also be moved via the Manhunt poker card (again,
+            as long as there is at least 1 wanted player).
+          * If the sheriff enters a space with a wanted player, the player must
+            immediately discard 1 poker card, if they have any.
+              * If there are 2+ wanted players in the space, the person who
+                moved the sheriff decides who discards.
 
-      ### Arrest Attempt
-      1. The wanted player places 1 poker card face down.
-      2. The player to the right of the wanted player draws 4 fight cards and
-         plays 1 face down.
-      3. Reveal both cards and apply any effects from characters, items, etc.
-      4. The active player may play any number of reactions.
-      5. Apply the effects from the fight card.
-      6. The highest value wins, with the active player **losing** ties.
-      7. Discard the played poker cards and put the fight cards on the bottom
-         of its deck in random order.
+          ### Arrest Attempt
+          1. The wanted player places 1 poker card face down.
+          2. The player to the right of the wanted player draws 4 fight cards
+             and plays 1 face down.
+          3. Reveal both cards and apply any effects from characters, items,
+             etc.
+          4. The active player may play any number of reactions.
+          5. Apply the effects from the fight card.
+          6. The highest value wins, with the active player **losing** ties.
+          7. Discard the played poker cards and put the fight cards on the
+             bottom of its deck in random order.
 
-      * If the sheriff arrests the wanted player, they are placed at the
-        sheriff's office **with the sheriff** and they:
-          * Gain 1 wound
-          * Draw 1 poker card
-          * Lose all wanted points
-          * Lose all cattle
-          * Lose half their money, rounded up
-          * Lose half their gold nuggets, rounded up
-      * If the wanted player wins, place the sheriff at the sheriff's office.
-  - name: Item Cards
-    id: items
-    text: |
-      * **Players may never own more than 1 copy of any item at a time**.
+          * If the sheriff arrests the wanted player, they are placed at the
+            sheriff's office **with the sheriff** and they:
+              * Gain 1 wound
+              * Draw 1 poker card
+              * Lose all wanted points
+              * Lose all cattle
+              * Lose half their money, rounded up
+              * Lose half their gold nuggets, rounded up
+          * If the wanted player wins, place the sheriff at the sheriff's
+            office.
+      - name: Item Cards
+        id: items
+        text: |
+          * **Players may never own more than 1 copy of any item at a time**.
 
-      ### Mounts
-      * These will provide you with increased movement instead of the default
-        of 2.
-      * You may own more than 1 mount, but only 1 can be "active" during your
-        turn.
-          * You may change your mount at the beginning of your turn.
-      * You can upgrade a mount by paying the cost in the upper left a 2nd
-        time at the general store.
+          ### Mounts
+          * These will provide you with increased movement instead of the
+            default of 2.
+          * You may own more than 1 mount, but only 1 can be "active" during
+            your turn.
+              * You may change your mount at the beginning of your turn.
+          * You can upgrade a mount by paying the cost in the upper left a 2nd
+            time at the general store.
 
-      ### Weapons
-      * You may own more than 1 weapon, but only 1 can be "active" during your
-        turn.
-          * You may change your weapon at the beginning of your turn.
-      * You can upgrade a weapon by paying the cost in the upper left a 2nd
-        time at the general store.
+          ### Weapons
+          * You may own more than 1 weapon, but only 1 can be "active" during
+            your turn.
+              * You may change your weapon at the beginning of your turn.
+          * You can upgrade a weapon by paying the cost in the upper left a 2nd
+            time at the general store.
 
-      ### Misc. Items
-      * These provide a variety of effects.
-      * These cannot be upgraded.
-      * You may have a **max** of 3 misc. items
-          * You cannot purchase another misc. item when you already have 3.
-  - name: Wounds
-    id: wounds
-    text: |
-      * Your hand size is reduced by 1 for each wound they have (from
-        the default of 5).
-          * This is only enforced at the [end of your turn](#end_turn).
-      * You lose 1 LP for each wound they have at the [end of the
-        game](#end_game).
-      * You can have a max of 3 wounds.
-          * Any additional wounds that would be gained are ignored.
-      * You can heal wounds by:
-          * Pay $10 at the Dr.'s office to lose all wounds.
-          * Use the bonus ability on the Bulletproof poker card in a fight.
-          * Purchase the whiskey item.
-          * Use the action ability on the provisions item.
-  - name: Goal Card Variant
-    text: |
-      ## Setup
-      * Use the goal side of each player mat (it has spaces for legendary
-        tokens).
-      * Each player takes the 4 goals matching their character card and
-        discards 1 at random to the box.
-          * Keep all other goal cards private.
-      * Place all the legendary tokens face down in a supply.
+          ### Misc. Items
+          * These provide a variety of effects.
+          * These cannot be upgraded.
+          * You may have a **max** of 3 misc. items
+              * You cannot purchase another misc. item when you already have 3.
+      - name: Wounds
+        id: wounds
+        text: |
+          * Your hand size is reduced by 1 for each wound they have (from
+            the default of 5).
+              * This is only enforced at the [end of your turn](#end_turn).
+          * You lose 1 LP for each wound they have at the [end of the
+            game](#end_game).
+          * You can have a max of 3 wounds.
+              * Any additional wounds that would be gained are ignored.
+          * You can heal wounds by:
+              * Pay $10 at the Dr.'s office to lose all wounds.
+              * Use the bonus ability on the Bulletproof poker card in a fight.
+              * Purchase the whiskey item.
+              * Use the action ability on the provisions item.
+      - name: Goal Card Variant
+        text: |
+          ## Setup
+          * Use the goal side of each player mat (it has spaces for legendary
+            tokens).
+          * Each player takes the 4 goals matching their character card and
+            discards 1 at random to the box.
+              * Keep all other goal cards private.
+          * Place all the legendary tokens face down in a supply.
 
-      ## Completing a Goal
-      * When the requirements for a goal are met, reveal the goal card and
-        take a number of legendary tokens from the supply = to the number of
-        completed goals.
-          * **You may only keep a number of legendary tokens = to your number
-            of completed goals**. Shuffle the excess back into the supply.
-      * This does **not** require an action.
-      * More than 1 goal can be completed on a turn.
+          ## Completing a Goal
+          * When the requirements for a goal are met, reveal the goal card and
+            take a number of legendary tokens from the supply = to the number of
+            completed goals.
+              * **You may only keep a number of legendary tokens = to your
+                number of completed goals**. Shuffle the excess back into the
+                supply.
+          * This does **not** require an action.
+          * More than 1 goal can be completed on a turn.
 
-      ## Distribution
-      * 9 tokens worth 2 LP
-      * 6 tokens worth 1 LP
-      * 3 tokens worth 3 LP
+          ## Distribution
+          * 9 tokens worth 2 LP
+          * 6 tokens worth 1 LP
+          * 3 tokens worth 3 LP
 
-      ## End Game
-      * Gain points for your legendary tokens.
-      * There is no penalty for uncompleted goals.
-  - name: Poker Hands
-    id: poker_hands
-    text: |
-      Poker hands in order from highest to lowest.
+          ## End Game
+          * Gain points for your legendary tokens.
+          * There is no penalty for uncompleted goals.
+      - name: Poker Hands
+        id: poker_hands
+        text: |
+          Poker hands in order from highest to lowest.
 
-      | Name | Description |
-      | ---- | ----------- |
-      | Royal flush | A-10 all of the same suit |
-      | 5 of a kind | 4 cards of the same value + the Cheat card |
-      | Straight flush | 5 cards in a sequence, all the same suit |
-      | 4 of a kind | 4 cards of the same value |
-      | Full house | 3 cards of the same value + 2 other cards of the same value |
-      | Flush | 5 cards of the same suit, but not in a sequence |
-      | Straight | 5 cards in a sequence, but not of the same suit |
-      | 3 of a kind | 3 cards of the same value |
-      | 2 pair | 2 different pairs |
-      | Pair | 2 cards of the same value |
-      | High card | The highest card you've played is your hand |
-  - name: Location Icons
-    text: |
-      | Icon | Location |
-      | ---- | -------- |
-      | ![general](/static/img/western_legends/general.png) | [General store](#general) |
-      | ![poker](/static/img/western_legends/poker.png) | [Saloon](#poker) |
-      | ![mine](/static/img/western_legends/prospect.png) | [Mine](#prospect) |
-      | ![deposit](/static/img/western_legends/deposit.png) | [Bank](#deposit) |
-      | ![heal](/static/img/western_legends/heal.png) | [Doctor's office](#heal) |
-      | ![revel](/static/img/western_legends/revel.png) | [Cabaret](#revel) |
-      | ![acquire](/static/img/western_legends/acquire.png) | [Ranch](#cattle) |
-      | ![wrangle](/static/img/western_legends/wrangle.png) | [Ranch](#cattle) |
-      | ![rail](/static/img/western_legends/rail.png) | [Rail station](#cattle) |
+          | Name | Description |
+          | ---- | ----------- |
+          | Royal flush | A-10 all of the same suit |
+          | 5 of a kind | 4 cards of the same value + the Cheat card |
+          | Straight flush | 5 cards in a sequence, all the same suit |
+          | 4 of a kind | 4 cards of the same value |
+          | Full house | 3 cards of the same value + 2 other cards of the same value |
+          | Flush | 5 cards of the same suit, but not in a sequence |
+          | Straight | 5 cards in a sequence, but not of the same suit |
+          | 3 of a kind | 3 cards of the same value |
+          | 2 pair | 2 different pairs |
+          | Pair | 2 cards of the same value |
+          | High card | The highest card you've played is your hand |
+      - name: Location Icons
+        text: |
+          | Icon | Location |
+          | ---- | -------- |
+          | ![general](/static/img/western_legends/general.png) | [General store](#general) |
+          | ![poker](/static/img/western_legends/poker.png) | [Saloon](#poker) |
+          | ![mine](/static/img/western_legends/prospect.png) | [Mine](#prospect) |
+          | ![deposit](/static/img/western_legends/deposit.png) | [Bank](#deposit) |
+          | ![heal](/static/img/western_legends/heal.png) | [Doctor's office](#heal) |
+          | ![revel](/static/img/western_legends/revel.png) | [Cabaret](#revel) |
+          | ![acquire](/static/img/western_legends/acquire.png) | [Ranch](#cattle) |
+          | ![wrangle](/static/img/western_legends/wrangle.png) | [Ranch](#cattle) |
+          | ![rail](/static/img/western_legends/rail.png) | [Rail station](#cattle) |

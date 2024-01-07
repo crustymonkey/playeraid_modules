@@ -3,7 +3,7 @@ description: "Breed foxes for fun"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.1
+version: 1.2
 yt_videos:
   - https://www.youtube.com/watch?v=KISFyQTKbz8&pp=ygUfdGhlIGZveCBleHBlcmltZW50ICBob3cgdG8gcGxheQ%3D%3D
   - https://www.youtube.com/watch?v=yD5sUfo6Y8E&pp=ygUfdGhlIGZveCBleHBlcmltZW50ICBob3cgdG8gcGxheQ%3D%3D
@@ -30,10 +30,10 @@ sections:
             the left side of the board.
           * Place the other 2 with side B face up in the bottom 2 slots.
       * Separately shuffle the decks of female parents and male parents.
-          * Deal out a row of face up male parents equal to number of players
-            + 1.
-          * Deal out a row of face up female parents equal to number of players
-            + 1.
+          * Deal out a row of face up male parents equal to number of
+            players + 1.
+          * Deal out a row of face up female parents equal to number of
+            players + 1.
           * Place the respective decks at the end of their rows.
       * Create a supply of the following near the board:
           * Trait dice
