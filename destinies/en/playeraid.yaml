@@ -1,0 +1,209 @@
+name: "Destinies"
+description: "Complete your destiny"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+version: 1.0
+bgg_id: 285192
+yt_videos: 
+  - https://www.youtube.com/watch?v=T4E5pvOKUdw&pp=ygUVZGVzdGluaWVzIGhvdyB0byBwbGF5
+  - https://www.youtube.com/watch?v=hE0lECZUcW4&pp=ygUVZGVzdGluaWVzIGhvdyB0byBwbGF5
+  - https://www.youtube.com/watch?v=WTXN8l-wFiI&pp=ygUVZGVzdGluaWVzIGhvdyB0byBwbGF5
+expansions:
+  - Witchwood
+sections:
+  - name: Setup
+    text: |
+      * Open the app and choose a scenario.
+      * Read the scenario intro aloud.
+      * Each player chooses a playable character (in the app) and takes:
+          * a player board
+          * 2 main dice and 3 effort dice
+          * 1 coin
+          * their character's destiny card and miniature
+      * Follow the instructions in the app to setup the world.
+          * Place map tiles with the unexplored side up, unless the app
+            specifies otherwise.
+          * Place any points of interest on the map as indicated.
+          * Place characters on the starting map tile (should be the
+            explored tile).
+  - name: Gameplay
+    text: |
+      Your goal is to fulfill 1 of your personal destinies, after which you
+      will start a finale to complete the fulfillment of your destiny.  The
+      1st player to fulfill their destiny wins.
+
+      * Player take turns, passing the app device around the table.
+      * All narrative events and information gained during play are **public**.
+          * The active player reads aloud from the app.
+
+    sections:
+      - name: Start of Turn
+        text: |
+          * Refresh 1 effort die (purple) by moving it to the supply area of
+            your player board.
+          * Events may be triggered at this point. If so, follow the
+            instructions in the app to resolve it.
+      - name: Movement
+        text: |
+          * You may move to a tile up to 2 tiles away.
+          * All movement is made orthoganally.  You **cannot** move diagonally.
+          * If you move onto an unexplored tile, your movement ends.
+          * You may stay on the same tile instead of moving.
+          * After moving onto an *explored* tile, you may visit 1 point of
+            interest (could be a token or mini).
+          * After moving onto an *unexplored* tile, tap it in the app.  Follow
+            the instructions in the app, which will usually be something like:
+              1. Flip the chosen tile to its explored side.
+              2. Place your mini onto the tile.
+              3. Place the point of interest markers on the tile.
+              4. Place new unexplored tiles adjacent to the tile (unexplored
+                 side face up).
+
+          ## Submaps (Witchwood)
+          * Travel to some areas is only possible via some items and
+            points of interest with the "Path" prefix.
+
+          ## Encounters (Witchwood)
+          * Any time you travel, you may come upon an encounter.  Follow
+            the instructions in the app to resolve these.
+          * **Traveling Merchants**: These are a type of encounter.
+              * You will be instructed to setup a trade stack near the board,
+                but these stacks are only marked with a **single token**.  No
+                token is placed on the board.
+              * Traveling merchants can only be encountered when the app
+                instructs you.
+      - name: Visiting a Point of Interest
+        text: |
+          * Tap the chosen point of interest in the app to see the
+            description for that point.
+          * You will generally have multiple options for each point of
+            interest.
+              * Any/all options can be chosen in any order, but each option
+                may only be picked once.
+              * Some choices will end your turn.
+              * Options types are listed below.
+
+          ## Interactions
+          * These will allow you to do an action without passing a test e.g.
+            "pull a lever".
+          * You may have a followup choice after choosing an interaction.
+
+          ## Tests
+          * There are 3 different types of tests (corresponding to the rows
+            on your player board).
+              * **Intelligence** (blue): Reflects cleverness, charisma, and
+                wisdom.
+              * **Dexterity** (green): Reflects agility and sense awareness.
+              * **Power** (red): Reflects strength, health, and endurance.
+          * Dice are used for tests.  Dice have the following sides:
+              * **Main dice** (white): 1, 1, 2, 3, 3, 4
+              * **Effort dice** (purple): 1, 1, 2, 3, 3, ★
+                  * The ★ side represents an automatic success.
+          * Any/all dice on your player board may be used for a test. Effort
+            dice not on your player board are **not** available.
+              * Effort dice are exhausted and placed next to, not on, your
+                player board.  The die must be refreshed to be used again.
+              * To resolve the roll:
+                  1. Total up the results from all dice.
+                  2. All markers on your player board for the skill being
+                     tested that are <= the roll total are counted as a
+                     success.
+                  3. Each ★ on effort dice also counts as 1 success.
+                  4. Enter the total number of **successes** into the app (not
+                     the roll total).
+                  5. Follow any instructions in the app.
+          * Results from a test may vary based on the number of successes.
+          * A test never needs more than 6 successes.  The table below outlines
+            what to expect for successes needed.
+
+          | Test Difficulty | # of Successes to Pass |
+          | --------------- | ---------------------- |
+          | Easy | 1 |
+          | Moderate | 2 |
+          | Difficult | 3 |
+          | Very Difficult | 4 |
+          | Epic | 5-6 |
+
+          ## Scanning Item Cards (white QR)
+          * You can sometimes scan an item to complete an action at a point of
+            interest. e.g. Heal someone by scanning herbs.
+
+          ## Scanning Destiny Cards (gold QR)
+          * You may have an option to scan your destiny card when talking to
+            NPCs.
+              * This often results in hints about how to accomplish your
+                destiny.
+          * You must choose which destiny path QR code on your destiny card
+            to scan when selecting this option.
+              * Reminder: the text shown in the is also **public**, but your
+                actual destiny on your card is **not**.
+
+          ## Scan or Test
+          * Sometimes you will have an option to use an item *or* test a skill.
+
+          ## Trading
+          * When there is a trading option at a point of interest, the app
+            will usually instruct you to create a "trade stack" by getting
+            some specific item cards.
+              * Place 1 trade stack token nears the cards.
+              * Place the matching trade stack token next to the point of
+                interest on the map.
+          * The trade stack stays on the map for the rest of the game.
+          * Items sold here can later be bought by other players.
+          * During a trade action, a player may buy/sell any number of items.
+
+          ## Maze (Witchwood)
+          * There are multiple rewards to be found in each maze.
+          * Correct paths through most mazes can be found somewhere during
+            the scenario.
+
+          ## Travel (Witchwood)
+          * There are points of interest, with the "Path" prefix, that will
+            allow you to travel to other locations.
+          * The list of destinations can change during the scenario.
+
+          ## Finale Interaction
+          * Once you have fulfilled the requirements for your destiny,
+            they can visit a specific point of interest (hinted on their
+            destiny card) where there will be a special option to begin your
+            finale.
+          * Once you start the finale, you can no longer do normal turns.
+              * Follow the instructions in the app for how to progress on your
+                turns.
+              * The number of turns needed to complete your finale depends
+                on current and previous actions taken during the game.
+  - name: Other Rules
+    sections:
+      - name: Experience
+        text: |
+          * Experience may be spent to upgrade your skills.
+          * For each experience spent, you may move your skill markers a
+            *total* of 2 spaces, either 1 marker 2 spaces, or 2 markers 1
+            space.
+          * **There can never be 2 skill markers on the same space of a skill
+            track!**
+      - name: Skill Gain/Loss
+        text: |
+          * Some actions may result in the gain (gold arrow) or loss (gray
+            arrow) of skill points.
+              * Move the skill marker to left in the indicated skill to
+                gain a skill point.
+              * Move the skill marker to right in the indicated skill to
+                lose a skill point.
+          * The app will usually indicate which skill to gain/lose, but if
+            the token icon has no skill symbol, you choose which skill to
+            gain/lose.
+      - name: Items
+        text: |
+          * Each player is limited to a max of 5 item cards.
+              * If you would ever have more than 5, you must either:
+                  * Abandon the item by placing it near the board and using
+                    a pair of trade stack tokens to mark the card(s) and the
+                    location on the map.
+                      * Any player may later, when visiting a point of
+                        interest on this tile, pick up the item(s). Picking
+                        up the item(s) is a **free action**.
+                  * *OR* Use the discard ability on the card.
+          * Items may be used at any time during your turn, and in any order,
+            unless otherwise specified on the card.
