@@ -3,7 +3,7 @@ description: "Build your forest with cards, but don't forget the trash pandas."
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.1
+version: 1.2
 bgg_id: 391163
 yt_videos:
   - https://www.youtube.com/watch?v=JYMnMZNg7mw&pp=ygUaZm9yZXN0IHNodWZmbGUgaG93IHRvIHBsYXk%3D
@@ -68,7 +68,8 @@ sections:
                   * If playing a split card, only pay for the half you are
                     going to expose.
               * Trees are played separate from other trees.
-                  * **Also draw a card from the deck when playing a tree**.
+                  * **Also draw a card from the deck when playing a tree and
+                    place it on the board with your payment**.
                       * If you draw a winter card, set it next to the board and
                         draw another card, unless it is the 3rd winter card,
                         in which case proceed to [end game](#end_game).
