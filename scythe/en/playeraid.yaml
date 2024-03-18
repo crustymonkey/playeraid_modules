@@ -450,8 +450,8 @@ sections:
           - name: Rusviet
             text: |
                 * **Relentless** (faction ability): You may choose the same
-                  section on your player mat multiple turns in a row. This
-                  also applies to a factory card you may have.
+                  section on your player mat multiple turns in a row. **This
+                  cannot be used to choose a factory card multiple turns in a row.**
                 * **Riverwalk**: Your character and mechs can move across
                   rivers onto farms and villages.
                 * **Township**: For move actions for your character/mechs,
