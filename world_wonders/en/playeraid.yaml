@@ -1,0 +1,47 @@
+name: "World Wonders"
+description: "Build wonderful wonders"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+version: 1.0
+bgg_id: 365258
+yt_videos:
+  - https://www.youtube.com/watch?v=SxQWkFTek-I&pp=ygUZd29ybGQgd29uZGVycyBob3cgdG8gcGxheQ%3D%3D
+  - https://www.youtube.com/watch?v=JcUQFaiWeMc&pp=ygUZd29ybGQgd29uZGVycyBob3cgdG8gcGxheQ%3D%3D
+  - https://www.youtube.com/watch?v=rwbJsAI4pkg&pp=ygUZd29ybGQgd29uZGVycyBob3cgdG8gcGxheQ%3D%3D
+  - https://www.youtube.com/watch?v=czg8PiPgybw&pp=ygUZd29ybGQgd29uZGVycyBob3cgdG8gcGxheQ%3D%3D
+expansions:
+sections:
+  - name: Setup
+    text: |
+      * Place the main board and add expansion boards based on player count:
+          * **1-3 players**: Use only the main board.
+          * **4 players**: Add the 4th player expansion board.
+          * **5 players**: Add the 4th and 5th player expansion boards.
+      * Shuffle and add all the building tiles matching the available spaces
+        on the main/expanion boards.
+      * Reveal the top building tile from each stack.
+      * Place the 1st and 2nd player turn order pedestals on the board.
+      * Each player chooses a color and:
+          * Takes their resource board (all players use the same side, either
+            A or B)
+          * Takes their player marker
+          * Takes a set of resource markers
+      * Place the player markers on the turn order track in random order.
+      * Place long road tiles and sets of short road tiles (sets are two 2x1
+        tiles and one 1x1 tile) below the main board based on player count:
+          * **1-2 players**: 1 long road and 1 set of short roads.
+          * **3 players**: 2 long roads and 1 set of short roads.
+          * **4 players**: 2 long roads and 2 sets of short roads.
+          * **5 players**: 3 long roads and 2 sets of short roads.
+      * Place 1 tower alongside the road tiles.  Set the others aside for
+        later use.
+      * Shuffle the monument cards, reveal 3, and place their respective
+        monuments on each one. Set the rest of the deck nearby.
+      * Create a supply of loan tiles.
+      * Each player takes a map board. All players must use the same side,
+        either A or B.
+      * Give each player 1 long road tile.
+          * **This tile is placed during your 1st turn of the game at
+            no cost along with any piece(s) purchased during that turn**.
+
