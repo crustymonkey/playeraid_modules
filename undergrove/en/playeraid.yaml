@@ -5,8 +5,8 @@ credits: "Jay Deiman"
 enabled: true
 version: 1.0
 bgg_id: 376740
-yt_videos: 
-  - https://www.youtube.com/watch?v=SXeIqXK4IiY
+yt_videos:
+  - https://www.youtube.com/watch?v=SXeIqXK4IiY&pp=ygUWdW5kZXJncm92ZSBob3cgdG8gcGxheQ%3D%3D
 expansions:
 sections:
   - name: Setup
