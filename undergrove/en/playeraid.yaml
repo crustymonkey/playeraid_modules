@@ -1,0 +1,260 @@
+name: "Undergrove"
+description: "Become the tree..."
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+version: 1.0
+bgg_id: 376740
+yt_videos: 
+  - https://www.youtube.com/watch?v=SXeIqXK4IiY
+expansions:
+sections:
+  - name: Setup
+    text: |
+      * Randomly choose a 1st player and give them the 1st player marker.
+      * Create supply piles of resources.
+      * Shuffle the mushroom tiles and place them in face down stacks.
+      * Place the 2 starting much mushroom tiles in the center of the table:
+          * Center (C): Earthlover
+          * North (N): Pacific Gold Chantrelle
+          * East (E): Fly Agaric
+          * West (W): Painted Suillus
+          * South (S): Common Deceiver
+      * Place 1 carbon (black disc) on each of the 4 outer mushrooms.
+      * Each player takes:
+          * 1 player board in a color
+          * 6 seedling tokens in the matching color
+          * 18 root tokens in the matching color
+          * 4 tree tokens in the matching color
+          * 4 carbon (C) (black) onto the matching spot on their board
+          * 2 nitrogen (N) (blue) onto the matching spot on their board
+          * 2 phosphorus (P) (orange) onto the matching spot on their board
+          * 2 potassium (K) (purple) onto the matching spot on their board
+          * 3 mushroom tiles from the supply, this is their starting hand
+      * Each player puts 4 matching tokens color side up (ready) on the top
+        of their board.
+      * Place the carbon track board off to the side of the play area.
+      * Shuffle the bonus tiles and place the following number of tiles
+        facedown on each square:
+          * **2-3 players**: 3 tiles per square
+          * **4 players**: 4 tiles per square
+          * All unused tiles are removed from the game
+      * Place each player's carbon track disc in the starting location at the
+        bottom of the carbon board.
+      * Shuffle the double-sided goal cards, flipping half the deck over
+        between shuffles, and deal 3 next to the carbon board.
+      * Place each player's goal track discs on the zero space of each goal
+        card.
+      * In turn order, each player chooses a position for their 1st seedling:
+          * Place 1 seedling on a corner of the center tile.
+          * **In a 2-3 player game**, place seedlings from an unused player
+            color on the remaining corners.
+  - name: Gameplay
+    text: |
+      Players take turns performing actions on their turn until a player
+      reaches the end of the carbon track, which triggers the [end of the
+      game](#endgame).
+
+      ## Turns
+      1. Perform 1 action. You can only take 1 action per turn.
+      2. If you absorbed 1 or more carbon, move up **1** space on the carbon
+         track.
+      3. If you made any progress on a goal card, mark it with your goal
+         counters on the goal card.
+      4. Draw back up to 3 mushroom tiles in hand.
+
+      ## Activation Tokens
+      * You have 1 activation token per mushroom type.
+      * When these are spent, they are flipped from their ready (color) to the
+        used side (gray).  Only ready tokens can be used.
+      * These tokens are used to pay activation costs and/or absorb carbon.
+
+      ## Carbon Track
+      * You only move 1 stone on the track, regardless of how much carbon
+        was [absorbed](#absorb) on your turn.
+      * Immediately take the benefit from the stone you land on.
+          * For bonus tiles, look at all the tiles, take 1, and put the rest
+            back face down.
+              * Keep your tile face down.  It may be discarded at any time
+                for the benefit shown on it.
+              * If the tile gives you points, reveal it during scoring at
+                the end of the game.
+      * When a player moves **past** stone 8, they place their token on 1
+        of the 5 round spaces and take the reward.
+          * This triggers the [end of the game](#endgame).
+
+      ## Placing Mushrooms
+      * This only happens when you take the [reproduce](#reproduce) or
+        [partner](#partner) action.
+      * The mushroom tile must be placed orthogonally adjacent to at least
+        1 other mushroom.
+      * Do **not** pay the cost shown on the mushroom (this is an
+        [activation](#activate) cost).
+      * When placing your seedling and/or root during the
+        [reproduce](#reproduce) or [partner](#partner) action, you may place
+        them on this new mushroom.
+      * You may only place 1 mushroom on your turn (unless an ability allows
+        you to do otherwise).
+    sections:
+      - name: "Action: Activate"
+        id: activate
+        text: |
+          * Activate a mushroom by paying its cost and activating its ability.
+              * You **must** have a root on the tile you wish to activate.
+              * Costs may include flipping over a ready activation token to
+                its used side.
+              * Carbon is payed onto the mushroom tile you are activating.
+              * Some costs include P/N/K (Phosphorous/Nitrogen/Potassium) that
+                is payed to the supply.
+          * Mushrooms with "ONGOING" abilities do not need to be activated,
+            they just boost other actions.
+              * You must have at least 1 root on these mushrooms to use their
+                abilities.  Additional roots do not boost the abilities.
+      - name: "Action: Absorb"
+        id: absorb
+        text: |
+          * Either flip any ready activation token or pay 1 cube of your
+            choice to activate this.
+          * Optional:  You may move 1 carbon that you plan to absorb.
+              * For **each space** you wish to move a carbon, either flip
+                any ready activation token or pay 1 cube of your choice.
+              * Carbon movements are **only** orthogonal.
+              * You do not need to have a root on the mushroom where you are
+                moving the carbon *from*.
+              * You must have a root on the tile that you move the carbon *to*.
+              * If you have a mushroom power that allows you to absorb 2
+                carbon, **you may move 2 different carbon tokens**, paying
+                the costs for all of their movements separately.
+          * Take 1 carbon off of a mushroom where you have a root and place
+            it on your seedling.
+              * You cannot pay extra to absorb more than 1 carbon.
+              * Some mushroom powers allow you to absorb more than 1 carbon.
+              * **If your seedling has 3 carbon on it**, return the 3 carbon
+                to the supply and place 1 of your trees on your seedling.
+                  * You can only make 4 trees during the game.
+                  * If you have all 4 trees out, your seedlings can continue
+                    to absorb carbon, even beyond the limit of 3.
+                  * You do **not** get that seedling back.
+      - name: "Action: Reproduce"
+        id: reproduce
+        text: |
+          * Pay 1 carbon and 2 P to the supply to activate this.
+          * Optional:  You may pay any 1 cube to the supply to place 1
+            mushroom tile from your hand into the forest.
+          * Place 1 seedling with 1 root on any unclaimed corner in the forest.
+              * Once played, seedlings never move.
+              * You don't have to place your seedlings near your other
+                seedlings.
+              * No other player may use that same corner.
+              * The root must be touching the seedling you just placed.
+      - name: "Action: Partner"
+        id: partner
+        text: |
+          * Pay 1 carbon and 2 K to the supply.
+          * Optional: You may pay any 1 cube to the supply to place 1 mushroom
+            tile from your hand.
+          * Place 2 roots onto mushrooms.
+              * Each root must be attached to 1 of your seedlings.
+                  * Both roots may be attached to the same seedling, but it
+                    is not required.
+              * You cannot place a root on a corner without a mushroom.
+              * You can only place 18 roots during a game.
+      - name: "Action: Photosynthesize"
+        text: |
+          This action is used to replenish your carbon and tokens.
+
+          * Take 2 carbon from the supply.
+          * You may pay any number of N to the supply to take an equal number
+            of additional carbon.
+          * Flip all of your used activation tokens to their ready side.
+          * Optional: You may discard any number of mushroom tiles from your
+            hand. Remember that you will draw back up to 3 mushroom tiles
+            at the end of your turn.
+  - name: End of the Game
+    id: endgame
+    text: |
+      The end of the game is triggered when any player reaches the top of
+      the carbon track. When this happens:
+
+      1. Finish the current round (equal turns).
+      2. Play 1 final round.
+
+      ## Scoring
+      * [Goal cards](#goals) are scored as indicated on the cards.
+      * Score roots:
+          * Seedlings with 1 carbon score 1 root.
+          * Seedlings with 2 carbon score 2 root.
+          * Trees score all their roots.
+          * If you have more roots than carbon, you choose which root(s) to
+            score.
+          * The score of a root is the point value shown at the bottom of the
+            mushroom tile.
+      * Score any points printed on bonus tiles.
+      * Gain 1 point for every 2 unused resources (C/N/P/K).
+      * If you claimed 2 points at the end of the carbon track, score that.
+  - name: Goal Cards
+    id: goals
+    text: |
+      * All players may score points on all 3 goal cards.
+      * Some goals must be tracked during the game because they track when
+        do something.  Others track how much of a thing you have at the
+        end of the game.
+      * Some goals can go above 10.  If this happens, leave your tracking disc
+        on 10 and use your extra tracking disc to continue counting.
+      * There are 3 different types of scoring tables:
+          * Counter tables award points depending on where you are on the
+            card's track.
+          * Competitive tables award points depending on how you finished
+            compared to the other players.
+              * If there is a tie, add the point values for the tied places
+                together and divide by the number of players, rounded
+                down.
+          * Multiplier tables award points by multiplying your position on
+            the card's track or other variables.
+    sections:
+      - name: Glossary
+        text: |
+          * **1A**: Track how many times you made 6 or more carbon in a
+            turn.  You generally have to pay 4 or more N to do this.  You
+            can count carbon from bonus tiles or ongoing abilities.
+          * **1B**: Each time you Photosynthesize and pay N to gain carbon,
+            move your disc up the goal track 1 space for each N paid.
+          * **2A**: You want to spread horizontally to have as many
+            trees/seedlings as possible on vertical lines.
+          * **2B**: Count the number of unique mushrooms your trees/seedlings
+            are touching. **Each mushroom only counts once**.
+              * You do not need a root on a mushroom for it to count.
+          * **3A**: Count the number of trees you've grown.
+          * **3B**: Count how many seedlings/trees you have with 2 or more
+            roots.
+          * **4A**: This tracks how many times you place 2 roots on the
+            same *type* (symbol to the left of its name) of mushroom in
+            a single turn. They may be on the same mushroom or 2 different
+            mushrooms.
+          * **4B**: Count how many roots you've placed.
+          * **5A and 5B**: These look at the point value of the mushroom
+            that each root is on and whether the value is even or odd.
+              * A player may count a mushroom with multiple roots more than
+                once as **the count is by root**.
+              * Mushrooms with variable points are only counted by their
+                point value at the end of the game.
+          * **6A and 6B**: These goals look at the name of the mushroom that
+            each root is on. Mushrooms are marked with stars for names with a
+            color and circles for names with a person/animal.
+              * A player may count a mushroom with multiple roots more than
+                once as **the count is by root**.
+          * **7A**: Each root can only count towards 1 set.
+              * Mushrooms with variable points are only counted by their
+                point value at the end of the game.
+          * **7B**: This goal counts how many seedlings/trees you have on
+            the 12 corners created as a square with the Earthlover mushroom
+            in the middle.
+          * **8A**: Move your disc up the track any time you take the absorb
+            action or activate a mushroom that allows you to absorb and move
+            1 carbon 2 or more spaces.
+              * If you move a different carbon 2 or more space in the same
+                turn, you move your disc an additional space on the track.
+          * **8B**: This goal counts any time you ready all 4 activation
+            tokens in a turn by any method.
+              * Only used tokens can be readied, so **you must have all 4
+                tokens in a used state to ready them all in a single turn**.
