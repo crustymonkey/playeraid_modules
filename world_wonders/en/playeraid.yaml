@@ -2,7 +2,7 @@ name: "World Wonders"
 description: "Build wonderful wonders"
 text_type: markdown
 credits: "Jay Deiman"
-enabled: false
+enabled: true
 version: 1.0
 bgg_id: 365258
 yt_videos:
@@ -26,7 +26,6 @@ sections:
           * Takes their resource board (all players use the same side, either
             A or B)
           * Takes their player marker
-          * Takes a set of resource markers
       * Place the player markers on the turn order track in random order.
       * Place long road tiles and sets of short road tiles (sets are two 2x1
         tiles and one 1x1 tile) below the main board based on player count:
@@ -38,10 +37,165 @@ sections:
         later use.
       * Shuffle the monument cards, reveal 3, and place their respective
         monuments on each one. Set the rest of the deck nearby.
+      * If playing with the [advanced rules](#advanced), shuffle the public
+        objectives and randomly place 3 cards face up near the board.  The
+        rest of the deck can be returned to the box.
       * Create a supply of loan tiles.
       * Each player takes a map board. All players must use the same side,
         either A or B.
-      * Give each player 1 long road tile.
-          * **This tile is placed during your 1st turn of the game at
-            no cost along with any piece(s) purchased during that turn**.
+      * Give each player:
+          * 1 long road tile
+              * **This tile is placed during your 1st turn of the game at
+                no cost along with any piece(s) purchased during that turn**.
+          * 1 gold marker (set to 0)
+          * 1 population marker (set to 0)
+          * 3 resource markers (set to 0)
+  - name: Gameplay
+    text: |
+      The game is played over the course of up to 10 rounds (shown by the
+      number of tiles in each building stack) **or** when a player reaches
+      the end of the population track (play to the end of the round).
 
+      The round ends when all players have spent all their gold.
+    sections:
+      - name: Actions
+        text: |
+          * Each player takes turns taking 1 action (below) on their turn.
+          * In addition to the action taken, a player can take a loan (gain 2
+            gold) or pay off a loan (pay 3 gold) as a free action.
+              * **Players may only have 1 loan at any time**.
+              * Loans are worth -2 points if not payed back by the end of
+                the game.
+
+          ## Actions
+          Actions consist of purchasing items and, generally, immediately
+          placing them in their city. **Tiles cannot be saved for later
+          turns**.
+
+          * 1 long road tile: 1 gold
+          * 1 set of short road tiles (two 2x1 + one 1x1): 1 gold
+          * 1 building tile: Pay the cost shown on the stack/back of the tile
+          * The tower: 2 gold (**do not replace the tower until the [end
+            of the round](#endround)**)
+              * Increase your city's resource markers based on the matching
+                symbols on the tile.
+                  * If you land on/pass a population symbol, move your
+                    population marker up 1 space.
+          * The 1st or 2nd player turn order pedestal: 1 gold
+          * 1 monument: Spend **all** of your remaining gold
+              * When purchased, replace the monument with a new one from the
+                top of the deck.
+              * All placement requirements must be met in order to purchase
+                a monument.
+              * If the monument has a resource reward, move up on the
+                matching track.
+                  * If you land on/pass a population symbol, move your
+                    population marker up 1 space.
+      - name: Tile Placement Rules
+        text: |
+          **Important**: Natural resources spaces are considered land spaces.
+          It is possible to score points for these spaces at the [end of
+          the game](#endgame) if they are not covered.
+
+          * Road tiles must always be placed orthogonally adjacent to:
+              * Other road tiles
+              * The "sidewalk" along the bottom of their map board
+              * A tower
+          * A tower must:
+              * Be orthogonally adjacent to anything placed on the map.
+              * Be placed on a land space (not water).
+          * Building tiles must:
+              * Be placed on land spaces (not water).
+              * Be orthogonally adjacent to a road tile **OR**
+              * Be orthogonally adjacent to another building tile of the same
+                color.
+          * Monuments all have their own placement rules.
+
+          ## Monument Symbols
+
+          | Symbol | Description |
+          | ------ | ----------- |
+          | ![sidewalk](/static/img/world_wonders/sidewalk.png) | Adjacent to the sidewalk (bottom of the city board) |
+          | ![b_type](/static/img/world_wonders/b_types.png) | Adjacent to a building type |
+          | ![nat_res](/static/img/world_wonders/nat_res.png) | Adjacent to a natural resource |
+          | ![adj_water](/static/img/world_wonders/adj_water.png) | Adjacent to water |
+          | ![land](/static/img/world_wonders/land.png) | Land space |
+          | ![water](/static/img/world_wonders/water.png) | Water space |
+          | ![land_water](/static/img/world_wonders/land_water.png) | Land or water space |
+          | ![any](/static/img/world_wonders/any.png) | Any space or piece |
+      - name: End of Round
+        id: endround
+        text: |
+          Do the following at the end of the round:
+
+          1. If the 10th round was completed or a player has reached the
+             end of their population track, proceed to [final
+             scoring](#endgame).
+          1. Discard all building tiles not purchased during the round.
+          2. Reveal a new building tile of each type.
+          3. Replace all purchased road tiles.
+          4. Replace the tower (if purchased).
+          5. Rearrange the player markers according to the turn order.
+              1. If someone purchased the 1st/2nd pedestals, they take
+                 the 1st 2 spots.
+              2. Arrange the remaining players in order according to their
+                 population (lowest 1st to highest last).
+                  1. If tied, arrange players according to number of monuments
+                     (least 1st to highest last).
+                  2. If still tied, arrange players relatively according to
+                     the turn order from the previous round.
+          6. Everyone sets their gold marker back to 7.
+  - name: End of the Game
+    id: endgame
+    text: |
+      The game ends when either the 10th round is completed (noted by building
+      stacks) or someone reaches the final space of the population track
+      (play to the end of the round).
+
+      Flip the building board to its back side and score.
+
+      ## Scoring
+
+      * 1 VP for each ring your population marker reached or passed.
+      * Points equal to your least produced resource.
+          * e.g. if your food, ceramics, and gear markers are at 8, 9, and 11,
+            you earn 8 points.
+      * 1 VP for each ring on your monuments.
+      * 1 VP for every **visible** natural resource that is orthogonally
+        adjacent to at least 1 piece placed on your map.
+      * 1 VP for each building tile that is surrounded on all sides by any
+        feature other than plain green spaces.
+          * All sides must be adjacent to other building tiles, road tiles,
+            monuments, towers, natural resources, water spaces, the sidewalk,
+            or an edge of the map.
+      * -2 VP if you have an unpaid loan.
+      * If playing the [advanced](#advanced) game, players score points based
+        on who did the best towards each objective.
+          * If tied for 1st place, add the points together and divide them
+            among tied players, rounding **up**.
+          * If players are tied for 2nd place, each tied player gets 1 VP.
+
+      The player with the most points wins.  If tied, the player with the most
+      monuments wins.
+  - name: "Advanced: Public Objectives"
+    id: advanced
+    text: |
+      ![pub_objs](/static/img/world_wonders/pub_objs.png)
+
+      1. Have the largest green area surrounded by pieces,
+         natural resources, and/or water on your map.
+          * The edges of the map and the sidewalk **are not valid**.
+      2. Have the longest continuous road (number of
+         connected spaces).
+      3. Have the most monuments.
+      4. Have the most building tiles adjacent to
+         natural resources.
+      5. Have the most building tiles adjacent to water.
+      6. Have the most building tiles of the indicated type.
+      7. Have the highest value on the track of the indicated resource.
+      8. Have the most adjacent building tiles of the type indicated.
+      9. Have the most building tiles adjacent to the edge of the map.
+          * The sidewalk is **not valid**.
+      10. Have a city district for each type of building tile.
+          * If more than 1 player completes this objective, distribute the
+            4 VP among them evenly.
