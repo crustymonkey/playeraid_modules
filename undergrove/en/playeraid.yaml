@@ -46,7 +46,8 @@ sections:
       * Place each player's goal track discs on the zero space of each goal
         card.
       * In turn order, each player chooses a position for their 1st seedling:
-          * Place 1 seedling on a corner of the center tile.
+          * Place 1 seedling on a corner of the center tile and 1 root pointing
+            at 1 of the starting mushrooms.
           * **In a 2-3 player game**, place seedlings from an unused player
             color on the remaining corners.
   - name: Gameplay
