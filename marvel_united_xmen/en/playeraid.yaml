@@ -1,0 +1,203 @@
+name: "Marvel United: X-Men"
+description: "Battle the baddies with your favorite heroes."
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+version: 1.0
+bgg_id: 336382
+yt_videos:
+  - https://www.youtube.com/watch?v=k3RtuB6yB_g&pp=ygUZbWFydmVsIHVuaXRlZCBob3cgdG8gcGxheQ%3D%3D
+  - https://www.youtube.com/watch?v=Xm2eK8qo1fk&pp=ygUZbWFydmVsIHVuaXRlZCBob3cgdG8gcGxheQ%3D%3D
+  - https://www.youtube.com/watch?v=SSAFqX650CY&pp=ygUZbWFydmVsIHVuaXRlZCBob3cgdG8gcGxheQ%3D%3D
+expansions:
+sections:
+  - name: Setup
+    text: |
+      * Place the mission guide in the center of the table with the standard
+        3 mission cards in the slots at the bottom.
+          * Depending on the villain, there may be different mission cards.
+      * Choose a villain and place its villain dashboard in the slot above
+        the mission guide.
+          * **Perform any special setup on the back of the villain dashboard**.
+          * Place a number of health tokens on the villain for the number
+            of players.
+          * If there is a track on the card, set the tracker to zero.
+      * Randomly choose 6 locations and place them around the mission guide.
+          * Fill any marked slots with civilians/thugs.
+      * Shuffle the villain's threat cards and randomly place 1 faceup in the
+        slots on the locations.
+          * If it is a henchmen, add health to it based on what is printed on
+            the card.
+      * Create supplies of all the other tokens.
+      * Shuffle the villain's master plan deck and place it face down next to
+        a random location.
+      * Each player shuffles their hero decks.
+          * Any "Starting Hand" cards should be placed on the top of the deck.
+      * Each player draws 3 card from the top of their deck into their hand.
+  - name: Gameplay
+    text: |
+      The game is played until either the heroes defeat the villain to win
+      or lose in 1 of the following ways:
+
+      * The villain achieves the conditions of the villainous plot stated
+        on their dashboard (if it exists).
+      * The villain must draw a master plan card, but their deck is empty.
+      * Any hero starts their turn with no cards both in their deck and in
+        their hand.
+    sections:
+      - name: Villain Turn
+        text: |
+          **The game always starts with a villain turn**.
+
+          * Draw the top card of the master plan deck and place it face up
+            on the table (this is the start of the storyline) and resolve it
+            top to bottom.
+
+          ## Move
+          ![move](/static/img/marvel_united_xmen/move.png)
+
+          * Move the villain clockwise (unless otherwise indicated) the number
+            of locations equal to the number shown.
+          * If there is a threat card with the "target" symbol in the location
+            where the villain ends their movement (even zero movement),
+            immediately resolve that threat.
+
+          ## Activate Bam!
+          ![bam](/static/img/marvel_united_xmen/bam.png)
+
+          * Activate the Bam! effect on the villain dashboard.
+          * Activate the Bam! effect on any threat cards, starting with the
+            card in the villain's location and proceeding clockwise.
+              * These will often inflict [damage](#damage) to the heroes.
+
+          ## Add Thugs/Civilians
+          ![add_tc](/static/img/marvel_united_xmen/add_tc.png)
+
+          * Add the indicated number of thugs/civilians to the locations
+            shown with the villain's location being the one with the "target".
+              * Resolve the locations in clockwise order.
+              * First place thugs, then civilians, in each location.
+              * If you must place a thug/civilian and there are no slots open,
+                an overflow occurs.
+                  * No matter how many thugs/civilians that couldn't be placed,
+                    only **1 overflow is triggered**.
+                  * Resolve any overflows as described on the villain dashboard
+                    in clockwise order.
+      - name: Hero Turn
+        text: |
+          Players choose who will be the 1st player, then turns will proceed
+          in clockwise order until the end of the game.
+
+          1. Draw a card from your deck into your hand.
+              * If you were KO'd, draw up to 4 cards instead.
+          2. Play a card from your hand to the end of the storyline.
+          3. Resolve the symbols shown on your hero card **and** the previous
+             hero card (even if separated by a villain card).
+              * Text effects from the previous card are **not** activated, only
+                the symbols at the bottom of the cards.
+              * The actions can be resolved in any order.
+          4. If the location where the hero ends their turn has no threat
+             card, they may apply the end of turn effect at the bottom of
+             the location.
+              * Each turn, a hero can only use **a single location effect**.
+
+          ## Move
+          ![move](/static/img/marvel_united_xmen/h_move.png)
+
+          * Move the hero to an adjacent location (any direction).
+
+          ## Attack
+          ![attack](/static/img/marvel_united_xmen/h_attack.png)
+
+          * Deal 1 damage to an enemy of the player's choice in the player's
+            location.
+              * Thugs are eliminated when they receive 1 damage. Place the
+                thug token on the "Defeat Thugs" mission card (otherwise
+                discard).
+              * Remove 1 health from a henchmen.  If defeated, remove the
+                threat card and place the threat token on the "Clear
+                Threats" mission card (otherwise discard).
+              * Remove 1 health token from the villain **if 2 missions have
+                been completed** and you are on the location with the villain.
+
+          ## Heroic Action
+          ![heroic](/static/img/marvel_united_xmen/h_heroic.png)
+
+          * You can do 1 of 2 things:
+              * Rescue 1 civilian by placing them on the "Rescue Civilians"
+                mission (otherwise discard) OR
+              * Place a heroic action token on an empty slot of the location's
+                threat card.  If cleared, remove the threat card and place the
+                threat token on the "Clear Threats" mission (otherwise
+                discard).
+
+          ## Wild
+          ![wild](/static/img/marvel_united_xmen/h_wild.png)
+
+          * This can be used as any of the above types.
+
+          ## Action Tokens
+          * These may be spent to perform the corresponding action at any
+            point during this part of the hero's turn.
+          * When obtained, these can be saved for later turns.
+  - name: Completing Missions
+    text: |
+      * Missions can be completed in any order.
+      * Remove the card and its tokens when the mission is completed.
+          * Slide any remaining missions to the right so that the rightmost
+            slots are always filled.
+          * Any effects shown under the revealed slot (after sliding) are now
+            in effect.
+
+      1. 1st mission complete
+          * The villain is "under pressure" and a master plan card is drawn
+            after every **2** hero turns (as opposed to the default of 3).
+      2. 2nd mission complete
+          * The villain can now be damaged.  If all health tokens are
+            removed from the villain, the heros win.
+      3. 3rd mission complete
+          * All heros immediately draw 1 card from their deck into their hand.
+  - name: Hero Damage
+    id: damage
+    text: |
+      * For each damage a hero receives, they discard 1 card from their hand
+        **to the bottom of their deck**.
+      * If the last card is discarded from their hand, the hero is KO'd.
+          * **If a hero plays their last card during their turn, they get
+            to perform their full turn before being KO'd**.
+          * Lay the hero's figure down to show they are KO'd.
+              * A KO'd hero receives no effects, positive or negative.
+          * Immediately resolve the BAM! effect on the villain dashboard, but
+            **not** on the henchmen cards.
+              * If this causes another hero to be KO'd, another BAM! effect is
+                resolved.  Repeat as necessary.
+          * At the start of the hero's next turn, their hero is placed upright
+            and they draw up to 4 cards.
+  - name: Other Rules
+    text: |
+      ## Anti-Heroes
+      * The purple colored characters can be played as either heros or villains.
+
+      ## villain Delayed/Accelerated
+      * If a villain is delayed, place a green token on their master plan deck.
+          * The villain plays a master plan card 1 turn later than normal.
+      * If a villain is accelerated, place an orange token on their master
+        plan deck.
+          * The villain plays a master plan card 1 turn earlier than normal.
+      * In either case, discard the token when the master plan card is played.
+      * If a villain is both delayed and accelerated, just discard the token.
+
+      ## Invulnerable
+      * If a hero card says they cannot take damage until their next turn,
+        place an invulnerable token on the hero.
+          * This is removed at the start of their next turn
+      * An invulnerable hero can still volunteer or be chosen to take damage,
+        but the damage is ignored.
+
+      ## Crisis
+      * Use these tokens as described on cards/dashboards.
+
+      ## Misc.
+      * All token are considered to be unlimited.
+      * If there are ever events or effects where a tie occurs, the players
+        decide how they should be resolved.
