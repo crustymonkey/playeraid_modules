@@ -1,0 +1,285 @@
+name: "The Search for Lost Species"
+description: "Use the power of deduction to find the lost species."
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+version: 1.0
+bgg_id: 358557
+yt_videos:
+  - https://www.youtube.com/watch?v=DCd6nXrjQpE&pp=ygUjc2VhcmNoIGZvciBsb3N0IHNwZWNpZXMgaG93IHRvIHBsYXk%3D
+  - https://www.youtube.com/watch?v=6zHkv3gmQJA&pp=ygUjc2VhcmNoIGZvciBsb3N0IHNwZWNpZXMgaG93IHRvIHBsYXk%3D
+  - https://www.youtube.com/watch?v=GHOe-WSp2-I&pp=ygUjc2VhcmNoIGZvciBsb3N0IHNwZWNpZXMgaG93IHRvIHBsYXk%3D
+expansions:
+sections:
+  - name: Setup
+    text: |
+      * Place the board in the middle of the table such that each player is
+        seated at a cardinal direction (N/S/E/W). You can choose the easy or
+        hard side.
+      * Choose a lost species from the lost species deck, either randomly or
+        1 that the players agree upon.
+          * Return the rest of the lost species to the box.
+      * Shuffle the town cards and place them face down on the town deck
+        space, then reveal the top 4 into their spaces.
+      * Place the mountain tokens so that each mountain range illustration
+        is covered (between 2 hexes).
+      * Separate the timing tokens by type and create a supply (optionally
+        in the boat).
+      * Place the expedition leader pawn on the 1st wood-grained space on
+        the time track (number 1 at the top).
+      * Each player chooses a color and:
+          * Takes 2 scientist pawns
+              * Place 1 pawn in the start space of the time track.
+              * The 2nd pawn will be placed when the app instructs you.
+          * Takes a pencil and a note sheet matching the side of the board
+            they are facing.
+          * Takes a player screen matching their color.
+          * Takes 1 camera trap token
+          * Takes 1 town token
+          * Takes 1 lory diamond token
+          * Takes 10 sighting tokens
+      * Each player install and sets up the app:
+          * Select your choice of lost species at the top.
+          * Select the matching island you are using (hard/easy).
+          * Share the game code with everyone else so they can enter it
+            in their app and join the game.
+          * Enter the side of the board you are sitting on.
+          * Choose your difficulty level, which determines the amount of
+            starting information.
+              * Record the starting information on your note sheet.
+          * Write the research and conference topics on the right side of
+            your note sheet.
+          * Place your scientist pawn on the board where the app tells you.
+          * Tap START GAME to begin.
+  - name: Gameplay
+    text: |
+      Players will continue taking turns, with the last player on the time
+      track always taking the next turn.  This continues until someone finds
+      the lost species.
+
+      Each turn consists of the following steps:
+
+      1. Take 1 action (from the 5 available actions).
+      2. Advance your pawn on the time track based on the cost of the action.
+          * Skip over any expedition leader spaces (wood-grain); do **not**
+            count these as spaces for your movement.
+          * If you end with another player, place your pawn **ahead** of the
+            other player(s).
+      3. Activate and advance the expedition leader, if necessary.  This will
+         happen when the leader is furthest back on the time track.
+          1. 1st activate the leader's space, performing the [phase](#phases)
+             shown on the current space.
+          2. 2nd move the pawn to the next expedition leader space (wood-grain
+             space).
+    sections:
+      - name: Survey by Foot (3 time)
+        text: |
+          * Move your pawn on the island 1-3 spaces (you can double-back).
+              * Each move is from 1 area to an adjacent area.
+              * You may not cross a mountain.
+              * You may start in a town.
+          * Survey for 1 animal in all areas entered.
+          * Announce your selections (spaces and species) to the other players.
+              * Information revealed by the app is **private**.
+      - name: Survey by Boat (2 time)
+        text: |
+          * Move your pawn 4-6 areas following the coastline (you can
+            double-back).
+              * **You must survey a minimum of 4 areas**.
+              * Each move is from 1 area to an adjacent area.
+              * You may not cross a mountain.
+              * Your movement must start on, move to, and end only on the
+                coast.
+              * Do **not** count a town you pass as an area.
+              * You may start in a town.
+          * Survey for 1 animal in all areas entered.
+          * Announce your selections (spaces and species) to the other players.
+              * Information revealed by the app is **private**.
+      - name: Camera Trap (4 time)
+        text: |
+          * Move your pawn on the island up to 3 areas, ending in the area
+            where you want to use the camera trap.
+              * Each move is from 1 area to an adjacent area.
+              * You may not cross a mountain.
+          * Announce that you are using a camera trap in this area.
+              * The app will reveal which animal is located here or it will
+                appear empty. *Reminder*: The lost species will be in a location
+                that appears empty.
+              * Information revealed by the app is **private**.
+      - name: Visit a Town (1 time)
+        text: |
+          * Move your pawn on the island up to 3 areas, ending in a town.
+              * Each move is from 1 area to an adjacent area.
+              * You may not cross a mountain.
+          * Place your town token on the town.
+              * **You cannot visit a town again** until you get your town
+                token back from the expedition leader's town phase.
+
+          1. Choose 1 town card.
+              * Select a face-up town card from the board, then replace it
+                with a new card from the deck.
+                  * If the deck is empty, shuffle the discard to make a new
+                    deck.
+              * Keep "game end" and "always" cards in front of you for the
+                rest of the game.
+              * "1x" cards can only be used once and are discarded when used.
+              * "Instant" cards are resolved immediately when taken, then
+                discarded.
+          2. Research 1 topic.
+              * Announce the available research topic to the other players.
+                  * Do **not** share the logic rule provided by the app.
+      - name: Locate the Lost Species (5 time)
+        text: |
+          * (in the app) Select which area you think contains the lost species
+            **and** what you think is located in any 2 adjacent areas.
+              * Areas separated by mountains are **not considered adjacent**.
+              * Do **not** announce the area you searched.
+              * **Do** announce whether you succeeded or failed.
+  - name: End of Game
+    text: |
+      The game end is triggered when a player correctly locates the lost
+      species.
+
+      * That player must still pay the time penalty (5 time) for
+        the attempt.
+      * Each other player gets 1 final opportunity to score
+        points if their pawn is at least 1 space back from the player who
+        located the lost species.
+      * Based on how far back the player is from the player who found the
+        lost species, they can do 1 of the following:
+          * Report sightings (see the [Sighting Phase](#phases).
+              * 1-3 spaces behind the leader:  Report 1 sighting.
+              * 4-5 spaces behind the leader:  Report 2 sightings.
+          * Locate the lost species using the normal action.
+              * **Do not move your pawn to spend time**.  Instead, if
+                correct, gain 4-12 points based on how far back you are
+                on the time track (see below).
+
+      ## Final Scoring
+      1. Press the "End Game & Reveal All" button in the app to reveal the
+         locations of all animals on the board.
+      2. Flip all remaining face-down animal tokens on the board and remove
+         any incorrect sightings.
+          * Any correct sightings that were the 1st to be placed do receive
+            the leader bonus.
+      3. Score 1 point for each area where you were the first player (or tied)
+         to report the correct sighting for the area.  These are the circled
+         numbers in the lower right of your note sheet.
+      4. Score points for each correct sighting:
+          * Lories: 2 points each
+          * Cuscus: 3 points each
+          * Toads: 4 points each
+          * Python: 5 points
+      5. Score any end game town cards.
+      6. Score 12 points if you were the 1st player to locate the lost species.
+      7. If you located teh lost species, but were not the 1st player to do
+         so, score points based on how far behind you are from the 1st player
+         to located the lost species:
+          * 5 spaces back: 12 points
+          * 4 spaces back: 10 points
+          * 3 spaces back: 8 points
+          * 2 spaces back: 6 points
+          * 1 spaces back: 4 points
+
+      Whoever has the most points wins. If there is a tie:
+
+      1. The tied player who ended with the most points for discovering the
+         lost species wins.
+      2. The tied player who scored the most points for leader bonuses wins.
+      3. The tied players share the victory.
+  - name: Expedition Leader Phases
+    id: phases
+    text: |
+      ### Town Phase
+      ![town](/static/img/the_search_for_lost_species/town.png)
+
+      * Return all town tokens on the map to the players.
+
+      ### Camera Phase
+      ![camera](/static/img/the_search_for_lost_species/camera.png)
+
+      * Return all camera trap tokens on the map to the players.
+
+      ### Conference Phase
+      ![conf](/static/img/the_search_for_lost_species/conf.png)
+
+      * All players receive the same new piece of information about the
+        location of the lost species.
+      * Select the matching conference (1 or 2) in the app and announce the
+        new rule to all players.
+      * The conferences are only performed the 1st time the leader activates
+        this space.
+
+      ### Sighting Phase
+      ![sighting](/static/img/the_search_for_lost_species/sighting.png)
+
+      This phase is done in 2 steps.
+
+      1. Report sightings.
+          1. All players simultaneously select the sighting tokens (0, 1, or
+             2 tokens) in secret, placing them face down under their hand (so
+             no one knows the number of tokens you've selected).  Once everyone
+             is ready, proceed to the next step.
+          2. All players then reveal the **face-down** tokens they've selected
+             and, in player order (back to front), place them on the map
+             where they believe the matching animal type is.
+              * If you place on a space where someone else has placed **this
+                round**, place your token on top of the stack.
+              * Tokens can be placed on any island area (you don't have to
+                be on/adjacent to it).
+              * You **cannot** place 2 of the same token in the same area.
+              * You **can** place 2 different tokens in the same area, but not
+                during the same sighting phase.
+              * You can always pick up and view your previously placed tokens.
+          3. Place a timing token on top of each new stack of tokens placed
+             on the board.  The number should match the top number in the
+             sighting illustration.
+      2. For each area with a timing token matching the bottom number in the
+         sighting illustration do the following:
+          1. Reveal all sightings under the matching timing token in an area.
+              * Do **not** reveal other tokens under other timing tokens.
+          2. Use the "Confirm Sightings" in the app and select 1 of the
+             animals and the matching area.
+          3. Announce whether the result was correct or not.
+              * If correct, the player(s) with the correct animal should circle
+                the area's number on the bottom right of their note sheet
+                **if they are the 1st to find the animal in this area**.
+                  * All players should circle this as the correct animal
+                    on their note sheet.
+                  * Flip all other sighting tokens in the area face up and
+                    remove any incorrect tokens **from the game**.  Players
+                    advance their pawn 1 space for each incorrect token.
+                  * No other tokens can be placed on this area.
+                  * Leave all correct tokens on the space for end game
+                    scoring.
+              * If incorrect, test the next animal token (if different) for
+                this sighting token.
+                  * Incorrect tokens are removed **from the game** and the
+                    players advance their pawn 1 space.
+                  * Do not reveal any other token under other timing tokens.
+  - name: Card Explanations
+    text: |
+      | Symbol | Explanation |
+      | ------ | ----------- |
+      | ![instant](/static/img/the_search_for_lost_species/instant.png) | Take this action when you acquire the card, then discard it. |
+      | ![onex](/static/img/the_search_for_lost_species/onex.png) | Keep this card visible in front of you.  When you take the action, discard it. |
+      | ![always](/static/img/the_search_for_lost_species/always.png) | You get this benefit for the rest of the game.  Keep the card visible in front of you. |
+      | ![end](/static/img/the_search_for_lost_species/end.png) | You get these points at the end of the game based on your sightings. |
+
+      ## Cards
+      | Name | Symbol | Explanation |
+      | ---- | ------ | ----------- |
+      | Birders | ![end](/static/img/the_search_for_lost_species/end.png) | 1 point per correct lory sighting. |
+      | Hills Expert | ![onex](/static/img/the_search_for_lost_species/onex.png) | 1 camera trap in the hills only costs 2 time. |
+      | Hill Guardians | ![end](/static/img/the_search_for_lost_species/end.png) | 1 point per correct sighting in the hills. |
+      | Invasive Toad Fighters | ![end](/static/img/the_search_for_lost_species/end.png) | 2 points per correct toad sighting. |
+      | Marsupial Conservationists | ![end](/static/img/the_search_for_lost_species/end.png) | 1 point per correct cuscus sighting. |
+      | Messenger | ![instant](/static/img/the_search_for_lost_species/instant.png) | Report 1 sighting now. For the sighting, use a timing token matching the expedition leader's current location (top number) or the next numbered location. |
+      | Pathfinder | ![always](/static/img/the_search_for_lost_species/always.png) | Your surveys by foot only cost 2 time. |
+      | Predator Preservation Group | ![end](/static/img/the_search_for_lost_species/end.png) | 3 points per correct python sighting. |
+      | Rainforest Expert | ![onex](/static/img/the_search_for_lost_species/onex.png) | 1 camera trap in the rainforest only costs 2 time. |
+      | Rainforest Protectors | ![end](/static/img/the_search_for_lost_species/end.png) | 1 point per correct sighting in the rainforest. |
+      | Town Elder | ![instant](/static/img/the_search_for_lost_species/instant.png) | Do a 2nd research now.  Announce both, then view both. The 2nd research does **not** cost any time. |
+      | Swamp Expert | ![onex](/static/img/the_search_for_lost_species/onex.png) | 1 camera trap in the swamp only costs 2 time. |
+      | Swamp Stewards | ![end](/static/img/the_search_for_lost_species/end.png) | 1 point per correct sighting in the swamp. |
+      | Trailblazer | ![onex](/static/img/the_search_for_lost_species/onex.png) | One survey by foot only costs 1 time. |
