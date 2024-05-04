@@ -6,6 +6,7 @@ enabled: true
 version: 1.0
 bgg_id: 365258
 yt_videos:
+  - https://www.youtube.com/watch?v=ETZLt2fKQv8&pp=ygUZd29ybGQgd29uZGVycyBob3cgdG8gcGxheQ%3D%3D
   - https://www.youtube.com/watch?v=SxQWkFTek-I&pp=ygUZd29ybGQgd29uZGVycyBob3cgdG8gcGxheQ%3D%3D
   - https://www.youtube.com/watch?v=JcUQFaiWeMc&pp=ygUZd29ybGQgd29uZGVycyBob3cgdG8gcGxheQ%3D%3D
   - https://www.youtube.com/watch?v=rwbJsAI4pkg&pp=ygUZd29ybGQgd29uZGVycyBob3cgdG8gcGxheQ%3D%3D
