@@ -1,0 +1,47 @@
+name: "Planet Unknown"
+description: "Build your own planet."
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+version: 1.0
+bgg_id: 258779
+yt_videos:
+expansions:
+sections:
+  - name: Setup
+    text: |
+      * Place the space station in the center of the table and load it with
+        tiles.
+          * Each section of the station should be loaded with 2 stacks of
+            12 tiles each.
+          * All tiles in a stack should be the same shape and have the same
+            orientation.
+          * Tiles should be organized into an interior ring (small tiles)
+            and an exterior ring (large tiles).
+              * Move the interior ring before you start the game to create
+                a variable setup.
+      * Give each player:
+          * 1 planet board
+          * 1 corruption board
+          * 2 matching depot indicators
+          * 5 resource trackers (1 of each color)
+      * Each player should take and position the lifepods and rovers as
+        instructed on their planet and corporation boards.
+      * Each player should position their depot indicator around the space
+        station, separated equally, and in front of a depot.
+      * Randomly select civ cards such that each rank (1-4) stack contains
+        a number of cards equal to player count + 1.
+          * The rest of the civ cards can be returned to the box.
+      * Create a supply of meteorites and biomass patches.
+      * Shuffle and deal the objective cards.  Use the card side and setup
+        based on the table below.
+      * Choose a start player and give them the station commander token.
+
+      | Players | Card Side | Objective Setup |
+      | ------- | --------- | --------------- |
+      | 3-6 players | Neighbor | 1 card between each player |
+      | 2 players | Neighbor | 3 cards between both players |
+      | solo | Private | 4 cards, choose 3 to play with |
+  - name: Gameplay
+    text: |
+
