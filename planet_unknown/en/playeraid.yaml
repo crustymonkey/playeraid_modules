@@ -29,10 +29,21 @@ sections:
         instructed on their planet and corporation boards.
       * Each player should position their depot indicator around the space
         station, separated equally, and in front of a depot.
+      * **If playing with the [events module](#event)**:
+          1. Separate the event deck into 3 piles of cards separated by
+             event type (green, orange, red).
+          2. Remove any solo mode cards.
+          3. Create a deck of 20 cards to be used during the game by
+             randomly selecting cards from the different decks. You can
+             customize the event difficulty by choosing from the decks of
+             your choice.
       * Randomly select civ cards such that each rank (1-4) stack contains
         a number of cards equal to player count + 1.
           * The rest of the civ cards can be returned to the box.
       * Create a supply of meteorites and biomass patches.
+      * **If playing with the [private objectives](#private) module**:
+          * Deal 2 private objective cards to each player (neighbor side up).
+            Each player chooses 1 to keep and returns the other to the box.
       * Shuffle and deal the objective cards.  Use the card side and setup
         based on the table below.
       * Choose a start player and give them the station commander token.
@@ -43,5 +54,193 @@ sections:
       | 2 players | Neighbor | 3 cards between both players |
       | solo | Private | 4 cards, choose 3 to play with |
   - name: Gameplay
+    text: |
+      The game is played over a number of rounds until either a player cannot
+      legally place a tile from their depot or when 1 depot is completely
+      emptied.  Either case will trigger [game end](#game_end).
+
+      * Each round:
+          1. The station commander **may** rotate the space station as much
+             or as little as they like, until they have any 1 depot in front of
+             themselves.
+          2. (If playing with the [event module](#event)) Immediately draw
+             the next event card from the deck and execute its action.
+              * All actions **must** be executed, if possible, for all
+                events and all players.
+          3. All players must draft 1 of the 2 tiles in front of them (or their
+             depot indicator).
+          4. After players place the tile on their planet according to
+             [placement rules](#place), they advance 1 space on each resource
+             track matching the resources shown on the placed tile.
+              * If a tile with a meteorite symbol is placed, immediately
+                cover the square with the symbol with a meteorite token.
+              * If a tile with a water resource does not have its **water
+                terrain** covering at least 1 ice space, you **cannot
+                advance on the water resource track**.
+              * If a tile has an energy resource, you advance 1 of the
+                following:
+                  1. The non-energy resource on the tile you placed.
+                  2. The resource of any 1 terrain that is orthogonally
+                     adjacent to the energy terrain area from the tile
+                     placement.
+          5. Pass the station commander token to the next player in clockwise
+             order.
+    sections:
+      - name: Placement Rules
+        id: place
+        text: |
+          * The 1st tile placed on your planet must be touching the outside
+            edge of your planet.
+          * All tiles must be placed orthogonally adjacent to another tile
+            (after the 1st tile).
+          * Tiles cannot be placed on top of other tiles.
+          * Tiles cannot overlap other tiles or extend off the planet's
+            printed grid.
+          * Tile must be aligned with the grid squares.
+          * If a tile is placed onto a lifepod or rover, the lifepod/rover is
+            destroyed and **removed from the game**.
+          * If a tile with a water resource is NOT placed on at least 1
+            ice space, you cannot advance on the water resource track.
+      - name: Resource Tracks
+        text: |
+          * Medals: You claim the highest medal (point) value you reached at
+            the end of the game.
+          * Synergy boosts: You claim these immediately -- advance any single
+            tracker once.
+          * If a tracker reaches the top of its track, it does not gain
+            additional benefits. It will score the points indicated at the
+            top of the track at the [end of the game](#game_end).
+              * The [rovers](#rover) can still move (X spaces) each time they
+                would advance, but are at the top of the track.
+          * Tracks may have additional benefits.
+      - name: Civ Resource Track
+        text: |
+          * When hitting a civ milestone, take all civ cards of the
+            corresponding rank and select 1 to keep. Return the rest to the
+            supply.
+              * If 2+ players reach the same milestone during the same round,
+                cards are selected in clockwise order (starting with the
+                commander).
+          * After choosing a card, claim any benefits on the card if it's
+            labeled *Immediate*.
+          * Cards labeled *End Game* are scored at the [end of the
+            game](#game_end).
+          * If there are no cards left in the civ pile, you cannot claim a
+            card.
+      - name: Rover Resource Track
+        id: rover
+        text: |
+          * When a player advances onto a rover milestone, they place a
+            rover on any space of the last placed tile.
+              * If the rover is placed on a meteorite, immediately collect it.
+          * When advancing onto a number, move your rover a number of spaces
+            equal to this number.
+              * Rovers only move orthogonally.
+              * Rover movement may be split between multiple rovers.
+              * Rovers may move both on tiles and on the planet grid.
+              * Rovers may backtrack.
+              * **If the rover tracker is at the top of the track** and would
+                advance, you do still move your rovers the indicated number
+                of spaces.
+          * If you move your rover onto a lifepod/meteorite, collect it and
+            place it on your player board.
+          * Anything (tile, biomass patch, meteorite) placed onto a rover
+            destroys it and it is **removed from the game**.
+          * If all your rovers have been destroyed, they do not place a
+            rover when reaching a rover milestone.
+      - name: Tech Resource Track
+        text: |
+          * When a player advances onto a tech milestone, they unlock
+            a tech that can be used every round for the rest of the game
+            (unless stated otherwise).
+          * Level 4 advancement clarification: Only advance twice due to
+            tile placement.  Do **not** advance twice due to synergy boosts,
+            event cards, or tiles you did not place.
+      - name: Biomass Resource Track
+        text: |
+          * When advancing onto a biomass milestone, collect a biomass patch
+            and immediately place it on their planet following normal
+            [placement rules](#place).
+          * Placing biomass patches does **not** advance you on the biomass
+            track.
+      - name: Water Resource Track
+        text: |
+          * **In order to collect the water resource on the tile**, there
+            must be at least 1 water terrain portion of the tile covering an
+            ice space.
+          * Water terrain is **not required** to be placed over ice.
+  - name: Game End
+    id: game_end
+    text: |
+      The game ends in 1 of 2 ways. If playing with the [event module](#event),
+      there is a 3rd way.
+
+      1. A player cannot legally place a tile from their depot.
+          * All players finish the round as normal and then the game is over.
+          * Any player that cannot legally place a tile still chooses 1 and
+            advances on the tracks for **both** resources on the tile, but
+            does not place it.
+      2. A depot is completely emptied of tiles.
+          * The game ends at the end of the round where a depot was emptied.
+      3. (Only if playing with the [event module](#event)) When the last
+         card of the event deck is drawn, complete the current round.
+
+      ## Scoring
+      * **Before scoring**, all players:
+          * Should place any biomass patches they have.
+          * Should execute any end game corportation tech.
+          * Should advance any tracker due to end game civ cards.
+
+      1. Score points for every complete row and column on your planet.
+          * The row/column cannot have a meteorite or empty grid square.
+          * Each row/column scores 1-3 points based on the medal to the
+            side/above it (respectively).
+      2. Score the highest value medal that each tracker has reached/passed.
+      3. Score points for the lifepods and meteorites collected.
+          * 1 point per lifepod
+          * 1 point per 3 meteorites (rounded down)
+      4. Score points for end game civ cards.
+      5. Score points for any completed private objectives.
+      6. Score points based on the neighbor objective cards if your planet
+         wins when compared with your neighbor's planet.
+
+      * In case of a tie:
+          1. The player with the fewest uncovered grid squares wins.
+          2. The player with the fewest meteorites remaining on their planet
+             wins.
+          3. The players share the victory.
+  - name: Modules
+    sections:
+      - name: 2 Player Variant
+        text: |
+          * Each round, the depot is rotated clockwise by 1 depot instead of
+            the commander choosing.
+      - name: Private Objective Module
+        id: private
+        text: |
+          * In a multiplayer game, you may optionally use private objectives
+            in addition to neighbor objectives.
+          * During setup, deal 2 private objectives to each player.  They
+            choose 1 to keep and return the other to the box.
+              * This should be done *before* neighbor objectives.
+      - name: Event Deck Module
+        id: event
+        text: |
+          * Setup
+              1. Separate the event deck into 3 piles of cards separated by
+                 event type (green, orange, red).
+              2. Remove any solo mode cards.
+              3. Create a deck of 20 cards to be used during the game by
+                 randomly selecting cards from the different decks. You can
+                 customize the event difficulty by choosing from the decks of
+                 your choice.
+          * Gameplay
+              1. After the space station has been rotated, immediately draw
+                 the next event card from the deck and execute its action.
+                  * All actions **must** be executed, if possible, for all
+                    events and all players.
+              2. Play the rest of the round as normal
+          * The last card of the event deck also triggers the game end.
+  - name: Reference
     text: |
 
