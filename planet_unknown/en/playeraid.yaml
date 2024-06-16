@@ -2,10 +2,13 @@ name: "Planet Unknown"
 description: "Build your own planet."
 text_type: markdown
 credits: "Jay Deiman"
-enabled: false
+enabled: true
 version: 1.0
 bgg_id: 258779
 yt_videos:
+  - https://www.youtube.com/watch?v=wIemQQn_dvM&pp=ygUacGxhbmV0IHVua25vd24gaG93IHRvIHBsYXk%3D
+  - https://www.youtube.com/watch?v=08GYn9SWvGc&pp=ygUacGxhbmV0IHVua25vd24gaG93IHRvIHBsYXk%3D
+  - https://www.youtube.com/watch?v=Cf8RFyvIcbw&pp=ygUacGxhbmV0IHVua25vd24gaG93IHRvIHBsYXk%3D
 expansions:
 sections:
   - name: Setup
@@ -188,7 +191,7 @@ sections:
       ## Scoring
       * **Before scoring**, all players:
           * Should place any biomass patches they have.
-          * Should execute any end game corportation tech.
+          * Should execute any end game corporation tech.
           * Should advance any tracker due to end game civ cards.
 
       1. Score points for every complete row and column on your planet.
@@ -243,4 +246,177 @@ sections:
           * The last card of the event deck also triggers the game end.
   - name: Reference
     text: |
+      | Symbol | Term | Description |
+      | ------ | ---- | ----------- |
+      |  | Benefit | Any non-medal icon on your research track. |
+      | ![medal](/static/img/planet_unknown/medal.png) | Medal | The number on the medal is the number of end game points. |
+      | ![synergy](/static/img/planet_unknown/synergy.png) | Synergy | Advance any resource track once. |
+      | ![adv](/static/img/planet_unknown/adv.png) | Advance | Move a resource tracker 1 position up on the resource track.  Claim any benefit under the tracker. |
+      | ![reg](/static/img/planet_unknown/reg.png) | Regress | Move a resource tracker 1 position down on the resource track.  **DO NOT** claim any benefit under the tracker. |
+      |  | Tile | Cardboard polyomino with 2 terrains/resources. |
+      |  | Resource | 1 of 2 icons on a tile. |
+      |  | Terrain | 6 types of terrain, 1 corresponding to each resource. |
+      |  | Milestone | Benefit on a resource track that triggers a specific mechanic to that track. |
+      |  | Square | 1x1 area corresponding to the planet grid, a section of a tile, or the size of a biomass patch. |
+      |  | Terrain Area | A contiguous group of terrain consisting of 1 or more tiles of the same resource type touching orthogonally.  Area size is the number of squares in the group. |
+      |  | Rover Movement | Rover movement can be split between multiple rovers. Rovers can move on both tiles and the planet grid. Rovers may backtrack. |
+      |  | Collect | Take a component from your planet and place it on your player board. |
+      | ![destroy](/static/img/planet_unknown/destroy.png) | Destroy | Remove a destroyed component from the game. |
+      | ![no](/static/img/planet_unknown/no.png) | Do Not, May Not, or Cannot | This symbol describes additional game play restrictions. The additional restrictions must be followed, if possible, but should be ignored if they become solely responsible for triggering the end of the game. |
+      | ![complex](/static/img/planet_unknown/complex.png) | Complexity | A higher complexity is given for asymmetric planets and player boards that create more rule restrictions or advanced planning. |
+      | ![solo](/static/img/planet_unknown/solo.png) | Solo Mode Only | A component that should only be used during solo mode. |
+      | ![imdt](/static/img/planet_unknown/imdt.png) | Immediate | Execute any effects right away. |
+      | ![end_game](/static/img/planet_unknown/end_game.png) | End of Game | Execute any effects at the end of the game. Include medals in your scoring if you met all necessary conditions. |
+      | ![multi](/static/img/planet_unknown/multi.png) | Example of Multiple Benefits | Game 3 rover movement and a synergy boost. |
+      | ![life](/static/img/planet_unknown/life.png) | Lifepod on Your Planet |  |
 
+      ## Tech and Corporation Phrases
+      | Phrase | Definition |
+      | ------ | ---------- |
+      | At round start | Immediately execute this at the start of each round if the conditional requirement is met. |
+      | Carrying | A rover that physically has a meteorite on top fo the rover in the process of meteorite delivery or destruction. |
+      | Deliver / Delivering | A rover carrying a meteorite reaches its destination and the player moves the meteorite from the rover to the corp. board. |
+      | Gain a biomass patch | Take a biomass patch from the supply and immediately place it.  You may store it if you've unlocked the corresponding tech. |
+      | Gain movement | Add movement to your total rover movement this round. |
+      | Ignore tile adjacency placement restrictions | Remove the restriction for othogonally adjacent tile placement. Rules for placement on the planet grid squares and inside planet perimeter must still be followed. Any other placement restrictions put in place by asymmetric planets, corps., or events must be followed. |
+      | Position lifepod | Place a lifepod that was gained or collected into either the scoring area or another designated area of your corporation board. |
+      | Store biomass patch | Keep the biomass patch by your corp. board until a future point as noted by the corporation. |
+      | Teleport a rover | Pick up a rover from 1 square and place it on another square. The rover does **not** move on the planet between the starting and ending square. |
+      | +X rover movement | Add X to the number underneath the rover tracker each time you gain rover movement. |
+  - name: Asymmetric Corporations
+    text: |
+      # Republic
+      *Advantage: 7 x Civ milestones*  
+      *Weaknesses: 1 x Rover, Regression*
+
+      * Tech lvl 1 is an immediate gain of movement even before you place your
+        tile.  If your rover tracker is not at a position with rover movement,
+        do not gain any movement.
+      * Tech lvl 2 example:
+          * With tech lvl 2 unlocked, the player claims a rank 3 civ
+            milestone.  The player picks up all cards from rand 3 plus 1 card
+            at random from rank 4 and chooses 1 to keep. Then, return all
+            unchosen cards to their respective piles.
+      * Regress another tracker:  Move any non-civ resource tracker 1
+        position downward on the resource track.  Do not claim benefits.
+
+      # Wormhole Corp.
+      *Advantage: Surplus biomass patches*  
+      *Weaknesses: Tile placement restrictions*
+
+      * Tech lvl 2 may be used to achieve biomass terrain connections, but
+        you cannot place a biomass patch onto a meteorite.
+      * Tech lvl 5 allows you to place a biomass patch onto a meteorite at
+        game end, destroying the meteorite.
+
+      # Cosmos Inc.
+      *Advantage: Advancement engine*  
+      *Weaknesses: Lifepod scoring, 1 x Rover, Lifepods cover benefits*
+
+      * You may position lifepods such that a tracker skips over more than 1
+        lifepod at a time.
+      * Lifepods only score medals if they are on your scoring area at game
+        end.  You may use your tech to reposition them onto a scoring area
+        later in the game.
+
+      # Horizon Group
+      *Advantage: 4 x Rovers*  
+      *Weaknesses: Pick up and deliver requirements*
+
+      * Each rover may hold 1 meteorite on top of it.
+          * A rover picks up a meteorite when it is placed onto, moves onto,
+            or moves through a meteorite.
+          * A rover delivers a meteorite it's carrying when it moves onto or
+            through a rover resource.
+          * A rover destroys a meteorite it carries when it moves onto
+            water terrain.
+
+      # Jump Drive
+      *Advantage: Flexibility, 6 x Techs*  
+      *Weaknesses: Lifepod scoring, 1 x Rover*
+
+      * A tech may be used immediately when unlocked.
+      * Be aware that Jump Drive has little incentive to advance their tech
+        resource tracker, as they score fewer medals the further they
+        advance tech.
+      * Tech D: Treating tech resource as an energy resource during tile
+        placement only applies to tile placement and not end of game
+        resources.
+      * Tech E: A row consists of 5 resource track positions that span across
+        all resource tracks of the corp. board. as designated by the current
+        tracker position.
+
+      # Oasis Ultd.
+      *Advantage: Tracker manipulation, Medals on the water track*  
+      *Weaknesses: Long winding water track*
+
+      * Instead of just advancing upward, your water tracker advances toward
+        the end of the resource track, always following the irregular path.
+      * Each resource tracker only scores medals once based on its
+        corresponding resource track.
+      * Tech lvl 1: A tracker must stay on its corresponding track.
+
+      # Makeshift
+      *Advantage: Flexibility, Tracker manipulation*  
+      *Weaknesses: Resource dependency*
+
+      * A resource tracker may block another resource tracker from advancing.
+      * Resource trackers score medals based on the track they occupy at the
+        end of the game.
+      * Tech lvl 1: Trackers may advance diagonally from civ to tech and vice
+        versa.
+      * Tech lvl 3: A lateral shift is when a player moves a tracker
+        horizontally to an adjacent resource track and claims the benefit.
+      * Tech lvl 4: Regress -- Move a resource tracker 1 position down on the
+        resource track.  Do **not** claim benefits.
+
+      # Flux Industries
+      *Advantage: Power level, Versatility*  
+      *Weaknesses: 1 tech available at a time*
+
+      * Tech lvl 2: When you unlock this, choose the flux track as normal.
+        You may advance your tracker to the next milestone on the flux track
+        any time before you unlock tech lvl 3.
+      * Tech lvl 3: Only the benefits of the flux track are improved.
+        Disregard all other improvements that do not correspond to the
+        flux track.
+      * Tech lvl 4: Collect a meteorite from your planet, if possible.
+  - name: Asymmetric Planets
+    text: |
+      * **Gaia**
+          * It is legal to cover a city with your tile placement, but it will
+            impact your score.
+      * **Persephone**
+          * It is legal to play a tile that crosses quadrants, provided it
+            obeys restrictions.
+      * **Arashi**
+          * The planet's ring occupies the 2 largest horizontal rows. Biomass
+            patches may not be placed covering the ring.
+      * **Petra**
+          * Electrical currents count as energy terrain if uncovered at the
+            end of the game.
+      * **Tartarus**
+          * There are 2 points of the chasm that may be crossed if your rovers
+            have diagonal movement tech.
+      * **Charybdis**
+          * Obey tile placement rules as normal after your 1st tile placement.
+      * **Pajitnov**
+          * The tile must be able to slide into places from any direction.
+            Biomass patches may be placed even if they cannot slide into
+            place.
+      * **Oblivion**
+          * Score each row and column only once as normal.  Treat areas
+            without grid squares as if they did not exist when determining
+            if a row or column is complete.
+      * **Cerberus**
+          * Indicator brackets determine the grid area of each planet. Treat
+            areas without grid squares as if they did not exist when
+            determining if a row or column is complete. Maximum possible
+            score is 45 medals.
+      * **Lacuna**
+          * Treat holes as if they did not exist when determining if a row
+            or column is complete.
+      * **K'aax**
+          * No clarifications.
+      * **K-273**
+          * No clarifications.
