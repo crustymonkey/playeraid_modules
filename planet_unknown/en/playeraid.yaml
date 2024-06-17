@@ -3,7 +3,7 @@ description: "Build your own planet."
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.0
+version: 1.1
 bgg_id: 258779
 yt_videos:
   - https://www.youtube.com/watch?v=wIemQQn_dvM&pp=ygUacGxhbmV0IHVua25vd24gaG93IHRvIHBsYXk%3D
@@ -172,6 +172,17 @@ sections:
             must be at least 1 water terrain portion of the tile covering an
             ice space.
           * Water terrain is **not required** to be placed over ice.
+      - name: Energy Resources
+        text: |
+          There is no energy resource track.  Instead, when a tile containing
+          an energy resource is placed, you advance another resource based on
+          the following 2 options:
+
+          1. The non-energy resource on the tile you placed.
+          2. The resource of any 1 terrain that is orthogonally adjacent to
+             the energy terrain **area** established from your tile placement.
+              * This means that you can access the resource *through* other
+                adjacent energy tiles, not just the one you placed.
   - name: Game End
     id: game_end
     text: |
