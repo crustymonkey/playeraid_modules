@@ -3,13 +3,14 @@ description: "Build your wonder"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.0
+version: 2.0
 bgg_id: 346703
 yt_videos:
   - https://www.youtube.com/watch?v=SJvGd1MCMNE&pp=ygUgNyB3b25kZXJzIGFyY2hpdGVjdHMgaG93IHRvIHBsYXk%3D
   - https://www.youtube.com/watch?v=-FAxnN5ilQA&pp=ygUgNyB3b25kZXJzIGFyY2hpdGVjdHMgaG93IHRvIHBsYXk%3D
   - https://www.youtube.com/watch?v=cMgRWQ0HoBc&pp=ygUgNyB3b25kZXJzIGFyY2hpdGVjdHMgaG93IHRvIHBsYXk%3D
 expansions:
+  - Medals
 sections:
   - name: Setup
     text: |
@@ -22,7 +23,13 @@ sections:
       * Shuffle the common cards and make a central deck face down. Leave
         space nearby for a discard.
       * Shuffle the progress tokens and make a face down stack.  Flip the
-        top 3 face up near the stack.
+        top 3 face up near the stack. If you are playing with the Medals
+        expansion, you should shuffle the 4 new tokens in with the rest.
+      * If playing with Medals, shuffle the medals and place 1, objective
+        side up, between each player.
+          * If playing with the **Expert Variant**, place 2 additional medals
+            face up in the middle of the table.  These are available to
+            all players.
       * Place a number of conflict tokens face up based on player count:
           * **2-3 players**: 3 tokens
           * **4 players**: 4 tokens
@@ -70,7 +77,11 @@ sections:
           * These cards provide victory points.
           * If take a card with a cat symbol, immediately take the cat token.
               * The cat token will allow you to look at the top card of
-                the central deck before selecting a card on your turn.
+                the central deck before selecting a card at the beginning of
+                your turn.
+                  * **Note that the cat cannot be used for any additional
+                    card draws you may get on your turn**.  It can only be
+                    used for the first draw of your turn.
               * The cat token is also worth 2 points if you have at the
                 end of the game.
       - name: Green Cards
@@ -104,6 +115,31 @@ sections:
           3. All players discard any cards with a horn icon. Red cards
              without horns are kept in front of players.
           4. Flip all conflict tokens to their white side.
+      - name: Medals (expansion)
+        text: |
+          * You only have the 2 medals next to you that you can achieve.
+          * The 1st player on either side of medal to achieve the objective
+            takes the medal and scores 4 points at the end of the game.
+          * If playing with the **Expert Variant**, the 1st player to achieve
+            either of the medals in the center area can claim them.
+          * The number of elements for an objective is a minimum.  You can have
+            more than what is shown.
+
+          ## Medals
+          | Symbol | Objective |
+          | ------ | --------- |
+          | ![blue](/static/img/7_wonders_architects/m_blue.png) | Have 3 blue cards. |
+          | ![green](/static/img/7_wonders_architects/m_green.png) | Have 3 green cards. |
+          | ![grey](/static/img/7_wonders_architects/m_grey.png) | Have 3 grey cards. |
+          | ![red](/static/img/7_wonders_architects/m_red.png) | Have 3 red cards. |
+          | ![all_col](/static/img/7_wonders_architects/m_4_col.png) | Have 1 green, 1 yellow, 1 blue, and 1 red card. |
+          | ![cat_horn](/static/img/7_wonders_architects/m_cat_horn.png) | Have 1 yellow card, 1 blue card with a cat icon, and 1 red card with a horn. |
+          | ![seven](/static/img/7_wonders_architects/m_7_cards.png) | Have 7 cards (color doesn't matter). |
+          | ![stages](/static/img/7_wonders_architects/m_3_stages.png) | Construct 3 stages of your wonder. |
+          | ![cat_stages](/static/img/7_wonders_architects/m_2_plus_cat.png) | Construct 2 stages of your wonder and have the cat pawn. |
+          | ![progress](/static/img/7_wonders_architects/m_2_prog.png) | Have 2 progress tokens. |
+          | ![pro_mil_cat](/static/img/7_wonders_architects/m_prog_mil_cat.png) | Have 1 progress token, 1 military victory token, and the cat pawn. |
+          | ![mil](/static/img/7_wonders_architects/m_2_mil.png) | Have 2 military victory tokens.
   - name: End of Game
     text: |
       The game ends at the end of a player's turn in which they have completed
@@ -117,6 +153,7 @@ sections:
       * Blue cards
       * Military victory tokens
       * Progress tokens
+      * 4 points per medal (Medals expansion)
 
       The player with the most points wins.  If there is a tie, the player with
       the most constructed wonder stages wins. If there is still a tie, the
@@ -142,7 +179,10 @@ sections:
       | ![politics](/static/img/7_wonders_architects/p_politic.png) | At the end of the game, gain 1 point per cat icon on your blue cards. |
       | ![strategy](/static/img/7_wonders_architects/p_strategy.png) | At the end of the game, gain 1 point per military token you have. |
       | ![edu](/static/img/7_wonders_architects/p_edu.png) | At the end of the game, gain 2 points per progress token you have. |
-      | ![culture](/static/img/7_wonders_architects/p_culture.png) | At the end of the game, gain 4 points if you have 1 of these tokens **or** 12 points if you have both. |
+      | ![culture](/static/img/7_wonders_architects/p_culture.png) | At the end of the game, gain 4 points if you have 1 of these tokens **or** 12 points if you have both. If you are playing with Medals, there are 3 of these in the game.  If you get all 3, claim 16 points. |
+      | ![log](/static/img/7_wonders_architects/p_log.png) | At the end of the game, gain 2 points for each grey card in front of you. |
+      | ![dom](/static/img/7_wonders_architects/p_dom.png) | At the start of each of your turns, you can look at the top card of the central deck before choosing your card (as if you had the cat pawn).
+      | ![ent](/static/img/7_wonders_architects/p_ent.png) | At the end of each [battle](#red), keep your red cards with horns on them. |
   - name: Wonders
     text: |
       | Symbol | Wonder | Description |
@@ -154,3 +194,5 @@ sections:
       | ![hal](/static/img/7_wonders_architects/w_hal.png) | Halicarnassus | Take the top 5 cards from the deck to your left **or** your right, choose 1, and shuffle the others back into its deck. |
       | ![oly](/static/img/7_wonders_architects/w_oly.png) | Olympia | Take the top card from the decks on your left **and** right. |
       | ![giza](/static/img/7_wonders_architects/w_giza.png) | Giza | There is no special effect, but the wonder provides more points than other wonders. |
+      | ![rome](/static/img/7_wonders_architects/w_rome.png) | Rome | Take 1 card in front of any opponent.  Trigger the effect of any cat or horn icon, if applicable. Give that opponent the top card from the central deck **face down**.  They will reveal it and place it in front of them on their next turn in addition to their normal turn. |
+      | ![ur](/static/img/7_wonders_architects/w_ur.png) | Ur | Take the cat pawn.  Use its ability immediately to choose 1 of the 3 available cards. |
