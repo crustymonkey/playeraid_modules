@@ -1,0 +1,156 @@
+name: "7 Wonders Architects"
+description: "Build your wonder"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+version: 1.0
+bgg_id: 346703
+yt_videos:
+  - https://www.youtube.com/watch?v=SJvGd1MCMNE&pp=ygUgNyB3b25kZXJzIGFyY2hpdGVjdHMgaG93IHRvIHBsYXk%3D
+  - https://www.youtube.com/watch?v=-FAxnN5ilQA&pp=ygUgNyB3b25kZXJzIGFyY2hpdGVjdHMgaG93IHRvIHBsYXk%3D
+  - https://www.youtube.com/watch?v=cMgRWQ0HoBc&pp=ygUgNyB3b25kZXJzIGFyY2hpdGVjdHMgaG93IHRvIHBsYXk%3D
+expansions:
+sections:
+  - name: Setup
+    text: |
+      * For each player:
+          * Choose a wonder tray (or pick randomly).
+          * Construct your wonder as diagrammed on your tray with the
+            "under construction" side face up.
+          * Shuffle your deck of cards and place them face up in the holder.
+          * Place your deck between you and the player on your left.
+      * Shuffle the common cards and make a central deck face down. Leave
+        space nearby for a discard.
+      * Shuffle the progress tokens and make a face down stack.  Flip the
+        top 3 face up near the stack.
+      * Place a number of conflict tokens face up based on player count:
+          * **2-3 players**: 3 tokens
+          * **4 players**: 4 tokens
+          * **5 players**: 5 tokens
+          * **6-7 players**: 6 tokens
+      * Make a supply of military victory tokens.
+      * Place the cat pawn anywhere
+  - name: Gameplay
+    text: |
+      The game is played over a number of continuous rounds until someone
+      completes their wonder, after which the game immediately ends.
+
+      * Your turn consists of selecting the top card of the deck to your
+        right, left, or the central face down deck and placing it in your
+        tableau.
+          * If you have the [cat token](#blue), you can look at the top card
+            of the central deck before choosing.
+    sections:
+      - name: Grey Cards
+        id: grey
+        text: |
+          * Grey cards provide resources used to build stages of your wonder.
+          * If you ever have the resources to construct a wonder stage, you
+            **must** construct it. This includes the use of available [yellow
+            cards](#yellow).
+
+          ## Wonder Construction
+          * You must construct your wonder top to bottom.  All stages of a
+            level must be completed before building anything on the next
+            level.
+          * Some wonders give you an option for what to build at a level.
+          * [Yellow cards](#yellow) (coins) are wild resources that can/must
+            be used as any resource to build your wonder.
+          * Resource requirements:
+              * "2≠": 2 **different** resources are required
+              * "2=": 2 **identical** resources are required
+      - name: Yellow Cards
+        id: yellow
+        text: |
+          * Yellow cards (coins) act as a wild resource.
+          * The must be used as soon as you can build a stage of your wonder.
+      - name: Blue Cards
+        id: blue
+        text: |
+          * These cards provide victory points.
+          * If take a card with a cat symbol, immediately take the cat token.
+              * The cat token will allow you to look at the top card of
+                the central deck before selecting a card on your turn.
+              * The cat token is also worth 2 points if you have at the
+                end of the game.
+      - name: Green Cards
+        id: green
+        text: |
+          * These cards provide science symbols.
+          * When you have either 2 identical or 3 different science symbols,
+            you **must** discard them and take a [progress token](#progress).
+              * You may select any of the 3 face up tokens or the top token
+                in the face down stack.
+              * If a face up token is taken, immediately replace it.
+          * Keep the [progress token](#progress) in front of you after
+            taking it.
+      - name: Red Cards
+        id: red
+        text: |
+          * These cards provide shields that are used in military conflicts.
+          * If you take a card with horn symbols, flip over the matching
+            number of conflict tokens to their red side.  e.g. if you take
+            a red card with 2 horns, flip over 2 conflict tokens.
+          * When you flip the last conflict token to it's red side, a battle
+            occurs at the end of your turn.
+
+          ## Battle
+          1. Each player counts the number of shields on cards, wonders, etc.
+             that they have.
+          2. Each player compares the number of shields with their neighbors
+             and if they have more than a neighbor, they take 1 military
+             victory token (3 points).
+              * If players are tied, no one takes a token.
+          3. All players discard any cards with a horn icon. Red cards
+             without horns are kept in front of players.
+          4. Flip all conflict tokens to their white side.
+  - name: End of Game
+    text: |
+      The game ends at the end of a player's turn in which they have completed
+      their wonder.
+
+      ## Scoring
+      Count VP on the following:
+
+      * Constructed wonder stages
+      * 2 points if you have the cat pawn
+      * Blue cards
+      * Military victory tokens
+      * Progress tokens
+
+      The player with the most points wins.  If there is a tie, the player with
+      the most constructed wonder stages wins. If there is still a tie, the
+      victory is shared.
+  - name: Progress Tokens
+    text: |
+      * You obtain these by discarding [green cards](#green).
+      * You may use each progress token you have **once per turn** in any
+        order of your choosing.
+
+      | Symbol | Description |
+      | ------ | ----------- |
+      | ![urb](/static/img/7_wonders_architects/p_urban.png) | When you take a wood or brick resource, take 1 extra card from the available 3. |
+      | ![crafts](/static/img/7_wonders_architects/p_crafts.png) | When you take a paper or glass card, choose 1 extra card from the available 3. |
+      | ![jewel](/static/img/7_wonders_architects/p_jewel.png) | When you take a stone or coin card, choose 1 extra card from the available 3. |
+      | ![science](/static/img/7_wonders_architects/p_science.png) | When you take a green card, choose 1 extra card from the available 3. |
+      | ![prop](/static/img/7_wonders_architects/p_prop.png) | When you take a red card with horn icons, choose 1 extra card from the available 3. |
+      | ![arch](/static/img/7_wonders_architects/p_arch.png) | When you construct a wonder stage, choose 1 extra card from the available 3. |
+      | ![econ](/static/img/7_wonders_architects/p_economy.png) | 1 yellow card is worth 2 coins instead of 1. |
+      | ![eng](/static/img/7_wonders_architects/p_eng.png) | When you construct a wonder stage, you can use any resources, without adhering to the "identical" or "different" restrictions. |
+      | ![tactics](/static/img/7_wonders_architects/p_tactics.png) | Add 2 shields to your total shields. |
+      | ![decor](/static/img/7_wonders_architects/p_decor.png) | At the end of the game, gain 4 points if your wonder is not complete **or** 6 points if it *is* complete. |
+      | ![politics](/static/img/7_wonders_architects/p_politic.png) | At the end of the game, gain 1 point per cat icon on your blue cards. |
+      | ![strategy](/static/img/7_wonders_architects/p_strategy.png) | At the end of the game, gain 1 point per military token you have. |
+      | ![edu](/static/img/7_wonders_architects/p_edu.png) | At the end of the game, gain 2 points per progress token you have. |
+      | ![culture](/static/img/7_wonders_architects/p_culture.png) | At the end of the game, gain 4 points if you have 1 of these tokens **or** 12 points if you have both. |
+  - name: Wonders
+    text: |
+      | Symbol | Wonder | Description |
+      | ------ | ------ | ----------- |
+      | ![alex](/static/img/7_wonders_architects/w_alex.png) | Alexandria | Take the top card from any deck **anywhere on the table**. |
+      | ![eph](/static/img/7_wonders_architects/w_eph.png) | Ephesus | Take the top card from the central deck. |
+      | ![bab](/static/img/7_wonders_architects/w_bab.png) | Babylon | Choose 1 progress token from the 4 available. |
+      | ![rho](/static/img/7_wonders_architects/w_rho.png) | Rhodes | Add 1 shield to your total shields. |
+      | ![hal](/static/img/7_wonders_architects/w_hal.png) | Halicarnassus | Take the top 5 cards from the deck to your left **or** your right, choose 1, and shuffle the others back into its deck. |
+      | ![oly](/static/img/7_wonders_architects/w_oly.png) | Olympia | Take the top card from the decks on your left **and** right. |
+      | ![giza](/static/img/7_wonders_architects/w_giza.png) | Giza | There is no special effect, but the wonder provides more points than other wonders. |
