@@ -3,7 +3,7 @@ description: "Build your wonder"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 2.0
+version: 2.1
 bgg_id: 346703
 yt_videos:
   - https://www.youtube.com/watch?v=SJvGd1MCMNE&pp=ygUgNyB3b25kZXJzIGFyY2hpdGVjdHMgaG93IHRvIHBsYXk%3D
@@ -139,7 +139,7 @@ sections:
           | ![cat_stages](/static/img/7_wonders_architects/m_2_plus_cat.png) | Construct 2 stages of your wonder and have the cat pawn. |
           | ![progress](/static/img/7_wonders_architects/m_2_prog.png) | Have 2 progress tokens. |
           | ![pro_mil_cat](/static/img/7_wonders_architects/m_prog_mil_cat.png) | Have 1 progress token, 1 military victory token, and the cat pawn. |
-          | ![mil](/static/img/7_wonders_architects/m_2_mil.png) | Have 2 military victory tokens.
+          | ![mil](/static/img/7_wonders_architects/m_2_mil.png) | Win 2 military victory tokens in a single battle.
   - name: End of Game
     text: |
       The game ends at the end of a player's turn in which they have completed
