@@ -1,8 +1,8 @@
 name: "Windmill Valley"
-description: "Farm some tuplips and rotate some gears"
+description: "Farm some tulips and rotate some gears"
 text_type: markdown
 credits: "Jay Deiman"
-enabled: false
+enabled: true
 version: 1.0
 bgg_id: 403441
 yt_videos:
@@ -30,7 +30,8 @@ sections:
       * Choose a 1st player.
       * Give each player:
           * 1 farm board
-          * 1 windmill board
+          * 1 windmill board (randomly chosen) rotated so the red arrow lines
+            up with the red spoke on the larger gear.
           * 1 player aid
           * 1 tool token
           * 9 windmill tokens (in their color)
@@ -50,13 +51,14 @@ sections:
             top half of the card).
           * Place the remaining card on the main board next to the calendar,
             flipping it to the queen's wish side.
-      * In **reverse** turn order, each player places 1 of their player
-        markers on an area of the market without another player marker.
+      * In **reverse** turn order, each player places 1 of their larger player
+        markers on an area of the market without another player marker (if
+        possible).
         Then:
           * 2 players: Place 1 neutral marker in each of the 3 areas of the
             market.
           * 3 players: Place 1 neutral marker in each of the 2 areas of the
-            market.
+            market that don't have the 1st player's marker.
           * 4 players: Place 1 neutral marker in the next area
             counter-clockwise from the 1st player's marker.
           * Return any remaining neutral markers to the box.
@@ -77,3 +79,236 @@ sections:
       the calendar track, which triggers the [game end](#game_end). You will
       then finish the current round (equal turns) and then play 1 more turn.
 
+      # General Rules
+      * You cannot have more than 9 guilders or less than zero.
+      * If at any point, a player fulfills the Queen's Wish, they place 1 of
+        their markers on the highest available VP space and gain the VP.
+      * A white number next to a symbol indicates how much of that you gain.
+      * A red number next to a symbol indicates how mush of that you have to
+        spend.
+      * Rewards are optional.
+      * When you gain tulip bulbs, they are always placed in your storage from
+        left to right.
+          * The 2 rightmost spots have a cost.
+          * If your storage is full, you may discard a bulb and replace it
+            with a new bulb you've gained.
+              * The cost is not paid when exchanging tulip bulbs already in
+                these spaces when doing this.
+    sections:
+      - name: "1. Floodgate Adjustment"
+        text: |
+          * You may open or close the floodgates during this step.  This will
+            determine how much your wheels move.
+          * You have 3 choices:
+              * Leave the floodgate where it is.
+              * Close the floodgate by moving it down any number of steps.
+              * Open the floodgate by moving it up any number of steps, but
+                paying the guilder cost for each step (and receiving the VP
+                reward(s)).
+          * You **can only move the floodgate in 1 direction** on your turn.
+          * You **cannot** set the floodgate to a level that would move the
+            water level off of its track.
+          * If the water level is at the maximum, you **must** decrease the
+            floodgate level (water speed) to 1.
+      - name: "2. Water Level Adjustment"
+        text: |
+          * Move the water level to the right a number of spaces based on the
+            current floodgate level (water speed):
+              * Level 1: 0 spaces
+              * Level 2: 1 spaces
+              * Level 3: 2 spaces
+          * The water level can **never** move off the end of the track.
+              * You **cannot** set the floodgate to a level that would move the
+                water level off of its track.
+      - name: "3. Wheel Movement"
+        text: |
+          * Move your gears clockwise a number of steps equal to the floodgate
+            level (water speed).
+              * You may increase or decrease how far it moves by spending
+                a tool for each step.
+                  * Using tools does not affect the floodgate level.
+              * **You must always move the wheel at least 1 space and never
+                more than 4 spaces**.
+          * Whenever the red spoke on your wheel meets/crosses the red arrow
+            on your board, move your marker 1 space to the right on the
+            calendar track.
+              * Receive the reward shown on the space and, if available, claim
+                a unique reward in the same column.  After claiming the unique
+                reward, cover it with a red "X".
+              * When a player reaches the end of the calendar track, [game
+                end](#game_end) is triggered.
+      - name: "4. Perform Actions"
+        text: |
+          * You may select 1 of the 2 actions.
+              * You **must take 1 of the 2 actions if at all possible**.
+          * If you cannot perform either action, instead take 2 guilders.
+          * If 1 of the 2 actions has a "+" symbol, you may perform both
+            actions in any order.
+          * Some effects may grant you extra actions.
+              * If, due to this, you perform the same action twice, note that
+                they are considered separate, distinct actions.
+
+          ## Action: Lower the Water Level
+          ![low_water](/static/img/windmill_valley/low_wat_level.png)
+
+          1. Gain the reward for the **current** level of the water level
+             marker once for each strength level of the action.  e.g. If the
+             marker is on the 8 space and you have a 2 strength action, you
+             would receive either 4 guilders or 4 VP.
+          2. Lower the water level a number of spaces equal to the action's
+             strength.
+
+          ## Action: Enhance the Wheels
+          ![whl_enh](/static/img/windmill_valley/whl_enh.png)
+
+          * Before selecting an enhancement, you may spend 1 guilder to discard
+            all the current enhancements to the bottom of their respective
+            piles and replace them.
+          * Take a wheel enhancement token from the board and cover an existing
+            action on 1 of your wheels, paying the cost.
+              * Common: Free
+              * Uncommon: 1 guilder
+              * Unique: 2 guilders
+          * You may replace a previously installed enhancement, returning
+            the replaced 1 to the box.
+          * **You cannot install an enhancement on a space you activated this
+            turn**.
+          * Refill the board spot with a matching enhancement.
+              * If the matching type has run out, replace it with a common
+                enhancement and cover the cost with a red "X" (it is now free).
+
+          ## Action: Gain a Farm Enhancement
+          ![farm_enh](/static/img/windmill_valley/farm_enh.png)
+
+          * Before selecting an enhancement, you may spend 1 guilder to
+            discard all the current enhancements to the discard and replace
+            them from the deck.
+          * Select a card and slot it under your board as either a "helper"
+            (top half) or a "contract" (bottom half).
+              * If used as a helper, you slot it in the leftmost spot and
+                gain the points shown for that slot.
+          * Helpers can be used **once per turn** and they can be used
+            immediately after placement.
+              * Helper abilities can be used before or after your action(s).
+          * If your slots are full for either contracts or helpers, you can
+            replace an existing card.
+              * If you are replacing a helper, you **do not gain the VP for
+                the slot you are replacing**.
+              * Add the removed card to the discard pile.
+
+          ## Action: Build a Windmill
+          ![windmill](/static/img/windmill_valley/windmill.png)
+
+          * Take any windmill from your board, pay the cost next to the
+            windmill space and place it on the main board following the
+            placement rules.
+              * The windmill must be connected to the market **via an
+                uninterrupted path of windmills** of any color.
+              * Only 1 windmill can be placed in a space.
+          * After placing a windmill, do the following:
+              1. Tracing the shortest path possible back to the market, all
+                 **other players** receive 1 VP for each windmill on this
+                 path.
+                  * **You do not receive points for any of your windmills
+                    on this path**.
+              2. Receive all the rewards from any fields adjacent to your
+                 newly placed windmill.
+          * There are some enhancements that allow you to build windmills
+            that are not connected to the market.
+              * No one can build off of these windmills! They must follow
+                the rule where they are connected to the market.
+
+          ## Action: Visit the Market
+          ![market](/static/img/windmill_valley/market.png)
+
+          * You pay the cost shown to move your marker clockwise a number
+            of spaces in the market equal to the strength of the action.
+          * **Once per turn, before you move**, you can pay 1 guilder to move
+            a neutral marker from 1 area of the market to another.
+              * It **must** move to an area that you will move to during some
+                part of your movement.
+          * For each movement point (strength of the action), move your token
+            1 space clockwise and collect 1 of the rewards shown a number of
+            times equal to the number of tokens in that market area (max of 3).
+              * e.g. If you move to an area with 2 tokens (including your own),
+                you would collect 2x of your chosen reward.
+          * If an area is full, you may pay 1 guilder to another player and
+            place your token on top of theirs.
+              * You still only collect a max of 3x of a reward.
+              * This does not prevent movement of the other player in any
+                way.
+
+          ## Action: Plant Tulip Bulbs
+          ![plant](/static/img/windmill_valley/plant.png)
+
+          * Plant a number of tulip bulbs equal to the action's strength
+            from your storage to your tulip patches.
+          * You may plant any tulip bulb from your storage.
+          * You must plant in the leftmost spot of any row.
+          * If you cover a reward on the space, gain that immediately.
+          * After planting, slide the remaining tulip bulbs in your storage
+            to the left so there are no open spaces on the left side.
+
+          ## Action: Conduct Foreign Trade
+          ![trade](/static/img/windmill_valley/trade.png)
+
+          * You have 2 options with this action:
+              * Place a tulip bulb from your storage on the foreign trade card
+                and receive rewards.
+                  * The bulb must be of a different color than any others
+                    on the card.
+                  * The bulb is placed between 2 quarters of the card and you
+                    receive the reward from both quarters.
+              * **OR** take all the tulip bulbs from the card, returning any
+                you don't want to the supply.
+          * If, after placing a tulip bulb on the card, the card has 4 bulbs
+            on it, remove all the bulbs and place them in the supply.  Then,
+            place the card at the bottom of its deck.
+  - name: Game End
+    id: game_end
+    text: |
+      When a player reaches the last space of the calendar track, game end is
+      triggered. Finish out the current round (equal turns), then each player
+      gets 1 more turn.
+
+      ## Scoring
+      * Gain points for contracts.
+      * Each empty windmill group will score points for different colors of
+        tulip bulbs in your patch (not your storage). Top to bottom:
+          * 1 VP per white bulb
+          * 1 VP per yellow bulb
+          * 2 VP per red bulb
+          * 2 VP per violet bulb
+          * 3 VP per black bulb
+      * Score points for each completed row/column in your patch.
+          * X points for a complete row where all the tulips are the same
+            color.
+          * X (smaller) points for a complete row where they are not all the
+            same color.
+          * X points for each column with 4 different colors of tulip bulbs.
+          * **-X points** for each column with 2 or more of the same color
+            bulb, **complete or incomplete**.
+
+      The player with the VP wins.  If there is a tie:
+
+      1. The player with the most tulip bulbs in the patch wins.
+      2. The player with the most tulip bulbs in their storage wins.
+      3. The player with the most windmills on the main board wins.
+      4. Tied players share the victory.
+  - name: Expert Variant
+    text: |
+      For this variant, simply remove the 1 extra turn at the end of the game
+      and instead just finish out the round (equal turns) where the game
+      end is triggered.
+  - name: General Symbols
+    text: |
+      | Symbol | Description |
+      | ------ | ----------- |
+      | ![gain_vp](/static/img/windmill_valley/gain_vp.png) | Gain the indicated number of VP. |
+      | ![lose_vp](/static/img/windmill_valley/lose_vp.png) | Lose the indicated number of VP. |
+      | ![tool](/static/img/windmill_valley/tool.png) | Gain a tool token. |
+      | ![tulips](/static/img/windmill_valley/tulips.png) | Gain the indicated tulip bulbs and place them in your storage. |
+      | ![any_tulip](/static/img/windmill_valley/any_tulip.png) | Gain any tulip bulb. |
+      | ![gain_guild](/static/img/windmill_valley/gain_guild.png) | Gain the indicated number of guilders. |
+      | ![pay_guild](/static/img/windmill_valley/pay_guild.png) | Pay the indicated number of guilders. |
+      | ![score_cont](/static/img/windmill_valley/score_cont.png) | Immediately score 1 of your contracts. This contract will still score normally at the end of the game. |
