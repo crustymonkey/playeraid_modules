@@ -1,0 +1,148 @@
+name: "Gnome Hollow"
+description: "Build mushroom rings!"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+version: 1.0
+bgg_id: 332885
+yt_videos:
+  - https://www.youtube.com/watch?v=UH4JOTFcaDs&pp=ygUjZ25vbWUgaG9sbG93IGJvYXJkIGdhbWUgaG93IHRvIHBsYXk%3D
+  - https://www.youtube.com/watch?v=R2ZD06Il2fc&pp=ygUjZ25vbWUgaG9sbG93IGJvYXJkIGdhbWUgaG93IHRvIHBsYXk%3D
+  - https://www.youtube.com/watch?v=ocI-m1LUsKg&pp=ygUjZ25vbWUgaG9sbG93IGJvYXJkIGdhbWUgaG93IHRvIHBsYXk%3D
+  - https://www.youtube.com/watch?v=f6h7izCi0vE&pp=ygUjZ25vbWUgaG9sbG93IGJvYXJkIGdhbWUgaG93IHRvIHBsYXk%3D
+expansions:
+sections:
+  - name: Setup
+    text: |
+      * Place the stump tile.
+      * Place the pinwheel market near the stump with the market tokens
+        stacked beside the matching mushrooms.
+      * Place the garden tile board next to the pinwheel market board.
+          * Put the garden tiles into the bag, draw 8, and place them on
+            the garden tile board.
+          * Randomly draw 2 more tiles **per player** and set them aside
+            under the sunset tile without looking at them.
+      * Create a supply of treasure and mushroom tokens.
+      * Create a supply of flower tokens.
+          * For each type of flower, you should have a number of tokens equal
+            to the number of players.
+          * Place each stack on its matching wildflower tile.
+      * Place the signposts near the garden tile board.
+      * Each player takes, in their chosen color:
+          * A player aid card
+          * 2 gnomes
+          * A player board
+          * 8 ring markers
+              * Place these onto their spaces below the score track on your
+                player board.
+      * Choose a 1st player and give them the red cap (1st player) token.
+  - name: Gameplay
+    text: |
+      Players take turns in clockwise order until a [game end](#game_end)
+      condition is met.
+    sections:
+      - name: "1. Place Tiles"
+        text: |
+          1. Choose 2 garden tiles from the supply and place both into the
+             garden.
+              * You may also place 2 additional garden tiles from your storage.
+              * Tiles must be placed adjacent to the stump or another tile
+                in the garden.
+              * White mushroom paths must line up with other mushroom paths
+                and green sides must also match.
+              * If your tile extends a ring claimed by another player's
+                gnome, **you must get the player's permission to place the
+                tile**.
+          2. After placing tiles, if a ring is formed, do the following:
+              1. If you have a gnome on the path, collect all mushrooms in
+                 the ring.
+                  * If an unclaimed ring is completed, place the mushrooms in
+                    the center of the ring instead.
+              2. If you have a gnome on the ring or if it is unclaimed, move
+                 the leftmost ring marker on your player board to the column
+                 that matches the number of tiles in the ring.  Choose an
+                 unfilled [reward](#resolve) and claim it (if any).
+                  * If you have already filled all the spaces in the matching
+                    ring size, **do not move a marker**.
+                  * Don't forget that the stump tile also counts as 1 tile.
+                    If your ring passes through the stump multiple times, it
+                    is still counted as only 1 tile.
+                  * If you complete a ring reserved by another player, **you
+                    do not collect mushrooms or move a ring marker**.
+                      * The ring is scored by the reserving player at the
+                        beginning of their next turn.
+                      * Lay the gnome down as a reminder to score it.
+          3. Refill the board with 2 garden tiles from the bag.
+      - name: "2. Resolve"
+        id: resolve
+        text: |
+          * When you move a ring marker to an empty space next to a reward,
+            you immediately receive the bonus (see below).
+          * If you gather a flower token, place it in the leftmost empty
+            spot at the top of your player board.
+          * You may store any number of mushroom and treasure tokens.
+          * You may store up to 2 tiles you gain during the game, but **at
+            most you can only store 1 wildflower tile**.
+              * If you gain a new tile and don't have storage space, you may
+                discard a previously obtained tile to make space.
+
+          | Symbol | Description |
+          | ------ | ----------- |
+          | ![sign](/static/img/gnome_hollow/signpost.png) | Add and use a new signpost **or** use a signpost already in the garden without moving your gnome.  Choose an unplaced signpost and place it into the ring you just created and take the bonus action **or** you may choose to use any signpost already in the garden. |
+          | ![garden](/static/img/gnome_hollow/garden_tile.png) | Take 1 garden tile and add it to your storage.  This can be played on a future turn in addition to the mandatory 2 tiles.  If you already have 2 tiles in your storage, you need to discard 1 to take the new tile. Draw a tile from the bag to refill the garden tile board. |
+          | ![flower](/static/img/gnome_hollow/flower.png) | Take an available flower token that you do not have from the top of the pinwheel market and add it to the leftmost space at the top of your player board. |
+          | ![shroom](/static/img/gnome_hollow/shroom.png) | Gain the additional number of mushrooms from the ring you just completed. The bonus mushrooms **must match the mushrooms in the ring**, and each mushroom can only be duplicated once with this bonus. |
+          | ![mv_ring](/static/img/gnome_hollow/mv_ring.png) | When you select a bonus with an extra space, you will move 2 ring markers instead of 1 (size 7+ tile ring). |
+          | ![wildflower](/static/img/gnome_hollow/wildflower.png) | When you create your 2nd, 4th, and 6th ring and move ring markers beside the wildflower tile symbol, you immediately gain a wildflower tile.  1) Place 1 flower token on the tile into your flower collection.  2) Stack the remaining tokens in an available flower space in the flower market (above the pinwheel market).  3) Place the tile into your storage area.  If you already have 2 tiles, you must discard 1 to take the new tile.  **You may only have 1 wildflower tile in your storage at any time**.  If no wildflower tiles are available, instead take a flower token from the market.  These tiles are considered to be wild and can be placed into other players' rings **without their permission**. |
+      - name: "3. Move a Gnome"
+        text: |
+          * Moving a gnome is optional, but **actions only occur when you move
+            a gnome to a different location**.
+          * To take an action, place 1 of your 2 gnomes in a different
+            location.
+
+          | Symbol | Action |
+          | ------ | ------ |
+          | ![sign](/static/img/gnome_hollow/signpost.png) | Visit a signpost by placing your gnome in the center of a completed ring that has a signpost. Immediately collect the reward on the signpost. |
+          | ![mush_path](/static/img/gnome_hollow/mush_path.png) | To claim a mushroom path, move your gnome to any unoccupied mushroom path. As long as your gnome remains there, no one else can claim this path. If you claim an incomplete ring, no one else can add tiles to your path without your permission.  If you claim a previously completed, but unclaimed ring, you may collect the mushrooms there. |
+          | ![flower](/static/img/gnome_hollow/flower.png) | Move your gnome to the flower market at the top of the pinwheel market and take any 1 available flower token that **you do not already have** and slot it at the top of your player board in the leftmost space. Any number of gnomes can visit the flower market. |
+          | ![pinwheel](/static/img/gnome_hollow/pinwheel.png) | Move your gnome to the stump to **sell up to 2 sets of mushrooms**. If you sell 2 sets, they must be different types. Columns show the number of mushrooms required to complete the sale and rows show the type of mushroom.  The 1st column always allows selling a pair of mushrooms for the indicated value (do not place a token on it).  For any other sale, place a matching token from the stack on the space to cover the sale you just made (no longer available). If all tokens are used, players may only sell sets of 2 mushrooms thereafter. |
+  - name: Game End
+    id: game_end
+    text: |
+      * Gameplay is continuous until 1 of the following conditions are met:
+          * A player gathers their 8th flower token.
+          * A player moves their 8th ring marker.
+          * The bag runs out of tiles.
+      * When game end is triggered:
+          1. Place the garden tiles under the sunset token in the bag.
+          2. Finish the round such that each player has had the same number of
+             turns.
+          3. (after #2) Each player gets 1 final gnome action in turn order.
+             Note that a player must still move a gnome to take an action.
+          4. Proceed to scoring.
+
+      ## Scoring
+      Combine the following for your final score.
+
+      * The point value shown under your rightmost flower token.
+      * The point value shown above your rightmost empty ring marker space.
+      * The total value of all collected treasures.
+
+      The player with the most points wins.  If there is a tie, the player with
+      the most unsold mushrooms wins.
+  - name: Variants
+    sections:
+      - name: The Mushroom Trade Board
+        text: |
+          * This allows a gnome to make 1 mushroom trade each time they visit
+            a signpost.
+          * After collecting the reward on the signpost, you may make 1 of the
+            2 trades shown under that signpost on the trade board.
+      - name: The Advanced Player Board
+        text: |
+          * Flip over the player boards to use the advanced side.
+          * On this side, players can only score random shaped rings for
+            3, 4, 5, 6, and 7+ tile rings. All other rings must match a
+            specific shape to qualify for scoring and bonuses.
+
