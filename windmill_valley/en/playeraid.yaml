@@ -1,0 +1,79 @@
+name: "Windmill Valley"
+description: "Farm some tuplips and rotate some gears"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+version: 1.0
+bgg_id: 403441
+yt_videos:
+  - https://www.youtube.com/watch?v=MkebcUKXM8g&t=80s&pp=ygUbd2luZG1pbGwgdmFsbGV5IGhvdyB0byBwbGF5
+  - https://www.youtube.com/watch?v=rbEXasmVbDw&pp=ygUbd2luZG1pbGwgdmFsbGV5IGhvdyB0byBwbGF5
+expansions:
+sections:
+  - name: Setup
+    text: |
+      * Place the main board.
+      * Place the "X" tiles, wheel enhancements, farm enhancements, tulip
+        bulbs, and tool tokens near the board.
+      * Shuffle each type of wheel enhancement tiles separately, forming
+        stacks face down. Place them near the main board.
+          * Draw 2 common, 1 uncommon, and 1 unique enhancements and place
+            them on their spaces on the main board.
+      * Shuffle the farm enhancements into a face down deck and place it
+        near the main board.
+          * Draw 3 farm enhancements and place them in any order face up
+            on their spaces on the main board.
+      * Place the floodgate marker and the water level marker on their lowest
+        numbered positions on their tracks.
+      * Shuffle the foreign trade cards and place them in a face up stack on
+        the main board.
+      * Choose a 1st player.
+      * Give each player:
+          * 1 farm board
+          * 1 windmill board
+          * 1 player aid
+          * 1 tool token
+          * 9 windmill tokens (in their color)
+          * 5 player markers (in their color)
+      * Each player places their player markers:
+          * On the "5" space of the VP track
+          * The starting position of the calendar track
+          * On the guilder track on their farm boards:
+              * 1st player: 4th position
+              * 2nd player: 5th position
+              * 3rd player: 6th position
+              * 4th player: 7th position
+      * Randomly choose a number of starting farm enhancements equal to the
+        number of players + 1 and place them face up.
+          * In **reverse** turn order, each player chooses 1 card and places
+            it under the top leftmost slot of their farm board (showing the
+            top half of the card).
+          * Place the remaining card on the main board next to the calendar,
+            flipping it to the queen's wish side.
+      * In **reverse** turn order, each player places 1 of their player
+        markers on an area of the market without another player marker.
+        Then:
+          * 2 players: Place 1 neutral marker in each of the 3 areas of the
+            market.
+          * 3 players: Place 1 neutral marker in each of the 2 areas of the
+            market.
+          * 4 players: Place 1 neutral marker in the next area
+            counter-clockwise from the 1st player's marker.
+          * Return any remaining neutral markers to the box.
+      * Players should set aside their 5th player marker for now.
+      * Players then receive:
+          * 1st player: 1 white tulip bulb (placed in their storage)
+          * 2nd player: 1 yellow tulip bulb (placed in their storage)
+          * 3rd player: 1 red tulip bulb (placed in their storage)
+          * 4th player: 1 violet tulip bulb (placed in their storage)
+      * Each player should place their windmills into groups, in the slots
+        on the left side of their farm board (top to bottom: 1/1/2/2/3).
+      * If playing with less than 4 players cover the respective part of the
+        calendar with the limit tile, leaving the last column of the calendar
+        uncovered.
+  - name: Gameplay
+    text: |
+      Players will continuously take turns until someone reaches the end of
+      the calendar track, which triggers the [game end](#game_end). You will
+      then finish the current round (equal turns) and then play 1 more turn.
+
