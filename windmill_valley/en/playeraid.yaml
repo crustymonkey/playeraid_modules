@@ -3,7 +3,7 @@ description: "Farm some tulips and rotate some gears"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.0
+version: 1.2
 bgg_id: 403441
 yt_videos:
   - https://www.youtube.com/watch?v=MkebcUKXM8g&t=80s&pp=ygUbd2luZG1pbGwgdmFsbGV5IGhvdyB0byBwbGF5
@@ -336,7 +336,7 @@ sections:
       | ![low_wtr_plus](/static/img/windmill_valley/e_low_wat_plus.png) | Perform a lower the water level action.  You can also perform the action on the other wheel. |
       | ![frm_3gld](/static/img/windmill_valley/e_frm_3gld.png) | Gain a farm enhancement and 3 guilders. |
       | ![mkt_g](/static/img/windmill_valley/e_mkt_plus_g.png) | Visit the market.  You can also perform the action on the other wheel. |
-      | ![gld_g](/static/img/windmill_valley/e_4gld_plus_g.png) | Gain 4 guilders. You can also perform the action on the other wheel. |
+      | ![gld_g](/static/img/windmill_valley/e_4gld_plus.png) | Gain 4 guilders. You can also perform the action on the other wheel. |
       | ![gld_vp](/static/img/windmill_valley/e_2gld_3vp.png) | Gain 2 guilders and 3 VP. |
       | ![plnt_exch](/static/img/windmill_valley/e_plnt_exch.png) | Plant up to 3 tulip bulbs. You may exchange 1 bulb from your storage with the supply before planting. |
       | ![low_wat_pl](/static/img/windmill_valley/e_low_wat_plus_g.png) | Do a lower water level action and gain both VP and guilder.  You can also perform the action on the other wheel. |
