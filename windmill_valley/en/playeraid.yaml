@@ -312,3 +312,37 @@ sections:
       | ![gain_guild](/static/img/windmill_valley/gain_guild.png) | Gain the indicated number of guilders. |
       | ![pay_guild](/static/img/windmill_valley/pay_guild.png) | Pay the indicated number of guilders. |
       | ![score_cont](/static/img/windmill_valley/score_cont.png) | Immediately score 1 of your contracts. This contract will still score normally at the end of the game. |
+  - name: Enhancements
+    text: |
+      | Symbol | Description |
+      | ------ | ----------- |
+      | ![tulips](/static/img/windmill_valley/e_3bulbs.png) | Plant up to 3 bulbs. |
+      | ![low_wat](/static/img/windmill_valley/e_low_water.png) | Do a lower water level action. Gain both VP and Guilder. |
+      | ![bld_wm](/static/img/windmill_valley/e_bld_wm.png) | Build a windmill.  Optionally pay 1 guilder to build without making a connection to the market. |
+      | ![for_trd](/static/img/windmill_valley/e_for_trd.png) | Do a foreign trade action.  You may place a tulip bulb of a color that is already present. |
+      | ![for_trd_gld](/static/img/windmill_valley/e_for_trd_gld.png) | Do a foreign trade action.  You may pay 1 builder to gain 1 additional reward, in addition to the 2 rewards adjacent to your bulb. You do not gain it if you instead collect bulbs. |
+      | ![enh_2gld](/static/img/windmill_valley/e_enh_gld.png) | Do an enhance the wheel action and gain 2 guilders. |
+      | ![enh2](/static/img/windmill_valley/e_2enh.png) | Do 2 enhance the wheel actions. |
+      | ![low_wat_gld](/static/img/windmill_valley/e_lw_2gld.png) | Do the lower water level action and gain 2 guilders. |
+      | ![bld_wm](/static/img/windmill_valley/e_bld_gld.png) | Build a windmill and gain 1 guilder. |
+      | ![mkt3](/static/img/windmill_valley/e_3mkt.png) | Visit the market with strength 3. |
+      | ![mkt2](/static/img/windmill_valley/e_2mkt.png) | Visit the market with strength 2. |
+      | ![frm_gld](/static/img/windmill_valley/e_frm_gld.png) | Gain a farm enhancement and 1 guilder. |
+      | ![mkt_plus](/static/img/windmill_valley/e_mkt_plus.png) | Visit the market. You can also perform the action on the other wheel. |
+      | ![gld_plus](/static/img/windmill_valley/e_2gld_plus.png) | Gain 2 guilders. You can also perform the action on the other wheel. |
+      | ![rem_wm](/static/img/windmill_valley/e_rem_wm_plus.png) | Remove 1 windmill from your farm board and return it to the box. You can also perform the action on the other wheel. |
+      | ![enh_plus](/static/img/windmill_valley/e_enh_plus.png) | Do an enhance the wheel action.  You can also perform the action on the other wheel. |
+      | ![bulb_plus](/static/img/windmill_valley/e_any_plus.png) | Gain 1 tulip bulb of any color.  You can also perform the action on the other wheel. |
+      | ![low_wtr_plus](/static/img/windmill_valley/e_low_wat_plus.png) | Perform a lower the water level action.  You can also perform the action on the other wheel. |
+      | ![frm_3gld](/static/img/windmill_valley/e_frm_3gld.png) | Gain a farm enhancement and 3 guilders. |
+      | ![mkt_g](/static/img/windmill_valley/e_mkt_plus_g.png) | Visit the market.  You can also perform the action on the other wheel. |
+      | ![gld_g](/static/img/windmill_valley/e_4gld_plus_g.png) | Gain 4 guilders. You can also perform the action on the other wheel. |
+      | ![gld_vp](/static/img/windmill_valley/e_2gld_3vp.png) | Gain 2 guilders and 3 VP. |
+      | ![plnt_exch](/static/img/windmill_valley/e_plnt_exch.png) | Plant up to 3 tulip bulbs. You may exchange 1 bulb from your storage with the supply before planting. |
+      | ![low_wat_pl](/static/img/windmill_valley/e_low_wat_plus_g.png) | Do a lower water level action and gain both VP and guilder.  You can also perform the action on the other wheel. |
+      | ![bld_wm](/static/img/windmill_valley/e_bld_g.png) | Build a windmill.  You may place the windmill without a connection to the market. Gain 1 guilder. |
+      | ![bld_wm_3gld](/static/img/windmill_valley/e_bld_3gld.png) | Build a windmill and gain 3 guilders. |
+      | ![tlp_gld_vp](/static/img/windmill_valley/e_tlp_gld_vp.png) | Take a tulip bulb of any color from the supply and add it to your storage.  Gain 1 guilder and 1 VP.  You can also perform the action on the other wheel. |
+      | ![plnt4](/static/img/windmill_valley/e_4plnt.png) | Plant up to 4 tulip bulbs. |
+      | ![frm](/static/img/windmill_valley/e_frm_plus.png) | Gain a farm enhancement.  You can also perform the action on the other wheel. |
+      | ![for_trd](/static/img/windmill_valley/e_for_trd_g.png) | Do a foreign trade action.  You may pay 1 guilder to gain all rewards on the card (you do not gain this if you collect bulbs).  You can also perform the action on the other wheel. |
