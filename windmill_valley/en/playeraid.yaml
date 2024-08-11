@@ -3,7 +3,7 @@ description: "Farm some tulips and rotate some gears"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.2
+version: 1.3
 bgg_id: 403441
 yt_videos:
   - https://www.youtube.com/watch?v=MkebcUKXM8g&t=80s&pp=ygUbd2luZG1pbGwgdmFsbGV5IGhvdyB0byBwbGF5
@@ -346,3 +346,362 @@ sections:
       | ![plnt4](/static/img/windmill_valley/e_4plnt.png) | Plant up to 4 tulip bulbs. |
       | ![frm](/static/img/windmill_valley/e_frm_plus.png) | Gain a farm enhancement.  You can also perform the action on the other wheel. |
       | ![for_trd](/static/img/windmill_valley/e_for_trd_g.png) | Do a foreign trade action.  You may pay 1 guilder to gain all rewards on the card (you do not gain this if you collect bulbs).  You can also perform the action on the other wheel. |
+  - name: Farm Enhancement Cards
+    text: |
+      ![f_15_1](/static/img/windmill_valley/f_15_1.png)
+
+      **Helper**: When you do a gain a farm enhancement action, you may also
+      lower the water level with a strength of 1.
+
+      **Contract**: Gain 4 VP for each of your windmills adjacent to a field
+      that rewards guilder.
+
+      ---
+
+      ![f_15_2](/static/img/windmill_valley/f_15_2.png)
+
+      **Helper**: Gain 2 VP when you take the enhance wheels action.
+
+      **Contract**: Gain 4 VP for each of your windmills adjacent to a field
+      that rewards white tulips.
+
+      ---
+
+      ![f_15_3](/static/img/windmill_valley/f_15_3.png)
+
+      **Helper**: When you do a gain a foreign trade action, gain 2 VP.
+
+      **Contract**: Gain 5 VP for each of your windmills adjacent to a field
+      that rewards tools.
+
+      ---
+
+      ![f_15_4](/static/img/windmill_valley/f_15_4.png)
+
+      **Helper**: When you do a gain a build windmill action, gain 1 tool.
+
+      **Contract**: Gain 4 VP for each of your windmills adjacent to a field
+      that rewards yellow tulips.
+
+      ---
+
+      ![f_15_5](/static/img/windmill_valley/f_15_5.png)
+
+      **Helper**: When you visit the market, you may also do an enhance wheels
+      action.
+
+      **Contract**: Gain 3 VP for each of your windmills adjacent to a field
+      that rewards a plant tulips action.
+
+      ---
+
+      ![f_15_6](/static/img/windmill_valley/f_15_6.png)
+
+      **Helper**: When you do a gain a lower water level action, gain 1 tulip
+      of any color into your storage.
+
+      **Contract**: Gain 5 VP for each of your windmills adjacent to a field
+      that rewards a visit the market action.
+
+      ---
+
+      ![f_16_1](/static/img/windmill_valley/f_16_1.png)
+
+      **Helper**: When you move the floodgate marker up, gain 2 extra VP.
+
+      **Contract**: Gain 5 VP for each of your windmills adjacent to a field
+      that rewards a farm enhancement action.
+
+      ---
+
+      ![f_16_2](/static/img/windmill_valley/f_16_2.png)
+
+      **Helper**: When you do a lower the water level action, gain a yellow
+      or red tulip into your storage.
+
+      **Contract**: Gain 4 VP for each of your windmills adjacent to a field
+      that rewards red tulips.
+
+      ---
+
+      ![f_16_3](/static/img/windmill_valley/f_16_3.png)
+
+      **Helper**: When you do a lower the water level action, you may add +1
+      strength to that action.
+
+      **Contract**: Gain 3 VP for each of your windmills adjacent to a field
+      that rewards a lower the water level action.
+
+      ---
+
+      ![f_16_4](/static/img/windmill_valley/f_16_4.png)
+
+      **Helper**: When you build a windmill, gain 2 VP.
+
+      **Contract**: Gain 5 VP for each of your windmills adjacent to a field
+      that rewards an enhance wheels action.
+
+      ---
+
+      ![f_16_5](/static/img/windmill_valley/f_16_5.png)
+
+      **Helper**: When you do a foreign trade action, receive 1 tool.
+
+      **Contract**: Gain 3 VP for each of your large wheel enhancements.
+
+      ---
+
+      ![f_16_6](/static/img/windmill_valley/f_16_6.png)
+
+      **Helper**: When you take a farm enhancement action, you may gain 1
+      reward from a market area adjacent to your marker.
+
+      **Contract**: Gain 15 VP if you have an enhancement on each space of
+      your small wheel.
+
+      ---
+
+      ![f_16_7](/static/img/windmill_valley/f_16_7.png)
+
+      **Helper**: When you move the floodgate marker up, gain 2 extra VP.
+
+      **Contract**: Gain 5 VP for each of your windmills adjacent to a field
+      that rewards a farm enhancement action.
+
+      ---
+
+      ![f_16_8](/static/img/windmill_valley/f_16_8.png)
+
+      **Helper**: When you do an enhance wheels action, you may also do a
+      lower water level action with a strength of 1.
+
+      **Contract**: Gain 4 VP for each unique wheel enhancement you have.
+
+      ---
+
+      ![f_16_9](/static/img/windmill_valley/f_16_9.png)
+
+      **Helper**: When you gain do a farm enhancement action, you may also do
+      a plant tulips action to plant 1 tulip.
+
+      **Contract**: Gain 2 VP for each farm enhancement card you have.
+
+      ---
+
+      ![f_16_10](/static/img/windmill_valley/f_16_10.png)
+
+      **Helper**: When you do a plant tulips action to plant 2+ tulips,
+      gain 1 tool.
+
+      **Contract**: Gain 3 VP for every 2nd tool you have.
+
+      ---
+
+      ![f_16_11](/static/img/windmill_valley/f_16_11.png)
+
+      **Helper**: When you do a lower the water level action with a strength
+      of 2+, you do a plant action to plant 1 tulip.
+
+      **Contract**: Gain 2 VP for each of your windmills on the main board.
+
+      ---
+
+      ![f_16_12](/static/img/windmill_valley/f_16_12.png)
+
+      **Helper**: When you do an enhance wheels action, gain 1 tool.
+
+      **Contract**: Gain 3 VP for each uncommon wheel enhancement you have.
+
+      ---
+
+      ![f_17_1](/static/img/windmill_valley/f_17_1.png)
+
+      **Helper**: When you do a lower the water action, gain 1 white or violet
+      tulip.
+
+      **Contract**: Gain 4 VP for each full row in your tulip patch.
+
+      ---
+
+      ![f_17_2](/static/img/windmill_valley/f_17_2.png)
+
+      **Helper**: When you visit the market, gain 1 tool.
+
+      **Contract**: Gain 3 VP for each full column in your tulip patch.
+
+      ---
+
+      ![f_17_3](/static/img/windmill_valley/f_17_3.png)
+
+      **Helper**: When you visit the market, gain 1 reward from a market area
+      adjacent to your marker.
+
+      **Contract**: Gain 2 VP for each red tulip in your patch.
+
+      ---
+
+      ![f_17_4](/static/img/windmill_valley/f_17_4.png)
+
+      **Helper**: When you do a plant action, gain 2 VP.
+
+      **Contract**: Gain 12 VP for each full row of violet tulips in your
+      tulip patch.
+
+      ---
+
+      ![f_17_5](/static/img/windmill_valley/f_17_5.png)
+
+      **Helper**: When you do a foreign trade action, you can do a lower water
+      level action with a strength of 1.
+
+      **Contract**: Gain 10 VP for each full row of yellow tulips in your
+      tulip patch.
+
+      ---
+
+      ![f_17_6](/static/img/windmill_valley/f_17_6.png)
+
+      **Helper**: When you do a gain farm enhancement action, gain 1 tulip of
+      any color to your storage.
+
+      **Contract**: Gain 2 VP for each white tulip in your patch.
+
+      ---
+
+      ![f_17_7](/static/img/windmill_valley/f_17_7.png)
+
+      **Helper**: When you visit the market, you may do a lower water level
+      action with a strength of 1.
+
+      **Contract**: Gain 14 VP for each full row of black tulips in your
+      tulip patch.
+
+      ---
+
+      ![f_17_8](/static/img/windmill_valley/f_17_8.png)
+
+      **Helper**: When you do a build windmill action, gain 1 reward from a
+      market area adjacent to your market.
+
+      **Contract**: Gain 2 VP for each black tulip in your tulip patch.
+
+      ---
+
+      ![f_17_9](/static/img/windmill_valley/f_17_9.png)
+
+      **Helper**: When you do a build windmill action, you may do a lower water
+      level action with a strength of 1.
+
+      **Contract**: Gain 10 VP for each full row of white tulips in your
+      tulip patch.
+
+      ---
+
+      ![f_17_10](/static/img/windmill_valley/f_17_10.png)
+
+      **Helper**: When you do a foreign trade action, you may do a plant action
+      to plant 1 tulip.
+
+      **Contract**: Gain 2 VP for each violet tulip in your patch.
+
+      ---
+
+      ![f_17_11](/static/img/windmill_valley/f_17_11.png)
+
+      **Helper**: When you do a plant action, you may do a lower water level
+      action with a strength of 1.
+
+      **Contract**: Gain 10 VP for each full row of red tulips in your
+      tulip patch.
+
+      ---
+
+      ![f_17_12](/static/img/windmill_valley/f_17_12.png)
+
+      **Helper**: When you do a plant action, gain 1 tulip of any color into
+      your storage.
+
+      **Contract**: Gain 2 VP for each yellow tulip in your patch.
+  - name: Starting Farm Enhancements
+    text: |
+      ![s_1](/static/img/windmill_valley/s_1.png)
+
+      When you do a foreign trade action, you can select any 2 rewards (they
+      do not have to be adjacent to your tulip bulb you place) **and** place
+      a tulip from the supply instead of your storage.
+
+      ---
+
+      ![s_2](/static/img/windmill_valley/s_2.png)
+
+      When you do a gain a farm enhancement action, you can draw 3 extra cards
+      from the deck.  Return any cards you drew, but did not buy, to either
+      the top of the deck (refill the offer earlier if needed) **or** discard
+      them
+
+      ---
+
+      ![s_3](/static/img/windmill_valley/s_3.png)
+
+      When you do a plant action, you can pay 1 VP to plant 1 extra tulip.
+
+      ---
+
+      ![s_4](/static/img/windmill_valley/s_4.png)
+
+      When you do a build windmill action, gain 1 VP and 1 guilder.
+
+      ---
+
+      ![s_5](/static/img/windmill_valley/s_5.png)
+
+      When you visit the market, in each market area you may divide the
+      strength between multiple rewards.  You also don't pay for moving a
+      neutral marker or placing your marker on top of another player (the
+      player still receives the guilder).
+
+      **Important**: "Choose any of the rewards" part of this enhancement
+      can always be used (not only once per turn).
+
+      ---
+
+      ![s_6](/static/img/windmill_valley/s_6.png)
+
+      When you do an enhance wheels action, gain 1 tulip of any color
+  - name: "Queen's Wishes"
+    text: |
+      ![q_1](/static/img/windmill_valley/q_1.png)
+
+      Score when you have 6 tool tokens in your play area.  This can only
+      be scored once.
+
+      ---
+
+      ![q_2](/static/img/windmill_valley/q_2.png)
+
+      Score when you a contract card from each of the 3 groups (red, yellow,
+      blue border).  You can only score this once.
+
+      ---
+
+      ![q_3](/static/img/windmill_valley/q_3.png)
+
+      Score when you have planted tulips in all the depicted places in your
+      patch.  You can only score this once.
+
+      ---
+
+      ![q_4](/static/img/windmill_valley/q_4.png)
+
+      Score when you have 4 windmills on the main board in the same network.
+      You can only score this once.
+
+      ---
+
+      ![q_5](/static/img/windmill_valley/q_5.png)
+
+      Score when you have 6 wheel enhancements, including at least 2
+      uncommon and at least 2 unique enhancements.  You can only score this
+      once.
+
+      ---
