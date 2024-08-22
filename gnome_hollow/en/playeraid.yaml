@@ -3,7 +3,7 @@ description: "Build mushroom rings!"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.0
+version: 1.1
 bgg_id: 332885
 yt_videos:
   - https://www.youtube.com/watch?v=UH4JOTFcaDs&pp=ygUjZ25vbWUgaG9sbG93IGJvYXJkIGdhbWUgaG93IHRvIHBsYXk%3D
@@ -35,6 +35,12 @@ sections:
           * 8 ring markers
               * Place these onto their spaces below the score track on your
                 player board.
+      * **If playing with 2 players**:
+          * Choose 2 flower colors at random and return their wildflower hex
+            tiles to the box.  Then place their flower pots in the flower
+            market on the pinwheel board.
+          * Return 1 of every color of the pinwheel market tokens **except
+            purple** to the box.
       * Choose a 1st player and give them the red cap (1st player) token.
   - name: Gameplay
     text: |
