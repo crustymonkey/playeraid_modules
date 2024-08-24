@@ -1,0 +1,346 @@
+name: "Clank! Catacombs"
+description: "Explore the depths and grab some loot"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+version: 1.0
+bgg_id: 365717
+yt_videos:
+  - https://www.youtube.com/watch?v=lCoV-fFSAvM&pp=ygUbY2xhbmsgY2F0YWNvbWJzIGhvdyB0byBwbGF5
+  - https://www.youtube.com/watch?v=hHWgrFANxwc&pp=ygUbY2xhbmsgY2F0YWNvbWJzIGhvdyB0byBwbGF5
+  - https://www.youtube.com/watch?v=taROq8cIGH4&pp=ygUbY2xhbmsgY2F0YWNvbWJzIGhvdyB0byBwbGF5
+  - https://www.youtube.com/watch?v=8X0SZ1fdcD8&pp=ygUbY2xhbmsgY2F0YWNvbWJzIGhvdyB0byBwbGF5
+expansions:
+sections:
+  - name: Setup
+    text: |
+      * Place the Clank board off to the side of the play area and place the
+        dragon marker on the space of the rage track for the number of
+        players.
+      * Separate the 28 tiles by their backs, forming 2 piles.
+      * Shuffle the 22 depths tiles and place them face down next to the
+        Clank board.
+      * Shuffle the remaining 6 tiles and return 2 to the box without looking
+        at them.  Place the remaining 4 tiles on top of the depths stack.
+      * Create a supply of gold and lockpicks (neither of these resources
+        are considered to be limited).
+      * Create a supply of white cubes.
+      * Put the 24 black cubes in the dragon bag.
+      * Stack the artifact tiles in order of value (5 on top, 20 on the bottom).
+      * Shuffle each of the major and minor secrets and the prisoners and
+        create face down stacks.
+      * Place the market board in the bank and put the following on it:
+          * 2 backpacks
+          * 2 blood amulets
+          * 3 burglar's kits
+          * 3 crowns (in order, with the 10 on the top and the 8 on the bottom)
+      * Place the starting tile in the center of your play area, with either
+        side face up.
+      * Place the 3 monkey idols on the monkey shrine.
+      * Stack the mastery tokens near the crypt (1 per player).
+      * Prepare the cards to the side of the play area.
+          * 1 goblin card
+          * A stack of mercenary cards
+          * A stack of explore cards
+          * A stack of secret tome cards
+          * Shuffle the dungeon deck and deal 6 cards face up.
+              * Replace any cards with a dragon attack symbol (shuffle them
+                back into the deck when you have 6 face up cards).
+              * If any cards have an "Arrive" effect, resolve those before
+                the 1st player takes their turn.
+          * Place the dungeon deck next to the dungeon row (6 face up cards).
+      * Each player chooses a color and:
+          * Takes 30 clank cubes
+          * Takes their player pawn and places it on the crypt starting tile.
+          * Takes 3 lockpicks
+          * A 10 card deck with:
+              * 6 burgles
+              * 2 stumbles
+              * 1 sidestep
+              * 1 scramble
+          * Shuffles their deck and draws 5 cards into their starting hand
+      * Choose a start player and:
+          * The 1st player places 3 clank cubes in the clank area.
+          * The 2nd player places 2 clank cubes in the clank area.
+          * The 3rd player places 1 clank cubes in the clank area.
+          * The 4th player places 0 clank cubes in the clank area.
+  - name: Gameplay
+    text: |
+      The game is played in a series of turns until all players have either
+      escaped the dungeon or have been knocked out.
+
+      * On your turn, you must play all of your cards, but they can be played
+        in any order.
+          * Cards are played to a "play area" in front of you.
+      * You may take a variety of actions during your turn and each action
+        may be taken as many times as you like (and can afford).
+          * Actions may be taken after playing all cards, or during card plays.
+
+      ## Cards Generate the Following
+
+      | Icon | Description |
+      | ---- | ----------- |
+      | ![skill](/static/img/clank_catacombs/skill.png) | Used as currency to acquire cards / use device actions. |
+      | ![sword](/static/img/clank_catacombs/sword.png) | Used for the fight a monster action and may be used as part of movement actions through monsters. |
+      | ![boot](/static/img/clank_catacombs/boot.png) | Used for the movement action. |
+      | ![gold](/static/img/clank_catacombs/gold.png) | Used for the movement action. |
+      | **Clank** | Whenever you make clank, add that many cubes to the clank area.  If your supply is empty, skip this. Negative clank allows you to remove cubes from the clank area. |
+      | **Card Draws** | These cards are drawn from your personal deck. If your deck is every empty, shuffle your discard (but not the cards in your play area) to make a new deck. |
+
+      * Some cards have effects that are dependent on other cards, tokens, etc.
+      * Once you have played all your cards, you can [end your turn](#end_turn).
+    sections:
+      - name: 'Action: Acquire a Card'
+        text: |
+          * Spend skill (blue diamonds) to acquire cards.  The cost is shown
+            in the lower right corner of the card.
+          * When buying from the dungeon row, **do not immediately replace
+            the card**.  These will be replaced at the [end of your
+            turn](#end_turn).
+          * Acquired cards are put into your discard pile.
+      - name: 'Action: Use a Device'
+        text: |
+          * You may also purchase devices (purple banner) from the dungeon
+            row.
+          * These are immediate effects that you activate when purchased.
+          * After using the card, it is placed into the dungeon discard, **not
+            into your discard**.  Like other cards, do not immediately replace
+            these as they will be replaced at the [end of your turn](#end_turn).
+      - name: 'Action: Fight a Monster'
+        text: |
+          * The swords required to defeat a monster are shown in the lower
+            right of the card.
+          * Gain the reward shown on the card when the monster is defeated,
+            then put the card in the discard pile. Like other cards,
+            do not immediately replace these as they will be replaced
+            at the [end of your turn](#end_turn).
+          * You may fight the goblin any number of times (spending 2 swords
+            each time), but **do not discard it**.
+      - name: 'Action: Movement'
+        text: |
+          * Boots are used for movement between rooms. All tunnels require at
+            least 1 boot to move through.
+          * When you move to the edge of a tile without an adjacent tile,
+            discover a new tile (see below).
+          * A tunnel with footprint icons requires 2 boots to travel through.
+          * A tunnel with a monster icon deals 1 damage to you per monster
+            icon when you move through it. You may spend a sword (per
+            monster) icon to avoid this damage.
+              * You are not required to use your swords when moving through
+                monster icons.
+          * You may spend a lockpick to move through tunnels with a lock icon.
+              * Place the lockpick token over the lock icon to show that it
+                is **permanently unlocked**.
+              * If more than 1 lock icon exists on a tunnel, a lockpick per
+                lock icon must be spent to move through the tunnel.
+          * You can only move in the direction shown by the arrow for 1-way
+            tunnels.
+
+          ## Discovering a New Tile
+          * New tiles are only added to empty spaces (never stacked).
+          * A tile must share an *entire* edge with an adjacent tile.
+          * Placing a new tile will complete the tunnel you are moving through,
+            which may add icons that you have to deal with to continue
+            movement.
+              * If you cannot afford to continue moving through the tunnel
+                (not enough boots/lockpicks/etc.), you must rotate the tile
+                so that you **can** move onto the new tile.
+          * The 1st 4 tiles you discover are purple, then the blue tiles after
+            that are considered to be the depths.  See [game end](#end_game)
+            for more information on the depths.
+          * See [tile features](#tiles) for information about the symbols on
+            the tiles.
+      - name: 'Action: Buy from the Market'
+        id: action_buy
+        text: |
+          * When you are in a market room, you can buy tokens from the market.
+          * All items cost 7 gold.
+          * You may buy more than 1 item in a turn.
+          * You may buy more than 1 of the same item.
+          * See [tokens](#tokens) for descriptions.
+      - name: 'Action: Take an Artifact'
+        text: |
+          * This is a free action that you can take at any point during your
+            turn.
+          * You cannot take an artifact if you already have one (unless you
+            have a [backpack](#tokens)).
+          * When you take an artifact, move the dragon marker up 1 space on
+            the rage track.
+      - name: 'Action: Pick a Chest, Library, or Prison'
+        id: pick
+        text: |
+          * Spend a lockpick to open one of the following items.
+          * Cover the feature on the tile (with the lockpick) to show it has
+            been used **and cannot be picked again**.
+
+          | Symbol | Description |
+          | ------ | ----------- |
+          | ![chest](/static/img/clank_catacombs/chest.png) | Immediately take a major secret from the bank and reveal it. You cannot pick a chest if there are no more major secrets to claim. See [tokens](#tokens) for descriptions. |
+          | ![library](/static/img/clank_catacombs/library.png) | Immediately take a secret tome and add it to your discard.  You cannot pick a library if there are no secret tomes left. |
+          | ![prison](/static/img/clank_catacombs/prison.png) | Immediately free 2 prisoners by taking 2 prisoner tokens from the bank and adding them face up to your personal supply. These are kept for scoring at the end of the game. You cannot pick a prison if there are no prisoners remaining. See [tokens](#tokens) for descriptions. |
+      - name: End of Turn
+        id: end_turn
+        text: |
+          Do the following to end your turn.
+
+          1. Put all cards from your play area into your discard.
+          2. Draw 5 new cards from your deck.
+          3. Refill the dungeon row to 6 cards.
+              * If there dungeon deck does not have enough cards to refill it,
+                the game ends immediately and all remaining players are knocked
+                out.
+          4. If any of the new cards has a dragon attack symbol, the dragon
+             attacks (only once, no matter how many cards with the symbol
+             were revealed).
+              1. Put all cubes in the clank area into the dragon bag.
+              2. Shake the bag and draw a number of cubes equal to the current
+                 number shown next to the dragon marker on the rage track.
+                  * Cubes are placed on players' health tracks, starting with
+                    the leftmost space.
+                  * If a white cube is drawn, **every** player takes 1 damage
+                    (place a cube on their health track from their supply).
+          5. Any white cubes drawn **are returned to the bag**.
+          6. If the bag is empty after an attack, the game ends immediately and
+             all remaining players are knocked out.
+
+          ## Health Meter
+          * If you take damage from a dragon attack, use the cubes that came
+            from the dragon bag.
+          * If you heal, return a cube from your health meter to your supply.
+          * If you move between rooms with a monster symbol(s), you lose 1
+            health for each monster that you do not kill with a sword.
+          * If your health meter is completely filled, you are knocked out.
+            See [end game rules](#end_game) for more info.
+  - name: End of Game
+    id: end_game
+    text: |
+      The game ends when all players have either escaped or have been knocked
+      out.
+
+      * You escape when you return to the crypt (where you started). Finish
+        your turn and gain 1 of the 20 point mastery tokens when you do this.
+      * You are knocked out when your health meter is filled.
+          * Lay your pawn on its side to show that it is knocked out.
+          * If you don't have an artifact or you are knocked out in the
+            depths, **you will score 0 points**.
+      * When a player has escaped or been knocked out:
+          * They stop taking regular turns and take no game actions.
+          * They no longer add clank to the clank area.
+          * Cards that affect all players do **not** affect them.
+          * They take no damage from cubes drawn from the dragon bag.
+          * They neither draw or play cards.
+          * Each time it is their turn, they instead perform a dragon attack,
+            but they ignore the current rage track and draw 4 cubes (6 in a
+            2 player game).
+      * When all players have escaped or been knocked out, proceed to scoring
+        (below).
+
+      ## Scoring
+      Score the following:
+
+      * The value of any artifact(s) acquired.
+      * 1 point per gold.
+      * Points from other tokens (monkey idols, mastery tokens, etc.)
+      * Points on cards in your deck/hand/discard (green symbol in the upper
+        right of the card).
+
+      The player with the most points wins.  If there is a tie, the tied
+      player with the most valuable artifact wins.
+  - name: Tile Features
+    id: tiles
+    text: |
+      | Icon | Description |
+      | ---- | ----------- |
+      | ![artifact](/static/img/clank_catacombs/t_artifact.png) | When you place a tile with this symbol, take the top artifact from the pile and place it in this space. If the artifact stack is empty, do not place an artifact. |
+      | ![artifact_plus](/static/img/clank_catacombs/t_artifact_plus.png) | Instead of placing the top artifact, place the 2nd or 3rd artifact in the stack (1 or 2 "+" symbols). If the artifact stack is empty, do not place an artifact. |
+      | ![crypt](/static/img/clank_catacombs/t_crypt.png) | This is the room you start in and where you try and return to (with an artifact) to escape the dungeon. |
+      | ![crystal](/static/img/clank_catacombs/t_crystal.png) | You cannot spend any more boots for movement once you enter a crystal cave. You may teleport out, but you still can't spend any more boots. |
+      | ![haunted](/static/img/clank_catacombs/t_haunted.png) | When you add a haunted tile, take 1 white cube from the supply and add it to the clank area. |
+      | ![locked](/static/img/clank_catacombs/t_locked.png) | You may take the shown [pick action](#pick) on this tile. |
+      | **Market** | You may [buy items from the market](#action_buy) when on this tile. |
+      | ![portal](/static/img/clank_catacombs/t_portal.png) | When you enter this tile, you do not end your movement, instead exit from any other portal on any tile in the dungeon. A movement action from 1 room through both portals and into another room only requires 1 boot (by default). Cards that let you teleport can be used to move through portals. After using the portal, you may continue to move normally. |
+      | ![minor](/static/img/clank_catacombs/t_minor.png) | Take 1 minor secret from the bank and reveal it. See [tokens](#tokens) for descriptions. You don't have to stop in this room to take this reward. |
+      | ![monkey](/static/img/clank_catacombs/t_monkey.png) | Take 1 monkey idol from the room. You don't have to stop in this room to take this reward. |
+      | ![gold](/static/img/clank_catacombs/t_gold.png) | Take the amount of gold shown from the supply. You don't have to stop in this room to take this reward. |
+      | ![heart](/static/img/clank_catacombs/t_heart.png) | Heal 1 damage. You don't have to stop in this room to take this reward. |
+      | ![wayshrine](/static/img/clank_catacombs/t_wayshrine.png) | When on this tile, you may mark it with 1 of your cubes as a special action. If you do, take 1 gold for every wayshrine you've marked during the game.  You can only mark a wayshrine once.  You cannot mark a wayshrine if you are out of cubes. |
+  - name: Card Effects
+    text: |
+      * **Acquire**: Gain these benefits once when purchasing the card.
+      * **Arrive**:  Carry this out immediately when the card is added to
+        the dungeon row.
+          * This happens before any dragon attack.
+          * If any cards with an arrive effect are in the dungeon row at
+            the start of the game, these should be applied before the
+            1st player takes their turn.
+      * **Danger**: When pulling cubes from the dragon bag for a dragon
+        attack, pull 1 additional cube for each of these cards in the
+        dungeon row.
+      * **Discard**: You can only discard cards in your hand that you
+        haven't played yet.
+          * Discarded cards do **not** have their effects activated.
+             e.g. a stumble discarded this way will not produce clank.
+      * **Each Player**: Each player does a thing.  The order shouldn't
+        matter, but if it does, begin with the player taking their turn
+        and proceed clockwise.
+          * Ignore players that have escaped or have been knocked out.
+      * **Teleport**: This takes you directly from 1 room to another.
+          * No boots are required.
+          * Ignore any costs in the tunnel.
+          * You can teleport against an arrow.
+          * You can also teleport to discover a new tile.
+      * **Trash**: When a card is trashed, it is permanently removed from the
+        game.
+  - name: Tokens
+    id: tokens
+    text: |
+      ## Prisoners
+      | Token | Description |
+      | ----- | ----------- |
+      | ![adv](/static/img/clank_catacombs/k_adv.png) | Immediately advance the dragon marker 1 space on the rage track.  Also worth 3 points at the end of the game. |
+      | ![barb](/static/img/clank_catacombs/k_barb.png) | Immediately gain 2 swords to use on this turn.  Also worth 2 points at the end of the game. |
+      | ![cleric](/static/img/clank_catacombs/k_cleric.png) | Immediately heal 1 damage.  Also worth 2 points at the end of the game. |
+      | ![coupon](/static/img/clank_catacombs/k_coupon.png) | You may use this token one time while buying an item to pay 5 less gold.  It is **not** a prisoner for any purpose. Keep this until you use it, then remove it from the game. |
+      | ![monkey](/static/img/clank_catacombs/k_monkey.png) | This counts as a monkey idol for all purposes, but is only work 3 points. |
+      | ![haunted](/static/img/clank_catacombs/k_haunt.png) | Immediately take a ghost cube from the supply and place it in the clank area.  Also worth 3 points at the end of the game. |
+      | ![mayor](/static/img/clank_catacombs/k_mayor.png) | Worth 5 points at game end if you have a mastery token. |
+      | ![monk](/static/img/clank_catacombs/k_monk.png) | Worth 1 point per wayshrine you have marked at the end of the game. |
+      | ![peasant](/static/img/clank_catacombs/k_peasant.png) | Worth 2 points at the end of the game. |
+      | ![prim](/static/img/clank_catacombs/k_prim.png) | Worth 5 points at game end if you have at least 1 monkey idol. |
+      | ![prince](/static/img/clank_catacombs/k_prince.png) | Worth 5 points at game end if you have a crown. |
+      | ![sorc](/static/img/clank_catacombs/k_sorc.png) | Worth 5 points at game end if you have at least 2 secret tomes. |
+      | ![warrior](/static/img/clank_catacombs/k_war.png) | Worth 1 point for every prisoner you have freed at game end. |
+
+      ## Major Secrets
+      | Token | Description |
+      | ----- | ----------- |
+      | ![map](/static/img/clank_catacombs/k_map.png) | Keep this token.  For the rest of the game, you may move against the arrow for 1-way tunnels. Also worth 5 points at game end. |
+      | ![chalice](/static/img/clank_catacombs/k_chalice.png) | Keep this token.  It is worth 7 points at the end of the game. |
+      | ![skill](/static/img/clank_catacombs/k_gskill.png) | Immediately gain 5 skill points and return this to the box. |
+      | ![treas](/static/img/clank_catacombs/k_gtreas.png) | Immediately gain 5 gold and return this to the box. |
+      | ![heal](/static/img/clank_catacombs/k_gheal.png) | Keep this token. Use on any turn to heal 2 damage and return the token to the box. |
+
+      ## Market Items
+      | Token | Description |
+      | ----- | ----------- |
+      | ![backpack](/static/img/clank_catacombs/m_back.png) | Allows you to carry an additional artifact. Also worth 5 points at the end of the game. |
+      | ![blood](/static/img/clank_catacombs/m_blood.png) | You must have at least 5 damage to buy this.  When you buy it, immediately heal 2 damage.  Also worth 7 points at the end of the game. |
+      | ![burglar](/static/img/clank_catacombs/m_burg.png) | When you buy this, immediately take 2 lockpicks from the supply. Also worth 2 points at the end of the game. |
+      | ![crown](/static/img/clank_catacombs/m_crown.png) | Worth the number of points shown. |
+
+      ## Minor Secrets
+      | Token | Description |
+      | ----- | ----------- |
+      | ![egg](/static/img/clank_catacombs/s_egg.png) | Keep this token. Advance the dragon token 1 space on the rage track.  It is also worth 3 points at the end of the game. |
+      | ![pick](/static/img/clank_catacombs/s_pick.png) | Return this to the box and take 1 lockpick from the supply. |
+      | ![spring](/static/img/clank_catacombs/s_spring.png) | At the end of this turn, trash a card from your discard pile or play area. Return the card and this token to the box. |
+      | ![heal](/static/img/clank_catacombs/s_heal.png) | Keep this token.  Use this token on 1 of your turns to heal 1 damage, then return the token to the box. |
+      | ![boot](/static/img/clank_catacombs/s_boot.png) | Keep this token.  Use this token on 1 of your turns to gain 1 boot, then return the token to the box. |
+      | ![sword](/static/img/clank_catacombs/s_sword.png) | Keep this token.  Use this token on 1 of your turns to gain 2 swords, then return the token to the box. |
+      | ![puzzle](/static/img/clank_catacombs/s_puzzle.png) | Keep this token until you enter a wayshrine, then return this token to the box and take a major secret from the supply. |
+      | ![treas](/static/img/clank_catacombs/s_treas.png) | Return this token to the box and take 2 gold. |
+
+      ## Misc.
+      | Token | Description |
+      | ----- | ----------- |
+      | ![idol](/static/img/clank_catacombs/k_idol.png) | When you enter a monkey shrine room, take 1 monkey idol. It is worth 5 points at the end of the game.  A monkey idol is **not** an artifact. |
