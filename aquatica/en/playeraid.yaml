@@ -3,7 +3,7 @@ description: "Explore the ocean depths."
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.0
+version: 2.0
 yt_videos:
   - WuknPdmcPCw
   - FiPDtvXXgRA
@@ -16,7 +16,7 @@ sections:
       text: |
           1. Shuffle the *Ocean Characters* deck and place it in the bottom
              row.  Fill the 6 slots with cards from the deck.
-              * [(Cold Waters)]!blue!: Separate the *Ocean Characters* into 2
+              * *(Cold Waters)*: Separate the *Ocean Characters* into 2
                 decks based on the ◯ or ◇ symbol in the lower right of the card.
                    * 5 players:  Shuffle both decks together.
                    * 4 players:  Discard 5 random cards from 1 of the decks and
@@ -25,7 +25,7 @@ sections:
                      shuffle together.
           2. Shuffle the *Locations* deck and place it in the middle row.  Take
              6 cards from the top of the deck to fill the 6 slots.
-              * [(Cold Waters)]!blue!: Change the *Locations* deck by adding
+              * *(Cold Waters)*: Change the *Locations* deck by adding
                 the expansion cards and removing some based on player count:
                   * 5 players: Shuffle the expansion deck in.
                   * 4 players: Discard 2 random locations of each type (10
@@ -35,9 +35,10 @@ sections:
                   * 2 players: Discard 6 random locations of each type (30
                     total).
           3. Place all *Wild Mantas* effect side up next to the board.
-          4. You can use the 4 printed goals or do the advanced setup.
           5. For the basic *King* card distribution, give the 1st player card
-             number 1, 2nd player card 2, etc.
+             number 1, 2nd player card 2, etc. or you can do the advanced
+             setup (below).
+          4. You can use the 4 printed goals or do the advanced setup (below).
           5. Advanced Setup:
               1. Shuffle the *Goal* tokens and take 4 at random
                  and place them on the goal spots in any order.
@@ -48,14 +49,14 @@ sections:
           7. Each player takes one of the colored symbol mantas and
              corresponding 6 starting character cards.
           8. Each player turns all the Mantas effect side up.
-          9. [(Cold Waters)]!blue! Tribe Module:
+          9. *(Cold Waters)* Tribe Module:
               1. Place the Tribe board on top of the Ocean board so that it
                  covers the Goal Tracks.
               2. Take the Tribe cards and divide them into 2 decks based on
                  their backs (I or II).
               3. Shuffle the decks separately and draw 4 cards from each deck
                  and place them face up in their slots on the tribe board.
-    - name: Playing the Game
+    - name: Gameplay
       text: |
           On a turn, players **must** do 1 *Main action* and may also do any
           number of *additional actions*.  These can be done in any order.
@@ -68,12 +69,14 @@ sections:
                       do so**. You may still play the card if you can't use all
                       the effects.
                 * After playing the character card, put it in your personal
-                  discard pile face up.
+                  discard pile (right slot above your player board) face up.
           - name: Additional Actions
             text: |
                 * **Flipping Mantas**: You can use a ready manta to resolve it
                   and flip it to its used side.
                 * **Exploiting Locations' Depths**:
+                    * You slide the card up 1 space (left side of the card) to
+                      "exploit" it and take the printed reward.
                     * **Resources**: You can only gain resources (coins and
                       power) during your main action.
                     * **Effects**: You can use these before and/or after your
@@ -86,6 +89,10 @@ sections:
                 An effect can be gained by playing a character card, using a
                 Manta, or exploiting depths.
 
+                * **Matrona**:
+                    * **When playing with 2 players**, you also discard the
+                      leftmost character (the free one) from the character
+                      row, then refill
                 * **Recruit**:
                     1. Choose 1 character from the board.
                     2. Pay the amount of coins show below the card and **put
@@ -120,65 +127,101 @@ sections:
                        If there are more than 4 locations in the bottom row,
                        discard your choice of locations until 4 remain.
                     3. Refill the bottom row with 6 locations.
-          - name: Goals
-            text: |
-                If a player fulfills a goal on their turn, they can place one
-                of their (their player color) mantas on the 1st available
-                spot for that goal. The manta can be used or unused. **Each
-                goal can only be completed once by each player**.
-          - name: End of the Game
-            text: |
-                Players take turns until 1 of the 3 game end conditions are met.
-                When this happens, everyone (including the player who
-                triggered the game end) takes 1 more turn.  Game end
-                conditions:
+    - name: End of the Game
+      text: |
+          Players take turns until 1 of the 3 game end conditions are met.
+          When this happens, everyone (including the player who
+          triggered the game end) takes 1 more turn.  Game end
+          conditions:
 
-                * 1 player has accomplished all 4 goals (with mantas on
-                  them).
-                    * [(Cold Waters)]!blue!: **This is no longer an end game
-                      trigger if playing with the Tribes module**.
-                * The location deck runs out.
-                * The character deck runs out.
+          * 1 player has accomplished all 4 goals (with mantas on
+            them).
+              * [(Cold Waters)]!blue!: **This is no longer an end game
+                trigger if playing with the Tribes module**.
+          * The location deck runs out.
+          * The character deck runs out.
 
-                Scoring is as follows:
+          Scoring is as follows:
 
-                * 1 point for each character card in your hand, including
-                      your king, but **not** counting those in your discard
-                      pile.
-                * The number of points shown above your mantas on the
-                      goals track.
-                * The total number of points from locations in your
-                      scoring pile.  Locations on your player board do **not**
-                      give you any points.
+          * 1 point for each character card in your hand, including
+                your king, but **not** counting those in your discard
+                pile.
+          * The number of points shown above your mantas on the
+                goals track.
+          * The total number of points from locations in your
+                scoring pile.  Locations on your player board do **not**
+                give you any points.
 
-                Tie breaks:
+          Tie breaks:
 
-                1. The player with the most mantas in their reserve.
-                2. The player with the lowest number on their king card.
-                3. (if not playing with kings) The last player in turn
-                       order wins.
-          - name: Cold Waters (Tribes)
-            text: |
-                This module adds Tribe cards of 2 different types:
+          1. The player with the most mantas in their reserve.
+          2. The player with the lowest number on their king card.
+          3. (if not playing with kings) The last player in turn
+                 order wins.
+    - name: Goals
+      text: |
+          If a player fulfills a goal on their turn, they can place one
+          of their (their player color) mantas on the 1st available
+          spot for that goal. The manta can be used or unused. **Each
+          goal can only be completed once by each player**.
 
-                * [Dark blue]!#24295A! cards provide an ongoing bonus (bottom
-                  of the card).
-                * [Light blue]!#2881C5! cards provide an instant bonus (bottom
-                  of the card).
+          ## Tokens
+          | Symbol | Description |
+          | ------ | ----------- |
+          | ![g_11_loc](/static/img/aquatica/g_11_loc.png) | Have at least 11 locations on your player board *and* scoring pile. |
+          | ![g_3_wild](/static/img/aquatica/g_3_w_manta.png) | Have 3 or more wild mantas. |
+          | ![g_4_loc](/static/img/aquatica/g_4_loc.png) | Have 1 or more location cards of 4 different types in your scoring pile. |
+          | ![g_10_char](/static/img/aquatica/g_10_char.png) | Have 10 or more character cards in your discard pile. |
+          | ![g_5_risen](/static/img/aquatica/g_5_risen.png) | Have 5 fully risen locations on your player board at the same time. |
+          | ![g_15_pts](/static/img/aquatica/g_15_points.png) | Have at least 15 points worth of locations in your scoring pile. |
+          | ![g_discard](/static/img/aquatica/g_discard.png) | Discard all but 1 of your character cards. |
+          | ![g_4_type](/static/img/aquatica/g_4_loc_type.png) | Have 4 locations of the same type on your player board and/or in your scoring pile. |
+          | ![g_5_conq](/static/img/aquatica/g_5_char_conq.png) | Have 5 or more character cards that have the conquer effect in your hand and/or discard pile. |
+          | ![g_rec_5](/static/img/aquatica/g_rec_5_coin.png) | Recruit a character that costs 5 coins. |
+          | ![g_5_loc_diff](/static/img/aquatica/g_5_loc_diff.png) | Have 5 locations with different point values on your player board. |
+          | ![g_5_loc_depths](/static/img/aquatica/g_5_loc_depths.png) | Have 5 locations on your player board, each with a different number of **unexploited** depths. (It doesn't matter how deep the locations really are, you only count the open and unexploited depths. |
+          | ![g_7_loc](/static/img/aquatica/g_7_loc_scr.png) | Have at least 7 locations in your scoring pile. |
+          | ![g_4_loc_3](/static/img/aquatica/g_4_loc_val_3.png) | Have at least 4 locations with a value of <= 3 points in your scoring pile. |
+    - name: Icons
+      text: |
+          | Symbol | Description |
+          | ------ | ----------- |
+          | ![i_2_coin](/static/img/aquatica/2_coin.png) | Gain 2 coins. |
+          | ![i_2_pow](/static/img/aquatica/2_power.png) | Gain 2 power. |
+          | ![i_raise_1](/static/img/aquatica/raise_1.png) | Raise a **different** location 1 depth. |
+          | ![i_raise_2](/static/img/aquatica/raise_2.png) | Raise a **different** location (or locations) by 2 total depths. |
+          | ![i_full_rise](/static/img/aquatica/full_rise.png) | Fully rise a **different** location. Slide the location up until all the depths are covered. |
+          | ![i_full_rise](/static/img/aquatica/full_rise.png) | Fully rise a **different** location. Slide the location up until all the depths are covered. |
+          | ![i_rec_free](/static/img/aquatica/recruit_char.png) | Recruit 1 character for free. |
+          | ![i_ret_char](/static/img/aquatica/ret_char.png) | Choose 1 character from your discard and take it back in your hand. |
+          | ![i_sc_1](/static/img/aquatica/score_1.png) | Score 1 fully risen location from your player board. Move it into the face down pile at the top, left slot of your player board. |
+          | ![i_2_pow](/static/img/aquatica/2_pow_shark.png) | Gain 2 power you can **only** use to conquer a Shark Bay location. |
+          | ![i_2_pow](/static/img/aquatica/2_pow_ship.png) | Gain 2 power you can **only** use to conquer a Sunken Ships location. |
+          | ![i_2_pow](/static/img/aquatica/2_pow_decay.png) | Gain 2 power you can **only** use to conquer a Decayed Civilizations location. |
+          | ![i_2_pow](/static/img/aquatica/2_pow_volc.png) | Gain 2 power you can **only** use to conquer an Ocean Volcanoes location. |
+          | ![i_flip_manta](/static/img/aquatica/flip_manta.png) | All other players must each flip 1 of their ready mantas. |
+          | ![i_copy](/static/img/aquatica/copy_visible.png) | Copy the effect from any visible depth on any other location you have on your player board.  You **cannot copy any depths that contain resources** (coins and power), only effects. |
+    - name: Cold Waters (Tribes)
+      text: |
+          This module adds Tribe cards of 2 different types:
 
-                You no longer use the Goals and instead will be
-                recruiting Tribes to help you.  To get the help of
-                a Tribe:
+          * Dark blue cards provide an ongoing bonus (bottom
+            of the card).
+          * Light blue cards provide an instant bonus (bottom
+            of the card).
 
-                1. Choose the Tribe to recruit.
-                2. Play a Recruit Character action.
-                3. Calculate the cost of the Tribe card: Base cost + 1
-                   coin for each Manta that has already been placed there
-                   by other players.
-                4. Pay for the Tribe. **You can help pay for the card by
-                   removing Locations from your score pile and returning them
-                   to the box**.  If you do this, you gain an amount of coins
-                   equal to the amount of points on the Location card.
-                5. Place 1 of your mantas on the chosen Tribe card.
-                6. Get the instant bonus as applicable.
+          You no longer use the Goals and instead will be
+          recruiting Tribes to help you.  To get the help of
+          a Tribe:
 
+          1. Choose the Tribe to recruit.
+          2. Play a Recruit Character action.
+          3. Calculate the cost of the Tribe card: Base cost + 1
+             coin for each Manta that has already been placed there
+             by other players.
+          4. Pay for the Tribe. **You can help pay for the card by
+             removing Locations from your score pile and returning them
+             to the box**.  If you do this, you gain an amount of coins
+             equal to the amount of points on the Location card.
+          5. Place 1 of your mantas on the chosen Tribe card.
+          6. Get the instant bonus as applicable.
