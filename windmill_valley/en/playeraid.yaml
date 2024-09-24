@@ -3,7 +3,7 @@ description: "Farm some tulips and rotate some gears"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.4
+version: 1.5
 bgg_id: 403441
 yt_videos:
   - https://www.youtube.com/watch?v=MkebcUKXM8g&t=80s&pp=ygUbd2luZG1pbGwgdmFsbGV5IGhvdyB0byBwbGF5
@@ -323,7 +323,7 @@ sections:
       | ![low_wat](/static/img/windmill_valley/e_low_water.png) | Do a lower water level action. Gain both VP and Guilder. |
       | ![bld_wm](/static/img/windmill_valley/e_bld_wm.png) | Build a windmill.  Optionally pay 1 guilder to build without making a connection to the market. |
       | ![for_trd](/static/img/windmill_valley/e_for_trd.png) | Do a foreign trade action.  You may place a tulip bulb of a color that is already present. |
-      | ![for_trd_gld](/static/img/windmill_valley/e_for_trd_gld.png) | Do a foreign trade action.  You may pay 1 builder to gain 1 additional reward, in addition to the 2 rewards adjacent to your bulb. You do not gain it if you instead collect bulbs. |
+      | ![for_trd_gld](/static/img/windmill_valley/e_for_trd_gld.png) | Do a foreign trade action.  You may pay 1 guilder to gain 1 additional reward, in addition to the 2 rewards adjacent to your bulb. You do not gain it if you instead collect bulbs. |
       | ![enh_2gld](/static/img/windmill_valley/e_enh_gld.png) | Do an enhance the wheel action and gain 2 guilders. |
       | ![enh2](/static/img/windmill_valley/e_2enh.png) | Do 2 enhance the wheel actions. |
       | ![low_wat_gld](/static/img/windmill_valley/e_lw_2gld.png) | Do the lower water level action and gain 2 guilders. |
