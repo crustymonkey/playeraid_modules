@@ -3,7 +3,7 @@ description: "Farm some tulips and rotate some gears"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.3
+version: 1.4
 bgg_id: 403441
 yt_videos:
   - https://www.youtube.com/watch?v=MkebcUKXM8g&t=80s&pp=ygUbd2luZG1pbGwgdmFsbGV5IGhvdyB0byBwbGF5
@@ -84,7 +84,7 @@ sections:
       * If at any point, a player fulfills the Queen's Wish, they place 1 of
         their markers on the highest available VP space and gain the VP.
       * A white number next to a symbol indicates how much of that you gain.
-      * A red number next to a symbol indicates how mush of that you have to
+      * A red number next to a symbol indicates how much of that you have to
         spend.
       * Rewards are optional.
       * When you gain tulip bulbs, they are always placed in your storage from
@@ -155,6 +155,8 @@ sections:
              marker once for each strength level of the action.  e.g. If the
              marker is on the 8 space and you have a 2 strength action, you
              would receive either 4 guilders or 4 VP.
+              * Note that you still receive 1 coin even if the track is at
+                its bottom space.
           2. Lower the water level a number of spaces equal to the action's
              strength.
 
@@ -187,6 +189,7 @@ sections:
             (top half) or a "contract" (bottom half).
               * If used as a helper, you slot it in the leftmost spot and
                 gain the points shown for that slot.
+          * Immediately refill the supply when taking a card.
           * Helpers can be used **once per turn** and they can be used
             immediately after placement.
               * Helper abilities can be used before or after your action(s).
