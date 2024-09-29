@@ -3,7 +3,7 @@ description: "Farm some tulips and rotate some gears"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.5
+version: 1.6
 bgg_id: 403441
 yt_videos:
   - https://www.youtube.com/watch?v=MkebcUKXM8g&t=80s&pp=ygUbd2luZG1pbGwgdmFsbGV5IGhvdyB0byBwbGF5
@@ -331,12 +331,19 @@ sections:
       | ![mkt3](/static/img/windmill_valley/e_3mkt.png) | Visit the market with strength 3. |
       | ![mkt2](/static/img/windmill_valley/e_2mkt.png) | Visit the market with strength 2. |
       | ![frm_gld](/static/img/windmill_valley/e_frm_gld.png) | Gain a farm enhancement and 1 guilder. |
+      | ![tool](/static/img/windmill_valley/p_tool.png) | Receive a tool.  You may also perform the action on the other wheel. |
+      | ![pay_points](/static/img/windmill_valley/p_pay_guild.png) | Pay 1 tool or 2 guilders to gain 4 points.  You may also perform the action on the other wheel. |
+      | ![plant_exch](/static/img/windmill_valley/p_pl_exch.png) | You may exchange 1 tulip bulb from your storage with the supply, then you may plant 1 tulip bulb.  You may also perform the action on the other wheel. |
+      | ![farm_exch](/static/img/windmill_valley/p_exch_enh.png) | Exchange 1 of your farm enhancements for another from the offer and gain 3 VP.  You may also perform the action on the other wheel. |
       | ![mkt_plus](/static/img/windmill_valley/e_mkt_plus.png) | Visit the market. You can also perform the action on the other wheel. |
       | ![gld_plus](/static/img/windmill_valley/e_2gld_plus.png) | Gain 2 guilders. You can also perform the action on the other wheel. |
       | ![rem_wm](/static/img/windmill_valley/e_rem_wm_plus.png) | Remove 1 windmill from your farm board and return it to the box. You can also perform the action on the other wheel. |
       | ![enh_plus](/static/img/windmill_valley/e_enh_plus.png) | Do an enhance the wheel action.  You can also perform the action on the other wheel. |
       | ![bulb_plus](/static/img/windmill_valley/e_any_plus.png) | Gain 1 tulip bulb of any color.  You can also perform the action on the other wheel. |
       | ![low_wtr_plus](/static/img/windmill_valley/e_low_wat_plus.png) | Perform a lower the water level action.  You can also perform the action on the other wheel. |
+      | ![for_trd](/static/img/windmill_valley/p_for_trd.png) | Perform the foreign trade action.  You may do both options, taking the tulip bulbs from the card to your storage **and** place a tulip bulb to gain adjacent benefits.  You may also perform the action on the other wheel. |
+      | ![disc_enh](/static/img/windmill_valley/p_disc_enh.png) | Discard 1 of your wheel enhancements to gain 5 VP and 2 guilders.  You may also perform the action on the other wheel. |
+      | ![exch_whl_enh](/static/img/windmill_valley/p_exch_whl_enh.png) | Exchange one of your wheel enhancements with 1 from the offer for free.  You may also perform the action on the other wheel. |
       | ![frm_3gld](/static/img/windmill_valley/e_frm_3gld.png) | Gain a farm enhancement and 3 guilders. |
       | ![mkt_g](/static/img/windmill_valley/e_mkt_plus_g.png) | Visit the market.  You can also perform the action on the other wheel. |
       | ![gld_g](/static/img/windmill_valley/e_4gld_plus.png) | Gain 4 guilders. You can also perform the action on the other wheel. |
