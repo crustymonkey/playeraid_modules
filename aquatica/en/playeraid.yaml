@@ -3,7 +3,7 @@ description: "Explore the ocean depths."
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 2.0
+version: 3.0
 yt_videos:
   - WuknPdmcPCw
   - FiPDtvXXgRA
@@ -19,11 +19,16 @@ sections:
              row.  Fill the 6 slots with cards from the deck.
               * *(Cold Waters)*: Separate the *Ocean Characters* into 2
                 decks based on the ◯ or ◇ symbol in the lower right of the card.
-                   * 5 players:  Shuffle both decks together.
-                   * 4 players:  Discard 5 random cards from 1 of the decks and
-                     shuffle together.
-                   * 2 or 3 players:  Discard 10 random cards from 1 deck and
-                     shuffle together.
+                  * 5 players:  Shuffle both decks together.
+                  * 4 players:  Discard 5 random cards from 1 of the decks and
+                    shuffle together.
+                  * 2 or 3 players:  Discard 10 random cards from 1 deck and
+                    shuffle together.
+              * *(Coral Reefs)*: Separate the *Ocean Characters* into 2
+                decks based on the ◯ or ◇ symbol in the lower right of the card.
+                  1. Shuffle both decks separately.
+                  2. Place one deck on top of the other (order doesn't matter)
+                     to create the ocean characters deck.
           2. Shuffle the *Locations* deck and place it in the middle row.  Take
              6 cards from the top of the deck to fill the 6 slots.
               * *(Cold Waters)*: Change the *Locations* deck by adding
@@ -37,27 +42,61 @@ sections:
                     total).
           3. Place all *Wild Mantas* effect side up next to the board.
           4. Determine a 1st player.
-          5. For the basic *King* card distribution, give the 1st player card
-             number 1, 2nd player card 2, etc. or you can do the advanced
-             setup (below).
+          5. Setup either turn order mantas *(Coral Reefs)* or use King cards:
+              * *(Coral Reefs)*: give the #1 turn order manta to the 1st
+                player, followed by #2 to the 2nd player, and so on. These act
+                like standard wild mantas. Unused mantas are returned to the
+                box.
+              * *Standard Setup*:
+                  * If you are playing the basic game, give king card 1 to the
+                    1st player, 2 to the 2nd player, and so on.
+                  * If you are playing with the advanced setup,
+                    shuffle as many *King* cards as players + 1 and give
+                    them to the last player.  That player takes 1 and passes
+                    the rest counter-clockwise.
           4. You can use the 4 printed goals or do the advanced setup (below).
-          5. Advanced Setup:
+             Note that goals are not used if you are using the Tribes module
+             (also below).
+          5. Advanced Goals Setup:
               1. Shuffle the *Goal* tokens and take 4 at random
                  and place them on the goal spots in any order.
-              2. Shuffle as many *King* cards as players + 1 and give them to
-                 the last player.  That player takes 1 and passes the rest
                  counter-clockwise.
           6. Each player takes 1 of the player boards.
-          7. Each player takes one of the colored symbol mantas and
-             corresponding 6 starting character cards.
-          8. Each player turns all the Mantas effect side up.
-          9. *(Cold Waters)* Tribe Module:
+          7. Each player takes the colored symbol mantas of a color/symbol and
+             the matching 6 starting character cards.
+          8. Each player turns all their Mantas effect side up.
+          9. *(Cold Waters)* / *(Coral Reefs)* Tribe Module:
               1. Place the Tribe board on top of the Ocean board so that it
-                 covers the Goal Tracks.
+                 covers the Goal Tracks. **Goals are not used with this
+                 module**.
               2. Take the Tribe cards and divide them into 2 decks based on
-                 their backs (I or II).
+                 their backs (I or II). *Note that you won't have to shuffle
+                 or divide these if playing with just the Coral Reefs
+                 expansion*.
               3. Shuffle the decks separately and draw 4 cards from each deck
                  and place them face up in their slots on the tribe board.
+          10. *(Coral Reefs)* with Coral Reefs module:
+              1. Shuffle the reef tokens and create a common deck based on the
+                 number of players:
+                  * **1-2**: 18 tokens
+                  * **3**: 22 tokens
+                  * **4**: 26 tokens
+                  * **5**: 30 tokens
+              2. Reveal 6 reef tokens and place them face up in their slots
+                 below the character cards.
+              3. Divide the coral into 2 piles, the supply and final reserve.
+                  * The final reserve consists of 10 corals of 1 color.  Keep
+                    these separate from the supply.
+                  * The supply of coral is based on the number of players:
+                      * **1-2**: 30 coral
+                      * **3**: 40 coral
+                      * **4**: 50 coral
+                      * **5**: 60 coral (you will use all the coral between
+                        the supply and the reserve)
+              4. Each player receives a 5th +1 coin / +1 power manta. This
+                 manta **cannot be used for goals or tribes**.
+              5. Each player also receives 1 "Medusa Arcadio" starting
+                 character card.
     - name: Gameplay
       text: |
           On a turn, players **must** do 1 *Main action* and may also do any
@@ -95,20 +134,40 @@ sections:
                     * **When playing with 2 players**, you also discard the
                       leftmost character (the free one) from the character
                       row, then refill
+                        * *(Coral Reefs)*: Do **not** discard the reef token
+                          below the discarded character.
                 * **Recruit**:
                     1. Choose 1 character from the board.
                     2. Pay the amount of coins show below the card and **put
                        it in your hand**.
-                    3. Slide the other characters to the left and turn over the
-                       top card from the deck to fill the space.
+                    3. *(Coral Reefs)*: Also take the reef token below the
+                       character you purchased and slot it above 1 of the
+                       5 location slots on your player board.
+                        * You may place the token on top of another reef token
+                          on your player board (the bottom ability is no longer
+                          active).
+                    3. Slide the other characters to the left, filling any
+                       empty spaces, and turn over the top card from the
+                       deck to fill the space.
+                    4. *(Coral Reefs)*: Slide the other reef tokens to the
+                       left, filling any empty spaces, and turn over the
+                       top reef token from the deck to fill the space.
                 * **Buy Location**:
                     1. Choose a location from the board.
                     2. Pay the number of coins shown at the top of the card.
+                        * *(Coral Reefs)*: If buying a location in the
+                          top row, receive 1 coral **to your supply**. Note
+                          that this does **not** count as a seed effect.
                     3. Insert the location in an empty slot of your player
                        board so the top depth is visible in the circle.
                 * **Conquer Location**:
                     1. Choose a location from the board.
                     2. Pay the amount of power shown at the top of the card.
+                        * *(Base rules)*: Receive a 1 power discount if
+                          conquering a location in the top row.
+                        * *(Coral Reefs)*: If conquering a location in the
+                          top row, receive 1 coral **to your supply**. Note
+                          that this does **not** count as a seed effect.
                     3. Insert the location in an empty slot of your player
                        board so the top depth is visible in the circle.
                 * **Raise Location**:
@@ -122,6 +181,8 @@ sections:
                 * **Score** (treasure chest): This allows you to move a
                   **fully risen** location and place it in your scoring pile
                   face down.
+                    * *(Coral Reefs)*: If there is coral on the location,
+                      move it to your personal supply.
                 * **Scout**:
                     1. Take every location from the top location row and place
                        them in the discard pile.
@@ -129,6 +190,32 @@ sections:
                        If there are more than 4 locations in the bottom row,
                        discard your choice of locations until 4 remain.
                     3. Refill the bottom row with 6 locations.
+                * *(Coral Reefs)* **Seed**:
+                    1. Place 1 coral on a location card located on your
+                       player board.
+                        * This can be placed on a fully raised location.
+                        * If it is a multi-seed effect, place the corals on
+                          **different** locations.
+                * *(Coral Reefs)* **Defend**:
+                    1. Place 1 of your mantas (exhausted or ready) in your
+                       player color on a location on the main board. This
+                       is known as a "defended location".
+                        * This location cannot be conquered/bought by **any**
+                          player (including the defender).
+                        * When the defended location is to be discarded,
+                          the player defending it takes it onto their
+                          player board instead. *Note that this can happen
+                          on other players' turns*.
+                            * If the defending player's board is full, it
+                              is instead discarded.
+                            * The player does **not** receive a coral when
+                              this happens.
+                            * The manta is returned to the player in an
+                              **active** state (even if the location was
+                              discarded).
+                        * If a goal is completed by receiving the location,
+                          the goal cannot be claimed until the receiving
+                          players next turn.
     - name: End of the Game
       text: |
           Players take turns until 1 of the 3 game end conditions are met.
@@ -136,12 +223,21 @@ sections:
           triggered the game end) takes 1 more turn.  Game end
           conditions:
 
+          *(Coral Reefs)*: If you are playing with the turn order mantas,
+          finish the current round, then each player takes 1 more turn. Do
+          this **instead of** the above with the Kings.
+
           * 1 player has accomplished all 4 goals (with mantas on
             them).
-              * [(Cold Waters)]!blue!: **This is no longer an end game
-                trigger if playing with the Tribes module**.
+              * *(Cold Waters)* / *(Coral Reefs)*: **This is no longer an
+                end game trigger if playing with the Tribes module**.
           * The location deck runs out.
           * The character deck runs out.
+              * *(Coral Reefs)*: **This is no longer an end game trigger if
+                playing with the Coral Reefs module**.  **Instead**, if the
+                reef deck (tokens) runs out.
+          * *(Coral Reefs)*: If the main supply of coral is depleted.
+              * Use the reserve coral to complete the game.
 
           Scoring is as follows:
 
@@ -153,6 +249,7 @@ sections:
           * The total number of points from locations in your
                 scoring pile.  Locations on your player board do **not**
                 give you any points.
+          * *(Coral Reefs)*: Each coral in your supply is 1 point.
 
           Tie breaks:
 
@@ -184,6 +281,16 @@ sections:
           | ![g_5_loc_depths](/static/img/aquatica/g_5_loc_depths.png) | Have 5 locations on your player board, each with a different number of **unexploited** depths. (It doesn't matter how deep the locations really are, you only count the open and unexploited depths. |
           | ![g_7_loc](/static/img/aquatica/g_7_loc_scr.png) | Have at least 7 locations in your scoring pile. |
           | ![g_4_loc_3](/static/img/aquatica/g_4_loc_val_3.png) | Have at least 4 locations with a value of <= 3 points in your scoring pile. |
+          | ![g_9_coral](/static/img/aquatica/g_9_coral.png) | Have at least 9 corals in your personal supply. |
+          | ![g_4_loc_sm_coin](/static/img/aquatica/g_4_sm_coin.png) | Have at least 4 scored locations with the same coin cost. |
+          | ![g_4_loc_diff_pt](/static/img/aquatica/g_4_loc_diff_pt.png) | Have at least 4 locations on your player board worth different amounts of points. |
+          | ![g_5_loc_no_manta](/static/img/aquatica/g_5_loc_no_manta.png) | Have at least 5 scored locations without a manta icon. |
+          | ![g_5_reefs](/static/img/aquatica/g_5_reefs.png) | Have at least 5 reefs on your player board. |
+          | ![g_4_loc_coral](/static/img/aquatica/g_4_loc_coral.png) | Have at least 4 locations with coral on your player board. |
+          | ![g_4_loc_sm_pow](/static/img/aquatica/g_4_loc_sm_pow.png) | Have at least 4 scored locations with the same power cost. |
+          | ![g_5_loc_diff_pt](/static/img/aquatica/g_5_scr_diff_pt.png) | Have at least 5 scored locations worth different amounts of points. |
+          | ![g_4_loc_5_pt](/static/img/aquatica/g_4_loc_5_pt.png) | Have at least 4 scored locations worth 5+ points. |
+          | ![g_4_loc_reef](/static/img/aquatica/g_4_loc_reef.png) | Have at least 4 scored locations worth 5+ points. |
     - name: Icons
       text: |
           | Symbol | Description |
@@ -203,6 +310,8 @@ sections:
           | ![i_2_pow](/static/img/aquatica/2_pow_volc.png) | Gain 2 power you can **only** use to conquer an Ocean Volcanoes location. |
           | ![i_flip_manta](/static/img/aquatica/flip_manta.png) | All other players must each flip 1 of their ready mantas. |
           | ![i_copy](/static/img/aquatica/copy_visible.png) | Copy the effect from any visible depth on any other location you have on your player board.  You **cannot copy any depths that contain resources** (coins and power), only effects. |
+          | ![coral](/static/img/aquatica/1_coral.png) | Add 1 coral to your **supply**, not a location. |
+          | ![raise123](/static/img/aquatica/raise_123.png) | Raise a location by 1, 2, or 3 levels of depth. |
     - name: Cold Waters (Tribes)
       text: |
           This module adds Tribe cards of 2 different types:
@@ -211,6 +320,8 @@ sections:
             of the card).
           * Light blue cards provide an instant bonus (bottom
             of the card).
+          * *(Coral Reefs)*:  You may use coral to recruit a tribe card in
+            place of/addition to coins.
 
           You no longer use the Goals and instead will be
           recruiting Tribes to help you.  To get the help of
