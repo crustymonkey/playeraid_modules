@@ -11,6 +11,7 @@ yt_videos:
 bgg_id: 283393
 expansions:
   - Cold Waters
+  - Coral Reefs
 sections:
     - name: Setup
       text: |
@@ -35,6 +36,7 @@ sections:
                   * 2 players: Discard 6 random locations of each type (30
                     total).
           3. Place all *Wild Mantas* effect side up next to the board.
+          4. Determine a 1st player.
           5. For the basic *King* card distribution, give the 1st player card
              number 1, 2nd player card 2, etc. or you can do the advanced
              setup (below).
