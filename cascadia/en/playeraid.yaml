@@ -170,8 +170,7 @@ sections:
                 (no habitat tile majorities)
               * **Family variant scoring card**: Score points show for each
                 group of the same wildlife, depending on the size of the group.
-                Groups may be any shape. **A group of 4 or more of the same
-                wildlife will score zero points!**
+                Groups may be any shape.
         - name: Intermediate Variant
           text: |
               * **Setup**: Everything is the same except that you use
