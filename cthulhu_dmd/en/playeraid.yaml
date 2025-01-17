@@ -11,10 +11,14 @@ bgg_id: 253344
 text_type: markdown
 credits: Jay Deiman
 expansions:
+  - Fear of the Unknown
 sections:
     - name: Setup
       text: |
           * Set out the story board, tokens and dice
+          * **If playing with Fear of the Unknown**, place the unknown
+            dashboard next to the story board.
+              * See the [Fear of the Unknown](#fear) section for module rules.
           * Choose an Elder One
               * Place the Elder One on the 1st space of the summoning track
               * Place the Minions reference card on the story board
@@ -337,3 +341,35 @@ sections:
               * All investigators are killed or consumed by madness
               * The progression token reaches the last (8th) space of the
                 Summoning track
+    - name: Fear of the Unknown
+      id: fear
+      sections:
+        - name: Unknown Monsters
+          text: |
+            * **Setup**: Randomly choose 2 unknown monsters (that are different
+              from other monsters) and place them randomly on the unknown
+              dashboard along with all of their figures.
+                * Summon 1 figure from each unknown monster on a different
+                  random gate.
+                    * Take the 4 random location tokens and remove the starting
+                      space token (only gates left).  Choose a monster and a
+                      random gate and place it there.  Repeat for the other
+                      monster with the 2 remaining gates.
+            * Unknown monsters are treated as regular monsters during the game.
+            * The monsters generally have an effect when the elder one advances.
+            * When the elder one advances, after resolving the elder one and
+              episode effects, resolve the unknown monster effects in order.
+        - name: Unknown Mythos Cards
+          text: |
+            * **Setup**: Shuffle the 4 unknown mythos cards into the mythos
+              deck.
+            * These cards will move the unknown monsters.
+            * The symbol on these cards means that you draw and resolve an
+              additional mythos card after resolving and discarding this one.
+        - name: Unknown Relics
+          text: |
+            * **Setup**: Randomly select relics equal to the player count.
+              Starting with the start player and going clockwise, each player
+              selects a relic and places it white side up.
+            * When you reach your 3rd red space on the insanity track, flip
+              your card to the (better) dark side.
