@@ -1,0 +1,170 @@
+name: Innovation 4th ed
+description: Build your civilization through achievement.
+credits: Sean Owens
+enabled: true
+version: 1.0
+yt_videos:
+  - Ccoe-KPbQ-g
+  - Y66_af_Vs5o
+bgg_id: 388367
+text_type: markdown
+expansions:
+sections:
+ - name: Changes with the 4th Edition
+   text: |
+     * The 4th edition of Innovation includes an 11th Age.
+     * A new Age 10 standard Achievement (50 points and Age 10 top card on your board).
+     * A new icon in Ages 10 and 11
+     * Aslant, a new splay direction (up and right)
+     * Some cards have different effects than in previous editions. All card titles are the same.
+     * Special Achievements are now Achieved at the end of an action
+     * Win by Achievements is now checked at the end of each action.
+     * The keyword "Junk," means remove from game. Some effects can bring junked cards back into the game.
+     * "Self-execute" and "Super-Execute" keywords (see the Keywords section below).
+     * Special rules for 4 and 5 players (see the 4-5 Players section below).
+
+ - name: Setup
+   text: |
+     * Split the base set cards into their eleven supply piles, arranged like a clock without 12.
+     * Draw and keep face down one base card from the Ages 1 through 10 piles. Place them in the center of the clock with the bottom bars visible; these are Standard Achievements.
+     * Place the five Special Achievements nearby.
+     * Each player takes a player reference card, and Draws two cards from the Age 1 supply pile.
+     * All players simultaneously choose one card to be the first card Melded (played face up) to their board. The other card is kept as the start of each player’s hand.
+     * The first player is the one with the Melded card title that is alphabetically closest to 'A.'
+     * The first player (or the first two in a four or 5 player game) will take only one action instead of two on their initial turn. Subsequent turns are a normal two actions.
+
+ - name: Overview
+   text: |
+     * Innovation is a civilization themed tableau-building game.
+     * Claim enough Achievements and win the game (usually - see End of Game).
+     * **Information visibility:**
+           * You may never look at the identity of normal Achievement cards, even if you have Achieved them. You can always look at the cards in your hand, Score pile, and board (even if covered up). You can always count and see the value and type of cards in each supply pile, each hand, and each Score pile.
+           * When an effect requires you to do something with a card of a specific color or icon, and you don't have such a card, you need to prove this by revealing all cards from the area in question. Similarly, if an effect depends on whether a card that is not visible to everyone has a specific color or icon, reveal it.
+     * **Anatomy of your board** (your civilization):
+           * As you Meld cards and take Dogma actions, you will accumulate cards of five different colors in an area in front of you called your board. Your most important cards are the top cards of each color, as they can be activated for their effects through the Dogma action. Cards that you cover up over time are still useful, because some effects will allow you to splay a color in a direction. Splaying will reveal additional icons from your covered up cards.
+           * Your board consists of all the cards you have put into play.
+           * Your Score pile contains face-down cards. Each card is worth its value (the Age number) in points.            
+           * Achievements are one way to win in Innovation. Once claimed, they can never be taken away from you.
+     
+           | Overview of the player board |
+           | ---------------------------- |
+           | ![board](/static/img/innovation/board_anatomy.png) |
+          
+     * **Anatomy of a card** (your technologies and discoveries):
+           * **1 Title** Each of the 115 innovation cards are unique.
+           * **2 Value** Matches the Age of the supply pile it came from.
+           * **3 Dogma effects** Each card you play grants you abilities called Dogma effects. Some are demands that attack other players. Others help you advance your civilization. A featured icon precedes each effect.
+           * **4 Card imAge** One of the four icons on each card is an imAge depicting the innovation. It does not provide any benefit.
+           * **5 Icons** Each card has four potential icon locations. Icons help you defend against demands and share in other players’ Dogma effects. There are seven basic icon types -- three of them can be on cards in any Age, but the other four are only on cards from certain Ages.
+           * **6 Number** Each card is numbered for reference. ("B" stands for the base game)
+           * **5 Color** The background of each card is either Red, Yellow, Green, Blue, or Purple. Each color also has a different pattern.
+
+           | Overview of a card |
+           | ------------------ |
+           | ![card](/static/img/innovation/card_anatomy.png) |
+     
+     * Card icons (the specific technology or discovery tracks):
+           * Visible basic icons will help you share in other players’ actions, make demands of opponents, and defend against their demand effects.
+           * Some icons are only available in certain Ages.
+           
+           | Icon | Ages | Name |
+           | ---- | ---- | ---- |
+           | ![Leaf](/static/img/innovation/Leaf.png) | 1-11 | Leaf |
+           | ![Light](/static/img/innovation/Light.png) | 1-11 | Light Bulb |
+           | ![Crown](/static/img/innovation/Crown.png) | 1-11 | Crown |
+           | ![Castle](/static/img/innovation/Castle.png) | 1-3 | Castle |
+           | ![Factory](/static/img/innovation/Factory.png) | 4-11 | Factory |
+           | ![Clock](/static/img/innovation/Clock.png) | 7-11 | Clock |
+           | ![Person](/static/img/innovation/Person.png) | 10-11 | Person |
+
+ - name: Turn Actions
+   text: |
+     * On each turn, you must take two actions. You can perform the same action twice or take two different actions.
+     * If you receive a free action from an effect or rule, it does not count as one of your two per turn.
+     
+   sections:
+       - name: Draw Action
+         text: |
+           * A Draw action lets you Draw one card into your hand, from a supply pile of an Age matching your highest value top card.
+           * When an Age pile is empty, skip that Age to Draw from the next higher Age; continue skipping as necessary.
+           * If an instruction tells you to take a specific card from any place other than a supply pile, you only do so if that value of card is present.
+           * If you attempt to draw from an empty Age 11 deck, the game ends immediately.
+           
+       - name: Meld Action
+         text: |      
+           * Choose a card from your hand and place it on your board.
+           * If you already have played a card of the same color, add your new card on top of that pile, or start a new pile.
+           * If cards in a stack are splayed, continue the splay direction of the pile.
+
+       - name: Achieve Action
+         text: |
+           * You may only take an Achieve action if you qualify for one of the available Standard Achievements.
+           * To qualify for an Achievement:
+                 * First your Score (the total value of all cards in your Score pile) must be at least five times the Age number of the Standard Achievement.
+                 * Second, you must have a top card on your board of equal or higher Age value of the Achievement you want to claim.
+           * Place your claimed achievement under the right side of your reference card.
+           * Do not spend cards from your Score pile when taking an Achieve action.
+           * Once another player has an Achievement, it cannot be claimed by anyone else.
+           * Card effects and play situations may qualify for a special Achievement. These can be claimed automatically after an action is completed, and does not cost an action.
+           * Once one player has reached the necessary number of Achievements (based on player count), the game ends immediately.
+
+       - name: Dogma Action
+         text: |
+           * To start a Dogma action, activate one of your top cards on your board.
+           * All of the effects on the card you choose will be executed, regardless of anything else that happens to it or other cards during the action.
+           * Note the small icon next to each Dogma effect. Everyone counts the number of icons of this type.
+           * Sharing or vulnerability is based on each player's current icon count, and is not changed until the end of the action, even if icon counts change during the action.
+           * Many cards have multiple effects. You **must** execute all of them during a Dogma action, from top to bottom. Always complete an effect entirely before you move on to the next effect. If you can only perform part of an effect, do as much as you can and ignore the rest. If any effect forces you to choose between multiple cards, you decide which of your cards is affected.
+           * **Non-demand effects** Before you execute a non-demand effect (any effect that does not start with ‘I Demand’), each player who has an equal or greater number of icons compared to the current player is eligible. Starting to your left and going clockwise, each eligible player **must** follow the effect’s instructions. Then you, the active player, performs them.  If at least one player shared in the action, you draw one card.
+           * **Demand effects** are in darker boxes and all start with ‘I demand.’ If any other player or players has fewer icons than the current player, they are vulnerable and in clockwise order each player **must** follow the instructions. Other opponents ignore it.
+           * If, while **self-executing** or **super-executing** a card’s non-demand Dogma effect, you would (again) perform the keyword **self-execute** or **super-execute**, first draw and achieve an 11. This is a Chain Achievement, indicated by a chain symbol on the back of each Age 11 card. There is no limit to the number of Chain Achievements that can be awarded during an action.
+           * The skipping rule from the Draw action above also applies. If a Dogma effect instructs you to Draw a card from a specfic Age, draw from that Age or skip to the next available pile.
+           * If a Dogma effect instructs to gain a Special Achievement, confirm the goal is met and take that card if it is avaialable at the end of your action.  (In the rare case that there is a tie to claim a special Achievement, the tie is broken in turn order going clockwise, starting at your left.)
+           * If a Dogma effect would end the game if a specific goal is met, the game ends immediately.
+
+ - name: End of Game
+   text: |
+     * There are three ways to win a game of Innovation: claim the required number of Achievements, have the highest Score if a player tries to draw from an empty Age 11 deck, or a special card effect can immediately win the game if you meet the requirements.
+     * To win via **Achievements**, you need to have claimed a number of them, depending on how many players are in the game. This is checked after each action. If multiple players simultaneously reach the required number of Achievements, the player with most Achievements wins. If there is a tie, the tie is broken in turn order going clockwise, starting at your left.
+           
+           | Players | Achievements to Win |
+           | ------- | ------------------- |
+           | 2 | 6 |
+           | 3 | 5 |
+           | 4 | 4 |
+           | 5 | 3 |
+     
+     * To win by **Score**, the game must end due to a player attempting to Draw a card higher than Age 11. Instead of Achievements. The player with the highest current Score wins. If tied, most Achievements wins. If still tied, the game is a Draw.
+     * Some **special card effects** can end the game. Some allow you to win given a certain condition, which if satisfied ends the game immediately. Others let "the single player with the most X" win. These also end the game immediately, but if there is a tie for most, the effect is ignored entirely. Some force a player to lose and leave the game; if one player is left they are the winner.
+            
+ - name: Rules for 4-5 Players
+   text: |
+     * There are new "parley" rules for games with 4+ players:
+           * Non-adjacent players (e.g., players who are not your immediate left- or right-hand neighbors around the table) are not affected by I Demand effects or Dogma sharing UNLESS the impacted player returns a card from their hand to the supply to either participate in sharing a Dogma affect (assuming equal or more icons) or to avoid a demand effect (assuming fewer icons).
+     * Also for 4 and 5 players, as an action on your turn, you may Dogma a top card on a non-adjacent player's board by returning a card from your hand (you still use your own icon count).
+
+ - name: Dogma Keywords
+   text: |
+   
+     | Keyword | Description |
+     | ------- | ----------- |
+     | **Actions (Draw, Meld, Achieve)** | A Dogma effect that instructs you to Draw, Meld, or Achieve does not count as an action of that type. It does not count as one of your two actions per turn. |
+     | **Bottom** | The bottom card in your stack of a color. If you have only one card of a color, it is both the bottom and top card of that color. |
+     | **Card ImAge** | The imAge in a hexagon on a card, depicting the innovation. The location of the imAge affects which splays are most effective. |
+     | **Demand effect** | Any Dogma effect that begins with "I Demand," and can force other players to be impacted by an effect, if they don't have enough of the matching icons. |
+     | **Draw and X** | Many Dogma effects instruct you to Draw and tuck, Draw and Meld, or Draw and Score a card of a specific value. First, Draw the card, skipping empty Ages as appropriate. Then, perform the action (tuck it, Score it, Meld it, etc.) on the card you drew. ‘Draw and reveal’ effects place the card in your hand, unless the effect takes it away afterward. |
+     | **Exchange** | Swap cards from the two locations given, even if one half of the exchange is empty. An exchanged card has not been "Scored," (or "Melded", "Drawn", etc) for the purposes of special Achievements or karma effects. |
+     | **Execute: Self-execute** | Some effects instruct you to self-execute another card. When you do, you execute all the non-demand effects on that card. Demand effects are ignored, and you do not share non-demand effects, regardless of icon count. |
+     | **Execute: Super-execute** | This is a stronger form of self-execute. When you super-execute a card, you also execute all demand effects (but not compel effects on Artifacts cards). All opponents are considered vulnerable regardless of icon count. |
+     | **Chain rule** | When instructed to self-execute or super-execute a card while already resolving a 'Self-Execute' or 'Super-execute', first Draw and Achieve an 11. |
+     | **Highest / Lowest** | Refers to the value (Age number) of the cards in question. |
+     | **Junk** | Move the card to the junk. It can now only be interacted with by effects that specifically reference the junk. |
+     | **Lose** | If a player loses, they are eliminated from play. Junk all cards belonging to them. They are skipped in turn order and no longer count for player adjacency. |
+     | **Non-demand effect** | Any Dogma effect that does not begin with "I Demand," which other players may share if they have enough of the matching icon. |
+     | **Score** | Over the course of the game, you will accumulate cards in your Score pile through Dogma effects. Each card in your Score pile is worth points equal to its value (the Age number). When you slide them under your reference card, the number will be visible in the top left. Your Score is the total value of all these cards. |
+     | **Splay** | Many Dogma effects will instruct you to splay a color in a direction. At any given time, a color is either unsplayed, splayed left, splayed right, splayed up or splayed aslant. To splay a color, take the top card and slide it in the direction indicated, revealing one icon if splaying left, two icons if splaying right, three icons if splaying up, and 4 icons if splaying aslant. If there are more than two cards, repeat the process so that all cards in the color are splayed. If the color was already splayed, unsplay it before splaying it in the new direction. If a color contains zero or one card, it is always considered unsplayed. If a splayed color is reduced to zero or one card, it does not remember that it was previously splayed. |
+     | **Top** | The top card of each color is the card on top of its stack. If you have only one card of a color, it is both the bottom and top card of that color. |
+     | **Transfer** | Move a card from one area in play to another. Transferring a card does not count as Melding, achieving, scoring, etc. |
+     | **Tuck** | To tuck a card, place it on the bottom of the matching color pile, continuing a splay if possible. If no cards of its color are on your board, it forms a new pile. |
+     | **Visible** | A card is visible if it is a top card, or if it is in a splayed stack and you can see any part of it. An icon is visible if it is on a top card or can be fully seen due to a splay. |
+     | **Value** | The value of a card is its Age number. If a card refers to the value of something you don’t have, like your top purple card if you have none, treat the value as 0. |
