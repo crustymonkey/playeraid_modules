@@ -69,13 +69,13 @@ sections:
            
            | Icon | Ages | Name |
            | ---- | ---- | ---- |
-           | ![Leaf](/static/img/innovation/Leaf.png) | 1-11 | Leaf |
-           | ![Light](/static/img/innovation/Light.png) | 1-11 | Light Bulb |
-           | ![Crown](/static/img/innovation/Crown.png) | 1-11 | Crown |
-           | ![Castle](/static/img/innovation/Castle.png) | 1-3 | Castle |
-           | ![Factory](/static/img/innovation/Factory.png) | 4-11 | Factory |
-           | ![Clock](/static/img/innovation/Clock.png) | 7-11 | Clock |
-           | ![Person](/static/img/innovation/Person.png) | 10-11 | Person |
+           | ![Leaf](/static/img/innovation/leaf.png) | 1-11 | Leaf |
+           | ![Light](/static/img/innovation/light.png) | 1-11 | Light Bulb |
+           | ![Crown](/static/img/innovation/crown.png) | 1-11 | Crown |
+           | ![Castle](/static/img/innovation/castle.png) | 1-3 | Castle |
+           | ![Factory](/static/img/innovation/factory.png) | 4-11 | Factory |
+           | ![Clock](/static/img/innovation/clock.png) | 7-11 | Clock |
+           | ![Person](/static/img/innovation/person.png) | 10-11 | Person |
 
  - name: Turn Actions
    text: |
