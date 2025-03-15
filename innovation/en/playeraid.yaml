@@ -2,7 +2,7 @@ name: Innovation 4th ed
 description: Build your civilization through achievement.
 credits: Sean Owens
 enabled: true
-version: 1.0
+version: 1.1
 yt_videos:
   - Ccoe-KPbQ-g
   - Y66_af_Vs5o
@@ -118,8 +118,8 @@ sections:
            * **Non-demand effects** Before you execute a non-demand effect (any effect that does not start with ‘I Demand’), each player who has an equal or greater number of icons compared to the current player is eligible. Starting to your left and going clockwise, each eligible player **must** follow the effect’s instructions. Then you, the active player, performs them.  If at least one player shared in the action, you draw one card.
            * **Demand effects** are in darker boxes and all start with ‘I demand.’ If any other player or players has fewer icons than the current player, they are vulnerable and in clockwise order each player **must** follow the instructions. Other opponents ignore it.
            * If, while **self-executing** or **super-executing** a card’s non-demand Dogma effect, you would (again) perform the keyword **self-execute** or **super-execute**, first draw and achieve an 11. This is a Chain Achievement, indicated by a chain symbol on the back of each Age 11 card. There is no limit to the number of Chain Achievements that can be awarded during an action.
-           * The skipping rule from the Draw action above also applies. If a Dogma effect instructs you to Draw a card from a specfic Age, draw from that Age or skip to the next available pile.
-           * If a Dogma effect instructs to gain a Special Achievement, confirm the goal is met and take that card if it is avaialable at the end of your action.  (In the rare case that there is a tie to claim a special Achievement, the tie is broken in turn order going clockwise, starting at your left.)
+           * The skipping rule from the Draw action above also applies. If a Dogma effect instructs you to Draw a card from a specific Age, draw from that Age or skip to the next available pile.
+           * If a Dogma effect instructs to gain a Special Achievement, confirm the goal is met and take that card if it is available at the end of your action.  (In the rare case that there is a tie to claim a special Achievement, the tie is broken in turn order going clockwise, starting at your left.)
            * If a Dogma effect would end the game if a specific goal is met, the game ends immediately.
 
  - name: End of Game
