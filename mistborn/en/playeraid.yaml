@@ -1,0 +1,299 @@
+name: "Mistborn: The Deckbuilding Game"
+description: "Let's burn some...metal?"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+version: 1.0
+bgg_id: 422780
+yt_videos:
+  - https://www.youtube.com/watch?v=8l9Ro9g4i5k
+  - https://www.youtube.com/watch?v=nCn1Gm60sOg
+expansions:
+sections:
+  - name: Setup
+    text: |
+      * Give each player:
+          * A random character card
+          * A training track and tracking cube in their color
+          * A set of 8 metals
+              * Place these on the marked spaces on the training board.
+          * Their character's 4 starting cards and 6 funding cards
+              * Shuffle these into a face down deck.
+          * A health dial set to 36
+      * Shuffle the market deck and place it in the center of the table.
+          * Reveal the top 6 cards and lay them out in a row.
+      * Create a supply of boxings and atium.
+      * Shuffle and reveal 3 random mission cards, the rest are returned to
+        the box.
+      * Each player places 1 of their tracking cubes on the image to the right
+        of the track on each mission.
+      * Select a 1st player and give the other players additional health
+        (clockwise order):
+          * 2nd player: 2 health
+          * 3rd and 4th players: 4 health
+      * If playing with more than 2 players, give the target to the last player.
+      * Each player draws 5 cards from their decks as their starting hands.
+  - name: Gameplay
+    text: |
+      The game is played over a number of rounds until 1 of the following
+      occurs:
+      * A player reaches the top of all 3 mission tracks.
+      * A player is the last remaining player, with all others eliminated.
+      * A player plays 4 atium on the "CONFRONTATION" card and wins
+        immediately.
+
+      ## General Rules
+      * Players can look through their own hand and discard pile at any time.
+      * Cards can be played on a player's turn in any order.
+      * Whenever a player gains a card, it goes into their face up discard
+        pile immediately, unless specified otherwise.
+      * At the end of a player's turn, all cards, except Allies, are moved
+        to the player's discard pile.
+      * Players draw 5 new cards from their deck to end their turn.
+      * Whenever a player would need to draw a card from their deck and the
+        deck is empty, they should shuffle their discard into a new deck.
+      * If a card is "eliminated", it is put in a general eliminated pile
+        shared by all players.
+          * Anyone can look through the eliminated pile at any time.
+
+      ## A Player's Turn
+      1. Move 1 space to the right on the training track.
+      2. In any order, any number of times:
+          * Play cards from hand
+          * Burn or flare metals on cards
+          * Use a card as a metal
+          * Discard a card to refresh a flared metal
+          * Activate ally and character abilities
+          * Move up on the mission tracks
+          * Buy cards and boxings from the market
+      3. Attack allies
+      4. Attack players (reducing their health)
+          * The target may be moved after this step if the target holder
+            took damage
+      5. Discard any cards in play (except allies) and any remaining cards
+         in hand.
+          * Return metal tokens to their place on the training track.
+      6. Draw 5 new cards from their deck.
+    sections:
+      - name: Metals
+        text: |
+          Metals, in terms of the tokens and on cards, can be used in a
+          variety of ways in the game.
+
+          * You can only burn a number of metal tokens equal to the number of
+            "+1 metal" [icons](#icons) (the limit is **1** at the beginning of
+            the game) you've unlocked on your training track.
+              * You can exceed this limit by "flaring" a metal (see below).
+          * To burn a metal (token), remove it from the training track and
+            place it on the card in your play area you want to use it on.
+              * These are returned to your training track at the end of your
+                turn.
+          * You can use metals shown on cards for a metal requirement on
+            a card by placing it sideways under the card you wish to use the
+            metal on.
+              * There is no limit to the number of cards that can be used in
+                this way on your turn.
+              * **Using cards in this way does not count against your metal
+                usage limit**.
+          * **A metal token or card can be burned for no effect** just to
+            activate savant abilities and ally effects.
+
+          ## Flaring
+          To exceed the "+1 metal" icon limit (above), you can "flare" a
+          metal.
+
+          * Take an unflared metal token and flip it over, placing it on the
+            card you wish to power (or empty space if flaring for no effect).
+              * This works in the same way as "burning" a metal.
+          * At the end of your turn, the token is **returned on it's currently
+            flipped side**.
+          * A flared metal cannot be used again for any use until it is
+            refreshed (below).
+          * A flared metal counts as burning a metal for all effects.
+          * There is no limit to the number of metals that can be flared on
+            your turn.
+
+          ## Refreshing
+          Refreshing is the method of flipping a flared metal back to its
+          usable side.
+
+          * To refresh a metal, discard a card from your hand with a matching
+            metal in the bottom right of the card.
+          * Refreshing a metal **does not count as burning a metal** for any
+            purpose.
+          * There are effects that will also allow you to refresh a metal.
+            See the [icons](#icons) for the refresh icon.
+          * You may refresh a metal you've flared on the same turn, but you
+            may not use it again this turn.
+          * If you refresh a metal that **you have not used this turn**, you
+            may then use it.
+
+          ## Atium
+          * Atium is gained from the training track and certain missions.
+          * Atium is used to power atium cards OR as a wild token in place of
+            another metal token.
+              * When used as a wild, it is considered **both** an atium
+                **and** the token it is being used as (for abilities).
+          * Used atium is returned to the supply at the end of your turn. Each
+            atium token is single use.
+          * Atium tokens **cannot be flared**. You must have metal token burns
+            available to use an atium token.
+          * Atium cards can be used to power any card or refresh any metal
+            token (as a wild metal).
+
+          | Symbol | Metal | Description | Power |
+          | ------ | ----- | ----------- | ----- |
+          | ![tin](/static/img/mistborn/tin.png) | Tin | Tin cards focus on mission points and coins, often providing different effects based on your position on the mission tracks. | **Sense**: Stops other players from advancing on the mission track, affecting the whole turn. |
+          | ![pewter](/static/img/mistborn/pewter.png) | Pewter | Pewter cards provide both combat and healing. | **Defender**: Both pewter allies are defenders, which means that damage cannot target your non-defender allies while they are in play. |
+          | ![bronze](/static/img/mistborn/bronze.png) | Bronze | Bronze cards give you mission points and allow you to use abilities in the market. | **Seek**: Seek allows you to use the top effect of any action card (**not ally**) in the market up to the listed cost. |
+          | ![copper](/static/img/mistborn/copper.png) | Copper | Copper cards provide a variety of effects, including healing and blocking damage. | **Cloud**: This either prevents damage to a player or their allies (depending on the card). If player damage is reduced to zero for the targeted player, they cannot pass the target. |
+          | ![zinc](/static/img/mistborn/zinc.png) | Zinc | Zinc cards provide mainly coins and a way to use allies without burning metals. | **Riot**: Allows you to activate any ally's top effect, if it hasn't been used yet, without burning metals. You may not activate this effect again this turn, even by burning a metal. |
+          | ![brass](/static/img/mistborn/brass.png) | Brass | Brass cards provide mission points and coins, as well as the ability to eliminate cards. | **Soothe**: Allows you to eliminate any of your cards from your hand, discard, or in play.  If you eliminate a cards in play, **you still get its effect**. |
+          | ![iron](/static/img/mistborn/iron.png) | Iron | Iron cards are combat focused and allow you to prepare for future turns | **Pull**: Allows you to move cards from your discard pile to the top of your deck. |
+          | ![steel](/static/img/mistborn/steel.png) | Steel | Steel cards provide combat, coins, and ways to affect the market, and even ways to gain eliminated cards. | **Push**: Allows you to eliminate any card from the market. Replace eliminated cards immediately. |
+          | ![atium](/static/img/mistborn/atium.png) | Atium | Atium cards provide powerful mission points and combat points, but need atium to play them. Atium cards can also be used to power any other card or to refresh any flared metal token (when discarded). | |
+      - name: Cards
+        text: |
+          There are 2 kinds of cards in the market deck: Actions and allies.
+          Action cards are vertically oriented while ally cards are always
+          horizontal.
+
+          * Some cards have multiple effects for burning separate instances of
+            a metal. These **must be activated from top to the bottom**. You
+            cannot just activate the second ability.
+          * Some cards have savant abilities (shown in the bottom of the metal
+            vial on the card) that are activated **only when the card is used
+            as a metal**
+              * You cannot use this if it's discarded to refresh a card or used
+                for its main abilities.
+          * Some cards have an effect that can be played off-turn (always
+            indicated with a vertically oriented ability name bar).
+              * To use these, just discard the card at the relevant time.
+              * No metal needs to be burned to use a card this way.
+
+          ## Allies
+          * Ally cards are placed above your character card.
+          * They cannot be used as a metal or to refresh cards.
+          * They are not powered directly by metals as action cards are.
+          * For abilities that you gain when burning a metal, you only gain the
+            effect **once**, no matter how many times you burn that metal.
+          * Some allies have an ability that is activated only when a second
+            instance of a metal is burned.
+          * Some allies have ongoing effects that don't require a metal to be
+            burned.
+      - name: "Characters & the Training Track"
+        text: |
+          * At the beginning of every turn, players will move their tracker
+            cube 1 space forward on the training track.
+          * You may also move up on the track whenever a card or mission effect
+            has the ["train" icon](#icons).
+          * You will unlock various abilities as you advance:
+              * Burning additional metal tokens ("+1 icon")
+              * Character abilities (I, II, III)
+              * Atium: Gain an atium when reaching these.
+              * If you reach the end of the track, any time you would move up,
+                gain an atium token instead.
+
+          ## Characters
+          They have various abilities (I, II, III) that are unlocked from
+          moving up the training track.
+
+          * Characters have a signature metal that activates when you burn
+            that particular metal.
+              * As it is with allies, you can **only activate this once**, no
+                matter how many times you burn that metal on your turn.
+          * The 2nd ability (II):  Once per turn, a player may immediately
+            eliminate an action card they buy from the market.  When they do,
+            complete that card's top effect without burning any metal.
+          * Every character has an atium effect that is triggered when burning
+            atium.
+      - name: Missions
+        text: |
+          Each game has 3 random missions.
+
+          * Tracking cubes always start on the image, **not** the bottom of the
+            track, on each mission.
+          * It takes 12 mission points to reach the top of the track.
+          * Mid track rewards:
+              * Some spaces have a special reward if you are the 1st player to
+                reach that space (left side of the row).
+              * There are also rewards for anyone that reaches marked
+                mid-points on the track (right side).
+          * There is an additional reward for the 1st player to reach the top
+            of the track.
+      - name: Combat
+        text: |
+          One of the ways to win is to be the last character standing.
+
+          * If a player reaches zero health, they are eliminated from the game.
+          * Players may receive damage points that can be used at the end of
+            their turn.
+              * Damage points may be split between allies and players.
+          * Each ally has a health equal to their defense value (upper left).
+              * **Allies cannot take partial damage**.  They must be killed,
+                otherwise damage has no effect.
+              * Killed allies go directly to the owner's discard pile.
+          * Allies with the "Defender" ability.  These allies **must** be
+            killed before any other allies or the character can be attacked.
+          * Some effects give you health, but **you can never have more than
+            40 health**.
+
+          # 2 Player Games
+          * At the end of your turn, you may (but do not have to) direct all
+            your combat at your opponent and their allies.
+
+          # 3-4 Player Games
+          * There is an added mechanic called the "target".
+          * The last player starts with the target.
+          * At the end of your turn, you may target **anyone's** allies, but
+            you **must** direct character damage at the player holding the
+            target.
+          * After a player with the target takes any amount of damage to
+            their character (dial), they may pass the target to another
+            player.
+              * **Target passing only happens after all damage has been used
+                for that turn**.
+          * If you have the target on your turn, after attacking allies, your
+            damage points deal their full damage to **every other player**.
+              * If a player has defender allies, damage is dealt to them first.
+              * If a "Cloud" off-turn ability is used, it only prevents
+                damage to themselves, not anyone else.
+          * If there are only 2 players left in the game (due to players being
+            eliminated), remove the target from the game.
+      - name: "Market & Boxings"
+        text: |
+          * Market cards can be purchased and immediately added to your discard
+            pile.
+          * Coins gained on cards and spent boxings contribute to your total
+            buying power.
+          * When is card is bought from the market, it is immediately replaced
+            with a new card from the deck.
+          * You may buy any number of cards.
+          * Boxings may be purchased by spending **2** coins.
+              * This allows you to save money for any future purchase.
+              * You can save boxings for as long as you'd like.
+              * When spent, return them to the supply.
+  - name: End of the Game
+    text: |
+      The game ends when 1 of the following happens:
+
+      * A player instantly wins by reaching the top of all 3 mission tracks.
+      * A player is the last 1 standing.
+      * A player instantly wins by playing 4 atium on the card "CONFRONTATION".
+  - name: Icons
+    id: icons
+    text: |
+      | Icon | Description |
+      | ---- | ----------- |
+      | ![train](/static/img/mistborn/train.png) | Train: Advance to the right on the training track. |
+      | ![combat](/static/img/mistborn/combat.png) | Combat (deal damage to an ally or player character) |
+      | ![mission](/static/img/mistborn/mission.png) | Mission points (move up any mission track) |
+      | ![heal](/static/img/mistborn/heal.png) | Heal (restore your character's health) |
+      | ![coin](/static/img/mistborn/coin.png) | Coin (gain coins to buy cards and/or boxings) |
+      | ![burn](/static/img/mistborn/plus_burn.png) | Burn an extra metal token (you can burn a number of tokens equal to the number of these icons unlocked on the training track) |
+      | ![draw](/static/img/mistborn/draw.png) | Draw a card from your deck |
+      | ![refresh](/static/img/mistborn/refresh.png) | Refresh a metal (flip over a flared metal) |
+      | ![eliminate](/static/img/mistborn/eliminate.png) | Eliminate a card |
+      | ![dominance](/static/img/mistborn/dominance.png) | Dominance up (Advance the Lord Ruler's dominance card 1 row) |
+      | ![players](/static/img/mistborn/player_count.png) | Player count indicator |
+      | ![slash](/static/img/mistborn/slash.png) | Slash between icons (choose 1 of the icons, not both or all) |
