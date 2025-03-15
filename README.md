@@ -43,6 +43,7 @@ The layout of your data in your YAML/JSON file is pretty simple.  The allowed ke
 This will have the following 7 mapping items (some optional):
 
 * **name** (required): This is the name that will show up on the playeraid.net home page
+* **sort_name** (optional): This allows you to change the sorting order of this particular aid. This is useful for names with non-ASCII characters like "Bärenpark", which will sort lowest in order, so instead you can specify the `sort_name` as "Barenpark" and it will end up in the "Ba" order as most would expect.
 * **description** (required):  This is a short description of the game.  This could just be a simple link to the BGG page
 * **bgg_id** (required): This is ID of the game from board game geek. You can get this from the url for the game. e.g. `339958` is the ID for "Gutenberg" from this URL: https://boardgamegeek.com/boardgame/339958/gutenberg
 * **sections** (required): This will map to a list of your sections (more on `sections` below).
