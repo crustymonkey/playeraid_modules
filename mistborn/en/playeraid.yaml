@@ -3,7 +3,7 @@ description: "Let's burn some...metal?"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.0
+version: 1.1
 bgg_id: 422780
 yt_videos:
   - https://www.youtube.com/watch?v=8l9Ro9g4i5k
@@ -11,6 +11,7 @@ yt_videos:
 expansions:
 sections:
   - name: Setup
+    id: setup
     text: |
       * Give each player:
           * A random character card
@@ -34,6 +35,7 @@ sections:
       * If playing with more than 2 players, give the target to the last player.
       * Each player draws 5 cards from their decks as their starting hands.
   - name: Gameplay
+    id: gameplay
     text: |
       The game is played over a number of rounds until 1 of the following
       occurs:
@@ -297,3 +299,90 @@ sections:
       | ![dominance](/static/img/mistborn/dominance.png) | Dominance up (Advance the Lord Ruler's dominance card 1 row) |
       | ![players](/static/img/mistborn/player_count.png) | Player count indicator |
       | ![slash](/static/img/mistborn/slash.png) | Slash between icons (choose 1 of the icons, not both or all) |
+  - name: Co-op
+    sections:
+      - name: Setup
+        text: |
+          * First, complete normal [setup](#setup).
+          * The target token is not used in co-op play.
+          * Place the Lord Ruler's (LR after this) dominance track card in view
+            of all players.
+              * Place the LR card on top of it so only the title bar
+                of the dominance track is visible.
+          * Set the LR's health dial to 48.
+          * Shuffle and place the LR's deck of 36 cards near his dominance card.
+      - name: Dominance
+        id: dom
+        text: |
+          * Edicts and adversary cards will refer to the dominance level on the
+            dominance track, which is the highest numbered "**X=[1,2...]**".
+              * When the LR cards refer to "**X**", use the highest number
+                showing.
+          * To move "dominance up", slide the LR card 1 space down the
+            dominance card.
+          * There is a point where you may have to flip the dominance card.
+            When this happens, flip the card and place the LR card under the
+            1st effect.
+      - name: Gameplay
+        text: |
+          The goal is destroy the LR in co-op mode.  Players will not attack
+          each other's allies or characters.
+
+          1. Players take their turns as they would in [standard
+             gameplay](#gameplay), except damage will only be dealt to the
+             LR and adversaries.
+          2. After each player turn, draw and play the top card of the LR's
+             deck.  There are 2 different types of cards
+
+          ## General Notes
+          * If a player is eliminated, the game continues and the player
+            count changes to reflect the current number of players still
+            in the game.
+              * Do **not** draw a LR card when it would be the eliminated
+                player's turn.
+          * "Sense" abilities have no effect in co-op.
+          * "Collective" on the LR's edict cards means shared between all
+            of the players. e.g. if 3 players must take 10 collective damage,
+            it can be split up between the players however they would like (1
+            player could take it all, for example).
+
+          ## Adversaries
+          * Place adversaries in front of you when you draw them.
+              * They will stay in play until they are removed with effects or
+                damage.
+          * Adversaries will have either a permanent negative effect or one
+            that happens at the end of every turn of the player they are in
+            front of.
+              * **Adversaries do not activate on every turn**.
+          * Each adversary has 1-3 shields.  All shields must be destroyed
+            before it is dispatched.
+              * To destroy a shield deal the damage >= to the number shown.
+                If it shows an **X**, refer to the LR's [dominance](#dom)
+                level.
+              * When a shield is destroyed, place a black cube on it.
+              * Shields must be destroyed in left to right order.
+              * You may destroy more than 1 shield on the same turn.
+              * When the last shield is destroyed, put the adversary in the
+                LR's discard pile.
+              * Effects that allow a player to kill an ally (like Assassinate)
+                can remove **1** shield.
+
+          ## Edicts
+          * When drawing an edict, activate the effects in order (top to
+            bottom), then discard it.
+          * Each edict moves the LR's [dominance](#dom) up 1-2 times.
+          * Some edicts have an additional effect.
+          * Note that cards will often heal the LR for incomplete missions.
+          * The bottom of the card shows market cards that are eliminated.
+            Immediately replace and eliminated cards.
+      - name: End of Game
+        text: |
+          The game ends in 1 of 4 ways:
+
+          * The LR's deck runs out of cards -- all players lose.
+          * All players are eliminated (due to damage) -- all players lose.
+          * The LR reaches 0 health -- all players win.
+          * A player plays 4 atium on the "CONFRONTATION" card -- all players
+            win.
+          * The game does **NOT** end if all 3 missions are completed, but it
+            does mean the LR won't be able to heal as much.
