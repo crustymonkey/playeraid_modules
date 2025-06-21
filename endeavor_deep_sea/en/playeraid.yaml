@@ -1,0 +1,177 @@
+name: "Endeavor: Deep Sea"
+description: "Jump in your sub and traverse the depths"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+version: 1.0
+bgg_id: 367966
+yt_videos:
+  - https://www.youtube.com/watch?v=2lgZIyxYUIQ&pp=ygUdZW5kZWF2b3IgZGVlcCBzZWEgaG93IHRvIHBsYXk%3D
+  - https://www.youtube.com/watch?v=HLfcG_7rbT0&pp=ygUdZW5kZWF2b3IgZGVlcCBzZWEgaG93IHRvIHBsYXk%3D
+  - https://www.youtube.com/watch?v=MfBT3OB614k&pp=ygUdZW5kZWF2b3IgZGVlcCBzZWEgaG93IHRvIHBsYXk%3D
+expansions:
+sections:
+  - name: Setup
+    text: |
+      * Select a scenario sheet.
+          * Note that there are may be special setup rules on it.
+          * Put out the starting ocean boards, as is shown on the scenario
+            sheet.
+              * Note that the scenario shows you how wide you can expand out.
+              * **Any ocean boards with the "sun" symbol next to the name
+                should not be used unless they are explicitly part of the
+                scenario**.
+      * Shuffle the remaining ocean tiles for each respective depth and create
+        a stack for each.
+      * Place the specified number of dive tokens face down as shown on the
+        ocean tiles.
+      * Shuffle the anchor (starting) journal cards and lay out 4 random cards.
+      * Shuffle the regular journal deck and set it next to the starting
+        journal cards.
+      * Place the specialist tray nearby.
+          * Shuffle all the tier 5 specialists and create 3 stacks of 3
+            specialists in the 5th column of the tray.
+      * Randomly choose the start player and give them the wave.
+      * Each player:
+          * Take all components of a color, including a team leader.
+          * Place the 5 cubes on the zero spaces of the 5 tracks on
+            your board.
+          * Place your team leader near your mat and place 1 of your discs
+            on them.
+          * Create a personal supply of discs and impact markers near your
+            player board.
+          * Deploy your starting sub to the launch zone and take its
+            arrival bonus.  Place your remaining subs near your player board.
+  - name: Gameplay
+    text: |
+      The game is played over the course of 6 rounds, with each round consisting
+      of 2 phases.  Each phase is played in turn order starting with the
+      player with the wave.
+    sections:
+      - name: "Phase 1: Preparation"
+        text: |
+          This phase is broken into 3 simple parts that each player completes
+          before moving to the next player.
+
+          ## Recruitment a Specialist
+          * Chose 1 specialist that you can recruit based on your level
+            on the reputation track.
+              * The specialist must match your highest available tier or below.
+              * You always get specialists on their junior side (blue).
+              * Immediately take any instant bonuses (left side) shown on the
+                specialist.
+              * You may recruit duplicates of the same specialist.
+              * Any "Inspiration" (green) or "Coordination" (yellow) track
+                gains **are** usable in the next steps.
+              * If you recruit a tier 5 specialist and it leaves an empty
+                slot in the tray, move the top tile from another slot to
+                this 1.
+
+          ## Effort
+          * Gain a number of discs from your supply into the staging area
+            on your player board based on your level of the green track.
+
+          ## Reassignment
+          * Reclaim discs assigned on your specialists in the previous round
+            according to the level of your yellow track.
+              * You **cannot** remove discs placed on journals.
+              * You **cannot** remove discs from ocean tiles.
+              * You can retrieve the disc from your team leader in the 1st
+                round.
+
+      - name: "Phase 2: Activation"
+        text: |
+          Players take turns or pass during this phase.  Once you pass, you
+          can no longer take turns during the round.  This continues until
+          all players have passed.
+
+          ## Taking Turns
+          * This is *usually* done by placing a disc from your staging area
+            onto 1 of your specialists to take the action(s) shown on it.
+              * Some specialists show multiple actions separated by a "/".  You
+                can only choose 1 of those actions.
+              * Some specialists show multiple actions **not** separated by a
+                "/".  You may perform all actions shown in any order.
+                  * The actions may be performed in different zones.
+                  * Multiple actions still count as a single turn.
+                  * Each action must be fully resolved before activating the
+                    other action.
+                  * You can activate a specialist and not take its action.
+              * Some actions will require you to place a 2nd disc from your
+                staging area onto an ocean board to activate it.
+          * If you have a journal with a special activation circle, you can
+            place a disc from your staging area onto those to activate them.
+              * This is done **instead of activating a specialist**.
+          * You can always decline any reward or action you are entitled to.
+          * To perform the action, you must have a sub in a zone with a
+            matching action available.
+              * Actions are always performed in the same zone as one of your
+                subs, unless otherwise specified.
+          * If you ever reach the impact symbol near the end of a track, gain
+            1 impact.
+              * If you ever advance beyond the end of a track, move your
+                marker back to the impact spot and gain 1 impact (as shown).
+          * If you reach a sub icon on the blue track, place a sub on the
+            launch zone (for the scenario) and gain the arrival bonus.
+              * This happens only the 1st time you reach each sub.
+        sections:
+          - name: "Action: Travel"
+            text: |
+              * Move your sub to a different zone and gain the arrival bonus
+                of the zone where your movement ends.  This will allow you
+                to take future actions in that zone.
+                  * The max depth is determined by your location on the blue
+                    track. e.g. if it shows 3 ingenuity symbols, you can dive
+                    to depth 3.
+                  * Your level on the blue track also determines the number of
+                    zones you can move when taking this action.
+                      * All movement is **orthogonal**. Subs cannot move
+                        diagonally.
+                      * You may not travel through empty spaces.
+                  * The arrival bonus is shown below the travel symbol.
+              * Note that new subs that are launched to the launch zone **do**
+                get the arrival bonus of that zone.
+          - name: "Action: Sonar (needs a 2nd disc)"
+            text: |
+              * Place a disc from your staging area onto the leftmost circle
+                for a sonar action space and take any bonus shown there.
+                  * If a zone has multiple sonar actions, you may place your
+                    disc in the leftmost space of either.
+                  * Some space will give you a link bonus.
+                      * If you complete a link, you and the other player both
+                        receive the bonus shown between the 2 discs.
+                          * If both discs are yours, you only get the bonus
+                            **once**.
+              * If the space shows a "discover" symbol, peform a discover
+                action:
+                  1. Draw **2** ocean boards from the depths shown.  e.g. if
+                     the symbol shows "3+", you could take 2 from depth 3, 4,
+                     or 5, or 1 board from any 2 depths.
+                      * You can draw from depths you cannot travel to.
+                      * Note that the scenario sheet shows how wide your
+                        ocean area can be.
+                      * Aside from depth 1, there **must** be a zone of a
+                        shallower depth to place it below.  e.g. you cannot
+                        place a depth 4 tile in a column with no depth 3 tile.
+                      * If your discovery is impossible to resolve, you must
+                        draw from the shallowest possible depth.  e.g. if your
+                        discovery is 1-2 and depth 1 and 2 are full.
+                      * If the entire play area is full, gain impact instead
+                        and skip the remaining steps.
+                      * **If a drawn board has a sun symbol next to the name**
+                        and it is not listed on your scenario, discard it and
+                        draw a replacement.
+                  2. Look at both boards and choose 1 to place.
+                      * Place the board in a legal (above) space and place the
+                        other board back at the bottom of its depth stack.
+                      * If the zone has a dive site(s), place the specified
+                        number of tokens face down on its space(s).
+                  3. Claim the discovery bonus (1 time rewards in the top
+                     left corner).
+                      * Note that the bonus area will have a reminder to place
+                        dive tokens on the board if it has a dive site(s).
+          - name: "Action: Dive"
+            text: |
+              * Draw the top dive token from a zone you have a sub and reveal
+                it.
+
