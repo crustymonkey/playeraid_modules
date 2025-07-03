@@ -137,12 +137,12 @@ sections:
                 for a sonar action space and take any bonus shown there.
                   * If a zone has multiple sonar actions, you may place your
                     disc in the leftmost space of either.
-                  * Some space will give you a link bonus.
+                  * Some spaces will give you a link bonus.
                       * If you complete a link, you and the other player both
                         receive the bonus shown between the 2 discs.
                           * If both discs are yours, you only get the bonus
                             **once**.
-              * If the space shows a "discover" symbol, peform a discover
+              * If the space shows a "discover" symbol, perform a discover
                 action:
                   1. Draw **2** ocean boards from the depths shown.  e.g. if
                      the symbol shows "3+", you could take 2 from depth 3, 4,
@@ -174,4 +174,143 @@ sections:
             text: |
               * Draw the top dive token from a zone you have a sub and reveal
                 it.
+              * When spending a token, you either take the action or get the
+                amount of pictured research.
+              * You may spend a dive token before, after, or between your
+                actions.
+              * You may spend a dive token **instead of activating a
+                specialist** for your turn.
+              * You may spend tokens on the same turn you acquire them.
+              * You may spend a max of 1 token on your player board at the
+                end of your turn.
+                  * Any excess unspent tokens are lost.
+              * You may spend any number of dive tokens on your turn.
+              * If the supply runs out, shuffle the discard to form a new
+                supply.
+          - name: "Action: Conserve (needs a 2nd disc)"
+            text: |
+              * Pay the research cost for a space in a zone where you have
+                a sub and place a disc from your staging area to get the
+                displayed bonus(es). 
+                  * Some spaces will give you a link bonus.
+                      * If you complete a link, you and the other player both
+                        receive the bonus shown between the 2 discs.
+                          * If both discs are yours, you only get the bonus
+                            **once**.
+          - name: "Action: Journal (needs a 2nd disc)"
+            text: |
+              * Place a disc from your staging area onto a journal space in
+                a zone where you have a sub. Spend the listed research cost
+                on the matching journal cards and take it.
+                  * The space's symbol **must match the symbol on the
+                    journal card you take**.
+              * The matching symbol has no bearing on what is activated on
+                the card, all effects are activated regardless of the symbol.
 
+              ## Journal Effects
+              | Symbol | Benefit |
+              | ------ | ------- |
+              | ![points](/static/img/endeavor_deep_sea/points.png) | **Points**: Earn the displayed points at the end of the game. |
+              | ![you](/static/img/endeavor_deep_sea/you.png) | **You**: You immediately gain all displayed benefits. |
+              | ![others](/static/img/endeavor_deep_sea/others.png) | **Others**: These benefits are immediately gained by **all other players** (but not you). |
+              | ![actions](/static/img/endeavor_deep_sea/actions.png) | **Actions**: For your turn, **instead of** placing a disc on a specialist, you can place a disc onto a journal action space. Discs on journal action spaces remain there for the rest of the game and may **not** be removed during reassignment. |
+              | ![a_dive](/static/img/endeavor_deep_sea/a_dive.png) | Dive, and claim an additional dive token from that dive site (if any remain). |
+              | ![a_travel](/static/img/endeavor_deep_sea/a_travel.png) | Travel, but treat your technology level as if it were 1 higher. That means you can move 1 extra zone and/or dive one depth deeper than usual. |
+              | ![a_conserve](/static/img/endeavor_deep_sea/a_conserve.png) | Conserve at a conservation site where you have a sub at the same **depth**, even if you don't have a sub in the zone. |
+          - name: Promotion
+            text: |
+              * When you receive a promotion effect, flip any junior specialist
+                (blue side) to it's Senior side (gold).
+              * You do not lose any attribute symbols that were on the
+                junior side.
+              * If there was a disc on the junior's circle when promoted,
+                discard it back to your **supply**.
+          - name: Special Zone Features
+            text: |
+              There are 3 basic types of special zone features.
+
+              * **General Effects**: These will have a yellow warning triangle.
+                These effects are not connected to any particular zone
+                feature.
+              * **Action Effects**: A yellow line leading away from a feature
+                means that something special happens right after you
+                activate that feature.
+              * **Marked Spaces**: A yellow ring around a feature means that
+                once you have a disc in that spot, the displayed special
+                rule now applies to you.
+          - name: The Impact Board
+            text: |
+              * Each scenario sheet has a different impact board layout.
+                  * Some scenarios include special rules for how you
+                    interact with the impact board.
+              * When you gain impact, place a marker from your supply in an
+                empty hex and gain any displayed reward.
+                  * You may only place in a hex with an entry arrow pointing
+                    to it, or in a hex that touches any other occupied hex.
+              * Occupying hexes of certain colors will score you points at
+                the end of the game (see the legend on the board).
+              * A hex with a ∞ symbol can hold any number of tokens.
+              * If you run out of markers, use a substitute.
+          - name: End of the Round
+            text: |
+              * The round ends when all players have passed.
+              * If it was the end of the 6th round, proceed to [final
+                scoring](#scoring).
+                  * You will know it's the 6th round because all players will
+                    have 7 specialists, which includes their team leader.
+              * Pass the wave token clockwise to set the new start player and
+                begin the next round.
+  - name: Final Scoring
+    id: scoring
+    text: |
+      * Score points based on your position on all 4 tracks.  The point
+        breakdowns are shown above different columns.
+      * Score the points for your markers on colored hexes on the impact board.
+      * Score points shown on some journals.
+      * Score the points shown on each senior tier 5 specialist.
+      * Score the points for mission goals.  Each scenario has goals printed on
+        it and awards points.
+          * Many goals offer leader bonuses as well.
+              * If more than 1 player ties for 1st, they all earn 1st place
+                bonus and no 2nd place bonus is awarded.
+              * If a single player earns the 1st place bonus and there are
+                multiple tied for the 2nd place bonus, all players tied for
+                2nd receive the 2nd place bonus.
+              * If you do not meet any of the goal's criteria, you cannot
+                claim a leader bonus.
+      * Add together your leftover research and discs in your staging area and
+        divide by 3 (rounded down) and score this many points.
+
+      The player with the most points wins. If there is a tie, the tied players
+      share the victory.
+  - name: Co-op/Solo
+    text: |
+      All scenarios can be played in co-op or solo mode.  The only difference
+      in the rules is that you play **7** rounds if playing solo.
+
+      ## Additional Setup
+      * Shuffle the setback cards and make a stack of 3 random setbacks face
+        down (4 if playing solo).
+      * Shuffle the bonus goal cards and place 3 random cards face down on
+        top of the setbacks.
+      * Choose the difficulty you wish to play at:
+          * **Beginner**: Complete any 4 goals
+          * **Intermediate**: Complete any 5 goals
+          * **Expert**: Complete any 6 goals
+          * **Legendary**: Complete all 7 goals
+
+      ## Bonus Goals and Setbacks
+      * At the start of each round (including the 1st), draw the top card of
+        the stack.
+          * Place bonus goals near the other goals on the scenario sheet.
+          * Immediately apply the effect of any setbacks.
+
+      ## How to Win
+      * Play the game using the normal rules, but try to meet the thresholds
+        for a set of goals.
+          * Many co-op goals require you to reach a minimum amount of a
+            particular criteria, determined by player count.  This does **not**
+            mean that each player must individually meet that goal.  Instead,
+            the team's **combined** amount must meet that goal.
+      * At the end of the 6th round (7th if solo), assess your goals to see
+        how many you achieved.
