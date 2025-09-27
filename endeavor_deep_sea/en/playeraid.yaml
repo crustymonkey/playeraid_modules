@@ -2,7 +2,7 @@ name: "Endeavor: Deep Sea"
 description: "Jump in your sub and traverse the depths"
 text_type: markdown
 credits: "Jay Deiman"
-enabled: false
+enabled: true
 version: 1.0
 bgg_id: 367966
 yt_videos:
@@ -283,6 +283,28 @@ sections:
 
       The player with the most points wins. If there is a tie, the tied players
       share the victory.
+  - name: Symbols
+    text: |
+      | Symbol | Description |
+      | ------ | ----------- |
+      | ![travel](/static/img/endeavor_deep_sea/g_travel.png) | Travel action |
+      | ![sonar](/static/img/endeavor_deep_sea/g_sonar.png) | Sonar action |
+      | ![dive](/static/img/endeavor_deep_sea/g_dive.png) | Dive action |
+      | ![conserve](/static/img/endeavor_deep_sea/g_conserve.png) | Conserve action |
+      | ![journal](/static/img/endeavor_deep_sea/g_journal.png) | Journal action |
+      | ![ingenuity](/static/img/endeavor_deep_sea/ingenuity.png) | Ingenuity; Advance on the Ingenuity track |
+      | ![inspiration](/static/img/endeavor_deep_sea/inspiration.png) | Inspiration; Advance on the Inspiration track |
+      | ![coordination](/static/img/endeavor_deep_sea/coordination.png) | Coordination; Advance on the Coordination track |
+      | ![reputation](/static/img/endeavor_deep_sea/reputation.png) | Reputation; Advance on the Reputation track |
+      | ![attr_any](/static/img/endeavor_deep_sea/attr_any.png) | Advance any of the 4 attribute tracks |
+      | ![attr_low](/static/img/endeavor_deep_sea/attr_low.png) | Advance your lowest attribute marker |
+      | ![research](/static/img/endeavor_deep_sea/research.png) | Advance your research track |
+      | ![impact](/static/img/endeavor_deep_sea/impact.png) | Impact; Advance on the Impact track by placing a token |
+      | ![disc](/static/img/endeavor_deep_sea/gain_disc.png) | Gain a disc from your supply to your staging area |
+      | ![promo](/static/img/endeavor_deep_sea/promote.png) | Promote a specialist |
+      | ![sonar_zone](/static/img/endeavor_deep_sea/sonar_zone.png) | Perform a sonar action in this zone |
+      | ![disc_disc](/static/img/endeavor_deep_sea/disc_disc.png) | Discard a disc from your staging area to your supply |
+      | ![spend_res](/static/img/endeavor_deep_sea/spend_res.png) | Spend 2 research |
   - name: Co-op/Solo
     text: |
       All scenarios can be played in co-op or solo mode.  The only difference
