@@ -25,8 +25,13 @@ YAML_TPL = dedent('''
 
 
 def get_args():
+    default_api_file = os.path.join(os.environ['HOME'], '.bgg_api_key')
     p = ArgumentParser(
         description="Create a new playaid structure with stubs")
+    p.add_argument('-a', '--bgg-api-file', default=default_api_file,
+        help='The path to the file containing the BGG API key.  This is '
+        'optional, but will you allow you to set the BGG ID value via a '
+        'prompt instead of a manual lookup [default: %(default)s]')
     p.add_argument('-i', '--create-img-dir', default=False, action='store_true',
         help='Also create an image dir (img) [default: %(default)s]')
     p.add_argument('-c', '--credits', default='Your Name',
@@ -115,6 +120,21 @@ def select_item(bgg_res):
         return int(bgg_res[selected - 1]['id'])
 
 
+def get_api_key(args):
+    if not os.path.isfile(args.bgg_api_file):
+        return None
+
+    try:
+        with open(args.bgg_api_file) as fh:
+            api_key = fh.read().strip()
+            logging.debug(f'Found api key: {api_key}')
+            return api_key
+    except Exception as e:
+        logging.warning(
+            f'Failed to get BGG API key from {args.bgg_api_file}: {e}'
+        )
+
+
 def get_bgg_id(args):
     # Try to import the bgg library, if that fails, return None
     try:
@@ -122,18 +142,25 @@ def get_bgg_id(args):
     except Exception:
         return None
 
-    bgg = BGG()
+    api_key = get_api_key(args)
+    if not api_key:
+        # If we fail to get the API key for some reason, just return None
+        return None
 
-    res = bgg.search(args.name)
+    try:
+        bgg = BGG(api_key)
+        res = bgg.search(args.name)
+        tot = int(res['items']['total'])
+        res = res['items']['item']
 
-    tot = int(res['items']['total'])
+        if tot == 1:
+            # If we only have 1 result, just return it
+            return int(res['id'])
 
-    res = res['items']['item']
-    if tot == 1:
-        # If we only have 1 result, just return it
-        return int(res['id'])
-
-    return select_item(res)
+        return select_item(res)
+    except Exception as e:
+        # Write an error here as this should supposedly work
+        logging.error(f'Failed to get info from BGG: {e}')
 
 
 def create_new(args):
