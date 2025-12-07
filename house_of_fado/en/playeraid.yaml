@@ -1,0 +1,98 @@
+name: "House of Fado"
+description: "Play some fado music to attract customers"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+version: 1.0
+bgg_id: 373667
+yt_videos:
+  - https://www.youtube.com/watch?v=BJ2coKlsfeY&pp=ygUZaG91c2Ugb2YgZmFkbyBob3cgdG8gcGxheQ%3D%3D
+  - https://www.youtube.com/watch?v=PpAnnh0fpiM&pp=ygUZaG91c2Ugb2YgZmFkbyBob3cgdG8gcGxheQ%3D%3D
+  - https://www.youtube.com/watch?v=x7tCHZWZs7c&pp=ygUZaG91c2Ugb2YgZmFkbyBob3cgdG8gcGxheQ%3D%3D
+expansions:
+  - Promo Musicians and 2-Player Variant
+sections:
+  - name: Setup
+    text: |
+      * Place the board.
+      * Setup the musician tiles:
+        * Select the musician tiles for your player count.  e.g. Return the 
+          tiles with 3+ and 4 on the back to the box.
+        * **If playing with the promo musicians**, mix the promo musicians
+          into each of their types, then randomly remove 1 of each type and
+          put it in the box.
+        * Place the remaining tiles face up on the board, according to their
+          type.
+      * Sort the notation tiles according to their notes and place them on
+        the matching spaces on the board.
+      * If you are playing with 2 players, return all the fado tiles *without*
+        a 2 on the back to the box.
+      * Shuffle the fado tiles and place 4 face up on the board.  Then place
+        the stack face down and flip the top tile over and place it face up
+        on the stack.
+      * Create the customer bag based on player count:
+        * Put 2 gray, 3 black, and 4 brown customers **per player** in the bag.
+          Return any remaining customers to the box.
+      * Place critics in their spaces based on player count and return any
+        remaining critics to the box:
+        * **4 players**: 1 with each customer group
+        * **3 players**: 1 with the leftmost and rightmost customer groups
+        * **2 players**: 1 with the middle group of customers
+      * Place the 5 stars on the board in their matching spots.
+      * Shuffle the billboard scoring tiles and place 1 on each of the 3 spaces
+        on the board.
+        * **In a 3-4 player game**, use the side showing 3 scores.
+        * **In a 2 player game**, use the side showing 2 scores.
+      * Place the dice near the board.
+      * Place the money near the board.
+      * Each player:
+        * Take 1 restaurant board, 8 cubes, 1 disc, 1 decoration tile, 3
+          workers, 5 money, and 1 treble clef.  Colored pieces should match.
+            * **If playing with the 2 player variant**, take the 3 matching
+              assisstant meeples.
+        * Cover the 4 customer table (on the right) with the decoration tile.
+        * Place 1 cube on each of the spaces of the prestige track.
+        * Place the treble clef tile in the matching space of your restaurant
+          board.
+        * Place your workers, assistants, and money near your board.
+      * Select a 1st player and give them the 1st player token.
+  - name: Gameplay
+    text: |
+      The game is played in continuous turns until someone gains the 3rd of the
+      5 stars.  Play continues until everyone has had equal turns.
+
+      * On your turn, you are going to place a worker at one of the locations
+        and take it's action with the following rules:
+        * If you place your worker on a space with another worker that worker
+          is "kicked out".  The player who owns the kicked worker places
+          it on any **open** kick out space for that location.  They may
+          immediately gain the bonus of that kick out space.
+        * If all your workers are on the board, take a worker already on the
+          board and place it on a **different** space.
+          * **You can never place your worker on the same location you just
+            removed it from**, whether it's the action space or a kick out
+            space.
+          * **You can never place your worker on a location that already has
+            one of your workers on it**, whether it's on the action space or
+            a kick out space.
+        * **If you are playing with the 2 player variant**:
+          * You may leave an assistant on an **action space** (not a kick out
+            space) that you are vacating with one of your workers.
+            * This assistant can come from your supply or somewhere else on
+              the board.
+          * Similar to placing a worker on a space occupied by another worker,
+            if there is an assistant, it is kicked out and placed on a kick
+            out space similar to a worker.
+          * **If you kick out your own assistant**, either remove it from the
+            board or move it to the space you took that worker from.  It does
+            **not** go to a kick out space.
+          * You can have 1 of your workers and multiple assistants in the same
+            location.
+          * If a kick out occurs when no spaces are available, the player doing
+            the kicking removes one of their assistants from a kick out space.
+            If they don't have any of their assistants there, they choose an
+            opponents assistant and return it to the player's supply.
+            * Workers on kick out spaces **cannot** be replaced by assistants.
+    sections:
+      - name: "Location #1: Musician Market"
+        text: |
