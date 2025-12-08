@@ -2,7 +2,7 @@ name: "House of Fado"
 description: "Play some fado music to attract customers"
 text_type: markdown
 credits: "Jay Deiman"
-enabled: false
+enabled: true
 version: 1.0
 bgg_id: 373667
 yt_videos:
@@ -16,13 +16,13 @@ sections:
     text: |
       * Place the board.
       * Setup the musician tiles:
-        * Select the musician tiles for your player count.  e.g. Return the 
-          tiles with 3+ and 4 on the back to the box.
-        * **If playing with the promo musicians**, mix the promo musicians
-          into each of their types, then randomly remove 1 of each type and
-          put it in the box.
-        * Place the remaining tiles face up on the board, according to their
-          type.
+          * Select the musician tiles for your player count.  e.g. Return the 
+            tiles with 3+ and 4 on the back to the box.
+          * **If playing with the promo musicians**, mix the promo musicians
+            into each of their types, then randomly remove 1 of each type and
+            put it in the box.
+          * Place the remaining tiles face up on the board, according to their
+            type.
       * Sort the notation tiles according to their notes and place them on
         the matching spaces on the board.
       * If you are playing with 2 players, return all the fado tiles *without*
@@ -31,30 +31,30 @@ sections:
         the stack face down and flip the top tile over and place it face up
         on the stack.
       * Create the customer bag based on player count:
-        * Put 2 gray, 3 black, and 4 brown customers **per player** in the bag.
-          Return any remaining customers to the box.
+          * Put 2 gray, 3 black, and 4 brown customers **per player** in the
+            bag.  Return any remaining customers to the box.
       * Place critics in their spaces based on player count and return any
         remaining critics to the box:
-        * **4 players**: 1 with each customer group
-        * **3 players**: 1 with the leftmost and rightmost customer groups
-        * **2 players**: 1 with the middle group of customers
+          * **4 players**: 1 with each customer group
+          * **3 players**: 1 with the leftmost and rightmost customer groups
+          * **2 players**: 1 with the middle group of customers
       * Place the 5 stars on the board in their matching spots.
       * Shuffle the billboard scoring tiles and place 1 on each of the 3 spaces
         on the board.
-        * **In a 3-4 player game**, use the side showing 3 scores.
-        * **In a 2 player game**, use the side showing 2 scores.
+          * **In a 3-4 player game**, use the side showing 3 scores.
+          * **In a 2 player game**, use the side showing 2 scores.
       * Place the dice near the board.
       * Place the money near the board.
       * Each player:
-        * Take 1 restaurant board, 8 cubes, 1 disc, 1 decoration tile, 3
-          workers, 5 money, and 1 treble clef.  Colored pieces should match.
-            * **If playing with the 2 player variant**, take the 3 matching
-              assisstant meeples.
-        * Cover the 4 customer table (on the right) with the decoration tile.
-        * Place 1 cube on each of the spaces of the prestige track.
-        * Place the treble clef tile in the matching space of your restaurant
-          board.
-        * Place your workers, assistants, and money near your board.
+          * Take 1 restaurant board, 8 cubes, 1 disc, 1 decoration tile, 3
+            workers, 5 money, and 1 treble clef.  Colored pieces should match.
+              * **If playing with the 2 player variant**, take the 3 matching
+                assistant meeples.
+          * Cover the 4 customer table (on the right) with the decoration tile.
+          * Place 1 cube on each of the spaces of the prestige track.
+          * Place the treble clef tile in the matching space of your restaurant
+            board.
+          * Place your workers, assistants, and money near your board.
       * Select a 1st player and give them the 1st player token.
   - name: Gameplay
     text: |
@@ -63,36 +63,275 @@ sections:
 
       * On your turn, you are going to place a worker at one of the locations
         and take it's action with the following rules:
-        * If you place your worker on a space with another worker that worker
-          is "kicked out".  The player who owns the kicked worker places
-          it on any **open** kick out space for that location.  They may
-          immediately gain the bonus of that kick out space.
-        * If all your workers are on the board, take a worker already on the
-          board and place it on a **different** space.
-          * **You can never place your worker on the same location you just
-            removed it from**, whether it's the action space or a kick out
-            space.
-          * **You can never place your worker on a location that already has
-            one of your workers on it**, whether it's on the action space or
-            a kick out space.
-        * **If you are playing with the 2 player variant**:
-          * You may leave an assistant on an **action space** (not a kick out
-            space) that you are vacating with one of your workers.
-            * This assistant can come from your supply or somewhere else on
-              the board.
-          * Similar to placing a worker on a space occupied by another worker,
-            if there is an assistant, it is kicked out and placed on a kick
-            out space similar to a worker.
-          * **If you kick out your own assistant**, either remove it from the
-            board or move it to the space you took that worker from.  It does
-            **not** go to a kick out space.
-          * You can have 1 of your workers and multiple assistants in the same
-            location.
-          * If a kick out occurs when no spaces are available, the player doing
-            the kicking removes one of their assistants from a kick out space.
-            If they don't have any of their assistants there, they choose an
-            opponents assistant and return it to the player's supply.
-            * Workers on kick out spaces **cannot** be replaced by assistants.
+          * If you place your worker on a space with another worker that worker
+            is "kicked out".  The player who owns the kicked worker places
+            it on any **open** kick out space for that location.  They may
+            immediately gain the bonus of that kick out space.
+          * If all your workers are on the board, take a worker already on the
+            board and place it on a **different** space.
+              * **You can never place your worker on the same location you just
+                removed it from**, whether it's the action space or a kick out
+                space.
+              * **You can never place your worker on a location that already has
+                one of your workers on it**, whether it's on the action space or
+                a kick out space.
+          * **If you are playing with the 2 player variant**:
+              * You may leave an assistant on an **action space** (not a kick
+                out space) that you are vacating with one of your workers.
+                  * This assistant can come from your supply or somewhere else
+                    on the board.
+              * Similar to placing a worker on a space occupied by another
+                worker, if there is an assistant, it is kicked out and placed
+                on a kick out space similar to a worker.
+              * **If you kick out your own assistant**, either remove it from
+                the board or move it to the space you took that worker from.
+                It does **not** go to a kick out space.
+              * You can have 1 of your workers and multiple assistants in the same
+                location.
+              * If a kick out occurs when no spaces are available, the player
+                doing the kicking removes one of their assistants from a kick
+                out space.  If they don't have any of their assistants there,
+                they choose an opponents assistant and return it to the
+                player's supply.
+                  * Workers on kick out spaces **cannot** be replaced by
+                    assistants.
     sections:
       - name: "Location #1: Musician Market"
         text: |
+          * Choose up to 1 tile from the tiles on the left and up to 1 tile
+            from the tiles on right.
+              * If the tile does not have a die on it, place a 1 value die
+                on it.
+              * The cost to hire a musician is the cost printed on the board
+                above its type **plus** the cost for its fame level (also
+                printed in the upper left of your player board):
+                  * 1 fame: 1 money
+                  * 2 fame: 3 money
+                  * 3 fame: 6 money
+                  * 4 fame: 10 money
+                  * 5 fame: 15 money
+                  * 6 fame: **cannot be hired**
+          * Once hired, place the musician in the matching space on your player
+            board and take the note tile pictured in the lower left of that
+            tile. Place the note tile in its place on your player board.
+          * You may only have 1 musician of each type.  You **cannot** hire
+            a musician of a type you already have!
+          * Note that if you are playing with the promo musician tiles, they
+            start out with more than 1 fame. They also have benefits
+            that are not instant note tiles.
+              * João: When you close your restaurant, remove an additional cube
+                from the prestige track if you have a critic in your
+                restaurant.
+                  * You can use this the same turn that you dismiss this
+                    musician.
+              * Vital: When you close your restaurant, you can use up to 2
+                additional customers to upgrade your musicians' fame.  e.g. if
+                you have 2 customers in your restaurant, you can spend as if
+                you had 4, with 2 of them being a color of your choice.
+              * Marina: When you hire/contract Marina, immediately gain 2 money.
+                  * Note that you must pay the cost for Marina **before**
+                    gaining the money.
+
+          ## Kick out spaces
+          | Symbol | Effect |
+          | ------ | ------ |
+          | ![money](/static/img/house_of_fado/1_money.png) | Take 1 money |
+          | ![cust](/static/img/house_of_fado/customer.png) | Choose a customer from the group of customers to the left or right of the kick out space and place them in an unoccupied space **at your bar** in your restaurant |
+          | ![pay_1](/static/img/house_of_fado/pay_1_cust.png) | Pay 1 money to to take a customer from the groups to the left or right of the kick out space and place them in an unoccupied space **at your bar** in your restaurant |
+
+          * There are only 2 bar spaces so if they are occupied, you cannot
+            take a customer.
+          * You cannot take a critic via a kickout space.
+      - name: "Location #2: Street"
+        text: |
+          * When taking this action, you may either take customers **OR** a
+            critic, not both.
+          * If you choose to bring in customers:
+              * Choose up to 4 customers from the group on the left or right.
+                **You cannot take customers from both groups!**
+              * Place the chosen customers at a **single EMPTY table**.
+                  * You cannot split the customers between tables.
+                  * You can only take a number of customers equal to the max for
+                    that table (2, 3, or 4 if the rightmost table is unlocked).
+              * If there are 0 or 1 customers (not counting a critic) remaining
+                in **any** group in the street, refill that group back up to 4
+                customers (from the bag).
+                  * If the customer bag is empty and you need to draw more, put
+                    all the customers in the customer discard pile back in the
+                    bag and continue refilling.
+                  * Always refill groups from left to right.
+          * If you choose to bring in a critic, pay the cost indicated on
+            your prestige track.  Use the lowest cost shown based on the number
+            of cubes you've removed from the board.
+              * Cost:
+                  * 0-1 cubes removed: 3 money
+                  * 2-3 cubes removed: 2 money
+                  * 4-5 cubes removed: 1 money
+                  * 6+ cubes removed: 0 money
+              * If there are no critics in either group, you cannot take a
+                critic.
+              * **If you already have a critic in your restaurant, you cannot
+                take another critic**.
+              * The critic is placed alone at an empty table.
+
+          ## Kick out spaces
+          | Symbol | Effect |
+          | ------ | ------ |
+          | ![money](/static/img/house_of_fado/1_money.png) | Take 1 money |
+          | ![note_1](/static/img/house_of_fado/note_1.png) | Pay 1 money to take a note tile and place it in the matching space on your player board |
+          | ![note_2](/static/img/house_of_fado/note_2.png) | Pay 2 money to take a note tile and place it in the matching space on your player board |
+      - name: "Location #3: Rehearsal Room"
+        text: |
+          * When you take this action, you either score a fado tile or gain a
+            note tile.
+          * If you choose to score a fado tile:
+              * Return the matching note tiles from your player board back to
+                the supply stacks. You must have all matching notes depicted on
+                the fado tile.
+              * Place the fado tile on the painting on your player board.
+              * Score the depicted number of points on the tile.
+              * Immediately place the fado tile from the top of the stack into
+                the empty space and flip the next fado tile and place it on the
+                stack.
+              * **Note**: You **cannot** score the fado tile on top of the
+                stack.
+              * The 1st player to score 3 fado tiles gains the star in that
+                area.
+          * If you choose to gain a note tile, take a note tile and place it
+            in the matching spot on your player board.
+              * **Note**: You can have more than 1 of any particular note tile
+                on your player board.
+
+          ## Kick out spaces
+          | Symbol | Effect |
+          | ------ | ------ |
+          | ![money](/static/img/house_of_fado/2_money.png) | Take 2 money |
+          | ![inc_fame](/static/img/house_of_fado/inc_fame.png) | Increase the fame of 1 of your musicians on your player board by paying the cost of the next fame level. e.g. to increase from fame 3 to 4, you must pay 4 money. You cannot gain this benefit if you don't have enough money |
+      - name: "Location #4: Billboard"
+        text: |
+          * The location has 2 action spaces, with each allowing you to either
+            promote a musician or contract a musician.
+          * If you choose to promote a musician:
+              * Take a musician matching 1 of the 2 types above your action
+                space from your restaurant place them in the matching
+                billboard space.
+                  * **You can only promote a musician with at least 2 fame**.
+                  * If there is already a musician tile of that type in the
+                    space:
+                      * The musician you wish to promote must have a
+                        **higher** fame.
+                      * Return the tile you are displacing to the appropriate
+                    section of the musician market (keeping its existing fame).
+              * Take the leftmost prestige cube from your board and place it on
+                an empty space next to the musician you just placed.
+                  * **If you don't have any prestige cubes on your board, you
+                    cannot promote a musician**.
+              * Score points equal to the fame (die value) of the musician you
+                placed.
+          * If you choose to contract a musician:
+              * Choose a musician tile to the right or left of your action space
+                and pay an amount of money based on its fame as shown in the
+                table in the upper left of your player board.  e.g. pay 3 money
+                for a fame 2 musician.
+              * Place the musician in its matching space on your player board.
+              * Take the matching note tile on the musician.
+              * You **cannot** contract a fame 6 musician.
+              * You **cannot** contract a musician if you already have that
+                musician type in your restaurant.
+
+          ## Kick out spaces
+          | Symbol | Effect |
+          | ------ | ------ |
+          | ![money](/static/img/house_of_fado/2_money.png) | Take 2 money |
+          | ![note](/static/img/house_of_fado/note.png) | Take a note tile from the board and place it in the matching space on your player board |
+          | ![cust](/static/img/house_of_fado/customer.png) | Choose 1 customer from the left or right set of customers in relation to the kickout space. Place the customer in an unoccupied space in your bar.  You must have an open bar space to take this.  You cannot take a critic. |
+      - name: Restaurant Board
+        text: |
+          Your restaurant board has 1 action space, which only you can use.
+          This action allows you to close your restaurant.
+
+          ## Close your restaurant
+          1. For each customer at a table, you receive an amount of money as
+             shown above your prestige track.  e.g. if you have removed 3
+             cubes, you would get 2 money for each customer at a table.
+              * **You do not receive any money for critics**.
+              * **You do not receive any money for customers in your bar**.
+          2. You can now spend customers at tables **or** in the bar to
+             increase the fame of your musicians.
+              * You must spend a number of customers as indicated in the table
+                in the upper left of your player board to move between levels.
+                e.g. to increase a fame 4 singer, you would have to spend 3
+                customers in some combination of black and/or gray customers.
+                  * Portuguese guitar: gray or brown customers
+                  * Singer: gray or black customers
+                  * Classical guitar: gray or brown customers
+              * You may increase the fame of more than 1 musician.
+              * You may increase the fame of a musician more than once.
+              * Customers can only be used once to increase the fame of a
+                musician.
+          3. If a musician reaches fame 6:
+              * If they are the 1st musician of that type to reach 6:
+                  * Place them in the matching "star musician" space of the
+                    board and gain the star below the space.
+                  * Score 6 points.
+              * If they are not the 1st of that type, do **1** of the following:
+                  * Remove the musician from the game and score 6 points.
+                  * Leave the musician in your restaurant.
+          4. For each musician in your restaurant, you now decide to either
+             keep them or dismiss them.
+              * If you want to keep them, simply leave them in your restaurant.
+              * If you decide to dismiss them:
+                  * Return the tile to its appropriate area of the musician
+                    market.
+                  * Score points equal to their fame.
+          5. If you have a critic in your restaurant, remove the 2 leftmost
+             cubes from your prestige track (from the game) and return the
+             critic to 1 of the customer groups without a critic.
+          6. Remove all customers and place them in the customer discard pile.
+
+          ## Prestige track
+          The following occurs as cubes are removed from the prestige track.
+
+          * After the 2nd, 4th, and 6th are removed, the cost of bringing in
+            a critic is reduced.
+          * After the 3rd and 7th are removed, the money you receive for each
+            customer at a table increases.
+          * After the 5th is removed, remove the decoration tile and unlock
+            your 4 seat table.
+          * After the last cube is removed and you are the 1st to do so, gain
+            the star from the board next to the table in the lower right of
+            the game board.
+  - name: End of the Game
+    text: |
+      Once the 3rd star has been gained, complete the current round such that
+      all players have had equal turns.
+
+      ## Final Scoring
+      * Each musician in your restaurant scores points equal to its fame
+        value.
+      * Each player scores points based on the number of stars they've gained:
+          * 1 star: 10 points
+          * 2 stars: 15 points
+          * 3 stars: 21 points
+          * 4 stars: 28 points
+      * Score each specialty on the billboard using the billboard scoring
+        tile beneath it.
+          * The player with the most cubes next to the musician scores the
+            highest value of points and so forth for 2nd/3rd.
+              * If you do not have cubes next to the musician, you do not score
+                any points.
+              * If there is a tie, sum the positions and divide the number by
+                the number of tied players, rounded down.  Award that many
+                points to those tied players.
+      * Each player scores points based on the number of scored fado tiles
+        on their board.
+          * 1 tile: 3 points
+          * 2 tiles: 6 points
+          * 3 tiles: 10 points
+          * 4+ tiles: 15 points
+      * 1 point for every 5 money
+
+      The player with the most points wins.  If there is a tie, the player
+      with the most stars wins.  If still tied, the player who scored the
+      most fado tiles wins.  If still tied, the player with the most money
+      wins. If still tied, the players share the victory.
