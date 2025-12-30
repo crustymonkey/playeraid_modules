@@ -1,0 +1,281 @@
+name: "Unmatched Adventures: Teenage Mutant Ninja Turtles"
+description: "Give Shredder the smack-down, pizza-style"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: false
+version: 1.0
+bgg_id: 425276
+yt_videos:
+  - https://www.youtube.com/watch?v=9tZaEXkkc2s
+  - https://www.youtube.com/watch?v=C7P9Axq8w5Q
+expansions:
+sections:
+  - name: Setup
+    text: |
+      * Choose a villian and:
+          * Place the board with the chosen villian's side up.
+          * Place the threat marker on the 1st space.
+          * Shuffle the villian's action deck.
+          * Place the villian's mini on the "5" starting space.
+          * Set the villian's health to the value listed in its special setup
+            (below).
+          * Create a supply of tokens/cards per the special setup.
+          * Follow any additional steps in the special setup
+      * Choose a number of minions equal to the number of players, either
+        randomly or decide which to use.  Setup the minions:
+          * Shuffle the minion's action deck.
+          * Place the minion's token in any empty space adjacent to the villian.
+          * Set the minion's health to 10.
+          * Follow any special setup for the minion.
+      * Each player chooses a hero and:
+          * Sets their starting health to as noted on their character card.
+              * Note that sidekicks with no health dial have 1 health.
+          * Shuffles their action card deck, places it face down, and then
+            draws 5 cards as their starting hand.
+          * Place their mini on any empty starting (numbered) space.
+          * If they have sidekicks, place them in separate spaces in the
+            same zone as their character.
+              * If their character is in a space in multiple zones, their
+                sidekick(s) can be in any of the matching zones.
+              * If there are no available spaces in a matching zone, the
+                sidekick can be placed anywhere.
+          * Take the player order marker matching the starting space of their
+            hero (1-4).
+          * Gather the initiative cards matching the villian, minions, and
+            player order tokens being used.
+              * There may be special initiative cards listed in the
+                villian/minion special setup.
+          * Shuffle the completed initiative deck.
+    sections:
+      - name: "Special Setup: Shredder"
+        text: |
+          * Starting health:
+              * 1P: 14
+              * 2P: 21
+              * 3P: 28
+              * 4P: 35
+          * Supply: 24 foot soldier tokens
+          * Initiative cards:
+              * 1 Shredder turn card
+              * 1 To the Streets! card
+          * Extra setup steps:
+              * Shuffle the 5 borough tiles together with the "under threat"
+                side face up and stack them in the 1st space of the fallen
+                boroughs track.
+              * Place foot soldiers equal to the number of players in the
+                borough on the map that matches the tile at the top of the
+                stack.  Each token is placed, purple side up, in a different
+                circle in borough.
+      - name: "Special Setup: Krang"
+        text: |
+          * Starting health:
+              * 1P: 14
+              * 2P: 21
+              * 3P: 28
+              * 4P: 35
+          * Supply:
+              * 1 die of ultimate destruction
+              * 8 technodrome trap cards
+              * 4 dimension X markers
+          * Initiative cards:
+              * 1 Krang turn card
+              * 1 technodrome traps card
+          * Extra setup steps:
+              * Stack the dimension X markers in ascending order on top of the
+                "Krang Wins" message.
+              * Place the 3 doomsday machine tokens on the marked spaces with
+                the active side up.
+      - name: "Special Setup: Minions"
+        text: |
+          * **Baxter Stockman**: Create a supply of 8 mouser tokens.
+          * **Rat King**: Create a supply of 8 rat tokens.
+          * **Slash**: Remove all 5 fury cards from Slash's action card deck
+            and stack them face up nearby.
+  - name: Gameplay
+    text: |
+      The game is played over a series of rounds with players/villians/minions
+      taking turns according to when their initiative cards comes up. The
+      game continues until either the players defeat the villian or the
+      players lose.  The players can lose by the villian achieving its
+      objective or by all players being eliminated.
+
+      ## General Rules
+      * Heros and sidekicks controlled by the players are called "player
+        fighters" and opposing fighters are called "enemy fighters".
+      * The main enemy is called the "villian" and all other enemy fighters
+        are called "minions".
+      * Players are only eliminated when **all** of their fighters are
+        defeated.
+          * When a player is eliminated, removed their initiative card from
+            the initiative row, or later when it's flipped.
+          * Eliminated players are not affected by enemy attacks.
+      * If a fighter reaches 0 health, they are defeated.
+          * A defeated fighter cannot recover health.
+      * A fighter can never go above their starting health
+      * You can have more than 7 cards in your hand during your turn, but
+        **you must discard down to 7 cards at the end of your turn**.
+
+      ## The Initiative Deck
+      At the start of each turn, reveal the top card of the intiative deck
+      and resolve its effects.
+
+      * Some initiative cards resolve when revealed and some have effects that
+        resolve at the end of the round.
+      * Resolve any **RIGHT NOW** effects immediately.  This is usually a
+        player or enemy taking a turn.
+      * After all the "right now" effects have been resolved, draw the next
+        card from the initiative deck and place it the right of previously
+        drawn cards (creating the "inititiative row").
+    sections:
+      - name: Player Turns
+        text: |
+          On your turn, you **must** take **2** actions.  The possible actions
+          are:
+
+          * Maneuver
+              1. Draw the top card of your deck and add it to your hand. **You
+                 must do this!**
+                  * If you cannot draw a card, **each of your fighters
+                    immediately takes 2 damage** for each card you cannot draw.
+              2. Move your fighters (optional).
+                  * Your character card lists your move value.
+                  * You may move each of your characters, 1 at a time, up to
+                    your move value.
+                      * **Before moving**, you may choose to boost your
+                        movement by discarding 1 card from your hand to add
+                        that cards boost value to your move value.
+                          * Cards that would no longer be otherwise playable
+                            can be used for boosting.
+                      * Movement must be through adjacent spaces.
+                      * You can move through friendly fighters.
+                      * You must end the movement on an empty space.
+                      * You **cannot** move your fighters through spaces
+                        with opposing fighters.
+                      * The order in which you move your fighters is up to you.
+                      * You do not have to move all of your fighters.
+                  * If an effect allows you to move opponent fighters, all
+                    the same movement rules must be followed (from the
+                    opponent's perspective).
+          * Scheme (⚡)
+              * Choose a scheme card (⚡) and declare which (undefeated)
+                fighter is resolving it and play it face up.
+              * Resolve the card's effects and place it in your discard pile.
+          * Attack
+              1. Declare your target
+                  * Any fighter may use a melee attack on an adjacent space,
+                    regardless of the zones.
+                  * Ranged fighters may attack any fighter in the same zone
+                    as the attacker (don't have to be adjacent).
+              2. Choose and reveal
+                  1. Choose an attack (or versatile) card from your hand play
+                    it face down in front of you.
+                      * Your attacking fighter **must** be able to use this
+                        card (their name or "any" on it).
+                  2. The defender **may** choose a defense (or versatile) card
+                     from their hand and play it face down.
+                      * Your defender **must** be able to use this card.
+                  3. Reveal both cards at the same time and resolve them in the
+                     following order.
+                      * **Immediately**: Resolve any of these effects 1st.
+                        They will often cancel other effects.
+                      * **During combat**: Resolve these next.  These will
+                        often change attack/defense values.
+                      * **Apply combat damage**: The attacker deals damage
+                        equal to the value of their played attack card after
+                        subtracting the defense value (if any) on the
+                        defender's card.
+                          * Note: A defender never deals damage to the
+                            attacker, even if the def. value is higher.
+                      * **Additional effects**: Some effects happen "after
+                        attacking" and occur as the last step after the
+                        attack is fully resolved.
+                      * **After combat**: Resolve any of these card effects.
+                        These will often move fighters or draw cards.
+                      * **Cleanup**: Place all played action cards in their
+                        discard piles.
+                      * Other rules:
+                          * **If 2 effects would ever resolve at the same time,
+                            the defender's effect resolves 1st**.
+                          * If a fighter is defeated during the combat, any
+                            effects on their card still resolve.
+                          * Card effects are mandatory unless they include the
+                            word "may".
+                          * If something refers to a card's "printed value",
+                            that is only the value on the card with no
+                            modifiers.
+                          * If an effect "ignores" a card's value, the value
+                            is always 0 when calculating combat damage,
+                            regardless of any modifiers.
+                          * Resolve as much of any effect as you can if it
+                            cannot be fully resolved.
+                          * If an effect is canceled, do not resolve it.
+                  4. Winning the comboat.
+                      * The attacker won the combat it they dealt at least
+                        1 **combat** damage (other effects do not count).
+                      * The defender wins if they took 0 **combat** damage.
+      - name: Enemy Turns
+        text: |
+          Enemies will attempt to make **1** attack (not 2 turns, like players)
+          on a player fighter.
+
+          ## General Rules
+          * Effects that specifically refer to "heroes" or "sidekicks" do
+            **not** affect villians or minions.
+          * All enemy action cards are versatile and can be used for attack
+            or defense.  Note that they have separate attack and defense
+            values.
+          * Most of the enemy card effects are also versatile and are resolved
+            when played as attack or defense.
+              * If the attack and defense values are split into 2 different
+                boxes, the effect only resolves when the corresponding value
+                is used.
+          * Enemies do not have a hand of cards.
+              * If any effect would reveal (or look at) an enemy's hand,
+                instead look at the top card of the enemy deck.
+              * If an enemy is forced to discard cards, put that many cards
+                from their deck into their discard.
+
+          ## Taking an Enemy Turn
+          An enemy will determine a target, move to reach the target (if
+          necessary), then makes **1** attack on its target.
+
+          1. Determining a target
+              1. If the fighter is adjacent to 1 player fighter, it attacks
+                 them. If it is adjacent to more than 1 player fighter, the
+                 players choose who the enemy attacks.
+              2. If the enemy can move adjacent to a player fighter in its
+                 movement range, it moves to them.  Again, players decide
+                 who the enemy moves to if there is a tie.
+              3. If the enemy cannot move to be adjacent to a player fighter,
+                 it does **not** move or attack.  Instead, **advance the
+                 threat marker by 1 space**.
+          2. Moving
+              * The move value for the enemy is its initiative card.
+              * Enemies may move through other enemy fighters.
+              * Enemies always take the shortest route to a destination.
+                  * If there are multiple shortest routes, the players choose
+                    which route.
+              * If an effect places an enemy in a specific space or has them
+                swap spaces, this does not depend on the move value.
+                  * When moving like this, the enemy does not move through
+                    any spaces other than their destination.
+                  * If there are multiple spaces to move to or enemies to
+                    swap with, players choose.
+                  * If all spaces the enemy could move to are occupied,
+                    the enemy stays in their current space.
+          3. Enemy combat
+              * 
+      - name: End of Round
+        text: |
+          * After the last card from the initiative deck has been resolved and
+            all fighters have taken their turns, resolve all "end of round"
+            effects on the initiative cards from left to right.
+          * Shuffle the initiative cards, place them face down, and start
+            the next round.
+      - name: End of Game
+        text: |
+          * Players immediately win if they defeat the villian by reducing
+            his health to 0.
+          * Players immediately lose if the villian achieves its objective
+            4 times.
+          * Players immediately lose if all players are eliminated.
