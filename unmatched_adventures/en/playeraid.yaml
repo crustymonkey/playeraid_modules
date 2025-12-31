@@ -12,19 +12,19 @@ expansions:
 sections:
   - name: Setup
     text: |
-      * Choose a villian and:
-          * Place the board with the chosen villian's side up.
+      * Choose a villain and:
+          * Place the board with the chosen villain's side up.
           * Place the threat marker on the 1st space.
-          * Shuffle the villian's action deck.
-          * Place the villian's mini on the "5" starting space.
-          * Set the villian's health to the value listed in its special setup
+          * Shuffle the villain's action deck.
+          * Place the villain's mini on the "5" starting space.
+          * Set the villain's health to the value listed in its special setup
             (below).
           * Create a supply of tokens/cards per the special setup.
           * Follow any additional steps in the special setup
       * Choose a number of minions equal to the number of players, either
         randomly or decide which to use.  Setup the minions:
           * Shuffle the minion's action deck.
-          * Place the minion's token in any empty space adjacent to the villian.
+          * Place the minion's token in any empty space adjacent to the villain.
           * Set the minion's health to 10.
           * Follow any special setup for the minion.
       * Each player chooses a hero and:
@@ -41,11 +41,13 @@ sections:
                 sidekick can be placed anywhere.
           * Take the player order marker matching the starting space of their
             hero (1-4).
-          * Gather the initiative cards matching the villian, minions, and
+          * Gather the initiative cards matching the villain, minions, and
             player order tokens being used.
               * There may be special initiative cards listed in the
-                villian/minion special setup.
+                villain/minion special setup.
           * Shuffle the completed initiative deck.
+      * If playing with Allies & Henchman, see the [setup
+        instructions](#allies) for that.
     sections:
       - name: "Special Setup: Shredder"
         text: |
@@ -93,16 +95,16 @@ sections:
             and stack them face up nearby.
   - name: Gameplay
     text: |
-      The game is played over a series of rounds with players/villians/minions
+      The game is played over a series of rounds with players/villains/minions
       taking turns according to when their initiative cards comes up. The
-      game continues until either the players defeat the villian or the
-      players lose.  The players can lose by the villian achieving its
+      game continues until either the players defeat the villain or the
+      players lose.  The players can lose by the villain achieving its
       objective or by all players being eliminated.
 
       ## General Rules
       * Heros and sidekicks controlled by the players are called "player
         fighters" and opposing fighters are called "enemy fighters".
-      * The main enemy is called the "villian" and all other enemy fighters
+      * The main enemy is called the "villain" and all other enemy fighters
         are called "minions".
       * Players are only eliminated when **all** of their fighters are
         defeated.
@@ -116,7 +118,7 @@ sections:
         **you must discard down to 7 cards at the end of your turn**.
 
       ## The Initiative Deck
-      At the start of each turn, reveal the top card of the intiative deck
+      At the start of each turn, reveal the top card of the initiative deck
       and resolve its effects.
 
       * Some initiative cards resolve when revealed and some have effects that
@@ -125,10 +127,10 @@ sections:
         player or enemy taking a turn.
       * After all the "right now" effects have been resolved, draw the next
         card from the initiative deck and place it the right of previously
-        drawn cards (creating the "inititiative row").
+        drawn cards (creating the "initiative row").
 
       ## The Threat Track
-      * At the end of each round, the villian advances the threat marker as
+      * At the end of each round, the villain advances the threat marker as
         shown on its initiative card.
       * Advance the threat marker 1 space if an enemy cannot reach and
         attack a target.
@@ -143,7 +145,7 @@ sections:
           On your turn, you **must** take **2** actions.  The possible actions
           are:
 
-          * Maneuver
+          * **Maneuver**
               1. Draw the top card of your deck and add it to your hand. **You
                  must do this!**
                   * If you cannot draw a card, **each of your fighters
@@ -167,11 +169,12 @@ sections:
                   * If an effect allows you to move opponent fighters, all
                     the same movement rules must be followed (from the
                     opponent's perspective).
-          * Scheme (⚡)
+          * **Scheme** (⚡)
               * Choose a scheme card (⚡) and declare which (undefeated)
                 fighter is resolving it and play it face up.
               * Resolve the card's effects and place it in your discard pile.
-          * Attack
+          * **Attack** (this covers the general rules of play, with callouts for
+            Unmatched Adventures (UMA))
               1. Declare your target
                   * Any fighter may use a melee attack on an adjacent space,
                     regardless of the zones.
@@ -183,7 +186,7 @@ sections:
                       * Your attacking fighter **must** be able to use this
                         card (their name or "any" on it).
                   2. The defender **may** choose a defense (or versatile) card
-                     from their hand and play it face down.  For UMA, you
+                     from their hand and play it face down.  **For UMA**, you
                      always draw the top card of their deck and use its
                      defense.
                       * Your defender **must** be able to use this card.
@@ -222,7 +225,7 @@ sections:
                           * Resolve as much of any effect as you can if it
                             cannot be fully resolved.
                           * If an effect is canceled, do not resolve it.
-                  4. Winning the comboat.
+                  4. Winning the combat.
                       * The attacker won the combat it they dealt at least
                         1 **combat** damage (other effects do not count).
                       * The defender wins if they took 0 **combat** damage.
@@ -233,7 +236,7 @@ sections:
 
           ## General Rules
           * Effects that specifically refer to "heroes" or "sidekicks" do
-            **not** affect villians or minions.
+            **not** affect villains or minions.
           * All enemy action cards are versatile and can be used for attack
             or defense.  Note that they have separate attack and defense
             values.
@@ -317,7 +320,23 @@ sections:
           * **Choosing an opponent**: Enemies are treated as being played by
             an opponent.  However, enemies cannot be "chosen".  Ignore any
             effect that says "choose an opponent".
-          * **Enemy decisions**: 
+          * **Enemy decisions**: Enemies cannot make decisions.
+              * If there is a "may" associated with something, the enemy will
+                not do it.
+              * If there is an "up to X times", the enemy will do it 0 times.
+              * If an effect moves an enemy to more than 1 possible space,
+                the players choose where to place them.
+              * If an effect would have the enemy choose between 2 or more
+                options, the enemy refuses.
+          * **Printed value**: The printed value of a card in an enemy deck
+            is its attack value.
+          * **Small fighters**: Enemies do not attack small fighters.  They
+            ignore small fighters in target determination.
+          * **Drawing cards**: If the enemy is to draw cards, shuffle that many
+            cards from the top of the discard pile back into its deck.
+              * Enemies cannot become exhausted.
+          * **Returning to hand**: If an effect returns a card to the enemy's
+            hand, put that card back on top of their deck.
       - name: End of Round
         text: |
           * After the last card from the initiative deck has been resolved and
@@ -327,8 +346,133 @@ sections:
             the next round.
       - name: End of Game
         text: |
-          * Players immediately win if they defeat the villian by reducing
+          * Players immediately win if they defeat the villain by reducing
             his health to 0.
-          * Players immediately lose if the villian achieves its objective
+          * Players immediately lose if the villain achieves its objective
             4 times.
           * Players immediately lose if all players are eliminated.
+  - name: "Special Rules: Shredder"
+    text: |
+      * At the end of each round, Shredder's initiative card advances the
+        threat marker 1 space + 1 space for each borough where there is at
+        least 1 foot soldier.
+      * Each time the threat marker reaches the end of the track, the top
+        borough on the stack becomes "fallen".
+          * **If any 4 boroughs fall, Shredder wins**.
+      * When a borough falls:
+          1. Shift the borough stack 1 space to the right and flip the top
+             tile into the vacated space.
+          2. Flip all foot soldiers to the "entrenched" (red) side in that
+             borough.
+          3. Deploy "patrolling" (purple side) foot soldiers equal to the
+             number of players in the borough that is now under threat (top
+             of the stack).
+
+      ## Foot soldiers
+      * They only occupy the circles matching their symbol.
+      * There can only be 1 per space.
+      * "Entrenched" foot soldiers (in fallen boroughs) will cause 1 damage
+        to any player fighter moving through them, even if they are moved due
+        to an effect.
+      * When deploying foot soldiers, place that many in empty spaces of
+        the indicated borough.
+          * If the borough is fallen, place them with the "entrenched" (red)
+            side up, otherwise "patrolling" (purple) side up.
+          * If the effect doesn't specify where to place them, the players
+            choose.
+          * If all spaces are in use when foot soldiers would be deployed,
+            instead deploy them in the borough with the next highest starting
+            space number.
+      * When a player uses a maneuver action, they may choose **1** of their
+        fighters to remove foot soldiers.  Each time the fighter moves over
+        a *"patrolling"* (purple) foot soldier, remove that foot soldier.
+          * Foot soldiers cannot be removed due to other movement effects. It
+            **must** be due to a maneuver action.
+  - name: "Special Rules: Krang"
+    text: |
+      * At the end of each round, Krang's initiative card advances the threat
+        marker 1 space + 1 space for each doomsday machine on its active side.
+      * Each time the threat marker reaches the end of the track, place the
+        top dimension X marker on the next numbered space.
+          * All areas underneath the markers are in dimension X, while
+            areas to the right are in our world.
+          * Players and enemy fighters may move in and out of dimension X.
+          * Some of Krang's effects are stronger in dimension X.
+          * **If dimension X expands 4 times, the players lose**.
+      * Each of Krang's doomsday machines starts on the active side (check
+        mark).
+      * To "deactivate" a doomsday machine, you must end a maneuver action
+        with 1 of your fighters adjacent to it and discard 1 card from your
+        hand.
+          * You can only deactivate **1** machine per maneuver action.
+          * You must have a fighter adjacent to the machine after all movement
+            is finished (it doesn't have to be a fighter you moved).
+          * You cannot deactivate a machine when using other movement effects.
+          * The yellow wires show which spaces the machine is adjacent to.
+      * When the technodrome traps initiative card is revealed, reveal the
+        top card of the traps deck and roll the "die of ultimate destruction".
+        Resolve the corresponding effect on the card.
+          * A roll of "X" means there is no effect.
+          * After resolving the trap, place it in a discard pile for the traps
+            deck. If the deck runs out, shuffle the discard to form a new deck.
+          * Before resolving the die effect, any player can discard a card
+            from their hand to reroll it. This can be done any number of times.
+      * The threat level is the highest numbered space with a dimension X
+        marker.
+  - name: "Special Rules: Minions"
+    text: |
+      * **Bebop & Rocksteady**
+          * They are considered to be a single fighter.
+          * They will move toward the villain when apart.
+      * **Baxter Stockman**
+          * He has 1 big attack that scales with the size of the target's
+            discard pile.
+          * When a player fighter enters a space with a mouser token, the
+            player must discard the top card of their deck.
+              * This happens when moving through the space.
+              * This can happen when moving by some effect.
+      * **Wingnut**
+          * He moves himself and other fighters often.
+      * **Leatherhead**
+          * He will advance the threat track and he's hard to take down.
+      * **Slash**
+          * At the end of each round, his initiative card adds 1 fury card
+            from his supply to his discard pile.
+              * Other action cards will gain bonuses based on the number of
+                fury cards in the discard pile.
+          * When Slash plays the deception card, any fury cards in the discard
+            are also shuffled into his deck.
+              * When a fury card would be played, immediately discard it and
+                play the next card from his deck.
+      * **Rat King**
+          * While a player fighter is in a space with a rat token, their
+            defense value is reduced by 2 (to a minimum of 0).
+  - name: "Allies & Henchmen"
+    id: allies
+    text: |
+      These are new characters that only appear in the initiative deck.
+
+      ## Setup
+      * Separately shuffle the ally and henchman decks and place them near
+        the board.
+      * Flip the top card of the ally deck face up.
+      * When creating the initiative deck, add 2 random face-down henchman
+        cards + the "friends in odd places" initiative card.
+
+      ## Recruitment and Effects
+      * When resolving the end of round effects on the "friends in odd places"
+        initiative card, do the following:
+          * Check if there is a player fighter in the numbered starting space
+            matching the face up ally card.  If so, add that ally to the
+            initiative deck (for the next round).
+          * If no one is in the space, discard the ally and add a face down
+            henchman to the initiative deck.
+          * Flip the next ally on top of the deck face up.
+      * **Be sure to include any new ally/henchmen cards when shuffling the
+        initiative deck for the next round**.
+      * When an ally/henchman is revealed in the initiative row, resolve it's
+        "right now" effect.
+      * When resolving the "end of round" effect on an ally/henchman, check
+        if there is a card of the opposite type to the right of it.  If so,
+        permanently remove **both** cards from the initiative deck.
+          * Do **not** resolve the end of round effect on the 2nd card.
