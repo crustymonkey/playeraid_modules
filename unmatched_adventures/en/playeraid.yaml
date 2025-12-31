@@ -126,8 +126,19 @@ sections:
       * After all the "right now" effects have been resolved, draw the next
         card from the initiative deck and place it the right of previously
         drawn cards (creating the "inititiative row").
+
+      ## The Threat Track
+      * At the end of each round, the villian advances the threat marker as
+        shown on its initiative card.
+      * Advance the threat marker 1 space if an enemy cannot reach and
+        attack a target.
+      * When the threat marker reaches the end of the track, **ignore any
+        additional spaces it would move** and immediately resolve the
+        objective's effect.
+          * If the game doesn't end, return it to the 1st space on the track.
     sections:
       - name: Player Turns
+        id: player_turns
         text: |
           On your turn, you **must** take **2** actions.  The possible actions
           are:
@@ -172,7 +183,9 @@ sections:
                       * Your attacking fighter **must** be able to use this
                         card (their name or "any" on it).
                   2. The defender **may** choose a defense (or versatile) card
-                     from their hand and play it face down.
+                     from their hand and play it face down.  For UMA, you
+                     always draw the top card of their deck and use its
+                     defense.
                       * Your defender **must** be able to use this card.
                   3. Reveal both cards at the same time and resolve them in the
                      following order.
@@ -234,6 +247,27 @@ sections:
                 instead look at the top card of the enemy deck.
               * If an enemy is forced to discard cards, put that many cards
                 from their deck into their discard.
+          * Enemy ability tokens:
+              * Generally, each space is limited to **1 ability token of
+                each type**.  If a duplicate would be placed, nothing happens.
+              * If there are multiple valid placement spaces, players choose.
+              * If there are no tokens left in the supply to place, nothing
+                happens.
+              * Ability tokens are **not** fighters.  They cannot be attacked
+                and effects that refer to "fighters" or "minions" do not apply
+                to these.
+              * The tokens can only be removed according to their specific
+                rules.
+          * Deception cards:
+              * Each enemy has a deception card in its deck.
+              * Whenever this card is placed in its discard pile, shuffle the
+                discard pile back into the deck.
+              * This effect **always** resolves, even when placed in the
+                discard pile due to another effect.  It cannot be canceled
+                or prevented.
+              * If this is discarded in the middle of combat, **immediately**
+                shuffle the enemy deck, but do **not** shuffle the card the
+                enemy is using in combat.
 
           ## Taking an Enemy Turn
           An enemy will determine a target, move to reach the target (if
@@ -264,7 +298,26 @@ sections:
                   * If all spaces the enemy could move to are occupied,
                     the enemy stays in their current space.
           3. Enemy combat
-              * 
+              * When an enemy resolves combat (as an attacker or defender),
+                they always draw the top card of their deck after the player
+                selects and plays a face down card as normal (optional for
+                defense).
+              * Resolve the attack value and all effects in a similar manner
+                to attacks in [player turns](#player_turns).
+                  * Note that some effects are "boxed" and only apply to either
+                    attack or defense.
+              * After the cards are resolved, add the card to the enemy's
+                discard pile.
+              * When an enemy is reduced to 0 health, it is defeated.  Remove
+                all of its components from the game.
+                  * Remove the initiative card either immediately (if face up)
+                    or later when it is revealed.
+      - name: Using Other Unmatched Fighters
+        text: |
+          * **Choosing an opponent**: Enemies are treated as being played by
+            an opponent.  However, enemies cannot be "chosen".  Ignore any
+            effect that says "choose an opponent".
+          * **Enemy decisions**: 
       - name: End of Round
         text: |
           * After the last card from the initiative deck has been resolved and
