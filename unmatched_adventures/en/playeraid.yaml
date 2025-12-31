@@ -2,7 +2,7 @@ name: "Unmatched Adventures: Teenage Mutant Ninja Turtles"
 description: "Give Shredder the smack-down, pizza-style"
 text_type: markdown
 credits: "Jay Deiman"
-enabled: false
+enabled: true
 version: 1.0
 bgg_id: 425276
 yt_videos:
@@ -187,7 +187,7 @@ sections:
                         card (their name or "any" on it).
                   2. The defender **may** choose a defense (or versatile) card
                      from their hand and play it face down.  **For UMA**, you
-                     always draw the top card of their deck and use its
+                     always draw the top card of the enemy deck and use its
                      defense.
                       * Your defender **must** be able to use this card.
                   3. Reveal both cards at the same time and resolve them in the
@@ -225,10 +225,10 @@ sections:
                           * Resolve as much of any effect as you can if it
                             cannot be fully resolved.
                           * If an effect is canceled, do not resolve it.
-                  4. Winning the combat.
-                      * The attacker won the combat it they dealt at least
-                        1 **combat** damage (other effects do not count).
-                      * The defender wins if they took 0 **combat** damage.
+              3. Winning the combat.
+                  * The attacker won the combat it they dealt at least
+                    1 **combat** damage (other effects do not count).
+                  * The defender wins if they took 0 **combat** damage.
       - name: Enemy Turns
         text: |
           Enemies will attempt to make **1** attack (not 2 turns, like players)
