@@ -3,7 +3,7 @@ description: "Jump in your sub and traverse the depths"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.0
+version: 1.1
 bgg_id: 367966
 yt_videos:
   - https://www.youtube.com/watch?v=2lgZIyxYUIQ&pp=ygUdZW5kZWF2b3IgZGVlcCBzZWEgaG93IHRvIHBsYXk%3D
@@ -53,7 +53,7 @@ sections:
           This phase is broken into 3 simple parts that each player completes
           before moving to the next player.
 
-          ## Recruitment a Specialist
+          ## Recruit a Specialist
           * Chose 1 specialist that you can recruit based on your level
             on the reputation track.
               * The specialist must match your highest available tier or below.
