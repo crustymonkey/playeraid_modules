@@ -1,7 +1,7 @@
 name: "Cosmic Encounter"
 description: "Colonize the galaxy"
 credits: "Jay Deiman"
-enabled: false
+enabled: true
 version: 1.0
 yt_videos:
   - PMSHGLjLbbA
@@ -42,10 +42,16 @@ sections:
     sections:
       - name: "1. Regroup"
         text: |
-          * Retrieve 1 ship from the Warp and place it on any of your
+          * Retrieve 1 ship from the warp and place it on any of your
             colonies (home or foreign).
               * If you don't have any colonies, place it directly on the gate.
-          * If you have no ships in the Warp, skip this step.
+          * If you have no ships in the warp, skip this step.
+          * If you have no encounter cards (attack, negotiate, or morph) at
+            the start of your turn, you must play or discard cards in hand,
+            then draw 8 cards.
+              * If run out of encounter cards later in your turn, your
+                turn ends immediately. If this happens, return all ships
+                from the warp back to your planets (allies do the same).
       - name: "2. Destiny"
         text: |
           * Draw the top card of the Destiny deck. The color shown
@@ -76,29 +82,35 @@ sections:
                 only 1 foreign colony can be targeted (if multiple).
       - name: "4. Alliance"
         text: |
-          * The offense may invite any or all other players (except
-            the defense) to ally with the offense.
-          * The defense may invite any or all other players (except
-            the offense) to ally with the defense.
-          * Invited players may accept or decline. They are never
-            forced to ally.
-          * Allied players send 1 to 4 ships from their colonies to
-            the encounter:
+          1. The offense may invite any or all other players (except
+             the defense) to ally with the offense.
+          2. The defense may invite any or all other players (except
+             the offense) to ally with the defense.
+          3. Invited players may accept or decline in order starting with the
+             left of the offense.  They are never forced to ally.
+              * Players not invited **cannot** ally.
+          4. Allied players send 1-4 ships from their colonies to
+             the encounter:
               * Offensive allies place ships on the hyperspace gate.
-              * Defensive allies place ships on the target planet.
-          * Players not invited **cannot** ally.
+              * Defensive allies place ships **next to** the target planet.
+              * The ships are committed **before** advancing to the next
+                potential ally.
       - name: "5. Planning"
         text: |
-          * The offense and defense each select 1 Encounter card from
+          * The offense and defense each select 1 encounter card from
             their hand and place it face down.
-          * Encounter cards are either **Attack cards** (numbered 00-40)
-            or **Negotiate cards**.
-          * If a player has no Encounter cards in hand, they must
-            discard their hand and draw a new hand of 8 cards from the
-            Cosmic deck.
+              * If the defense has no encounter cards, they can reveal
+                their hand, discard it, and draw a new 8 card hand **before**
+                selecting their encounter card.
+              * The offensive player **must** have an encounter card. If not,
+                their turn ends immediately.
       - name: "6. Reveal"
         text: |
           * Both players simultaneously reveal their Encounter cards.
+          * After the reveal, reinforcement cards may be played by the
+            offense or defense, including allies.
+              * People can keep playing reinforcements in response to
+                other reinforcements until everyone passes
           * Resolve based on what was played:
         sections:
           - name: Attack vs. Attack
@@ -108,43 +120,47 @@ sections:
               * The higher total wins. In a tie, the defense wins.
               * **Losing side**: All ships (including allies' ships)
                 go to the Warp.
-              * **Winning offense**: The offense and offensive allies
+              * **Offense wins**: The offense and offensive allies
                 land their ships on the target planet, establishing
                 or reinforcing a colony.
-              * **Winning defense**: Ships remain where they are.
+                  * If this is the 1st win by the offense, they may attack
+                    again.
+              * **Defense wins**: Ships remain where they are.
                 Defensive allies return their ships to their colonies.
-              * **Offensive allies** that win gain a foreign colony
-                on the target planet.
               * **Defensive allies** that win gain a Defender Reward:
                 draw 1 card from the deck **or** retrieve 1 ship
-                from the Warp for each ship committed.
+                from the warp for each ship committed. These 2 options may be
+                combined.
           - name: Negotiate vs. Negotiate
             text: |
               * All allies on both sides return their ships to their
-                colonies.
+                colonies. They receive nothing.
               * The offense and defense have 1 minute to make a deal.
                 Deals may include:
                   * Trading cards from hand.
                   * Allowing the other player to establish a colony
                     on one of your planets.
                   * Any combination of the above.
+                  * A card or a base **must** change hands for a deal to be
+                    successful.  You **cannot just exchange nothing**.
               * If no deal is reached, both players lose 3 ships
-                of their choice to the Warp.
+                of their choice to the warp.
           - name: Attack vs. Negotiate
             text: |
-              * The player who played the Attack card wins.
-              * The player who played the Negotiate card loses all
-                their ships (and allies' ships) to the Warp.
-              * However, the losing player (who played Negotiate)
+              * The player who played the attack card wins.
+              * The player who played the negotiate card loses all
+                their ships (and allies' ships) to the warp.
+              * However, the losing player (who played negotiate)
                 collects compensation: they draw cards at random
                 from the winning player's hand equal to the number
-                of ships they lost to the Warp (their own ships
+                of ships they lost to the warp (their own ships
                 only, not allied ships).
       - name: "7. Resolution"
         text: |
-          * Discard played Encounter cards to the discard pile.
+          * Discard played encounter and reinforcement cards to the discard
+            pile.
           * If the offense won or made a successful deal, they may
-            have a **second encounter**. Return to the Destiny step.
+            have a **second encounter**. Return to the destiny step.
           * A player may have a maximum of 2 encounters per turn.
           * If the offense lost or failed to make a deal, their turn
             ends and play passes clockwise.
@@ -155,38 +171,39 @@ sections:
       - name: Attack Cards
         text: |
           * Numbered from 00 to 40.
-          * Played during the Planning phase as your Encounter card.
-          * Your total = Attack card value + number of your ships in
+          * Played during the planning phase as your encounter card.
+          * Your total = attack card value + number of your ships in
             the encounter.
       - name: Negotiate Cards
         text: |
-          * Played during the Planning phase as your Encounter card.
-          * If both players play Negotiate, they attempt to make a deal.
-          * If only you play Negotiate, you lose the encounter but
+          * Played during the planning phase as your encounter card.
+          * If both players play negotiate, they attempt to make a deal.
+          * If only you play negotiate, you lose the encounter but
             gain compensation (random cards from the winner's hand equal
             to your ships lost).
       - name: Reinforcement Cards
         text: |
-          * Played after Encounter cards are revealed but before
+          * Played after encounter cards are revealed but before
             resolution.
-          * Add the Reinforcement card's value to either side's total.
-          * Any player may play Reinforcements, not just the main
+          * Add the reinforcement card's value to either side's total.
+          * Any player may play reinforcements, not just the main
             players.
-          * Can only be played when an Attack card is on at least 1
+          * Can only be played when an attack card is on at least 1
             side of the encounter.
       - name: Artifact Cards
         text: |
           * Played at various times as specified on the card.
-          * Each Artifact has specific timing and effect text.
-          * Follow the instructions on the card.
+          * Each artifact has specific timing and effect text.
       - name: Flare Cards
         text: |
-          * Each Flare corresponds to a specific alien.
-          * **Wild Flare** (top text): Can be used by any player. The
-            Flare is discarded after use.
-          * **Super Flare** (bottom text): Can only be used by the
-            player who is that alien. The Flare is returned to hand
-            after use.
+          * Each flare corresponds to a specific alien.
+          * The wild flare effect is used unless the flare corresponds to
+            your alien. If the card is for your alien, you **must** 
+            use the super flare effect instead.
+          * Flares are not discarded, but instead returned to the owner's
+            hand.
+          * Flares cannot be used more than once per encounter.
+          * A player cannot use more than 1 flare per encounter.
           * Flares may only be played at the timing specified on the
             card.
   - name: Alien Powers
@@ -209,17 +226,11 @@ sections:
       * **Ships**: You can never voluntarily move ships off a planet
         outside of an encounter. Ships go to the Warp when you lose
         an encounter.
-      * **The Warp**: Ships in the Warp are out of play until
+      * **The warp**: Ships in the Warp are out of play until
         retrieved via Regroup, abilities, or card effects.
-      * **Hand Limit**: There is no hand limit.
-      * **Empty Deck**: If the Cosmic deck runs out, shuffle the
+      * **Hand limit**: There is no hand limit.
+      * **Empty deck**: If the Cosmic deck runs out, shuffle the
         discard pile to form a new deck.
-      * **Allies**: Allied players' ships contribute to the total in
-        an encounter. Offensive allies landing on the planet gain a
-        colony. Defensive allies earn Defender Rewards if they win.
-      * **Defender Rewards**: For each ship a winning defensive ally
-        committed, they choose 1: draw 1 card from the deck **or**
-        retrieve 1 ship from the Warp.
   - name: Game End
     text: |
       * The first player (or players, in the case of allies) to
