@@ -1,0 +1,444 @@
+name: "Cyclades: Legendary Edition"
+description: "Monsters and heroes, oh my!"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+version: 1.0
+bgg_id: 380619
+yt_videos:
+expansions:
+sections:
+  - name: Setup
+    text: |
+      **Note**: "Standees" and "minis" are considered to be intercheangable,
+      depending on which version you are using.
+
+      * Place the auction board off to the side of the table.
+      * Shuffle the god tiles and place them face-up with the following face
+        down:
+          * **5 players**: Turn the bottom tile face down.
+          * **2 & 4 players**: Turn the bottom 2 tiles face down.
+          * **3 players**: Turn the bottom 3 tiles face down.
+      * Shuffle the creature cards and place them face down in their spot.
+          * Reveal 4 cards and place them in the slots below the deck.
+      * Place the philosopher and priestess decks in their slots.
+      * Create a supply of:
+          * The creature and hero standees
+          * The gold
+          * Basic building tokens
+          * A shuffled stack of face-down metropolis tokens
+      * Build a map of 2 archipelago tiles per player (build it however
+        you like).
+          * Use 8 tiles with 2 players.
+      * Each player places their control tokens, troops, and fleets in front
+        of their screen.
+          * If playing with 2 players, each player will control 2 factions and
+            takes the components of 2 different colors.
+      * Each player takes 5 gold and places it **behind** their screen (the
+        only hidden resource is gold).
+          * If playing with 2 players or teams, take 10 gold, which is shared
+            between the team factions (or the 2 factions controlled by a
+            player in a 2 player game).
+      * Place the offering pawns from each player and place them randomly on
+        the turn order track (upper right of the auction board).
+      * Proceed with initial placements:
+          * **3-5 players**
+              1. In turn order, each player places a control token on 2
+                 unoccupied land areas. Then place a fleet in an empty
+                 sea area adjacent to the land areas.
+                  * If there is a priestess icon, take a priestess card.
+              2. In **reverse** turn order:
+                  * Each player selects a 3rd unoccupied land area and
+                    places a control token.
+                  * Again, place a fleet in an empty sea area adjacent to
+                    the land area chosen.
+                  * Then, distribute 3 troops in any manner to the 3 land
+                    areas, removing the control tokens wherever
+                    you place troops.
+          * **2 players / teams**
+              * Everything is the same as with the 3-5 player setup, except
+                **teams cannot place on the same island during the 1st round
+                of setup**.
+  - name: Gameplay
+    text: |
+      The game is played over a series of rounds until 1 or more players
+      have built 3 metropolises and/or a player has been eliminated.  Note
+      that a player may only be eliminated to take a 3rd metropolis.
+
+      ## General Rules
+      * Whenever you build a metropolis, 1st take the bonus printed on its
+        bonus side, then place it.
+      * As soon as you have control of a set of buildings (university + port +
+        temple + fortress), you must remove them all and build a metropolis
+        on a land area you control.
+      * If you have 4 philosopher cards, immediately discard them and build a
+        metropolis in land area you control
+          * If there are no empty building sites, you must destroy 1 of
+            your basic buildings to build the metropolis.
+      * Most heroes have a sacrifice power that allows you to sacrifice
+        (discard) the hero to build a metropolis in the same manner as with
+        philosopher cards.
+      * If you conquer an area with a metropolis, the **player being
+        conquered** takes the bonus on that metropolis.
+      * The mandatory basic building action on gods can be ignored if you
+        have no empty build sites.
+          * You may also choose to replace an existing building you control.
+      * Player units (troops, fleets) are **limited**, but control tokens are
+        not.
+      * Gold and prosperity tokens are not limited.
+      * There are 2 types of land troops, basic troops (player color) and
+        mercenaries (gray).
+          * Mercenaries are recruited via a Hera action.
+    sections:
+      - name: "1. Round Initialization"
+        text: |
+          **This whole step is skipped during the 1st round!**
+
+          * If heroes were recruited during the previous round, fill in the
+            empty spaces.
+          * If there is a creature on the 2 GP space, discard it face down.
+          * Move all creatures down to fill the bottom spaces, then fill
+            the open top spaces from the deck.
+          * Change the gods on the auction board:
+              1. Remove the 1st god from the top of the auction board.
+              2. Slide all the other gods up 1 space.
+              3. Flip over the top face down god (you should have the same
+                 number of face up gods based on player count).
+              4. Place the god you removed face down in the bottom slot of
+                 the auction board.
+      - name: "2. Income"
+        text: |
+          Each player receives 1 GP for each prosperity token/icon in any
+          land/sea areas they control.
+
+          **Reminder**: Gold is always kept hidden behind screens.
+      - name: "3. Offerings"
+        text: |
+          * **Golden rule: You cannot bid more gold than you can afford!**
+            See below for the penalty if this happens.
+          * In turn order, each player removes their offering pawn and bids
+            a number of gold (number on the space) above a god.
+          * If a player bids on a god that already has a bid:
+              * The bid **must** be higher than the previous bid.
+              * The player show was outbid **immediately** takes their
+                offering pawn and bids on **another** god.
+                  * This may trigger another round of re-bidding.
+          * Once everyone has bid on a god (including Apollo), everyone
+            pays their bid to the bank.
+              * **Important**: Each priestess you own gives a 1 GP discount
+                on your bid down to a minimum of zero (you don't take GP if
+                you end up with a negative bid).
+              * **If a player does not have enough gold to pay for their bid**:
+                  * The player must pay a fine of ½ of their GP, rounded down.
+                  * Then, start a new offering phase.
+      - name: "4. Maintenance Costs"
+        id: maint
+        text: |
+          * In turn order:
+              * Players who control creatures may keep them by discarding 1
+                priestess card per creature they wish to keep.
+                  * Each creature that isn't paid for has their standee removed
+                    from the board and its card placed face down in the discard
+                    pile.
+              * Each creature can then be moved to be moved to an adjacent,
+                valid space (land -> land, sea -> sea, no other creatures).
+      - name: "5. Actions"
+        text: |
+          * Gods are now activated from the top of the board to the bottom
+            (Apollo will be last).
+          * When resolving a god, the mandatory actions (top, between the
+            hands) **must be activated, and must be activated 1st**.
+              * None of these actions have a cost.
+              * When constructing buildings, if all construction sites are
+                occupied, you may skip the construction or replace an
+                existing building.
+          * All other actions (all optional) below the mandatory actions
+            can then be activated in any order.
+              * These actions all require some kind of payment.
+          * After completing actions, the player places their offering pawn
+            on the lowest numbered turn order slot, based on player count.
+            e.g. slot 3 in a 3 player game.
+        sections:
+          - name: Athena (white)
+            text: |
+              * Mandatory actions:
+                  * Build a university on an empty construction site you
+                    control.
+                      * Universities have no effect beyond being needed for
+                        a metropolis.
+                  * Take a philosopher card and place it in front of your
+                    screen.
+                      * **Reminder**: If you have 4 philosopher cards, build
+                        a metropolis.
+              * Optional actions:
+                  * Spend 4 GP and take 1 additional philosopher (once).
+                  * [Buy creatures](#creatures)
+                  * [Heroic moves](#heroic)
+          - name: Zeus (purple)
+            text: |
+              * Mandatory actions:
+                  * Build a temple on an empty construction site you control.
+                      * Temples give you a 1 GP discount when buying creatures.
+                  * Take priestess and place it in front of your screen.
+                      * Priestesses give you a 1 GP discount when paying
+                        for your bid on a god.
+                      * You must discard a priestess card to keep a
+                        creature you own during the [maintenance
+                        phase](#maint)
+              * Optional actions:
+                  * Spend 4 GP and take 1 additional priestess (once).
+                  * Secretly look at the top card of the creature deck
+                    and optionally pay 1 GP to play it. (once)
+                      * If you don't play it, put it back on top of the
+                        creature deck.
+                  * [Buy creatures](#creatures)
+                  * [Heroic moves](#heroic)
+          - name: Poseidon (blue)
+            text: |
+              * Mandatory actions:
+                  * Build a port on an empty construction site you control.
+                      * Ports give you a +1 strength to your fleets in the
+                        adjacent sea area.
+                  * Recruit a fleet.
+                      * Place it in a sea area adjacent to a land area
+                        you control that is either empty or controlled
+                        by your fleets.
+              * Optional actions:
+                  * Recruit additional fleets.
+                      * Spend 1 GP for the 1st fleet.
+                      * Spend 2 GP for the 2nd fleet.
+                      * Spend 3 GP for the 3rd fleet.
+                      * No more than 3 fleets can be bought this way.
+                  * Spend 1 GP for a [sea move](#seamove). This can be done
+                    any number of times.
+                  * [Buy creatures](#creatures)
+                  * [Heroic moves](#heroic)
+          - name: Ares (red)
+            text: |
+              * Mandatory actions:
+                  * Build a fortress on an empty construction site you control.
+                      * Fortresses give you a +1 strength in the land area.
+                  * Recruit a troop
+                      * Place a troop in a land area you control.
+              * Optional actions:
+                  * Recruit additional fleets.
+                      * Spend 2 GP for the 1st troop.
+                      * Spend 3 GP for the 2nd troop.
+                      * Spend 4 GP for the 3rd troop.
+                      * No more than 3 troops can be bought this way.
+                  * Spend 1 GP for a [land move](#landmove). This can be done
+                    any number of times.
+                  * [Buy creatures](#creatures)
+          - name: Hera (green)
+            text: |
+              * Mandatory actions:
+                  * Build a basic building of your choice on an empty
+                    construction site you control.
+                  * Recruit a mercenary.
+                      * Mercenaries can only be placed in areas you control.
+                      * If you ever own a land area with only mercenaries,
+                        place a control token on that area.
+              * Optional actions:
+                  * Recruit additional mercenaries.
+                      * Spend 1 GP for the 1st mercenary.
+                      * Spend 3 GP for the 2nd mercenary.
+                      * Spend 5 GP for the 3rd mercenary.
+                      * No more than 3 mercenaries can be bought this way.
+                  * Spend 4 GP to recruit a hero.
+                      * Place their standee in a land area you control.
+                      * **Important**: A hero cannot be sacrificed in the
+                        round they were purchased. You also cannot sacrifice
+                        a hero if you've chosen Apollo.
+                      * A hero has a battle strength of 1.
+                      * See also [heroic moves](#heroic).
+                  * [Buy creatures](#creatures)
+                  * [Heroic moves](#heroic)
+          - name: Apollo (yellow, printed on the board)
+            text: |
+              * Apollo cannot be used to get creatures or use heroes.
+              * Mandatory actions:
+                  * Gain 2 prosperity tokens, placing 1 in a land area you
+                    control and 1 in a sea area you control.
+                      * An area may contain any number of prosperity tokens.
+                  * Gain 2 GP
+      - name: "6. End of the Round"
+        text: |
+          Once everyone has taken their turn activating their god, the round
+          ends.
+
+          The [game ends](#gameend) if:
+
+          * 1 or more players control 3 metropolises **AND/OR**
+          * A player has been eliminated during this round.
+              * **Reminder**:  A player can only be eliminated if an attacking
+                player siezes their 3rd metropolis in doing so.
+  - name: Game End
+    id: gameend
+    text: |
+      The game ends if a player has 3 metropolises or a player has been
+      eliminated.
+
+      The player with the most metropolises wins.  If there is a tie, the
+      player with the most remaining gold wins.  If there is still a tie,
+      the players share the victory.
+  - name: Sea Moves and Battles
+    id: seamove
+    text: |
+      ## Sea Moves
+      * A sea move allows you to move 1 or more fleets in a sea area to an
+        adjacent sea area.
+          * You do not have to move all fleets.
+          * If the area you are moving to is occupied by an enemy fleet(s), a
+            sea battle occurs immediately (below).
+
+      ## Sea Battles
+      * A sea battle takes place over successive rounds.
+      * Resolve a sea battle by:
+          1. Each party determines strength:
+              * roll a die +
+              * 1 strength for each fleet +
+              * 1 strength for each port they control in this sea area
+          2. The player with the lowest strength removes 1 of their fleets
+             back to their supply.
+              * If there is a tie, **both** players remove a fleet.
+          3. If both parties have a fleet remaining:
+              1. The defender may choose to retreat to an adjacent sea area
+                 that is empty or under their control.
+              2. The attacker may then choose to retreat.
+              3. If neither player retreats, start a new battle round.
+          4. Continue battle rounds until 1 or both parties are eliminated
+             or 1 party retreats.
+  - name: Land Moves and Battles
+    id: landmove
+    text: |
+      ## Land Moves
+      * Land moves allow you to move any number of troops/mercenaries/heroes
+        from 1 land area to another land area.
+          * The land areas must be adjacent **OR**
+          * The land areas must be connected via a chain of your fleets.
+      * You don't have to move all units when moving.
+      * If the destination is occupied by an enemy, a land battle occurs
+        immediately (see below).
+          * If it is only occupied by an enemy control token, remove that
+            enemy control token (it is now controlled by you).
+          * If you take control of an area with a priestess icon, take a
+            priestess card.
+      * **IMPORTANT**: You cannot attack a player's last land area unless this
+        would give you your 3rd metropolis.
+          * This will trigger the game end regardless of whether the attacking
+            player loses a metropolis later in the round.
+
+      ## Land Battles
+      * A land battle takes place over successive rounds.
+      * Resolve a land battle by ("troops" below are player troops,
+        mercenaries, or heroes):
+          1. Each party determines strength:
+              * roll a die +
+              * 1 strength for each troop/mercenary/hero +
+              * 1 strength for each fortress the defender controls in this
+                land area
+          2. The player with the lowest strength removes 1 of their troops
+             back to their supply.
+              * If there is a tie, **both** players remove a troop.
+              * If a hero is removed, their card is discarded and the standee
+                is returned to the supply.
+          3. If both parties have a troop remaining:
+              1. The defender may choose to retreat to an accessible
+                 (adjacent or connected by fleets) land area
+                 that is empty or under their control.
+              2. The attacker may then choose to retreat.
+              3. If neither player retreats, start a new battle round.
+          4. Continue battle rounds until 1 or both parties are eliminated
+             or 1 party retreats.
+  - name: Creatures
+    id: creatures
+    text: |
+      * All gods, except Apollo, allow you to purchase creatures.
+      * Pay the cost of the creature shown below it on the board.
+          * Take a 1 GP discount for each temple you control.
+      * **Immediately** apply the indicated effect on creatures with 1-time
+        effects (creatures without standees) and discard the card face down.
+        These **cannot** be saved for later.
+      * If you bought a creature with a standee, place the creature card
+        in front of your screen and place the creature in an area anywhere
+        on the board.
+          * You **cannot** place a creature in an area with another creature.
+          * You don't have to control the area you place the creature on
+            (unless the card states otherwise).
+          * The creature must be placed in the area type shown on its card
+            (land or sea).
+          * Reminder: You must pay a priestess during the [maintenance
+            phase](#maint) to keep this creature in future rounds.
+      * You may buy as many creatures as you can afford.
+
+      ## Creature Descriptions
+      | Creature | Description |
+      | -------- | ----------- |
+      | Charon | Swap 1 of your heroes with 1 of the available heroes. If the hero track is empty, you cannot use this. |
+      | Chimera | Play a creature from the discard for free, then discard the Chimera.  If the creature discard is empty, simply discard the Chimera. When the Chimera is added to the discard, immediately shuffle the discard into the creature deck to form a new draw deck. |
+      | Cyclops | Exchange 1 of your building for another basic building. |
+      | Dryad | Steal a priestess card from another player. |
+      | Giant | Steal all mercenaries from 1 land area and place them in a land area(s) you control. |
+      | Griffin | Steal ½ the GP (rounded down) from another player. |
+      | Harpy | Destroy a troop (basic or mercenary) in a land area.  The Harpy cannot destroy a hero. |
+      | The Graeae | Repeat an income phase. Take 1 GP for each prosperity token under your control at the time you use this card. |
+      | Pegasus | Move all or part of your troops (basic/mercenary/hero) from 1 land area to another land area anywhere on the board. |
+      | Satyr | Steal 1 philosopher card from another player.  Build a metropolis if this is your 4th philosopher. |
+      | Sphynx | Draw 3 creature cards, discard 2, and play the 3rd for free. |
+      | Sylph | Swap fleets from 2 sea areas regardless of which players control them.  The 2 areas can be anywhere on the board.  Both sea areas must contain fleets. |
+      | Cerberus (standee) | *Place on a land area*. In the income phase, you earn the income for that area **instead of** the owner. |
+      | Hydra (standee) | *Place on a land or sea area*. During the income phase, double the income of the area with the Hydra. This applies to opponents that control the area as well. |
+      | Kraken (standee) | *Place on a sea area*. Destroy all fleets in the sea area. This applies if the Kraken is moved into a sea area with fleets. No one can move fleets into the sea area with the Kraken (including you). |
+      | Medusa (standee) | *Place on a land area*. No troops/mercenaries/heroes may enter or leave the area with Medusa in it.  This includes any of your own troops.  Note that Pegasus cannot help here. |
+      | Minotaur (standee) | *Place on a land area you control*. The Minotaur is a unit with a battle strength of 2.  It may not retreat in battle.  If you suffer a defeat in battle, you can choose whether to destroy the Minotaur.  If the Minotaur is your last unit, it must be destroyed. |
+      | Polyphemus (standee) | *Place on a land area*. Adjacent sea areas are inaccessible.  All fleets present are moved to nearby areas or destroyed.  No fleet may occupy or move through these adjacent sea areas. The player controlling Polyphemus moves the fleets in the order and direction of their choosing. 2 fleets of different colors cannot be in the same sea area. If a move is impossible, the fleets are destroyed. |
+  - name: Heroes
+    id: heroic
+    text: |
+      * All goes, except Apollo, allow you to use heroes to move troops.
+      * Each of your heroes allows you to move troops by paying the cost
+        based on the number of moves.
+          * 1 GP for the 1st heroic move.
+          * 2 GP for the 2nd heroic move.
+          * ... (you can do this as many times as you can afford, with the
+            cost increasing each time)
+      * A heroic move is a move from a land area to an adjacent land area or
+        2 land areas connected by a chain of your fleets.
+      * If a hero moves (alone or with other troops) into an enemy land
+        area, a battle occurs immediately (also see [land moves and
+        battles](#landmove)).
+          * Heroes have a battle strength of 1.
+          * When losing a battle round with troops, the player chooses
+            whether to lose a troop or the hero.
+      * Clarifications:
+          * The harpy cannot destroy a hero.
+          * **Reminder**: The player who chose Apollo cannot move their heroes
+            **OR activate their sacrificial power**.
+          * **Reminder**: You cannot sacrifice a hero during the round they
+            were purchased.
+          * You can sacrifice a hero at any time during your turn (with the
+            2 above caveats).
+          * If you are activating Ares, there are no heroic moves, the heroes
+            move like any of your troops.
+
+      ## Hero Descriptions
+      | Hero | Description |
+      | ---- | ----------- |
+      | Ajax | **Military**: Has a battle strength of 2. **Sacrifice**: If you control 7 land areas, build a metropolis. |
+      | Croesus | **Military**: Pay 1 GP to re-roll your battle die.  This can be repeated any number of times as long as you can afford it. **Sacrifice**: Spend 15 GP to build a metropolis. |
+      | Hector | **Military**: When troops/mercenaries invade his area, he destroys 1 of them of his choosing before the battle. **Sacrifice**: Turn 2 of your priestesses into 1 philosopher.  You can do this several times. |
+      | Helen | **Military**: When she fights, her battle die result is always 2. **Sacrifice**: If you have 2 basic buildings of 1 type and 2 buildings of another 1 type, build a metropolis (destroy the 4 basic buildings). |
+      | Jason | **Military**: He can use enemy fleets as his own (chaining) when making a heroic move. This cannot be used to retreat. **Sacrifice**: If you have all 8 of your fleets in play, build a metropolis. |
+      | Pandora | **Military**: In her presence, enemy mercenaries automatically come under her control. **Sacrifice**: Use the sacrifice power of a hero available on the hero track.  If the hero track is empty, you cannot use this power. |
+      | Penthesilea | **Military**: You win ties in battles. **Sacrifice**: When you build a metropolis, place it on this card. It cannot be attacked. |
+      | Odysseus | **Military**: Ignore the effect of enemy fortresses in battle. **Sacrifice**: If you have 3 basic buildings of the same type, build a metropolis (destroy those 3 buildings). |
+      | Perseus | **Military**: Troops with Perseus that should be destroyed in battle may retreat instead. Perseus cannot retreat if destroyed. **Sacrifice**: Move all or part of your troops/mercenaries/heroes from 1 land area to another land area anywhere on the board (similar to the Pegasus). Like the Pegasus, Perseus cannot move troops stuck in Medusa's area. |
+  - name: Metropolis Bonuses
+    text: |
+      | Symbol | Effect |
+      | ------ | ------ |
+      | ![troops](/static/img/cyclades_legendary/m_gain_troops.png) | Gain 2 troops (not mercenaries) and place them in any land area(s) under your control. |
+      | ![prosp](/static/img/cyclades_legendary/m_gain_prosp.png) | Place a prosperity token in a land or sea are you control. |
+      | ![priestess](/static/img/cyclades_legendary/m_gain_priest.png) | Take a priestess card. |
+      | ![gp](/static/img/cyclades_legendary/m_gain_3gp.png) | Take 3 GP. |
+      | ![fleets](/static/img/cyclades_legendary/m_gain_fleets.png) | Gain 2 fleets and place them in any sea area(s) you control. |
