@@ -3,9 +3,12 @@ description: "Monsters and heroes, oh my!"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.0
+version: 1.1
 bgg_id: 380619
 yt_videos:
+  - https://www.youtube.com/watch?v=qkozlfNKGVo&t=632s&pp=ygUeY3ljbGFkZXMgbGVnZW5kYXJ5IGhvdyB0byBwbGF5
+  - https://www.youtube.com/watch?v=njIB2yN6ooM&pp=ygUeY3ljbGFkZXMgbGVnZW5kYXJ5IGhvdyB0byBwbGF5
+  - https://www.youtube.com/watch?v=dioQv6mmXZo&pp=ygUeY3ljbGFkZXMgbGVnZW5kYXJ5IGhvdyB0byBwbGF5
 expansions:
 sections:
   - name: Setup
