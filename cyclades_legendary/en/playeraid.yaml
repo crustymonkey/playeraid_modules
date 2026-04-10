@@ -3,7 +3,7 @@ description: "Monsters and heroes, oh my!"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.1
+version: 1.2
 bgg_id: 380619
 yt_videos:
   - https://www.youtube.com/watch?v=qkozlfNKGVo&t=632s&pp=ygUeY3ljbGFkZXMgbGVnZW5kYXJ5IGhvdyB0byBwbGF5
@@ -224,7 +224,7 @@ sections:
                   * Recruit a troop
                       * Place a troop in a land area you control.
               * Optional actions:
-                  * Recruit additional fleets.
+                  * Recruit additional troops.
                       * Spend 2 GP for the 1st troop.
                       * Spend 3 GP for the 2nd troop.
                       * Spend 4 GP for the 3rd troop.
@@ -377,24 +377,36 @@ sections:
       ## Creature Descriptions
       | Creature | Description |
       | -------- | ----------- |
-      | Charon | Swap 1 of your heroes with 1 of the available heroes. If the hero track is empty, you cannot use this. |
+      | Charon | Swap 1 of your heroes with 1 of the available heroes. If the hero track is empty, you cannot use this. The new hero cannot be sacrificed this round. |
       | Chimera | Play a creature from the discard for free, then discard the Chimera.  If the creature discard is empty, simply discard the Chimera. When the Chimera is added to the discard, immediately shuffle the discard into the creature deck to form a new draw deck. |
       | Cyclops | Exchange 1 of your building for another basic building. |
       | Dryad | Steal a priestess card from another player. |
+      | Echidna | Steal an enemy's creature card. Then you can move the creature standee to an area of your choice (in the appropriate area type, i.e. land or sea). |
+      | The Erinyes | Move a prosperity token (1 cornucopia side) from 1 area to another (land or sea). This token may belong to any player. |
       | Giant | Steal all mercenaries from 1 land area and place them in a land area(s) you control. |
+      | The Graeae | Repeat an income phase. Take 1 GP for each prosperity token under your control at the time you use this card. |
       | Griffin | Steal ½ the GP (rounded down) from another player. |
       | Harpy | Destroy a troop (basic or mercenary) in a land area.  The Harpy cannot destroy a hero. |
-      | The Graeae | Repeat an income phase. Take 1 GP for each prosperity token under your control at the time you use this card. |
+      | Hippalectryon | Turn 2 of your mercenaries troops into 1 prosperity token or 1 priestess card or 1 philosopher card. You can do this any number of times (provided you have the mercenaries). The prosperity token is immediately placed in an area of your choice. Transformed mercenaries are returned to the supply. |
+      | Hippocampus | Turn fleets in a sea area you control into mercenaries. Place them on 1 or 2 adjacent land areas you control.  Return the transformed fleets to your supply. |
+      | Manticore | Destroy a creature or hero standees on the board. |
       | Pegasus | Move all or part of your troops (basic/mercenary/hero) from 1 land area to another land area anywhere on the board. |
       | Satyr | Steal 1 philosopher card from another player.  Build a metropolis if this is your 4th philosopher. |
       | Sphynx | Draw 3 creature cards, discard 2, and play the 3rd for free. |
       | Sylph | Swap fleets from 2 sea areas regardless of which players control them.  The 2 areas can be anywhere on the board.  Both sea areas must contain fleets. |
+      | Triton | Steal a basic building from another player and place it on 1 of your construction sites.  If you do not a have a free site, you must destroy 1 of your building to build the stolen one. |
+      | Calydonian Boar (standee) | *Place on a land area*. This area is inaccessible.  All heroes/troops in the area are moved to an accessible area or are destroyed. The player controlling this creature moves the troops in the order and direction of their choosing. Units belonging to different players may not end up in the same area. If movement is impossible, the units are destroyed. |
       | Cerberus (standee) | *Place on a land area*. In the income phase, you earn the income for that area **instead of** the owner. |
-      | Hydra (standee) | *Place on a land or sea area*. During the income phase, double the income of the area with the Hydra. This applies to opponents that control the area as well. |
+      | Charybdis and Scylla (standees) | *Place them in 2 different sea areas*. These 2 areas are considered adjacent for your fleets. You still must pay the costs to move between these 2 sea areas. |
+      | Chiron (standee) | *Place on a land area*. This area cannot be targeted by any creature effects. |
+      | Geryon (standee) | *Place on a land area*. When any basic or mercenary troop or fleet is destroyed, place 1 GP on the area occupied by Geryon. It will become part of the income of the player controlling that area. All destroyed troops/fleets are affected, regardless of ownership. |
+      | Hydra (standee) | *Place on a land or sea area*. During the income phase, double the income of the area with the Hydra. This applies to opponents that control the area as well. When it comes into play, and during each maintenance phase, you must, if possible, destroy 1 fleet or troop in its area, or in an adjacent area, to add 1 prosperity token to its area. |
       | Kraken (standee) | *Place on a sea area*. Destroy all fleets in the sea area. This applies if the Kraken is moved into a sea area with fleets. No one can move fleets into the sea area with the Kraken (including you). |
       | Medusa (standee) | *Place on a land area*. No troops/mercenaries/heroes may enter or leave the area with Medusa in it.  This includes any of your own troops.  Note that Pegasus cannot help here. |
       | Minotaur (standee) | *Place on a land area you control*. The Minotaur is a unit with a battle strength of 2.  It may not retreat in battle.  If you suffer a defeat in battle, you can choose whether to destroy the Minotaur.  If the Minotaur is your last unit, it must be destroyed. |
+      | Nereid (standee) | *Place on a sea area*. As long as you control this creature, you collect its area's income during the income phase **instead of** the player controlling the area. |
       | Polyphemus (standee) | *Place on a land area*. Adjacent sea areas are inaccessible.  All fleets present are moved to nearby areas or destroyed.  No fleet may occupy or move through these adjacent sea areas. The player controlling Polyphemus moves the fleets in the order and direction of their choosing. 2 fleets of different colors cannot be in the same sea area. If a move is impossible, the fleets are destroyed. |
+      | Typhon (standee) | *Place on a sea area*. All basic buildings built on land areas adjacent to Typhon's area have no effect and cannot be used to build a metropolis. Note that metropolises in adjacent areas also lose the effects of their included buildings. |
   - name: Heroes
     id: heroic
     text: |
@@ -427,14 +439,21 @@ sections:
       ## Hero Descriptions
       | Hero | Description |
       | ---- | ----------- |
+      | Achilles | **Military**: If the opponent loses a round of battle, they must immediately retreat or be destroyed. **Sacrifice**: Build 2 buildings of your choice.  If you don't have 2 sites available, you must destroy 1 of your existing buildings. |
       | Ajax | **Military**: Has a battle strength of 2. **Sacrifice**: If you control 7 land areas, build a metropolis. |
+      | Antigone | **Military**: In battle, her 0 die roll becomes 3. **Sacrifice**: Discard 3 of your cornucopias to build a metropolis. |
       | Croesus | **Military**: Pay 1 GP to re-roll your battle die.  This can be repeated any number of times as long as you can afford it. **Sacrifice**: Spend 15 GP to build a metropolis. |
       | Hector | **Military**: When troops/mercenaries invade his area, he destroys 1 of them of his choosing before the battle. **Sacrifice**: Turn 2 of your priestesses into 1 philosopher.  You can do this several times. |
       | Helen | **Military**: When she fights, her battle die result is always 2. **Sacrifice**: If you have 2 basic buildings of 1 type and 2 buildings of another 1 type, build a metropolis (destroy the 4 basic buildings). |
+      | Heracles | **Military**: When he arrives in an area (also passing through), if it contains a creature, he destroys it and places the creature card under the his hero card. A creature can be placed in Heracles' space without being destroyed.  **Sacrifice**: If 2 creature cards have been placed under Heracles, build a metropoliis. |
+      | Hippolyta | **Military**: For battles, each of your ports and fortresses are considered to be both a port and a fortress. This is only for the purpose of battle strength.  **Sacrifice**: If you control 2 other heroes in addition to Hippolyta, build a metropolis. |
       | Jason | **Military**: He can use enemy fleets as his own (chaining) when making a heroic move. This cannot be used to retreat. **Sacrifice**: If you have all 8 of your fleets in play, build a metropolis. |
+      | Leto | **Military**: Can make heroic moves and use their sacrifice power with Apollo. **Sacrifice**: If you control 2 creature minis, build a metropolis. |
+      | Odysseus | **Military**: When attacking, Odysseus ignores fortresses (for battle strength). **Sacrifice**: If you have 3 basic buildings of the same type, build a metropolis. |
       | Pandora | **Military**: In her presence, enemy mercenaries automatically come under her control. **Sacrifice**: Use the sacrifice power of a hero available on the hero track.  If the hero track is empty, you cannot use this power. |
-      | Penthesilea | **Military**: You win ties in battles. **Sacrifice**: When you build a metropolis, place it on this card. It cannot be attacked. |
-      | Odysseus | **Military**: Ignore the effect of enemy fortresses in battle. **Sacrifice**: If you have 3 basic buildings of the same type, build a metropolis (destroy those 3 buildings). |
+      | Penelope | **Military**: Gives an additional strength of 2 for sea battles in sea areas adjacent to her land area. **Sacrifice**: If you control 6 sea areas, build a metropolis. |
+      | Penthesilea | **Military**: You win ties in battles with Penthesilea. **Sacrifice**: When you build a metropolis, place it on this card. It cannot be attacked. Remove the standee from the board and place it in front of your screen. |
+      | Pericles | **Military**: Each of his heroic moves costs 1 GP. **Sacrifice**: If all 8 of your troops are on the board, build a metropolis. |
       | Perseus | **Military**: Troops with Perseus that should be destroyed in battle may retreat instead. Perseus cannot retreat if destroyed. **Sacrifice**: Move all or part of your troops/mercenaries/heroes from 1 land area to another land area anywhere on the board (similar to the Pegasus). Like the Pegasus, Perseus cannot move troops stuck in Medusa's area. |
   - name: Metropolis Bonuses
     text: |
@@ -445,3 +464,6 @@ sections:
       | ![priestess](/static/img/cyclades_legendary/m_gain_priest.png) | Take a priestess card. |
       | ![gp](/static/img/cyclades_legendary/m_gain_3gp.png) | Take 3 GP. |
       | ![fleets](/static/img/cyclades_legendary/m_gain_fleets.png) | Gain 2 fleets and place them in any sea area(s) you control. |
+      | ![creature](/static/img/cyclades_legendary/m_res_creat.png) | Place 1 of your control tokens on a creature on the creature track. Only you can buy this creature as long as it is on the track. |
+      | ![build](/static/img/cyclades_legendary/m_build.png) | Build a basic building of your choice on an empty building site you control. |
+      | ![tf](/static/img/cyclades_legendary/m_gain_tf.png) | Gain a basic troop and a fleet.  They are both placed in their appropriate areas under your control. They don't have to be placed in adjacent areas, or adjacent to the metropolis. |
