@@ -1,0 +1,67 @@
+name: "YINSH"
+description: "An abstract strategy game of rings and markers from the GIPF project"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+version: 1.0
+bgg_id: 7854
+yt_videos:
+  - https://www.youtube.com/watch?v=r8snI_Pk9Mw&pp=ygUReWluc2ggaG93IHRvIHBsYXk%3D
+  - https://www.youtube.com/watch?v=6zUa_VIbX9A&pp=ygUReWluc2ggaG93IHRvIHBsYXk%3D
+expansions:
+sections:
+    - name: Setup
+      text: |
+        * Place the board vertically between the players so that the
+          lettered lines run from one player to the other.
+        * Determine a start player and that player takes the white rings.
+        * Create a supply of the marker discs.
+        * Take turns, starting with white, placing your 5 rings on the board.
+            * These can be placed on any intersection, including the board
+              edge.
+    - name: Gameplay
+      text: |
+        The game is played back and forth in turns until 1 player has
+        gotten 3 rows of 5 markers (and has removed 3 rings).
+
+        ## Taking a Turn
+        1. Move 1 of your rings, placing a marker in it with your color
+           face up 1st.
+            * Leave the marker on the space.
+            * Your ring must move in a straight line from its starting
+              point.
+            * The ring can move over 1 or more vacant spaces.
+                * If you only move over empty spaces, that is your turn.
+            * The ring can move over any number of markers (color doesn't
+              matter), but **the ring must be placed on the 1st vacant
+              space on the other side of the markers you jumped**.
+                * **All** markers you jumped over are flipped to their
+                  opposite side.
+                * Do **not** flip the marker you placed before moving the
+                  ring.
+            * The above 2 bullets can be combined such that you can move
+              over vacant spaces *before* jumping markers.
+            * **The ring cannot jump over any rings**.
+        2. If you create a row (line) of 5 markers of the same color,
+           remove them from the board to the supply.
+            * Remove 1 of your rings (can be any of your rings) and place
+              it on your side of the board as a counter for the number
+              of rows you've completed.
+            * If more than 1 row is completed on the same turn, count
+              both of them and remove multiple rings.
+                * If they intersect, choose which row will be scored.
+            * If you form a complete row for your opponent, they must
+              score it and remove the markers and a ring.
+            * If you form a row for you and your opponent, score yours 1st.
+    - name: End of the Game
+      text: |
+          * The game ends as soon as a player has removed 3 rings. That
+            player wins.
+          * If your move forms both your 3rd row and your opponent's 3rd
+            row, you win because you remove your ring first.
+          * If all 51 markers are placed before anyone wins, the player
+            who removed the most rings wins. If tied, the game is a draw.
+    - name: Blitz Version
+      text: |
+          * Play exactly as normal, but the goal is to form **only 1 row**.
+          * The first player to line up 5 markers of their color wins.
