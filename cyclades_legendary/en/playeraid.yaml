@@ -3,7 +3,7 @@ description: "Monsters and heroes, oh my!"
 text_type: markdown
 credits: "Jay Deiman"
 enabled: true
-version: 1.2
+version: 1.3
 bgg_id: 380619
 yt_videos:
   - https://www.youtube.com/watch?v=qkozlfNKGVo&t=632s&pp=ygUeY3ljbGFkZXMgbGVnZW5kYXJ5IGhvdyB0byBwbGF5
@@ -182,6 +182,7 @@ sections:
               * Mandatory actions:
                   * Build a temple on an empty construction site you control.
                       * Temples give you a 1 GP discount when buying creatures.
+                      * The discount **can only be used once per round**.
                   * Take priestess and place it in front of your screen.
                       * Priestesses give you a 1 GP discount when paying
                         for your bid on a god.
@@ -235,7 +236,7 @@ sections:
           - name: Hera (green)
             text: |
               * Mandatory actions:
-                  * Build a basic building of your choice on an empty
+                  * Build a basic building you do not already own on an empty
                     construction site you control.
                   * Recruit a mercenary.
                       * Mercenaries can only be placed in areas you control.
@@ -343,6 +344,8 @@ sections:
           2. The player with the lowest strength removes 1 of their troops
              back to their supply.
               * If there is a tie, **both** players remove a troop.
+                  * If this results in all troops being removed, the defender
+                    retains control of the region.
               * If a hero is removed, their card is discarded and the standee
                 is returned to the supply.
           3. If both parties have a troop remaining:
