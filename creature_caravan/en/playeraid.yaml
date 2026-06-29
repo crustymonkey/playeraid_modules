@@ -1,0 +1,259 @@
+name: "Creature Caravan"
+description: "Help wandering creatures cross Arzium to the safety of Eastrey, building a dice-driven caravan tableau along the way"
+text_type: markdown
+credits: "Jay Deiman"
+enabled: true
+version: 1.0
+bgg_id: 385331
+yt_videos: 
+  - https://www.youtube.com/watch?v=rbfR-M73_hI&pp=ygUcY3JlYXR1cmUgY2FyYXZhbiBob3cgdG8gcGxhedIHCQlBCwGHKiGM7w%3D%3D
+  - https://www.youtube.com/watch?v=RR5MuF-jNPM&pp=ygUcY3JlYXR1cmUgY2FyYXZhbiBob3cgdG8gcGxheQ%3D%3D
+  - https://www.youtube.com/watch?v=aDwQso-R7pw&pp=ygUcY3JlYXR1cmUgY2FyYXZhbiBob3cgdG8gcGxheQ%3D%3D
+  - https://www.youtube.com/watch?v=eXL6OFcOUeA&pp=ygUcY3JlYXR1cmUgY2FyYXZhbiBob3cgdG8gcGxheQ%3D%3D
+expansions:
+sections:
+  - name: Setup
+    text: |
+      1. Place the "Start" map tile first (either side up),
+         then add all map tiles randomly in a horizontal row to the right.
+         Place the Eastrey tile at the end of the row.
+      2. Place the market board and ember zombie board near the map.
+      3. Create supplies of the food, bag, coin, fruit, and ember zombie tokens.
+      4. Shuffle the treasure chest tokens face down and create a supply.
+      5. Shuffle the cards into a deck (or 2). Leave space for a face down
+         discard pile(s).
+      6. Each player takes:
+          * a player board
+          * 5 dice
+          * 1 coin
+          * chooses a color and takes in their color:
+              * 15 cubes
+              * 12 tents
+              * 1 caravan token
+      7. Each player draws 8 cards, kept secret.
+      8. Pick a start player and they choose a start space in the 1st column
+         of the start tile.  Others do so in clockwise order (must choose
+         different spaces).
+
+  - name: Gameplay
+    text: |
+      *Note: Tents and treasures are the only deliberately limited components.
+      If you run out of anything else, use a suitable substitute.*
+
+      * The game lasts 12 turns. The player with the most victory points
+        at the end wins.
+      * Over the course of 12 turns, all players act simultaneously by rolling
+        and placing dice on actions, then everyone places a camp.
+    sections:
+      - name: Taking a Turn
+        text: |
+          * At the start of **each** turn, all players roll all their dice.
+              * Dice can be re-rolled once, but **all** dice must be re-rolled.
+          * All players simultaneously place dice on actions.
+              * These are placed on player boards/cards in their tableau.
+              * When placed, the entire action must be completed before moving
+                to the next action.
+              * Each action can only be taken once per turn.
+              * Action spaces for a die value that is the **minimum** value of
+                die needed to take the action.
+              * After placing a die, actions can be resolved in any order,
+                but all must be completed before starting another action.
+              * Some cards have multiple actions, which are resolved separately.
+              * You do not need to use all of your dice before ending your turn.
+              * Some actions have an additional resource cost, printed in the
+                lower left corner of the die
+        sections:
+          - name: Action Types
+            sections:
+              - name: Travel
+                text: |
+                  * Move your caravan orthogonally only in any direction, but
+                    **you must move *to* the terrain type pictured**.
+                  * **Plains**: any square without a canyon, mountain, or lake.
+                      * All cloud spaces, all of Eastrey, and all white towers
+                        are plains (unless a white tower sits in another land
+                        type).
+                  * Some icons show multiple land types that can be moved to.
+                  * "Vertical" travel may only move up or down in the
+                    same column.
+                  * Moving into or through a [threat]!red! (ember zombie)
+                    space forces you to take 1 ember zombie token.
+                      * [-1 VP]!red! each at game end.
+                      * You may discard a zombie token when you attack a zombie.
+              - name: Gain Resources
+                text: |
+                  * Gain the pictured resource in the quantities shown.
+              - name: Draw
+                text: |
+                  * Draw the number of cards indicated.
+                      * If there is a hand icon, draw the indicated number,
+                        but keep only the number on the hand icon.
+              - name: Trade at Market
+                id: trade
+                text: |
+                  * Make 1 available trade at the market.
+                      * Return the indicated number of bags or coins and take
+                        food equal to that number +2.
+                      * Place 1 of your cubes in the top space of that column.
+                          * These will move down a space at [the end of the
+                            turn](#turn_end)
+                  * Each player may only make 1 trade per column.
+                  * If there is a cube covering the trade icon, that trade is
+                    no longer available.
+              - name: Attack
+                text: |
+                  * If your caravan is on a space with a threat symbol, but you
+                    have not yet placed a camp, you can attack 1 zombie here.
+                  * Place dice on any number of spaces with an attack (sword
+                    and number) value until you have >= attack power for an
+                    open column.
+                      * After attacking a zombie, discard 1 ember zombie token.
+                      * Place a cube in the top of the column.
+                      * The rules for cube placement and movement are basically
+                        the same as for the [trade action](#trade).
+      - name: Free Actions
+        text: |
+          * **Discard for resources:** discard 1 card from hand to gain
+            1 food; discard 3 cards to gain 1 coin.
+          * **Add a creature to your caravan:** pay the cost for a card in hand
+            (upper left) and place it next to your player board as a new action
+            space.
+              * "Turn Start" effects begin next turn.
+              * Some cards only activate when the card is played.
+              * You are limited to 12 cards in your tableau, unless a card says
+                otherwise.
+              * There is no hand limit.
+
+          ## Optional Rule: Trading
+          For more interaction: at any time players may exchange **food and
+          cards in hand** (nothing else). You may **not** show a card before
+          trading, but may state its name and types (e.g. "Aged Engineer," or
+          "Magic"). No other info about hand cards may be revealed.
+      - name: End of Turn
+        id: turn_end
+        text: |
+          1. **Market & Ember Zombie boards:** cubes above a trade or attack
+             icon slide down 1 space.
+              * If a cube reaches an icon, all cubes in that column slide to
+                it and that trade/zombie is no longer available.
+          2. **Camps:** each player places a camp on their caravan token's
+             space.
+              * You may have more than one camp on a space, and may camp
+                on a space holding another player's camp or caravan.
+          3. **Creature card map effects:** receive any rewards your caravan
+             cards grant for camping on specific spaces.
+          4. **Map effects (bonuses):**
+              * White tower: draw 3 cards.
+              * Fruit: take a fruit token.  A fruit token can be placed on
+                a creature card to reduce the required die value to **1** for
+                the rest of the game.
+                  * Fruit may be stored for later use.
+                  * Once placed, a fruit cannot be moved.
+                  * Fruit cannot modify player board actions.
+              * Treasure: draw 1 random treasure token.  If a bag, fruit, or
+                coin is shown, take the matching item immediately.
+                  * Keep the treasure token face down near your board for end
+                    game scoring.
+  - name: The Map
+    text: |
+      * **Opponents' camps & caravans:** ignore other players' camps and
+        caravans when moving, camping, collecting treasure/fruit/cards from
+        white towers, and taking zombie tokens.
+      * **Your camps:** once you have a camp on a white tower, fruit, or
+        treasure space, or zombie space you can no longer collect its reward
+        or fight a zombie.
+      * **Threat spaces:** any time you move to or through a threat space, take
+        an ember zombie token ([-1 VP]!red! each). Discard 1 each time you
+        attack a zombie. You take no extra tokens when camping.
+      * **Land types:** plains (anything without mountains, lake, or canyons),
+        mountains, lakes, and canyons.
+      * **Clouds:** count as plains, with no special rules, but interact with
+        some cards.
+      * **Moving to Eastrey:** the Eastrey tile is one large space adjacent to
+        the 6 spaces in the column to its left. Once you move to Eastrey you
+        **cannot move again**; at each turn's end while there, place a camp as
+        normal.
+  - name: End of the Game & Scoring
+    text: |
+      After 12 turns the game ends. Once the final camps are placed and
+      camp rewards taken, players may take any number of free actions, then
+      score. Most VP wins. Ties: the player with the most combined cubes on
+      the market and ember zombie boards wins.
+
+      ## Scoring
+      * **Reach Eastrey:** 5 VP if you have at least one camp in Eastrey.
+      * **Total Distance:** 1 VP per column you moved forward (count the
+        start space and your end space; don't count tents). **Max 25 VP**, only
+        if you camp on Eastrey.
+      * **Spaces with your camps:** 1 VP per space containing one or more
+        of your camps (count spaces, not camps).
+      * **Ember Zombie board:** VP shown for each of your cubes.
+      * **Market trades:** VP shown for each of your cubes.
+      * **Card VP:** total all points on teal banners of cards in your
+        caravan.
+      * **Treasures:** total all points on teal banners of your treasure tokens.
+      * **Ember Zombie tokens:** [-1 VP]!red! per zombie token you still hold.
+  - name: Solo / Bot Mode
+    text: |
+      Solo mode adds a **bot** opponent (also usable as an extra player in any
+      game). Each human sets up normally. The bot gets **1 player board (bot
+      side up)**, **5 dice**, and a set of tents, cubes, and a caravan marker.
+
+      * Place the bot's caravan on a starting space by die roll (starting-column
+        spaces are numbered **1-6** top to bottom).
+      * Instead of a starting hand, give the bot one of these card pairs (placed
+        by its board): **Aged Engineer + Trinket Wagon** *(recommended)*;
+        Nizra the Witch + Plains Wagon; Lizardfolk Herbalist + Scaled Stallion;
+        or Glogo Traveler + Noble Commander.
+
+      Each turn, after the humans finish, run the bot:
+
+      1. **Roll 5 dice.**
+      2. **Assign dice in order, top to bottom** on the bot board (place only
+         one die or set per action):
+          * First, any one set of **double 4s/5s/6s** (highest set first).
+          * Next, any one set of **double 1s** (a single 1 doesn't count here).
+          * Then remaining dice of values **2-6** on matching spaces.
+          * Any leftover dice go in the **"Combat Dice"** section.
+      3. **Take dice actions** that were met, **top to bottom**:
+          * **Double 4s/5s/6s:** place a cube on the lowest available market
+            trade (if tied, choose coins). Normal trade limits apply.
+          * **Double 1s:** move caravan **forward 2, then up 2** if possible
+            (ignore movement off the map edge). No zombie tokens.
+          * **Value 2:** move caravan **forward 1, then down 1** if possible.
+            No zombie tokens.
+          * **Value 3:** draw cards one at a time (up to 6) until one matches an
+            **incomplete VP set** on a played card; play it. Otherwise nothing.
+          * **Value 4:** if there are combat dice, roll them and sum, then add
+            1 per attack action on the bot's played cards. If **6+**, place a
+            cube on the lowest available zombie. If **5 or less** (or no combat
+            dice), the bot gains a zombie token. *(Often there are combat dice
+            but no 4 — just ignore the combat dice that turn.)*
+          * **Value 5:** place a **fruit token** on the bot board (1 VP each,
+            bot only).
+          * **Value 6:** draw 5 cards, keep the one with the **highest printed
+            VP** (ignore modifiers); play it. If tied, you choose.
+      4. **Camp:** place a tent on the bot's caravan space. The bot collects
+         only **fruit and treasures** from the board; a treasure giving a fruit
+         gives a fruit, but a coin/bag treasure gives nothing. Disregard all
+         other camp bonuses.
+
+      ## Bot Reminders
+      * The bot uses **no card actions** (except when calculating attack) and
+        ignores card abilities and combat bonuses.
+      * The bot has **no hand** and **no card limit**.
+      * Do **not** discard bot zombie tokens after combat.
+      * Recommended: ignore/discard the **Young Manticore** if drawn for the bot.
+
+      ## Bot Scoring
+      Market & ember zombie VP as normal; map VP as normal (1 VP per camped
+      space, 1 VP per space moved forward, 5 VP if it reached Eastrey); 1 VP per
+      camp on a white tower; 1 VP per fruit token; treasure VP; and VP from all
+      played cards (count all applicable bonuses, but **no** points for
+      incomplete VP sets). Apply negative card VP and subtract zombie tokens.
+
+      ## Bot Challenge+
+      * **Level 2:** when the bot has 5+ fruit tokens, it rolls 1 extra die per
+        turn (never more than 6 dice).
+      * **Level 3:** the bot rolls 1 extra die per turn for every 4 fruit tokens
+        it has.
